@@ -1,0 +1,24 @@
+name: Cancel Obsolete HOTS v7 Build
+
+on:
+  workflow_dispatch:
+  push:
+    branches: [chatgpt-stl-builder]
+    paths: [.github/workflows/cancel-obsolete-hots-v7.yml]
+
+permissions:
+  actions: write
+  contents: read
+
+jobs:
+  cancel:
+    runs-on: ubuntu-22.04
+    steps:
+      - name: Cancel obsolete v7 run
+        env:
+          GH_TOKEN: ${{ github.token }}
+        shell: bash
+        run: |
+          set -euo pipefail
+          gh run cancel 37198554829 --repo "$GITHUB_REPOSITORY" || true
+          gh run view 37198554829 --repo "$GITHUB_REPOSITORY" --json status,conclusion,url
