@@ -1,0 +1,183 @@
+{
+  "raw_folder": "/home/runner/work/_temp/raw",
+  "repaired_folder": "/home/runner/work/_temp/repaired",
+  "expected_files": 3,
+  "found_raw_files": 3,
+  "passed": false,
+  "requirements": {
+    "distance_threshold_mm": 1.75,
+    "minimum_raw_surface_coverage": 0.96,
+    "minimum_repaired_surface_coverage": 0.85,
+    "maximum_raw_to_repaired_p95_mm": 2.5,
+    "maximum_raw_to_repaired_p99_mm": 5.0,
+    "dimension_retention": [
+      0.9,
+      1.1
+    ],
+    "maximum_points_per_mesh": 250000
+  },
+  "failed_files": [
+    {
+      "file": "D.Va.stl",
+      "passed": false,
+      "raw_vertices": 187678,
+      "raw_triangles": 375734,
+      "repaired_vertices": 185715,
+      "repaired_triangles": 371718,
+      "x_retention": 0.9926444798935119,
+      "y_retention": 0.9926444798935119,
+      "z_retention": 0.9949382655628339,
+      "raw_to_repaired": {
+        "point_count": 250000,
+        "coverage_within_threshold": 0.831472,
+        "mean_mm": 0.9342497101772014,
+        "median_mm": 0.4712646066100647,
+        "p90_mm": 3.413129956533797,
+        "p95_mm": 3.4131300142796706,
+        "p99_mm": 3.4380663058083143,
+        "maximum_mm": 6.368270652861923
+      },
+      "repaired_to_raw": {
+        "point_count": 250000,
+        "coverage_within_threshold": 1.0,
+        "mean_mm": 0.4703646137608237,
+        "median_mm": 0.4813856719746191,
+        "p90_mm": 0.6790068053893522,
+        "p95_mm": 0.7350507003790121,
+        "p99_mm": 0.8808603237251763,
+        "maximum_mm": 1.5560144610383335
+      },
+      "error": ""
+    },
+    {
+      "file": "Tychus.stl",
+      "passed": false,
+      "raw_vertices": 223486,
+      "raw_triangles": 449999,
+      "repaired_vertices": 146355,
+      "repaired_triangles": 294226,
+      "x_retention": 0.9940507760870302,
+      "y_retention": 0.9940507760870302,
+      "z_retention": 0.9955933191630042,
+      "raw_to_repaired": {
+        "point_count": 250000,
+        "coverage_within_threshold": 0.756872,
+        "mean_mm": 1.818608844791768,
+        "median_mm": 0.5359930068362735,
+        "p90_mm": 3.4256205816211445,
+        "p95_mm": 5.597851839194882,
+        "p99_mm": 24.618120012726447,
+        "maximum_mm": 35.738276754383165
+      },
+      "repaired_to_raw": {
+        "point_count": 250000,
+        "coverage_within_threshold": 0.993244,
+        "mean_mm": 0.5161800032147198,
+        "median_mm": 0.5063610442234268,
+        "p90_mm": 0.727751729308373,
+        "p95_mm": 0.8077153040568279,
+        "p99_mm": 1.5085334773862307,
+        "maximum_mm": 4.450440142462998
+      },
+      "error": ""
+    }
+  ],
+  "files": [
+    {
+      "file": "Brightwing.stl",
+      "passed": true,
+      "raw_vertices": 130595,
+      "raw_triangles": 261204,
+      "repaired_vertices": 130226,
+      "repaired_triangles": 260464,
+      "x_retention": 1.0,
+      "y_retention": 1.0,
+      "z_retention": 1.0,
+      "raw_to_repaired": {
+        "point_count": 250000,
+        "coverage_within_threshold": 1.0,
+        "mean_mm": 0.07104076545834147,
+        "median_mm": 0.0,
+        "p90_mm": 0.292270538208329,
+        "p95_mm": 0.2922711985102382,
+        "p99_mm": 0.32554146340816353,
+        "maximum_mm": 0.993038414495711
+      },
+      "repaired_to_raw": {
+        "point_count": 250000,
+        "coverage_within_threshold": 1.0,
+        "mean_mm": 0.07112786917562827,
+        "median_mm": 0.0,
+        "p90_mm": 0.29227053820833027,
+        "p95_mm": 0.2922711985102382,
+        "p99_mm": 0.325556322410718,
+        "maximum_mm": 0.4977009015331787
+      },
+      "error": ""
+    },
+    {
+      "file": "D.Va.stl",
+      "passed": false,
+      "raw_vertices": 187678,
+      "raw_triangles": 375734,
+      "repaired_vertices": 185715,
+      "repaired_triangles": 371718,
+      "x_retention": 0.9926444798935119,
+      "y_retention": 0.9926444798935119,
+      "z_retention": 0.9949382655628339,
+      "raw_to_repaired": {
+        "point_count": 250000,
+        "coverage_within_threshold": 0.831472,
+        "mean_mm": 0.9342497101772014,
+        "median_mm": 0.4712646066100647,
+        "p90_mm": 3.413129956533797,
+        "p95_mm": 3.4131300142796706,
+        "p99_mm": 3.4380663058083143,
+        "maximum_mm": 6.368270652861923
+      },
+      "repaired_to_raw": {
+        "point_count": 250000,
+        "coverage_within_threshold": 1.0,
+        "mean_mm": 0.4703646137608237,
+        "median_mm": 0.4813856719746191,
+        "p90_mm": 0.6790068053893522,
+        "p95_mm": 0.7350507003790121,
+        "p99_mm": 0.8808603237251763,
+        "maximum_mm": 1.5560144610383335
+      },
+      "error": ""
+    },
+    {
+      "file": "Tychus.stl",
+      "passed": false,
+      "raw_vertices": 223486,
+      "raw_triangles": 449999,
+      "repaired_vertices": 146355,
+      "repaired_triangles": 294226,
+      "x_retention": 0.9940507760870302,
+      "y_retention": 0.9940507760870302,
+      "z_retention": 0.9955933191630042,
+      "raw_to_repaired": {
+        "point_count": 250000,
+        "coverage_within_threshold": 0.756872,
+        "mean_mm": 1.818608844791768,
+        "median_mm": 0.5359930068362735,
+        "p90_mm": 3.4256205816211445,
+        "p95_mm": 5.597851839194882,
+        "p99_mm": 24.618120012726447,
+        "maximum_mm": 35.738276754383165
+      },
+      "repaired_to_raw": {
+        "point_count": 250000,
+        "coverage_within_threshold": 0.993244,
+        "mean_mm": 0.5161800032147198,
+        "median_mm": 0.5063610442234268,
+        "p90_mm": 0.727751729308373,
+        "p95_mm": 0.8077153040568279,
+        "p99_mm": 1.5085334773862307,
+        "maximum_mm": 4.450440142462998
+      },
+      "error": ""
+    }
+  ]
+}
