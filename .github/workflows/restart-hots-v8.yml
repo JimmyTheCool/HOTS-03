@@ -1,0 +1,26 @@
+name: Restart HOTS v8 Build
+
+on:
+  workflow_dispatch:
+  push:
+    branches: [chatgpt-stl-builder]
+    paths: [.github/workflows/restart-hots-v8.yml]
+
+permissions:
+  actions: write
+  contents: read
+
+jobs:
+  restart:
+    runs-on: ubuntu-22.04
+    steps:
+      - name: Cancel obsolete attempt and dispatch corrected build
+        env:
+          GH_TOKEN: ${{ github.token }}
+        shell: bash
+        run: |
+          set -euo pipefail
+          gh run cancel 37198999183 --repo "$GITHUB_REPOSITORY" || true
+          gh workflow run repair-and-package-hots-v8.yml \
+            --repo "$GITHUB_REPOSITORY" \
+            --ref chatgpt-stl-builder
