@@ -1,0 +1,115 @@
+name: Build HOTS Complete STL v2 R2
+on:
+  workflow_dispatch:
+  push:
+    branches: [chatgpt-stl-builder]
+    paths: [.github/workflows/build-hots-complete-v2-r2.yml]
+permissions: {contents: write}
+env:
+  BV: 3.6.23
+  M3: 58935005c4465a219a740f6b740253533eda773f
+jobs:
+  make:
+    runs-on: ubuntu-22.04
+    timeout-minutes: 300
+    strategy:
+      fail-fast: false
+      matrix:
+        include:
+          - {c: 1, n: 15, h: "Abathur|Alarak|Alexstrasza|Ana|Anduin|Anub'arak|Artanis|Arthas|Auriel|Azmodan|Blaze|Brightwing|The Butcher|Cassia|Chen"}
+          - {c: 2, n: 15, h: "Cho|Chromie|D.Va|Deathwing|Deckard|Dehaka|Diablo|E.T.C.|Falstad|Fenix|Gall|Garrosh|Gazlowe|Genji|Greymane"}
+          - {c: 3, n: 15, h: "Gul'dan|Hanzo|Hogger|Illidan|Imperius|Jaina|Johanna|Junkrat|Kael'thas|Kel'Thuzad|Kerrigan|Kharazim|Leoric|Li Li|Li-Ming"}
+          - {c: 4, n: 15, h: "Lt. Morales|Lucio|Lunara|Maiev|Mal'Ganis|Malfurion|Malthael|Medivh|Mei|Mephisto|Muradin|Murky|Nazeebo|Nova|Orphea"}
+          - {c: 5, n: 15, h: "Probius|Qhira|Ragnaros|Raynor|Rehgar|Rexxar|Samuro|Sgt. Hammer|Sonya|Stitches|Stukov|Sylvanas|Tassadar|The Lost Vikings|Thrall"}
+          - {c: 6, n: 16, h: "Tracer|Tychus|Tyrael|Tyrande|Uther|Valeera|Valla|Varian|Whitemane|Xal'atath|Xul|Yrel|Zagara|Zarya|Zeratul|Zul'jin"}
+    steps:
+      - uses: actions/checkout@v4
+        with: {ref: chatgpt-stl-builder, fetch-depth: 1}
+      - name: Setup, convert and stage
+        shell: bash
+        run: |
+          set -euo pipefail
+          cp tools/hots_stl/runtime_extracted/build_hots_stls.py "$RUNNER_TEMP/b.py"
+          python tools/hots_stl/runtime_patch_v2.py "$RUNNER_TEMP/b.py"
+          python ci/patch_builder_external_validation.py "$RUNNER_TEMP/b.py"
+          python - "$RUNNER_TEMP/b.py" <<'PY'
+          from pathlib import Path
+          import sys
+          p=Path(sys.argv[1]); s=p.read_text(); a='    "Whitemane": ("whitemane",),\n'
+          if a not in s: raise SystemExit('roster anchor missing')
+          p.write_text(s.replace(a,a+'    "Xal\'atath": ("xalatath",),\n',1))
+          PY
+          sudo apt-get update -qq
+          sudo apt-get install -y --no-install-recommends ca-certificates curl git xz-utils libx11-6 libxi6 libxrender1 libxfixes3 libxkbcommon0 libsm6 libice6 libgl1 libegl1
+          git clone --depth 1 https://github.com/JimmyTheCool/HOTS-02.git "$RUNNER_TEMP/H2"
+          cd "$RUNNER_TEMP"
+          curl -fL --retry 5 "https://download.blender.org/release/Blender3.6/blender-${BV}-linux-x64.tar.xz" -o b.tar.xz
+          tar -xf b.tar.xz
+          git clone -q https://github.com/SC2Mapster/m3addon.git m3
+          git -C m3 checkout -q "$M3"
+          mkdir -p "$HOME/.config/blender/3.6/scripts/addons"
+          ln -s "$RUNNER_TEMP/m3" "$HOME/.config/blender/3.6/scripts/addons/m3addon"
+          O="$RUNNER_TEMP/o"; mkdir -p "$O/00_Reports"
+          IFS='|' read -ra A <<< '${{ matrix.h }}'; X=(); for v in "${A[@]}"; do X+=(--only "$v"); done
+          "$RUNNER_TEMP/blender-${BV}-linux-x64/blender" --background --factory-startup --python "$RUNNER_TEMP/b.py" -- --source "$RUNNER_TEMP/H2" --source "$GITHUB_WORKSPACE" --output "$O" --target-height-mm 110 --base-height-mm 4 --base-margin-mm 4 --voxel-mm 0.55 --thin-part-mm 0.72 --max-triangles 450000 --skip-animation "${X[@]}" 2>&1 | tee "$O/00_Reports/build.log"
+          N=$(find "$O/02_Print_Ready_Watertight" -name '*.stl' -type f | wc -l); test "$N" -eq '${{ matrix.n }}'
+          mkdir -p "$RUNNER_TEMP/chunk/STL" "$RUNNER_TEMP/chunk/Reports"
+          cp "$O"/02_Print_Ready_Watertight/*.stl "$RUNNER_TEMP/chunk/STL/"
+          cp "$O"/00_Reports/* "$RUNNER_TEMP/chunk/Reports/"
+      - uses: actions/upload-artifact@v4
+        with: {name: "r2-c-${{ matrix.c }}", path: "${{ runner.temp }}/chunk", retention-days: 30, compression-level: 0}
+  pack:
+    needs: make
+    runs-on: ubuntu-22.04
+    timeout-minutes: 120
+    steps:
+      - uses: actions/checkout@v4
+        with: {ref: chatgpt-stl-builder, fetch-depth: 1}
+      - uses: actions/download-artifact@v4
+        with: {pattern: "r2-c-*", path: "${{ runner.temp }}/parts"}
+      - name: Validate and package
+        id: z
+        shell: bash
+        run: |
+          set -euo pipefail
+          P="$RUNNER_TEMP/HOTS_All_91_Heroes_Printable_STL_v2"; mkdir -p "$P/STL" "$P/Reports"
+          find "$RUNNER_TEMP/parts" -path '*/STL/*.stl' -exec cp {} "$P/STL/" \;
+          test "$(find "$P/STL" -name '*.stl' | wc -l)" -eq 91
+          python -m pip install -q trimesh==4.8.3 numpy==2.2.6
+          python - "$P" <<'PY'
+          from pathlib import Path
+          import csv,hashlib,json,sys,numpy as np,trimesh
+          p=Path(sys.argv[1]); rows=[]; bad=[]
+          for f in sorted((p/'STL').glob('*.stl')):
+            m=trimesh.load_mesh(f,force='mesh',process=False); e=[float(x) for x in m.extents]
+            r={'file':f.name,'bytes':f.stat().st_size,'sha256':hashlib.sha256(f.read_bytes()).hexdigest(),'triangles':int(len(m.faces)),'watertight':bool(m.is_watertight),'winding':bool(m.is_winding_consistent),'finite':bool(np.isfinite(m.vertices).all()),'volume_mm3':float(abs(m.volume)),'x_mm':e[0],'y_mm':e[1],'z_mm':e[2],'bodies':int(m.body_count)}
+            rows.append(r)
+            if not(r['watertight'] and r['winding'] and r['finite'] and r['volume_mm3']>1 and 100<=r['triangles']<=500000 and 2<=min(e) and max(e)<=350): bad.append(r)
+          q={'expected':91,'found':len(rows),'passed':len(rows)==91 and not bad,'failed':bad,'files':rows}
+          (p/'Reports'/'validation.json').write_text(json.dumps(q,indent=2))
+          with (p/'Reports'/'validation.csv').open('w',newline='',encoding='utf-8-sig') as h: w=csv.DictWriter(h,fieldnames=rows[0]);w.writeheader();w.writerows(rows)
+          if not q['passed']: print(json.dumps(bad,indent=2));raise SystemExit(1)
+          PY
+          cat > "$P/README_FIRST.txt" <<'EOF'
+          Heroes of the Storm printable STL collection rebuilt from the supplied M3 meshes.
+          Contains 91 hero entries including Xal'atath. Cho and Gall are separate roster files
+          from their shared body; D.Va includes pilot and mech; The Lost Vikings includes all three.
+          Geometry-only STL files cannot retain textures, glow, transparency or normal maps.
+          Intended for personal, non-commercial fan use. Inspect supports in your slicer before printing.
+          EOF
+          sudo apt-get update -qq && sudo apt-get install -y --no-install-recommends p7zip-full
+          cd "$RUNNER_TEMP"; 7z a -tzip -mx=7 "$GITHUB_WORKSPACE/HOTS_All_91_Heroes_Printable_STL_v2.zip" "$(basename "$P")"
+          sha256sum "$GITHUB_WORKSPACE/HOTS_All_91_Heroes_Printable_STL_v2.zip" > "$GITHUB_WORKSPACE/HOTS_All_91_Heroes_Printable_STL_v2.zip.sha256"
+          echo "zip=$GITHUB_WORKSPACE/HOTS_All_91_Heroes_Printable_STL_v2.zip" >> "$GITHUB_OUTPUT"
+      - uses: actions/upload-artifact@v4
+        with:
+          name: HOTS_All_91_Heroes_Printable_STL_v2
+          path: |
+            HOTS_All_91_Heroes_Printable_STL_v2.zip
+            HOTS_All_91_Heroes_Printable_STL_v2.zip.sha256
+          retention-days: 90
+          compression-level: 0
+      - name: Release
+        env: {GH_TOKEN: "${{ github.token }}"}
+        run: |
+          gh release create "hots-stl-v2-r2-${GITHUB_RUN_NUMBER}" "${{ steps.z.outputs.zip }}" "${{ steps.z.outputs.zip }}.sha256" "$RUNNER_TEMP/HOTS_All_91_Heroes_Printable_STL_v2/Reports/validation.json#validation.json" --repo "$GITHUB_REPOSITORY" --target "$GITHUB_SHA" --title "HOTS 91 hero STL collection v2" --notes "All 91 STL files passed automated watertightness, winding, volume, dimension and triangle-count checks."
