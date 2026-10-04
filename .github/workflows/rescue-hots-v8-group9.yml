@@ -1,0 +1,119 @@
+name: Rescue HOTS v8 Group 9 Heroes
+
+on:
+  workflow_dispatch:
+  push:
+    branches: [chatgpt-stl-builder]
+    paths: [.github/workflows/rescue-hots-v8-group9.yml]
+
+permissions:
+  actions: read
+  contents: read
+
+env:
+  RAW_BUILD_RUN_ID: 37193141976
+
+jobs:
+  rescue:
+    runs-on: ubuntu-22.04
+    timeout-minutes: 240
+    strategy:
+      fail-fast: false
+      matrix:
+        include:
+          - {key: Fenix, filename: Fenix.stl}
+          - {key: Gall, filename: Gall.stl}
+          - {key: Garrosh, filename: Garrosh.stl}
+
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          ref: chatgpt-stl-builder
+          fetch-depth: 1
+
+      - name: Download isolated source model
+        env:
+          GH_TOKEN: ${{ github.token }}
+        shell: bash
+        run: |
+          set -euo pipefail
+          mkdir -p "$RUNNER_TEMP/raw_chunk" "$RUNNER_TEMP/source"
+          gh run download "$RAW_BUILD_RUN_ID" \
+            --repo "$GITHUB_REPOSITORY" \
+            --name HOTS-v3-chunk-2 \
+            --dir "$RUNNER_TEMP/raw_chunk"
+          test -f "$RUNNER_TEMP/raw_chunk/STL/${{ matrix.filename }}"
+          cp "$RUNNER_TEMP/raw_chunk/STL/${{ matrix.filename }}" "$RUNNER_TEMP/source/"
+
+      - name: Install repair dependencies
+        shell: bash
+        run: |
+          set -euo pipefail
+          python -m pip install --disable-pip-version-check --quiet \
+            trimesh==4.8.3 numpy==2.2.6 scipy==1.15.3 \
+            scikit-image==0.25.2 pymeshfix==0.18.1 \
+            fast-simplification==0.1.12 matplotlib==3.10.1
+
+      - name: Prepare repair engines
+        shell: bash
+        run: |
+          set -euo pipefail
+          cp ci/repair_stl_collection.py "$RUNNER_TEMP/repair_normal.py"
+          python ci/patch_repair_dimension_retention.py "$RUNNER_TEMP/repair_normal.py"
+          python ci/patch_repair_voxel_translation.py "$RUNNER_TEMP/repair_normal.py"
+          python ci/patch_repair_face_connectivity.py "$RUNNER_TEMP/repair_normal.py"
+          cp "$RUNNER_TEMP/repair_normal.py" "$RUNNER_TEMP/repair_voxel.py"
+          python ci/patch_repair_force_voxel.py "$RUNNER_TEMP/repair_voxel.py"
+          python -m py_compile "$RUNNER_TEMP/repair_normal.py" "$RUNNER_TEMP/repair_voxel.py" ci/repair_one_adaptive.py
+
+      - name: Repair one hero adaptively
+        shell: bash
+        run: |
+          set -euo pipefail
+          OUT="$RUNNER_TEMP/fixed"
+          mkdir -p "$OUT/STL" "$OUT/Reports/${{ matrix.key }}"
+          python ci/repair_one_adaptive.py \
+            --input-file "$RUNNER_TEMP/source/${{ matrix.filename }}" \
+            --output "$OUT/STL" \
+            --report-dir "$OUT/Reports/${{ matrix.key }}" \
+            --normal-script "$RUNNER_TEMP/repair_normal.py" \
+            --voxel-script "$RUNNER_TEMP/repair_voxel.py" \
+            --validator ci/validate_stl_collection.py \
+            --silhouette ci/compare_stl_silhouette.py \
+            --max-triangles 500000 \
+            --target-triangles 440000 \
+            --minimum-dimension-retention 0.90 \
+            --maximum-dimension-retention 1.10
+
+      - name: Independently validate rescued hero
+        shell: bash
+        run: |
+          set -euo pipefail
+          OUT="$RUNNER_TEMP/fixed"
+          python ci/validate_stl_collection.py \
+            --input "$OUT/STL" \
+            --report-json "$OUT/Reports/${{ matrix.key }}/FINAL_VALIDATION.json" \
+            --report-csv "$OUT/Reports/${{ matrix.key }}/FINAL_VALIDATION.csv" \
+            --checksums "$OUT/Reports/${{ matrix.key }}/SHA256SUMS.txt" \
+            --expected 1
+          python ci/compare_stl_silhouette.py \
+            --raw "$RUNNER_TEMP/source" \
+            --repaired "$OUT/STL" \
+            --report-json "$OUT/Reports/${{ matrix.key }}/FINAL_SILHOUETTE.json" \
+            --report-csv "$OUT/Reports/${{ matrix.key }}/FINAL_SILHOUETTE.csv" \
+            --image "$OUT/Reports/${{ matrix.key }}/FINAL_SILHOUETTE.png" \
+            --expected 1 \
+            --pixel-mm 0.65 \
+            --tolerance-mm 1.95 \
+            --minimum-raw-coverage 0.985 \
+            --minimum-repaired-coverage 0.900 \
+            --minimum-iou 0.850 \
+            --maximum-points 500000
+          test -f "$OUT/STL/${{ matrix.filename }}"
+
+      - uses: actions/upload-artifact@v4
+        with:
+          name: HOTS-v8-rescue-${{ matrix.key }}
+          path: ${{ runner.temp }}/fixed
+          retention-days: 90
+          compression-level: 0
