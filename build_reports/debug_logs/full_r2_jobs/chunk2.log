@@ -1,0 +1,744 @@
+make (2, 15, Cho|Chromie|D.Va|Deathwing|Deckard|Dehaka|Diablo|E.T.C.|Falstad|Fenix|Gall|Garrosh|G...	UNKNOWN STEP	﻿2026-10-04T09:32:28.7133996Z Current runner version: '2.337.0'
+make (2, 15, Cho|Chromie|D.Va|Deathwing|Deckard|Dehaka|Diablo|E.T.C.|Falstad|Fenix|Gall|Garrosh|G...	UNKNOWN STEP	2026-10-04T09:32:28.7158387Z ##[group]Runner Image Provisioner
+make (2, 15, Cho|Chromie|D.Va|Deathwing|Deckard|Dehaka|Diablo|E.T.C.|Falstad|Fenix|Gall|Garrosh|G...	UNKNOWN STEP	2026-10-04T09:32:28.7159401Z Hosted Compute Agent
+make (2, 15, Cho|Chromie|D.Va|Deathwing|Deckard|Dehaka|Diablo|E.T.C.|Falstad|Fenix|Gall|Garrosh|G...	UNKNOWN STEP	2026-10-04T09:32:28.7160099Z Version: 20260901.588
+make (2, 15, Cho|Chromie|D.Va|Deathwing|Deckard|Dehaka|Diablo|E.T.C.|Falstad|Fenix|Gall|Garrosh|G...	UNKNOWN STEP	2026-10-04T09:32:28.7160755Z Commit: f88ec8081b781fac6c440065ac7ff9e710ce3d0b
+make (2, 15, Cho|Chromie|D.Va|Deathwing|Deckard|Dehaka|Diablo|E.T.C.|Falstad|Fenix|Gall|Garrosh|G...	UNKNOWN STEP	2026-10-04T09:32:28.7161581Z Build Date: 2026-09-01T19:56:44Z
+make (2, 15, Cho|Chromie|D.Va|Deathwing|Deckard|Dehaka|Diablo|E.T.C.|Falstad|Fenix|Gall|Garrosh|G...	UNKNOWN STEP	2026-10-04T09:32:28.7162309Z Worker ID: {86f14ccc-2cb7-412f-9bc5-21a63064f6cd}
+make (2, 15, Cho|Chromie|D.Va|Deathwing|Deckard|Dehaka|Diablo|E.T.C.|Falstad|Fenix|Gall|Garrosh|G...	UNKNOWN STEP	2026-10-04T09:32:28.7163015Z Azure Region: westus3
+make (2, 15, Cho|Chromie|D.Va|Deathwing|Deckard|Dehaka|Diablo|E.T.C.|Falstad|Fenix|Gall|Garrosh|G...	UNKNOWN STEP	2026-10-04T09:32:28.7163958Z ##[endgroup]
+make (2, 15, Cho|Chromie|D.Va|Deathwing|Deckard|Dehaka|Diablo|E.T.C.|Falstad|Fenix|Gall|Garrosh|G...	UNKNOWN STEP	2026-10-04T09:32:28.7165646Z ##[group]Operating System
+make (2, 15, Cho|Chromie|D.Va|Deathwing|Deckard|Dehaka|Diablo|E.T.C.|Falstad|Fenix|Gall|Garrosh|G...	UNKNOWN STEP	2026-10-04T09:32:28.7166474Z Ubuntu
+make (2, 15, Cho|Chromie|D.Va|Deathwing|Deckard|Dehaka|Diablo|E.T.C.|Falstad|Fenix|Gall|Garrosh|G...	UNKNOWN STEP	2026-10-04T09:32:28.7167030Z 22.04.5
+make (2, 15, Cho|Chromie|D.Va|Deathwing|Deckard|Dehaka|Diablo|E.T.C.|Falstad|Fenix|Gall|Garrosh|G...	UNKNOWN STEP	2026-10-04T09:32:28.7167538Z LTS
+make (2, 15, Cho|Chromie|D.Va|Deathwing|Deckard|Dehaka|Diablo|E.T.C.|Falstad|Fenix|Gall|Garrosh|G...	UNKNOWN STEP	2026-10-04T09:32:28.7168176Z ##[endgroup]
+make (2, 15, Cho|Chromie|D.Va|Deathwing|Deckard|Dehaka|Diablo|E.T.C.|Falstad|Fenix|Gall|Garrosh|G...	UNKNOWN STEP	2026-10-04T09:32:28.7168755Z ##[group]Runner Image
+make (2, 15, Cho|Chromie|D.Va|Deathwing|Deckard|Dehaka|Diablo|E.T.C.|Falstad|Fenix|Gall|Garrosh|G...	UNKNOWN STEP	2026-10-04T09:32:28.7169469Z Image: ubuntu-22.04
+make (2, 15, Cho|Chromie|D.Va|Deathwing|Deckard|Dehaka|Diablo|E.T.C.|Falstad|Fenix|Gall|Garrosh|G...	UNKNOWN STEP	2026-10-04T09:32:28.7170125Z Version: 20260927.309.1
+make (2, 15, Cho|Chromie|D.Va|Deathwing|Deckard|Dehaka|Diablo|E.T.C.|Falstad|Fenix|Gall|Garrosh|G...	UNKNOWN STEP	2026-10-04T09:32:28.7171470Z Included Software: https://github.com/actions/runner-images/blob/ubuntu22/20260927.309/images/ubuntu/Ubuntu2204-Readme.md
+make (2, 15, Cho|Chromie|D.Va|Deathwing|Deckard|Dehaka|Diablo|E.T.C.|Falstad|Fenix|Gall|Garrosh|G...	UNKNOWN STEP	2026-10-04T09:32:28.7173055Z Image Release: https://github.com/actions/runner-images/releases/tag/ubuntu22%2F20260927.309
+make (2, 15, Cho|Chromie|D.Va|Deathwing|Deckard|Dehaka|Diablo|E.T.C.|Falstad|Fenix|Gall|Garrosh|G...	UNKNOWN STEP	2026-10-04T09:32:28.7174907Z ##[endgroup]
+make (2, 15, Cho|Chromie|D.Va|Deathwing|Deckard|Dehaka|Diablo|E.T.C.|Falstad|Fenix|Gall|Garrosh|G...	UNKNOWN STEP	2026-10-04T09:32:28.7176154Z ##[group]GITHUB_TOKEN Permissions
+make (2, 15, Cho|Chromie|D.Va|Deathwing|Deckard|Dehaka|Diablo|E.T.C.|Falstad|Fenix|Gall|Garrosh|G...	UNKNOWN STEP	2026-10-04T09:32:28.7178354Z Contents: write
+make (2, 15, Cho|Chromie|D.Va|Deathwing|Deckard|Dehaka|Diablo|E.T.C.|Falstad|Fenix|Gall|Garrosh|G...	UNKNOWN STEP	2026-10-04T09:32:28.7179026Z Metadata: read
+make (2, 15, Cho|Chromie|D.Va|Deathwing|Deckard|Dehaka|Diablo|E.T.C.|Falstad|Fenix|Gall|Garrosh|G...	UNKNOWN STEP	2026-10-04T09:32:28.7179629Z ##[endgroup]
+make (2, 15, Cho|Chromie|D.Va|Deathwing|Deckard|Dehaka|Diablo|E.T.C.|Falstad|Fenix|Gall|Garrosh|G...	UNKNOWN STEP	2026-10-04T09:32:28.7181746Z Secret source: Actions
+make (2, 15, Cho|Chromie|D.Va|Deathwing|Deckard|Dehaka|Diablo|E.T.C.|Falstad|Fenix|Gall|Garrosh|G...	UNKNOWN STEP	2026-10-04T09:32:28.7182782Z Cache mode: write
+make (2, 15, Cho|Chromie|D.Va|Deathwing|Deckard|Dehaka|Diablo|E.T.C.|Falstad|Fenix|Gall|Garrosh|G...	UNKNOWN STEP	2026-10-04T09:32:28.7183991Z Prepare workflow directory
+make (2, 15, Cho|Chromie|D.Va|Deathwing|Deckard|Dehaka|Diablo|E.T.C.|Falstad|Fenix|Gall|Garrosh|G...	UNKNOWN STEP	2026-10-04T09:32:28.7601850Z Prepare all required actions
+make (2, 15, Cho|Chromie|D.Va|Deathwing|Deckard|Dehaka|Diablo|E.T.C.|Falstad|Fenix|Gall|Garrosh|G...	UNKNOWN STEP	2026-10-04T09:32:28.7649812Z Getting action download info
+make (2, 15, Cho|Chromie|D.Va|Deathwing|Deckard|Dehaka|Diablo|E.T.C.|Falstad|Fenix|Gall|Garrosh|G...	UNKNOWN STEP	2026-10-04T09:32:29.0535395Z Download action repository 'actions/checkout@v4' (SHA:11d5960a326750d5838078e36cf38b85af677262)
+make (2, 15, Cho|Chromie|D.Va|Deathwing|Deckard|Dehaka|Diablo|E.T.C.|Falstad|Fenix|Gall|Garrosh|G...	UNKNOWN STEP	2026-10-04T09:32:29.1480504Z Download action repository 'actions/upload-artifact@v4' (SHA:ea165f8d65b6e75b540449e92b4886f43607fa02)
+make (2, 15, Cho|Chromie|D.Va|Deathwing|Deckard|Dehaka|Diablo|E.T.C.|Falstad|Fenix|Gall|Garrosh|G...	UNKNOWN STEP	2026-10-04T09:32:29.4177272Z Complete job name: make (2, 15, Cho|Chromie|D.Va|Deathwing|Deckard|Dehaka|Diablo|E.T.C.|Falstad|Fenix|Gall|Garrosh|G...
+make (2, 15, Cho|Chromie|D.Va|Deathwing|Deckard|Dehaka|Diablo|E.T.C.|Falstad|Fenix|Gall|Garrosh|G...	UNKNOWN STEP	2026-10-04T09:32:29.4955784Z ##[group]Run actions/checkout@v4
+make (2, 15, Cho|Chromie|D.Va|Deathwing|Deckard|Dehaka|Diablo|E.T.C.|Falstad|Fenix|Gall|Garrosh|G...	UNKNOWN STEP	2026-10-04T09:32:29.4956665Z with:
+make (2, 15, Cho|Chromie|D.Va|Deathwing|Deckard|Dehaka|Diablo|E.T.C.|Falstad|Fenix|Gall|Garrosh|G...	UNKNOWN STEP	2026-10-04T09:32:29.4957114Z   ref: chatgpt-stl-builder
+make (2, 15, Cho|Chromie|D.Va|Deathwing|Deckard|Dehaka|Diablo|E.T.C.|Falstad|Fenix|Gall|Garrosh|G...	UNKNOWN STEP	2026-10-04T09:32:29.4957620Z   fetch-depth: 1
+make (2, 15, Cho|Chromie|D.Va|Deathwing|Deckard|Dehaka|Diablo|E.T.C.|Falstad|Fenix|Gall|Garrosh|G...	UNKNOWN STEP	2026-10-04T09:32:29.4958083Z   repository: JimmyTheCool/HOTS-03
+make (2, 15, Cho|Chromie|D.Va|Deathwing|Deckard|Dehaka|Diablo|E.T.C.|Falstad|Fenix|Gall|Garrosh|G...	UNKNOWN STEP	2026-10-04T09:32:29.4961657Z   token: ***
+make (2, 15, Cho|Chromie|D.Va|Deathwing|Deckard|Dehaka|Diablo|E.T.C.|Falstad|Fenix|Gall|Garrosh|G...	UNKNOWN STEP	2026-10-04T09:32:29.4962092Z   ssh-strict: true
+make (2, 15, Cho|Chromie|D.Va|Deathwing|Deckard|Dehaka|Diablo|E.T.C.|Falstad|Fenix|Gall|Garrosh|G...	UNKNOWN STEP	2026-10-04T09:32:29.4962523Z   ssh-user: git
+make (2, 15, Cho|Chromie|D.Va|Deathwing|Deckard|Dehaka|Diablo|E.T.C.|Falstad|Fenix|Gall|Garrosh|G...	UNKNOWN STEP	2026-10-04T09:32:29.4962965Z   persist-credentials: true
+make (2, 15, Cho|Chromie|D.Va|Deathwing|Deckard|Dehaka|Diablo|E.T.C.|Falstad|Fenix|Gall|Garrosh|G...	UNKNOWN STEP	2026-10-04T09:32:29.4963817Z   clean: true
+make (2, 15, Cho|Chromie|D.Va|Deathwing|Deckard|Dehaka|Diablo|E.T.C.|Falstad|Fenix|Gall|Garrosh|G...	UNKNOWN STEP	2026-10-04T09:32:29.4964270Z   sparse-checkout-cone-mode: true
+make (2, 15, Cho|Chromie|D.Va|Deathwing|Deckard|Dehaka|Diablo|E.T.C.|Falstad|Fenix|Gall|Garrosh|G...	UNKNOWN STEP	2026-10-04T09:32:29.4964793Z   fetch-tags: false
+make (2, 15, Cho|Chromie|D.Va|Deathwing|Deckard|Dehaka|Diablo|E.T.C.|Falstad|Fenix|Gall|Garrosh|G...	UNKNOWN STEP	2026-10-04T09:32:29.4965232Z   show-progress: true
+make (2, 15, Cho|Chromie|D.Va|Deathwing|Deckard|Dehaka|Diablo|E.T.C.|Falstad|Fenix|Gall|Garrosh|G...	UNKNOWN STEP	2026-10-04T09:32:29.4965676Z   lfs: false
+make (2, 15, Cho|Chromie|D.Va|Deathwing|Deckard|Dehaka|Diablo|E.T.C.|Falstad|Fenix|Gall|Garrosh|G...	UNKNOWN STEP	2026-10-04T09:32:29.4966083Z   submodules: false
+make (2, 15, Cho|Chromie|D.Va|Deathwing|Deckard|Dehaka|Diablo|E.T.C.|Falstad|Fenix|Gall|Garrosh|G...	UNKNOWN STEP	2026-10-04T09:32:29.4966527Z   set-safe-directory: true
+make (2, 15, Cho|Chromie|D.Va|Deathwing|Deckard|Dehaka|Diablo|E.T.C.|Falstad|Fenix|Gall|Garrosh|G...	UNKNOWN STEP	2026-10-04T09:32:29.4967030Z   allow-unsafe-pr-checkout: false
+make (2, 15, Cho|Chromie|D.Va|Deathwing|Deckard|Dehaka|Diablo|E.T.C.|Falstad|Fenix|Gall|Garrosh|G...	UNKNOWN STEP	2026-10-04T09:32:29.4967845Z env:
+make (2, 15, Cho|Chromie|D.Va|Deathwing|Deckard|Dehaka|Diablo|E.T.C.|Falstad|Fenix|Gall|Garrosh|G...	UNKNOWN STEP	2026-10-04T09:32:29.4968246Z   BV: 3.6.23
+make (2, 15, Cho|Chromie|D.Va|Deathwing|Deckard|Dehaka|Diablo|E.T.C.|Falstad|Fenix|Gall|Garrosh|G...	UNKNOWN STEP	2026-10-04T09:32:29.4968700Z   M3: 58935005c4465a219a740f6b740253533eda773f
+make (2, 15, Cho|Chromie|D.Va|Deathwing|Deckard|Dehaka|Diablo|E.T.C.|Falstad|Fenix|Gall|Garrosh|G...	UNKNOWN STEP	2026-10-04T09:32:29.4969370Z ##[endgroup]
+make (2, 15, Cho|Chromie|D.Va|Deathwing|Deckard|Dehaka|Diablo|E.T.C.|Falstad|Fenix|Gall|Garrosh|G...	UNKNOWN STEP	2026-10-04T09:32:29.6002484Z Syncing repository: JimmyTheCool/HOTS-03
+make (2, 15, Cho|Chromie|D.Va|Deathwing|Deckard|Dehaka|Diablo|E.T.C.|Falstad|Fenix|Gall|Garrosh|G...	UNKNOWN STEP	2026-10-04T09:32:29.6005263Z ##[group]Getting Git version info
+make (2, 15, Cho|Chromie|D.Va|Deathwing|Deckard|Dehaka|Diablo|E.T.C.|Falstad|Fenix|Gall|Garrosh|G...	UNKNOWN STEP	2026-10-04T09:32:29.6006538Z Working directory is '/home/runner/work/HOTS-03/HOTS-03'
+make (2, 15, Cho|Chromie|D.Va|Deathwing|Deckard|Dehaka|Diablo|E.T.C.|Falstad|Fenix|Gall|Garrosh|G...	UNKNOWN STEP	2026-10-04T09:32:29.6035629Z [command]/usr/bin/git version
+make (2, 15, Cho|Chromie|D.Va|Deathwing|Deckard|Dehaka|Diablo|E.T.C.|Falstad|Fenix|Gall|Garrosh|G...	UNKNOWN STEP	2026-10-04T09:32:29.6164456Z git version 2.55.0
+make (2, 15, Cho|Chromie|D.Va|Deathwing|Deckard|Dehaka|Diablo|E.T.C.|Falstad|Fenix|Gall|Garrosh|G...	UNKNOWN STEP	2026-10-04T09:32:29.6191587Z ##[endgroup]
+make (2, 15, Cho|Chromie|D.Va|Deathwing|Deckard|Dehaka|Diablo|E.T.C.|Falstad|Fenix|Gall|Garrosh|G...	UNKNOWN STEP	2026-10-04T09:32:29.6205069Z Temporarily overriding HOME='/home/runner/work/_temp/3ec9f8f8-25fe-4715-8c6f-d697089569f3' before making global git config changes
+make (2, 15, Cho|Chromie|D.Va|Deathwing|Deckard|Dehaka|Diablo|E.T.C.|Falstad|Fenix|Gall|Garrosh|G...	UNKNOWN STEP	2026-10-04T09:32:29.6206818Z Adding repository directory to the temporary git global config as a safe directory
+make (2, 15, Cho|Chromie|D.Va|Deathwing|Deckard|Dehaka|Diablo|E.T.C.|Falstad|Fenix|Gall|Garrosh|G...	UNKNOWN STEP	2026-10-04T09:32:29.6211283Z [command]/usr/bin/git config --global --add safe.directory /home/runner/work/HOTS-03/HOTS-03
+make (2, 15, Cho|Chromie|D.Va|Deathwing|Deckard|Dehaka|Diablo|E.T.C.|Falstad|Fenix|Gall|Garrosh|G...	UNKNOWN STEP	2026-10-04T09:32:29.6314489Z Deleting the contents of '/home/runner/work/HOTS-03/HOTS-03'
+make (2, 15, Cho|Chromie|D.Va|Deathwing|Deckard|Dehaka|Diablo|E.T.C.|Falstad|Fenix|Gall|Garrosh|G...	UNKNOWN STEP	2026-10-04T09:32:29.6317055Z ##[group]Initializing the repository
+make (2, 15, Cho|Chromie|D.Va|Deathwing|Deckard|Dehaka|Diablo|E.T.C.|Falstad|Fenix|Gall|Garrosh|G...	UNKNOWN STEP	2026-10-04T09:32:29.6324350Z [command]/usr/bin/git init /home/runner/work/HOTS-03/HOTS-03
+make (2, 15, Cho|Chromie|D.Va|Deathwing|Deckard|Dehaka|Diablo|E.T.C.|Falstad|Fenix|Gall|Garrosh|G...	UNKNOWN STEP	2026-10-04T09:32:29.6444980Z hint: Using 'master' as the name for the initial branch. This default branch name
+make (2, 15, Cho|Chromie|D.Va|Deathwing|Deckard|Dehaka|Diablo|E.T.C.|Falstad|Fenix|Gall|Garrosh|G...	UNKNOWN STEP	2026-10-04T09:32:29.6447262Z hint: will change to "main" in Git 3.0. To configure the initial branch name
+make (2, 15, Cho|Chromie|D.Va|Deathwing|Deckard|Dehaka|Diablo|E.T.C.|Falstad|Fenix|Gall|Garrosh|G...	UNKNOWN STEP	2026-10-04T09:32:29.6449410Z hint: to use in all of your new repositories, which will suppress this warning,
+make (2, 15, Cho|Chromie|D.Va|Deathwing|Deckard|Dehaka|Diablo|E.T.C.|Falstad|Fenix|Gall|Garrosh|G...	UNKNOWN STEP	2026-10-04T09:32:29.6451222Z hint: call:
+make (2, 15, Cho|Chromie|D.Va|Deathwing|Deckard|Dehaka|Diablo|E.T.C.|Falstad|Fenix|Gall|Garrosh|G...	UNKNOWN STEP	2026-10-04T09:32:29.6452277Z hint:
+make (2, 15, Cho|Chromie|D.Va|Deathwing|Deckard|Dehaka|Diablo|E.T.C.|Falstad|Fenix|Gall|Garrosh|G...	UNKNOWN STEP	2026-10-04T09:32:29.6453663Z hint: 	git config --global init.defaultBranch <name>
+make (2, 15, Cho|Chromie|D.Va|Deathwing|Deckard|Dehaka|Diablo|E.T.C.|Falstad|Fenix|Gall|Garrosh|G...	UNKNOWN STEP	2026-10-04T09:32:29.6454984Z hint:
+make (2, 15, Cho|Chromie|D.Va|Deathwing|Deckard|Dehaka|Diablo|E.T.C.|Falstad|Fenix|Gall|Garrosh|G...	UNKNOWN STEP	2026-10-04T09:32:29.6456264Z hint: Names commonly chosen instead of 'master' are 'main', 'trunk' and
+make (2, 15, Cho|Chromie|D.Va|Deathwing|Deckard|Dehaka|Diablo|E.T.C.|Falstad|Fenix|Gall|Garrosh|G...	UNKNOWN STEP	2026-10-04T09:32:29.6458328Z hint: 'development'. The just-created branch can be renamed via this command:
+make (2, 15, Cho|Chromie|D.Va|Deathwing|Deckard|Dehaka|Diablo|E.T.C.|Falstad|Fenix|Gall|Garrosh|G...	UNKNOWN STEP	2026-10-04T09:32:29.6460030Z hint:
+make (2, 15, Cho|Chromie|D.Va|Deathwing|Deckard|Dehaka|Diablo|E.T.C.|Falstad|Fenix|Gall|Garrosh|G...	UNKNOWN STEP	2026-10-04T09:32:29.6461086Z hint: 	git branch -m <name>
+make (2, 15, Cho|Chromie|D.Va|Deathwing|Deckard|Dehaka|Diablo|E.T.C.|Falstad|Fenix|Gall|Garrosh|G...	UNKNOWN STEP	2026-10-04T09:32:29.6462133Z hint:
+make (2, 15, Cho|Chromie|D.Va|Deathwing|Deckard|Dehaka|Diablo|E.T.C.|Falstad|Fenix|Gall|Garrosh|G...	UNKNOWN STEP	2026-10-04T09:32:29.6463634Z hint: Disable this message with "git config set advice.defaultBranchName false"
+make (2, 15, Cho|Chromie|D.Va|Deathwing|Deckard|Dehaka|Diablo|E.T.C.|Falstad|Fenix|Gall|Garrosh|G...	UNKNOWN STEP	2026-10-04T09:32:29.6465676Z Initialized empty Git repository in /home/runner/work/HOTS-03/HOTS-03/.git/
+make (2, 15, Cho|Chromie|D.Va|Deathwing|Deckard|Dehaka|Diablo|E.T.C.|Falstad|Fenix|Gall|Garrosh|G...	UNKNOWN STEP	2026-10-04T09:32:29.6469113Z [command]/usr/bin/git remote add origin https://github.com/JimmyTheCool/HOTS-03
+make (2, 15, Cho|Chromie|D.Va|Deathwing|Deckard|Dehaka|Diablo|E.T.C.|Falstad|Fenix|Gall|Garrosh|G...	UNKNOWN STEP	2026-10-04T09:32:29.6516434Z ##[endgroup]
+make (2, 15, Cho|Chromie|D.Va|Deathwing|Deckard|Dehaka|Diablo|E.T.C.|Falstad|Fenix|Gall|Garrosh|G...	UNKNOWN STEP	2026-10-04T09:32:29.6518093Z ##[group]Disabling automatic garbage collection
+make (2, 15, Cho|Chromie|D.Va|Deathwing|Deckard|Dehaka|Diablo|E.T.C.|Falstad|Fenix|Gall|Garrosh|G...	UNKNOWN STEP	2026-10-04T09:32:29.6522130Z [command]/usr/bin/git config --local gc.auto 0
+make (2, 15, Cho|Chromie|D.Va|Deathwing|Deckard|Dehaka|Diablo|E.T.C.|Falstad|Fenix|Gall|Garrosh|G...	UNKNOWN STEP	2026-10-04T09:32:29.6563482Z ##[endgroup]
+make (2, 15, Cho|Chromie|D.Va|Deathwing|Deckard|Dehaka|Diablo|E.T.C.|Falstad|Fenix|Gall|Garrosh|G...	UNKNOWN STEP	2026-10-04T09:32:29.6565254Z ##[group]Setting up auth
+make (2, 15, Cho|Chromie|D.Va|Deathwing|Deckard|Dehaka|Diablo|E.T.C.|Falstad|Fenix|Gall|Garrosh|G...	UNKNOWN STEP	2026-10-04T09:32:29.6574600Z [command]/usr/bin/git config --local --name-only --get-regexp core\.sshCommand
+make (2, 15, Cho|Chromie|D.Va|Deathwing|Deckard|Dehaka|Diablo|E.T.C.|Falstad|Fenix|Gall|Garrosh|G...	UNKNOWN STEP	2026-10-04T09:32:29.6617807Z [command]/usr/bin/git submodule foreach --recursive sh -c "git config --local --name-only --get-regexp 'core\.sshCommand' && git config --local --unset-all 'core.sshCommand' || :"
+make (2, 15, Cho|Chromie|D.Va|Deathwing|Deckard|Dehaka|Diablo|E.T.C.|Falstad|Fenix|Gall|Garrosh|G...	UNKNOWN STEP	2026-10-04T09:32:29.7229093Z [command]/usr/bin/git config --local --name-only --get-regexp http\.https\:\/\/github\.com\/\.extraheader
+make (2, 15, Cho|Chromie|D.Va|Deathwing|Deckard|Dehaka|Diablo|E.T.C.|Falstad|Fenix|Gall|Garrosh|G...	UNKNOWN STEP	2026-10-04T09:32:29.7267514Z [command]/usr/bin/git submodule foreach --recursive sh -c "git config --local --name-only --get-regexp 'http\.https\:\/\/github\.com\/\.extraheader' && git config --local --unset-all 'http.https://github.com/.extraheader' || :"
+make (2, 15, Cho|Chromie|D.Va|Deathwing|Deckard|Dehaka|Diablo|E.T.C.|Falstad|Fenix|Gall|Garrosh|G...	UNKNOWN STEP	2026-10-04T09:32:29.7615292Z [command]/usr/bin/git config --local --name-only --get-regexp ^includeIf\.gitdir:
+make (2, 15, Cho|Chromie|D.Va|Deathwing|Deckard|Dehaka|Diablo|E.T.C.|Falstad|Fenix|Gall|Garrosh|G...	UNKNOWN STEP	2026-10-04T09:32:29.7638839Z [command]/usr/bin/git submodule foreach --recursive git config --local --show-origin --name-only --get-regexp remote.origin.url
+make (2, 15, Cho|Chromie|D.Va|Deathwing|Deckard|Dehaka|Diablo|E.T.C.|Falstad|Fenix|Gall|Garrosh|G...	UNKNOWN STEP	2026-10-04T09:32:29.7946067Z [command]/usr/bin/git config --local http.https://github.com/.extraheader AUTHORIZATION: basic ***
+make (2, 15, Cho|Chromie|D.Va|Deathwing|Deckard|Dehaka|Diablo|E.T.C.|Falstad|Fenix|Gall|Garrosh|G...	UNKNOWN STEP	2026-10-04T09:32:29.7994264Z ##[endgroup]
+make (2, 15, Cho|Chromie|D.Va|Deathwing|Deckard|Dehaka|Diablo|E.T.C.|Falstad|Fenix|Gall|Garrosh|G...	UNKNOWN STEP	2026-10-04T09:32:29.7996131Z ##[group]Fetching the repository
+make (2, 15, Cho|Chromie|D.Va|Deathwing|Deckard|Dehaka|Diablo|E.T.C.|Falstad|Fenix|Gall|Garrosh|G...	UNKNOWN STEP	2026-10-04T09:32:29.8007902Z [command]/usr/bin/git -c protocol.version=2 fetch --no-tags --prune --no-recurse-submodules --depth=1 origin +refs/heads/chatgpt-stl-builder*:refs/remotes/origin/chatgpt-stl-builder* +refs/tags/chatgpt-stl-builder*:refs/tags/chatgpt-stl-builder*
+make (2, 15, Cho|Chromie|D.Va|Deathwing|Deckard|Dehaka|Diablo|E.T.C.|Falstad|Fenix|Gall|Garrosh|G...	UNKNOWN STEP	2026-10-04T09:32:37.3015087Z From https://github.com/JimmyTheCool/HOTS-03
+make (2, 15, Cho|Chromie|D.Va|Deathwing|Deckard|Dehaka|Diablo|E.T.C.|Falstad|Fenix|Gall|Garrosh|G...	UNKNOWN STEP	2026-10-04T09:32:37.3017271Z  * [new branch]      chatgpt-stl-builder -> origin/chatgpt-stl-builder
+make (2, 15, Cho|Chromie|D.Va|Deathwing|Deckard|Dehaka|Diablo|E.T.C.|Falstad|Fenix|Gall|Garrosh|G...	UNKNOWN STEP	2026-10-04T09:32:37.3022745Z ##[endgroup]
+make (2, 15, Cho|Chromie|D.Va|Deathwing|Deckard|Dehaka|Diablo|E.T.C.|Falstad|Fenix|Gall|Garrosh|G...	UNKNOWN STEP	2026-10-04T09:32:37.3024665Z ##[group]Determining the checkout info
+make (2, 15, Cho|Chromie|D.Va|Deathwing|Deckard|Dehaka|Diablo|E.T.C.|Falstad|Fenix|Gall|Garrosh|G...	UNKNOWN STEP	2026-10-04T09:32:37.3040808Z [command]/usr/bin/git branch --list --remote origin/chatgpt-stl-builder
+make (2, 15, Cho|Chromie|D.Va|Deathwing|Deckard|Dehaka|Diablo|E.T.C.|Falstad|Fenix|Gall|Garrosh|G...	UNKNOWN STEP	2026-10-04T09:32:37.3065261Z   origin/chatgpt-stl-builder
+make (2, 15, Cho|Chromie|D.Va|Deathwing|Deckard|Dehaka|Diablo|E.T.C.|Falstad|Fenix|Gall|Garrosh|G...	UNKNOWN STEP	2026-10-04T09:32:37.3072705Z ##[endgroup]
+make (2, 15, Cho|Chromie|D.Va|Deathwing|Deckard|Dehaka|Diablo|E.T.C.|Falstad|Fenix|Gall|Garrosh|G...	UNKNOWN STEP	2026-10-04T09:32:37.3078208Z [command]/usr/bin/git sparse-checkout disable
+make (2, 15, Cho|Chromie|D.Va|Deathwing|Deckard|Dehaka|Diablo|E.T.C.|Falstad|Fenix|Gall|Garrosh|G...	UNKNOWN STEP	2026-10-04T09:32:37.3132636Z [command]/usr/bin/git config --local --unset-all extensions.worktreeConfig
+make (2, 15, Cho|Chromie|D.Va|Deathwing|Deckard|Dehaka|Diablo|E.T.C.|Falstad|Fenix|Gall|Garrosh|G...	UNKNOWN STEP	2026-10-04T09:32:37.3175866Z ##[group]Checking out the ref
+make (2, 15, Cho|Chromie|D.Va|Deathwing|Deckard|Dehaka|Diablo|E.T.C.|Falstad|Fenix|Gall|Garrosh|G...	UNKNOWN STEP	2026-10-04T09:32:37.3179781Z [command]/usr/bin/git checkout --progress --force -B chatgpt-stl-builder refs/remotes/origin/chatgpt-stl-builder
+make (2, 15, Cho|Chromie|D.Va|Deathwing|Deckard|Dehaka|Diablo|E.T.C.|Falstad|Fenix|Gall|Garrosh|G...	UNKNOWN STEP	2026-10-04T09:32:38.3681650Z Updating files:  36% (279/771)
+make (2, 15, Cho|Chromie|D.Va|Deathwing|Deckard|Dehaka|Diablo|E.T.C.|Falstad|Fenix|Gall|Garrosh|G...	UNKNOWN STEP	2026-10-04T09:32:38.4036025Z Updating files:  37% (286/771)
+make (2, 15, Cho|Chromie|D.Va|Deathwing|Deckard|Dehaka|Diablo|E.T.C.|Falstad|Fenix|Gall|Garrosh|G...	UNKNOWN STEP	2026-10-04T09:32:38.4298536Z Updating files:  38% (293/771)
+make (2, 15, Cho|Chromie|D.Va|Deathwing|Deckard|Dehaka|Diablo|E.T.C.|Falstad|Fenix|Gall|Garrosh|G...	UNKNOWN STEP	2026-10-04T09:32:38.4539688Z Updating files:  39% (301/771)
+make (2, 15, Cho|Chromie|D.Va|Deathwing|Deckard|Dehaka|Diablo|E.T.C.|Falstad|Fenix|Gall|Garrosh|G...	UNKNOWN STEP	2026-10-04T09:32:38.4679107Z Updating files:  40% (309/771)
+make (2, 15, Cho|Chromie|D.Va|Deathwing|Deckard|Dehaka|Diablo|E.T.C.|Falstad|Fenix|Gall|Garrosh|G...	UNKNOWN STEP	2026-10-04T09:32:38.5021069Z Updating files:  41% (317/771)
+make (2, 15, Cho|Chromie|D.Va|Deathwing|Deckard|Dehaka|Diablo|E.T.C.|Falstad|Fenix|Gall|Garrosh|G...	UNKNOWN STEP	2026-10-04T09:32:38.5204744Z Updating files:  42% (324/771)
+make (2, 15, Cho|Chromie|D.Va|Deathwing|Deckard|Dehaka|Diablo|E.T.C.|Falstad|Fenix|Gall|Garrosh|G...	UNKNOWN STEP	2026-10-04T09:32:38.5465596Z Updating files:  43% (332/771)
+make (2, 15, Cho|Chromie|D.Va|Deathwing|Deckard|Dehaka|Diablo|E.T.C.|Falstad|Fenix|Gall|Garrosh|G...	UNKNOWN STEP	2026-10-04T09:32:38.5839792Z Updating files:  44% (340/771)
+make (2, 15, Cho|Chromie|D.Va|Deathwing|Deckard|Dehaka|Diablo|E.T.C.|Falstad|Fenix|Gall|Garrosh|G...	UNKNOWN STEP	2026-10-04T09:32:38.6020251Z Updating files:  45% (347/771)
+make (2, 15, Cho|Chromie|D.Va|Deathwing|Deckard|Dehaka|Diablo|E.T.C.|Falstad|Fenix|Gall|Garrosh|G...	UNKNOWN STEP	2026-10-04T09:32:38.6222494Z Updating files:  46% (355/771)
+make (2, 15, Cho|Chromie|D.Va|Deathwing|Deckard|Dehaka|Diablo|E.T.C.|Falstad|Fenix|Gall|Garrosh|G...	UNKNOWN STEP	2026-10-04T09:32:38.6568539Z Updating files:  47% (363/771)
+make (2, 15, Cho|Chromie|D.Va|Deathwing|Deckard|Dehaka|Diablo|E.T.C.|Falstad|Fenix|Gall|Garrosh|G...	UNKNOWN STEP	2026-10-04T09:32:38.6786041Z Updating files:  48% (371/771)
+make (2, 15, Cho|Chromie|D.Va|Deathwing|Deckard|Dehaka|Diablo|E.T.C.|Falstad|Fenix|Gall|Garrosh|G...	UNKNOWN STEP	2026-10-04T09:32:38.7076605Z Updating files:  49% (378/771)
+make (2, 15, Cho|Chromie|D.Va|Deathwing|Deckard|Dehaka|Diablo|E.T.C.|Falstad|Fenix|Gall|Garrosh|G...	UNKNOWN STEP	2026-10-04T09:32:38.7305153Z Updating files:  50% (386/771)
+make (2, 15, Cho|Chromie|D.Va|Deathwing|Deckard|Dehaka|Diablo|E.T.C.|Falstad|Fenix|Gall|Garrosh|G...	UNKNOWN STEP	2026-10-04T09:32:38.7578797Z Updating files:  51% (394/771)
+make (2, 15, Cho|Chromie|D.Va|Deathwing|Deckard|Dehaka|Diablo|E.T.C.|Falstad|Fenix|Gall|Garrosh|G...	UNKNOWN STEP	2026-10-04T09:32:38.8051317Z Updating files:  52% (401/771)
+make (2, 15, Cho|Chromie|D.Va|Deathwing|Deckard|Dehaka|Diablo|E.T.C.|Falstad|Fenix|Gall|Garrosh|G...	UNKNOWN STEP	2026-10-04T09:32:38.8262125Z Updating files:  53% (409/771)
+make (2, 15, Cho|Chromie|D.Va|Deathwing|Deckard|Dehaka|Diablo|E.T.C.|Falstad|Fenix|Gall|Garrosh|G...	UNKNOWN STEP	2026-10-04T09:32:38.8513774Z Updating files:  54% (417/771)
+make (2, 15, Cho|Chromie|D.Va|Deathwing|Deckard|Dehaka|Diablo|E.T.C.|Falstad|Fenix|Gall|Garrosh|G...	UNKNOWN STEP	2026-10-04T09:32:38.8918687Z Updating files:  55% (425/771)
+make (2, 15, Cho|Chromie|D.Va|Deathwing|Deckard|Dehaka|Diablo|E.T.C.|Falstad|Fenix|Gall|Garrosh|G...	UNKNOWN STEP	2026-10-04T09:32:38.9220815Z Updating files:  56% (432/771)
+make (2, 15, Cho|Chromie|D.Va|Deathwing|Deckard|Dehaka|Diablo|E.T.C.|Falstad|Fenix|Gall|Garrosh|G...	UNKNOWN STEP	2026-10-04T09:32:38.9670169Z Updating files:  57% (440/771)
+make (2, 15, Cho|Chromie|D.Va|Deathwing|Deckard|Dehaka|Diablo|E.T.C.|Falstad|Fenix|Gall|Garrosh|G...	UNKNOWN STEP	2026-10-04T09:32:38.9842805Z Updating files:  58% (448/771)
+make (2, 15, Cho|Chromie|D.Va|Deathwing|Deckard|Dehaka|Diablo|E.T.C.|Falstad|Fenix|Gall|Garrosh|G...	UNKNOWN STEP	2026-10-04T09:32:39.0300507Z Updating files:  59% (455/771)
+make (2, 15, Cho|Chromie|D.Va|Deathwing|Deckard|Dehaka|Diablo|E.T.C.|Falstad|Fenix|Gall|Garrosh|G...	UNKNOWN STEP	2026-10-04T09:32:39.0445980Z Updating files:  60% (463/771)
+make (2, 15, Cho|Chromie|D.Va|Deathwing|Deckard|Dehaka|Diablo|E.T.C.|Falstad|Fenix|Gall|Garrosh|G...	UNKNOWN STEP	2026-10-04T09:32:39.0730400Z Updating files:  61% (471/771)
+make (2, 15, Cho|Chromie|D.Va|Deathwing|Deckard|Dehaka|Diablo|E.T.C.|Falstad|Fenix|Gall|Garrosh|G...	UNKNOWN STEP	2026-10-04T09:32:39.1054806Z Updating files:  62% (479/771)
+make (2, 15, Cho|Chromie|D.Va|Deathwing|Deckard|Dehaka|Diablo|E.T.C.|Falstad|Fenix|Gall|Garrosh|G...	UNKNOWN STEP	2026-10-04T09:32:39.1335317Z Updating files:  63% (486/771)
+make (2, 15, Cho|Chromie|D.Va|Deathwing|Deckard|Dehaka|Diablo|E.T.C.|Falstad|Fenix|Gall|Garrosh|G...	UNKNOWN STEP	2026-10-04T09:32:39.1722830Z Updating files:  64% (494/771)
+make (2, 15, Cho|Chromie|D.Va|Deathwing|Deckard|Dehaka|Diablo|E.T.C.|Falstad|Fenix|Gall|Garrosh|G...	UNKNOWN STEP	2026-10-04T09:32:39.2258192Z Updating files:  65% (502/771)
+make (2, 15, Cho|Chromie|D.Va|Deathwing|Deckard|Dehaka|Diablo|E.T.C.|Falstad|Fenix|Gall|Garrosh|G...	UNKNOWN STEP	2026-10-04T09:32:39.2594924Z Updating files:  66% (509/771)
+make (2, 15, Cho|Chromie|D.Va|Deathwing|Deckard|Dehaka|Diablo|E.T.C.|Falstad|Fenix|Gall|Garrosh|G...	UNKNOWN STEP	2026-10-04T09:32:39.2827921Z Updating files:  67% (517/771)
+make (2, 15, Cho|Chromie|D.Va|Deathwing|Deckard|Dehaka|Diablo|E.T.C.|Falstad|Fenix|Gall|Garrosh|G...	UNKNOWN STEP	2026-10-04T09:32:39.3131792Z Updating files:  68% (525/771)
+make (2, 15, Cho|Chromie|D.Va|Deathwing|Deckard|Dehaka|Diablo|E.T.C.|Falstad|Fenix|Gall|Garrosh|G...	UNKNOWN STEP	2026-10-04T09:32:39.3290031Z Updating files:  69% (532/771)
+make (2, 15, Cho|Chromie|D.Va|Deathwing|Deckard|Dehaka|Diablo|E.T.C.|Falstad|Fenix|Gall|Garrosh|G...	UNKNOWN STEP	2026-10-04T09:32:39.3657782Z Updating files:  69% (535/771)
+make (2, 15, Cho|Chromie|D.Va|Deathwing|Deckard|Dehaka|Diablo|E.T.C.|Falstad|Fenix|Gall|Garrosh|G...	UNKNOWN STEP	2026-10-04T09:32:39.3919775Z Updating files:  70% (540/771)
+make (2, 15, Cho|Chromie|D.Va|Deathwing|Deckard|Dehaka|Diablo|E.T.C.|Falstad|Fenix|Gall|Garrosh|G...	UNKNOWN STEP	2026-10-04T09:32:39.4466709Z Updating files:  71% (548/771)
+make (2, 15, Cho|Chromie|D.Va|Deathwing|Deckard|Dehaka|Diablo|E.T.C.|Falstad|Fenix|Gall|Garrosh|G...	UNKNOWN STEP	2026-10-04T09:32:39.4832864Z Updating files:  72% (556/771)
+make (2, 15, Cho|Chromie|D.Va|Deathwing|Deckard|Dehaka|Diablo|E.T.C.|Falstad|Fenix|Gall|Garrosh|G...	UNKNOWN STEP	2026-10-04T09:32:39.5197312Z Updating files:  73% (563/771)
+make (2, 15, Cho|Chromie|D.Va|Deathwing|Deckard|Dehaka|Diablo|E.T.C.|Falstad|Fenix|Gall|Garrosh|G...	UNKNOWN STEP	2026-10-04T09:32:39.5543524Z Updating files:  74% (571/771)
+make (2, 15, Cho|Chromie|D.Va|Deathwing|Deckard|Dehaka|Diablo|E.T.C.|Falstad|Fenix|Gall|Garrosh|G...	UNKNOWN STEP	2026-10-04T09:32:39.5696462Z Updating files:  75% (579/771)
+make (2, 15, Cho|Chromie|D.Va|Deathwing|Deckard|Dehaka|Diablo|E.T.C.|Falstad|Fenix|Gall|Garrosh|G...	UNKNOWN STEP	2026-10-04T09:32:39.6019685Z Updating files:  76% (586/771)
+make (2, 15, Cho|Chromie|D.Va|Deathwing|Deckard|Dehaka|Diablo|E.T.C.|Falstad|Fenix|Gall|Garrosh|G...	UNKNOWN STEP	2026-10-04T09:32:39.6191622Z Updating files:  77% (594/771)
+make (2, 15, Cho|Chromie|D.Va|Deathwing|Deckard|Dehaka|Diablo|E.T.C.|Falstad|Fenix|Gall|Garrosh|G...	UNKNOWN STEP	2026-10-04T09:32:39.6622594Z Updating files:  78% (602/771)
+make (2, 15, Cho|Chromie|D.Va|Deathwing|Deckard|Dehaka|Diablo|E.T.C.|Falstad|Fenix|Gall|Garrosh|G...	UNKNOWN STEP	2026-10-04T09:32:39.6772519Z Updating files:  79% (610/771)
+make (2, 15, Cho|Chromie|D.Va|Deathwing|Deckard|Dehaka|Diablo|E.T.C.|Falstad|Fenix|Gall|Garrosh|G...	UNKNOWN STEP	2026-10-04T09:32:39.6991051Z Updating files:  80% (617/771)
+make (2, 15, Cho|Chromie|D.Va|Deathwing|Deckard|Dehaka|Diablo|E.T.C.|Falstad|Fenix|Gall|Garrosh|G...	UNKNOWN STEP	2026-10-04T09:32:39.7484176Z Updating files:  81% (625/771)
+make (2, 15, Cho|Chromie|D.Va|Deathwing|Deckard|Dehaka|Diablo|E.T.C.|Falstad|Fenix|Gall|Garrosh|G...	UNKNOWN STEP	2026-10-04T09:32:39.7632281Z Updating files:  82% (633/771)
+make (2, 15, Cho|Chromie|D.Va|Deathwing|Deckard|Dehaka|Diablo|E.T.C.|Falstad|Fenix|Gall|Garrosh|G...	UNKNOWN STEP	2026-10-04T09:32:39.8082983Z Updating files:  83% (640/771)
+make (2, 15, Cho|Chromie|D.Va|Deathwing|Deckard|Dehaka|Diablo|E.T.C.|Falstad|Fenix|Gall|Garrosh|G...	UNKNOWN STEP	2026-10-04T09:32:39.8467549Z Updating files:  84% (648/771)
+make (2, 15, Cho|Chromie|D.Va|Deathwing|Deckard|Dehaka|Diablo|E.T.C.|Falstad|Fenix|Gall|Garrosh|G...	UNKNOWN STEP	2026-10-04T09:32:39.8709580Z Updating files:  85% (656/771)
+make (2, 15, Cho|Chromie|D.Va|Deathwing|Deckard|Dehaka|Diablo|E.T.C.|Falstad|Fenix|Gall|Garrosh|G...	UNKNOWN STEP	2026-10-04T09:32:39.8862442Z Updating files:  86% (664/771)
+make (2, 15, Cho|Chromie|D.Va|Deathwing|Deckard|Dehaka|Diablo|E.T.C.|Falstad|Fenix|Gall|Garrosh|G...	UNKNOWN STEP	2026-10-04T09:32:39.9395938Z Updating files:  87% (671/771)
+make (2, 15, Cho|Chromie|D.Va|Deathwing|Deckard|Dehaka|Diablo|E.T.C.|Falstad|Fenix|Gall|Garrosh|G...	UNKNOWN STEP	2026-10-04T09:32:39.9594590Z Updating files:  88% (679/771)
+make (2, 15, Cho|Chromie|D.Va|Deathwing|Deckard|Dehaka|Diablo|E.T.C.|Falstad|Fenix|Gall|Garrosh|G...	UNKNOWN STEP	2026-10-04T09:32:39.9915876Z Updating files:  89% (687/771)
+make (2, 15, Cho|Chromie|D.Va|Deathwing|Deckard|Dehaka|Diablo|E.T.C.|Falstad|Fenix|Gall|Garrosh|G...	UNKNOWN STEP	2026-10-04T09:32:40.0110903Z Updating files:  90% (694/771)
+make (2, 15, Cho|Chromie|D.Va|Deathwing|Deckard|Dehaka|Diablo|E.T.C.|Falstad|Fenix|Gall|Garrosh|G...	UNKNOWN STEP	2026-10-04T09:32:40.0288442Z Updating files:  91% (702/771)
+make (2, 15, Cho|Chromie|D.Va|Deathwing|Deckard|Dehaka|Diablo|E.T.C.|Falstad|Fenix|Gall|Garrosh|G...	UNKNOWN STEP	2026-10-04T09:32:40.0484808Z Updating files:  92% (710/771)
+make (2, 15, Cho|Chromie|D.Va|Deathwing|Deckard|Dehaka|Diablo|E.T.C.|Falstad|Fenix|Gall|Garrosh|G...	UNKNOWN STEP	2026-10-04T09:32:40.0727940Z Updating files:  93% (718/771)
+make (2, 15, Cho|Chromie|D.Va|Deathwing|Deckard|Dehaka|Diablo|E.T.C.|Falstad|Fenix|Gall|Garrosh|G...	UNKNOWN STEP	2026-10-04T09:32:40.0869033Z Updating files:  94% (725/771)
+make (2, 15, Cho|Chromie|D.Va|Deathwing|Deckard|Dehaka|Diablo|E.T.C.|Falstad|Fenix|Gall|Garrosh|G...	UNKNOWN STEP	2026-10-04T09:32:40.1058529Z Updating files:  95% (733/771)
+make (2, 15, Cho|Chromie|D.Va|Deathwing|Deckard|Dehaka|Diablo|E.T.C.|Falstad|Fenix|Gall|Garrosh|G...	UNKNOWN STEP	2026-10-04T09:32:40.1388305Z Updating files:  96% (741/771)
+make (2, 15, Cho|Chromie|D.Va|Deathwing|Deckard|Dehaka|Diablo|E.T.C.|Falstad|Fenix|Gall|Garrosh|G...	UNKNOWN STEP	2026-10-04T09:32:40.1542851Z Updating files:  97% (748/771)
+make (2, 15, Cho|Chromie|D.Va|Deathwing|Deckard|Dehaka|Diablo|E.T.C.|Falstad|Fenix|Gall|Garrosh|G...	UNKNOWN STEP	2026-10-04T09:32:40.1696597Z Updating files:  98% (756/771)
+make (2, 15, Cho|Chromie|D.Va|Deathwing|Deckard|Dehaka|Diablo|E.T.C.|Falstad|Fenix|Gall|Garrosh|G...	UNKNOWN STEP	2026-10-04T09:32:40.1770167Z Updating files:  99% (764/771)
+make (2, 15, Cho|Chromie|D.Va|Deathwing|Deckard|Dehaka|Diablo|E.T.C.|Falstad|Fenix|Gall|Garrosh|G...	UNKNOWN STEP	2026-10-04T09:32:40.1770548Z Updating files: 100% (771/771)
+make (2, 15, Cho|Chromie|D.Va|Deathwing|Deckard|Dehaka|Diablo|E.T.C.|Falstad|Fenix|Gall|Garrosh|G...	UNKNOWN STEP	2026-10-04T09:32:40.1770962Z Updating files: 100% (771/771), done.
+make (2, 15, Cho|Chromie|D.Va|Deathwing|Deckard|Dehaka|Diablo|E.T.C.|Falstad|Fenix|Gall|Garrosh|G...	UNKNOWN STEP	2026-10-04T09:32:40.1805681Z Switched to a new branch 'chatgpt-stl-builder'
+make (2, 15, Cho|Chromie|D.Va|Deathwing|Deckard|Dehaka|Diablo|E.T.C.|Falstad|Fenix|Gall|Garrosh|G...	UNKNOWN STEP	2026-10-04T09:32:40.1809010Z branch 'chatgpt-stl-builder' set up to track 'origin/chatgpt-stl-builder'.
+make (2, 15, Cho|Chromie|D.Va|Deathwing|Deckard|Dehaka|Diablo|E.T.C.|Falstad|Fenix|Gall|Garrosh|G...	UNKNOWN STEP	2026-10-04T09:32:40.1931428Z ##[endgroup]
+make (2, 15, Cho|Chromie|D.Va|Deathwing|Deckard|Dehaka|Diablo|E.T.C.|Falstad|Fenix|Gall|Garrosh|G...	UNKNOWN STEP	2026-10-04T09:32:40.1988013Z [command]/usr/bin/git log -1 --format=%H
+make (2, 15, Cho|Chromie|D.Va|Deathwing|Deckard|Dehaka|Diablo|E.T.C.|Falstad|Fenix|Gall|Garrosh|G...	UNKNOWN STEP	2026-10-04T09:32:40.2024118Z 559933ffbf6a9fc142e663ce49a8b3f2791a7b47
+make (2, 15, Cho|Chromie|D.Va|Deathwing|Deckard|Dehaka|Diablo|E.T.C.|Falstad|Fenix|Gall|Garrosh|G...	UNKNOWN STEP	2026-10-04T09:32:40.2265038Z ##[group]Run set -euo pipefail
+make (2, 15, Cho|Chromie|D.Va|Deathwing|Deckard|Dehaka|Diablo|E.T.C.|Falstad|Fenix|Gall|Garrosh|G...	UNKNOWN STEP	2026-10-04T09:32:40.2265452Z ^[[36;1mset -euo pipefail^[[0m
+make (2, 15, Cho|Chromie|D.Va|Deathwing|Deckard|Dehaka|Diablo|E.T.C.|Falstad|Fenix|Gall|Garrosh|G...	UNKNOWN STEP	2026-10-04T09:32:40.2265868Z ^[[36;1mcp tools/hots_stl/runtime_extracted/build_hots_stls.py "$RUNNER_TEMP/b.py"^[[0m
+make (2, 15, Cho|Chromie|D.Va|Deathwing|Deckard|Dehaka|Diablo|E.T.C.|Falstad|Fenix|Gall|Garrosh|G...	UNKNOWN STEP	2026-10-04T09:32:40.2266391Z ^[[36;1mpython tools/hots_stl/runtime_patch_v2.py "$RUNNER_TEMP/b.py"^[[0m
+make (2, 15, Cho|Chromie|D.Va|Deathwing|Deckard|Dehaka|Diablo|E.T.C.|Falstad|Fenix|Gall|Garrosh|G...	UNKNOWN STEP	2026-10-04T09:32:40.2266891Z ^[[36;1mpython ci/patch_builder_external_validation.py "$RUNNER_TEMP/b.py"^[[0m
+make (2, 15, Cho|Chromie|D.Va|Deathwing|Deckard|Dehaka|Diablo|E.T.C.|Falstad|Fenix|Gall|Garrosh|G...	UNKNOWN STEP	2026-10-04T09:32:40.2267320Z ^[[36;1mpython - "$RUNNER_TEMP/b.py" <<'PY'^[[0m
+make (2, 15, Cho|Chromie|D.Va|Deathwing|Deckard|Dehaka|Diablo|E.T.C.|Falstad|Fenix|Gall|Garrosh|G...	UNKNOWN STEP	2026-10-04T09:32:40.2267616Z ^[[36;1mfrom pathlib import Path^[[0m
+make (2, 15, Cho|Chromie|D.Va|Deathwing|Deckard|Dehaka|Diablo|E.T.C.|Falstad|Fenix|Gall|Garrosh|G...	UNKNOWN STEP	2026-10-04T09:32:40.2267865Z ^[[36;1mimport sys^[[0m
+make (2, 15, Cho|Chromie|D.Va|Deathwing|Deckard|Dehaka|Diablo|E.T.C.|Falstad|Fenix|Gall|Garrosh|G...	UNKNOWN STEP	2026-10-04T09:32:40.2268195Z ^[[36;1mp=Path(sys.argv[1]); s=p.read_text(); a='    "Whitemane": ("whitemane",),\n'^[[0m
+make (2, 15, Cho|Chromie|D.Va|Deathwing|Deckard|Dehaka|Diablo|E.T.C.|Falstad|Fenix|Gall|Garrosh|G...	UNKNOWN STEP	2026-10-04T09:32:40.2268684Z ^[[36;1mif a not in s: raise SystemExit('roster anchor missing')^[[0m
+make (2, 15, Cho|Chromie|D.Va|Deathwing|Deckard|Dehaka|Diablo|E.T.C.|Falstad|Fenix|Gall|Garrosh|G...	UNKNOWN STEP	2026-10-04T09:32:40.2269131Z ^[[36;1mp.write_text(s.replace(a,a+'    "Xal\'atath": ("xalatath",),\n',1))^[[0m
+make (2, 15, Cho|Chromie|D.Va|Deathwing|Deckard|Dehaka|Diablo|E.T.C.|Falstad|Fenix|Gall|Garrosh|G...	UNKNOWN STEP	2026-10-04T09:32:40.2269526Z ^[[36;1mPY^[[0m
+make (2, 15, Cho|Chromie|D.Va|Deathwing|Deckard|Dehaka|Diablo|E.T.C.|Falstad|Fenix|Gall|Garrosh|G...	UNKNOWN STEP	2026-10-04T09:32:40.2269772Z ^[[36;1msudo apt-get update -qq^[[0m
+make (2, 15, Cho|Chromie|D.Va|Deathwing|Deckard|Dehaka|Diablo|E.T.C.|Falstad|Fenix|Gall|Garrosh|G...	UNKNOWN STEP	2026-10-04T09:32:40.2270497Z ^[[36;1msudo apt-get install -y --no-install-recommends ca-certificates curl git xz-utils libx11-6 libxi6 libxrender1 libxfixes3 libxkbcommon0 libsm6 libice6 libgl1 libegl1^[[0m
+make (2, 15, Cho|Chromie|D.Va|Deathwing|Deckard|Dehaka|Diablo|E.T.C.|Falstad|Fenix|Gall|Garrosh|G...	UNKNOWN STEP	2026-10-04T09:32:40.2271510Z ^[[36;1mgit clone --depth 1 https://github.com/JimmyTheCool/HOTS-02.git "$RUNNER_TEMP/H2"^[[0m
+make (2, 15, Cho|Chromie|D.Va|Deathwing|Deckard|Dehaka|Diablo|E.T.C.|Falstad|Fenix|Gall|Garrosh|G...	UNKNOWN STEP	2026-10-04T09:32:40.2271947Z ^[[36;1mcd "$RUNNER_TEMP"^[[0m
+make (2, 15, Cho|Chromie|D.Va|Deathwing|Deckard|Dehaka|Diablo|E.T.C.|Falstad|Fenix|Gall|Garrosh|G...	UNKNOWN STEP	2026-10-04T09:32:40.2272478Z ^[[36;1mcurl -fL --retry 5 "https://download.blender.org/release/Blender3.6/blender-${BV}-linux-x64.tar.xz" -o b.tar.xz^[[0m
+make (2, 15, Cho|Chromie|D.Va|Deathwing|Deckard|Dehaka|Diablo|E.T.C.|Falstad|Fenix|Gall|Garrosh|G...	UNKNOWN STEP	2026-10-04T09:32:40.2273019Z ^[[36;1mtar -xf b.tar.xz^[[0m
+make (2, 15, Cho|Chromie|D.Va|Deathwing|Deckard|Dehaka|Diablo|E.T.C.|Falstad|Fenix|Gall|Garrosh|G...	UNKNOWN STEP	2026-10-04T09:32:40.2273696Z ^[[36;1mgit clone -q https://github.com/SC2Mapster/m3addon.git m3^[[0m
+make (2, 15, Cho|Chromie|D.Va|Deathwing|Deckard|Dehaka|Diablo|E.T.C.|Falstad|Fenix|Gall|Garrosh|G...	UNKNOWN STEP	2026-10-04T09:32:40.2274075Z ^[[36;1mgit -C m3 checkout -q "$M3"^[[0m
+make (2, 15, Cho|Chromie|D.Va|Deathwing|Deckard|Dehaka|Diablo|E.T.C.|Falstad|Fenix|Gall|Garrosh|G...	UNKNOWN STEP	2026-10-04T09:32:40.2274399Z ^[[36;1mmkdir -p "$HOME/.config/blender/3.6/scripts/addons"^[[0m
+make (2, 15, Cho|Chromie|D.Va|Deathwing|Deckard|Dehaka|Diablo|E.T.C.|Falstad|Fenix|Gall|Garrosh|G...	UNKNOWN STEP	2026-10-04T09:32:40.2274850Z ^[[36;1mln -s "$RUNNER_TEMP/m3" "$HOME/.config/blender/3.6/scripts/addons/m3addon"^[[0m
+make (2, 15, Cho|Chromie|D.Va|Deathwing|Deckard|Dehaka|Diablo|E.T.C.|Falstad|Fenix|Gall|Garrosh|G...	UNKNOWN STEP	2026-10-04T09:32:40.2275316Z ^[[36;1mO="$RUNNER_TEMP/o"; mkdir -p "$O/00_Reports"^[[0m
+make (2, 15, Cho|Chromie|D.Va|Deathwing|Deckard|Dehaka|Diablo|E.T.C.|Falstad|Fenix|Gall|Garrosh|G...	UNKNOWN STEP	2026-10-04T09:32:40.2276099Z ^[[36;1mIFS='|' read -ra A <<< 'Cho|Chromie|D.Va|Deathwing|Deckard|Dehaka|Diablo|E.T.C.|Falstad|Fenix|Gall|Garrosh|Gazlowe|Genji|Greymane'; X=(); for v in "${A[@]}"; do X+=(--only "$v"); done^[[0m
+make (2, 15, Cho|Chromie|D.Va|Deathwing|Deckard|Dehaka|Diablo|E.T.C.|Falstad|Fenix|Gall|Garrosh|G...	UNKNOWN STEP	2026-10-04T09:32:40.2277918Z ^[[36;1m"$RUNNER_TEMP/blender-${BV}-linux-x64/blender" --background --factory-startup --python "$RUNNER_TEMP/b.py" -- --source "$RUNNER_TEMP/H2" --source "$GITHUB_WORKSPACE" --output "$O" --target-height-mm 110 --base-height-mm 4 --base-margin-mm 4 --voxel-mm 0.55 --thin-part-mm 0.72 --max-triangles 450000 --skip-animation "${X[@]}" 2>&1 | tee "$O/00_Reports/build.log"^[[0m
+make (2, 15, Cho|Chromie|D.Va|Deathwing|Deckard|Dehaka|Diablo|E.T.C.|Falstad|Fenix|Gall|Garrosh|G...	UNKNOWN STEP	2026-10-04T09:32:40.2279428Z ^[[36;1mN=$(find "$O/02_Print_Ready_Watertight" -name '*.stl' -type f | wc -l); test "$N" -eq '15'^[[0m
+make (2, 15, Cho|Chromie|D.Va|Deathwing|Deckard|Dehaka|Diablo|E.T.C.|Falstad|Fenix|Gall|Garrosh|G...	UNKNOWN STEP	2026-10-04T09:32:40.2279966Z ^[[36;1mmkdir -p "$RUNNER_TEMP/chunk/STL" "$RUNNER_TEMP/chunk/Reports"^[[0m
+make (2, 15, Cho|Chromie|D.Va|Deathwing|Deckard|Dehaka|Diablo|E.T.C.|Falstad|Fenix|Gall|Garrosh|G...	UNKNOWN STEP	2026-10-04T09:32:40.2280430Z ^[[36;1mcp "$O"/02_Print_Ready_Watertight/*.stl "$RUNNER_TEMP/chunk/STL/"^[[0m
+make (2, 15, Cho|Chromie|D.Va|Deathwing|Deckard|Dehaka|Diablo|E.T.C.|Falstad|Fenix|Gall|Garrosh|G...	UNKNOWN STEP	2026-10-04T09:32:40.2280858Z ^[[36;1mcp "$O"/00_Reports/* "$RUNNER_TEMP/chunk/Reports/"^[[0m
+make (2, 15, Cho|Chromie|D.Va|Deathwing|Deckard|Dehaka|Diablo|E.T.C.|Falstad|Fenix|Gall|Garrosh|G...	UNKNOWN STEP	2026-10-04T09:32:40.2653763Z shell: /usr/bin/bash --noprofile --norc -e -o pipefail {0}
+make (2, 15, Cho|Chromie|D.Va|Deathwing|Deckard|Dehaka|Diablo|E.T.C.|Falstad|Fenix|Gall|Garrosh|G...	UNKNOWN STEP	2026-10-04T09:32:40.2654135Z env:
+make (2, 15, Cho|Chromie|D.Va|Deathwing|Deckard|Dehaka|Diablo|E.T.C.|Falstad|Fenix|Gall|Garrosh|G...	UNKNOWN STEP	2026-10-04T09:32:40.2654319Z   BV: 3.6.23
+make (2, 15, Cho|Chromie|D.Va|Deathwing|Deckard|Dehaka|Diablo|E.T.C.|Falstad|Fenix|Gall|Garrosh|G...	UNKNOWN STEP	2026-10-04T09:32:40.2654535Z   M3: 58935005c4465a219a740f6b740253533eda773f
+make (2, 15, Cho|Chromie|D.Va|Deathwing|Deckard|Dehaka|Diablo|E.T.C.|Falstad|Fenix|Gall|Garrosh|G...	UNKNOWN STEP	2026-10-04T09:32:40.2654811Z ##[endgroup]
+make (2, 15, Cho|Chromie|D.Va|Deathwing|Deckard|Dehaka|Diablo|E.T.C.|Falstad|Fenix|Gall|Garrosh|G...	UNKNOWN STEP	2026-10-04T09:32:40.3012950Z Patched /home/runner/work/_temp/b.py to HOTS STL Builder v2.1.0
+make (2, 15, Cho|Chromie|D.Va|Deathwing|Deckard|Dehaka|Diablo|E.T.C.|Falstad|Fenix|Gall|Garrosh|G...	UNKNOWN STEP	2026-10-04T09:32:40.3239760Z Patched builder to defer geometric watertightness to independent trimesh validation
+make (2, 15, Cho|Chromie|D.Va|Deathwing|Deckard|Dehaka|Diablo|E.T.C.|Falstad|Fenix|Gall|Garrosh|G...	UNKNOWN STEP	2026-10-04T09:32:48.9656772Z Reading package lists...
+make (2, 15, Cho|Chromie|D.Va|Deathwing|Deckard|Dehaka|Diablo|E.T.C.|Falstad|Fenix|Gall|Garrosh|G...	UNKNOWN STEP	2026-10-04T09:32:49.2243897Z Building dependency tree...
+make (2, 15, Cho|Chromie|D.Va|Deathwing|Deckard|Dehaka|Diablo|E.T.C.|Falstad|Fenix|Gall|Garrosh|G...	UNKNOWN STEP	2026-10-04T09:32:49.2255119Z Reading state information...
+make (2, 15, Cho|Chromie|D.Va|Deathwing|Deckard|Dehaka|Diablo|E.T.C.|Falstad|Fenix|Gall|Garrosh|G...	UNKNOWN STEP	2026-10-04T09:32:49.4136548Z libgl1 is already the newest version (1.4.0-1).
+make (2, 15, Cho|Chromie|D.Va|Deathwing|Deckard|Dehaka|Diablo|E.T.C.|Falstad|Fenix|Gall|Garrosh|G...	UNKNOWN STEP	2026-10-04T09:32:49.4137330Z libgl1 set to manually installed.
+make (2, 15, Cho|Chromie|D.Va|Deathwing|Deckard|Dehaka|Diablo|E.T.C.|Falstad|Fenix|Gall|Garrosh|G...	UNKNOWN STEP	2026-10-04T09:32:49.4138002Z libice6 is already the newest version (2:1.0.10-1build2).
+make (2, 15, Cho|Chromie|D.Va|Deathwing|Deckard|Dehaka|Diablo|E.T.C.|Falstad|Fenix|Gall|Garrosh|G...	UNKNOWN STEP	2026-10-04T09:32:49.4139747Z libice6 set to manually installed.
+make (2, 15, Cho|Chromie|D.Va|Deathwing|Deckard|Dehaka|Diablo|E.T.C.|Falstad|Fenix|Gall|Garrosh|G...	UNKNOWN STEP	2026-10-04T09:32:49.4140423Z libsm6 is already the newest version (2:1.2.3-1build2).
+make (2, 15, Cho|Chromie|D.Va|Deathwing|Deckard|Dehaka|Diablo|E.T.C.|Falstad|Fenix|Gall|Garrosh|G...	UNKNOWN STEP	2026-10-04T09:32:49.4141117Z libsm6 set to manually installed.
+make (2, 15, Cho|Chromie|D.Va|Deathwing|Deckard|Dehaka|Diablo|E.T.C.|Falstad|Fenix|Gall|Garrosh|G...	UNKNOWN STEP	2026-10-04T09:32:49.4141819Z libxfixes3 is already the newest version (1:6.0.0-1).
+make (2, 15, Cho|Chromie|D.Va|Deathwing|Deckard|Dehaka|Diablo|E.T.C.|Falstad|Fenix|Gall|Garrosh|G...	UNKNOWN STEP	2026-10-04T09:32:49.4142502Z libxfixes3 set to manually installed.
+make (2, 15, Cho|Chromie|D.Va|Deathwing|Deckard|Dehaka|Diablo|E.T.C.|Falstad|Fenix|Gall|Garrosh|G...	UNKNOWN STEP	2026-10-04T09:32:49.4143432Z libxi6 is already the newest version (2:1.8-1build1).
+make (2, 15, Cho|Chromie|D.Va|Deathwing|Deckard|Dehaka|Diablo|E.T.C.|Falstad|Fenix|Gall|Garrosh|G...	UNKNOWN STEP	2026-10-04T09:32:49.4144118Z libxi6 set to manually installed.
+make (2, 15, Cho|Chromie|D.Va|Deathwing|Deckard|Dehaka|Diablo|E.T.C.|Falstad|Fenix|Gall|Garrosh|G...	UNKNOWN STEP	2026-10-04T09:32:49.4144754Z libxkbcommon0 is already the newest version (1.4.0-1).
+make (2, 15, Cho|Chromie|D.Va|Deathwing|Deckard|Dehaka|Diablo|E.T.C.|Falstad|Fenix|Gall|Garrosh|G...	UNKNOWN STEP	2026-10-04T09:32:49.4145325Z libxkbcommon0 set to manually installed.
+make (2, 15, Cho|Chromie|D.Va|Deathwing|Deckard|Dehaka|Diablo|E.T.C.|Falstad|Fenix|Gall|Garrosh|G...	UNKNOWN STEP	2026-10-04T09:32:49.4145913Z libxrender1 is already the newest version (1:0.9.10-1build4).
+make (2, 15, Cho|Chromie|D.Va|Deathwing|Deckard|Dehaka|Diablo|E.T.C.|Falstad|Fenix|Gall|Garrosh|G...	UNKNOWN STEP	2026-10-04T09:32:49.4146525Z libxrender1 set to manually installed.
+make (2, 15, Cho|Chromie|D.Va|Deathwing|Deckard|Dehaka|Diablo|E.T.C.|Falstad|Fenix|Gall|Garrosh|G...	UNKNOWN STEP	2026-10-04T09:32:49.4147099Z ca-certificates is already the newest version (20260601~22.04.1).
+make (2, 15, Cho|Chromie|D.Va|Deathwing|Deckard|Dehaka|Diablo|E.T.C.|Falstad|Fenix|Gall|Garrosh|G...	UNKNOWN STEP	2026-10-04T09:32:49.4147547Z curl is already the newest version (7.81.0-1ubuntu1.29).
+make (2, 15, Cho|Chromie|D.Va|Deathwing|Deckard|Dehaka|Diablo|E.T.C.|Falstad|Fenix|Gall|Garrosh|G...	UNKNOWN STEP	2026-10-04T09:32:49.4147984Z libx11-6 is already the newest version (2:1.7.5-1ubuntu0.3).
+make (2, 15, Cho|Chromie|D.Va|Deathwing|Deckard|Dehaka|Diablo|E.T.C.|Falstad|Fenix|Gall|Garrosh|G...	UNKNOWN STEP	2026-10-04T09:32:49.4148354Z libx11-6 set to manually installed.
+make (2, 15, Cho|Chromie|D.Va|Deathwing|Deckard|Dehaka|Diablo|E.T.C.|Falstad|Fenix|Gall|Garrosh|G...	UNKNOWN STEP	2026-10-04T09:32:49.4148697Z xz-utils is already the newest version (5.2.5-2ubuntu1.1).
+make (2, 15, Cho|Chromie|D.Va|Deathwing|Deckard|Dehaka|Diablo|E.T.C.|Falstad|Fenix|Gall|Garrosh|G...	UNKNOWN STEP	2026-10-04T09:32:49.4149142Z git is already the newest version (1:2.55.0-0ppa1~ubuntu22.04.2).
+make (2, 15, Cho|Chromie|D.Va|Deathwing|Deckard|Dehaka|Diablo|E.T.C.|Falstad|Fenix|Gall|Garrosh|G...	UNKNOWN STEP	2026-10-04T09:32:49.4225914Z The following additional packages will be installed:
+make (2, 15, Cho|Chromie|D.Va|Deathwing|Deckard|Dehaka|Diablo|E.T.C.|Falstad|Fenix|Gall|Garrosh|G...	UNKNOWN STEP	2026-10-04T09:32:49.4226563Z   libegl-mesa0
+make (2, 15, Cho|Chromie|D.Va|Deathwing|Deckard|Dehaka|Diablo|E.T.C.|Falstad|Fenix|Gall|Garrosh|G...	UNKNOWN STEP	2026-10-04T09:32:49.4372207Z The following NEW packages will be installed:
+make (2, 15, Cho|Chromie|D.Va|Deathwing|Deckard|Dehaka|Diablo|E.T.C.|Falstad|Fenix|Gall|Garrosh|G...	UNKNOWN STEP	2026-10-04T09:32:49.4380371Z   libegl-mesa0 libegl1
+make (2, 15, Cho|Chromie|D.Va|Deathwing|Deckard|Dehaka|Diablo|E.T.C.|Falstad|Fenix|Gall|Garrosh|G...	UNKNOWN STEP	2026-10-04T09:32:49.4576841Z 0 upgraded, 2 newly installed, 0 to remove and 20 not upgraded.
+make (2, 15, Cho|Chromie|D.Va|Deathwing|Deckard|Dehaka|Diablo|E.T.C.|Falstad|Fenix|Gall|Garrosh|G...	UNKNOWN STEP	2026-10-04T09:32:49.4577507Z Need to get 147 kB of archives.
+make (2, 15, Cho|Chromie|D.Va|Deathwing|Deckard|Dehaka|Diablo|E.T.C.|Falstad|Fenix|Gall|Garrosh|G...	UNKNOWN STEP	2026-10-04T09:32:49.4578075Z After this operation, 484 kB of additional disk space will be used.
+make (2, 15, Cho|Chromie|D.Va|Deathwing|Deckard|Dehaka|Diablo|E.T.C.|Falstad|Fenix|Gall|Garrosh|G...	UNKNOWN STEP	2026-10-04T09:32:49.4578783Z Get:1 file:/etc/apt/apt-mirrors.txt Mirrorlist [144 B]
+make (2, 15, Cho|Chromie|D.Va|Deathwing|Deckard|Dehaka|Diablo|E.T.C.|Falstad|Fenix|Gall|Garrosh|G...	UNKNOWN STEP	2026-10-04T09:32:49.5445582Z Get:2 http://azure.archive.ubuntu.com/ubuntu jammy-updates/main amd64 libegl-mesa0 amd64 23.2.1-1ubuntu3.1~22.04.4 [118 kB]
+make (2, 15, Cho|Chromie|D.Va|Deathwing|Deckard|Dehaka|Diablo|E.T.C.|Falstad|Fenix|Gall|Garrosh|G...	UNKNOWN STEP	2026-10-04T09:32:49.6098984Z Get:3 http://azure.archive.ubuntu.com/ubuntu jammy/main amd64 libegl1 amd64 1.4.0-1 [28.6 kB]
+make (2, 15, Cho|Chromie|D.Va|Deathwing|Deckard|Dehaka|Diablo|E.T.C.|Falstad|Fenix|Gall|Garrosh|G...	UNKNOWN STEP	2026-10-04T09:32:49.9309588Z Fetched 147 kB in 0s (887 kB/s)
+make (2, 15, Cho|Chromie|D.Va|Deathwing|Deckard|Dehaka|Diablo|E.T.C.|Falstad|Fenix|Gall|Garrosh|G...	UNKNOWN STEP	2026-10-04T09:32:49.9604167Z Selecting previously unselected package libegl-mesa0:amd64.
+make (2, 15, Cho|Chromie|D.Va|Deathwing|Deckard|Dehaka|Diablo|E.T.C.|Falstad|Fenix|Gall|Garrosh|G...	UNKNOWN STEP	2026-10-04T09:32:49.9953064Z (Reading database ... 
+make (2, 15, Cho|Chromie|D.Va|Deathwing|Deckard|Dehaka|Diablo|E.T.C.|Falstad|Fenix|Gall|Garrosh|G...	UNKNOWN STEP	2026-10-04T09:32:49.9953657Z (Reading database ... 5%
+make (2, 15, Cho|Chromie|D.Va|Deathwing|Deckard|Dehaka|Diablo|E.T.C.|Falstad|Fenix|Gall|Garrosh|G...	UNKNOWN STEP	2026-10-04T09:32:49.9953916Z (Reading database ... 10%
+make (2, 15, Cho|Chromie|D.Va|Deathwing|Deckard|Dehaka|Diablo|E.T.C.|Falstad|Fenix|Gall|Garrosh|G...	UNKNOWN STEP	2026-10-04T09:32:49.9954156Z (Reading database ... 15%
+make (2, 15, Cho|Chromie|D.Va|Deathwing|Deckard|Dehaka|Diablo|E.T.C.|Falstad|Fenix|Gall|Garrosh|G...	UNKNOWN STEP	2026-10-04T09:32:49.9954392Z (Reading database ... 20%
+make (2, 15, Cho|Chromie|D.Va|Deathwing|Deckard|Dehaka|Diablo|E.T.C.|Falstad|Fenix|Gall|Garrosh|G...	UNKNOWN STEP	2026-10-04T09:32:49.9954619Z (Reading database ... 25%
+make (2, 15, Cho|Chromie|D.Va|Deathwing|Deckard|Dehaka|Diablo|E.T.C.|Falstad|Fenix|Gall|Garrosh|G...	UNKNOWN STEP	2026-10-04T09:32:49.9955041Z (Reading database ... 30%
+make (2, 15, Cho|Chromie|D.Va|Deathwing|Deckard|Dehaka|Diablo|E.T.C.|Falstad|Fenix|Gall|Garrosh|G...	UNKNOWN STEP	2026-10-04T09:32:49.9955455Z (Reading database ... 35%
+make (2, 15, Cho|Chromie|D.Va|Deathwing|Deckard|Dehaka|Diablo|E.T.C.|Falstad|Fenix|Gall|Garrosh|G...	UNKNOWN STEP	2026-10-04T09:32:49.9955844Z (Reading database ... 40%
+make (2, 15, Cho|Chromie|D.Va|Deathwing|Deckard|Dehaka|Diablo|E.T.C.|Falstad|Fenix|Gall|Garrosh|G...	UNKNOWN STEP	2026-10-04T09:32:49.9956584Z (Reading database ... 45%
+make (2, 15, Cho|Chromie|D.Va|Deathwing|Deckard|Dehaka|Diablo|E.T.C.|Falstad|Fenix|Gall|Garrosh|G...	UNKNOWN STEP	2026-10-04T09:32:49.9956973Z (Reading database ... 50%
+make (2, 15, Cho|Chromie|D.Va|Deathwing|Deckard|Dehaka|Diablo|E.T.C.|Falstad|Fenix|Gall|Garrosh|G...	UNKNOWN STEP	2026-10-04T09:32:50.0835839Z (Reading database ... 55%
+make (2, 15, Cho|Chromie|D.Va|Deathwing|Deckard|Dehaka|Diablo|E.T.C.|Falstad|Fenix|Gall|Garrosh|G...	UNKNOWN STEP	2026-10-04T09:32:50.2895429Z (Reading database ... 60%
+make (2, 15, Cho|Chromie|D.Va|Deathwing|Deckard|Dehaka|Diablo|E.T.C.|Falstad|Fenix|Gall|Garrosh|G...	UNKNOWN STEP	2026-10-04T09:32:50.4801252Z (Reading database ... 65%
+make (2, 15, Cho|Chromie|D.Va|Deathwing|Deckard|Dehaka|Diablo|E.T.C.|Falstad|Fenix|Gall|Garrosh|G...	UNKNOWN STEP	2026-10-04T09:32:50.7064796Z (Reading database ... 70%
+make (2, 15, Cho|Chromie|D.Va|Deathwing|Deckard|Dehaka|Diablo|E.T.C.|Falstad|Fenix|Gall|Garrosh|G...	UNKNOWN STEP	2026-10-04T09:32:50.8884995Z (Reading database ... 75%
+make (2, 15, Cho|Chromie|D.Va|Deathwing|Deckard|Dehaka|Diablo|E.T.C.|Falstad|Fenix|Gall|Garrosh|G...	UNKNOWN STEP	2026-10-04T09:32:51.0801754Z (Reading database ... 80%
+make (2, 15, Cho|Chromie|D.Va|Deathwing|Deckard|Dehaka|Diablo|E.T.C.|Falstad|Fenix|Gall|Garrosh|G...	UNKNOWN STEP	2026-10-04T09:32:51.3056907Z (Reading database ... 85%
+make (2, 15, Cho|Chromie|D.Va|Deathwing|Deckard|Dehaka|Diablo|E.T.C.|Falstad|Fenix|Gall|Garrosh|G...	UNKNOWN STEP	2026-10-04T09:32:51.5399407Z (Reading database ... 90%
+make (2, 15, Cho|Chromie|D.Va|Deathwing|Deckard|Dehaka|Diablo|E.T.C.|Falstad|Fenix|Gall|Garrosh|G...	UNKNOWN STEP	2026-10-04T09:32:51.7375046Z (Reading database ... 95%
+make (2, 15, Cho|Chromie|D.Va|Deathwing|Deckard|Dehaka|Diablo|E.T.C.|Falstad|Fenix|Gall|Garrosh|G...	UNKNOWN STEP	2026-10-04T09:32:51.7375501Z (Reading database ... 100%
+make (2, 15, Cho|Chromie|D.Va|Deathwing|Deckard|Dehaka|Diablo|E.T.C.|Falstad|Fenix|Gall|Garrosh|G...	UNKNOWN STEP	2026-10-04T09:32:51.7376049Z (Reading database ... 260411 files and directories currently installed.)
+make (2, 15, Cho|Chromie|D.Va|Deathwing|Deckard|Dehaka|Diablo|E.T.C.|Falstad|Fenix|Gall|Garrosh|G...	UNKNOWN STEP	2026-10-04T09:32:51.7428194Z Preparing to unpack .../libegl-mesa0_23.2.1-1ubuntu3.1~22.04.4_amd64.deb ...
+make (2, 15, Cho|Chromie|D.Va|Deathwing|Deckard|Dehaka|Diablo|E.T.C.|Falstad|Fenix|Gall|Garrosh|G...	UNKNOWN STEP	2026-10-04T09:32:51.7470002Z Unpacking libegl-mesa0:amd64 (23.2.1-1ubuntu3.1~22.04.4) ...
+make (2, 15, Cho|Chromie|D.Va|Deathwing|Deckard|Dehaka|Diablo|E.T.C.|Falstad|Fenix|Gall|Garrosh|G...	UNKNOWN STEP	2026-10-04T09:32:51.7757453Z Selecting previously unselected package libegl1:amd64.
+make (2, 15, Cho|Chromie|D.Va|Deathwing|Deckard|Dehaka|Diablo|E.T.C.|Falstad|Fenix|Gall|Garrosh|G...	UNKNOWN STEP	2026-10-04T09:32:51.7957129Z Preparing to unpack .../libegl1_1.4.0-1_amd64.deb ...
+make (2, 15, Cho|Chromie|D.Va|Deathwing|Deckard|Dehaka|Diablo|E.T.C.|Falstad|Fenix|Gall|Garrosh|G...	UNKNOWN STEP	2026-10-04T09:32:51.7966394Z Unpacking libegl1:amd64 (1.4.0-1) ...
+make (2, 15, Cho|Chromie|D.Va|Deathwing|Deckard|Dehaka|Diablo|E.T.C.|Falstad|Fenix|Gall|Garrosh|G...	UNKNOWN STEP	2026-10-04T09:32:51.8469505Z Setting up libegl-mesa0:amd64 (23.2.1-1ubuntu3.1~22.04.4) ...
+make (2, 15, Cho|Chromie|D.Va|Deathwing|Deckard|Dehaka|Diablo|E.T.C.|Falstad|Fenix|Gall|Garrosh|G...	UNKNOWN STEP	2026-10-04T09:32:51.8491321Z Setting up libegl1:amd64 (1.4.0-1) ...
+make (2, 15, Cho|Chromie|D.Va|Deathwing|Deckard|Dehaka|Diablo|E.T.C.|Falstad|Fenix|Gall|Garrosh|G...	UNKNOWN STEP	2026-10-04T09:32:51.8527439Z Processing triggers for libc-bin (2.35-0ubuntu3.15) ...
+make (2, 15, Cho|Chromie|D.Va|Deathwing|Deckard|Dehaka|Diablo|E.T.C.|Falstad|Fenix|Gall|Garrosh|G...	UNKNOWN STEP	2026-10-04T09:32:52.5716990Z 
+make (2, 15, Cho|Chromie|D.Va|Deathwing|Deckard|Dehaka|Diablo|E.T.C.|Falstad|Fenix|Gall|Garrosh|G...	UNKNOWN STEP	2026-10-04T09:32:52.5717571Z Running kernel seems to be up-to-date.
+make (2, 15, Cho|Chromie|D.Va|Deathwing|Deckard|Dehaka|Diablo|E.T.C.|Falstad|Fenix|Gall|Garrosh|G...	UNKNOWN STEP	2026-10-04T09:32:52.5718058Z 
+make (2, 15, Cho|Chromie|D.Va|Deathwing|Deckard|Dehaka|Diablo|E.T.C.|Falstad|Fenix|Gall|Garrosh|G...	UNKNOWN STEP	2026-10-04T09:32:52.5718278Z No services need to be restarted.
+make (2, 15, Cho|Chromie|D.Va|Deathwing|Deckard|Dehaka|Diablo|E.T.C.|Falstad|Fenix|Gall|Garrosh|G...	UNKNOWN STEP	2026-10-04T09:32:52.5718659Z 
+make (2, 15, Cho|Chromie|D.Va|Deathwing|Deckard|Dehaka|Diablo|E.T.C.|Falstad|Fenix|Gall|Garrosh|G...	UNKNOWN STEP	2026-10-04T09:32:52.5718866Z No containers need to be restarted.
+make (2, 15, Cho|Chromie|D.Va|Deathwing|Deckard|Dehaka|Diablo|E.T.C.|Falstad|Fenix|Gall|Garrosh|G...	UNKNOWN STEP	2026-10-04T09:32:52.5719253Z 
+make (2, 15, Cho|Chromie|D.Va|Deathwing|Deckard|Dehaka|Diablo|E.T.C.|Falstad|Fenix|Gall|Garrosh|G...	UNKNOWN STEP	2026-10-04T09:32:52.5719528Z No user sessions are running outdated binaries.
+make (2, 15, Cho|Chromie|D.Va|Deathwing|Deckard|Dehaka|Diablo|E.T.C.|Falstad|Fenix|Gall|Garrosh|G...	UNKNOWN STEP	2026-10-04T09:32:52.5719990Z 
+make (2, 15, Cho|Chromie|D.Va|Deathwing|Deckard|Dehaka|Diablo|E.T.C.|Falstad|Fenix|Gall|Garrosh|G...	UNKNOWN STEP	2026-10-04T09:32:52.5720387Z No VM guests are running outdated hypervisor (qemu) binaries on this host.
+make (2, 15, Cho|Chromie|D.Va|Deathwing|Deckard|Dehaka|Diablo|E.T.C.|Falstad|Fenix|Gall|Garrosh|G...	UNKNOWN STEP	2026-10-04T09:32:54.3418205Z Cloning into '/home/runner/work/_temp/H2'...
+make (2, 15, Cho|Chromie|D.Va|Deathwing|Deckard|Dehaka|Diablo|E.T.C.|Falstad|Fenix|Gall|Garrosh|G...	UNKNOWN STEP	2026-10-04T09:33:01.1741782Z Updating files:  46% (276/600)
+make (2, 15, Cho|Chromie|D.Va|Deathwing|Deckard|Dehaka|Diablo|E.T.C.|Falstad|Fenix|Gall|Garrosh|G...	UNKNOWN STEP	2026-10-04T09:33:01.1992153Z Updating files:  47% (282/600)
+make (2, 15, Cho|Chromie|D.Va|Deathwing|Deckard|Dehaka|Diablo|E.T.C.|Falstad|Fenix|Gall|Garrosh|G...	UNKNOWN STEP	2026-10-04T09:33:01.2109771Z Updating files:  48% (288/600)
+make (2, 15, Cho|Chromie|D.Va|Deathwing|Deckard|Dehaka|Diablo|E.T.C.|Falstad|Fenix|Gall|Garrosh|G...	UNKNOWN STEP	2026-10-04T09:33:01.2310991Z Updating files:  49% (294/600)
+make (2, 15, Cho|Chromie|D.Va|Deathwing|Deckard|Dehaka|Diablo|E.T.C.|Falstad|Fenix|Gall|Garrosh|G...	UNKNOWN STEP	2026-10-04T09:33:01.2463224Z Updating files:  50% (300/600)
+make (2, 15, Cho|Chromie|D.Va|Deathwing|Deckard|Dehaka|Diablo|E.T.C.|Falstad|Fenix|Gall|Garrosh|G...	UNKNOWN STEP	2026-10-04T09:33:01.2588732Z Updating files:  51% (306/600)
+make (2, 15, Cho|Chromie|D.Va|Deathwing|Deckard|Dehaka|Diablo|E.T.C.|Falstad|Fenix|Gall|Garrosh|G...	UNKNOWN STEP	2026-10-04T09:33:01.2730553Z Updating files:  52% (312/600)
+make (2, 15, Cho|Chromie|D.Va|Deathwing|Deckard|Dehaka|Diablo|E.T.C.|Falstad|Fenix|Gall|Garrosh|G...	UNKNOWN STEP	2026-10-04T09:33:01.3057290Z Updating files:  53% (318/600)
+make (2, 15, Cho|Chromie|D.Va|Deathwing|Deckard|Dehaka|Diablo|E.T.C.|Falstad|Fenix|Gall|Garrosh|G...	UNKNOWN STEP	2026-10-04T09:33:01.3276014Z Updating files:  54% (324/600)
+make (2, 15, Cho|Chromie|D.Va|Deathwing|Deckard|Dehaka|Diablo|E.T.C.|Falstad|Fenix|Gall|Garrosh|G...	UNKNOWN STEP	2026-10-04T09:33:01.3544982Z Updating files:  55% (330/600)
+make (2, 15, Cho|Chromie|D.Va|Deathwing|Deckard|Dehaka|Diablo|E.T.C.|Falstad|Fenix|Gall|Garrosh|G...	UNKNOWN STEP	2026-10-04T09:33:01.3795680Z Updating files:  56% (336/600)
+make (2, 15, Cho|Chromie|D.Va|Deathwing|Deckard|Dehaka|Diablo|E.T.C.|Falstad|Fenix|Gall|Garrosh|G...	UNKNOWN STEP	2026-10-04T09:33:01.4034355Z Updating files:  57% (342/600)
+make (2, 15, Cho|Chromie|D.Va|Deathwing|Deckard|Dehaka|Diablo|E.T.C.|Falstad|Fenix|Gall|Garrosh|G...	UNKNOWN STEP	2026-10-04T09:33:01.4436337Z Updating files:  58% (348/600)
+make (2, 15, Cho|Chromie|D.Va|Deathwing|Deckard|Dehaka|Diablo|E.T.C.|Falstad|Fenix|Gall|Garrosh|G...	UNKNOWN STEP	2026-10-04T09:33:01.4656032Z Updating files:  59% (354/600)
+make (2, 15, Cho|Chromie|D.Va|Deathwing|Deckard|Dehaka|Diablo|E.T.C.|Falstad|Fenix|Gall|Garrosh|G...	UNKNOWN STEP	2026-10-04T09:33:01.4774765Z Updating files:  60% (360/600)
+make (2, 15, Cho|Chromie|D.Va|Deathwing|Deckard|Dehaka|Diablo|E.T.C.|Falstad|Fenix|Gall|Garrosh|G...	UNKNOWN STEP	2026-10-04T09:33:01.5163645Z Updating files:  61% (366/600)
+make (2, 15, Cho|Chromie|D.Va|Deathwing|Deckard|Dehaka|Diablo|E.T.C.|Falstad|Fenix|Gall|Garrosh|G...	UNKNOWN STEP	2026-10-04T09:33:01.5308111Z Updating files:  62% (372/600)
+make (2, 15, Cho|Chromie|D.Va|Deathwing|Deckard|Dehaka|Diablo|E.T.C.|Falstad|Fenix|Gall|Garrosh|G...	UNKNOWN STEP	2026-10-04T09:33:01.5460295Z Updating files:  63% (378/600)
+make (2, 15, Cho|Chromie|D.Va|Deathwing|Deckard|Dehaka|Diablo|E.T.C.|Falstad|Fenix|Gall|Garrosh|G...	UNKNOWN STEP	2026-10-04T09:33:01.6025866Z Updating files:  64% (384/600)
+make (2, 15, Cho|Chromie|D.Va|Deathwing|Deckard|Dehaka|Diablo|E.T.C.|Falstad|Fenix|Gall|Garrosh|G...	UNKNOWN STEP	2026-10-04T09:33:01.6317044Z Updating files:  65% (390/600)
+make (2, 15, Cho|Chromie|D.Va|Deathwing|Deckard|Dehaka|Diablo|E.T.C.|Falstad|Fenix|Gall|Garrosh|G...	UNKNOWN STEP	2026-10-04T09:33:01.6616402Z Updating files:  66% (396/600)
+make (2, 15, Cho|Chromie|D.Va|Deathwing|Deckard|Dehaka|Diablo|E.T.C.|Falstad|Fenix|Gall|Garrosh|G...	UNKNOWN STEP	2026-10-04T09:33:01.6753205Z Updating files:  67% (402/600)
+make (2, 15, Cho|Chromie|D.Va|Deathwing|Deckard|Dehaka|Diablo|E.T.C.|Falstad|Fenix|Gall|Garrosh|G...	UNKNOWN STEP	2026-10-04T09:33:01.6829600Z Updating files:  68% (408/600)
+make (2, 15, Cho|Chromie|D.Va|Deathwing|Deckard|Dehaka|Diablo|E.T.C.|Falstad|Fenix|Gall|Garrosh|G...	UNKNOWN STEP	2026-10-04T09:33:01.7047779Z Updating files:  69% (414/600)
+make (2, 15, Cho|Chromie|D.Va|Deathwing|Deckard|Dehaka|Diablo|E.T.C.|Falstad|Fenix|Gall|Garrosh|G...	UNKNOWN STEP	2026-10-04T09:33:01.7168425Z Updating files:  70% (420/600)
+make (2, 15, Cho|Chromie|D.Va|Deathwing|Deckard|Dehaka|Diablo|E.T.C.|Falstad|Fenix|Gall|Garrosh|G...	UNKNOWN STEP	2026-10-04T09:33:01.7372819Z Updating files:  71% (426/600)
+make (2, 15, Cho|Chromie|D.Va|Deathwing|Deckard|Dehaka|Diablo|E.T.C.|Falstad|Fenix|Gall|Garrosh|G...	UNKNOWN STEP	2026-10-04T09:33:01.7527094Z Updating files:  72% (432/600)
+make (2, 15, Cho|Chromie|D.Va|Deathwing|Deckard|Dehaka|Diablo|E.T.C.|Falstad|Fenix|Gall|Garrosh|G...	UNKNOWN STEP	2026-10-04T09:33:01.7791373Z Updating files:  73% (438/600)
+make (2, 15, Cho|Chromie|D.Va|Deathwing|Deckard|Dehaka|Diablo|E.T.C.|Falstad|Fenix|Gall|Garrosh|G...	UNKNOWN STEP	2026-10-04T09:33:01.8075092Z Updating files:  74% (444/600)
+make (2, 15, Cho|Chromie|D.Va|Deathwing|Deckard|Dehaka|Diablo|E.T.C.|Falstad|Fenix|Gall|Garrosh|G...	UNKNOWN STEP	2026-10-04T09:33:01.8460936Z Updating files:  75% (450/600)
+make (2, 15, Cho|Chromie|D.Va|Deathwing|Deckard|Dehaka|Diablo|E.T.C.|Falstad|Fenix|Gall|Garrosh|G...	UNKNOWN STEP	2026-10-04T09:33:01.8617211Z Updating files:  76% (456/600)
+make (2, 15, Cho|Chromie|D.Va|Deathwing|Deckard|Dehaka|Diablo|E.T.C.|Falstad|Fenix|Gall|Garrosh|G...	UNKNOWN STEP	2026-10-04T09:33:01.8741955Z Updating files:  77% (462/600)
+make (2, 15, Cho|Chromie|D.Va|Deathwing|Deckard|Dehaka|Diablo|E.T.C.|Falstad|Fenix|Gall|Garrosh|G...	UNKNOWN STEP	2026-10-04T09:33:01.9001283Z Updating files:  78% (468/600)
+make (2, 15, Cho|Chromie|D.Va|Deathwing|Deckard|Dehaka|Diablo|E.T.C.|Falstad|Fenix|Gall|Garrosh|G...	UNKNOWN STEP	2026-10-04T09:33:01.9195360Z Updating files:  79% (474/600)
+make (2, 15, Cho|Chromie|D.Va|Deathwing|Deckard|Dehaka|Diablo|E.T.C.|Falstad|Fenix|Gall|Garrosh|G...	UNKNOWN STEP	2026-10-04T09:33:01.9458977Z Updating files:  80% (480/600)
+make (2, 15, Cho|Chromie|D.Va|Deathwing|Deckard|Dehaka|Diablo|E.T.C.|Falstad|Fenix|Gall|Garrosh|G...	UNKNOWN STEP	2026-10-04T09:33:01.9773070Z Updating files:  81% (486/600)
+make (2, 15, Cho|Chromie|D.Va|Deathwing|Deckard|Dehaka|Diablo|E.T.C.|Falstad|Fenix|Gall|Garrosh|G...	UNKNOWN STEP	2026-10-04T09:33:01.9938607Z Updating files:  82% (492/600)
+make (2, 15, Cho|Chromie|D.Va|Deathwing|Deckard|Dehaka|Diablo|E.T.C.|Falstad|Fenix|Gall|Garrosh|G...	UNKNOWN STEP	2026-10-04T09:33:02.0256534Z Updating files:  83% (498/600)
+make (2, 15, Cho|Chromie|D.Va|Deathwing|Deckard|Dehaka|Diablo|E.T.C.|Falstad|Fenix|Gall|Garrosh|G...	UNKNOWN STEP	2026-10-04T09:33:02.0508371Z Updating files:  84% (504/600)
+make (2, 15, Cho|Chromie|D.Va|Deathwing|Deckard|Dehaka|Diablo|E.T.C.|Falstad|Fenix|Gall|Garrosh|G...	UNKNOWN STEP	2026-10-04T09:33:02.0615836Z Updating files:  85% (510/600)
+make (2, 15, Cho|Chromie|D.Va|Deathwing|Deckard|Dehaka|Diablo|E.T.C.|Falstad|Fenix|Gall|Garrosh|G...	UNKNOWN STEP	2026-10-04T09:33:02.0816649Z Updating files:  86% (516/600)
+make (2, 15, Cho|Chromie|D.Va|Deathwing|Deckard|Dehaka|Diablo|E.T.C.|Falstad|Fenix|Gall|Garrosh|G...	UNKNOWN STEP	2026-10-04T09:33:02.1099084Z Updating files:  87% (522/600)
+make (2, 15, Cho|Chromie|D.Va|Deathwing|Deckard|Dehaka|Diablo|E.T.C.|Falstad|Fenix|Gall|Garrosh|G...	UNKNOWN STEP	2026-10-04T09:33:02.1363047Z Updating files:  88% (528/600)
+make (2, 15, Cho|Chromie|D.Va|Deathwing|Deckard|Dehaka|Diablo|E.T.C.|Falstad|Fenix|Gall|Garrosh|G...	UNKNOWN STEP	2026-10-04T09:33:02.1620189Z Updating files:  89% (534/600)
+make (2, 15, Cho|Chromie|D.Va|Deathwing|Deckard|Dehaka|Diablo|E.T.C.|Falstad|Fenix|Gall|Garrosh|G...	UNKNOWN STEP	2026-10-04T09:33:02.1643041Z Updating files:  89% (539/600)
+make (2, 15, Cho|Chromie|D.Va|Deathwing|Deckard|Dehaka|Diablo|E.T.C.|Falstad|Fenix|Gall|Garrosh|G...	UNKNOWN STEP	2026-10-04T09:33:02.1861940Z Updating files:  90% (540/600)
+make (2, 15, Cho|Chromie|D.Va|Deathwing|Deckard|Dehaka|Diablo|E.T.C.|Falstad|Fenix|Gall|Garrosh|G...	UNKNOWN STEP	2026-10-04T09:33:02.2101610Z Updating files:  91% (546/600)
+make (2, 15, Cho|Chromie|D.Va|Deathwing|Deckard|Dehaka|Diablo|E.T.C.|Falstad|Fenix|Gall|Garrosh|G...	UNKNOWN STEP	2026-10-04T09:33:02.2884971Z Updating files:  92% (552/600)
+make (2, 15, Cho|Chromie|D.Va|Deathwing|Deckard|Dehaka|Diablo|E.T.C.|Falstad|Fenix|Gall|Garrosh|G...	UNKNOWN STEP	2026-10-04T09:33:02.3192432Z Updating files:  93% (558/600)
+make (2, 15, Cho|Chromie|D.Va|Deathwing|Deckard|Dehaka|Diablo|E.T.C.|Falstad|Fenix|Gall|Garrosh|G...	UNKNOWN STEP	2026-10-04T09:33:02.3319854Z Updating files:  94% (564/600)
+make (2, 15, Cho|Chromie|D.Va|Deathwing|Deckard|Dehaka|Diablo|E.T.C.|Falstad|Fenix|Gall|Garrosh|G...	UNKNOWN STEP	2026-10-04T09:33:02.3462575Z Updating files:  95% (570/600)
+make (2, 15, Cho|Chromie|D.Va|Deathwing|Deckard|Dehaka|Diablo|E.T.C.|Falstad|Fenix|Gall|Garrosh|G...	UNKNOWN STEP	2026-10-04T09:33:02.3775083Z Updating files:  96% (576/600)
+make (2, 15, Cho|Chromie|D.Va|Deathwing|Deckard|Dehaka|Diablo|E.T.C.|Falstad|Fenix|Gall|Garrosh|G...	UNKNOWN STEP	2026-10-04T09:33:02.4066866Z Updating files:  97% (582/600)
+make (2, 15, Cho|Chromie|D.Va|Deathwing|Deckard|Dehaka|Diablo|E.T.C.|Falstad|Fenix|Gall|Garrosh|G...	UNKNOWN STEP	2026-10-04T09:33:02.4165778Z Updating files:  98% (588/600)
+make (2, 15, Cho|Chromie|D.Va|Deathwing|Deckard|Dehaka|Diablo|E.T.C.|Falstad|Fenix|Gall|Garrosh|G...	UNKNOWN STEP	2026-10-04T09:33:02.4539897Z Updating files:  99% (594/600)
+make (2, 15, Cho|Chromie|D.Va|Deathwing|Deckard|Dehaka|Diablo|E.T.C.|Falstad|Fenix|Gall|Garrosh|G...	UNKNOWN STEP	2026-10-04T09:33:02.4540996Z Updating files: 100% (600/600)
+make (2, 15, Cho|Chromie|D.Va|Deathwing|Deckard|Dehaka|Diablo|E.T.C.|Falstad|Fenix|Gall|Garrosh|G...	UNKNOWN STEP	2026-10-04T09:33:02.4541449Z Updating files: 100% (600/600), done.
+make (2, 15, Cho|Chromie|D.Va|Deathwing|Deckard|Dehaka|Diablo|E.T.C.|Falstad|Fenix|Gall|Garrosh|G...	UNKNOWN STEP	2026-10-04T09:33:02.4742279Z   % Total    % Received % Xferd  Average Speed   Time    Time     Time  Current
+make (2, 15, Cho|Chromie|D.Va|Deathwing|Deckard|Dehaka|Diablo|E.T.C.|Falstad|Fenix|Gall|Garrosh|G...	UNKNOWN STEP	2026-10-04T09:33:02.4743476Z                                  Dload  Upload   Total   Spent    Left  Speed
+make (2, 15, Cho|Chromie|D.Va|Deathwing|Deckard|Dehaka|Diablo|E.T.C.|Falstad|Fenix|Gall|Garrosh|G...	UNKNOWN STEP	2026-10-04T09:33:02.4744322Z 
+make (2, 15, Cho|Chromie|D.Va|Deathwing|Deckard|Dehaka|Diablo|E.T.C.|Falstad|Fenix|Gall|Garrosh|G...	UNKNOWN STEP	2026-10-04T09:33:02.5301011Z   0     0    0     0    0     0      0      0 --:--:-- --:--:-- --:--:--     0
+make (2, 15, Cho|Chromie|D.Va|Deathwing|Deckard|Dehaka|Diablo|E.T.C.|Falstad|Fenix|Gall|Garrosh|G...	UNKNOWN STEP	2026-10-04T09:33:03.3943697Z   0     0    0     0    0     0      0      0 --:--:-- --:--:-- --:--:--     0
+make (2, 15, Cho|Chromie|D.Va|Deathwing|Deckard|Dehaka|Diablo|E.T.C.|Falstad|Fenix|Gall|Garrosh|G...	UNKNOWN STEP	2026-10-04T09:33:03.3944813Z 100  260M  100  260M    0     0   282M      0 --:--:-- --:--:-- --:--:--  282M
+make (2, 15, Cho|Chromie|D.Va|Deathwing|Deckard|Dehaka|Diablo|E.T.C.|Falstad|Fenix|Gall|Garrosh|G...	UNKNOWN STEP	2026-10-04T09:33:21.4374511Z ALSA lib confmisc.c:855:(parse_card) cannot find card '0'
+make (2, 15, Cho|Chromie|D.Va|Deathwing|Deckard|Dehaka|Diablo|E.T.C.|Falstad|Fenix|Gall|Garrosh|G...	UNKNOWN STEP	2026-10-04T09:33:21.4375782Z ALSA lib conf.c:5182:(_snd_config_evaluate) function snd_func_card_inum returned error: No such file or directory
+make (2, 15, Cho|Chromie|D.Va|Deathwing|Deckard|Dehaka|Diablo|E.T.C.|Falstad|Fenix|Gall|Garrosh|G...	UNKNOWN STEP	2026-10-04T09:33:21.4376881Z ALSA lib confmisc.c:422:(snd_func_concat) error evaluating strings
+make (2, 15, Cho|Chromie|D.Va|Deathwing|Deckard|Dehaka|Diablo|E.T.C.|Falstad|Fenix|Gall|Garrosh|G...	UNKNOWN STEP	2026-10-04T09:33:21.4377875Z ALSA lib conf.c:5182:(_snd_config_evaluate) function snd_func_concat returned error: No such file or directory
+make (2, 15, Cho|Chromie|D.Va|Deathwing|Deckard|Dehaka|Diablo|E.T.C.|Falstad|Fenix|Gall|Garrosh|G...	UNKNOWN STEP	2026-10-04T09:33:21.4378531Z ALSA lib confmisc.c:1334:(snd_func_refer) error evaluating name
+make (2, 15, Cho|Chromie|D.Va|Deathwing|Deckard|Dehaka|Diablo|E.T.C.|Falstad|Fenix|Gall|Garrosh|G...	UNKNOWN STEP	2026-10-04T09:33:21.4379527Z ALSA lib conf.c:5182:(_snd_config_evaluate) function snd_func_refer returned error: No such file or directory
+make (2, 15, Cho|Chromie|D.Va|Deathwing|Deckard|Dehaka|Diablo|E.T.C.|Falstad|Fenix|Gall|Garrosh|G...	UNKNOWN STEP	2026-10-04T09:33:21.4380235Z ALSA lib conf.c:5705:(snd_config_expand) Evaluate error: No such file or directory
+make (2, 15, Cho|Chromie|D.Va|Deathwing|Deckard|Dehaka|Diablo|E.T.C.|Falstad|Fenix|Gall|Garrosh|G...	UNKNOWN STEP	2026-10-04T09:33:21.4381029Z ALSA lib pcm.c:2664:(snd_pcm_open_noupdate) Unknown PCM default
+make (2, 15, Cho|Chromie|D.Va|Deathwing|Deckard|Dehaka|Diablo|E.T.C.|Falstad|Fenix|Gall|Garrosh|G...	UNKNOWN STEP	2026-10-04T09:33:21.4394455Z Failed to open dir (No such file or directory): /run/user/1001/gvfs/
+make (2, 15, Cho|Chromie|D.Va|Deathwing|Deckard|Dehaka|Diablo|E.T.C.|Falstad|Fenix|Gall|Garrosh|G...	UNKNOWN STEP	2026-10-04T09:33:22.2351991Z [09:33:22] HOTS STL Builder 2.1.0
+make (2, 15, Cho|Chromie|D.Va|Deathwing|Deckard|Dehaka|Diablo|E.T.C.|Falstad|Fenix|Gall|Garrosh|G...	UNKNOWN STEP	2026-10-04T09:33:22.2352397Z [09:33:22] Blender runtime: 3.6.23
+make (2, 15, Cho|Chromie|D.Va|Deathwing|Deckard|Dehaka|Diablo|E.T.C.|Falstad|Fenix|Gall|Garrosh|G...	UNKNOWN STEP	2026-10-04T09:33:22.2353032Z [09:33:22] Source roots: [PosixPath('/home/runner/work/_temp/H2'), PosixPath('/home/runner/work/HOTS-03/HOTS-03')]
+make (2, 15, Cho|Chromie|D.Va|Deathwing|Deckard|Dehaka|Diablo|E.T.C.|Falstad|Fenix|Gall|Garrosh|G...	UNKNOWN STEP	2026-10-04T09:33:22.2354004Z [09:33:22] Enabling m3addon
+make (2, 15, Cho|Chromie|D.Va|Deathwing|Deckard|Dehaka|Diablo|E.T.C.|Falstad|Fenix|Gall|Garrosh|G...	UNKNOWN STEP	2026-10-04T09:33:22.5266788Z [09:33:22] Resolved 15 roster entries to 14 unique source groups
+make (2, 15, Cho|Chromie|D.Va|Deathwing|Deckard|Dehaka|Diablo|E.T.C.|Falstad|Fenix|Gall|Garrosh|G...	UNKNOWN STEP	2026-10-04T09:33:22.5268032Z [09:33:22] PLAN Cho: chogall — exact canonical base
+make (2, 15, Cho|Chromie|D.Va|Deathwing|Deckard|Dehaka|Diablo|E.T.C.|Falstad|Fenix|Gall|Garrosh|G...	UNKNOWN STEP	2026-10-04T09:33:22.5268875Z [09:33:22] PLAN Chromie: chromie — exact canonical base
+make (2, 15, Cho|Chromie|D.Va|Deathwing|Deckard|Dehaka|Diablo|E.T.C.|Falstad|Fenix|Gall|Garrosh|G...	UNKNOWN STEP	2026-10-04T09:33:22.5269824Z [09:33:22] PLAN D.Va: dva_composite — explicit multi-model composite
+make (2, 15, Cho|Chromie|D.Va|Deathwing|Deckard|Dehaka|Diablo|E.T.C.|Falstad|Fenix|Gall|Garrosh|G...	UNKNOWN STEP	2026-10-04T09:33:22.5270804Z [09:33:22] PLAN Deathwing: deathwing — exact canonical base
+make (2, 15, Cho|Chromie|D.Va|Deathwing|Deckard|Dehaka|Diablo|E.T.C.|Falstad|Fenix|Gall|Garrosh|G...	UNKNOWN STEP	2026-10-04T09:33:22.5271621Z [09:33:22] PLAN Deckard: deckard — exact canonical base
+make (2, 15, Cho|Chromie|D.Va|Deathwing|Deckard|Dehaka|Diablo|E.T.C.|Falstad|Fenix|Gall|Garrosh|G...	UNKNOWN STEP	2026-10-04T09:33:22.5272324Z [09:33:22] PLAN Dehaka: dehaka — exact canonical base
+make (2, 15, Cho|Chromie|D.Va|Deathwing|Deckard|Dehaka|Diablo|E.T.C.|Falstad|Fenix|Gall|Garrosh|G...	UNKNOWN STEP	2026-10-04T09:33:22.5273409Z [09:33:22] PLAN Diablo: diablo — exact canonical base
+make (2, 15, Cho|Chromie|D.Va|Deathwing|Deckard|Dehaka|Diablo|E.T.C.|Falstad|Fenix|Gall|Garrosh|G...	UNKNOWN STEP	2026-10-04T09:33:22.5274225Z [09:33:22] PLAN E.T.C.: etc — exact canonical base
+make (2, 15, Cho|Chromie|D.Va|Deathwing|Deckard|Dehaka|Diablo|E.T.C.|Falstad|Fenix|Gall|Garrosh|G...	UNKNOWN STEP	2026-10-04T09:33:22.5274804Z [09:33:22] PLAN Falstad: falstad — exact canonical base
+make (2, 15, Cho|Chromie|D.Va|Deathwing|Deckard|Dehaka|Diablo|E.T.C.|Falstad|Fenix|Gall|Garrosh|G...	UNKNOWN STEP	2026-10-04T09:33:22.5275311Z [09:33:22] PLAN Fenix: fenix — exact canonical base
+make (2, 15, Cho|Chromie|D.Va|Deathwing|Deckard|Dehaka|Diablo|E.T.C.|Falstad|Fenix|Gall|Garrosh|G...	UNKNOWN STEP	2026-10-04T09:33:22.5275814Z [09:33:22] PLAN Gall: chogall — exact canonical base
+make (2, 15, Cho|Chromie|D.Va|Deathwing|Deckard|Dehaka|Diablo|E.T.C.|Falstad|Fenix|Gall|Garrosh|G...	UNKNOWN STEP	2026-10-04T09:33:22.5276464Z [09:33:22] PLAN Garrosh: garrosh — exact canonical base
+make (2, 15, Cho|Chromie|D.Va|Deathwing|Deckard|Dehaka|Diablo|E.T.C.|Falstad|Fenix|Gall|Garrosh|G...	UNKNOWN STEP	2026-10-04T09:33:22.5277123Z [09:33:22] PLAN Gazlowe: gazlowe — exact canonical base
+make (2, 15, Cho|Chromie|D.Va|Deathwing|Deckard|Dehaka|Diablo|E.T.C.|Falstad|Fenix|Gall|Garrosh|G...	UNKNOWN STEP	2026-10-04T09:33:22.5277752Z [09:33:22] PLAN Genji: genji — exact canonical base
+make (2, 15, Cho|Chromie|D.Va|Deathwing|Deckard|Dehaka|Diablo|E.T.C.|Falstad|Fenix|Gall|Garrosh|G...	UNKNOWN STEP	2026-10-04T09:33:22.5278423Z [09:33:22] PLAN Greymane: greymane — exact canonical base
+make (2, 15, Cho|Chromie|D.Va|Deathwing|Deckard|Dehaka|Diablo|E.T.C.|Falstad|Fenix|Gall|Garrosh|G...	UNKNOWN STEP	2026-10-04T09:33:22.5289260Z [09:33:22] Importing M3: /home/runner/work/_temp/H2/storm_hero_chogall_base/storm_hero_chogall_base.m3
+make (2, 15, Cho|Chromie|D.Va|Deathwing|Deckard|Dehaka|Diablo|E.T.C.|Falstad|Fenix|Gall|Garrosh|G...	UNKNOWN STEP	2026-10-04T09:33:22.5290294Z 2026-10-04 09:33:22,528,528 DEBUG  base.py:152 Import /home/runner/work/_temp/H2/storm_hero_chogall_base/storm_hero_chogall_base.m3
+make (2, 15, Cho|Chromie|D.Va|Deathwing|Deckard|Dehaka|Diablo|E.T.C.|Falstad|Fenix|Gall|Garrosh|G...	UNKNOWN STEP	2026-10-04T09:33:27.8157106Z Info: Removed 100 vertice(s)
+make (2, 15, Cho|Chromie|D.Va|Deathwing|Deckard|Dehaka|Diablo|E.T.C.|Falstad|Fenix|Gall|Garrosh|G...	UNKNOWN STEP	2026-10-04T09:33:27.8157631Z Info: Removed 0 vertice(s)
+make (2, 15, Cho|Chromie|D.Va|Deathwing|Deckard|Dehaka|Diablo|E.T.C.|Falstad|Fenix|Gall|Garrosh|G...	UNKNOWN STEP	2026-10-04T09:33:27.8160496Z Info: Removed 414 vertice(s)
+make (2, 15, Cho|Chromie|D.Va|Deathwing|Deckard|Dehaka|Diablo|E.T.C.|Falstad|Fenix|Gall|Garrosh|G...	UNKNOWN STEP	2026-10-04T09:33:27.8160976Z Info: Removed 0 vertice(s)
+make (2, 15, Cho|Chromie|D.Va|Deathwing|Deckard|Dehaka|Diablo|E.T.C.|Falstad|Fenix|Gall|Garrosh|G...	UNKNOWN STEP	2026-10-04T09:33:27.8161388Z Info: Removed 177 vertice(s)
+make (2, 15, Cho|Chromie|D.Va|Deathwing|Deckard|Dehaka|Diablo|E.T.C.|Falstad|Fenix|Gall|Garrosh|G...	UNKNOWN STEP	2026-10-04T09:33:27.8161785Z Info: Removed 56 vertice(s)
+make (2, 15, Cho|Chromie|D.Va|Deathwing|Deckard|Dehaka|Diablo|E.T.C.|Falstad|Fenix|Gall|Garrosh|G...	UNKNOWN STEP	2026-10-04T09:33:27.8162173Z Info: Removed 846 vertice(s)
+make (2, 15, Cho|Chromie|D.Va|Deathwing|Deckard|Dehaka|Diablo|E.T.C.|Falstad|Fenix|Gall|Garrosh|G...	UNKNOWN STEP	2026-10-04T09:33:27.8163460Z Info: Removed: 0 vertices, 0 edges, 0 faces
+make (2, 15, Cho|Chromie|D.Va|Deathwing|Deckard|Dehaka|Diablo|E.T.C.|Falstad|Fenix|Gall|Garrosh|G...	UNKNOWN STEP	2026-10-04T09:33:27.8163983Z Info: Removed 100 vertice(s)
+make (2, 15, Cho|Chromie|D.Va|Deathwing|Deckard|Dehaka|Diablo|E.T.C.|Falstad|Fenix|Gall|Garrosh|G...	UNKNOWN STEP	2026-10-04T09:33:27.8164401Z Info: Removed: 0 vertices, 0 edges, 0 faces
+make (2, 15, Cho|Chromie|D.Va|Deathwing|Deckard|Dehaka|Diablo|E.T.C.|Falstad|Fenix|Gall|Garrosh|G...	UNKNOWN STEP	2026-10-04T09:33:27.8164862Z Info: Removed 0 vertice(s)
+make (2, 15, Cho|Chromie|D.Va|Deathwing|Deckard|Dehaka|Diablo|E.T.C.|Falstad|Fenix|Gall|Garrosh|G...	UNKNOWN STEP	2026-10-04T09:33:27.8165265Z Info: Removed: 0 vertices, 0 edges, 0 faces
+make (2, 15, Cho|Chromie|D.Va|Deathwing|Deckard|Dehaka|Diablo|E.T.C.|Falstad|Fenix|Gall|Garrosh|G...	UNKNOWN STEP	2026-10-04T09:33:27.8165733Z Info: Removed 414 vertice(s)
+make (2, 15, Cho|Chromie|D.Va|Deathwing|Deckard|Dehaka|Diablo|E.T.C.|Falstad|Fenix|Gall|Garrosh|G...	UNKNOWN STEP	2026-10-04T09:33:27.8166161Z Info: Removed: 0 vertices, 0 edges, 0 faces
+make (2, 15, Cho|Chromie|D.Va|Deathwing|Deckard|Dehaka|Diablo|E.T.C.|Falstad|Fenix|Gall|Garrosh|G...	UNKNOWN STEP	2026-10-04T09:33:27.8166614Z Info: Removed 0 vertice(s)
+make (2, 15, Cho|Chromie|D.Va|Deathwing|Deckard|Dehaka|Diablo|E.T.C.|Falstad|Fenix|Gall|Garrosh|G...	UNKNOWN STEP	2026-10-04T09:33:27.8167013Z Info: Removed: 0 vertices, 0 edges, 0 faces
+make (2, 15, Cho|Chromie|D.Va|Deathwing|Deckard|Dehaka|Diablo|E.T.C.|Falstad|Fenix|Gall|Garrosh|G...	UNKNOWN STEP	2026-10-04T09:33:27.8167468Z Info: Removed 162 vertice(s)
+make (2, 15, Cho|Chromie|D.Va|Deathwing|Deckard|Dehaka|Diablo|E.T.C.|Falstad|Fenix|Gall|Garrosh|G...	UNKNOWN STEP	2026-10-04T09:33:27.8167886Z Info: Removed: 0 vertices, 0 edges, 0 faces
+make (2, 15, Cho|Chromie|D.Va|Deathwing|Deckard|Dehaka|Diablo|E.T.C.|Falstad|Fenix|Gall|Garrosh|G...	UNKNOWN STEP	2026-10-04T09:33:27.8168353Z Info: Removed 39 vertice(s)
+make (2, 15, Cho|Chromie|D.Va|Deathwing|Deckard|Dehaka|Diablo|E.T.C.|Falstad|Fenix|Gall|Garrosh|G...	UNKNOWN STEP	2026-10-04T09:33:27.8168763Z Info: Removed: 0 vertices, 0 edges, 0 faces
+make (2, 15, Cho|Chromie|D.Va|Deathwing|Deckard|Dehaka|Diablo|E.T.C.|Falstad|Fenix|Gall|Garrosh|G...	UNKNOWN STEP	2026-10-04T09:33:27.8169221Z Info: Removed 25 vertice(s)
+make (2, 15, Cho|Chromie|D.Va|Deathwing|Deckard|Dehaka|Diablo|E.T.C.|Falstad|Fenix|Gall|Garrosh|G...	UNKNOWN STEP	2026-10-04T09:33:27.8169626Z Info: Removed: 0 vertices, 0 edges, 0 faces
+make (2, 15, Cho|Chromie|D.Va|Deathwing|Deckard|Dehaka|Diablo|E.T.C.|Falstad|Fenix|Gall|Garrosh|G...	UNKNOWN STEP	2026-10-04T09:33:27.8170257Z [09:33:27] Strict edge test failed; retrying clean voxel union at 0.620 mm
+make (2, 15, Cho|Chromie|D.Va|Deathwing|Deckard|Dehaka|Diablo|E.T.C.|Falstad|Fenix|Gall|Garrosh|G...	UNKNOWN STEP	2026-10-04T09:33:30.8690066Z [09:33:30] SUCCESS source chogall: 185649 print-ready triangles
+make (2, 15, Cho|Chromie|D.Va|Deathwing|Deckard|Dehaka|Diablo|E.T.C.|Falstad|Fenix|Gall|Garrosh|G...	UNKNOWN STEP	2026-10-04T09:33:30.8724060Z [09:33:30] Importing M3: /home/runner/work/_temp/H2/storm_hero_chromie_base/storm_hero_chromie_base.m3
+make (2, 15, Cho|Chromie|D.Va|Deathwing|Deckard|Dehaka|Diablo|E.T.C.|Falstad|Fenix|Gall|Garrosh|G...	UNKNOWN STEP	2026-10-04T09:33:30.8744875Z 2026-10-04 09:33:30,872,872 DEBUG  base.py:152 Import /home/runner/work/_temp/H2/storm_hero_chromie_base/storm_hero_chromie_base.m3
+make (2, 15, Cho|Chromie|D.Va|Deathwing|Deckard|Dehaka|Diablo|E.T.C.|Falstad|Fenix|Gall|Garrosh|G...	UNKNOWN STEP	2026-10-04T09:33:45.1277433Z Info: Removed 91 vertice(s)
+make (2, 15, Cho|Chromie|D.Va|Deathwing|Deckard|Dehaka|Diablo|E.T.C.|Falstad|Fenix|Gall|Garrosh|G...	UNKNOWN STEP	2026-10-04T09:33:45.1277928Z Info: Removed 20 vertice(s)
+make (2, 15, Cho|Chromie|D.Va|Deathwing|Deckard|Dehaka|Diablo|E.T.C.|Falstad|Fenix|Gall|Garrosh|G...	UNKNOWN STEP	2026-10-04T09:33:45.1278326Z Info: Removed 128 vertice(s)
+make (2, 15, Cho|Chromie|D.Va|Deathwing|Deckard|Dehaka|Diablo|E.T.C.|Falstad|Fenix|Gall|Garrosh|G...	UNKNOWN STEP	2026-10-04T09:33:45.1278714Z Info: Removed 128 vertice(s)
+make (2, 15, Cho|Chromie|D.Va|Deathwing|Deckard|Dehaka|Diablo|E.T.C.|Falstad|Fenix|Gall|Garrosh|G...	UNKNOWN STEP	2026-10-04T09:33:45.1279114Z Info: Removed 322 vertice(s)
+make (2, 15, Cho|Chromie|D.Va|Deathwing|Deckard|Dehaka|Diablo|E.T.C.|Falstad|Fenix|Gall|Garrosh|G...	UNKNOWN STEP	2026-10-04T09:33:45.1279547Z Info: Removed 114 vertice(s)
+make (2, 15, Cho|Chromie|D.Va|Deathwing|Deckard|Dehaka|Diablo|E.T.C.|Falstad|Fenix|Gall|Garrosh|G...	UNKNOWN STEP	2026-10-04T09:33:45.1279963Z Info: Removed 2601 vertice(s)
+make (2, 15, Cho|Chromie|D.Va|Deathwing|Deckard|Dehaka|Diablo|E.T.C.|Falstad|Fenix|Gall|Garrosh|G...	UNKNOWN STEP	2026-10-04T09:33:45.1280402Z Info: Removed: 0 vertices, 0 edges, 0 faces
+make (2, 15, Cho|Chromie|D.Va|Deathwing|Deckard|Dehaka|Diablo|E.T.C.|Falstad|Fenix|Gall|Garrosh|G...	UNKNOWN STEP	2026-10-04T09:33:45.1280863Z Info: Removed 91 vertice(s)
+make (2, 15, Cho|Chromie|D.Va|Deathwing|Deckard|Dehaka|Diablo|E.T.C.|Falstad|Fenix|Gall|Garrosh|G...	UNKNOWN STEP	2026-10-04T09:33:45.1281268Z Info: Removed: 0 vertices, 0 edges, 0 faces
+make (2, 15, Cho|Chromie|D.Va|Deathwing|Deckard|Dehaka|Diablo|E.T.C.|Falstad|Fenix|Gall|Garrosh|G...	UNKNOWN STEP	2026-10-04T09:33:45.1281771Z Info: Removed 20 vertice(s)
+make (2, 15, Cho|Chromie|D.Va|Deathwing|Deckard|Dehaka|Diablo|E.T.C.|Falstad|Fenix|Gall|Garrosh|G...	UNKNOWN STEP	2026-10-04T09:33:45.1282185Z Info: Removed: 0 vertices, 0 edges, 0 faces
+make (2, 15, Cho|Chromie|D.Va|Deathwing|Deckard|Dehaka|Diablo|E.T.C.|Falstad|Fenix|Gall|Garrosh|G...	UNKNOWN STEP	2026-10-04T09:33:45.1282643Z Info: Removed 0 vertice(s)
+make (2, 15, Cho|Chromie|D.Va|Deathwing|Deckard|Dehaka|Diablo|E.T.C.|Falstad|Fenix|Gall|Garrosh|G...	UNKNOWN STEP	2026-10-04T09:33:45.1283057Z Info: Removed: 0 vertices, 0 edges, 0 faces
+make (2, 15, Cho|Chromie|D.Va|Deathwing|Deckard|Dehaka|Diablo|E.T.C.|Falstad|Fenix|Gall|Garrosh|G...	UNKNOWN STEP	2026-10-04T09:33:45.1283821Z Info: Removed 128 vertice(s)
+make (2, 15, Cho|Chromie|D.Va|Deathwing|Deckard|Dehaka|Diablo|E.T.C.|Falstad|Fenix|Gall|Garrosh|G...	UNKNOWN STEP	2026-10-04T09:33:45.1284314Z Info: Removed: 0 vertices, 0 edges, 0 faces
+make (2, 15, Cho|Chromie|D.Va|Deathwing|Deckard|Dehaka|Diablo|E.T.C.|Falstad|Fenix|Gall|Garrosh|G...	UNKNOWN STEP	2026-10-04T09:33:45.1284779Z Info: Removed 128 vertice(s)
+make (2, 15, Cho|Chromie|D.Va|Deathwing|Deckard|Dehaka|Diablo|E.T.C.|Falstad|Fenix|Gall|Garrosh|G...	UNKNOWN STEP	2026-10-04T09:33:45.1285170Z Info: Removed: 0 vertices, 0 edges, 0 faces
+make (2, 15, Cho|Chromie|D.Va|Deathwing|Deckard|Dehaka|Diablo|E.T.C.|Falstad|Fenix|Gall|Garrosh|G...	UNKNOWN STEP	2026-10-04T09:33:45.1285643Z Info: Removed 289 vertice(s)
+make (2, 15, Cho|Chromie|D.Va|Deathwing|Deckard|Dehaka|Diablo|E.T.C.|Falstad|Fenix|Gall|Garrosh|G...	UNKNOWN STEP	2026-10-04T09:33:45.1286068Z Info: Removed: 0 vertices, 0 edges, 0 faces
+make (2, 15, Cho|Chromie|D.Va|Deathwing|Deckard|Dehaka|Diablo|E.T.C.|Falstad|Fenix|Gall|Garrosh|G...	UNKNOWN STEP	2026-10-04T09:33:45.1286495Z Info: Removed 114 vertice(s)
+make (2, 15, Cho|Chromie|D.Va|Deathwing|Deckard|Dehaka|Diablo|E.T.C.|Falstad|Fenix|Gall|Garrosh|G...	UNKNOWN STEP	2026-10-04T09:33:45.1286910Z Info: Removed: 0 vertices, 0 edges, 0 faces
+make (2, 15, Cho|Chromie|D.Va|Deathwing|Deckard|Dehaka|Diablo|E.T.C.|Falstad|Fenix|Gall|Garrosh|G...	UNKNOWN STEP	2026-10-04T09:33:45.1287413Z Info: Removed 1661 vertice(s)
+make (2, 15, Cho|Chromie|D.Va|Deathwing|Deckard|Dehaka|Diablo|E.T.C.|Falstad|Fenix|Gall|Garrosh|G...	UNKNOWN STEP	2026-10-04T09:33:45.1287839Z Info: Removed: 0 vertices, 0 edges, 0 faces
+make (2, 15, Cho|Chromie|D.Va|Deathwing|Deckard|Dehaka|Diablo|E.T.C.|Falstad|Fenix|Gall|Garrosh|G...	UNKNOWN STEP	2026-10-04T09:33:45.1288469Z [09:33:45] Strict edge test failed; retrying clean voxel union at 0.620 mm
+make (2, 15, Cho|Chromie|D.Va|Deathwing|Deckard|Dehaka|Diablo|E.T.C.|Falstad|Fenix|Gall|Garrosh|G...	UNKNOWN STEP	2026-10-04T09:33:52.3348524Z [09:33:52] SUCCESS source chromie: 415702 print-ready triangles
+make (2, 15, Cho|Chromie|D.Va|Deathwing|Deckard|Dehaka|Diablo|E.T.C.|Falstad|Fenix|Gall|Garrosh|G...	UNKNOWN STEP	2026-10-04T09:33:52.3403426Z [09:33:52] Importing M3: /home/runner/work/_temp/H2/storm_hero_dva_base/storm_hero_dva_base.m3
+make (2, 15, Cho|Chromie|D.Va|Deathwing|Deckard|Dehaka|Diablo|E.T.C.|Falstad|Fenix|Gall|Garrosh|G...	UNKNOWN STEP	2026-10-04T09:33:52.3414445Z 2026-10-04 09:33:52,340,340 DEBUG  base.py:152 Import /home/runner/work/_temp/H2/storm_hero_dva_base/storm_hero_dva_base.m3
+make (2, 15, Cho|Chromie|D.Va|Deathwing|Deckard|Dehaka|Diablo|E.T.C.|Falstad|Fenix|Gall|Garrosh|G...	UNKNOWN STEP	2026-10-04T09:33:52.8814019Z Info: Removed 88 vertice(s)
+make (2, 15, Cho|Chromie|D.Va|Deathwing|Deckard|Dehaka|Diablo|E.T.C.|Falstad|Fenix|Gall|Garrosh|G...	UNKNOWN STEP	2026-10-04T09:33:52.8814345Z Info: Removed 209 vertice(s)
+make (2, 15, Cho|Chromie|D.Va|Deathwing|Deckard|Dehaka|Diablo|E.T.C.|Falstad|Fenix|Gall|Garrosh|G...	UNKNOWN STEP	2026-10-04T09:33:52.8814604Z Info: Removed 254 vertice(s)
+make (2, 15, Cho|Chromie|D.Va|Deathwing|Deckard|Dehaka|Diablo|E.T.C.|Falstad|Fenix|Gall|Garrosh|G...	UNKNOWN STEP	2026-10-04T09:33:52.8815066Z [09:33:52] Importing M3: /home/runner/work/_temp/H2/storm_hero_dvamech_base/storm_hero_dvamech_base.m3
+make (2, 15, Cho|Chromie|D.Va|Deathwing|Deckard|Dehaka|Diablo|E.T.C.|Falstad|Fenix|Gall|Garrosh|G...	UNKNOWN STEP	2026-10-04T09:33:52.8824521Z 2026-10-04 09:33:52,881,881 DEBUG  base.py:152 Import /home/runner/work/_temp/H2/storm_hero_dvamech_base/storm_hero_dvamech_base.m3
+make (2, 15, Cho|Chromie|D.Va|Deathwing|Deckard|Dehaka|Diablo|E.T.C.|Falstad|Fenix|Gall|Garrosh|G...	UNKNOWN STEP	2026-10-04T09:34:05.8193472Z Info: Removed 160 vertice(s)
+make (2, 15, Cho|Chromie|D.Va|Deathwing|Deckard|Dehaka|Diablo|E.T.C.|Falstad|Fenix|Gall|Garrosh|G...	UNKNOWN STEP	2026-10-04T09:34:05.8193968Z Info: Removed 0 vertice(s)
+make (2, 15, Cho|Chromie|D.Va|Deathwing|Deckard|Dehaka|Diablo|E.T.C.|Falstad|Fenix|Gall|Garrosh|G...	UNKNOWN STEP	2026-10-04T09:34:05.8194360Z Info: Removed 2808 vertice(s)
+make (2, 15, Cho|Chromie|D.Va|Deathwing|Deckard|Dehaka|Diablo|E.T.C.|Falstad|Fenix|Gall|Garrosh|G...	UNKNOWN STEP	2026-10-04T09:34:05.8195500Z Info: Removed 3497 vertice(s)
+make (2, 15, Cho|Chromie|D.Va|Deathwing|Deckard|Dehaka|Diablo|E.T.C.|Falstad|Fenix|Gall|Garrosh|G...	UNKNOWN STEP	2026-10-04T09:34:05.8195955Z Info: Removed: 0 vertices, 0 edges, 0 faces
+make (2, 15, Cho|Chromie|D.Va|Deathwing|Deckard|Dehaka|Diablo|E.T.C.|Falstad|Fenix|Gall|Garrosh|G...	UNKNOWN STEP	2026-10-04T09:34:05.8196437Z Info: Removed 88 vertice(s)
+make (2, 15, Cho|Chromie|D.Va|Deathwing|Deckard|Dehaka|Diablo|E.T.C.|Falstad|Fenix|Gall|Garrosh|G...	UNKNOWN STEP	2026-10-04T09:34:05.8196864Z Info: Removed: 0 vertices, 0 edges, 0 faces
+make (2, 15, Cho|Chromie|D.Va|Deathwing|Deckard|Dehaka|Diablo|E.T.C.|Falstad|Fenix|Gall|Garrosh|G...	UNKNOWN STEP	2026-10-04T09:34:05.8197320Z Info: Removed 209 vertice(s)
+make (2, 15, Cho|Chromie|D.Va|Deathwing|Deckard|Dehaka|Diablo|E.T.C.|Falstad|Fenix|Gall|Garrosh|G...	UNKNOWN STEP	2026-10-04T09:34:05.8197736Z Info: Removed: 0 vertices, 0 edges, 0 faces
+make (2, 15, Cho|Chromie|D.Va|Deathwing|Deckard|Dehaka|Diablo|E.T.C.|Falstad|Fenix|Gall|Garrosh|G...	UNKNOWN STEP	2026-10-04T09:34:05.8198185Z Info: Removed 239 vertice(s)
+make (2, 15, Cho|Chromie|D.Va|Deathwing|Deckard|Dehaka|Diablo|E.T.C.|Falstad|Fenix|Gall|Garrosh|G...	UNKNOWN STEP	2026-10-04T09:34:05.8198608Z Info: Removed: 0 vertices, 0 edges, 0 faces
+make (2, 15, Cho|Chromie|D.Va|Deathwing|Deckard|Dehaka|Diablo|E.T.C.|Falstad|Fenix|Gall|Garrosh|G...	UNKNOWN STEP	2026-10-04T09:34:05.8199072Z Info: Removed 156 vertice(s)
+make (2, 15, Cho|Chromie|D.Va|Deathwing|Deckard|Dehaka|Diablo|E.T.C.|Falstad|Fenix|Gall|Garrosh|G...	UNKNOWN STEP	2026-10-04T09:34:05.8199484Z Info: Removed: 0 vertices, 0 edges, 0 faces
+make (2, 15, Cho|Chromie|D.Va|Deathwing|Deckard|Dehaka|Diablo|E.T.C.|Falstad|Fenix|Gall|Garrosh|G...	UNKNOWN STEP	2026-10-04T09:34:05.8199949Z Info: Removed 0 vertice(s)
+make (2, 15, Cho|Chromie|D.Va|Deathwing|Deckard|Dehaka|Diablo|E.T.C.|Falstad|Fenix|Gall|Garrosh|G...	UNKNOWN STEP	2026-10-04T09:34:05.8200347Z Info: Removed: 0 vertices, 0 edges, 0 faces
+make (2, 15, Cho|Chromie|D.Va|Deathwing|Deckard|Dehaka|Diablo|E.T.C.|Falstad|Fenix|Gall|Garrosh|G...	UNKNOWN STEP	2026-10-04T09:34:05.8200823Z Info: Removed 0 vertice(s)
+make (2, 15, Cho|Chromie|D.Va|Deathwing|Deckard|Dehaka|Diablo|E.T.C.|Falstad|Fenix|Gall|Garrosh|G...	UNKNOWN STEP	2026-10-04T09:34:05.8201253Z Info: Removed: 0 vertices, 0 edges, 0 faces
+make (2, 15, Cho|Chromie|D.Va|Deathwing|Deckard|Dehaka|Diablo|E.T.C.|Falstad|Fenix|Gall|Garrosh|G...	UNKNOWN STEP	2026-10-04T09:34:05.8201684Z Info: Removed 2806 vertice(s)
+make (2, 15, Cho|Chromie|D.Va|Deathwing|Deckard|Dehaka|Diablo|E.T.C.|Falstad|Fenix|Gall|Garrosh|G...	UNKNOWN STEP	2026-10-04T09:34:05.8202070Z Info: Removed: 0 vertices, 0 edges, 0 faces
+make (2, 15, Cho|Chromie|D.Va|Deathwing|Deckard|Dehaka|Diablo|E.T.C.|Falstad|Fenix|Gall|Garrosh|G...	UNKNOWN STEP	2026-10-04T09:34:05.8202540Z Info: Removed 2 vertice(s)
+make (2, 15, Cho|Chromie|D.Va|Deathwing|Deckard|Dehaka|Diablo|E.T.C.|Falstad|Fenix|Gall|Garrosh|G...	UNKNOWN STEP	2026-10-04T09:34:05.8202953Z Info: Removed: 0 vertices, 0 edges, 0 faces
+make (2, 15, Cho|Chromie|D.Va|Deathwing|Deckard|Dehaka|Diablo|E.T.C.|Falstad|Fenix|Gall|Garrosh|G...	UNKNOWN STEP	2026-10-04T09:34:05.8203799Z [09:34:05] Strict edge test failed; retrying clean voxel union at 0.620 mm
+make (2, 15, Cho|Chromie|D.Va|Deathwing|Deckard|Dehaka|Diablo|E.T.C.|Falstad|Fenix|Gall|Garrosh|G...	UNKNOWN STEP	2026-10-04T09:34:12.2685864Z [09:34:12] SUCCESS source dva_composite: 375734 print-ready triangles
+make (2, 15, Cho|Chromie|D.Va|Deathwing|Deckard|Dehaka|Diablo|E.T.C.|Falstad|Fenix|Gall|Garrosh|G...	UNKNOWN STEP	2026-10-04T09:34:12.2742835Z [09:34:12] Importing M3: /home/runner/work/_temp/H2/storm_hero_deathwing_base/storm_hero_deathwing_base.m3
+make (2, 15, Cho|Chromie|D.Va|Deathwing|Deckard|Dehaka|Diablo|E.T.C.|Falstad|Fenix|Gall|Garrosh|G...	UNKNOWN STEP	2026-10-04T09:34:12.2747748Z 2026-10-04 09:34:12,274,274 DEBUG  base.py:152 Import /home/runner/work/_temp/H2/storm_hero_deathwing_base/storm_hero_deathwing_base.m3
+make (2, 15, Cho|Chromie|D.Va|Deathwing|Deckard|Dehaka|Diablo|E.T.C.|Falstad|Fenix|Gall|Garrosh|G...	UNKNOWN STEP	2026-10-04T09:34:25.8135537Z Info: Removed 33 vertice(s)
+make (2, 15, Cho|Chromie|D.Va|Deathwing|Deckard|Dehaka|Diablo|E.T.C.|Falstad|Fenix|Gall|Garrosh|G...	UNKNOWN STEP	2026-10-04T09:34:25.8136040Z Info: Removed 980 vertice(s)
+make (2, 15, Cho|Chromie|D.Va|Deathwing|Deckard|Dehaka|Diablo|E.T.C.|Falstad|Fenix|Gall|Garrosh|G...	UNKNOWN STEP	2026-10-04T09:34:25.8136412Z Info: Removed 1131 vertice(s)
+make (2, 15, Cho|Chromie|D.Va|Deathwing|Deckard|Dehaka|Diablo|E.T.C.|Falstad|Fenix|Gall|Garrosh|G...	UNKNOWN STEP	2026-10-04T09:34:25.8136798Z Info: Removed: 0 vertices, 0 edges, 0 faces
+make (2, 15, Cho|Chromie|D.Va|Deathwing|Deckard|Dehaka|Diablo|E.T.C.|Falstad|Fenix|Gall|Garrosh|G...	UNKNOWN STEP	2026-10-04T09:34:25.8137387Z Info: Removed 37 vertice(s)
+make (2, 15, Cho|Chromie|D.Va|Deathwing|Deckard|Dehaka|Diablo|E.T.C.|Falstad|Fenix|Gall|Garrosh|G...	UNKNOWN STEP	2026-10-04T09:34:25.8137949Z Info: Removed: 0 vertices, 0 edges, 0 faces
+make (2, 15, Cho|Chromie|D.Va|Deathwing|Deckard|Dehaka|Diablo|E.T.C.|Falstad|Fenix|Gall|Garrosh|G...	UNKNOWN STEP	2026-10-04T09:34:25.8138627Z Info: Removed 985 vertice(s)
+make (2, 15, Cho|Chromie|D.Va|Deathwing|Deckard|Dehaka|Diablo|E.T.C.|Falstad|Fenix|Gall|Garrosh|G...	UNKNOWN STEP	2026-10-04T09:34:25.8139183Z Info: Removed: 0 vertices, 0 edges, 0 faces
+make (2, 15, Cho|Chromie|D.Va|Deathwing|Deckard|Dehaka|Diablo|E.T.C.|Falstad|Fenix|Gall|Garrosh|G...	UNKNOWN STEP	2026-10-04T09:34:25.8139798Z Info: Removed 33 vertice(s)
+make (2, 15, Cho|Chromie|D.Va|Deathwing|Deckard|Dehaka|Diablo|E.T.C.|Falstad|Fenix|Gall|Garrosh|G...	UNKNOWN STEP	2026-10-04T09:34:25.8140355Z Info: Removed: 0 vertices, 0 edges, 0 faces
+make (2, 15, Cho|Chromie|D.Va|Deathwing|Deckard|Dehaka|Diablo|E.T.C.|Falstad|Fenix|Gall|Garrosh|G...	UNKNOWN STEP	2026-10-04T09:34:25.8141183Z [09:34:25] Strict edge test failed; retrying clean voxel union at 0.620 mm
+make (2, 15, Cho|Chromie|D.Va|Deathwing|Deckard|Dehaka|Diablo|E.T.C.|Falstad|Fenix|Gall|Garrosh|G...	UNKNOWN STEP	2026-10-04T09:34:32.7891914Z [09:34:32] SUCCESS source deathwing: 416273 print-ready triangles
+make (2, 15, Cho|Chromie|D.Va|Deathwing|Deckard|Dehaka|Diablo|E.T.C.|Falstad|Fenix|Gall|Garrosh|G...	UNKNOWN STEP	2026-10-04T09:34:32.7924976Z [09:34:32] Importing M3: /home/runner/work/_temp/H2/storm_hero_deckard_base/storm_hero_deckard_base.m3
+make (2, 15, Cho|Chromie|D.Va|Deathwing|Deckard|Dehaka|Diablo|E.T.C.|Falstad|Fenix|Gall|Garrosh|G...	UNKNOWN STEP	2026-10-04T09:34:32.7928697Z 2026-10-04 09:34:32,792,792 DEBUG  base.py:152 Import /home/runner/work/_temp/H2/storm_hero_deckard_base/storm_hero_deckard_base.m3
+make (2, 15, Cho|Chromie|D.Va|Deathwing|Deckard|Dehaka|Diablo|E.T.C.|Falstad|Fenix|Gall|Garrosh|G...	UNKNOWN STEP	2026-10-04T09:34:48.8849064Z Info: Removed 59 vertice(s)
+make (2, 15, Cho|Chromie|D.Va|Deathwing|Deckard|Dehaka|Diablo|E.T.C.|Falstad|Fenix|Gall|Garrosh|G...	UNKNOWN STEP	2026-10-04T09:34:48.8849592Z Info: Removed 296 vertice(s)
+make (2, 15, Cho|Chromie|D.Va|Deathwing|Deckard|Dehaka|Diablo|E.T.C.|Falstad|Fenix|Gall|Garrosh|G...	UNKNOWN STEP	2026-10-04T09:34:48.8849994Z Info: Removed 58 vertice(s)
+make (2, 15, Cho|Chromie|D.Va|Deathwing|Deckard|Dehaka|Diablo|E.T.C.|Falstad|Fenix|Gall|Garrosh|G...	UNKNOWN STEP	2026-10-04T09:34:48.8850371Z Info: Removed 389 vertice(s)
+make (2, 15, Cho|Chromie|D.Va|Deathwing|Deckard|Dehaka|Diablo|E.T.C.|Falstad|Fenix|Gall|Garrosh|G...	UNKNOWN STEP	2026-10-04T09:34:48.8850802Z Info: Removed: 0 vertices, 0 edges, 0 faces
+make (2, 15, Cho|Chromie|D.Va|Deathwing|Deckard|Dehaka|Diablo|E.T.C.|Falstad|Fenix|Gall|Garrosh|G...	UNKNOWN STEP	2026-10-04T09:34:48.8851334Z Info: Removed 59 vertice(s)
+make (2, 15, Cho|Chromie|D.Va|Deathwing|Deckard|Dehaka|Diablo|E.T.C.|Falstad|Fenix|Gall|Garrosh|G...	UNKNOWN STEP	2026-10-04T09:34:48.8851751Z Info: Removed: 0 vertices, 0 edges, 0 faces
+make (2, 15, Cho|Chromie|D.Va|Deathwing|Deckard|Dehaka|Diablo|E.T.C.|Falstad|Fenix|Gall|Garrosh|G...	UNKNOWN STEP	2026-10-04T09:34:48.8852201Z Info: Removed 242 vertice(s)
+make (2, 15, Cho|Chromie|D.Va|Deathwing|Deckard|Dehaka|Diablo|E.T.C.|Falstad|Fenix|Gall|Garrosh|G...	UNKNOWN STEP	2026-10-04T09:34:48.8852614Z Info: Removed: 0 vertices, 0 edges, 0 faces
+make (2, 15, Cho|Chromie|D.Va|Deathwing|Deckard|Dehaka|Diablo|E.T.C.|Falstad|Fenix|Gall|Garrosh|G...	UNKNOWN STEP	2026-10-04T09:34:48.8853064Z Info: Removed 56 vertice(s)
+make (2, 15, Cho|Chromie|D.Va|Deathwing|Deckard|Dehaka|Diablo|E.T.C.|Falstad|Fenix|Gall|Garrosh|G...	UNKNOWN STEP	2026-10-04T09:34:48.8853734Z Info: Removed: 0 vertices, 0 edges, 0 faces
+make (2, 15, Cho|Chromie|D.Va|Deathwing|Deckard|Dehaka|Diablo|E.T.C.|Falstad|Fenix|Gall|Garrosh|G...	UNKNOWN STEP	2026-10-04T09:34:48.8854204Z Info: Removed 4 vertice(s)
+make (2, 15, Cho|Chromie|D.Va|Deathwing|Deckard|Dehaka|Diablo|E.T.C.|Falstad|Fenix|Gall|Garrosh|G...	UNKNOWN STEP	2026-10-04T09:34:48.8854608Z Info: Removed: 0 vertices, 0 edges, 0 faces
+make (2, 15, Cho|Chromie|D.Va|Deathwing|Deckard|Dehaka|Diablo|E.T.C.|Falstad|Fenix|Gall|Garrosh|G...	UNKNOWN STEP	2026-10-04T09:34:48.8855214Z [09:34:48] Strict edge test failed; retrying clean voxel union at 0.620 mm
+make (2, 15, Cho|Chromie|D.Va|Deathwing|Deckard|Dehaka|Diablo|E.T.C.|Falstad|Fenix|Gall|Garrosh|G...	UNKNOWN STEP	2026-10-04T09:35:00.1082585Z [09:35:00] SUCCESS source deckard: 450000 print-ready triangles
+make (2, 15, Cho|Chromie|D.Va|Deathwing|Deckard|Dehaka|Diablo|E.T.C.|Falstad|Fenix|Gall|Garrosh|G...	UNKNOWN STEP	2026-10-04T09:35:00.1134710Z [09:35:00] Importing M3: /home/runner/work/_temp/H2/storm_hero_dehaka_base/storm_hero_dehaka_base.m3
+make (2, 15, Cho|Chromie|D.Va|Deathwing|Deckard|Dehaka|Diablo|E.T.C.|Falstad|Fenix|Gall|Garrosh|G...	UNKNOWN STEP	2026-10-04T09:35:00.1139045Z 2026-10-04 09:35:00,113,113 DEBUG  base.py:152 Import /home/runner/work/_temp/H2/storm_hero_dehaka_base/storm_hero_dehaka_base.m3
+make (2, 15, Cho|Chromie|D.Va|Deathwing|Deckard|Dehaka|Diablo|E.T.C.|Falstad|Fenix|Gall|Garrosh|G...	UNKNOWN STEP	2026-10-04T09:35:17.8639946Z Info: Removed 0 vertice(s)
+make (2, 15, Cho|Chromie|D.Va|Deathwing|Deckard|Dehaka|Diablo|E.T.C.|Falstad|Fenix|Gall|Garrosh|G...	UNKNOWN STEP	2026-10-04T09:35:17.8641215Z Info: Removed 0 vertice(s)
+make (2, 15, Cho|Chromie|D.Va|Deathwing|Deckard|Dehaka|Diablo|E.T.C.|Falstad|Fenix|Gall|Garrosh|G...	UNKNOWN STEP	2026-10-04T09:35:17.8641634Z Info: Removed 40 vertice(s)
+make (2, 15, Cho|Chromie|D.Va|Deathwing|Deckard|Dehaka|Diablo|E.T.C.|Falstad|Fenix|Gall|Garrosh|G...	UNKNOWN STEP	2026-10-04T09:35:17.8642030Z Info: Removed 22 vertice(s)
+make (2, 15, Cho|Chromie|D.Va|Deathwing|Deckard|Dehaka|Diablo|E.T.C.|Falstad|Fenix|Gall|Garrosh|G...	UNKNOWN STEP	2026-10-04T09:35:17.8642595Z Info: Removed 12 vertice(s)
+make (2, 15, Cho|Chromie|D.Va|Deathwing|Deckard|Dehaka|Diablo|E.T.C.|Falstad|Fenix|Gall|Garrosh|G...	UNKNOWN STEP	2026-10-04T09:35:17.8643005Z Info: Removed 80 vertice(s)
+make (2, 15, Cho|Chromie|D.Va|Deathwing|Deckard|Dehaka|Diablo|E.T.C.|Falstad|Fenix|Gall|Garrosh|G...	UNKNOWN STEP	2026-10-04T09:35:17.8643672Z Info: Removed: 0 vertices, 0 edges, 0 faces
+make (2, 15, Cho|Chromie|D.Va|Deathwing|Deckard|Dehaka|Diablo|E.T.C.|Falstad|Fenix|Gall|Garrosh|G...	UNKNOWN STEP	2026-10-04T09:35:17.8644139Z Info: Removed 0 vertice(s)
+make (2, 15, Cho|Chromie|D.Va|Deathwing|Deckard|Dehaka|Diablo|E.T.C.|Falstad|Fenix|Gall|Garrosh|G...	UNKNOWN STEP	2026-10-04T09:35:17.8644569Z Info: Removed: 0 vertices, 0 edges, 0 faces
+make (2, 15, Cho|Chromie|D.Va|Deathwing|Deckard|Dehaka|Diablo|E.T.C.|Falstad|Fenix|Gall|Garrosh|G...	UNKNOWN STEP	2026-10-04T09:35:17.8645009Z Info: Removed 0 vertice(s)
+make (2, 15, Cho|Chromie|D.Va|Deathwing|Deckard|Dehaka|Diablo|E.T.C.|Falstad|Fenix|Gall|Garrosh|G...	UNKNOWN STEP	2026-10-04T09:35:17.8645429Z Info: Removed: 0 vertices, 0 edges, 0 faces
+make (2, 15, Cho|Chromie|D.Va|Deathwing|Deckard|Dehaka|Diablo|E.T.C.|Falstad|Fenix|Gall|Garrosh|G...	UNKNOWN STEP	2026-10-04T09:35:17.8645898Z Info: Removed 31 vertice(s)
+make (2, 15, Cho|Chromie|D.Va|Deathwing|Deckard|Dehaka|Diablo|E.T.C.|Falstad|Fenix|Gall|Garrosh|G...	UNKNOWN STEP	2026-10-04T09:35:17.8646290Z Info: Removed: 0 vertices, 0 edges, 0 faces
+make (2, 15, Cho|Chromie|D.Va|Deathwing|Deckard|Dehaka|Diablo|E.T.C.|Falstad|Fenix|Gall|Garrosh|G...	UNKNOWN STEP	2026-10-04T09:35:17.8646746Z Info: Removed 6 vertice(s)
+make (2, 15, Cho|Chromie|D.Va|Deathwing|Deckard|Dehaka|Diablo|E.T.C.|Falstad|Fenix|Gall|Garrosh|G...	UNKNOWN STEP	2026-10-04T09:35:17.8647157Z Info: Removed: 0 vertices, 0 edges, 0 faces
+make (2, 15, Cho|Chromie|D.Va|Deathwing|Deckard|Dehaka|Diablo|E.T.C.|Falstad|Fenix|Gall|Garrosh|G...	UNKNOWN STEP	2026-10-04T09:35:17.8647637Z Info: Removed 12 vertice(s)
+make (2, 15, Cho|Chromie|D.Va|Deathwing|Deckard|Dehaka|Diablo|E.T.C.|Falstad|Fenix|Gall|Garrosh|G...	UNKNOWN STEP	2026-10-04T09:35:17.8648090Z Info: Removed: 0 vertices, 0 edges, 0 faces
+make (2, 15, Cho|Chromie|D.Va|Deathwing|Deckard|Dehaka|Diablo|E.T.C.|Falstad|Fenix|Gall|Garrosh|G...	UNKNOWN STEP	2026-10-04T09:35:17.8648558Z Info: Removed 8 vertice(s)
+make (2, 15, Cho|Chromie|D.Va|Deathwing|Deckard|Dehaka|Diablo|E.T.C.|Falstad|Fenix|Gall|Garrosh|G...	UNKNOWN STEP	2026-10-04T09:35:17.8648988Z Info: Removed: 0 vertices, 0 edges, 0 faces
+make (2, 15, Cho|Chromie|D.Va|Deathwing|Deckard|Dehaka|Diablo|E.T.C.|Falstad|Fenix|Gall|Garrosh|G...	UNKNOWN STEP	2026-10-04T09:35:17.8649630Z [09:35:17] Strict edge test failed; retrying clean voxel union at 0.620 mm
+make (2, 15, Cho|Chromie|D.Va|Deathwing|Deckard|Dehaka|Diablo|E.T.C.|Falstad|Fenix|Gall|Garrosh|G...	UNKNOWN STEP	2026-10-04T09:35:30.2607936Z [09:35:30] SUCCESS source dehaka: 449999 print-ready triangles
+make (2, 15, Cho|Chromie|D.Va|Deathwing|Deckard|Dehaka|Diablo|E.T.C.|Falstad|Fenix|Gall|Garrosh|G...	UNKNOWN STEP	2026-10-04T09:35:30.2658477Z [09:35:30] Importing M3: /home/runner/work/_temp/H2/storm_hero_diablo_base/storm_hero_diablo_base_v01.m3
+make (2, 15, Cho|Chromie|D.Va|Deathwing|Deckard|Dehaka|Diablo|E.T.C.|Falstad|Fenix|Gall|Garrosh|G...	UNKNOWN STEP	2026-10-04T09:35:30.2662492Z 2026-10-04 09:35:30,266,266 DEBUG  base.py:152 Import /home/runner/work/_temp/H2/storm_hero_diablo_base/storm_hero_diablo_base_v01.m3
+make (2, 15, Cho|Chromie|D.Va|Deathwing|Deckard|Dehaka|Diablo|E.T.C.|Falstad|Fenix|Gall|Garrosh|G...	UNKNOWN STEP	2026-10-04T09:35:44.7785608Z Info: Removed 50 vertice(s)
+make (2, 15, Cho|Chromie|D.Va|Deathwing|Deckard|Dehaka|Diablo|E.T.C.|Falstad|Fenix|Gall|Garrosh|G...	UNKNOWN STEP	2026-10-04T09:35:44.7785998Z Info: Removed 49 vertice(s)
+make (2, 15, Cho|Chromie|D.Va|Deathwing|Deckard|Dehaka|Diablo|E.T.C.|Falstad|Fenix|Gall|Garrosh|G...	UNKNOWN STEP	2026-10-04T09:35:44.7786534Z Info: Removed 154 vertice(s)
+make (2, 15, Cho|Chromie|D.Va|Deathwing|Deckard|Dehaka|Diablo|E.T.C.|Falstad|Fenix|Gall|Garrosh|G...	UNKNOWN STEP	2026-10-04T09:35:44.7787060Z Info: Removed: 0 vertices, 0 edges, 0 faces
+make (2, 15, Cho|Chromie|D.Va|Deathwing|Deckard|Dehaka|Diablo|E.T.C.|Falstad|Fenix|Gall|Garrosh|G...	UNKNOWN STEP	2026-10-04T09:35:44.7787648Z Info: Removed 66 vertice(s)
+make (2, 15, Cho|Chromie|D.Va|Deathwing|Deckard|Dehaka|Diablo|E.T.C.|Falstad|Fenix|Gall|Garrosh|G...	UNKNOWN STEP	2026-10-04T09:35:44.7788151Z Info: Removed: 0 vertices, 0 edges, 0 faces
+make (2, 15, Cho|Chromie|D.Va|Deathwing|Deckard|Dehaka|Diablo|E.T.C.|Falstad|Fenix|Gall|Garrosh|G...	UNKNOWN STEP	2026-10-04T09:35:44.7788724Z Info: Removed 50 vertice(s)
+make (2, 15, Cho|Chromie|D.Va|Deathwing|Deckard|Dehaka|Diablo|E.T.C.|Falstad|Fenix|Gall|Garrosh|G...	UNKNOWN STEP	2026-10-04T09:35:44.7789212Z Info: Removed: 0 vertices, 0 edges, 0 faces
+make (2, 15, Cho|Chromie|D.Va|Deathwing|Deckard|Dehaka|Diablo|E.T.C.|Falstad|Fenix|Gall|Garrosh|G...	UNKNOWN STEP	2026-10-04T09:35:44.7789704Z Info: Removed 4 vertice(s)
+make (2, 15, Cho|Chromie|D.Va|Deathwing|Deckard|Dehaka|Diablo|E.T.C.|Falstad|Fenix|Gall|Garrosh|G...	UNKNOWN STEP	2026-10-04T09:35:44.7790140Z Info: Removed: 0 vertices, 0 edges, 0 faces
+make (2, 15, Cho|Chromie|D.Va|Deathwing|Deckard|Dehaka|Diablo|E.T.C.|Falstad|Fenix|Gall|Garrosh|G...	UNKNOWN STEP	2026-10-04T09:35:44.7790799Z [09:35:44] Strict edge test failed; retrying clean voxel union at 0.620 mm
+make (2, 15, Cho|Chromie|D.Va|Deathwing|Deckard|Dehaka|Diablo|E.T.C.|Falstad|Fenix|Gall|Garrosh|G...	UNKNOWN STEP	2026-10-04T09:35:55.2119966Z [09:35:55] SUCCESS source diablo: 450000 print-ready triangles
+make (2, 15, Cho|Chromie|D.Va|Deathwing|Deckard|Dehaka|Diablo|E.T.C.|Falstad|Fenix|Gall|Garrosh|G...	UNKNOWN STEP	2026-10-04T09:35:55.2154556Z [09:35:55] Importing M3: /home/runner/work/_temp/H2/storm_hero_etc_base/storm_hero_etc_base_v07.m3
+make (2, 15, Cho|Chromie|D.Va|Deathwing|Deckard|Dehaka|Diablo|E.T.C.|Falstad|Fenix|Gall|Garrosh|G...	UNKNOWN STEP	2026-10-04T09:35:55.2158342Z 2026-10-04 09:35:55,215,215 DEBUG  base.py:152 Import /home/runner/work/_temp/H2/storm_hero_etc_base/storm_hero_etc_base_v07.m3
+make (2, 15, Cho|Chromie|D.Va|Deathwing|Deckard|Dehaka|Diablo|E.T.C.|Falstad|Fenix|Gall|Garrosh|G...	UNKNOWN STEP	2026-10-04T09:36:04.1475191Z Info: Removed 0 vertice(s)
+make (2, 15, Cho|Chromie|D.Va|Deathwing|Deckard|Dehaka|Diablo|E.T.C.|Falstad|Fenix|Gall|Garrosh|G...	UNKNOWN STEP	2026-10-04T09:36:04.1475708Z Info: Removed 571 vertice(s)
+make (2, 15, Cho|Chromie|D.Va|Deathwing|Deckard|Dehaka|Diablo|E.T.C.|Falstad|Fenix|Gall|Garrosh|G...	UNKNOWN STEP	2026-10-04T09:36:04.1476114Z Info: Removed 46 vertice(s)
+make (2, 15, Cho|Chromie|D.Va|Deathwing|Deckard|Dehaka|Diablo|E.T.C.|Falstad|Fenix|Gall|Garrosh|G...	UNKNOWN STEP	2026-10-04T09:36:04.1476513Z Info: Removed 757 vertice(s)
+make (2, 15, Cho|Chromie|D.Va|Deathwing|Deckard|Dehaka|Diablo|E.T.C.|Falstad|Fenix|Gall|Garrosh|G...	UNKNOWN STEP	2026-10-04T09:36:04.1477079Z Info: Removed 1340 vertice(s)
+make (2, 15, Cho|Chromie|D.Va|Deathwing|Deckard|Dehaka|Diablo|E.T.C.|Falstad|Fenix|Gall|Garrosh|G...	UNKNOWN STEP	2026-10-04T09:36:04.1477519Z Info: Removed: 0 vertices, 0 edges, 0 faces
+make (2, 15, Cho|Chromie|D.Va|Deathwing|Deckard|Dehaka|Diablo|E.T.C.|Falstad|Fenix|Gall|Garrosh|G...	UNKNOWN STEP	2026-10-04T09:36:04.1477986Z Info: Removed 0 vertice(s)
+make (2, 15, Cho|Chromie|D.Va|Deathwing|Deckard|Dehaka|Diablo|E.T.C.|Falstad|Fenix|Gall|Garrosh|G...	UNKNOWN STEP	2026-10-04T09:36:04.1478408Z Info: Removed: 0 vertices, 0 edges, 0 faces
+make (2, 15, Cho|Chromie|D.Va|Deathwing|Deckard|Dehaka|Diablo|E.T.C.|Falstad|Fenix|Gall|Garrosh|G...	UNKNOWN STEP	2026-10-04T09:36:04.1478855Z Info: Removed 0 vertice(s)
+make (2, 15, Cho|Chromie|D.Va|Deathwing|Deckard|Dehaka|Diablo|E.T.C.|Falstad|Fenix|Gall|Garrosh|G...	UNKNOWN STEP	2026-10-04T09:36:04.1479261Z Info: Removed: 0 vertices, 0 edges, 0 faces
+make (2, 15, Cho|Chromie|D.Va|Deathwing|Deckard|Dehaka|Diablo|E.T.C.|Falstad|Fenix|Gall|Garrosh|G...	UNKNOWN STEP	2026-10-04T09:36:04.1479720Z Info: Removed 510 vertice(s)
+make (2, 15, Cho|Chromie|D.Va|Deathwing|Deckard|Dehaka|Diablo|E.T.C.|Falstad|Fenix|Gall|Garrosh|G...	UNKNOWN STEP	2026-10-04T09:36:04.1480112Z Info: Removed: 0 vertices, 0 edges, 0 faces
+make (2, 15, Cho|Chromie|D.Va|Deathwing|Deckard|Dehaka|Diablo|E.T.C.|Falstad|Fenix|Gall|Garrosh|G...	UNKNOWN STEP	2026-10-04T09:36:04.1480541Z Info: Removed 43 vertice(s)
+make (2, 15, Cho|Chromie|D.Va|Deathwing|Deckard|Dehaka|Diablo|E.T.C.|Falstad|Fenix|Gall|Garrosh|G...	UNKNOWN STEP	2026-10-04T09:36:04.1480907Z Info: Removed: 0 vertices, 0 edges, 0 faces
+make (2, 15, Cho|Chromie|D.Va|Deathwing|Deckard|Dehaka|Diablo|E.T.C.|Falstad|Fenix|Gall|Garrosh|G...	UNKNOWN STEP	2026-10-04T09:36:04.1481314Z Info: Removed 735 vertice(s)
+make (2, 15, Cho|Chromie|D.Va|Deathwing|Deckard|Dehaka|Diablo|E.T.C.|Falstad|Fenix|Gall|Garrosh|G...	UNKNOWN STEP	2026-10-04T09:36:04.1481735Z Info: Removed: 0 vertices, 0 edges, 0 faces
+make (2, 15, Cho|Chromie|D.Va|Deathwing|Deckard|Dehaka|Diablo|E.T.C.|Falstad|Fenix|Gall|Garrosh|G...	UNKNOWN STEP	2026-10-04T09:36:04.1482221Z Info: Removed 15 vertice(s)
+make (2, 15, Cho|Chromie|D.Va|Deathwing|Deckard|Dehaka|Diablo|E.T.C.|Falstad|Fenix|Gall|Garrosh|G...	UNKNOWN STEP	2026-10-04T09:36:04.1482639Z Info: Removed: 0 vertices, 0 edges, 0 faces
+make (2, 15, Cho|Chromie|D.Va|Deathwing|Deckard|Dehaka|Diablo|E.T.C.|Falstad|Fenix|Gall|Garrosh|G...	UNKNOWN STEP	2026-10-04T09:36:04.1483603Z [09:36:04] Strict edge test failed; retrying clean voxel union at 0.620 mm
+make (2, 15, Cho|Chromie|D.Va|Deathwing|Deckard|Dehaka|Diablo|E.T.C.|Falstad|Fenix|Gall|Garrosh|G...	UNKNOWN STEP	2026-10-04T09:36:09.7315005Z [09:36:09] SUCCESS source etc: 321296 print-ready triangles
+make (2, 15, Cho|Chromie|D.Va|Deathwing|Deckard|Dehaka|Diablo|E.T.C.|Falstad|Fenix|Gall|Garrosh|G...	UNKNOWN STEP	2026-10-04T09:36:09.7356856Z [09:36:09] Importing M3: /home/runner/work/_temp/H2/storm_hero_falstad_base/storm_hero_falstad_base.m3
+make (2, 15, Cho|Chromie|D.Va|Deathwing|Deckard|Dehaka|Diablo|E.T.C.|Falstad|Fenix|Gall|Garrosh|G...	UNKNOWN STEP	2026-10-04T09:36:09.7374742Z 2026-10-04 09:36:09,735,735 DEBUG  base.py:152 Import /home/runner/work/_temp/H2/storm_hero_falstad_base/storm_hero_falstad_base.m3
+make (2, 15, Cho|Chromie|D.Va|Deathwing|Deckard|Dehaka|Diablo|E.T.C.|Falstad|Fenix|Gall|Garrosh|G...	UNKNOWN STEP	2026-10-04T09:36:34.3909752Z Info: Removed 515 vertice(s)
+make (2, 15, Cho|Chromie|D.Va|Deathwing|Deckard|Dehaka|Diablo|E.T.C.|Falstad|Fenix|Gall|Garrosh|G...	UNKNOWN STEP	2026-10-04T09:36:34.3911545Z Info: Removed 0 vertice(s)
+make (2, 15, Cho|Chromie|D.Va|Deathwing|Deckard|Dehaka|Diablo|E.T.C.|Falstad|Fenix|Gall|Garrosh|G...	UNKNOWN STEP	2026-10-04T09:36:34.3912363Z Info: Removed 0 vertice(s)
+make (2, 15, Cho|Chromie|D.Va|Deathwing|Deckard|Dehaka|Diablo|E.T.C.|Falstad|Fenix|Gall|Garrosh|G...	UNKNOWN STEP	2026-10-04T09:36:34.3912832Z Info: Removed 284 vertice(s)
+make (2, 15, Cho|Chromie|D.Va|Deathwing|Deckard|Dehaka|Diablo|E.T.C.|Falstad|Fenix|Gall|Garrosh|G...	UNKNOWN STEP	2026-10-04T09:36:34.3913501Z Info: Removed 268 vertice(s)
+make (2, 15, Cho|Chromie|D.Va|Deathwing|Deckard|Dehaka|Diablo|E.T.C.|Falstad|Fenix|Gall|Garrosh|G...	UNKNOWN STEP	2026-10-04T09:36:34.3913895Z Info: Removed 1013 vertice(s)
+make (2, 15, Cho|Chromie|D.Va|Deathwing|Deckard|Dehaka|Diablo|E.T.C.|Falstad|Fenix|Gall|Garrosh|G...	UNKNOWN STEP	2026-10-04T09:36:34.3914349Z Info: Removed: 0 vertices, 0 edges, 0 faces
+make (2, 15, Cho|Chromie|D.Va|Deathwing|Deckard|Dehaka|Diablo|E.T.C.|Falstad|Fenix|Gall|Garrosh|G...	UNKNOWN STEP	2026-10-04T09:36:34.3914873Z Info: Removed 474 vertice(s)
+make (2, 15, Cho|Chromie|D.Va|Deathwing|Deckard|Dehaka|Diablo|E.T.C.|Falstad|Fenix|Gall|Garrosh|G...	UNKNOWN STEP	2026-10-04T09:36:34.3915347Z Info: Removed: 0 vertices, 0 edges, 0 faces
+make (2, 15, Cho|Chromie|D.Va|Deathwing|Deckard|Dehaka|Diablo|E.T.C.|Falstad|Fenix|Gall|Garrosh|G...	UNKNOWN STEP	2026-10-04T09:36:34.3915869Z Info: Removed 0 vertice(s)
+make (2, 15, Cho|Chromie|D.Va|Deathwing|Deckard|Dehaka|Diablo|E.T.C.|Falstad|Fenix|Gall|Garrosh|G...	UNKNOWN STEP	2026-10-04T09:36:34.3916324Z Info: Removed: 0 vertices, 0 edges, 0 faces
+make (2, 15, Cho|Chromie|D.Va|Deathwing|Deckard|Dehaka|Diablo|E.T.C.|Falstad|Fenix|Gall|Garrosh|G...	UNKNOWN STEP	2026-10-04T09:36:34.3916877Z Info: Removed 0 vertice(s)
+make (2, 15, Cho|Chromie|D.Va|Deathwing|Deckard|Dehaka|Diablo|E.T.C.|Falstad|Fenix|Gall|Garrosh|G...	UNKNOWN STEP	2026-10-04T09:36:34.3917327Z Info: Removed: 0 vertices, 0 edges, 0 faces
+make (2, 15, Cho|Chromie|D.Va|Deathwing|Deckard|Dehaka|Diablo|E.T.C.|Falstad|Fenix|Gall|Garrosh|G...	UNKNOWN STEP	2026-10-04T09:36:34.3917835Z Info: Removed 284 vertice(s)
+make (2, 15, Cho|Chromie|D.Va|Deathwing|Deckard|Dehaka|Diablo|E.T.C.|Falstad|Fenix|Gall|Garrosh|G...	UNKNOWN STEP	2026-10-04T09:36:34.3918289Z Info: Removed: 0 vertices, 0 edges, 0 faces
+make (2, 15, Cho|Chromie|D.Va|Deathwing|Deckard|Dehaka|Diablo|E.T.C.|Falstad|Fenix|Gall|Garrosh|G...	UNKNOWN STEP	2026-10-04T09:36:34.3918796Z Info: Removed 255 vertice(s)
+make (2, 15, Cho|Chromie|D.Va|Deathwing|Deckard|Dehaka|Diablo|E.T.C.|Falstad|Fenix|Gall|Garrosh|G...	UNKNOWN STEP	2026-10-04T09:36:34.3919174Z Info: Removed: 0 vertices, 0 edges, 0 faces
+make (2, 15, Cho|Chromie|D.Va|Deathwing|Deckard|Dehaka|Diablo|E.T.C.|Falstad|Fenix|Gall|Garrosh|G...	UNKNOWN STEP	2026-10-04T09:36:34.3919491Z Info: Removed 2 vertice(s)
+make (2, 15, Cho|Chromie|D.Va|Deathwing|Deckard|Dehaka|Diablo|E.T.C.|Falstad|Fenix|Gall|Garrosh|G...	UNKNOWN STEP	2026-10-04T09:36:34.3919931Z Info: Removed: 0 vertices, 0 edges, 0 faces
+make (2, 15, Cho|Chromie|D.Va|Deathwing|Deckard|Dehaka|Diablo|E.T.C.|Falstad|Fenix|Gall|Garrosh|G...	UNKNOWN STEP	2026-10-04T09:36:34.3920590Z [09:36:34] Strict edge test failed; retrying clean voxel union at 0.620 mm
+make (2, 15, Cho|Chromie|D.Va|Deathwing|Deckard|Dehaka|Diablo|E.T.C.|Falstad|Fenix|Gall|Garrosh|G...	UNKNOWN STEP	2026-10-04T09:36:51.5729290Z [09:36:51] SUCCESS source falstad: 450000 print-ready triangles
+make (2, 15, Cho|Chromie|D.Va|Deathwing|Deckard|Dehaka|Diablo|E.T.C.|Falstad|Fenix|Gall|Garrosh|G...	UNKNOWN STEP	2026-10-04T09:36:51.5794009Z [09:36:51] Importing M3: /home/runner/work/_temp/H2/storm_hero_fenix_base/storm_hero_fenix_base.m3
+make (2, 15, Cho|Chromie|D.Va|Deathwing|Deckard|Dehaka|Diablo|E.T.C.|Falstad|Fenix|Gall|Garrosh|G...	UNKNOWN STEP	2026-10-04T09:36:51.5804676Z 2026-10-04 09:36:51,579,579 DEBUG  base.py:152 Import /home/runner/work/_temp/H2/storm_hero_fenix_base/storm_hero_fenix_base.m3
+make (2, 15, Cho|Chromie|D.Va|Deathwing|Deckard|Dehaka|Diablo|E.T.C.|Falstad|Fenix|Gall|Garrosh|G...	UNKNOWN STEP	2026-10-04T09:37:39.7068721Z Info: Removed 694 vertice(s)
+make (2, 15, Cho|Chromie|D.Va|Deathwing|Deckard|Dehaka|Diablo|E.T.C.|Falstad|Fenix|Gall|Garrosh|G...	UNKNOWN STEP	2026-10-04T09:37:39.7069235Z Info: Removed 638 vertice(s)
+make (2, 15, Cho|Chromie|D.Va|Deathwing|Deckard|Dehaka|Diablo|E.T.C.|Falstad|Fenix|Gall|Garrosh|G...	UNKNOWN STEP	2026-10-04T09:37:39.7069668Z Info: Removed: 0 vertices, 0 edges, 0 faces
+make (2, 15, Cho|Chromie|D.Va|Deathwing|Deckard|Dehaka|Diablo|E.T.C.|Falstad|Fenix|Gall|Garrosh|G...	UNKNOWN STEP	2026-10-04T09:37:39.7070148Z Info: Removed 638 vertice(s)
+make (2, 15, Cho|Chromie|D.Va|Deathwing|Deckard|Dehaka|Diablo|E.T.C.|Falstad|Fenix|Gall|Garrosh|G...	UNKNOWN STEP	2026-10-04T09:37:39.7070557Z Info: Removed: 0 vertices, 0 edges, 0 faces
+make (2, 15, Cho|Chromie|D.Va|Deathwing|Deckard|Dehaka|Diablo|E.T.C.|Falstad|Fenix|Gall|Garrosh|G...	UNKNOWN STEP	2026-10-04T09:37:39.7071020Z Info: Removed 0 vertice(s)
+make (2, 15, Cho|Chromie|D.Va|Deathwing|Deckard|Dehaka|Diablo|E.T.C.|Falstad|Fenix|Gall|Garrosh|G...	UNKNOWN STEP	2026-10-04T09:37:39.7071441Z Info: Removed: 0 vertices, 0 edges, 0 faces
+make (2, 15, Cho|Chromie|D.Va|Deathwing|Deckard|Dehaka|Diablo|E.T.C.|Falstad|Fenix|Gall|Garrosh|G...	UNKNOWN STEP	2026-10-04T09:37:39.7072058Z [09:37:39] Strict edge test failed; retrying clean voxel union at 0.620 mm
+make (2, 15, Cho|Chromie|D.Va|Deathwing|Deckard|Dehaka|Diablo|E.T.C.|Falstad|Fenix|Gall|Garrosh|G...	UNKNOWN STEP	2026-10-04T09:38:16.0790177Z [09:38:16] SUCCESS source fenix: 449999 print-ready triangles
+make (2, 15, Cho|Chromie|D.Va|Deathwing|Deckard|Dehaka|Diablo|E.T.C.|Falstad|Fenix|Gall|Garrosh|G...	UNKNOWN STEP	2026-10-04T09:38:16.0829431Z [09:38:16] Importing M3: /home/runner/work/_temp/H2/storm_hero_garrosh_base/storm_hero_garrosh_base.m3
+make (2, 15, Cho|Chromie|D.Va|Deathwing|Deckard|Dehaka|Diablo|E.T.C.|Falstad|Fenix|Gall|Garrosh|G...	UNKNOWN STEP	2026-10-04T09:38:16.0832809Z 2026-10-04 09:38:16,083,83  DEBUG  base.py:152 Import /home/runner/work/_temp/H2/storm_hero_garrosh_base/storm_hero_garrosh_base.m3
+make (2, 15, Cho|Chromie|D.Va|Deathwing|Deckard|Dehaka|Diablo|E.T.C.|Falstad|Fenix|Gall|Garrosh|G...	UNKNOWN STEP	2026-10-04T09:38:29.7935682Z Info: Removed 136 vertice(s)
+make (2, 15, Cho|Chromie|D.Va|Deathwing|Deckard|Dehaka|Diablo|E.T.C.|Falstad|Fenix|Gall|Garrosh|G...	UNKNOWN STEP	2026-10-04T09:38:29.7936177Z Info: Removed 1127 vertice(s)
+make (2, 15, Cho|Chromie|D.Va|Deathwing|Deckard|Dehaka|Diablo|E.T.C.|Falstad|Fenix|Gall|Garrosh|G...	UNKNOWN STEP	2026-10-04T09:38:29.7936627Z Info: Removed 1329 vertice(s)
+make (2, 15, Cho|Chromie|D.Va|Deathwing|Deckard|Dehaka|Diablo|E.T.C.|Falstad|Fenix|Gall|Garrosh|G...	UNKNOWN STEP	2026-10-04T09:38:29.7937071Z Info: Removed: 0 vertices, 0 edges, 0 faces
+make (2, 15, Cho|Chromie|D.Va|Deathwing|Deckard|Dehaka|Diablo|E.T.C.|Falstad|Fenix|Gall|Garrosh|G...	UNKNOWN STEP	2026-10-04T09:38:29.7937564Z Info: Removed 132 vertice(s)
+make (2, 15, Cho|Chromie|D.Va|Deathwing|Deckard|Dehaka|Diablo|E.T.C.|Falstad|Fenix|Gall|Garrosh|G...	UNKNOWN STEP	2026-10-04T09:38:29.7938003Z Info: Removed: 0 vertices, 0 edges, 0 faces
+make (2, 15, Cho|Chromie|D.Va|Deathwing|Deckard|Dehaka|Diablo|E.T.C.|Falstad|Fenix|Gall|Garrosh|G...	UNKNOWN STEP	2026-10-04T09:38:29.7938498Z Info: Removed 1125 vertice(s)
+make (2, 15, Cho|Chromie|D.Va|Deathwing|Deckard|Dehaka|Diablo|E.T.C.|Falstad|Fenix|Gall|Garrosh|G...	UNKNOWN STEP	2026-10-04T09:38:29.7938916Z Info: Removed: 0 vertices, 0 edges, 0 faces
+make (2, 15, Cho|Chromie|D.Va|Deathwing|Deckard|Dehaka|Diablo|E.T.C.|Falstad|Fenix|Gall|Garrosh|G...	UNKNOWN STEP	2026-10-04T09:38:29.7939372Z Info: Removed 12 vertice(s)
+make (2, 15, Cho|Chromie|D.Va|Deathwing|Deckard|Dehaka|Diablo|E.T.C.|Falstad|Fenix|Gall|Garrosh|G...	UNKNOWN STEP	2026-10-04T09:38:29.7939793Z Info: Removed: 0 vertices, 0 edges, 0 faces
+make (2, 15, Cho|Chromie|D.Va|Deathwing|Deckard|Dehaka|Diablo|E.T.C.|Falstad|Fenix|Gall|Garrosh|G...	UNKNOWN STEP	2026-10-04T09:38:29.7940388Z [09:38:29] Strict edge test failed; retrying clean voxel union at 0.620 mm
+make (2, 15, Cho|Chromie|D.Va|Deathwing|Deckard|Dehaka|Diablo|E.T.C.|Falstad|Fenix|Gall|Garrosh|G...	UNKNOWN STEP	2026-10-04T09:38:36.8808389Z [09:38:36] SUCCESS source garrosh: 416004 print-ready triangles
+make (2, 15, Cho|Chromie|D.Va|Deathwing|Deckard|Dehaka|Diablo|E.T.C.|Falstad|Fenix|Gall|Garrosh|G...	UNKNOWN STEP	2026-10-04T09:38:36.8852411Z [09:38:36] Importing M3: /home/runner/work/_temp/H2/storm_hero_gazlowe_base/storm_hero_gazlowe_base.m3
+make (2, 15, Cho|Chromie|D.Va|Deathwing|Deckard|Dehaka|Diablo|E.T.C.|Falstad|Fenix|Gall|Garrosh|G...	UNKNOWN STEP	2026-10-04T09:38:36.8856277Z 2026-10-04 09:38:36,885,885 DEBUG  base.py:152 Import /home/runner/work/_temp/H2/storm_hero_gazlowe_base/storm_hero_gazlowe_base.m3
+make (2, 15, Cho|Chromie|D.Va|Deathwing|Deckard|Dehaka|Diablo|E.T.C.|Falstad|Fenix|Gall|Garrosh|G...	UNKNOWN STEP	2026-10-04T09:38:44.1751407Z Info: Removed 0 vertice(s)
+make (2, 15, Cho|Chromie|D.Va|Deathwing|Deckard|Dehaka|Diablo|E.T.C.|Falstad|Fenix|Gall|Garrosh|G...	UNKNOWN STEP	2026-10-04T09:38:44.1752043Z Info: Removed 167 vertice(s)
+make (2, 15, Cho|Chromie|D.Va|Deathwing|Deckard|Dehaka|Diablo|E.T.C.|Falstad|Fenix|Gall|Garrosh|G...	UNKNOWN STEP	2026-10-04T09:38:44.1752461Z Info: Removed 2261 vertice(s)
+make (2, 15, Cho|Chromie|D.Va|Deathwing|Deckard|Dehaka|Diablo|E.T.C.|Falstad|Fenix|Gall|Garrosh|G...	UNKNOWN STEP	2026-10-04T09:38:44.1752843Z Info: Removed 2426 vertice(s)
+make (2, 15, Cho|Chromie|D.Va|Deathwing|Deckard|Dehaka|Diablo|E.T.C.|Falstad|Fenix|Gall|Garrosh|G...	UNKNOWN STEP	2026-10-04T09:38:44.1753505Z Info: Removed: 0 vertices, 0 edges, 0 faces
+make (2, 15, Cho|Chromie|D.Va|Deathwing|Deckard|Dehaka|Diablo|E.T.C.|Falstad|Fenix|Gall|Garrosh|G...	UNKNOWN STEP	2026-10-04T09:38:44.1754009Z Info: Removed 0 vertice(s)
+make (2, 15, Cho|Chromie|D.Va|Deathwing|Deckard|Dehaka|Diablo|E.T.C.|Falstad|Fenix|Gall|Garrosh|G...	UNKNOWN STEP	2026-10-04T09:38:44.1754451Z Info: Removed: 0 vertices, 0 edges, 0 faces
+make (2, 15, Cho|Chromie|D.Va|Deathwing|Deckard|Dehaka|Diablo|E.T.C.|Falstad|Fenix|Gall|Garrosh|G...	UNKNOWN STEP	2026-10-04T09:38:44.1754890Z Info: Removed 0 vertice(s)
+make (2, 15, Cho|Chromie|D.Va|Deathwing|Deckard|Dehaka|Diablo|E.T.C.|Falstad|Fenix|Gall|Garrosh|G...	UNKNOWN STEP	2026-10-04T09:38:44.1755293Z Info: Removed: 0 vertices, 0 edges, 0 faces
+make (2, 15, Cho|Chromie|D.Va|Deathwing|Deckard|Dehaka|Diablo|E.T.C.|Falstad|Fenix|Gall|Garrosh|G...	UNKNOWN STEP	2026-10-04T09:38:44.1755836Z Info: Removed 165 vertice(s)
+make (2, 15, Cho|Chromie|D.Va|Deathwing|Deckard|Dehaka|Diablo|E.T.C.|Falstad|Fenix|Gall|Garrosh|G...	UNKNOWN STEP	2026-10-04T09:38:44.1756252Z Info: Removed: 0 vertices, 0 edges, 0 faces
+make (2, 15, Cho|Chromie|D.Va|Deathwing|Deckard|Dehaka|Diablo|E.T.C.|Falstad|Fenix|Gall|Garrosh|G...	UNKNOWN STEP	2026-10-04T09:38:44.1756720Z Info: Removed 2261 vertice(s)
+make (2, 15, Cho|Chromie|D.Va|Deathwing|Deckard|Dehaka|Diablo|E.T.C.|Falstad|Fenix|Gall|Garrosh|G...	UNKNOWN STEP	2026-10-04T09:38:44.1757196Z Info: Removed: 0 vertices, 0 edges, 0 faces
+make (2, 15, Cho|Chromie|D.Va|Deathwing|Deckard|Dehaka|Diablo|E.T.C.|Falstad|Fenix|Gall|Garrosh|G...	UNKNOWN STEP	2026-10-04T09:38:44.1757655Z Info: Removed 1 vertice(s)
+make (2, 15, Cho|Chromie|D.Va|Deathwing|Deckard|Dehaka|Diablo|E.T.C.|Falstad|Fenix|Gall|Garrosh|G...	UNKNOWN STEP	2026-10-04T09:38:44.1758055Z Info: Removed: 0 vertices, 0 edges, 0 faces
+make (2, 15, Cho|Chromie|D.Va|Deathwing|Deckard|Dehaka|Diablo|E.T.C.|Falstad|Fenix|Gall|Garrosh|G...	UNKNOWN STEP	2026-10-04T09:38:44.1758679Z [09:38:44] Strict edge test failed; retrying clean voxel union at 0.620 mm
+make (2, 15, Cho|Chromie|D.Va|Deathwing|Deckard|Dehaka|Diablo|E.T.C.|Falstad|Fenix|Gall|Garrosh|G...	UNKNOWN STEP	2026-10-04T09:38:48.2751852Z [09:38:48] SUCCESS source gazlowe: 244364 print-ready triangles
+make (2, 15, Cho|Chromie|D.Va|Deathwing|Deckard|Dehaka|Diablo|E.T.C.|Falstad|Fenix|Gall|Garrosh|G...	UNKNOWN STEP	2026-10-04T09:38:48.2797782Z [09:38:48] Importing M3: /home/runner/work/_temp/H2/storm_hero_genji_base/storm_hero_genji_base.m3
+make (2, 15, Cho|Chromie|D.Va|Deathwing|Deckard|Dehaka|Diablo|E.T.C.|Falstad|Fenix|Gall|Garrosh|G...	UNKNOWN STEP	2026-10-04T09:38:48.2801883Z 2026-10-04 09:38:48,279,279 DEBUG  base.py:152 Import /home/runner/work/_temp/H2/storm_hero_genji_base/storm_hero_genji_base.m3
+make (2, 15, Cho|Chromie|D.Va|Deathwing|Deckard|Dehaka|Diablo|E.T.C.|Falstad|Fenix|Gall|Garrosh|G...	UNKNOWN STEP	2026-10-04T09:38:56.1939840Z Info: Removed 0 vertice(s)
+make (2, 15, Cho|Chromie|D.Va|Deathwing|Deckard|Dehaka|Diablo|E.T.C.|Falstad|Fenix|Gall|Garrosh|G...	UNKNOWN STEP	2026-10-04T09:38:56.1940392Z Info: Removed 0 vertice(s)
+make (2, 15, Cho|Chromie|D.Va|Deathwing|Deckard|Dehaka|Diablo|E.T.C.|Falstad|Fenix|Gall|Garrosh|G...	UNKNOWN STEP	2026-10-04T09:38:56.1940857Z Info: Removed 1391 vertice(s)
+make (2, 15, Cho|Chromie|D.Va|Deathwing|Deckard|Dehaka|Diablo|E.T.C.|Falstad|Fenix|Gall|Garrosh|G...	UNKNOWN STEP	2026-10-04T09:38:56.1941370Z Info: Removed 1404 vertice(s)
+make (2, 15, Cho|Chromie|D.Va|Deathwing|Deckard|Dehaka|Diablo|E.T.C.|Falstad|Fenix|Gall|Garrosh|G...	UNKNOWN STEP	2026-10-04T09:38:56.1941851Z Info: Removed: 0 vertices, 0 edges, 0 faces
+make (2, 15, Cho|Chromie|D.Va|Deathwing|Deckard|Dehaka|Diablo|E.T.C.|Falstad|Fenix|Gall|Garrosh|G...	UNKNOWN STEP	2026-10-04T09:38:56.1942378Z Info: Removed 0 vertice(s)
+make (2, 15, Cho|Chromie|D.Va|Deathwing|Deckard|Dehaka|Diablo|E.T.C.|Falstad|Fenix|Gall|Garrosh|G...	UNKNOWN STEP	2026-10-04T09:38:56.1942774Z Info: Removed: 0 vertices, 0 edges, 0 faces
+make (2, 15, Cho|Chromie|D.Va|Deathwing|Deckard|Dehaka|Diablo|E.T.C.|Falstad|Fenix|Gall|Garrosh|G...	UNKNOWN STEP	2026-10-04T09:38:56.1943499Z Info: Removed 0 vertice(s)
+make (2, 15, Cho|Chromie|D.Va|Deathwing|Deckard|Dehaka|Diablo|E.T.C.|Falstad|Fenix|Gall|Garrosh|G...	UNKNOWN STEP	2026-10-04T09:38:56.1943939Z Info: Removed: 0 vertices, 0 edges, 0 faces
+make (2, 15, Cho|Chromie|D.Va|Deathwing|Deckard|Dehaka|Diablo|E.T.C.|Falstad|Fenix|Gall|Garrosh|G...	UNKNOWN STEP	2026-10-04T09:38:56.1944373Z Info: Removed 0 vertice(s)
+make (2, 15, Cho|Chromie|D.Va|Deathwing|Deckard|Dehaka|Diablo|E.T.C.|Falstad|Fenix|Gall|Garrosh|G...	UNKNOWN STEP	2026-10-04T09:38:56.1944799Z Info: Removed: 0 vertices, 0 edges, 0 faces
+make (2, 15, Cho|Chromie|D.Va|Deathwing|Deckard|Dehaka|Diablo|E.T.C.|Falstad|Fenix|Gall|Garrosh|G...	UNKNOWN STEP	2026-10-04T09:38:56.1945232Z Info: Removed 0 vertice(s)
+make (2, 15, Cho|Chromie|D.Va|Deathwing|Deckard|Dehaka|Diablo|E.T.C.|Falstad|Fenix|Gall|Garrosh|G...	UNKNOWN STEP	2026-10-04T09:38:56.1945642Z Info: Removed: 0 vertices, 0 edges, 0 faces
+make (2, 15, Cho|Chromie|D.Va|Deathwing|Deckard|Dehaka|Diablo|E.T.C.|Falstad|Fenix|Gall|Garrosh|G...	UNKNOWN STEP	2026-10-04T09:38:56.1946118Z Info: Removed 1387 vertice(s)
+make (2, 15, Cho|Chromie|D.Va|Deathwing|Deckard|Dehaka|Diablo|E.T.C.|Falstad|Fenix|Gall|Garrosh|G...	UNKNOWN STEP	2026-10-04T09:38:56.1946522Z Info: Removed: 0 vertices, 0 edges, 0 faces
+make (2, 15, Cho|Chromie|D.Va|Deathwing|Deckard|Dehaka|Diablo|E.T.C.|Falstad|Fenix|Gall|Garrosh|G...	UNKNOWN STEP	2026-10-04T09:38:56.1946979Z Info: Removed 53 vertice(s)
+make (2, 15, Cho|Chromie|D.Va|Deathwing|Deckard|Dehaka|Diablo|E.T.C.|Falstad|Fenix|Gall|Garrosh|G...	UNKNOWN STEP	2026-10-04T09:38:56.1947391Z Info: Removed: 0 vertices, 0 edges, 0 faces
+make (2, 15, Cho|Chromie|D.Va|Deathwing|Deckard|Dehaka|Diablo|E.T.C.|Falstad|Fenix|Gall|Garrosh|G...	UNKNOWN STEP	2026-10-04T09:38:56.1948020Z [09:38:56] Strict edge test failed; retrying clean voxel union at 0.620 mm
+make (2, 15, Cho|Chromie|D.Va|Deathwing|Deckard|Dehaka|Diablo|E.T.C.|Falstad|Fenix|Gall|Garrosh|G...	UNKNOWN STEP	2026-10-04T09:39:01.4562701Z [09:39:01] SUCCESS source genji: 324418 print-ready triangles
+make (2, 15, Cho|Chromie|D.Va|Deathwing|Deckard|Dehaka|Diablo|E.T.C.|Falstad|Fenix|Gall|Garrosh|G...	UNKNOWN STEP	2026-10-04T09:39:01.4604533Z [09:39:01] Importing M3: /home/runner/work/_temp/H2/storm_hero_greymane_base/storm_hero_greymane_base.m3
+make (2, 15, Cho|Chromie|D.Va|Deathwing|Deckard|Dehaka|Diablo|E.T.C.|Falstad|Fenix|Gall|Garrosh|G...	UNKNOWN STEP	2026-10-04T09:39:01.4608370Z 2026-10-04 09:39:01,460,460 DEBUG  base.py:152 Import /home/runner/work/_temp/H2/storm_hero_greymane_base/storm_hero_greymane_base.m3
+make (2, 15, Cho|Chromie|D.Va|Deathwing|Deckard|Dehaka|Diablo|E.T.C.|Falstad|Fenix|Gall|Garrosh|G...	UNKNOWN STEP	2026-10-04T09:39:14.1919008Z Info: Removed 112 vertice(s)
+make (2, 15, Cho|Chromie|D.Va|Deathwing|Deckard|Dehaka|Diablo|E.T.C.|Falstad|Fenix|Gall|Garrosh|G...	UNKNOWN STEP	2026-10-04T09:39:14.1919596Z Info: Removed 14 vertice(s)
+make (2, 15, Cho|Chromie|D.Va|Deathwing|Deckard|Dehaka|Diablo|E.T.C.|Falstad|Fenix|Gall|Garrosh|G...	UNKNOWN STEP	2026-10-04T09:39:14.1920001Z Info: Removed 743 vertice(s)
+make (2, 15, Cho|Chromie|D.Va|Deathwing|Deckard|Dehaka|Diablo|E.T.C.|Falstad|Fenix|Gall|Garrosh|G...	UNKNOWN STEP	2026-10-04T09:39:14.1920384Z Info: Removed 0 vertice(s)
+make (2, 15, Cho|Chromie|D.Va|Deathwing|Deckard|Dehaka|Diablo|E.T.C.|Falstad|Fenix|Gall|Garrosh|G...	UNKNOWN STEP	2026-10-04T09:39:14.1920772Z Info: Removed 1 vertice(s)
+make (2, 15, Cho|Chromie|D.Va|Deathwing|Deckard|Dehaka|Diablo|E.T.C.|Falstad|Fenix|Gall|Garrosh|G...	UNKNOWN STEP	2026-10-04T09:39:14.1921156Z Info: Removed 1200 vertice(s)
+make (2, 15, Cho|Chromie|D.Va|Deathwing|Deckard|Dehaka|Diablo|E.T.C.|Falstad|Fenix|Gall|Garrosh|G...	UNKNOWN STEP	2026-10-04T09:39:14.1921604Z Info: Removed: 0 vertices, 0 edges, 0 faces
+make (2, 15, Cho|Chromie|D.Va|Deathwing|Deckard|Dehaka|Diablo|E.T.C.|Falstad|Fenix|Gall|Garrosh|G...	UNKNOWN STEP	2026-10-04T09:39:14.1922074Z Info: Removed 112 vertice(s)
+make (2, 15, Cho|Chromie|D.Va|Deathwing|Deckard|Dehaka|Diablo|E.T.C.|Falstad|Fenix|Gall|Garrosh|G...	UNKNOWN STEP	2026-10-04T09:39:14.1922478Z Info: Removed: 0 vertices, 0 edges, 0 faces
+make (2, 15, Cho|Chromie|D.Va|Deathwing|Deckard|Dehaka|Diablo|E.T.C.|Falstad|Fenix|Gall|Garrosh|G...	UNKNOWN STEP	2026-10-04T09:39:14.1922934Z Info: Removed 10 vertice(s)
+make (2, 15, Cho|Chromie|D.Va|Deathwing|Deckard|Dehaka|Diablo|E.T.C.|Falstad|Fenix|Gall|Garrosh|G...	UNKNOWN STEP	2026-10-04T09:39:14.1923634Z Info: Removed: 0 vertices, 0 edges, 0 faces
+make (2, 15, Cho|Chromie|D.Va|Deathwing|Deckard|Dehaka|Diablo|E.T.C.|Falstad|Fenix|Gall|Garrosh|G...	UNKNOWN STEP	2026-10-04T09:39:14.1924099Z Info: Removed 746 vertice(s)
+make (2, 15, Cho|Chromie|D.Va|Deathwing|Deckard|Dehaka|Diablo|E.T.C.|Falstad|Fenix|Gall|Garrosh|G...	UNKNOWN STEP	2026-10-04T09:39:14.1924517Z Info: Removed: 0 vertices, 0 edges, 0 faces
+make (2, 15, Cho|Chromie|D.Va|Deathwing|Deckard|Dehaka|Diablo|E.T.C.|Falstad|Fenix|Gall|Garrosh|G...	UNKNOWN STEP	2026-10-04T09:39:14.1924979Z Info: Removed 4 vertice(s)
+make (2, 15, Cho|Chromie|D.Va|Deathwing|Deckard|Dehaka|Diablo|E.T.C.|Falstad|Fenix|Gall|Garrosh|G...	UNKNOWN STEP	2026-10-04T09:39:14.1925372Z Info: Removed: 0 vertices, 0 edges, 0 faces
+make (2, 15, Cho|Chromie|D.Va|Deathwing|Deckard|Dehaka|Diablo|E.T.C.|Falstad|Fenix|Gall|Garrosh|G...	UNKNOWN STEP	2026-10-04T09:39:14.1925864Z Info: Removed 2 vertice(s)
+make (2, 15, Cho|Chromie|D.Va|Deathwing|Deckard|Dehaka|Diablo|E.T.C.|Falstad|Fenix|Gall|Garrosh|G...	UNKNOWN STEP	2026-10-04T09:39:14.1926286Z Info: Removed: 0 vertices, 0 edges, 0 faces
+make (2, 15, Cho|Chromie|D.Va|Deathwing|Deckard|Dehaka|Diablo|E.T.C.|Falstad|Fenix|Gall|Garrosh|G...	UNKNOWN STEP	2026-10-04T09:39:14.1927157Z Info: Removed 236 vertice(s)
+make (2, 15, Cho|Chromie|D.Va|Deathwing|Deckard|Dehaka|Diablo|E.T.C.|Falstad|Fenix|Gall|Garrosh|G...	UNKNOWN STEP	2026-10-04T09:39:14.1927811Z Info: Removed: 0 vertices, 0 edges, 0 faces
+make (2, 15, Cho|Chromie|D.Va|Deathwing|Deckard|Dehaka|Diablo|E.T.C.|Falstad|Fenix|Gall|Garrosh|G...	UNKNOWN STEP	2026-10-04T09:39:14.1928424Z [09:39:14] Strict edge test failed; retrying clean voxel union at 0.620 mm
+make (2, 15, Cho|Chromie|D.Va|Deathwing|Deckard|Dehaka|Diablo|E.T.C.|Falstad|Fenix|Gall|Garrosh|G...	UNKNOWN STEP	2026-10-04T09:39:20.8126775Z [09:39:20] SUCCESS source greymane: 392237 print-ready triangles
+make (2, 15, Cho|Chromie|D.Va|Deathwing|Deckard|Dehaka|Diablo|E.T.C.|Falstad|Fenix|Gall|Garrosh|G...	UNKNOWN STEP	2026-10-04T09:39:21.3016391Z [09:39:21] Completed: 15 successful roster entries, 0 missing/failed
+make (2, 15, Cho|Chromie|D.Va|Deathwing|Deckard|Dehaka|Diablo|E.T.C.|Falstad|Fenix|Gall|Garrosh|G...	UNKNOWN STEP	2026-10-04T09:39:21.3037236Z Blender 3.6.23 (hash e467db79ca8c built 2025-06-17 01:32:54)
+make (2, 15, Cho|Chromie|D.Va|Deathwing|Deckard|Dehaka|Diablo|E.T.C.|Falstad|Fenix|Gall|Garrosh|G...	UNKNOWN STEP	2026-10-04T09:39:21.6074953Z ##[group]Run actions/upload-artifact@v4
+make (2, 15, Cho|Chromie|D.Va|Deathwing|Deckard|Dehaka|Diablo|E.T.C.|Falstad|Fenix|Gall|Garrosh|G...	UNKNOWN STEP	2026-10-04T09:39:21.6075261Z with:
+make (2, 15, Cho|Chromie|D.Va|Deathwing|Deckard|Dehaka|Diablo|E.T.C.|Falstad|Fenix|Gall|Garrosh|G...	UNKNOWN STEP	2026-10-04T09:39:21.6075450Z   name: r2-c-2
+make (2, 15, Cho|Chromie|D.Va|Deathwing|Deckard|Dehaka|Diablo|E.T.C.|Falstad|Fenix|Gall|Garrosh|G...	UNKNOWN STEP	2026-10-04T09:39:21.6075667Z   path: /home/runner/work/_temp/chunk
+make (2, 15, Cho|Chromie|D.Va|Deathwing|Deckard|Dehaka|Diablo|E.T.C.|Falstad|Fenix|Gall|Garrosh|G...	UNKNOWN STEP	2026-10-04T09:39:21.6075934Z   retention-days: 30
+make (2, 15, Cho|Chromie|D.Va|Deathwing|Deckard|Dehaka|Diablo|E.T.C.|Falstad|Fenix|Gall|Garrosh|G...	UNKNOWN STEP	2026-10-04T09:39:21.6076151Z   compression-level: 0
+make (2, 15, Cho|Chromie|D.Va|Deathwing|Deckard|Dehaka|Diablo|E.T.C.|Falstad|Fenix|Gall|Garrosh|G...	UNKNOWN STEP	2026-10-04T09:39:21.6076372Z   if-no-files-found: warn
+make (2, 15, Cho|Chromie|D.Va|Deathwing|Deckard|Dehaka|Diablo|E.T.C.|Falstad|Fenix|Gall|Garrosh|G...	UNKNOWN STEP	2026-10-04T09:39:21.6092712Z   overwrite: false
+make (2, 15, Cho|Chromie|D.Va|Deathwing|Deckard|Dehaka|Diablo|E.T.C.|Falstad|Fenix|Gall|Garrosh|G...	UNKNOWN STEP	2026-10-04T09:39:21.6093015Z   include-hidden-files: false
+make (2, 15, Cho|Chromie|D.Va|Deathwing|Deckard|Dehaka|Diablo|E.T.C.|Falstad|Fenix|Gall|Garrosh|G...	UNKNOWN STEP	2026-10-04T09:39:21.6093542Z env:
+make (2, 15, Cho|Chromie|D.Va|Deathwing|Deckard|Dehaka|Diablo|E.T.C.|Falstad|Fenix|Gall|Garrosh|G...	UNKNOWN STEP	2026-10-04T09:39:21.6093753Z   BV: 3.6.23
+make (2, 15, Cho|Chromie|D.Va|Deathwing|Deckard|Dehaka|Diablo|E.T.C.|Falstad|Fenix|Gall|Garrosh|G...	UNKNOWN STEP	2026-10-04T09:39:21.6093972Z   M3: 58935005c4465a219a740f6b740253533eda773f
+make (2, 15, Cho|Chromie|D.Va|Deathwing|Deckard|Dehaka|Diablo|E.T.C.|Falstad|Fenix|Gall|Garrosh|G...	UNKNOWN STEP	2026-10-04T09:39:21.6094248Z ##[endgroup]
+make (2, 15, Cho|Chromie|D.Va|Deathwing|Deckard|Dehaka|Diablo|E.T.C.|Falstad|Fenix|Gall|Garrosh|G...	UNKNOWN STEP	2026-10-04T09:39:21.7877072Z (node:2778) [DEP0040] DeprecationWarning: The `punycode` module is deprecated. Please use a userland alternative instead.
+make (2, 15, Cho|Chromie|D.Va|Deathwing|Deckard|Dehaka|Diablo|E.T.C.|Falstad|Fenix|Gall|Garrosh|G...	UNKNOWN STEP	2026-10-04T09:39:21.7878062Z (Use `node --trace-deprecation ...` to show where the warning was created)
+make (2, 15, Cho|Chromie|D.Va|Deathwing|Deckard|Dehaka|Diablo|E.T.C.|Falstad|Fenix|Gall|Garrosh|G...	UNKNOWN STEP	2026-10-04T09:39:21.7978829Z With the provided path, there will be 18 files uploaded
+make (2, 15, Cho|Chromie|D.Va|Deathwing|Deckard|Dehaka|Diablo|E.T.C.|Falstad|Fenix|Gall|Garrosh|G...	UNKNOWN STEP	2026-10-04T09:39:21.7985853Z Artifact name is valid!
+make (2, 15, Cho|Chromie|D.Va|Deathwing|Deckard|Dehaka|Diablo|E.T.C.|Falstad|Fenix|Gall|Garrosh|G...	UNKNOWN STEP	2026-10-04T09:39:21.7986422Z Root directory input is valid!
+make (2, 15, Cho|Chromie|D.Va|Deathwing|Deckard|Dehaka|Diablo|E.T.C.|Falstad|Fenix|Gall|Garrosh|G...	UNKNOWN STEP	2026-10-04T09:39:22.1208432Z Beginning upload of artifact content to blob storage
+make (2, 15, Cho|Chromie|D.Va|Deathwing|Deckard|Dehaka|Diablo|E.T.C.|Falstad|Fenix|Gall|Garrosh|G...	UNKNOWN STEP	2026-10-04T09:39:22.1780052Z (node:2778) [DEP0169] DeprecationWarning: `url.parse()` behavior is not standardized and prone to errors that have security implications. Use the WHATWG URL API instead. CVEs are not issued for `url.parse()` vulnerabilities.
+make (2, 15, Cho|Chromie|D.Va|Deathwing|Deckard|Dehaka|Diablo|E.T.C.|Falstad|Fenix|Gall|Garrosh|G...	UNKNOWN STEP	2026-10-04T09:39:22.8481628Z Uploaded bytes 8388608
+make (2, 15, Cho|Chromie|D.Va|Deathwing|Deckard|Dehaka|Diablo|E.T.C.|Falstad|Fenix|Gall|Garrosh|G...	UNKNOWN STEP	2026-10-04T09:39:22.8759435Z Uploaded bytes 16777216
+make (2, 15, Cho|Chromie|D.Va|Deathwing|Deckard|Dehaka|Diablo|E.T.C.|Falstad|Fenix|Gall|Garrosh|G...	UNKNOWN STEP	2026-10-04T09:39:22.9247146Z Uploaded bytes 25165824
+make (2, 15, Cho|Chromie|D.Va|Deathwing|Deckard|Dehaka|Diablo|E.T.C.|Falstad|Fenix|Gall|Garrosh|G...	UNKNOWN STEP	2026-10-04T09:39:22.9631245Z Uploaded bytes 33554432
+make (2, 15, Cho|Chromie|D.Va|Deathwing|Deckard|Dehaka|Diablo|E.T.C.|Falstad|Fenix|Gall|Garrosh|G...	UNKNOWN STEP	2026-10-04T09:39:23.0650531Z Uploaded bytes 41943040
+make (2, 15, Cho|Chromie|D.Va|Deathwing|Deckard|Dehaka|Diablo|E.T.C.|Falstad|Fenix|Gall|Garrosh|G...	UNKNOWN STEP	2026-10-04T09:39:23.0877956Z Uploaded bytes 50331648
+make (2, 15, Cho|Chromie|D.Va|Deathwing|Deckard|Dehaka|Diablo|E.T.C.|Falstad|Fenix|Gall|Garrosh|G...	UNKNOWN STEP	2026-10-04T09:39:23.1368487Z Uploaded bytes 58720256
+make (2, 15, Cho|Chromie|D.Va|Deathwing|Deckard|Dehaka|Diablo|E.T.C.|Falstad|Fenix|Gall|Garrosh|G...	UNKNOWN STEP	2026-10-04T09:39:23.1804036Z Uploaded bytes 67108864
+make (2, 15, Cho|Chromie|D.Va|Deathwing|Deckard|Dehaka|Diablo|E.T.C.|Falstad|Fenix|Gall|Garrosh|G...	UNKNOWN STEP	2026-10-04T09:39:23.2894094Z Uploaded bytes 75497472
+make (2, 15, Cho|Chromie|D.Va|Deathwing|Deckard|Dehaka|Diablo|E.T.C.|Falstad|Fenix|Gall|Garrosh|G...	UNKNOWN STEP	2026-10-04T09:39:23.3467283Z Uploaded bytes 83886080
+make (2, 15, Cho|Chromie|D.Va|Deathwing|Deckard|Dehaka|Diablo|E.T.C.|Falstad|Fenix|Gall|Garrosh|G...	UNKNOWN STEP	2026-10-04T09:39:23.3786091Z Uploaded bytes 92274688
+make (2, 15, Cho|Chromie|D.Va|Deathwing|Deckard|Dehaka|Diablo|E.T.C.|Falstad|Fenix|Gall|Garrosh|G...	UNKNOWN STEP	2026-10-04T09:39:23.4553495Z Uploaded bytes 100663296
+make (2, 15, Cho|Chromie|D.Va|Deathwing|Deckard|Dehaka|Diablo|E.T.C.|Falstad|Fenix|Gall|Garrosh|G...	UNKNOWN STEP	2026-10-04T09:39:23.5103014Z Uploaded bytes 109051904
+make (2, 15, Cho|Chromie|D.Va|Deathwing|Deckard|Dehaka|Diablo|E.T.C.|Falstad|Fenix|Gall|Garrosh|G...	UNKNOWN STEP	2026-10-04T09:39:23.5654071Z Uploaded bytes 117440512
+make (2, 15, Cho|Chromie|D.Va|Deathwing|Deckard|Dehaka|Diablo|E.T.C.|Falstad|Fenix|Gall|Garrosh|G...	UNKNOWN STEP	2026-10-04T09:39:23.5849540Z Uploaded bytes 125829120
+make (2, 15, Cho|Chromie|D.Va|Deathwing|Deckard|Dehaka|Diablo|E.T.C.|Falstad|Fenix|Gall|Garrosh|G...	UNKNOWN STEP	2026-10-04T09:39:23.6778872Z Uploaded bytes 134217728
+make (2, 15, Cho|Chromie|D.Va|Deathwing|Deckard|Dehaka|Diablo|E.T.C.|Falstad|Fenix|Gall|Garrosh|G...	UNKNOWN STEP	2026-10-04T09:39:23.7273911Z Uploaded bytes 142606336
+make (2, 15, Cho|Chromie|D.Va|Deathwing|Deckard|Dehaka|Diablo|E.T.C.|Falstad|Fenix|Gall|Garrosh|G...	UNKNOWN STEP	2026-10-04T09:39:23.7766337Z Uploaded bytes 150994944
+make (2, 15, Cho|Chromie|D.Va|Deathwing|Deckard|Dehaka|Diablo|E.T.C.|Falstad|Fenix|Gall|Garrosh|G...	UNKNOWN STEP	2026-10-04T09:39:23.7957702Z Uploaded bytes 159383552
+make (2, 15, Cho|Chromie|D.Va|Deathwing|Deckard|Dehaka|Diablo|E.T.C.|Falstad|Fenix|Gall|Garrosh|G...	UNKNOWN STEP	2026-10-04T09:39:23.8979872Z Uploaded bytes 167772160
+make (2, 15, Cho|Chromie|D.Va|Deathwing|Deckard|Dehaka|Diablo|E.T.C.|Falstad|Fenix|Gall|Garrosh|G...	UNKNOWN STEP	2026-10-04T09:39:23.9508184Z Uploaded bytes 176160768
+make (2, 15, Cho|Chromie|D.Va|Deathwing|Deckard|Dehaka|Diablo|E.T.C.|Falstad|Fenix|Gall|Garrosh|G...	UNKNOWN STEP	2026-10-04T09:39:24.0124531Z Uploaded bytes 184549376
+make (2, 15, Cho|Chromie|D.Va|Deathwing|Deckard|Dehaka|Diablo|E.T.C.|Falstad|Fenix|Gall|Garrosh|G...	UNKNOWN STEP	2026-10-04T09:39:24.0212611Z Uploaded bytes 192937984
+make (2, 15, Cho|Chromie|D.Va|Deathwing|Deckard|Dehaka|Diablo|E.T.C.|Falstad|Fenix|Gall|Garrosh|G...	UNKNOWN STEP	2026-10-04T09:39:24.1274729Z Uploaded bytes 201326592
+make (2, 15, Cho|Chromie|D.Va|Deathwing|Deckard|Dehaka|Diablo|E.T.C.|Falstad|Fenix|Gall|Garrosh|G...	UNKNOWN STEP	2026-10-04T09:39:24.1657072Z Uploaded bytes 209715200
+make (2, 15, Cho|Chromie|D.Va|Deathwing|Deckard|Dehaka|Diablo|E.T.C.|Falstad|Fenix|Gall|Garrosh|G...	UNKNOWN STEP	2026-10-04T09:39:24.2325671Z Uploaded bytes 218103808
+make (2, 15, Cho|Chromie|D.Va|Deathwing|Deckard|Dehaka|Diablo|E.T.C.|Falstad|Fenix|Gall|Garrosh|G...	UNKNOWN STEP	2026-10-04T09:39:24.2501608Z Uploaded bytes 226492416
+make (2, 15, Cho|Chromie|D.Va|Deathwing|Deckard|Dehaka|Diablo|E.T.C.|Falstad|Fenix|Gall|Garrosh|G...	UNKNOWN STEP	2026-10-04T09:39:24.3607762Z Uploaded bytes 234881024
+make (2, 15, Cho|Chromie|D.Va|Deathwing|Deckard|Dehaka|Diablo|E.T.C.|Falstad|Fenix|Gall|Garrosh|G...	UNKNOWN STEP	2026-10-04T09:39:24.3770525Z Uploaded bytes 243269632
+make (2, 15, Cho|Chromie|D.Va|Deathwing|Deckard|Dehaka|Diablo|E.T.C.|Falstad|Fenix|Gall|Garrosh|G...	UNKNOWN STEP	2026-10-04T09:39:24.4339423Z Uploaded bytes 251658240
+make (2, 15, Cho|Chromie|D.Va|Deathwing|Deckard|Dehaka|Diablo|E.T.C.|Falstad|Fenix|Gall|Garrosh|G...	UNKNOWN STEP	2026-10-04T09:39:24.4566481Z Uploaded bytes 260046848
+make (2, 15, Cho|Chromie|D.Va|Deathwing|Deckard|Dehaka|Diablo|E.T.C.|Falstad|Fenix|Gall|Garrosh|G...	UNKNOWN STEP	2026-10-04T09:39:24.5861232Z Uploaded bytes 268435456
+make (2, 15, Cho|Chromie|D.Va|Deathwing|Deckard|Dehaka|Diablo|E.T.C.|Falstad|Fenix|Gall|Garrosh|G...	UNKNOWN STEP	2026-10-04T09:39:24.7617206Z Uploaded bytes 276517592
+make (2, 15, Cho|Chromie|D.Va|Deathwing|Deckard|Dehaka|Diablo|E.T.C.|Falstad|Fenix|Gall|Garrosh|G...	UNKNOWN STEP	2026-10-04T09:39:24.8200248Z Finished uploading artifact content to blob storage!
+make (2, 15, Cho|Chromie|D.Va|Deathwing|Deckard|Dehaka|Diablo|E.T.C.|Falstad|Fenix|Gall|Garrosh|G...	UNKNOWN STEP	2026-10-04T09:39:24.8204675Z SHA256 digest of uploaded artifact zip is 7d56a0307159f2757d6f40f02f3e60ffb12621476659659974fb1ae0ec26f05a
+make (2, 15, Cho|Chromie|D.Va|Deathwing|Deckard|Dehaka|Diablo|E.T.C.|Falstad|Fenix|Gall|Garrosh|G...	UNKNOWN STEP	2026-10-04T09:39:24.8206266Z Finalizing artifact upload
+make (2, 15, Cho|Chromie|D.Va|Deathwing|Deckard|Dehaka|Diablo|E.T.C.|Falstad|Fenix|Gall|Garrosh|G...	UNKNOWN STEP	2026-10-04T09:39:25.0727101Z Artifact r2-c-2.zip successfully finalized. Artifact ID 11299791401
+make (2, 15, Cho|Chromie|D.Va|Deathwing|Deckard|Dehaka|Diablo|E.T.C.|Falstad|Fenix|Gall|Garrosh|G...	UNKNOWN STEP	2026-10-04T09:39:25.0728657Z Artifact r2-c-2 has been successfully uploaded! Final size is 276517592 bytes. Artifact ID is 11299791401
+make (2, 15, Cho|Chromie|D.Va|Deathwing|Deckard|Dehaka|Diablo|E.T.C.|Falstad|Fenix|Gall|Garrosh|G...	UNKNOWN STEP	2026-10-04T09:39:25.0737238Z Artifact download URL: https://github.com/JimmyTheCool/HOTS-03/actions/runs/37192482532/artifacts/11299791401
+make (2, 15, Cho|Chromie|D.Va|Deathwing|Deckard|Dehaka|Diablo|E.T.C.|Falstad|Fenix|Gall|Garrosh|G...	UNKNOWN STEP	2026-10-04T09:39:25.1050696Z Post job cleanup.
+make (2, 15, Cho|Chromie|D.Va|Deathwing|Deckard|Dehaka|Diablo|E.T.C.|Falstad|Fenix|Gall|Garrosh|G...	UNKNOWN STEP	2026-10-04T09:39:25.1939951Z [command]/usr/bin/git version
+make (2, 15, Cho|Chromie|D.Va|Deathwing|Deckard|Dehaka|Diablo|E.T.C.|Falstad|Fenix|Gall|Garrosh|G...	UNKNOWN STEP	2026-10-04T09:39:25.1988778Z git version 2.55.0
+make (2, 15, Cho|Chromie|D.Va|Deathwing|Deckard|Dehaka|Diablo|E.T.C.|Falstad|Fenix|Gall|Garrosh|G...	UNKNOWN STEP	2026-10-04T09:39:25.2032519Z Temporarily overriding HOME='/home/runner/work/_temp/b70fea6c-04bd-4d0b-b38d-30096e944a68' before making global git config changes
+make (2, 15, Cho|Chromie|D.Va|Deathwing|Deckard|Dehaka|Diablo|E.T.C.|Falstad|Fenix|Gall|Garrosh|G...	UNKNOWN STEP	2026-10-04T09:39:25.2036310Z Adding repository directory to the temporary git global config as a safe directory
+make (2, 15, Cho|Chromie|D.Va|Deathwing|Deckard|Dehaka|Diablo|E.T.C.|Falstad|Fenix|Gall|Garrosh|G...	UNKNOWN STEP	2026-10-04T09:39:25.2039810Z [command]/usr/bin/git config --global --add safe.directory /home/runner/work/HOTS-03/HOTS-03
+make (2, 15, Cho|Chromie|D.Va|Deathwing|Deckard|Dehaka|Diablo|E.T.C.|Falstad|Fenix|Gall|Garrosh|G...	UNKNOWN STEP	2026-10-04T09:39:25.2087241Z [command]/usr/bin/git config --local --name-only --get-regexp core\.sshCommand
+make (2, 15, Cho|Chromie|D.Va|Deathwing|Deckard|Dehaka|Diablo|E.T.C.|Falstad|Fenix|Gall|Garrosh|G...	UNKNOWN STEP	2026-10-04T09:39:25.2128422Z [command]/usr/bin/git submodule foreach --recursive sh -c "git config --local --name-only --get-regexp 'core\.sshCommand' && git config --local --unset-all 'core.sshCommand' || :"
+make (2, 15, Cho|Chromie|D.Va|Deathwing|Deckard|Dehaka|Diablo|E.T.C.|Falstad|Fenix|Gall|Garrosh|G...	UNKNOWN STEP	2026-10-04T09:39:25.2418655Z [command]/usr/bin/git config --local --name-only --get-regexp http\.https\:\/\/github\.com\/\.extraheader
+make (2, 15, Cho|Chromie|D.Va|Deathwing|Deckard|Dehaka|Diablo|E.T.C.|Falstad|Fenix|Gall|Garrosh|G...	UNKNOWN STEP	2026-10-04T09:39:25.2449581Z http.https://github.com/.extraheader
+make (2, 15, Cho|Chromie|D.Va|Deathwing|Deckard|Dehaka|Diablo|E.T.C.|Falstad|Fenix|Gall|Garrosh|G...	UNKNOWN STEP	2026-10-04T09:39:25.2462957Z [command]/usr/bin/git config --local --unset-all http.https://github.com/.extraheader
+make (2, 15, Cho|Chromie|D.Va|Deathwing|Deckard|Dehaka|Diablo|E.T.C.|Falstad|Fenix|Gall|Garrosh|G...	UNKNOWN STEP	2026-10-04T09:39:25.2504188Z [command]/usr/bin/git submodule foreach --recursive sh -c "git config --local --name-only --get-regexp 'http\.https\:\/\/github\.com\/\.extraheader' && git config --local --unset-all 'http.https://github.com/.extraheader' || :"
+make (2, 15, Cho|Chromie|D.Va|Deathwing|Deckard|Dehaka|Diablo|E.T.C.|Falstad|Fenix|Gall|Garrosh|G...	UNKNOWN STEP	2026-10-04T09:39:25.2798119Z [command]/usr/bin/git config --local --name-only --get-regexp ^includeIf\.gitdir:
+make (2, 15, Cho|Chromie|D.Va|Deathwing|Deckard|Dehaka|Diablo|E.T.C.|Falstad|Fenix|Gall|Garrosh|G...	UNKNOWN STEP	2026-10-04T09:39:25.2839920Z [command]/usr/bin/git submodule foreach --recursive git config --local --show-origin --name-only --get-regexp remote.origin.url
+make (2, 15, Cho|Chromie|D.Va|Deathwing|Deckard|Dehaka|Diablo|E.T.C.|Falstad|Fenix|Gall|Garrosh|G...	UNKNOWN STEP	2026-10-04T09:39:25.3287209Z Cleaning up orphan processes
+make (2, 15, Cho|Chromie|D.Va|Deathwing|Deckard|Dehaka|Diablo|E.T.C.|Falstad|Fenix|Gall|Garrosh|G...	UNKNOWN STEP	2026-10-04T09:39:25.3733992Z ##[warning]Node.js 20 is deprecated. The following actions target Node.js 20 but are being forced to run on Node.js 24: actions/checkout@v4, actions/upload-artifact@v4. For more information see: https://github.blog/changelog/2025-09-19-deprecation-of-node-20-on-github-actions-runners/

@@ -1,0 +1,763 @@
+make (5, 15, Probius|Qhira|Ragnaros|Raynor|Rehgar|Rexxar|Samuro|Sgt. Hammer|Sonya|Stitches|Stukov...	UNKNOWN STEP	﻿2026-10-04T09:32:28.1286385Z Current runner version: '2.337.0'
+make (5, 15, Probius|Qhira|Ragnaros|Raynor|Rehgar|Rexxar|Samuro|Sgt. Hammer|Sonya|Stitches|Stukov...	UNKNOWN STEP	2026-10-04T09:32:28.1309332Z ##[group]Runner Image Provisioner
+make (5, 15, Probius|Qhira|Ragnaros|Raynor|Rehgar|Rexxar|Samuro|Sgt. Hammer|Sonya|Stitches|Stukov...	UNKNOWN STEP	2026-10-04T09:32:28.1310281Z Hosted Compute Agent
+make (5, 15, Probius|Qhira|Ragnaros|Raynor|Rehgar|Rexxar|Samuro|Sgt. Hammer|Sonya|Stitches|Stukov...	UNKNOWN STEP	2026-10-04T09:32:28.1310903Z Version: 20260901.588
+make (5, 15, Probius|Qhira|Ragnaros|Raynor|Rehgar|Rexxar|Samuro|Sgt. Hammer|Sonya|Stitches|Stukov...	UNKNOWN STEP	2026-10-04T09:32:28.1311766Z Commit: f88ec8081b781fac6c440065ac7ff9e710ce3d0b
+make (5, 15, Probius|Qhira|Ragnaros|Raynor|Rehgar|Rexxar|Samuro|Sgt. Hammer|Sonya|Stitches|Stukov...	UNKNOWN STEP	2026-10-04T09:32:28.1312576Z Build Date: 2026-09-01T19:56:44Z
+make (5, 15, Probius|Qhira|Ragnaros|Raynor|Rehgar|Rexxar|Samuro|Sgt. Hammer|Sonya|Stitches|Stukov...	UNKNOWN STEP	2026-10-04T09:32:28.1313284Z Worker ID: {634e7080-88b3-47b5-97fe-306300d8cadc}
+make (5, 15, Probius|Qhira|Ragnaros|Raynor|Rehgar|Rexxar|Samuro|Sgt. Hammer|Sonya|Stitches|Stukov...	UNKNOWN STEP	2026-10-04T09:32:28.1314046Z Azure Region: westus3
+make (5, 15, Probius|Qhira|Ragnaros|Raynor|Rehgar|Rexxar|Samuro|Sgt. Hammer|Sonya|Stitches|Stukov...	UNKNOWN STEP	2026-10-04T09:32:28.1314651Z ##[endgroup]
+make (5, 15, Probius|Qhira|Ragnaros|Raynor|Rehgar|Rexxar|Samuro|Sgt. Hammer|Sonya|Stitches|Stukov...	UNKNOWN STEP	2026-10-04T09:32:28.1316072Z ##[group]Operating System
+make (5, 15, Probius|Qhira|Ragnaros|Raynor|Rehgar|Rexxar|Samuro|Sgt. Hammer|Sonya|Stitches|Stukov...	UNKNOWN STEP	2026-10-04T09:32:28.1316792Z Ubuntu
+make (5, 15, Probius|Qhira|Ragnaros|Raynor|Rehgar|Rexxar|Samuro|Sgt. Hammer|Sonya|Stitches|Stukov...	UNKNOWN STEP	2026-10-04T09:32:28.1317332Z 22.04.5
+make (5, 15, Probius|Qhira|Ragnaros|Raynor|Rehgar|Rexxar|Samuro|Sgt. Hammer|Sonya|Stitches|Stukov...	UNKNOWN STEP	2026-10-04T09:32:28.1317841Z LTS
+make (5, 15, Probius|Qhira|Ragnaros|Raynor|Rehgar|Rexxar|Samuro|Sgt. Hammer|Sonya|Stitches|Stukov...	UNKNOWN STEP	2026-10-04T09:32:28.1318420Z ##[endgroup]
+make (5, 15, Probius|Qhira|Ragnaros|Raynor|Rehgar|Rexxar|Samuro|Sgt. Hammer|Sonya|Stitches|Stukov...	UNKNOWN STEP	2026-10-04T09:32:28.1318975Z ##[group]Runner Image
+make (5, 15, Probius|Qhira|Ragnaros|Raynor|Rehgar|Rexxar|Samuro|Sgt. Hammer|Sonya|Stitches|Stukov...	UNKNOWN STEP	2026-10-04T09:32:28.1319599Z Image: ubuntu-22.04
+make (5, 15, Probius|Qhira|Ragnaros|Raynor|Rehgar|Rexxar|Samuro|Sgt. Hammer|Sonya|Stitches|Stukov...	UNKNOWN STEP	2026-10-04T09:32:28.1320190Z Version: 20260927.309.1
+make (5, 15, Probius|Qhira|Ragnaros|Raynor|Rehgar|Rexxar|Samuro|Sgt. Hammer|Sonya|Stitches|Stukov...	UNKNOWN STEP	2026-10-04T09:32:28.1321793Z Included Software: https://github.com/actions/runner-images/blob/ubuntu22/20260927.309/images/ubuntu/Ubuntu2204-Readme.md
+make (5, 15, Probius|Qhira|Ragnaros|Raynor|Rehgar|Rexxar|Samuro|Sgt. Hammer|Sonya|Stitches|Stukov...	UNKNOWN STEP	2026-10-04T09:32:28.1323382Z Image Release: https://github.com/actions/runner-images/releases/tag/ubuntu22%2F20260927.309
+make (5, 15, Probius|Qhira|Ragnaros|Raynor|Rehgar|Rexxar|Samuro|Sgt. Hammer|Sonya|Stitches|Stukov...	UNKNOWN STEP	2026-10-04T09:32:28.1324640Z ##[endgroup]
+make (5, 15, Probius|Qhira|Ragnaros|Raynor|Rehgar|Rexxar|Samuro|Sgt. Hammer|Sonya|Stitches|Stukov...	UNKNOWN STEP	2026-10-04T09:32:28.1325831Z ##[group]GITHUB_TOKEN Permissions
+make (5, 15, Probius|Qhira|Ragnaros|Raynor|Rehgar|Rexxar|Samuro|Sgt. Hammer|Sonya|Stitches|Stukov...	UNKNOWN STEP	2026-10-04T09:32:28.1328097Z Contents: write
+make (5, 15, Probius|Qhira|Ragnaros|Raynor|Rehgar|Rexxar|Samuro|Sgt. Hammer|Sonya|Stitches|Stukov...	UNKNOWN STEP	2026-10-04T09:32:28.1328683Z Metadata: read
+make (5, 15, Probius|Qhira|Ragnaros|Raynor|Rehgar|Rexxar|Samuro|Sgt. Hammer|Sonya|Stitches|Stukov...	UNKNOWN STEP	2026-10-04T09:32:28.1329244Z ##[endgroup]
+make (5, 15, Probius|Qhira|Ragnaros|Raynor|Rehgar|Rexxar|Samuro|Sgt. Hammer|Sonya|Stitches|Stukov...	UNKNOWN STEP	2026-10-04T09:32:28.1331277Z Secret source: Actions
+make (5, 15, Probius|Qhira|Ragnaros|Raynor|Rehgar|Rexxar|Samuro|Sgt. Hammer|Sonya|Stitches|Stukov...	UNKNOWN STEP	2026-10-04T09:32:28.1332527Z Cache mode: write
+make (5, 15, Probius|Qhira|Ragnaros|Raynor|Rehgar|Rexxar|Samuro|Sgt. Hammer|Sonya|Stitches|Stukov...	UNKNOWN STEP	2026-10-04T09:32:28.1333429Z Prepare workflow directory
+make (5, 15, Probius|Qhira|Ragnaros|Raynor|Rehgar|Rexxar|Samuro|Sgt. Hammer|Sonya|Stitches|Stukov...	UNKNOWN STEP	2026-10-04T09:32:28.1671043Z Prepare all required actions
+make (5, 15, Probius|Qhira|Ragnaros|Raynor|Rehgar|Rexxar|Samuro|Sgt. Hammer|Sonya|Stitches|Stukov...	UNKNOWN STEP	2026-10-04T09:32:28.1712014Z Getting action download info
+make (5, 15, Probius|Qhira|Ragnaros|Raynor|Rehgar|Rexxar|Samuro|Sgt. Hammer|Sonya|Stitches|Stukov...	UNKNOWN STEP	2026-10-04T09:32:28.5548700Z Download action repository 'actions/checkout@v4' (SHA:11d5960a326750d5838078e36cf38b85af677262)
+make (5, 15, Probius|Qhira|Ragnaros|Raynor|Rehgar|Rexxar|Samuro|Sgt. Hammer|Sonya|Stitches|Stukov...	UNKNOWN STEP	2026-10-04T09:32:29.1489053Z Download action repository 'actions/upload-artifact@v4' (SHA:ea165f8d65b6e75b540449e92b4886f43607fa02)
+make (5, 15, Probius|Qhira|Ragnaros|Raynor|Rehgar|Rexxar|Samuro|Sgt. Hammer|Sonya|Stitches|Stukov...	UNKNOWN STEP	2026-10-04T09:32:29.4409488Z Complete job name: make (5, 15, Probius|Qhira|Ragnaros|Raynor|Rehgar|Rexxar|Samuro|Sgt. Hammer|Sonya|Stitches|Stukov...
+make (5, 15, Probius|Qhira|Ragnaros|Raynor|Rehgar|Rexxar|Samuro|Sgt. Hammer|Sonya|Stitches|Stukov...	UNKNOWN STEP	2026-10-04T09:32:29.5024862Z ##[group]Run actions/checkout@v4
+make (5, 15, Probius|Qhira|Ragnaros|Raynor|Rehgar|Rexxar|Samuro|Sgt. Hammer|Sonya|Stitches|Stukov...	UNKNOWN STEP	2026-10-04T09:32:29.5025597Z with:
+make (5, 15, Probius|Qhira|Ragnaros|Raynor|Rehgar|Rexxar|Samuro|Sgt. Hammer|Sonya|Stitches|Stukov...	UNKNOWN STEP	2026-10-04T09:32:29.5026126Z   ref: chatgpt-stl-builder
+make (5, 15, Probius|Qhira|Ragnaros|Raynor|Rehgar|Rexxar|Samuro|Sgt. Hammer|Sonya|Stitches|Stukov...	UNKNOWN STEP	2026-10-04T09:32:29.5026646Z   fetch-depth: 1
+make (5, 15, Probius|Qhira|Ragnaros|Raynor|Rehgar|Rexxar|Samuro|Sgt. Hammer|Sonya|Stitches|Stukov...	UNKNOWN STEP	2026-10-04T09:32:29.5027135Z   repository: JimmyTheCool/HOTS-03
+make (5, 15, Probius|Qhira|Ragnaros|Raynor|Rehgar|Rexxar|Samuro|Sgt. Hammer|Sonya|Stitches|Stukov...	UNKNOWN STEP	2026-10-04T09:32:29.5030918Z   token: ***
+make (5, 15, Probius|Qhira|Ragnaros|Raynor|Rehgar|Rexxar|Samuro|Sgt. Hammer|Sonya|Stitches|Stukov...	UNKNOWN STEP	2026-10-04T09:32:29.5031370Z   ssh-strict: true
+make (5, 15, Probius|Qhira|Ragnaros|Raynor|Rehgar|Rexxar|Samuro|Sgt. Hammer|Sonya|Stitches|Stukov...	UNKNOWN STEP	2026-10-04T09:32:29.5032009Z   ssh-user: git
+make (5, 15, Probius|Qhira|Ragnaros|Raynor|Rehgar|Rexxar|Samuro|Sgt. Hammer|Sonya|Stitches|Stukov...	UNKNOWN STEP	2026-10-04T09:32:29.5032497Z   persist-credentials: true
+make (5, 15, Probius|Qhira|Ragnaros|Raynor|Rehgar|Rexxar|Samuro|Sgt. Hammer|Sonya|Stitches|Stukov...	UNKNOWN STEP	2026-10-04T09:32:29.5033007Z   clean: true
+make (5, 15, Probius|Qhira|Ragnaros|Raynor|Rehgar|Rexxar|Samuro|Sgt. Hammer|Sonya|Stitches|Stukov...	UNKNOWN STEP	2026-10-04T09:32:29.5033489Z   sparse-checkout-cone-mode: true
+make (5, 15, Probius|Qhira|Ragnaros|Raynor|Rehgar|Rexxar|Samuro|Sgt. Hammer|Sonya|Stitches|Stukov...	UNKNOWN STEP	2026-10-04T09:32:29.5034071Z   fetch-tags: false
+make (5, 15, Probius|Qhira|Ragnaros|Raynor|Rehgar|Rexxar|Samuro|Sgt. Hammer|Sonya|Stitches|Stukov...	UNKNOWN STEP	2026-10-04T09:32:29.5034687Z   show-progress: true
+make (5, 15, Probius|Qhira|Ragnaros|Raynor|Rehgar|Rexxar|Samuro|Sgt. Hammer|Sonya|Stitches|Stukov...	UNKNOWN STEP	2026-10-04T09:32:29.5035225Z   lfs: false
+make (5, 15, Probius|Qhira|Ragnaros|Raynor|Rehgar|Rexxar|Samuro|Sgt. Hammer|Sonya|Stitches|Stukov...	UNKNOWN STEP	2026-10-04T09:32:29.5035780Z   submodules: false
+make (5, 15, Probius|Qhira|Ragnaros|Raynor|Rehgar|Rexxar|Samuro|Sgt. Hammer|Sonya|Stitches|Stukov...	UNKNOWN STEP	2026-10-04T09:32:29.5036375Z   set-safe-directory: true
+make (5, 15, Probius|Qhira|Ragnaros|Raynor|Rehgar|Rexxar|Samuro|Sgt. Hammer|Sonya|Stitches|Stukov...	UNKNOWN STEP	2026-10-04T09:32:29.5037016Z   allow-unsafe-pr-checkout: false
+make (5, 15, Probius|Qhira|Ragnaros|Raynor|Rehgar|Rexxar|Samuro|Sgt. Hammer|Sonya|Stitches|Stukov...	UNKNOWN STEP	2026-10-04T09:32:29.5038057Z env:
+make (5, 15, Probius|Qhira|Ragnaros|Raynor|Rehgar|Rexxar|Samuro|Sgt. Hammer|Sonya|Stitches|Stukov...	UNKNOWN STEP	2026-10-04T09:32:29.5038630Z   BV: 3.6.23
+make (5, 15, Probius|Qhira|Ragnaros|Raynor|Rehgar|Rexxar|Samuro|Sgt. Hammer|Sonya|Stitches|Stukov...	UNKNOWN STEP	2026-10-04T09:32:29.5039214Z   M3: 58935005c4465a219a740f6b740253533eda773f
+make (5, 15, Probius|Qhira|Ragnaros|Raynor|Rehgar|Rexxar|Samuro|Sgt. Hammer|Sonya|Stitches|Stukov...	UNKNOWN STEP	2026-10-04T09:32:29.5040087Z ##[endgroup]
+make (5, 15, Probius|Qhira|Ragnaros|Raynor|Rehgar|Rexxar|Samuro|Sgt. Hammer|Sonya|Stitches|Stukov...	UNKNOWN STEP	2026-10-04T09:32:29.5959306Z Syncing repository: JimmyTheCool/HOTS-03
+make (5, 15, Probius|Qhira|Ragnaros|Raynor|Rehgar|Rexxar|Samuro|Sgt. Hammer|Sonya|Stitches|Stukov...	UNKNOWN STEP	2026-10-04T09:32:29.5962179Z ##[group]Getting Git version info
+make (5, 15, Probius|Qhira|Ragnaros|Raynor|Rehgar|Rexxar|Samuro|Sgt. Hammer|Sonya|Stitches|Stukov...	UNKNOWN STEP	2026-10-04T09:32:29.5963523Z Working directory is '/home/runner/work/HOTS-03/HOTS-03'
+make (5, 15, Probius|Qhira|Ragnaros|Raynor|Rehgar|Rexxar|Samuro|Sgt. Hammer|Sonya|Stitches|Stukov...	UNKNOWN STEP	2026-10-04T09:32:29.5965070Z [command]/usr/bin/git version
+make (5, 15, Probius|Qhira|Ragnaros|Raynor|Rehgar|Rexxar|Samuro|Sgt. Hammer|Sonya|Stitches|Stukov...	UNKNOWN STEP	2026-10-04T09:32:29.6133190Z git version 2.55.0
+make (5, 15, Probius|Qhira|Ragnaros|Raynor|Rehgar|Rexxar|Samuro|Sgt. Hammer|Sonya|Stitches|Stukov...	UNKNOWN STEP	2026-10-04T09:32:29.6154923Z ##[endgroup]
+make (5, 15, Probius|Qhira|Ragnaros|Raynor|Rehgar|Rexxar|Samuro|Sgt. Hammer|Sonya|Stitches|Stukov...	UNKNOWN STEP	2026-10-04T09:32:29.6168019Z Temporarily overriding HOME='/home/runner/work/_temp/546ecb24-33a2-49cc-9a98-20481e2dd9c7' before making global git config changes
+make (5, 15, Probius|Qhira|Ragnaros|Raynor|Rehgar|Rexxar|Samuro|Sgt. Hammer|Sonya|Stitches|Stukov...	UNKNOWN STEP	2026-10-04T09:32:29.6170025Z Adding repository directory to the temporary git global config as a safe directory
+make (5, 15, Probius|Qhira|Ragnaros|Raynor|Rehgar|Rexxar|Samuro|Sgt. Hammer|Sonya|Stitches|Stukov...	UNKNOWN STEP	2026-10-04T09:32:29.6173133Z [command]/usr/bin/git config --global --add safe.directory /home/runner/work/HOTS-03/HOTS-03
+make (5, 15, Probius|Qhira|Ragnaros|Raynor|Rehgar|Rexxar|Samuro|Sgt. Hammer|Sonya|Stitches|Stukov...	UNKNOWN STEP	2026-10-04T09:32:29.6207148Z Deleting the contents of '/home/runner/work/HOTS-03/HOTS-03'
+make (5, 15, Probius|Qhira|Ragnaros|Raynor|Rehgar|Rexxar|Samuro|Sgt. Hammer|Sonya|Stitches|Stukov...	UNKNOWN STEP	2026-10-04T09:32:29.6210997Z ##[group]Initializing the repository
+make (5, 15, Probius|Qhira|Ragnaros|Raynor|Rehgar|Rexxar|Samuro|Sgt. Hammer|Sonya|Stitches|Stukov...	UNKNOWN STEP	2026-10-04T09:32:29.6215958Z [command]/usr/bin/git init /home/runner/work/HOTS-03/HOTS-03
+make (5, 15, Probius|Qhira|Ragnaros|Raynor|Rehgar|Rexxar|Samuro|Sgt. Hammer|Sonya|Stitches|Stukov...	UNKNOWN STEP	2026-10-04T09:32:29.6567211Z hint: Using 'master' as the name for the initial branch. This default branch name
+make (5, 15, Probius|Qhira|Ragnaros|Raynor|Rehgar|Rexxar|Samuro|Sgt. Hammer|Sonya|Stitches|Stukov...	UNKNOWN STEP	2026-10-04T09:32:29.6569045Z hint: will change to "main" in Git 3.0. To configure the initial branch name
+make (5, 15, Probius|Qhira|Ragnaros|Raynor|Rehgar|Rexxar|Samuro|Sgt. Hammer|Sonya|Stitches|Stukov...	UNKNOWN STEP	2026-10-04T09:32:29.6570518Z hint: to use in all of your new repositories, which will suppress this warning,
+make (5, 15, Probius|Qhira|Ragnaros|Raynor|Rehgar|Rexxar|Samuro|Sgt. Hammer|Sonya|Stitches|Stukov...	UNKNOWN STEP	2026-10-04T09:32:29.6572011Z hint: call:
+make (5, 15, Probius|Qhira|Ragnaros|Raynor|Rehgar|Rexxar|Samuro|Sgt. Hammer|Sonya|Stitches|Stukov...	UNKNOWN STEP	2026-10-04T09:32:29.6572916Z hint:
+make (5, 15, Probius|Qhira|Ragnaros|Raynor|Rehgar|Rexxar|Samuro|Sgt. Hammer|Sonya|Stitches|Stukov...	UNKNOWN STEP	2026-10-04T09:32:29.6573979Z hint: 	git config --global init.defaultBranch <name>
+make (5, 15, Probius|Qhira|Ragnaros|Raynor|Rehgar|Rexxar|Samuro|Sgt. Hammer|Sonya|Stitches|Stukov...	UNKNOWN STEP	2026-10-04T09:32:29.6575044Z hint:
+make (5, 15, Probius|Qhira|Ragnaros|Raynor|Rehgar|Rexxar|Samuro|Sgt. Hammer|Sonya|Stitches|Stukov...	UNKNOWN STEP	2026-10-04T09:32:29.6576129Z hint: Names commonly chosen instead of 'master' are 'main', 'trunk' and
+make (5, 15, Probius|Qhira|Ragnaros|Raynor|Rehgar|Rexxar|Samuro|Sgt. Hammer|Sonya|Stitches|Stukov...	UNKNOWN STEP	2026-10-04T09:32:29.6577704Z hint: 'development'. The just-created branch can be renamed via this command:
+make (5, 15, Probius|Qhira|Ragnaros|Raynor|Rehgar|Rexxar|Samuro|Sgt. Hammer|Sonya|Stitches|Stukov...	UNKNOWN STEP	2026-10-04T09:32:29.6579028Z hint:
+make (5, 15, Probius|Qhira|Ragnaros|Raynor|Rehgar|Rexxar|Samuro|Sgt. Hammer|Sonya|Stitches|Stukov...	UNKNOWN STEP	2026-10-04T09:32:29.6580022Z hint: 	git branch -m <name>
+make (5, 15, Probius|Qhira|Ragnaros|Raynor|Rehgar|Rexxar|Samuro|Sgt. Hammer|Sonya|Stitches|Stukov...	UNKNOWN STEP	2026-10-04T09:32:29.6580924Z hint:
+make (5, 15, Probius|Qhira|Ragnaros|Raynor|Rehgar|Rexxar|Samuro|Sgt. Hammer|Sonya|Stitches|Stukov...	UNKNOWN STEP	2026-10-04T09:32:29.6582271Z hint: Disable this message with "git config set advice.defaultBranchName false"
+make (5, 15, Probius|Qhira|Ragnaros|Raynor|Rehgar|Rexxar|Samuro|Sgt. Hammer|Sonya|Stitches|Stukov...	UNKNOWN STEP	2026-10-04T09:32:29.6584171Z Initialized empty Git repository in /home/runner/work/HOTS-03/HOTS-03/.git/
+make (5, 15, Probius|Qhira|Ragnaros|Raynor|Rehgar|Rexxar|Samuro|Sgt. Hammer|Sonya|Stitches|Stukov...	UNKNOWN STEP	2026-10-04T09:32:29.6587451Z [command]/usr/bin/git remote add origin https://github.com/JimmyTheCool/HOTS-03
+make (5, 15, Probius|Qhira|Ragnaros|Raynor|Rehgar|Rexxar|Samuro|Sgt. Hammer|Sonya|Stitches|Stukov...	UNKNOWN STEP	2026-10-04T09:32:29.6600955Z ##[endgroup]
+make (5, 15, Probius|Qhira|Ragnaros|Raynor|Rehgar|Rexxar|Samuro|Sgt. Hammer|Sonya|Stitches|Stukov...	UNKNOWN STEP	2026-10-04T09:32:29.6602519Z ##[group]Disabling automatic garbage collection
+make (5, 15, Probius|Qhira|Ragnaros|Raynor|Rehgar|Rexxar|Samuro|Sgt. Hammer|Sonya|Stitches|Stukov...	UNKNOWN STEP	2026-10-04T09:32:29.6604148Z [command]/usr/bin/git config --local gc.auto 0
+make (5, 15, Probius|Qhira|Ragnaros|Raynor|Rehgar|Rexxar|Samuro|Sgt. Hammer|Sonya|Stitches|Stukov...	UNKNOWN STEP	2026-10-04T09:32:29.6637703Z ##[endgroup]
+make (5, 15, Probius|Qhira|Ragnaros|Raynor|Rehgar|Rexxar|Samuro|Sgt. Hammer|Sonya|Stitches|Stukov...	UNKNOWN STEP	2026-10-04T09:32:29.6638852Z ##[group]Setting up auth
+make (5, 15, Probius|Qhira|Ragnaros|Raynor|Rehgar|Rexxar|Samuro|Sgt. Hammer|Sonya|Stitches|Stukov...	UNKNOWN STEP	2026-10-04T09:32:29.6644856Z [command]/usr/bin/git config --local --name-only --get-regexp core\.sshCommand
+make (5, 15, Probius|Qhira|Ragnaros|Raynor|Rehgar|Rexxar|Samuro|Sgt. Hammer|Sonya|Stitches|Stukov...	UNKNOWN STEP	2026-10-04T09:32:29.6674113Z [command]/usr/bin/git submodule foreach --recursive sh -c "git config --local --name-only --get-regexp 'core\.sshCommand' && git config --local --unset-all 'core.sshCommand' || :"
+make (5, 15, Probius|Qhira|Ragnaros|Raynor|Rehgar|Rexxar|Samuro|Sgt. Hammer|Sonya|Stitches|Stukov...	UNKNOWN STEP	2026-10-04T09:32:29.8260909Z [command]/usr/bin/git config --local --name-only --get-regexp http\.https\:\/\/github\.com\/\.extraheader
+make (5, 15, Probius|Qhira|Ragnaros|Raynor|Rehgar|Rexxar|Samuro|Sgt. Hammer|Sonya|Stitches|Stukov...	UNKNOWN STEP	2026-10-04T09:32:29.8288199Z [command]/usr/bin/git submodule foreach --recursive sh -c "git config --local --name-only --get-regexp 'http\.https\:\/\/github\.com\/\.extraheader' && git config --local --unset-all 'http.https://github.com/.extraheader' || :"
+make (5, 15, Probius|Qhira|Ragnaros|Raynor|Rehgar|Rexxar|Samuro|Sgt. Hammer|Sonya|Stitches|Stukov...	UNKNOWN STEP	2026-10-04T09:32:29.8457958Z [command]/usr/bin/git config --local --name-only --get-regexp ^includeIf\.gitdir:
+make (5, 15, Probius|Qhira|Ragnaros|Raynor|Rehgar|Rexxar|Samuro|Sgt. Hammer|Sonya|Stitches|Stukov...	UNKNOWN STEP	2026-10-04T09:32:29.8484737Z [command]/usr/bin/git submodule foreach --recursive git config --local --show-origin --name-only --get-regexp remote.origin.url
+make (5, 15, Probius|Qhira|Ragnaros|Raynor|Rehgar|Rexxar|Samuro|Sgt. Hammer|Sonya|Stitches|Stukov...	UNKNOWN STEP	2026-10-04T09:32:29.8665468Z [command]/usr/bin/git config --local http.https://github.com/.extraheader AUTHORIZATION: basic ***
+make (5, 15, Probius|Qhira|Ragnaros|Raynor|Rehgar|Rexxar|Samuro|Sgt. Hammer|Sonya|Stitches|Stukov...	UNKNOWN STEP	2026-10-04T09:32:29.8702808Z ##[endgroup]
+make (5, 15, Probius|Qhira|Ragnaros|Raynor|Rehgar|Rexxar|Samuro|Sgt. Hammer|Sonya|Stitches|Stukov...	UNKNOWN STEP	2026-10-04T09:32:29.8704301Z ##[group]Fetching the repository
+make (5, 15, Probius|Qhira|Ragnaros|Raynor|Rehgar|Rexxar|Samuro|Sgt. Hammer|Sonya|Stitches|Stukov...	UNKNOWN STEP	2026-10-04T09:32:29.8713317Z [command]/usr/bin/git -c protocol.version=2 fetch --no-tags --prune --no-recurse-submodules --depth=1 origin +refs/heads/chatgpt-stl-builder*:refs/remotes/origin/chatgpt-stl-builder* +refs/tags/chatgpt-stl-builder*:refs/tags/chatgpt-stl-builder*
+make (5, 15, Probius|Qhira|Ragnaros|Raynor|Rehgar|Rexxar|Samuro|Sgt. Hammer|Sonya|Stitches|Stukov...	UNKNOWN STEP	2026-10-04T09:32:38.5024279Z From https://github.com/JimmyTheCool/HOTS-03
+make (5, 15, Probius|Qhira|Ragnaros|Raynor|Rehgar|Rexxar|Samuro|Sgt. Hammer|Sonya|Stitches|Stukov...	UNKNOWN STEP	2026-10-04T09:32:38.5025805Z  * [new branch]      chatgpt-stl-builder -> origin/chatgpt-stl-builder
+make (5, 15, Probius|Qhira|Ragnaros|Raynor|Rehgar|Rexxar|Samuro|Sgt. Hammer|Sonya|Stitches|Stukov...	UNKNOWN STEP	2026-10-04T09:32:38.5027987Z ##[endgroup]
+make (5, 15, Probius|Qhira|Ragnaros|Raynor|Rehgar|Rexxar|Samuro|Sgt. Hammer|Sonya|Stitches|Stukov...	UNKNOWN STEP	2026-10-04T09:32:38.5028809Z ##[group]Determining the checkout info
+make (5, 15, Probius|Qhira|Ragnaros|Raynor|Rehgar|Rexxar|Samuro|Sgt. Hammer|Sonya|Stitches|Stukov...	UNKNOWN STEP	2026-10-04T09:32:38.5035249Z [command]/usr/bin/git branch --list --remote origin/chatgpt-stl-builder
+make (5, 15, Probius|Qhira|Ragnaros|Raynor|Rehgar|Rexxar|Samuro|Sgt. Hammer|Sonya|Stitches|Stukov...	UNKNOWN STEP	2026-10-04T09:32:38.5056136Z   origin/chatgpt-stl-builder
+make (5, 15, Probius|Qhira|Ragnaros|Raynor|Rehgar|Rexxar|Samuro|Sgt. Hammer|Sonya|Stitches|Stukov...	UNKNOWN STEP	2026-10-04T09:32:38.5059245Z ##[endgroup]
+make (5, 15, Probius|Qhira|Ragnaros|Raynor|Rehgar|Rexxar|Samuro|Sgt. Hammer|Sonya|Stitches|Stukov...	UNKNOWN STEP	2026-10-04T09:32:38.5064169Z [command]/usr/bin/git sparse-checkout disable
+make (5, 15, Probius|Qhira|Ragnaros|Raynor|Rehgar|Rexxar|Samuro|Sgt. Hammer|Sonya|Stitches|Stukov...	UNKNOWN STEP	2026-10-04T09:32:38.5096700Z [command]/usr/bin/git config --local --unset-all extensions.worktreeConfig
+make (5, 15, Probius|Qhira|Ragnaros|Raynor|Rehgar|Rexxar|Samuro|Sgt. Hammer|Sonya|Stitches|Stukov...	UNKNOWN STEP	2026-10-04T09:32:38.5126766Z ##[group]Checking out the ref
+make (5, 15, Probius|Qhira|Ragnaros|Raynor|Rehgar|Rexxar|Samuro|Sgt. Hammer|Sonya|Stitches|Stukov...	UNKNOWN STEP	2026-10-04T09:32:38.5127470Z [command]/usr/bin/git checkout --progress --force -B chatgpt-stl-builder refs/remotes/origin/chatgpt-stl-builder
+make (5, 15, Probius|Qhira|Ragnaros|Raynor|Rehgar|Rexxar|Samuro|Sgt. Hammer|Sonya|Stitches|Stukov...	UNKNOWN STEP	2026-10-04T09:32:39.5326626Z Updating files:  33% (257/771)
+make (5, 15, Probius|Qhira|Ragnaros|Raynor|Rehgar|Rexxar|Samuro|Sgt. Hammer|Sonya|Stitches|Stukov...	UNKNOWN STEP	2026-10-04T09:32:39.5588299Z Updating files:  34% (263/771)
+make (5, 15, Probius|Qhira|Ragnaros|Raynor|Rehgar|Rexxar|Samuro|Sgt. Hammer|Sonya|Stitches|Stukov...	UNKNOWN STEP	2026-10-04T09:32:39.5737930Z Updating files:  35% (270/771)
+make (5, 15, Probius|Qhira|Ragnaros|Raynor|Rehgar|Rexxar|Samuro|Sgt. Hammer|Sonya|Stitches|Stukov...	UNKNOWN STEP	2026-10-04T09:32:39.6201034Z Updating files:  36% (278/771)
+make (5, 15, Probius|Qhira|Ragnaros|Raynor|Rehgar|Rexxar|Samuro|Sgt. Hammer|Sonya|Stitches|Stukov...	UNKNOWN STEP	2026-10-04T09:32:39.6573694Z Updating files:  37% (286/771)
+make (5, 15, Probius|Qhira|Ragnaros|Raynor|Rehgar|Rexxar|Samuro|Sgt. Hammer|Sonya|Stitches|Stukov...	UNKNOWN STEP	2026-10-04T09:32:39.6858536Z Updating files:  38% (293/771)
+make (5, 15, Probius|Qhira|Ragnaros|Raynor|Rehgar|Rexxar|Samuro|Sgt. Hammer|Sonya|Stitches|Stukov...	UNKNOWN STEP	2026-10-04T09:32:39.7128955Z Updating files:  39% (301/771)
+make (5, 15, Probius|Qhira|Ragnaros|Raynor|Rehgar|Rexxar|Samuro|Sgt. Hammer|Sonya|Stitches|Stukov...	UNKNOWN STEP	2026-10-04T09:32:39.7270807Z Updating files:  40% (309/771)
+make (5, 15, Probius|Qhira|Ragnaros|Raynor|Rehgar|Rexxar|Samuro|Sgt. Hammer|Sonya|Stitches|Stukov...	UNKNOWN STEP	2026-10-04T09:32:39.7633320Z Updating files:  41% (317/771)
+make (5, 15, Probius|Qhira|Ragnaros|Raynor|Rehgar|Rexxar|Samuro|Sgt. Hammer|Sonya|Stitches|Stukov...	UNKNOWN STEP	2026-10-04T09:32:39.7836534Z Updating files:  42% (324/771)
+make (5, 15, Probius|Qhira|Ragnaros|Raynor|Rehgar|Rexxar|Samuro|Sgt. Hammer|Sonya|Stitches|Stukov...	UNKNOWN STEP	2026-10-04T09:32:39.8127881Z Updating files:  43% (332/771)
+make (5, 15, Probius|Qhira|Ragnaros|Raynor|Rehgar|Rexxar|Samuro|Sgt. Hammer|Sonya|Stitches|Stukov...	UNKNOWN STEP	2026-10-04T09:32:39.8493859Z Updating files:  44% (340/771)
+make (5, 15, Probius|Qhira|Ragnaros|Raynor|Rehgar|Rexxar|Samuro|Sgt. Hammer|Sonya|Stitches|Stukov...	UNKNOWN STEP	2026-10-04T09:32:39.8683631Z Updating files:  45% (347/771)
+make (5, 15, Probius|Qhira|Ragnaros|Raynor|Rehgar|Rexxar|Samuro|Sgt. Hammer|Sonya|Stitches|Stukov...	UNKNOWN STEP	2026-10-04T09:32:39.8901204Z Updating files:  46% (355/771)
+make (5, 15, Probius|Qhira|Ragnaros|Raynor|Rehgar|Rexxar|Samuro|Sgt. Hammer|Sonya|Stitches|Stukov...	UNKNOWN STEP	2026-10-04T09:32:39.9255409Z Updating files:  47% (363/771)
+make (5, 15, Probius|Qhira|Ragnaros|Raynor|Rehgar|Rexxar|Samuro|Sgt. Hammer|Sonya|Stitches|Stukov...	UNKNOWN STEP	2026-10-04T09:32:39.9496120Z Updating files:  48% (371/771)
+make (5, 15, Probius|Qhira|Ragnaros|Raynor|Rehgar|Rexxar|Samuro|Sgt. Hammer|Sonya|Stitches|Stukov...	UNKNOWN STEP	2026-10-04T09:32:39.9831458Z Updating files:  49% (378/771)
+make (5, 15, Probius|Qhira|Ragnaros|Raynor|Rehgar|Rexxar|Samuro|Sgt. Hammer|Sonya|Stitches|Stukov...	UNKNOWN STEP	2026-10-04T09:32:40.0091110Z Updating files:  50% (386/771)
+make (5, 15, Probius|Qhira|Ragnaros|Raynor|Rehgar|Rexxar|Samuro|Sgt. Hammer|Sonya|Stitches|Stukov...	UNKNOWN STEP	2026-10-04T09:32:40.0399049Z Updating files:  51% (394/771)
+make (5, 15, Probius|Qhira|Ragnaros|Raynor|Rehgar|Rexxar|Samuro|Sgt. Hammer|Sonya|Stitches|Stukov...	UNKNOWN STEP	2026-10-04T09:32:40.0909986Z Updating files:  52% (401/771)
+make (5, 15, Probius|Qhira|Ragnaros|Raynor|Rehgar|Rexxar|Samuro|Sgt. Hammer|Sonya|Stitches|Stukov...	UNKNOWN STEP	2026-10-04T09:32:40.1134050Z Updating files:  53% (409/771)
+make (5, 15, Probius|Qhira|Ragnaros|Raynor|Rehgar|Rexxar|Samuro|Sgt. Hammer|Sonya|Stitches|Stukov...	UNKNOWN STEP	2026-10-04T09:32:40.1411105Z Updating files:  54% (417/771)
+make (5, 15, Probius|Qhira|Ragnaros|Raynor|Rehgar|Rexxar|Samuro|Sgt. Hammer|Sonya|Stitches|Stukov...	UNKNOWN STEP	2026-10-04T09:32:40.1842736Z Updating files:  55% (425/771)
+make (5, 15, Probius|Qhira|Ragnaros|Raynor|Rehgar|Rexxar|Samuro|Sgt. Hammer|Sonya|Stitches|Stukov...	UNKNOWN STEP	2026-10-04T09:32:40.2183996Z Updating files:  56% (432/771)
+make (5, 15, Probius|Qhira|Ragnaros|Raynor|Rehgar|Rexxar|Samuro|Sgt. Hammer|Sonya|Stitches|Stukov...	UNKNOWN STEP	2026-10-04T09:32:40.2670886Z Updating files:  57% (440/771)
+make (5, 15, Probius|Qhira|Ragnaros|Raynor|Rehgar|Rexxar|Samuro|Sgt. Hammer|Sonya|Stitches|Stukov...	UNKNOWN STEP	2026-10-04T09:32:40.2862835Z Updating files:  58% (448/771)
+make (5, 15, Probius|Qhira|Ragnaros|Raynor|Rehgar|Rexxar|Samuro|Sgt. Hammer|Sonya|Stitches|Stukov...	UNKNOWN STEP	2026-10-04T09:32:40.3370160Z Updating files:  59% (455/771)
+make (5, 15, Probius|Qhira|Ragnaros|Raynor|Rehgar|Rexxar|Samuro|Sgt. Hammer|Sonya|Stitches|Stukov...	UNKNOWN STEP	2026-10-04T09:32:40.3529316Z Updating files:  60% (463/771)
+make (5, 15, Probius|Qhira|Ragnaros|Raynor|Rehgar|Rexxar|Samuro|Sgt. Hammer|Sonya|Stitches|Stukov...	UNKNOWN STEP	2026-10-04T09:32:40.3823062Z Updating files:  61% (471/771)
+make (5, 15, Probius|Qhira|Ragnaros|Raynor|Rehgar|Rexxar|Samuro|Sgt. Hammer|Sonya|Stitches|Stukov...	UNKNOWN STEP	2026-10-04T09:32:40.4175244Z Updating files:  62% (479/771)
+make (5, 15, Probius|Qhira|Ragnaros|Raynor|Rehgar|Rexxar|Samuro|Sgt. Hammer|Sonya|Stitches|Stukov...	UNKNOWN STEP	2026-10-04T09:32:40.4483611Z Updating files:  63% (486/771)
+make (5, 15, Probius|Qhira|Ragnaros|Raynor|Rehgar|Rexxar|Samuro|Sgt. Hammer|Sonya|Stitches|Stukov...	UNKNOWN STEP	2026-10-04T09:32:40.4906816Z Updating files:  64% (494/771)
+make (5, 15, Probius|Qhira|Ragnaros|Raynor|Rehgar|Rexxar|Samuro|Sgt. Hammer|Sonya|Stitches|Stukov...	UNKNOWN STEP	2026-10-04T09:32:40.5229583Z Updating files:  65% (502/771)
+make (5, 15, Probius|Qhira|Ragnaros|Raynor|Rehgar|Rexxar|Samuro|Sgt. Hammer|Sonya|Stitches|Stukov...	UNKNOWN STEP	2026-10-04T09:32:40.5482407Z Updating files:  65% (507/771)
+make (5, 15, Probius|Qhira|Ragnaros|Raynor|Rehgar|Rexxar|Samuro|Sgt. Hammer|Sonya|Stitches|Stukov...	UNKNOWN STEP	2026-10-04T09:32:40.5833703Z Updating files:  66% (509/771)
+make (5, 15, Probius|Qhira|Ragnaros|Raynor|Rehgar|Rexxar|Samuro|Sgt. Hammer|Sonya|Stitches|Stukov...	UNKNOWN STEP	2026-10-04T09:32:40.6105488Z Updating files:  67% (517/771)
+make (5, 15, Probius|Qhira|Ragnaros|Raynor|Rehgar|Rexxar|Samuro|Sgt. Hammer|Sonya|Stitches|Stukov...	UNKNOWN STEP	2026-10-04T09:32:40.6420401Z Updating files:  68% (525/771)
+make (5, 15, Probius|Qhira|Ragnaros|Raynor|Rehgar|Rexxar|Samuro|Sgt. Hammer|Sonya|Stitches|Stukov...	UNKNOWN STEP	2026-10-04T09:32:40.6959694Z Updating files:  69% (532/771)
+make (5, 15, Probius|Qhira|Ragnaros|Raynor|Rehgar|Rexxar|Samuro|Sgt. Hammer|Sonya|Stitches|Stukov...	UNKNOWN STEP	2026-10-04T09:32:40.7243602Z Updating files:  70% (540/771)
+make (5, 15, Probius|Qhira|Ragnaros|Raynor|Rehgar|Rexxar|Samuro|Sgt. Hammer|Sonya|Stitches|Stukov...	UNKNOWN STEP	2026-10-04T09:32:40.7771944Z Updating files:  71% (548/771)
+make (5, 15, Probius|Qhira|Ragnaros|Raynor|Rehgar|Rexxar|Samuro|Sgt. Hammer|Sonya|Stitches|Stukov...	UNKNOWN STEP	2026-10-04T09:32:40.8123177Z Updating files:  72% (556/771)
+make (5, 15, Probius|Qhira|Ragnaros|Raynor|Rehgar|Rexxar|Samuro|Sgt. Hammer|Sonya|Stitches|Stukov...	UNKNOWN STEP	2026-10-04T09:32:40.8477392Z Updating files:  73% (563/771)
+make (5, 15, Probius|Qhira|Ragnaros|Raynor|Rehgar|Rexxar|Samuro|Sgt. Hammer|Sonya|Stitches|Stukov...	UNKNOWN STEP	2026-10-04T09:32:40.8836766Z Updating files:  74% (571/771)
+make (5, 15, Probius|Qhira|Ragnaros|Raynor|Rehgar|Rexxar|Samuro|Sgt. Hammer|Sonya|Stitches|Stukov...	UNKNOWN STEP	2026-10-04T09:32:40.8994475Z Updating files:  75% (579/771)
+make (5, 15, Probius|Qhira|Ragnaros|Raynor|Rehgar|Rexxar|Samuro|Sgt. Hammer|Sonya|Stitches|Stukov...	UNKNOWN STEP	2026-10-04T09:32:40.9327049Z Updating files:  76% (586/771)
+make (5, 15, Probius|Qhira|Ragnaros|Raynor|Rehgar|Rexxar|Samuro|Sgt. Hammer|Sonya|Stitches|Stukov...	UNKNOWN STEP	2026-10-04T09:32:40.9512866Z Updating files:  77% (594/771)
+make (5, 15, Probius|Qhira|Ragnaros|Raynor|Rehgar|Rexxar|Samuro|Sgt. Hammer|Sonya|Stitches|Stukov...	UNKNOWN STEP	2026-10-04T09:32:40.9962230Z Updating files:  78% (602/771)
+make (5, 15, Probius|Qhira|Ragnaros|Raynor|Rehgar|Rexxar|Samuro|Sgt. Hammer|Sonya|Stitches|Stukov...	UNKNOWN STEP	2026-10-04T09:32:41.0128472Z Updating files:  79% (610/771)
+make (5, 15, Probius|Qhira|Ragnaros|Raynor|Rehgar|Rexxar|Samuro|Sgt. Hammer|Sonya|Stitches|Stukov...	UNKNOWN STEP	2026-10-04T09:32:41.0366949Z Updating files:  80% (617/771)
+make (5, 15, Probius|Qhira|Ragnaros|Raynor|Rehgar|Rexxar|Samuro|Sgt. Hammer|Sonya|Stitches|Stukov...	UNKNOWN STEP	2026-10-04T09:32:41.0914412Z Updating files:  81% (625/771)
+make (5, 15, Probius|Qhira|Ragnaros|Raynor|Rehgar|Rexxar|Samuro|Sgt. Hammer|Sonya|Stitches|Stukov...	UNKNOWN STEP	2026-10-04T09:32:41.1061244Z Updating files:  82% (633/771)
+make (5, 15, Probius|Qhira|Ragnaros|Raynor|Rehgar|Rexxar|Samuro|Sgt. Hammer|Sonya|Stitches|Stukov...	UNKNOWN STEP	2026-10-04T09:32:41.1560501Z Updating files:  83% (640/771)
+make (5, 15, Probius|Qhira|Ragnaros|Raynor|Rehgar|Rexxar|Samuro|Sgt. Hammer|Sonya|Stitches|Stukov...	UNKNOWN STEP	2026-10-04T09:32:41.1963369Z Updating files:  84% (648/771)
+make (5, 15, Probius|Qhira|Ragnaros|Raynor|Rehgar|Rexxar|Samuro|Sgt. Hammer|Sonya|Stitches|Stukov...	UNKNOWN STEP	2026-10-04T09:32:41.2226708Z Updating files:  85% (656/771)
+make (5, 15, Probius|Qhira|Ragnaros|Raynor|Rehgar|Rexxar|Samuro|Sgt. Hammer|Sonya|Stitches|Stukov...	UNKNOWN STEP	2026-10-04T09:32:41.2390320Z Updating files:  86% (664/771)
+make (5, 15, Probius|Qhira|Ragnaros|Raynor|Rehgar|Rexxar|Samuro|Sgt. Hammer|Sonya|Stitches|Stukov...	UNKNOWN STEP	2026-10-04T09:32:41.2972484Z Updating files:  87% (671/771)
+make (5, 15, Probius|Qhira|Ragnaros|Raynor|Rehgar|Rexxar|Samuro|Sgt. Hammer|Sonya|Stitches|Stukov...	UNKNOWN STEP	2026-10-04T09:32:41.3174091Z Updating files:  88% (679/771)
+make (5, 15, Probius|Qhira|Ragnaros|Raynor|Rehgar|Rexxar|Samuro|Sgt. Hammer|Sonya|Stitches|Stukov...	UNKNOWN STEP	2026-10-04T09:32:41.3528877Z Updating files:  89% (687/771)
+make (5, 15, Probius|Qhira|Ragnaros|Raynor|Rehgar|Rexxar|Samuro|Sgt. Hammer|Sonya|Stitches|Stukov...	UNKNOWN STEP	2026-10-04T09:32:41.3726564Z Updating files:  90% (694/771)
+make (5, 15, Probius|Qhira|Ragnaros|Raynor|Rehgar|Rexxar|Samuro|Sgt. Hammer|Sonya|Stitches|Stukov...	UNKNOWN STEP	2026-10-04T09:32:41.3913152Z Updating files:  91% (702/771)
+make (5, 15, Probius|Qhira|Ragnaros|Raynor|Rehgar|Rexxar|Samuro|Sgt. Hammer|Sonya|Stitches|Stukov...	UNKNOWN STEP	2026-10-04T09:32:41.4124547Z Updating files:  92% (710/771)
+make (5, 15, Probius|Qhira|Ragnaros|Raynor|Rehgar|Rexxar|Samuro|Sgt. Hammer|Sonya|Stitches|Stukov...	UNKNOWN STEP	2026-10-04T09:32:41.4392846Z Updating files:  93% (718/771)
+make (5, 15, Probius|Qhira|Ragnaros|Raynor|Rehgar|Rexxar|Samuro|Sgt. Hammer|Sonya|Stitches|Stukov...	UNKNOWN STEP	2026-10-04T09:32:41.4536242Z Updating files:  94% (725/771)
+make (5, 15, Probius|Qhira|Ragnaros|Raynor|Rehgar|Rexxar|Samuro|Sgt. Hammer|Sonya|Stitches|Stukov...	UNKNOWN STEP	2026-10-04T09:32:41.4733551Z Updating files:  95% (733/771)
+make (5, 15, Probius|Qhira|Ragnaros|Raynor|Rehgar|Rexxar|Samuro|Sgt. Hammer|Sonya|Stitches|Stukov...	UNKNOWN STEP	2026-10-04T09:32:41.5091027Z Updating files:  96% (741/771)
+make (5, 15, Probius|Qhira|Ragnaros|Raynor|Rehgar|Rexxar|Samuro|Sgt. Hammer|Sonya|Stitches|Stukov...	UNKNOWN STEP	2026-10-04T09:32:41.5191307Z Updating files:  97% (748/771)
+make (5, 15, Probius|Qhira|Ragnaros|Raynor|Rehgar|Rexxar|Samuro|Sgt. Hammer|Sonya|Stitches|Stukov...	UNKNOWN STEP	2026-10-04T09:32:41.5252647Z Updating files:  97% (752/771)
+make (5, 15, Probius|Qhira|Ragnaros|Raynor|Rehgar|Rexxar|Samuro|Sgt. Hammer|Sonya|Stitches|Stukov...	UNKNOWN STEP	2026-10-04T09:32:41.5410477Z Updating files:  98% (756/771)
+make (5, 15, Probius|Qhira|Ragnaros|Raynor|Rehgar|Rexxar|Samuro|Sgt. Hammer|Sonya|Stitches|Stukov...	UNKNOWN STEP	2026-10-04T09:32:41.5482146Z Updating files:  99% (764/771)
+make (5, 15, Probius|Qhira|Ragnaros|Raynor|Rehgar|Rexxar|Samuro|Sgt. Hammer|Sonya|Stitches|Stukov...	UNKNOWN STEP	2026-10-04T09:32:41.5482580Z Updating files: 100% (771/771)
+make (5, 15, Probius|Qhira|Ragnaros|Raynor|Rehgar|Rexxar|Samuro|Sgt. Hammer|Sonya|Stitches|Stukov...	UNKNOWN STEP	2026-10-04T09:32:41.5483040Z Updating files: 100% (771/771), done.
+make (5, 15, Probius|Qhira|Ragnaros|Raynor|Rehgar|Rexxar|Samuro|Sgt. Hammer|Sonya|Stitches|Stukov...	UNKNOWN STEP	2026-10-04T09:32:41.5507692Z Switched to a new branch 'chatgpt-stl-builder'
+make (5, 15, Probius|Qhira|Ragnaros|Raynor|Rehgar|Rexxar|Samuro|Sgt. Hammer|Sonya|Stitches|Stukov...	UNKNOWN STEP	2026-10-04T09:32:41.5509548Z branch 'chatgpt-stl-builder' set up to track 'origin/chatgpt-stl-builder'.
+make (5, 15, Probius|Qhira|Ragnaros|Raynor|Rehgar|Rexxar|Samuro|Sgt. Hammer|Sonya|Stitches|Stukov...	UNKNOWN STEP	2026-10-04T09:32:41.5562764Z ##[endgroup]
+make (5, 15, Probius|Qhira|Ragnaros|Raynor|Rehgar|Rexxar|Samuro|Sgt. Hammer|Sonya|Stitches|Stukov...	UNKNOWN STEP	2026-10-04T09:32:41.5599808Z [command]/usr/bin/git log -1 --format=%H
+make (5, 15, Probius|Qhira|Ragnaros|Raynor|Rehgar|Rexxar|Samuro|Sgt. Hammer|Sonya|Stitches|Stukov...	UNKNOWN STEP	2026-10-04T09:32:41.5622474Z 559933ffbf6a9fc142e663ce49a8b3f2791a7b47
+make (5, 15, Probius|Qhira|Ragnaros|Raynor|Rehgar|Rexxar|Samuro|Sgt. Hammer|Sonya|Stitches|Stukov...	UNKNOWN STEP	2026-10-04T09:32:41.5813478Z ##[group]Run set -euo pipefail
+make (5, 15, Probius|Qhira|Ragnaros|Raynor|Rehgar|Rexxar|Samuro|Sgt. Hammer|Sonya|Stitches|Stukov...	UNKNOWN STEP	2026-10-04T09:32:41.5814026Z ^[[36;1mset -euo pipefail^[[0m
+make (5, 15, Probius|Qhira|Ragnaros|Raynor|Rehgar|Rexxar|Samuro|Sgt. Hammer|Sonya|Stitches|Stukov...	UNKNOWN STEP	2026-10-04T09:32:41.5814527Z ^[[36;1mcp tools/hots_stl/runtime_extracted/build_hots_stls.py "$RUNNER_TEMP/b.py"^[[0m
+make (5, 15, Probius|Qhira|Ragnaros|Raynor|Rehgar|Rexxar|Samuro|Sgt. Hammer|Sonya|Stitches|Stukov...	UNKNOWN STEP	2026-10-04T09:32:41.5815108Z ^[[36;1mpython tools/hots_stl/runtime_patch_v2.py "$RUNNER_TEMP/b.py"^[[0m
+make (5, 15, Probius|Qhira|Ragnaros|Raynor|Rehgar|Rexxar|Samuro|Sgt. Hammer|Sonya|Stitches|Stukov...	UNKNOWN STEP	2026-10-04T09:32:41.5815700Z ^[[36;1mpython ci/patch_builder_external_validation.py "$RUNNER_TEMP/b.py"^[[0m
+make (5, 15, Probius|Qhira|Ragnaros|Raynor|Rehgar|Rexxar|Samuro|Sgt. Hammer|Sonya|Stitches|Stukov...	UNKNOWN STEP	2026-10-04T09:32:41.5816155Z ^[[36;1mpython - "$RUNNER_TEMP/b.py" <<'PY'^[[0m
+make (5, 15, Probius|Qhira|Ragnaros|Raynor|Rehgar|Rexxar|Samuro|Sgt. Hammer|Sonya|Stitches|Stukov...	UNKNOWN STEP	2026-10-04T09:32:41.5816586Z ^[[36;1mfrom pathlib import Path^[[0m
+make (5, 15, Probius|Qhira|Ragnaros|Raynor|Rehgar|Rexxar|Samuro|Sgt. Hammer|Sonya|Stitches|Stukov...	UNKNOWN STEP	2026-10-04T09:32:41.5816913Z ^[[36;1mimport sys^[[0m
+make (5, 15, Probius|Qhira|Ragnaros|Raynor|Rehgar|Rexxar|Samuro|Sgt. Hammer|Sonya|Stitches|Stukov...	UNKNOWN STEP	2026-10-04T09:32:41.5817325Z ^[[36;1mp=Path(sys.argv[1]); s=p.read_text(); a='    "Whitemane": ("whitemane",),\n'^[[0m
+make (5, 15, Probius|Qhira|Ragnaros|Raynor|Rehgar|Rexxar|Samuro|Sgt. Hammer|Sonya|Stitches|Stukov...	UNKNOWN STEP	2026-10-04T09:32:41.5817888Z ^[[36;1mif a not in s: raise SystemExit('roster anchor missing')^[[0m
+make (5, 15, Probius|Qhira|Ragnaros|Raynor|Rehgar|Rexxar|Samuro|Sgt. Hammer|Sonya|Stitches|Stukov...	UNKNOWN STEP	2026-10-04T09:32:41.5818377Z ^[[36;1mp.write_text(s.replace(a,a+'    "Xal\'atath": ("xalatath",),\n',1))^[[0m
+make (5, 15, Probius|Qhira|Ragnaros|Raynor|Rehgar|Rexxar|Samuro|Sgt. Hammer|Sonya|Stitches|Stukov...	UNKNOWN STEP	2026-10-04T09:32:41.5818856Z ^[[36;1mPY^[[0m
+make (5, 15, Probius|Qhira|Ragnaros|Raynor|Rehgar|Rexxar|Samuro|Sgt. Hammer|Sonya|Stitches|Stukov...	UNKNOWN STEP	2026-10-04T09:32:41.5819213Z ^[[36;1msudo apt-get update -qq^[[0m
+make (5, 15, Probius|Qhira|Ragnaros|Raynor|Rehgar|Rexxar|Samuro|Sgt. Hammer|Sonya|Stitches|Stukov...	UNKNOWN STEP	2026-10-04T09:32:41.5820009Z ^[[36;1msudo apt-get install -y --no-install-recommends ca-certificates curl git xz-utils libx11-6 libxi6 libxrender1 libxfixes3 libxkbcommon0 libsm6 libice6 libgl1 libegl1^[[0m
+make (5, 15, Probius|Qhira|Ragnaros|Raynor|Rehgar|Rexxar|Samuro|Sgt. Hammer|Sonya|Stitches|Stukov...	UNKNOWN STEP	2026-10-04T09:32:41.5820931Z ^[[36;1mgit clone --depth 1 https://github.com/JimmyTheCool/HOTS-02.git "$RUNNER_TEMP/H2"^[[0m
+make (5, 15, Probius|Qhira|Ragnaros|Raynor|Rehgar|Rexxar|Samuro|Sgt. Hammer|Sonya|Stitches|Stukov...	UNKNOWN STEP	2026-10-04T09:32:41.5821433Z ^[[36;1mcd "$RUNNER_TEMP"^[[0m
+make (5, 15, Probius|Qhira|Ragnaros|Raynor|Rehgar|Rexxar|Samuro|Sgt. Hammer|Sonya|Stitches|Stukov...	UNKNOWN STEP	2026-10-04T09:32:41.5822430Z ^[[36;1mcurl -fL --retry 5 "https://download.blender.org/release/Blender3.6/blender-${BV}-linux-x64.tar.xz" -o b.tar.xz^[[0m
+make (5, 15, Probius|Qhira|Ragnaros|Raynor|Rehgar|Rexxar|Samuro|Sgt. Hammer|Sonya|Stitches|Stukov...	UNKNOWN STEP	2026-10-04T09:32:41.5823047Z ^[[36;1mtar -xf b.tar.xz^[[0m
+make (5, 15, Probius|Qhira|Ragnaros|Raynor|Rehgar|Rexxar|Samuro|Sgt. Hammer|Sonya|Stitches|Stukov...	UNKNOWN STEP	2026-10-04T09:32:41.5823488Z ^[[36;1mgit clone -q https://github.com/SC2Mapster/m3addon.git m3^[[0m
+make (5, 15, Probius|Qhira|Ragnaros|Raynor|Rehgar|Rexxar|Samuro|Sgt. Hammer|Sonya|Stitches|Stukov...	UNKNOWN STEP	2026-10-04T09:32:41.5823969Z ^[[36;1mgit -C m3 checkout -q "$M3"^[[0m
+make (5, 15, Probius|Qhira|Ragnaros|Raynor|Rehgar|Rexxar|Samuro|Sgt. Hammer|Sonya|Stitches|Stukov...	UNKNOWN STEP	2026-10-04T09:32:41.5824382Z ^[[36;1mmkdir -p "$HOME/.config/blender/3.6/scripts/addons"^[[0m
+make (5, 15, Probius|Qhira|Ragnaros|Raynor|Rehgar|Rexxar|Samuro|Sgt. Hammer|Sonya|Stitches|Stukov...	UNKNOWN STEP	2026-10-04T09:32:41.5824898Z ^[[36;1mln -s "$RUNNER_TEMP/m3" "$HOME/.config/blender/3.6/scripts/addons/m3addon"^[[0m
+make (5, 15, Probius|Qhira|Ragnaros|Raynor|Rehgar|Rexxar|Samuro|Sgt. Hammer|Sonya|Stitches|Stukov...	UNKNOWN STEP	2026-10-04T09:32:41.5825403Z ^[[36;1mO="$RUNNER_TEMP/o"; mkdir -p "$O/00_Reports"^[[0m
+make (5, 15, Probius|Qhira|Ragnaros|Raynor|Rehgar|Rexxar|Samuro|Sgt. Hammer|Sonya|Stitches|Stukov...	UNKNOWN STEP	2026-10-04T09:32:41.5826313Z ^[[36;1mIFS='|' read -ra A <<< 'Probius|Qhira|Ragnaros|Raynor|Rehgar|Rexxar|Samuro|Sgt. Hammer|Sonya|Stitches|Stukov|Sylvanas|Tassadar|The Lost Vikings|Thrall'; X=(); for v in "${A[@]}"; do X+=(--only "$v"); done^[[0m
+make (5, 15, Probius|Qhira|Ragnaros|Raynor|Rehgar|Rexxar|Samuro|Sgt. Hammer|Sonya|Stitches|Stukov...	UNKNOWN STEP	2026-10-04T09:32:41.5828116Z ^[[36;1m"$RUNNER_TEMP/blender-${BV}-linux-x64/blender" --background --factory-startup --python "$RUNNER_TEMP/b.py" -- --source "$RUNNER_TEMP/H2" --source "$GITHUB_WORKSPACE" --output "$O" --target-height-mm 110 --base-height-mm 4 --base-margin-mm 4 --voxel-mm 0.55 --thin-part-mm 0.72 --max-triangles 450000 --skip-animation "${X[@]}" 2>&1 | tee "$O/00_Reports/build.log"^[[0m
+make (5, 15, Probius|Qhira|Ragnaros|Raynor|Rehgar|Rexxar|Samuro|Sgt. Hammer|Sonya|Stitches|Stukov...	UNKNOWN STEP	2026-10-04T09:32:41.5829575Z ^[[36;1mN=$(find "$O/02_Print_Ready_Watertight" -name '*.stl' -type f | wc -l); test "$N" -eq '15'^[[0m
+make (5, 15, Probius|Qhira|Ragnaros|Raynor|Rehgar|Rexxar|Samuro|Sgt. Hammer|Sonya|Stitches|Stukov...	UNKNOWN STEP	2026-10-04T09:32:41.5830182Z ^[[36;1mmkdir -p "$RUNNER_TEMP/chunk/STL" "$RUNNER_TEMP/chunk/Reports"^[[0m
+make (5, 15, Probius|Qhira|Ragnaros|Raynor|Rehgar|Rexxar|Samuro|Sgt. Hammer|Sonya|Stitches|Stukov...	UNKNOWN STEP	2026-10-04T09:32:41.5830736Z ^[[36;1mcp "$O"/02_Print_Ready_Watertight/*.stl "$RUNNER_TEMP/chunk/STL/"^[[0m
+make (5, 15, Probius|Qhira|Ragnaros|Raynor|Rehgar|Rexxar|Samuro|Sgt. Hammer|Sonya|Stitches|Stukov...	UNKNOWN STEP	2026-10-04T09:32:41.5831232Z ^[[36;1mcp "$O"/00_Reports/* "$RUNNER_TEMP/chunk/Reports/"^[[0m
+make (5, 15, Probius|Qhira|Ragnaros|Raynor|Rehgar|Rexxar|Samuro|Sgt. Hammer|Sonya|Stitches|Stukov...	UNKNOWN STEP	2026-10-04T09:32:41.8846296Z shell: /usr/bin/bash --noprofile --norc -e -o pipefail {0}
+make (5, 15, Probius|Qhira|Ragnaros|Raynor|Rehgar|Rexxar|Samuro|Sgt. Hammer|Sonya|Stitches|Stukov...	UNKNOWN STEP	2026-10-04T09:32:41.8846872Z env:
+make (5, 15, Probius|Qhira|Ragnaros|Raynor|Rehgar|Rexxar|Samuro|Sgt. Hammer|Sonya|Stitches|Stukov...	UNKNOWN STEP	2026-10-04T09:32:41.8847184Z   BV: 3.6.23
+make (5, 15, Probius|Qhira|Ragnaros|Raynor|Rehgar|Rexxar|Samuro|Sgt. Hammer|Sonya|Stitches|Stukov...	UNKNOWN STEP	2026-10-04T09:32:41.8847486Z   M3: 58935005c4465a219a740f6b740253533eda773f
+make (5, 15, Probius|Qhira|Ragnaros|Raynor|Rehgar|Rexxar|Samuro|Sgt. Hammer|Sonya|Stitches|Stukov...	UNKNOWN STEP	2026-10-04T09:32:41.8847885Z ##[endgroup]
+make (5, 15, Probius|Qhira|Ragnaros|Raynor|Rehgar|Rexxar|Samuro|Sgt. Hammer|Sonya|Stitches|Stukov...	UNKNOWN STEP	2026-10-04T09:32:41.9230285Z Patched /home/runner/work/_temp/b.py to HOTS STL Builder v2.1.0
+make (5, 15, Probius|Qhira|Ragnaros|Raynor|Rehgar|Rexxar|Samuro|Sgt. Hammer|Sonya|Stitches|Stukov...	UNKNOWN STEP	2026-10-04T09:32:41.9418933Z Patched builder to defer geometric watertightness to independent trimesh validation
+make (5, 15, Probius|Qhira|Ragnaros|Raynor|Rehgar|Rexxar|Samuro|Sgt. Hammer|Sonya|Stitches|Stukov...	UNKNOWN STEP	2026-10-04T09:32:54.4690748Z Reading package lists...
+make (5, 15, Probius|Qhira|Ragnaros|Raynor|Rehgar|Rexxar|Samuro|Sgt. Hammer|Sonya|Stitches|Stukov...	UNKNOWN STEP	2026-10-04T09:32:54.6814755Z Building dependency tree...
+make (5, 15, Probius|Qhira|Ragnaros|Raynor|Rehgar|Rexxar|Samuro|Sgt. Hammer|Sonya|Stitches|Stukov...	UNKNOWN STEP	2026-10-04T09:32:54.6824045Z Reading state information...
+make (5, 15, Probius|Qhira|Ragnaros|Raynor|Rehgar|Rexxar|Samuro|Sgt. Hammer|Sonya|Stitches|Stukov...	UNKNOWN STEP	2026-10-04T09:32:54.8581734Z libgl1 is already the newest version (1.4.0-1).
+make (5, 15, Probius|Qhira|Ragnaros|Raynor|Rehgar|Rexxar|Samuro|Sgt. Hammer|Sonya|Stitches|Stukov...	UNKNOWN STEP	2026-10-04T09:32:54.8582499Z libgl1 set to manually installed.
+make (5, 15, Probius|Qhira|Ragnaros|Raynor|Rehgar|Rexxar|Samuro|Sgt. Hammer|Sonya|Stitches|Stukov...	UNKNOWN STEP	2026-10-04T09:32:54.8582999Z libice6 is already the newest version (2:1.0.10-1build2).
+make (5, 15, Probius|Qhira|Ragnaros|Raynor|Rehgar|Rexxar|Samuro|Sgt. Hammer|Sonya|Stitches|Stukov...	UNKNOWN STEP	2026-10-04T09:32:54.8583949Z libice6 set to manually installed.
+make (5, 15, Probius|Qhira|Ragnaros|Raynor|Rehgar|Rexxar|Samuro|Sgt. Hammer|Sonya|Stitches|Stukov...	UNKNOWN STEP	2026-10-04T09:32:54.8584394Z libsm6 is already the newest version (2:1.2.3-1build2).
+make (5, 15, Probius|Qhira|Ragnaros|Raynor|Rehgar|Rexxar|Samuro|Sgt. Hammer|Sonya|Stitches|Stukov...	UNKNOWN STEP	2026-10-04T09:32:54.8584825Z libsm6 set to manually installed.
+make (5, 15, Probius|Qhira|Ragnaros|Raynor|Rehgar|Rexxar|Samuro|Sgt. Hammer|Sonya|Stitches|Stukov...	UNKNOWN STEP	2026-10-04T09:32:54.8585226Z libxfixes3 is already the newest version (1:6.0.0-1).
+make (5, 15, Probius|Qhira|Ragnaros|Raynor|Rehgar|Rexxar|Samuro|Sgt. Hammer|Sonya|Stitches|Stukov...	UNKNOWN STEP	2026-10-04T09:32:54.8585672Z libxfixes3 set to manually installed.
+make (5, 15, Probius|Qhira|Ragnaros|Raynor|Rehgar|Rexxar|Samuro|Sgt. Hammer|Sonya|Stitches|Stukov...	UNKNOWN STEP	2026-10-04T09:32:54.8586102Z libxi6 is already the newest version (2:1.8-1build1).
+make (5, 15, Probius|Qhira|Ragnaros|Raynor|Rehgar|Rexxar|Samuro|Sgt. Hammer|Sonya|Stitches|Stukov...	UNKNOWN STEP	2026-10-04T09:32:54.8586513Z libxi6 set to manually installed.
+make (5, 15, Probius|Qhira|Ragnaros|Raynor|Rehgar|Rexxar|Samuro|Sgt. Hammer|Sonya|Stitches|Stukov...	UNKNOWN STEP	2026-10-04T09:32:54.8587079Z libxkbcommon0 is already the newest version (1.4.0-1).
+make (5, 15, Probius|Qhira|Ragnaros|Raynor|Rehgar|Rexxar|Samuro|Sgt. Hammer|Sonya|Stitches|Stukov...	UNKNOWN STEP	2026-10-04T09:32:54.8587628Z libxkbcommon0 set to manually installed.
+make (5, 15, Probius|Qhira|Ragnaros|Raynor|Rehgar|Rexxar|Samuro|Sgt. Hammer|Sonya|Stitches|Stukov...	UNKNOWN STEP	2026-10-04T09:32:54.8588230Z libxrender1 is already the newest version (1:0.9.10-1build4).
+make (5, 15, Probius|Qhira|Ragnaros|Raynor|Rehgar|Rexxar|Samuro|Sgt. Hammer|Sonya|Stitches|Stukov...	UNKNOWN STEP	2026-10-04T09:32:54.8588868Z libxrender1 set to manually installed.
+make (5, 15, Probius|Qhira|Ragnaros|Raynor|Rehgar|Rexxar|Samuro|Sgt. Hammer|Sonya|Stitches|Stukov...	UNKNOWN STEP	2026-10-04T09:32:54.8589377Z ca-certificates is already the newest version (20260601~22.04.1).
+make (5, 15, Probius|Qhira|Ragnaros|Raynor|Rehgar|Rexxar|Samuro|Sgt. Hammer|Sonya|Stitches|Stukov...	UNKNOWN STEP	2026-10-04T09:32:54.8589840Z curl is already the newest version (7.81.0-1ubuntu1.29).
+make (5, 15, Probius|Qhira|Ragnaros|Raynor|Rehgar|Rexxar|Samuro|Sgt. Hammer|Sonya|Stitches|Stukov...	UNKNOWN STEP	2026-10-04T09:32:54.8590244Z libx11-6 is already the newest version (2:1.7.5-1ubuntu0.3).
+make (5, 15, Probius|Qhira|Ragnaros|Raynor|Rehgar|Rexxar|Samuro|Sgt. Hammer|Sonya|Stitches|Stukov...	UNKNOWN STEP	2026-10-04T09:32:54.8590658Z libx11-6 set to manually installed.
+make (5, 15, Probius|Qhira|Ragnaros|Raynor|Rehgar|Rexxar|Samuro|Sgt. Hammer|Sonya|Stitches|Stukov...	UNKNOWN STEP	2026-10-04T09:32:54.8591076Z xz-utils is already the newest version (5.2.5-2ubuntu1.1).
+make (5, 15, Probius|Qhira|Ragnaros|Raynor|Rehgar|Rexxar|Samuro|Sgt. Hammer|Sonya|Stitches|Stukov...	UNKNOWN STEP	2026-10-04T09:32:54.8592269Z git is already the newest version (1:2.55.0-0ppa1~ubuntu22.04.2).
+make (5, 15, Probius|Qhira|Ragnaros|Raynor|Rehgar|Rexxar|Samuro|Sgt. Hammer|Sonya|Stitches|Stukov...	UNKNOWN STEP	2026-10-04T09:32:54.8592717Z The following additional packages will be installed:
+make (5, 15, Probius|Qhira|Ragnaros|Raynor|Rehgar|Rexxar|Samuro|Sgt. Hammer|Sonya|Stitches|Stukov...	UNKNOWN STEP	2026-10-04T09:32:54.8593085Z   libegl-mesa0
+make (5, 15, Probius|Qhira|Ragnaros|Raynor|Rehgar|Rexxar|Samuro|Sgt. Hammer|Sonya|Stitches|Stukov...	UNKNOWN STEP	2026-10-04T09:32:54.8798763Z The following NEW packages will be installed:
+make (5, 15, Probius|Qhira|Ragnaros|Raynor|Rehgar|Rexxar|Samuro|Sgt. Hammer|Sonya|Stitches|Stukov...	UNKNOWN STEP	2026-10-04T09:32:54.8804234Z   libegl-mesa0 libegl1
+make (5, 15, Probius|Qhira|Ragnaros|Raynor|Rehgar|Rexxar|Samuro|Sgt. Hammer|Sonya|Stitches|Stukov...	UNKNOWN STEP	2026-10-04T09:32:54.8950603Z 0 upgraded, 2 newly installed, 0 to remove and 20 not upgraded.
+make (5, 15, Probius|Qhira|Ragnaros|Raynor|Rehgar|Rexxar|Samuro|Sgt. Hammer|Sonya|Stitches|Stukov...	UNKNOWN STEP	2026-10-04T09:32:54.8951295Z Need to get 147 kB of archives.
+make (5, 15, Probius|Qhira|Ragnaros|Raynor|Rehgar|Rexxar|Samuro|Sgt. Hammer|Sonya|Stitches|Stukov...	UNKNOWN STEP	2026-10-04T09:32:54.8951926Z After this operation, 484 kB of additional disk space will be used.
+make (5, 15, Probius|Qhira|Ragnaros|Raynor|Rehgar|Rexxar|Samuro|Sgt. Hammer|Sonya|Stitches|Stukov...	UNKNOWN STEP	2026-10-04T09:32:54.8952649Z Get:1 file:/etc/apt/apt-mirrors.txt Mirrorlist [144 B]
+make (5, 15, Probius|Qhira|Ragnaros|Raynor|Rehgar|Rexxar|Samuro|Sgt. Hammer|Sonya|Stitches|Stukov...	UNKNOWN STEP	2026-10-04T09:32:54.9877142Z Get:2 http://azure.archive.ubuntu.com/ubuntu jammy-updates/main amd64 libegl-mesa0 amd64 23.2.1-1ubuntu3.1~22.04.4 [118 kB]
+make (5, 15, Probius|Qhira|Ragnaros|Raynor|Rehgar|Rexxar|Samuro|Sgt. Hammer|Sonya|Stitches|Stukov...	UNKNOWN STEP	2026-10-04T09:32:55.0534405Z Get:3 http://azure.archive.ubuntu.com/ubuntu jammy/main amd64 libegl1 amd64 1.4.0-1 [28.6 kB]
+make (5, 15, Probius|Qhira|Ragnaros|Raynor|Rehgar|Rexxar|Samuro|Sgt. Hammer|Sonya|Stitches|Stukov...	UNKNOWN STEP	2026-10-04T09:32:55.3483592Z Fetched 147 kB in 0s (881 kB/s)
+make (5, 15, Probius|Qhira|Ragnaros|Raynor|Rehgar|Rexxar|Samuro|Sgt. Hammer|Sonya|Stitches|Stukov...	UNKNOWN STEP	2026-10-04T09:32:55.4505672Z Selecting previously unselected package libegl-mesa0:amd64.
+make (5, 15, Probius|Qhira|Ragnaros|Raynor|Rehgar|Rexxar|Samuro|Sgt. Hammer|Sonya|Stitches|Stukov...	UNKNOWN STEP	2026-10-04T09:32:55.6448300Z (Reading database ... 
+make (5, 15, Probius|Qhira|Ragnaros|Raynor|Rehgar|Rexxar|Samuro|Sgt. Hammer|Sonya|Stitches|Stukov...	UNKNOWN STEP	2026-10-04T09:32:55.6448889Z (Reading database ... 5%
+make (5, 15, Probius|Qhira|Ragnaros|Raynor|Rehgar|Rexxar|Samuro|Sgt. Hammer|Sonya|Stitches|Stukov...	UNKNOWN STEP	2026-10-04T09:32:55.6449552Z (Reading database ... 10%
+make (5, 15, Probius|Qhira|Ragnaros|Raynor|Rehgar|Rexxar|Samuro|Sgt. Hammer|Sonya|Stitches|Stukov...	UNKNOWN STEP	2026-10-04T09:32:55.6450018Z (Reading database ... 15%
+make (5, 15, Probius|Qhira|Ragnaros|Raynor|Rehgar|Rexxar|Samuro|Sgt. Hammer|Sonya|Stitches|Stukov...	UNKNOWN STEP	2026-10-04T09:32:55.6450471Z (Reading database ... 20%
+make (5, 15, Probius|Qhira|Ragnaros|Raynor|Rehgar|Rexxar|Samuro|Sgt. Hammer|Sonya|Stitches|Stukov...	UNKNOWN STEP	2026-10-04T09:32:55.6450873Z (Reading database ... 25%
+make (5, 15, Probius|Qhira|Ragnaros|Raynor|Rehgar|Rexxar|Samuro|Sgt. Hammer|Sonya|Stitches|Stukov...	UNKNOWN STEP	2026-10-04T09:32:55.6451304Z (Reading database ... 30%
+make (5, 15, Probius|Qhira|Ragnaros|Raynor|Rehgar|Rexxar|Samuro|Sgt. Hammer|Sonya|Stitches|Stukov...	UNKNOWN STEP	2026-10-04T09:32:55.6452151Z (Reading database ... 35%
+make (5, 15, Probius|Qhira|Ragnaros|Raynor|Rehgar|Rexxar|Samuro|Sgt. Hammer|Sonya|Stitches|Stukov...	UNKNOWN STEP	2026-10-04T09:32:55.6452555Z (Reading database ... 40%
+make (5, 15, Probius|Qhira|Ragnaros|Raynor|Rehgar|Rexxar|Samuro|Sgt. Hammer|Sonya|Stitches|Stukov...	UNKNOWN STEP	2026-10-04T09:32:55.6452879Z (Reading database ... 45%
+make (5, 15, Probius|Qhira|Ragnaros|Raynor|Rehgar|Rexxar|Samuro|Sgt. Hammer|Sonya|Stitches|Stukov...	UNKNOWN STEP	2026-10-04T09:32:55.6453176Z (Reading database ... 50%
+make (5, 15, Probius|Qhira|Ragnaros|Raynor|Rehgar|Rexxar|Samuro|Sgt. Hammer|Sonya|Stitches|Stukov...	UNKNOWN STEP	2026-10-04T09:32:56.3348319Z (Reading database ... 55%
+make (5, 15, Probius|Qhira|Ragnaros|Raynor|Rehgar|Rexxar|Samuro|Sgt. Hammer|Sonya|Stitches|Stukov...	UNKNOWN STEP	2026-10-04T09:32:57.3591122Z (Reading database ... 60%
+make (5, 15, Probius|Qhira|Ragnaros|Raynor|Rehgar|Rexxar|Samuro|Sgt. Hammer|Sonya|Stitches|Stukov...	UNKNOWN STEP	2026-10-04T09:32:57.8244577Z (Reading database ... 65%
+make (5, 15, Probius|Qhira|Ragnaros|Raynor|Rehgar|Rexxar|Samuro|Sgt. Hammer|Sonya|Stitches|Stukov...	UNKNOWN STEP	2026-10-04T09:32:58.2244574Z (Reading database ... 70%
+make (5, 15, Probius|Qhira|Ragnaros|Raynor|Rehgar|Rexxar|Samuro|Sgt. Hammer|Sonya|Stitches|Stukov...	UNKNOWN STEP	2026-10-04T09:32:59.1070200Z (Reading database ... 75%
+make (5, 15, Probius|Qhira|Ragnaros|Raynor|Rehgar|Rexxar|Samuro|Sgt. Hammer|Sonya|Stitches|Stukov...	UNKNOWN STEP	2026-10-04T09:33:00.1691447Z (Reading database ... 80%
+make (5, 15, Probius|Qhira|Ragnaros|Raynor|Rehgar|Rexxar|Samuro|Sgt. Hammer|Sonya|Stitches|Stukov...	UNKNOWN STEP	2026-10-04T09:33:01.4070317Z (Reading database ... 85%
+make (5, 15, Probius|Qhira|Ragnaros|Raynor|Rehgar|Rexxar|Samuro|Sgt. Hammer|Sonya|Stitches|Stukov...	UNKNOWN STEP	2026-10-04T09:33:02.8967802Z (Reading database ... 90%
+make (5, 15, Probius|Qhira|Ragnaros|Raynor|Rehgar|Rexxar|Samuro|Sgt. Hammer|Sonya|Stitches|Stukov...	UNKNOWN STEP	2026-10-04T09:33:04.1046364Z (Reading database ... 95%
+make (5, 15, Probius|Qhira|Ragnaros|Raynor|Rehgar|Rexxar|Samuro|Sgt. Hammer|Sonya|Stitches|Stukov...	UNKNOWN STEP	2026-10-04T09:33:04.1046870Z (Reading database ... 100%
+make (5, 15, Probius|Qhira|Ragnaros|Raynor|Rehgar|Rexxar|Samuro|Sgt. Hammer|Sonya|Stitches|Stukov...	UNKNOWN STEP	2026-10-04T09:33:04.1047454Z (Reading database ... 260411 files and directories currently installed.)
+make (5, 15, Probius|Qhira|Ragnaros|Raynor|Rehgar|Rexxar|Samuro|Sgt. Hammer|Sonya|Stitches|Stukov...	UNKNOWN STEP	2026-10-04T09:33:04.1110079Z Preparing to unpack .../libegl-mesa0_23.2.1-1ubuntu3.1~22.04.4_amd64.deb ...
+make (5, 15, Probius|Qhira|Ragnaros|Raynor|Rehgar|Rexxar|Samuro|Sgt. Hammer|Sonya|Stitches|Stukov...	UNKNOWN STEP	2026-10-04T09:33:04.1483030Z Unpacking libegl-mesa0:amd64 (23.2.1-1ubuntu3.1~22.04.4) ...
+make (5, 15, Probius|Qhira|Ragnaros|Raynor|Rehgar|Rexxar|Samuro|Sgt. Hammer|Sonya|Stitches|Stukov...	UNKNOWN STEP	2026-10-04T09:33:04.3096140Z Selecting previously unselected package libegl1:amd64.
+make (5, 15, Probius|Qhira|Ragnaros|Raynor|Rehgar|Rexxar|Samuro|Sgt. Hammer|Sonya|Stitches|Stukov...	UNKNOWN STEP	2026-10-04T09:33:04.3242955Z Preparing to unpack .../libegl1_1.4.0-1_amd64.deb ...
+make (5, 15, Probius|Qhira|Ragnaros|Raynor|Rehgar|Rexxar|Samuro|Sgt. Hammer|Sonya|Stitches|Stukov...	UNKNOWN STEP	2026-10-04T09:33:04.3569468Z Unpacking libegl1:amd64 (1.4.0-1) ...
+make (5, 15, Probius|Qhira|Ragnaros|Raynor|Rehgar|Rexxar|Samuro|Sgt. Hammer|Sonya|Stitches|Stukov...	UNKNOWN STEP	2026-10-04T09:33:04.4992340Z Setting up libegl-mesa0:amd64 (23.2.1-1ubuntu3.1~22.04.4) ...
+make (5, 15, Probius|Qhira|Ragnaros|Raynor|Rehgar|Rexxar|Samuro|Sgt. Hammer|Sonya|Stitches|Stukov...	UNKNOWN STEP	2026-10-04T09:33:04.6972705Z Setting up libegl1:amd64 (1.4.0-1) ...
+make (5, 15, Probius|Qhira|Ragnaros|Raynor|Rehgar|Rexxar|Samuro|Sgt. Hammer|Sonya|Stitches|Stukov...	UNKNOWN STEP	2026-10-04T09:33:04.9658996Z Processing triggers for libc-bin (2.35-0ubuntu3.15) ...
+make (5, 15, Probius|Qhira|Ragnaros|Raynor|Rehgar|Rexxar|Samuro|Sgt. Hammer|Sonya|Stitches|Stukov...	UNKNOWN STEP	2026-10-04T09:33:21.1463197Z 
+make (5, 15, Probius|Qhira|Ragnaros|Raynor|Rehgar|Rexxar|Samuro|Sgt. Hammer|Sonya|Stitches|Stukov...	UNKNOWN STEP	2026-10-04T09:33:21.1464060Z Running kernel seems to be up-to-date.
+make (5, 15, Probius|Qhira|Ragnaros|Raynor|Rehgar|Rexxar|Samuro|Sgt. Hammer|Sonya|Stitches|Stukov...	UNKNOWN STEP	2026-10-04T09:33:21.1464679Z 
+make (5, 15, Probius|Qhira|Ragnaros|Raynor|Rehgar|Rexxar|Samuro|Sgt. Hammer|Sonya|Stitches|Stukov...	UNKNOWN STEP	2026-10-04T09:33:21.1464926Z No services need to be restarted.
+make (5, 15, Probius|Qhira|Ragnaros|Raynor|Rehgar|Rexxar|Samuro|Sgt. Hammer|Sonya|Stitches|Stukov...	UNKNOWN STEP	2026-10-04T09:33:21.1465214Z 
+make (5, 15, Probius|Qhira|Ragnaros|Raynor|Rehgar|Rexxar|Samuro|Sgt. Hammer|Sonya|Stitches|Stukov...	UNKNOWN STEP	2026-10-04T09:33:21.1465459Z No containers need to be restarted.
+make (5, 15, Probius|Qhira|Ragnaros|Raynor|Rehgar|Rexxar|Samuro|Sgt. Hammer|Sonya|Stitches|Stukov...	UNKNOWN STEP	2026-10-04T09:33:21.1465699Z 
+make (5, 15, Probius|Qhira|Ragnaros|Raynor|Rehgar|Rexxar|Samuro|Sgt. Hammer|Sonya|Stitches|Stukov...	UNKNOWN STEP	2026-10-04T09:33:21.1465930Z No user sessions are running outdated binaries.
+make (5, 15, Probius|Qhira|Ragnaros|Raynor|Rehgar|Rexxar|Samuro|Sgt. Hammer|Sonya|Stitches|Stukov...	UNKNOWN STEP	2026-10-04T09:33:21.1466280Z 
+make (5, 15, Probius|Qhira|Ragnaros|Raynor|Rehgar|Rexxar|Samuro|Sgt. Hammer|Sonya|Stitches|Stukov...	UNKNOWN STEP	2026-10-04T09:33:21.1466547Z No VM guests are running outdated hypervisor (qemu) binaries on this host.
+make (5, 15, Probius|Qhira|Ragnaros|Raynor|Rehgar|Rexxar|Samuro|Sgt. Hammer|Sonya|Stitches|Stukov...	UNKNOWN STEP	2026-10-04T09:33:22.6099176Z Cloning into '/home/runner/work/_temp/H2'...
+make (5, 15, Probius|Qhira|Ragnaros|Raynor|Rehgar|Rexxar|Samuro|Sgt. Hammer|Sonya|Stitches|Stukov...	UNKNOWN STEP	2026-10-04T09:33:30.3870751Z Updating files:  42% (257/600)
+make (5, 15, Probius|Qhira|Ragnaros|Raynor|Rehgar|Rexxar|Samuro|Sgt. Hammer|Sonya|Stitches|Stukov...	UNKNOWN STEP	2026-10-04T09:33:30.4114580Z Updating files:  43% (258/600)
+make (5, 15, Probius|Qhira|Ragnaros|Raynor|Rehgar|Rexxar|Samuro|Sgt. Hammer|Sonya|Stitches|Stukov...	UNKNOWN STEP	2026-10-04T09:33:30.4240052Z Updating files:  44% (264/600)
+make (5, 15, Probius|Qhira|Ragnaros|Raynor|Rehgar|Rexxar|Samuro|Sgt. Hammer|Sonya|Stitches|Stukov...	UNKNOWN STEP	2026-10-04T09:33:30.4424786Z Updating files:  45% (270/600)
+make (5, 15, Probius|Qhira|Ragnaros|Raynor|Rehgar|Rexxar|Samuro|Sgt. Hammer|Sonya|Stitches|Stukov...	UNKNOWN STEP	2026-10-04T09:33:30.4584289Z Updating files:  46% (276/600)
+make (5, 15, Probius|Qhira|Ragnaros|Raynor|Rehgar|Rexxar|Samuro|Sgt. Hammer|Sonya|Stitches|Stukov...	UNKNOWN STEP	2026-10-04T09:33:30.4838239Z Updating files:  47% (282/600)
+make (5, 15, Probius|Qhira|Ragnaros|Raynor|Rehgar|Rexxar|Samuro|Sgt. Hammer|Sonya|Stitches|Stukov...	UNKNOWN STEP	2026-10-04T09:33:30.4959858Z Updating files:  48% (288/600)
+make (5, 15, Probius|Qhira|Ragnaros|Raynor|Rehgar|Rexxar|Samuro|Sgt. Hammer|Sonya|Stitches|Stukov...	UNKNOWN STEP	2026-10-04T09:33:30.5179262Z Updating files:  49% (294/600)
+make (5, 15, Probius|Qhira|Ragnaros|Raynor|Rehgar|Rexxar|Samuro|Sgt. Hammer|Sonya|Stitches|Stukov...	UNKNOWN STEP	2026-10-04T09:33:30.5333038Z Updating files:  50% (300/600)
+make (5, 15, Probius|Qhira|Ragnaros|Raynor|Rehgar|Rexxar|Samuro|Sgt. Hammer|Sonya|Stitches|Stukov...	UNKNOWN STEP	2026-10-04T09:33:30.5462795Z Updating files:  51% (306/600)
+make (5, 15, Probius|Qhira|Ragnaros|Raynor|Rehgar|Rexxar|Samuro|Sgt. Hammer|Sonya|Stitches|Stukov...	UNKNOWN STEP	2026-10-04T09:33:30.5604729Z Updating files:  52% (312/600)
+make (5, 15, Probius|Qhira|Ragnaros|Raynor|Rehgar|Rexxar|Samuro|Sgt. Hammer|Sonya|Stitches|Stukov...	UNKNOWN STEP	2026-10-04T09:33:30.5958317Z Updating files:  53% (318/600)
+make (5, 15, Probius|Qhira|Ragnaros|Raynor|Rehgar|Rexxar|Samuro|Sgt. Hammer|Sonya|Stitches|Stukov...	UNKNOWN STEP	2026-10-04T09:33:30.6193853Z Updating files:  54% (324/600)
+make (5, 15, Probius|Qhira|Ragnaros|Raynor|Rehgar|Rexxar|Samuro|Sgt. Hammer|Sonya|Stitches|Stukov...	UNKNOWN STEP	2026-10-04T09:33:30.6495572Z Updating files:  55% (330/600)
+make (5, 15, Probius|Qhira|Ragnaros|Raynor|Rehgar|Rexxar|Samuro|Sgt. Hammer|Sonya|Stitches|Stukov...	UNKNOWN STEP	2026-10-04T09:33:30.6751382Z Updating files:  56% (336/600)
+make (5, 15, Probius|Qhira|Ragnaros|Raynor|Rehgar|Rexxar|Samuro|Sgt. Hammer|Sonya|Stitches|Stukov...	UNKNOWN STEP	2026-10-04T09:33:30.6995678Z Updating files:  57% (342/600)
+make (5, 15, Probius|Qhira|Ragnaros|Raynor|Rehgar|Rexxar|Samuro|Sgt. Hammer|Sonya|Stitches|Stukov...	UNKNOWN STEP	2026-10-04T09:33:30.7427343Z Updating files:  58% (348/600)
+make (5, 15, Probius|Qhira|Ragnaros|Raynor|Rehgar|Rexxar|Samuro|Sgt. Hammer|Sonya|Stitches|Stukov...	UNKNOWN STEP	2026-10-04T09:33:30.7662996Z Updating files:  59% (354/600)
+make (5, 15, Probius|Qhira|Ragnaros|Raynor|Rehgar|Rexxar|Samuro|Sgt. Hammer|Sonya|Stitches|Stukov...	UNKNOWN STEP	2026-10-04T09:33:30.7797520Z Updating files:  60% (360/600)
+make (5, 15, Probius|Qhira|Ragnaros|Raynor|Rehgar|Rexxar|Samuro|Sgt. Hammer|Sonya|Stitches|Stukov...	UNKNOWN STEP	2026-10-04T09:33:30.8214005Z Updating files:  61% (366/600)
+make (5, 15, Probius|Qhira|Ragnaros|Raynor|Rehgar|Rexxar|Samuro|Sgt. Hammer|Sonya|Stitches|Stukov...	UNKNOWN STEP	2026-10-04T09:33:30.8367407Z Updating files:  62% (372/600)
+make (5, 15, Probius|Qhira|Ragnaros|Raynor|Rehgar|Rexxar|Samuro|Sgt. Hammer|Sonya|Stitches|Stukov...	UNKNOWN STEP	2026-10-04T09:33:30.8538502Z Updating files:  63% (378/600)
+make (5, 15, Probius|Qhira|Ragnaros|Raynor|Rehgar|Rexxar|Samuro|Sgt. Hammer|Sonya|Stitches|Stukov...	UNKNOWN STEP	2026-10-04T09:33:30.9135119Z Updating files:  64% (384/600)
+make (5, 15, Probius|Qhira|Ragnaros|Raynor|Rehgar|Rexxar|Samuro|Sgt. Hammer|Sonya|Stitches|Stukov...	UNKNOWN STEP	2026-10-04T09:33:30.9443111Z Updating files:  65% (390/600)
+make (5, 15, Probius|Qhira|Ragnaros|Raynor|Rehgar|Rexxar|Samuro|Sgt. Hammer|Sonya|Stitches|Stukov...	UNKNOWN STEP	2026-10-04T09:33:30.9769844Z Updating files:  66% (396/600)
+make (5, 15, Probius|Qhira|Ragnaros|Raynor|Rehgar|Rexxar|Samuro|Sgt. Hammer|Sonya|Stitches|Stukov...	UNKNOWN STEP	2026-10-04T09:33:30.9914059Z Updating files:  67% (402/600)
+make (5, 15, Probius|Qhira|Ragnaros|Raynor|Rehgar|Rexxar|Samuro|Sgt. Hammer|Sonya|Stitches|Stukov...	UNKNOWN STEP	2026-10-04T09:33:30.9992600Z Updating files:  68% (408/600)
+make (5, 15, Probius|Qhira|Ragnaros|Raynor|Rehgar|Rexxar|Samuro|Sgt. Hammer|Sonya|Stitches|Stukov...	UNKNOWN STEP	2026-10-04T09:33:31.0238755Z Updating files:  69% (414/600)
+make (5, 15, Probius|Qhira|Ragnaros|Raynor|Rehgar|Rexxar|Samuro|Sgt. Hammer|Sonya|Stitches|Stukov...	UNKNOWN STEP	2026-10-04T09:33:31.0371641Z Updating files:  70% (420/600)
+make (5, 15, Probius|Qhira|Ragnaros|Raynor|Rehgar|Rexxar|Samuro|Sgt. Hammer|Sonya|Stitches|Stukov...	UNKNOWN STEP	2026-10-04T09:33:31.0592412Z Updating files:  71% (426/600)
+make (5, 15, Probius|Qhira|Ragnaros|Raynor|Rehgar|Rexxar|Samuro|Sgt. Hammer|Sonya|Stitches|Stukov...	UNKNOWN STEP	2026-10-04T09:33:31.0748235Z Updating files:  72% (432/600)
+make (5, 15, Probius|Qhira|Ragnaros|Raynor|Rehgar|Rexxar|Samuro|Sgt. Hammer|Sonya|Stitches|Stukov...	UNKNOWN STEP	2026-10-04T09:33:31.1026185Z Updating files:  73% (438/600)
+make (5, 15, Probius|Qhira|Ragnaros|Raynor|Rehgar|Rexxar|Samuro|Sgt. Hammer|Sonya|Stitches|Stukov...	UNKNOWN STEP	2026-10-04T09:33:31.1317866Z Updating files:  74% (444/600)
+make (5, 15, Probius|Qhira|Ragnaros|Raynor|Rehgar|Rexxar|Samuro|Sgt. Hammer|Sonya|Stitches|Stukov...	UNKNOWN STEP	2026-10-04T09:33:31.1732893Z Updating files:  75% (450/600)
+make (5, 15, Probius|Qhira|Ragnaros|Raynor|Rehgar|Rexxar|Samuro|Sgt. Hammer|Sonya|Stitches|Stukov...	UNKNOWN STEP	2026-10-04T09:33:31.1891075Z Updating files:  76% (456/600)
+make (5, 15, Probius|Qhira|Ragnaros|Raynor|Rehgar|Rexxar|Samuro|Sgt. Hammer|Sonya|Stitches|Stukov...	UNKNOWN STEP	2026-10-04T09:33:31.2016058Z Updating files:  77% (462/600)
+make (5, 15, Probius|Qhira|Ragnaros|Raynor|Rehgar|Rexxar|Samuro|Sgt. Hammer|Sonya|Stitches|Stukov...	UNKNOWN STEP	2026-10-04T09:33:31.2292024Z Updating files:  78% (468/600)
+make (5, 15, Probius|Qhira|Ragnaros|Raynor|Rehgar|Rexxar|Samuro|Sgt. Hammer|Sonya|Stitches|Stukov...	UNKNOWN STEP	2026-10-04T09:33:31.2489189Z Updating files:  79% (474/600)
+make (5, 15, Probius|Qhira|Ragnaros|Raynor|Rehgar|Rexxar|Samuro|Sgt. Hammer|Sonya|Stitches|Stukov...	UNKNOWN STEP	2026-10-04T09:33:31.2773821Z Updating files:  80% (480/600)
+make (5, 15, Probius|Qhira|Ragnaros|Raynor|Rehgar|Rexxar|Samuro|Sgt. Hammer|Sonya|Stitches|Stukov...	UNKNOWN STEP	2026-10-04T09:33:31.3113235Z Updating files:  81% (486/600)
+make (5, 15, Probius|Qhira|Ragnaros|Raynor|Rehgar|Rexxar|Samuro|Sgt. Hammer|Sonya|Stitches|Stukov...	UNKNOWN STEP	2026-10-04T09:33:31.3282962Z Updating files:  82% (492/600)
+make (5, 15, Probius|Qhira|Ragnaros|Raynor|Rehgar|Rexxar|Samuro|Sgt. Hammer|Sonya|Stitches|Stukov...	UNKNOWN STEP	2026-10-04T09:33:31.3595409Z Updating files:  83% (498/600)
+make (5, 15, Probius|Qhira|Ragnaros|Raynor|Rehgar|Rexxar|Samuro|Sgt. Hammer|Sonya|Stitches|Stukov...	UNKNOWN STEP	2026-10-04T09:33:31.3869620Z Updating files:  84% (504/600)
+make (5, 15, Probius|Qhira|Ragnaros|Raynor|Rehgar|Rexxar|Samuro|Sgt. Hammer|Sonya|Stitches|Stukov...	UNKNOWN STEP	2026-10-04T09:33:31.3978035Z Updating files:  85% (510/600)
+make (5, 15, Probius|Qhira|Ragnaros|Raynor|Rehgar|Rexxar|Samuro|Sgt. Hammer|Sonya|Stitches|Stukov...	UNKNOWN STEP	2026-10-04T09:33:31.4180381Z Updating files:  86% (516/600)
+make (5, 15, Probius|Qhira|Ragnaros|Raynor|Rehgar|Rexxar|Samuro|Sgt. Hammer|Sonya|Stitches|Stukov...	UNKNOWN STEP	2026-10-04T09:33:31.4465519Z Updating files:  87% (522/600)
+make (5, 15, Probius|Qhira|Ragnaros|Raynor|Rehgar|Rexxar|Samuro|Sgt. Hammer|Sonya|Stitches|Stukov...	UNKNOWN STEP	2026-10-04T09:33:31.4733226Z Updating files:  88% (528/600)
+make (5, 15, Probius|Qhira|Ragnaros|Raynor|Rehgar|Rexxar|Samuro|Sgt. Hammer|Sonya|Stitches|Stukov...	UNKNOWN STEP	2026-10-04T09:33:31.5020261Z Updating files:  89% (534/600)
+make (5, 15, Probius|Qhira|Ragnaros|Raynor|Rehgar|Rexxar|Samuro|Sgt. Hammer|Sonya|Stitches|Stukov...	UNKNOWN STEP	2026-10-04T09:33:31.5259593Z Updating files:  90% (540/600)
+make (5, 15, Probius|Qhira|Ragnaros|Raynor|Rehgar|Rexxar|Samuro|Sgt. Hammer|Sonya|Stitches|Stukov...	UNKNOWN STEP	2026-10-04T09:33:31.5510913Z Updating files:  91% (546/600)
+make (5, 15, Probius|Qhira|Ragnaros|Raynor|Rehgar|Rexxar|Samuro|Sgt. Hammer|Sonya|Stitches|Stukov...	UNKNOWN STEP	2026-10-04T09:33:31.6262450Z Updating files:  92% (552/600)
+make (5, 15, Probius|Qhira|Ragnaros|Raynor|Rehgar|Rexxar|Samuro|Sgt. Hammer|Sonya|Stitches|Stukov...	UNKNOWN STEP	2026-10-04T09:33:31.6571389Z Updating files:  93% (558/600)
+make (5, 15, Probius|Qhira|Ragnaros|Raynor|Rehgar|Rexxar|Samuro|Sgt. Hammer|Sonya|Stitches|Stukov...	UNKNOWN STEP	2026-10-04T09:33:31.6698914Z Updating files:  94% (564/600)
+make (5, 15, Probius|Qhira|Ragnaros|Raynor|Rehgar|Rexxar|Samuro|Sgt. Hammer|Sonya|Stitches|Stukov...	UNKNOWN STEP	2026-10-04T09:33:31.6854542Z Updating files:  95% (570/600)
+make (5, 15, Probius|Qhira|Ragnaros|Raynor|Rehgar|Rexxar|Samuro|Sgt. Hammer|Sonya|Stitches|Stukov...	UNKNOWN STEP	2026-10-04T09:33:31.7181205Z Updating files:  96% (576/600)
+make (5, 15, Probius|Qhira|Ragnaros|Raynor|Rehgar|Rexxar|Samuro|Sgt. Hammer|Sonya|Stitches|Stukov...	UNKNOWN STEP	2026-10-04T09:33:31.7500340Z Updating files:  97% (582/600)
+make (5, 15, Probius|Qhira|Ragnaros|Raynor|Rehgar|Rexxar|Samuro|Sgt. Hammer|Sonya|Stitches|Stukov...	UNKNOWN STEP	2026-10-04T09:33:31.7607127Z Updating files:  98% (588/600)
+make (5, 15, Probius|Qhira|Ragnaros|Raynor|Rehgar|Rexxar|Samuro|Sgt. Hammer|Sonya|Stitches|Stukov...	UNKNOWN STEP	2026-10-04T09:33:31.8018554Z Updating files:  99% (594/600)
+make (5, 15, Probius|Qhira|Ragnaros|Raynor|Rehgar|Rexxar|Samuro|Sgt. Hammer|Sonya|Stitches|Stukov...	UNKNOWN STEP	2026-10-04T09:33:31.8019274Z Updating files: 100% (600/600)
+make (5, 15, Probius|Qhira|Ragnaros|Raynor|Rehgar|Rexxar|Samuro|Sgt. Hammer|Sonya|Stitches|Stukov...	UNKNOWN STEP	2026-10-04T09:33:31.8019832Z Updating files: 100% (600/600), done.
+make (5, 15, Probius|Qhira|Ragnaros|Raynor|Rehgar|Rexxar|Samuro|Sgt. Hammer|Sonya|Stitches|Stukov...	UNKNOWN STEP	2026-10-04T09:33:31.8241320Z   % Total    % Received % Xferd  Average Speed   Time    Time     Time  Current
+make (5, 15, Probius|Qhira|Ragnaros|Raynor|Rehgar|Rexxar|Samuro|Sgt. Hammer|Sonya|Stitches|Stukov...	UNKNOWN STEP	2026-10-04T09:33:31.8242195Z                                  Dload  Upload   Total   Spent    Left  Speed
+make (5, 15, Probius|Qhira|Ragnaros|Raynor|Rehgar|Rexxar|Samuro|Sgt. Hammer|Sonya|Stitches|Stukov...	UNKNOWN STEP	2026-10-04T09:33:31.8242529Z 
+make (5, 15, Probius|Qhira|Ragnaros|Raynor|Rehgar|Rexxar|Samuro|Sgt. Hammer|Sonya|Stitches|Stukov...	UNKNOWN STEP	2026-10-04T09:33:32.1893895Z   0     0    0     0    0     0      0      0 --:--:-- --:--:-- --:--:--     0
+make (5, 15, Probius|Qhira|Ragnaros|Raynor|Rehgar|Rexxar|Samuro|Sgt. Hammer|Sonya|Stitches|Stukov...	UNKNOWN STEP	2026-10-04T09:33:32.8596890Z   0  260M    0  124k    0     0   342k      0  0:12:58 --:--:--  0:12:58  341k
+make (5, 15, Probius|Qhira|Ragnaros|Raynor|Rehgar|Rexxar|Samuro|Sgt. Hammer|Sonya|Stitches|Stukov...	UNKNOWN STEP	2026-10-04T09:33:32.8597546Z 100  260M  100  260M    0     0   251M      0  0:00:01  0:00:01 --:--:--  251M
+make (5, 15, Probius|Qhira|Ragnaros|Raynor|Rehgar|Rexxar|Samuro|Sgt. Hammer|Sonya|Stitches|Stukov...	UNKNOWN STEP	2026-10-04T09:33:51.1827011Z ALSA lib confmisc.c:855:(parse_card) cannot find card '0'
+make (5, 15, Probius|Qhira|Ragnaros|Raynor|Rehgar|Rexxar|Samuro|Sgt. Hammer|Sonya|Stitches|Stukov...	UNKNOWN STEP	2026-10-04T09:33:51.1827838Z ALSA lib conf.c:5182:(_snd_config_evaluate) function snd_func_card_inum returned error: No such file or directory
+make (5, 15, Probius|Qhira|Ragnaros|Raynor|Rehgar|Rexxar|Samuro|Sgt. Hammer|Sonya|Stitches|Stukov...	UNKNOWN STEP	2026-10-04T09:33:51.1828396Z ALSA lib confmisc.c:422:(snd_func_concat) error evaluating strings
+make (5, 15, Probius|Qhira|Ragnaros|Raynor|Rehgar|Rexxar|Samuro|Sgt. Hammer|Sonya|Stitches|Stukov...	UNKNOWN STEP	2026-10-04T09:33:51.1829155Z ALSA lib conf.c:5182:(_snd_config_evaluate) function snd_func_concat returned error: No such file or directory
+make (5, 15, Probius|Qhira|Ragnaros|Raynor|Rehgar|Rexxar|Samuro|Sgt. Hammer|Sonya|Stitches|Stukov...	UNKNOWN STEP	2026-10-04T09:33:51.1830084Z ALSA lib confmisc.c:1334:(snd_func_refer) error evaluating name
+make (5, 15, Probius|Qhira|Ragnaros|Raynor|Rehgar|Rexxar|Samuro|Sgt. Hammer|Sonya|Stitches|Stukov...	UNKNOWN STEP	2026-10-04T09:33:51.1830592Z ALSA lib conf.c:5182:(_snd_config_evaluate) function snd_func_refer returned error: No such file or directory
+make (5, 15, Probius|Qhira|Ragnaros|Raynor|Rehgar|Rexxar|Samuro|Sgt. Hammer|Sonya|Stitches|Stukov...	UNKNOWN STEP	2026-10-04T09:33:51.1831167Z ALSA lib conf.c:5705:(snd_config_expand) Evaluate error: No such file or directory
+make (5, 15, Probius|Qhira|Ragnaros|Raynor|Rehgar|Rexxar|Samuro|Sgt. Hammer|Sonya|Stitches|Stukov...	UNKNOWN STEP	2026-10-04T09:33:51.1832124Z ALSA lib pcm.c:2664:(snd_pcm_open_noupdate) Unknown PCM default
+make (5, 15, Probius|Qhira|Ragnaros|Raynor|Rehgar|Rexxar|Samuro|Sgt. Hammer|Sonya|Stitches|Stukov...	UNKNOWN STEP	2026-10-04T09:33:51.1832647Z Failed to open dir (No such file or directory): /run/user/1001/gvfs/
+make (5, 15, Probius|Qhira|Ragnaros|Raynor|Rehgar|Rexxar|Samuro|Sgt. Hammer|Sonya|Stitches|Stukov...	UNKNOWN STEP	2026-10-04T09:33:51.7741957Z [09:33:51] HOTS STL Builder 2.1.0
+make (5, 15, Probius|Qhira|Ragnaros|Raynor|Rehgar|Rexxar|Samuro|Sgt. Hammer|Sonya|Stitches|Stukov...	UNKNOWN STEP	2026-10-04T09:33:51.7742432Z [09:33:51] Blender runtime: 3.6.23
+make (5, 15, Probius|Qhira|Ragnaros|Raynor|Rehgar|Rexxar|Samuro|Sgt. Hammer|Sonya|Stitches|Stukov...	UNKNOWN STEP	2026-10-04T09:33:51.7743068Z [09:33:51] Source roots: [PosixPath('/home/runner/work/_temp/H2'), PosixPath('/home/runner/work/HOTS-03/HOTS-03')]
+make (5, 15, Probius|Qhira|Ragnaros|Raynor|Rehgar|Rexxar|Samuro|Sgt. Hammer|Sonya|Stitches|Stukov...	UNKNOWN STEP	2026-10-04T09:33:51.7744042Z [09:33:51] Enabling m3addon
+make (5, 15, Probius|Qhira|Ragnaros|Raynor|Rehgar|Rexxar|Samuro|Sgt. Hammer|Sonya|Stitches|Stukov...	UNKNOWN STEP	2026-10-04T09:33:51.9813788Z [09:33:51] Resolved 15 roster entries to 15 unique source groups
+make (5, 15, Probius|Qhira|Ragnaros|Raynor|Rehgar|Rexxar|Samuro|Sgt. Hammer|Sonya|Stitches|Stukov...	UNKNOWN STEP	2026-10-04T09:33:51.9814708Z [09:33:51] PLAN Probius: probius — exact canonical base
+make (5, 15, Probius|Qhira|Ragnaros|Raynor|Rehgar|Rexxar|Samuro|Sgt. Hammer|Sonya|Stitches|Stukov...	UNKNOWN STEP	2026-10-04T09:33:51.9815286Z [09:33:51] PLAN Qhira: nexushunter — exact canonical base
+make (5, 15, Probius|Qhira|Ragnaros|Raynor|Rehgar|Rexxar|Samuro|Sgt. Hammer|Sonya|Stitches|Stukov...	UNKNOWN STEP	2026-10-04T09:33:51.9815986Z [09:33:51] PLAN Ragnaros: ragnaros — exact canonical base
+make (5, 15, Probius|Qhira|Ragnaros|Raynor|Rehgar|Rexxar|Samuro|Sgt. Hammer|Sonya|Stitches|Stukov...	UNKNOWN STEP	2026-10-04T09:33:51.9816698Z [09:33:51] PLAN Raynor: raynor — exact canonical base
+make (5, 15, Probius|Qhira|Ragnaros|Raynor|Rehgar|Rexxar|Samuro|Sgt. Hammer|Sonya|Stitches|Stukov...	UNKNOWN STEP	2026-10-04T09:33:51.9817242Z [09:33:51] PLAN Rehgar: rehgar — exact canonical base
+make (5, 15, Probius|Qhira|Ragnaros|Raynor|Rehgar|Rexxar|Samuro|Sgt. Hammer|Sonya|Stitches|Stukov...	UNKNOWN STEP	2026-10-04T09:33:51.9817914Z [09:33:51] PLAN Rexxar: rexxar — exact canonical base
+make (5, 15, Probius|Qhira|Ragnaros|Raynor|Rehgar|Rexxar|Samuro|Sgt. Hammer|Sonya|Stitches|Stukov...	UNKNOWN STEP	2026-10-04T09:33:51.9818572Z [09:33:51] PLAN Samuro: samuro — exact canonical base
+make (5, 15, Probius|Qhira|Ragnaros|Raynor|Rehgar|Rexxar|Samuro|Sgt. Hammer|Sonya|Stitches|Stukov...	UNKNOWN STEP	2026-10-04T09:33:51.9819173Z [09:33:51] PLAN Sgt. Hammer: sgthammer — exact canonical base
+make (5, 15, Probius|Qhira|Ragnaros|Raynor|Rehgar|Rexxar|Samuro|Sgt. Hammer|Sonya|Stitches|Stukov...	UNKNOWN STEP	2026-10-04T09:33:51.9819626Z [09:33:51] PLAN Sonya: d3barbarianf — exact canonical base
+make (5, 15, Probius|Qhira|Ragnaros|Raynor|Rehgar|Rexxar|Samuro|Sgt. Hammer|Sonya|Stitches|Stukov...	UNKNOWN STEP	2026-10-04T09:33:51.9820308Z [09:33:51] PLAN Stitches: stitches — exact canonical base
+make (5, 15, Probius|Qhira|Ragnaros|Raynor|Rehgar|Rexxar|Samuro|Sgt. Hammer|Sonya|Stitches|Stukov...	UNKNOWN STEP	2026-10-04T09:33:51.9820872Z [09:33:51] PLAN Stukov: stukov — exact canonical base
+make (5, 15, Probius|Qhira|Ragnaros|Raynor|Rehgar|Rexxar|Samuro|Sgt. Hammer|Sonya|Stitches|Stukov...	UNKNOWN STEP	2026-10-04T09:33:51.9821426Z [09:33:51] PLAN Sylvanas: sylvanas — exact canonical base
+make (5, 15, Probius|Qhira|Ragnaros|Raynor|Rehgar|Rexxar|Samuro|Sgt. Hammer|Sonya|Stitches|Stukov...	UNKNOWN STEP	2026-10-04T09:33:51.9822163Z [09:33:51] PLAN Tassadar: tassadar — exact canonical base
+make (5, 15, Probius|Qhira|Ragnaros|Raynor|Rehgar|Rexxar|Samuro|Sgt. Hammer|Sonya|Stitches|Stukov...	UNKNOWN STEP	2026-10-04T09:33:51.9823043Z [09:33:51] PLAN The Lost Vikings: lostvikings_composite — explicit multi-model composite
+make (5, 15, Probius|Qhira|Ragnaros|Raynor|Rehgar|Rexxar|Samuro|Sgt. Hammer|Sonya|Stitches|Stukov...	UNKNOWN STEP	2026-10-04T09:33:51.9823686Z [09:33:51] PLAN Thrall: thrall — exact canonical base
+make (5, 15, Probius|Qhira|Ragnaros|Raynor|Rehgar|Rexxar|Samuro|Sgt. Hammer|Sonya|Stitches|Stukov...	UNKNOWN STEP	2026-10-04T09:33:51.9824491Z [09:33:51] Importing M3: /home/runner/work/HOTS-03/HOTS-03/storm_hero_probius_base/storm_hero_probius_base.m3
+make (5, 15, Probius|Qhira|Ragnaros|Raynor|Rehgar|Rexxar|Samuro|Sgt. Hammer|Sonya|Stitches|Stukov...	UNKNOWN STEP	2026-10-04T09:33:51.9826580Z 2026-10-04 09:33:51,982,982 DEBUG  base.py:152 Import /home/runner/work/HOTS-03/HOTS-03/storm_hero_probius_base/storm_hero_probius_base.m3
+make (5, 15, Probius|Qhira|Ragnaros|Raynor|Rehgar|Rexxar|Samuro|Sgt. Hammer|Sonya|Stitches|Stukov...	UNKNOWN STEP	2026-10-04T09:34:02.5584628Z Info: Removed 0 vertice(s)
+make (5, 15, Probius|Qhira|Ragnaros|Raynor|Rehgar|Rexxar|Samuro|Sgt. Hammer|Sonya|Stitches|Stukov...	UNKNOWN STEP	2026-10-04T09:34:02.5585206Z Info: Removed 456 vertice(s)
+make (5, 15, Probius|Qhira|Ragnaros|Raynor|Rehgar|Rexxar|Samuro|Sgt. Hammer|Sonya|Stitches|Stukov...	UNKNOWN STEP	2026-10-04T09:34:02.5585881Z Info: Removed 462 vertice(s)
+make (5, 15, Probius|Qhira|Ragnaros|Raynor|Rehgar|Rexxar|Samuro|Sgt. Hammer|Sonya|Stitches|Stukov...	UNKNOWN STEP	2026-10-04T09:34:02.5586687Z Info: Removed: 0 vertices, 0 edges, 0 faces
+make (5, 15, Probius|Qhira|Ragnaros|Raynor|Rehgar|Rexxar|Samuro|Sgt. Hammer|Sonya|Stitches|Stukov...	UNKNOWN STEP	2026-10-04T09:34:02.5587217Z Info: Removed 0 vertice(s)
+make (5, 15, Probius|Qhira|Ragnaros|Raynor|Rehgar|Rexxar|Samuro|Sgt. Hammer|Sonya|Stitches|Stukov...	UNKNOWN STEP	2026-10-04T09:34:02.5587793Z Info: Removed: 0 vertices, 0 edges, 0 faces
+make (5, 15, Probius|Qhira|Ragnaros|Raynor|Rehgar|Rexxar|Samuro|Sgt. Hammer|Sonya|Stitches|Stukov...	UNKNOWN STEP	2026-10-04T09:34:02.5588372Z Info: Removed 462 vertice(s)
+make (5, 15, Probius|Qhira|Ragnaros|Raynor|Rehgar|Rexxar|Samuro|Sgt. Hammer|Sonya|Stitches|Stukov...	UNKNOWN STEP	2026-10-04T09:34:02.5588908Z Info: Removed: 0 vertices, 0 edges, 0 faces
+make (5, 15, Probius|Qhira|Ragnaros|Raynor|Rehgar|Rexxar|Samuro|Sgt. Hammer|Sonya|Stitches|Stukov...	UNKNOWN STEP	2026-10-04T09:34:02.5589436Z Info: Removed 0 vertice(s)
+make (5, 15, Probius|Qhira|Ragnaros|Raynor|Rehgar|Rexxar|Samuro|Sgt. Hammer|Sonya|Stitches|Stukov...	UNKNOWN STEP	2026-10-04T09:34:02.5589913Z Info: Removed: 0 vertices, 0 edges, 0 faces
+make (5, 15, Probius|Qhira|Ragnaros|Raynor|Rehgar|Rexxar|Samuro|Sgt. Hammer|Sonya|Stitches|Stukov...	UNKNOWN STEP	2026-10-04T09:34:02.5590619Z [09:34:02] Strict edge test failed; retrying clean voxel union at 0.620 mm
+make (5, 15, Probius|Qhira|Ragnaros|Raynor|Rehgar|Rexxar|Samuro|Sgt. Hammer|Sonya|Stitches|Stukov...	UNKNOWN STEP	2026-10-04T09:34:09.2776770Z [09:34:09] SUCCESS source probius: 436192 print-ready triangles
+make (5, 15, Probius|Qhira|Ragnaros|Raynor|Rehgar|Rexxar|Samuro|Sgt. Hammer|Sonya|Stitches|Stukov...	UNKNOWN STEP	2026-10-04T09:34:09.2809035Z [09:34:09] Importing M3: /home/runner/work/HOTS-03/HOTS-03/storm_hero_nexushunter_base/storm_hero_nexushunter_base.m3
+make (5, 15, Probius|Qhira|Ragnaros|Raynor|Rehgar|Rexxar|Samuro|Sgt. Hammer|Sonya|Stitches|Stukov...	UNKNOWN STEP	2026-10-04T09:34:09.2813690Z 2026-10-04 09:34:09,281,281 DEBUG  base.py:152 Import /home/runner/work/HOTS-03/HOTS-03/storm_hero_nexushunter_base/storm_hero_nexushunter_base.m3
+make (5, 15, Probius|Qhira|Ragnaros|Raynor|Rehgar|Rexxar|Samuro|Sgt. Hammer|Sonya|Stitches|Stukov...	UNKNOWN STEP	2026-10-04T09:34:22.1804846Z Info: Removed 242 vertice(s)
+make (5, 15, Probius|Qhira|Ragnaros|Raynor|Rehgar|Rexxar|Samuro|Sgt. Hammer|Sonya|Stitches|Stukov...	UNKNOWN STEP	2026-10-04T09:34:22.1805379Z Info: Removed 587 vertice(s)
+make (5, 15, Probius|Qhira|Ragnaros|Raynor|Rehgar|Rexxar|Samuro|Sgt. Hammer|Sonya|Stitches|Stukov...	UNKNOWN STEP	2026-10-04T09:34:22.1805704Z Info: Removed 0 vertice(s)
+make (5, 15, Probius|Qhira|Ragnaros|Raynor|Rehgar|Rexxar|Samuro|Sgt. Hammer|Sonya|Stitches|Stukov...	UNKNOWN STEP	2026-10-04T09:34:22.1805998Z Info: Removed 502 vertice(s)
+make (5, 15, Probius|Qhira|Ragnaros|Raynor|Rehgar|Rexxar|Samuro|Sgt. Hammer|Sonya|Stitches|Stukov...	UNKNOWN STEP	2026-10-04T09:34:22.1806312Z Info: Removed 1334 vertice(s)
+make (5, 15, Probius|Qhira|Ragnaros|Raynor|Rehgar|Rexxar|Samuro|Sgt. Hammer|Sonya|Stitches|Stukov...	UNKNOWN STEP	2026-10-04T09:34:22.1806631Z Info: Removed: 0 vertices, 0 edges, 0 faces
+make (5, 15, Probius|Qhira|Ragnaros|Raynor|Rehgar|Rexxar|Samuro|Sgt. Hammer|Sonya|Stitches|Stukov...	UNKNOWN STEP	2026-10-04T09:34:22.1806938Z Info: Removed 242 vertice(s)
+make (5, 15, Probius|Qhira|Ragnaros|Raynor|Rehgar|Rexxar|Samuro|Sgt. Hammer|Sonya|Stitches|Stukov...	UNKNOWN STEP	2026-10-04T09:34:22.1807280Z Info: Removed: 0 vertices, 0 edges, 0 faces
+make (5, 15, Probius|Qhira|Ragnaros|Raynor|Rehgar|Rexxar|Samuro|Sgt. Hammer|Sonya|Stitches|Stukov...	UNKNOWN STEP	2026-10-04T09:34:22.1807630Z Info: Removed 573 vertice(s)
+make (5, 15, Probius|Qhira|Ragnaros|Raynor|Rehgar|Rexxar|Samuro|Sgt. Hammer|Sonya|Stitches|Stukov...	UNKNOWN STEP	2026-10-04T09:34:22.1807943Z Info: Removed: 0 vertices, 0 edges, 0 faces
+make (5, 15, Probius|Qhira|Ragnaros|Raynor|Rehgar|Rexxar|Samuro|Sgt. Hammer|Sonya|Stitches|Stukov...	UNKNOWN STEP	2026-10-04T09:34:22.1808258Z Info: Removed 0 vertice(s)
+make (5, 15, Probius|Qhira|Ragnaros|Raynor|Rehgar|Rexxar|Samuro|Sgt. Hammer|Sonya|Stitches|Stukov...	UNKNOWN STEP	2026-10-04T09:34:22.1808535Z Info: Removed: 0 vertices, 0 edges, 0 faces
+make (5, 15, Probius|Qhira|Ragnaros|Raynor|Rehgar|Rexxar|Samuro|Sgt. Hammer|Sonya|Stitches|Stukov...	UNKNOWN STEP	2026-10-04T09:34:22.1808883Z Info: Removed 0 vertice(s)
+make (5, 15, Probius|Qhira|Ragnaros|Raynor|Rehgar|Rexxar|Samuro|Sgt. Hammer|Sonya|Stitches|Stukov...	UNKNOWN STEP	2026-10-04T09:34:22.1809183Z Info: Removed: 0 vertices, 0 edges, 0 faces
+make (5, 15, Probius|Qhira|Ragnaros|Raynor|Rehgar|Rexxar|Samuro|Sgt. Hammer|Sonya|Stitches|Stukov...	UNKNOWN STEP	2026-10-04T09:34:22.1809510Z Info: Removed 502 vertice(s)
+make (5, 15, Probius|Qhira|Ragnaros|Raynor|Rehgar|Rexxar|Samuro|Sgt. Hammer|Sonya|Stitches|Stukov...	UNKNOWN STEP	2026-10-04T09:34:22.1809810Z Info: Removed: 0 vertices, 0 edges, 0 faces
+make (5, 15, Probius|Qhira|Ragnaros|Raynor|Rehgar|Rexxar|Samuro|Sgt. Hammer|Sonya|Stitches|Stukov...	UNKNOWN STEP	2026-10-04T09:34:22.1810114Z Info: Removed 0 vertice(s)
+make (5, 15, Probius|Qhira|Ragnaros|Raynor|Rehgar|Rexxar|Samuro|Sgt. Hammer|Sonya|Stitches|Stukov...	UNKNOWN STEP	2026-10-04T09:34:22.1810455Z Info: Removed: 0 vertices, 0 edges, 0 faces
+make (5, 15, Probius|Qhira|Ragnaros|Raynor|Rehgar|Rexxar|Samuro|Sgt. Hammer|Sonya|Stitches|Stukov...	UNKNOWN STEP	2026-10-04T09:34:22.1810758Z Info: Removed 5 vertice(s)
+make (5, 15, Probius|Qhira|Ragnaros|Raynor|Rehgar|Rexxar|Samuro|Sgt. Hammer|Sonya|Stitches|Stukov...	UNKNOWN STEP	2026-10-04T09:34:22.1811054Z Info: Removed: 0 vertices, 0 edges, 0 faces
+make (5, 15, Probius|Qhira|Ragnaros|Raynor|Rehgar|Rexxar|Samuro|Sgt. Hammer|Sonya|Stitches|Stukov...	UNKNOWN STEP	2026-10-04T09:34:22.1811654Z [09:34:22] Strict edge test failed; retrying clean voxel union at 0.620 mm
+make (5, 15, Probius|Qhira|Ragnaros|Raynor|Rehgar|Rexxar|Samuro|Sgt. Hammer|Sonya|Stitches|Stukov...	UNKNOWN STEP	2026-10-04T09:34:30.9920762Z [09:34:30] SUCCESS source nexushunter: 449999 print-ready triangles
+make (5, 15, Probius|Qhira|Ragnaros|Raynor|Rehgar|Rexxar|Samuro|Sgt. Hammer|Sonya|Stitches|Stukov...	UNKNOWN STEP	2026-10-04T09:34:30.9978998Z [09:34:30] Importing M3: /home/runner/work/HOTS-03/HOTS-03/storm_hero_ragnaros_base/storm_hero_ragnaros_base.m3
+make (5, 15, Probius|Qhira|Ragnaros|Raynor|Rehgar|Rexxar|Samuro|Sgt. Hammer|Sonya|Stitches|Stukov...	UNKNOWN STEP	2026-10-04T09:34:30.9983322Z 2026-10-04 09:34:30,998,998 DEBUG  base.py:152 Import /home/runner/work/HOTS-03/HOTS-03/storm_hero_ragnaros_base/storm_hero_ragnaros_base.m3
+make (5, 15, Probius|Qhira|Ragnaros|Raynor|Rehgar|Rexxar|Samuro|Sgt. Hammer|Sonya|Stitches|Stukov...	UNKNOWN STEP	2026-10-04T09:34:43.8943882Z Info: Removed 0 vertice(s)
+make (5, 15, Probius|Qhira|Ragnaros|Raynor|Rehgar|Rexxar|Samuro|Sgt. Hammer|Sonya|Stitches|Stukov...	UNKNOWN STEP	2026-10-04T09:34:43.8944572Z Info: Removed 0 vertice(s)
+make (5, 15, Probius|Qhira|Ragnaros|Raynor|Rehgar|Rexxar|Samuro|Sgt. Hammer|Sonya|Stitches|Stukov...	UNKNOWN STEP	2026-10-04T09:34:43.8944901Z Info: Removed 0 vertice(s)
+make (5, 15, Probius|Qhira|Ragnaros|Raynor|Rehgar|Rexxar|Samuro|Sgt. Hammer|Sonya|Stitches|Stukov...	UNKNOWN STEP	2026-10-04T09:34:43.8945287Z Info: Removed: 0 vertices, 0 edges, 0 faces
+make (5, 15, Probius|Qhira|Ragnaros|Raynor|Rehgar|Rexxar|Samuro|Sgt. Hammer|Sonya|Stitches|Stukov...	UNKNOWN STEP	2026-10-04T09:34:43.8945711Z Info: Removed 0 vertice(s)
+make (5, 15, Probius|Qhira|Ragnaros|Raynor|Rehgar|Rexxar|Samuro|Sgt. Hammer|Sonya|Stitches|Stukov...	UNKNOWN STEP	2026-10-04T09:34:43.8946062Z Info: Removed: 0 vertices, 0 edges, 0 faces
+make (5, 15, Probius|Qhira|Ragnaros|Raynor|Rehgar|Rexxar|Samuro|Sgt. Hammer|Sonya|Stitches|Stukov...	UNKNOWN STEP	2026-10-04T09:34:43.8946508Z Info: Removed 0 vertice(s)
+make (5, 15, Probius|Qhira|Ragnaros|Raynor|Rehgar|Rexxar|Samuro|Sgt. Hammer|Sonya|Stitches|Stukov...	UNKNOWN STEP	2026-10-04T09:34:43.8946832Z Info: Removed: 0 vertices, 0 edges, 0 faces
+make (5, 15, Probius|Qhira|Ragnaros|Raynor|Rehgar|Rexxar|Samuro|Sgt. Hammer|Sonya|Stitches|Stukov...	UNKNOWN STEP	2026-10-04T09:34:43.8947156Z Info: Removed 0 vertice(s)
+make (5, 15, Probius|Qhira|Ragnaros|Raynor|Rehgar|Rexxar|Samuro|Sgt. Hammer|Sonya|Stitches|Stukov...	UNKNOWN STEP	2026-10-04T09:34:43.8947461Z Info: Removed: 0 vertices, 0 edges, 0 faces
+make (5, 15, Probius|Qhira|Ragnaros|Raynor|Rehgar|Rexxar|Samuro|Sgt. Hammer|Sonya|Stitches|Stukov...	UNKNOWN STEP	2026-10-04T09:34:43.8947840Z [09:34:43] Strict edge test failed; retrying clean voxel union at 0.620 mm
+make (5, 15, Probius|Qhira|Ragnaros|Raynor|Rehgar|Rexxar|Samuro|Sgt. Hammer|Sonya|Stitches|Stukov...	UNKNOWN STEP	2026-10-04T09:34:53.3137804Z [09:34:53] SUCCESS source ragnaros: 450000 print-ready triangles
+make (5, 15, Probius|Qhira|Ragnaros|Raynor|Rehgar|Rexxar|Samuro|Sgt. Hammer|Sonya|Stitches|Stukov...	UNKNOWN STEP	2026-10-04T09:34:53.3185887Z [09:34:53] Importing M3: /home/runner/work/HOTS-03/HOTS-03/storm_hero_raynor_base/storm_hero_raynor_base.m3
+make (5, 15, Probius|Qhira|Ragnaros|Raynor|Rehgar|Rexxar|Samuro|Sgt. Hammer|Sonya|Stitches|Stukov...	UNKNOWN STEP	2026-10-04T09:34:53.3189714Z 2026-10-04 09:34:53,318,318 DEBUG  base.py:152 Import /home/runner/work/HOTS-03/HOTS-03/storm_hero_raynor_base/storm_hero_raynor_base.m3
+make (5, 15, Probius|Qhira|Ragnaros|Raynor|Rehgar|Rexxar|Samuro|Sgt. Hammer|Sonya|Stitches|Stukov...	UNKNOWN STEP	2026-10-04T09:35:03.5142376Z Info: Removed 124 vertice(s)
+make (5, 15, Probius|Qhira|Ragnaros|Raynor|Rehgar|Rexxar|Samuro|Sgt. Hammer|Sonya|Stitches|Stukov...	UNKNOWN STEP	2026-10-04T09:35:03.5142901Z Info: Removed 572 vertice(s)
+make (5, 15, Probius|Qhira|Ragnaros|Raynor|Rehgar|Rexxar|Samuro|Sgt. Hammer|Sonya|Stitches|Stukov...	UNKNOWN STEP	2026-10-04T09:35:03.5143274Z Info: Removed 57 vertice(s)
+make (5, 15, Probius|Qhira|Ragnaros|Raynor|Rehgar|Rexxar|Samuro|Sgt. Hammer|Sonya|Stitches|Stukov...	UNKNOWN STEP	2026-10-04T09:35:03.5144017Z Info: Removed 1366 vertice(s)
+make (5, 15, Probius|Qhira|Ragnaros|Raynor|Rehgar|Rexxar|Samuro|Sgt. Hammer|Sonya|Stitches|Stukov...	UNKNOWN STEP	2026-10-04T09:35:03.5144393Z Info: Removed 2127 vertice(s)
+make (5, 15, Probius|Qhira|Ragnaros|Raynor|Rehgar|Rexxar|Samuro|Sgt. Hammer|Sonya|Stitches|Stukov...	UNKNOWN STEP	2026-10-04T09:35:03.5144690Z Info: Removed: 0 vertices, 0 edges, 0 faces
+make (5, 15, Probius|Qhira|Ragnaros|Raynor|Rehgar|Rexxar|Samuro|Sgt. Hammer|Sonya|Stitches|Stukov...	UNKNOWN STEP	2026-10-04T09:35:03.5145051Z Info: Removed 126 vertice(s)
+make (5, 15, Probius|Qhira|Ragnaros|Raynor|Rehgar|Rexxar|Samuro|Sgt. Hammer|Sonya|Stitches|Stukov...	UNKNOWN STEP	2026-10-04T09:35:03.5145487Z Info: Removed: 0 vertices, 0 edges, 0 faces
+make (5, 15, Probius|Qhira|Ragnaros|Raynor|Rehgar|Rexxar|Samuro|Sgt. Hammer|Sonya|Stitches|Stukov...	UNKNOWN STEP	2026-10-04T09:35:03.5145927Z Info: Removed 572 vertice(s)
+make (5, 15, Probius|Qhira|Ragnaros|Raynor|Rehgar|Rexxar|Samuro|Sgt. Hammer|Sonya|Stitches|Stukov...	UNKNOWN STEP	2026-10-04T09:35:03.5146492Z Info: Removed: 0 vertices, 0 edges, 0 faces
+make (5, 15, Probius|Qhira|Ragnaros|Raynor|Rehgar|Rexxar|Samuro|Sgt. Hammer|Sonya|Stitches|Stukov...	UNKNOWN STEP	2026-10-04T09:35:03.5146798Z Info: Removed 54 vertice(s)
+make (5, 15, Probius|Qhira|Ragnaros|Raynor|Rehgar|Rexxar|Samuro|Sgt. Hammer|Sonya|Stitches|Stukov...	UNKNOWN STEP	2026-10-04T09:35:03.5147130Z Info: Removed: 0 vertices, 0 edges, 0 faces
+make (5, 15, Probius|Qhira|Ragnaros|Raynor|Rehgar|Rexxar|Samuro|Sgt. Hammer|Sonya|Stitches|Stukov...	UNKNOWN STEP	2026-10-04T09:35:03.5147455Z Info: Removed 1343 vertice(s)
+make (5, 15, Probius|Qhira|Ragnaros|Raynor|Rehgar|Rexxar|Samuro|Sgt. Hammer|Sonya|Stitches|Stukov...	UNKNOWN STEP	2026-10-04T09:35:03.5147793Z Info: Removed: 0 vertices, 0 edges, 0 faces
+make (5, 15, Probius|Qhira|Ragnaros|Raynor|Rehgar|Rexxar|Samuro|Sgt. Hammer|Sonya|Stitches|Stukov...	UNKNOWN STEP	2026-10-04T09:35:03.5148163Z Info: Removed 25 vertice(s)
+make (5, 15, Probius|Qhira|Ragnaros|Raynor|Rehgar|Rexxar|Samuro|Sgt. Hammer|Sonya|Stitches|Stukov...	UNKNOWN STEP	2026-10-04T09:35:03.5148493Z Info: Removed: 0 vertices, 0 edges, 0 faces
+make (5, 15, Probius|Qhira|Ragnaros|Raynor|Rehgar|Rexxar|Samuro|Sgt. Hammer|Sonya|Stitches|Stukov...	UNKNOWN STEP	2026-10-04T09:35:03.5148934Z [09:35:03] Strict edge test failed; retrying clean voxel union at 0.620 mm
+make (5, 15, Probius|Qhira|Ragnaros|Raynor|Rehgar|Rexxar|Samuro|Sgt. Hammer|Sonya|Stitches|Stukov...	UNKNOWN STEP	2026-10-04T09:35:09.1210547Z [09:35:09] SUCCESS source raynor: 391947 print-ready triangles
+make (5, 15, Probius|Qhira|Ragnaros|Raynor|Rehgar|Rexxar|Samuro|Sgt. Hammer|Sonya|Stitches|Stukov...	UNKNOWN STEP	2026-10-04T09:35:09.1251927Z [09:35:09] Importing M3: /home/runner/work/HOTS-03/HOTS-03/storm_hero_rehgar_base/storm_hero_rehgar_base.m3
+make (5, 15, Probius|Qhira|Ragnaros|Raynor|Rehgar|Rexxar|Samuro|Sgt. Hammer|Sonya|Stitches|Stukov...	UNKNOWN STEP	2026-10-04T09:35:09.1255630Z 2026-10-04 09:35:09,125,125 DEBUG  base.py:152 Import /home/runner/work/HOTS-03/HOTS-03/storm_hero_rehgar_base/storm_hero_rehgar_base.m3
+make (5, 15, Probius|Qhira|Ragnaros|Raynor|Rehgar|Rexxar|Samuro|Sgt. Hammer|Sonya|Stitches|Stukov...	UNKNOWN STEP	2026-10-04T09:35:20.7559291Z Info: Removed 237 vertice(s)
+make (5, 15, Probius|Qhira|Ragnaros|Raynor|Rehgar|Rexxar|Samuro|Sgt. Hammer|Sonya|Stitches|Stukov...	UNKNOWN STEP	2026-10-04T09:35:20.7560387Z Info: Removed 140 vertice(s)
+make (5, 15, Probius|Qhira|Ragnaros|Raynor|Rehgar|Rexxar|Samuro|Sgt. Hammer|Sonya|Stitches|Stukov...	UNKNOWN STEP	2026-10-04T09:35:20.7561246Z Info: Removed 1058 vertice(s)
+make (5, 15, Probius|Qhira|Ragnaros|Raynor|Rehgar|Rexxar|Samuro|Sgt. Hammer|Sonya|Stitches|Stukov...	UNKNOWN STEP	2026-10-04T09:35:20.7562050Z Info: Removed 1470 vertice(s)
+make (5, 15, Probius|Qhira|Ragnaros|Raynor|Rehgar|Rexxar|Samuro|Sgt. Hammer|Sonya|Stitches|Stukov...	UNKNOWN STEP	2026-10-04T09:35:20.7562750Z Info: Removed: 0 vertices, 0 edges, 0 faces
+make (5, 15, Probius|Qhira|Ragnaros|Raynor|Rehgar|Rexxar|Samuro|Sgt. Hammer|Sonya|Stitches|Stukov...	UNKNOWN STEP	2026-10-04T09:35:20.7563603Z Info: Removed 230 vertice(s)
+make (5, 15, Probius|Qhira|Ragnaros|Raynor|Rehgar|Rexxar|Samuro|Sgt. Hammer|Sonya|Stitches|Stukov...	UNKNOWN STEP	2026-10-04T09:35:20.7564313Z Info: Removed: 0 vertices, 0 edges, 0 faces
+make (5, 15, Probius|Qhira|Ragnaros|Raynor|Rehgar|Rexxar|Samuro|Sgt. Hammer|Sonya|Stitches|Stukov...	UNKNOWN STEP	2026-10-04T09:35:20.7565822Z Info: Removed 138 vertice(s)
+make (5, 15, Probius|Qhira|Ragnaros|Raynor|Rehgar|Rexxar|Samuro|Sgt. Hammer|Sonya|Stitches|Stukov...	UNKNOWN STEP	2026-10-04T09:35:20.7566516Z Info: Removed: 0 vertices, 0 edges, 0 faces
+make (5, 15, Probius|Qhira|Ragnaros|Raynor|Rehgar|Rexxar|Samuro|Sgt. Hammer|Sonya|Stitches|Stukov...	UNKNOWN STEP	2026-10-04T09:35:20.7567116Z Info: Removed 1042 vertice(s)
+make (5, 15, Probius|Qhira|Ragnaros|Raynor|Rehgar|Rexxar|Samuro|Sgt. Hammer|Sonya|Stitches|Stukov...	UNKNOWN STEP	2026-10-04T09:35:20.7567720Z Info: Removed: 0 vertices, 0 edges, 0 faces
+make (5, 15, Probius|Qhira|Ragnaros|Raynor|Rehgar|Rexxar|Samuro|Sgt. Hammer|Sonya|Stitches|Stukov...	UNKNOWN STEP	2026-10-04T09:35:20.7568312Z Info: Removed 0 vertice(s)
+make (5, 15, Probius|Qhira|Ragnaros|Raynor|Rehgar|Rexxar|Samuro|Sgt. Hammer|Sonya|Stitches|Stukov...	UNKNOWN STEP	2026-10-04T09:35:20.7568810Z Info: Removed: 0 vertices, 0 edges, 0 faces
+make (5, 15, Probius|Qhira|Ragnaros|Raynor|Rehgar|Rexxar|Samuro|Sgt. Hammer|Sonya|Stitches|Stukov...	UNKNOWN STEP	2026-10-04T09:35:20.7569330Z [09:35:20] Strict edge test failed; retrying clean voxel union at 0.620 mm
+make (5, 15, Probius|Qhira|Ragnaros|Raynor|Rehgar|Rexxar|Samuro|Sgt. Hammer|Sonya|Stitches|Stukov...	UNKNOWN STEP	2026-10-04T09:35:27.2814824Z [09:35:27] SUCCESS source rehgar: 446758 print-ready triangles
+make (5, 15, Probius|Qhira|Ragnaros|Raynor|Rehgar|Rexxar|Samuro|Sgt. Hammer|Sonya|Stitches|Stukov...	UNKNOWN STEP	2026-10-04T09:35:27.2851935Z [09:35:27] Importing M3: /home/runner/work/HOTS-03/HOTS-03/storm_hero_rexxar_base/storm_hero_rexxar_base.m3
+make (5, 15, Probius|Qhira|Ragnaros|Raynor|Rehgar|Rexxar|Samuro|Sgt. Hammer|Sonya|Stitches|Stukov...	UNKNOWN STEP	2026-10-04T09:35:27.2855804Z 2026-10-04 09:35:27,285,285 DEBUG  base.py:152 Import /home/runner/work/HOTS-03/HOTS-03/storm_hero_rexxar_base/storm_hero_rexxar_base.m3
+make (5, 15, Probius|Qhira|Ragnaros|Raynor|Rehgar|Rexxar|Samuro|Sgt. Hammer|Sonya|Stitches|Stukov...	UNKNOWN STEP	2026-10-04T09:35:38.6125030Z Info: Removed 900 vertice(s)
+make (5, 15, Probius|Qhira|Ragnaros|Raynor|Rehgar|Rexxar|Samuro|Sgt. Hammer|Sonya|Stitches|Stukov...	UNKNOWN STEP	2026-10-04T09:35:38.6125885Z Info: Removed 279 vertice(s)
+make (5, 15, Probius|Qhira|Ragnaros|Raynor|Rehgar|Rexxar|Samuro|Sgt. Hammer|Sonya|Stitches|Stukov...	UNKNOWN STEP	2026-10-04T09:35:38.6126373Z Info: Removed 1061 vertice(s)
+make (5, 15, Probius|Qhira|Ragnaros|Raynor|Rehgar|Rexxar|Samuro|Sgt. Hammer|Sonya|Stitches|Stukov...	UNKNOWN STEP	2026-10-04T09:35:38.6126912Z Info: Removed: 0 vertices, 0 edges, 0 faces
+make (5, 15, Probius|Qhira|Ragnaros|Raynor|Rehgar|Rexxar|Samuro|Sgt. Hammer|Sonya|Stitches|Stukov...	UNKNOWN STEP	2026-10-04T09:35:38.6127359Z Info: Removed 830 vertice(s)
+make (5, 15, Probius|Qhira|Ragnaros|Raynor|Rehgar|Rexxar|Samuro|Sgt. Hammer|Sonya|Stitches|Stukov...	UNKNOWN STEP	2026-10-04T09:35:38.6127748Z Info: Removed: 0 vertices, 0 edges, 0 faces
+make (5, 15, Probius|Qhira|Ragnaros|Raynor|Rehgar|Rexxar|Samuro|Sgt. Hammer|Sonya|Stitches|Stukov...	UNKNOWN STEP	2026-10-04T09:35:38.6128213Z Info: Removed 231 vertice(s)
+make (5, 15, Probius|Qhira|Ragnaros|Raynor|Rehgar|Rexxar|Samuro|Sgt. Hammer|Sonya|Stitches|Stukov...	UNKNOWN STEP	2026-10-04T09:35:38.6128641Z Info: Removed: 0 vertices, 0 edges, 0 faces
+make (5, 15, Probius|Qhira|Ragnaros|Raynor|Rehgar|Rexxar|Samuro|Sgt. Hammer|Sonya|Stitches|Stukov...	UNKNOWN STEP	2026-10-04T09:35:38.6129081Z Info: Removed 0 vertice(s)
+make (5, 15, Probius|Qhira|Ragnaros|Raynor|Rehgar|Rexxar|Samuro|Sgt. Hammer|Sonya|Stitches|Stukov...	UNKNOWN STEP	2026-10-04T09:35:38.6129526Z Info: Removed: 0 vertices, 0 edges, 0 faces
+make (5, 15, Probius|Qhira|Ragnaros|Raynor|Rehgar|Rexxar|Samuro|Sgt. Hammer|Sonya|Stitches|Stukov...	UNKNOWN STEP	2026-10-04T09:35:38.6130075Z [09:35:38] Strict edge test failed; retrying clean voxel union at 0.620 mm
+make (5, 15, Probius|Qhira|Ragnaros|Raynor|Rehgar|Rexxar|Samuro|Sgt. Hammer|Sonya|Stitches|Stukov...	UNKNOWN STEP	2026-10-04T09:35:45.0607318Z [09:35:45] SUCCESS source rexxar: 441141 print-ready triangles
+make (5, 15, Probius|Qhira|Ragnaros|Raynor|Rehgar|Rexxar|Samuro|Sgt. Hammer|Sonya|Stitches|Stukov...	UNKNOWN STEP	2026-10-04T09:35:45.0638948Z [09:35:45] Importing M3: /home/runner/work/HOTS-03/HOTS-03/storm_hero_samuro_base/storm_hero_samuro_base.m3
+make (5, 15, Probius|Qhira|Ragnaros|Raynor|Rehgar|Rexxar|Samuro|Sgt. Hammer|Sonya|Stitches|Stukov...	UNKNOWN STEP	2026-10-04T09:35:45.0642890Z 2026-10-04 09:35:45,064,64  DEBUG  base.py:152 Import /home/runner/work/HOTS-03/HOTS-03/storm_hero_samuro_base/storm_hero_samuro_base.m3
+make (5, 15, Probius|Qhira|Ragnaros|Raynor|Rehgar|Rexxar|Samuro|Sgt. Hammer|Sonya|Stitches|Stukov...	UNKNOWN STEP	2026-10-04T09:35:50.7697370Z Info: Removed 86 vertice(s)
+make (5, 15, Probius|Qhira|Ragnaros|Raynor|Rehgar|Rexxar|Samuro|Sgt. Hammer|Sonya|Stitches|Stukov...	UNKNOWN STEP	2026-10-04T09:35:50.7698425Z Info: Removed 48 vertice(s)
+make (5, 15, Probius|Qhira|Ragnaros|Raynor|Rehgar|Rexxar|Samuro|Sgt. Hammer|Sonya|Stitches|Stukov...	UNKNOWN STEP	2026-10-04T09:35:50.7698953Z Info: Removed 71 vertice(s)
+make (5, 15, Probius|Qhira|Ragnaros|Raynor|Rehgar|Rexxar|Samuro|Sgt. Hammer|Sonya|Stitches|Stukov...	UNKNOWN STEP	2026-10-04T09:35:50.7699413Z Info: Removed 366 vertice(s)
+make (5, 15, Probius|Qhira|Ragnaros|Raynor|Rehgar|Rexxar|Samuro|Sgt. Hammer|Sonya|Stitches|Stukov...	UNKNOWN STEP	2026-10-04T09:35:50.7699882Z Info: Removed 234 vertice(s)
+make (5, 15, Probius|Qhira|Ragnaros|Raynor|Rehgar|Rexxar|Samuro|Sgt. Hammer|Sonya|Stitches|Stukov...	UNKNOWN STEP	2026-10-04T09:35:50.7700556Z Info: Removed 824 vertice(s)
+make (5, 15, Probius|Qhira|Ragnaros|Raynor|Rehgar|Rexxar|Samuro|Sgt. Hammer|Sonya|Stitches|Stukov...	UNKNOWN STEP	2026-10-04T09:35:50.7700996Z Info: Removed: 0 vertices, 0 edges, 0 faces
+make (5, 15, Probius|Qhira|Ragnaros|Raynor|Rehgar|Rexxar|Samuro|Sgt. Hammer|Sonya|Stitches|Stukov...	UNKNOWN STEP	2026-10-04T09:35:50.7701680Z Info: Removed 80 vertice(s)
+make (5, 15, Probius|Qhira|Ragnaros|Raynor|Rehgar|Rexxar|Samuro|Sgt. Hammer|Sonya|Stitches|Stukov...	UNKNOWN STEP	2026-10-04T09:35:50.7702156Z Info: Removed: 0 vertices, 0 edges, 0 faces
+make (5, 15, Probius|Qhira|Ragnaros|Raynor|Rehgar|Rexxar|Samuro|Sgt. Hammer|Sonya|Stitches|Stukov...	UNKNOWN STEP	2026-10-04T09:35:50.7702616Z Info: Removed 48 vertice(s)
+make (5, 15, Probius|Qhira|Ragnaros|Raynor|Rehgar|Rexxar|Samuro|Sgt. Hammer|Sonya|Stitches|Stukov...	UNKNOWN STEP	2026-10-04T09:35:50.7703014Z Info: Removed: 0 vertices, 0 edges, 0 faces
+make (5, 15, Probius|Qhira|Ragnaros|Raynor|Rehgar|Rexxar|Samuro|Sgt. Hammer|Sonya|Stitches|Stukov...	UNKNOWN STEP	2026-10-04T09:35:50.7703470Z Info: Removed 71 vertice(s)
+make (5, 15, Probius|Qhira|Ragnaros|Raynor|Rehgar|Rexxar|Samuro|Sgt. Hammer|Sonya|Stitches|Stukov...	UNKNOWN STEP	2026-10-04T09:35:50.7703858Z Info: Removed: 0 vertices, 0 edges, 0 faces
+make (5, 15, Probius|Qhira|Ragnaros|Raynor|Rehgar|Rexxar|Samuro|Sgt. Hammer|Sonya|Stitches|Stukov...	UNKNOWN STEP	2026-10-04T09:35:50.7704266Z Info: Removed 339 vertice(s)
+make (5, 15, Probius|Qhira|Ragnaros|Raynor|Rehgar|Rexxar|Samuro|Sgt. Hammer|Sonya|Stitches|Stukov...	UNKNOWN STEP	2026-10-04T09:35:50.7704714Z Info: Removed: 0 vertices, 0 edges, 0 faces
+make (5, 15, Probius|Qhira|Ragnaros|Raynor|Rehgar|Rexxar|Samuro|Sgt. Hammer|Sonya|Stitches|Stukov...	UNKNOWN STEP	2026-10-04T09:35:50.7705156Z Info: Removed 232 vertice(s)
+make (5, 15, Probius|Qhira|Ragnaros|Raynor|Rehgar|Rexxar|Samuro|Sgt. Hammer|Sonya|Stitches|Stukov...	UNKNOWN STEP	2026-10-04T09:35:50.7705600Z Info: Removed: 0 vertices, 0 edges, 0 faces
+make (5, 15, Probius|Qhira|Ragnaros|Raynor|Rehgar|Rexxar|Samuro|Sgt. Hammer|Sonya|Stitches|Stukov...	UNKNOWN STEP	2026-10-04T09:35:50.7706149Z Info: Removed 24 vertice(s)
+make (5, 15, Probius|Qhira|Ragnaros|Raynor|Rehgar|Rexxar|Samuro|Sgt. Hammer|Sonya|Stitches|Stukov...	UNKNOWN STEP	2026-10-04T09:35:50.7706671Z Info: Removed: 0 vertices, 0 edges, 0 faces
+make (5, 15, Probius|Qhira|Ragnaros|Raynor|Rehgar|Rexxar|Samuro|Sgt. Hammer|Sonya|Stitches|Stukov...	UNKNOWN STEP	2026-10-04T09:35:50.7707230Z [09:35:50] Strict edge test failed; retrying clean voxel union at 0.620 mm
+make (5, 15, Probius|Qhira|Ragnaros|Raynor|Rehgar|Rexxar|Samuro|Sgt. Hammer|Sonya|Stitches|Stukov...	UNKNOWN STEP	2026-10-04T09:35:54.4393329Z [09:35:54] SUCCESS source samuro: 267342 print-ready triangles
+make (5, 15, Probius|Qhira|Ragnaros|Raynor|Rehgar|Rexxar|Samuro|Sgt. Hammer|Sonya|Stitches|Stukov...	UNKNOWN STEP	2026-10-04T09:35:54.4441781Z [09:35:54] Importing M3: /home/runner/work/HOTS-03/HOTS-03/storm_hero_sgthammer_base/storm_hero_sgthammer_base_v07.m3
+make (5, 15, Probius|Qhira|Ragnaros|Raynor|Rehgar|Rexxar|Samuro|Sgt. Hammer|Sonya|Stitches|Stukov...	UNKNOWN STEP	2026-10-04T09:35:54.4446619Z 2026-10-04 09:35:54,444,444 DEBUG  base.py:152 Import /home/runner/work/HOTS-03/HOTS-03/storm_hero_sgthammer_base/storm_hero_sgthammer_base_v07.m3
+make (5, 15, Probius|Qhira|Ragnaros|Raynor|Rehgar|Rexxar|Samuro|Sgt. Hammer|Sonya|Stitches|Stukov...	UNKNOWN STEP	2026-10-04T09:36:29.2737865Z Info: Removed 0 vertice(s)
+make (5, 15, Probius|Qhira|Ragnaros|Raynor|Rehgar|Rexxar|Samuro|Sgt. Hammer|Sonya|Stitches|Stukov...	UNKNOWN STEP	2026-10-04T09:36:29.2738588Z Info: Removed 0 vertice(s)
+make (5, 15, Probius|Qhira|Ragnaros|Raynor|Rehgar|Rexxar|Samuro|Sgt. Hammer|Sonya|Stitches|Stukov...	UNKNOWN STEP	2026-10-04T09:36:29.2739007Z Info: Removed 165 vertice(s)
+make (5, 15, Probius|Qhira|Ragnaros|Raynor|Rehgar|Rexxar|Samuro|Sgt. Hammer|Sonya|Stitches|Stukov...	UNKNOWN STEP	2026-10-04T09:36:29.2739512Z Info: Removed 15 vertice(s)
+make (5, 15, Probius|Qhira|Ragnaros|Raynor|Rehgar|Rexxar|Samuro|Sgt. Hammer|Sonya|Stitches|Stukov...	UNKNOWN STEP	2026-10-04T09:36:29.2739938Z Info: Removed 395 vertice(s)
+make (5, 15, Probius|Qhira|Ragnaros|Raynor|Rehgar|Rexxar|Samuro|Sgt. Hammer|Sonya|Stitches|Stukov...	UNKNOWN STEP	2026-10-04T09:36:29.2740398Z Info: Removed: 0 vertices, 0 edges, 0 faces
+make (5, 15, Probius|Qhira|Ragnaros|Raynor|Rehgar|Rexxar|Samuro|Sgt. Hammer|Sonya|Stitches|Stukov...	UNKNOWN STEP	2026-10-04T09:36:29.2740959Z Info: Removed 0 vertice(s)
+make (5, 15, Probius|Qhira|Ragnaros|Raynor|Rehgar|Rexxar|Samuro|Sgt. Hammer|Sonya|Stitches|Stukov...	UNKNOWN STEP	2026-10-04T09:36:29.2741450Z Info: Removed: 0 vertices, 0 edges, 0 faces
+make (5, 15, Probius|Qhira|Ragnaros|Raynor|Rehgar|Rexxar|Samuro|Sgt. Hammer|Sonya|Stitches|Stukov...	UNKNOWN STEP	2026-10-04T09:36:29.2742091Z Info: Removed 0 vertice(s)
+make (5, 15, Probius|Qhira|Ragnaros|Raynor|Rehgar|Rexxar|Samuro|Sgt. Hammer|Sonya|Stitches|Stukov...	UNKNOWN STEP	2026-10-04T09:36:29.2742574Z Info: Removed: 0 vertices, 0 edges, 0 faces
+make (5, 15, Probius|Qhira|Ragnaros|Raynor|Rehgar|Rexxar|Samuro|Sgt. Hammer|Sonya|Stitches|Stukov...	UNKNOWN STEP	2026-10-04T09:36:29.2743053Z Info: Removed 149 vertice(s)
+make (5, 15, Probius|Qhira|Ragnaros|Raynor|Rehgar|Rexxar|Samuro|Sgt. Hammer|Sonya|Stitches|Stukov...	UNKNOWN STEP	2026-10-04T09:36:29.2743475Z Info: Removed: 0 vertices, 0 edges, 0 faces
+make (5, 15, Probius|Qhira|Ragnaros|Raynor|Rehgar|Rexxar|Samuro|Sgt. Hammer|Sonya|Stitches|Stukov...	UNKNOWN STEP	2026-10-04T09:36:29.2743989Z Info: Removed 0 vertice(s)
+make (5, 15, Probius|Qhira|Ragnaros|Raynor|Rehgar|Rexxar|Samuro|Sgt. Hammer|Sonya|Stitches|Stukov...	UNKNOWN STEP	2026-10-04T09:36:29.2744375Z Info: Removed: 0 vertices, 0 edges, 0 faces
+make (5, 15, Probius|Qhira|Ragnaros|Raynor|Rehgar|Rexxar|Samuro|Sgt. Hammer|Sonya|Stitches|Stukov...	UNKNOWN STEP	2026-10-04T09:36:29.2744879Z Info: Removed 0 vertice(s)
+make (5, 15, Probius|Qhira|Ragnaros|Raynor|Rehgar|Rexxar|Samuro|Sgt. Hammer|Sonya|Stitches|Stukov...	UNKNOWN STEP	2026-10-04T09:36:29.2745306Z Info: Removed: 0 vertices, 0 edges, 0 faces
+make (5, 15, Probius|Qhira|Ragnaros|Raynor|Rehgar|Rexxar|Samuro|Sgt. Hammer|Sonya|Stitches|Stukov...	UNKNOWN STEP	2026-10-04T09:36:29.2745920Z [09:36:29] Strict edge test failed; retrying clean voxel union at 0.620 mm
+make (5, 15, Probius|Qhira|Ragnaros|Raynor|Rehgar|Rexxar|Samuro|Sgt. Hammer|Sonya|Stitches|Stukov...	UNKNOWN STEP	2026-10-04T09:36:57.3778839Z [09:36:57] SUCCESS source sgthammer: 449999 print-ready triangles
+make (5, 15, Probius|Qhira|Ragnaros|Raynor|Rehgar|Rexxar|Samuro|Sgt. Hammer|Sonya|Stitches|Stukov...	UNKNOWN STEP	2026-10-04T09:36:57.3839206Z [09:36:57] Importing M3: /home/runner/work/_temp/H2/storm_hero_d3barbarianf_base/storm_hero_d3barbarianf_base.m3
+make (5, 15, Probius|Qhira|Ragnaros|Raynor|Rehgar|Rexxar|Samuro|Sgt. Hammer|Sonya|Stitches|Stukov...	UNKNOWN STEP	2026-10-04T09:36:57.3843944Z 2026-10-04 09:36:57,384,384 DEBUG  base.py:152 Import /home/runner/work/_temp/H2/storm_hero_d3barbarianf_base/storm_hero_d3barbarianf_base.m3
+make (5, 15, Probius|Qhira|Ragnaros|Raynor|Rehgar|Rexxar|Samuro|Sgt. Hammer|Sonya|Stitches|Stukov...	UNKNOWN STEP	2026-10-04T09:37:03.6641996Z Info: Removed 219 vertice(s)
+make (5, 15, Probius|Qhira|Ragnaros|Raynor|Rehgar|Rexxar|Samuro|Sgt. Hammer|Sonya|Stitches|Stukov...	UNKNOWN STEP	2026-10-04T09:37:03.6645158Z Info: Removed 0 vertice(s)
+make (5, 15, Probius|Qhira|Ragnaros|Raynor|Rehgar|Rexxar|Samuro|Sgt. Hammer|Sonya|Stitches|Stukov...	UNKNOWN STEP	2026-10-04T09:37:03.6645786Z Info: Removed 956 vertice(s)
+make (5, 15, Probius|Qhira|Ragnaros|Raynor|Rehgar|Rexxar|Samuro|Sgt. Hammer|Sonya|Stitches|Stukov...	UNKNOWN STEP	2026-10-04T09:37:03.6646254Z Info: Removed 97 vertice(s)
+make (5, 15, Probius|Qhira|Ragnaros|Raynor|Rehgar|Rexxar|Samuro|Sgt. Hammer|Sonya|Stitches|Stukov...	UNKNOWN STEP	2026-10-04T09:37:03.6646731Z Info: Removed 17 vertice(s)
+make (5, 15, Probius|Qhira|Ragnaros|Raynor|Rehgar|Rexxar|Samuro|Sgt. Hammer|Sonya|Stitches|Stukov...	UNKNOWN STEP	2026-10-04T09:37:03.6647138Z Info: Removed 1297 vertice(s)
+make (5, 15, Probius|Qhira|Ragnaros|Raynor|Rehgar|Rexxar|Samuro|Sgt. Hammer|Sonya|Stitches|Stukov...	UNKNOWN STEP	2026-10-04T09:37:03.6647656Z Info: Removed: 0 vertices, 0 edges, 0 faces
+make (5, 15, Probius|Qhira|Ragnaros|Raynor|Rehgar|Rexxar|Samuro|Sgt. Hammer|Sonya|Stitches|Stukov...	UNKNOWN STEP	2026-10-04T09:37:03.6648157Z Info: Removed 219 vertice(s)
+make (5, 15, Probius|Qhira|Ragnaros|Raynor|Rehgar|Rexxar|Samuro|Sgt. Hammer|Sonya|Stitches|Stukov...	UNKNOWN STEP	2026-10-04T09:37:03.6648567Z Info: Removed: 0 vertices, 0 edges, 0 faces
+make (5, 15, Probius|Qhira|Ragnaros|Raynor|Rehgar|Rexxar|Samuro|Sgt. Hammer|Sonya|Stitches|Stukov...	UNKNOWN STEP	2026-10-04T09:37:03.6649014Z Info: Removed 0 vertice(s)
+make (5, 15, Probius|Qhira|Ragnaros|Raynor|Rehgar|Rexxar|Samuro|Sgt. Hammer|Sonya|Stitches|Stukov...	UNKNOWN STEP	2026-10-04T09:37:03.6649406Z Info: Removed: 0 vertices, 0 edges, 0 faces
+make (5, 15, Probius|Qhira|Ragnaros|Raynor|Rehgar|Rexxar|Samuro|Sgt. Hammer|Sonya|Stitches|Stukov...	UNKNOWN STEP	2026-10-04T09:37:03.6649707Z Info: Removed 952 vertice(s)
+make (5, 15, Probius|Qhira|Ragnaros|Raynor|Rehgar|Rexxar|Samuro|Sgt. Hammer|Sonya|Stitches|Stukov...	UNKNOWN STEP	2026-10-04T09:37:03.6650067Z Info: Removed: 0 vertices, 0 edges, 0 faces
+make (5, 15, Probius|Qhira|Ragnaros|Raynor|Rehgar|Rexxar|Samuro|Sgt. Hammer|Sonya|Stitches|Stukov...	UNKNOWN STEP	2026-10-04T09:37:03.6650501Z Info: Removed 97 vertice(s)
+make (5, 15, Probius|Qhira|Ragnaros|Raynor|Rehgar|Rexxar|Samuro|Sgt. Hammer|Sonya|Stitches|Stukov...	UNKNOWN STEP	2026-10-04T09:37:03.6650897Z Info: Removed: 0 vertices, 0 edges, 0 faces
+make (5, 15, Probius|Qhira|Ragnaros|Raynor|Rehgar|Rexxar|Samuro|Sgt. Hammer|Sonya|Stitches|Stukov...	UNKNOWN STEP	2026-10-04T09:37:03.6652018Z Info: Removed 17 vertice(s)
+make (5, 15, Probius|Qhira|Ragnaros|Raynor|Rehgar|Rexxar|Samuro|Sgt. Hammer|Sonya|Stitches|Stukov...	UNKNOWN STEP	2026-10-04T09:37:03.6652295Z Info: Removed: 0 vertices, 0 edges, 0 faces
+make (5, 15, Probius|Qhira|Ragnaros|Raynor|Rehgar|Rexxar|Samuro|Sgt. Hammer|Sonya|Stitches|Stukov...	UNKNOWN STEP	2026-10-04T09:37:03.6652650Z Info: Removed 3 vertice(s)
+make (5, 15, Probius|Qhira|Ragnaros|Raynor|Rehgar|Rexxar|Samuro|Sgt. Hammer|Sonya|Stitches|Stukov...	UNKNOWN STEP	2026-10-04T09:37:03.6652936Z Info: Removed: 0 vertices, 0 edges, 0 faces
+make (5, 15, Probius|Qhira|Ragnaros|Raynor|Rehgar|Rexxar|Samuro|Sgt. Hammer|Sonya|Stitches|Stukov...	UNKNOWN STEP	2026-10-04T09:37:03.6653457Z [09:37:03] Strict edge test failed; retrying clean voxel union at 0.620 mm
+make (5, 15, Probius|Qhira|Ragnaros|Raynor|Rehgar|Rexxar|Samuro|Sgt. Hammer|Sonya|Stitches|Stukov...	UNKNOWN STEP	2026-10-04T09:37:07.7874303Z [09:37:07] SUCCESS source d3barbarianf: 287282 print-ready triangles
+make (5, 15, Probius|Qhira|Ragnaros|Raynor|Rehgar|Rexxar|Samuro|Sgt. Hammer|Sonya|Stitches|Stukov...	UNKNOWN STEP	2026-10-04T09:37:07.7910194Z [09:37:07] Importing M3: /home/runner/work/HOTS-03/HOTS-03/storm_hero_stitches_base/storm_hero_stitches_base.m3
+make (5, 15, Probius|Qhira|Ragnaros|Raynor|Rehgar|Rexxar|Samuro|Sgt. Hammer|Sonya|Stitches|Stukov...	UNKNOWN STEP	2026-10-04T09:37:07.7914699Z 2026-10-04 09:37:07,791,791 DEBUG  base.py:152 Import /home/runner/work/HOTS-03/HOTS-03/storm_hero_stitches_base/storm_hero_stitches_base.m3
+make (5, 15, Probius|Qhira|Ragnaros|Raynor|Rehgar|Rexxar|Samuro|Sgt. Hammer|Sonya|Stitches|Stukov...	UNKNOWN STEP	2026-10-04T09:37:19.8661768Z Info: Removed 284 vertice(s)
+make (5, 15, Probius|Qhira|Ragnaros|Raynor|Rehgar|Rexxar|Samuro|Sgt. Hammer|Sonya|Stitches|Stukov...	UNKNOWN STEP	2026-10-04T09:37:19.8662180Z Info: Removed 4 vertice(s)
+make (5, 15, Probius|Qhira|Ragnaros|Raynor|Rehgar|Rexxar|Samuro|Sgt. Hammer|Sonya|Stitches|Stukov...	UNKNOWN STEP	2026-10-04T09:37:19.8662603Z Info: Removed 0 vertice(s)
+make (5, 15, Probius|Qhira|Ragnaros|Raynor|Rehgar|Rexxar|Samuro|Sgt. Hammer|Sonya|Stitches|Stukov...	UNKNOWN STEP	2026-10-04T09:37:19.8662916Z Info: Removed 289 vertice(s)
+make (5, 15, Probius|Qhira|Ragnaros|Raynor|Rehgar|Rexxar|Samuro|Sgt. Hammer|Sonya|Stitches|Stukov...	UNKNOWN STEP	2026-10-04T09:37:19.8663269Z Info: Removed: 0 vertices, 0 edges, 0 faces
+make (5, 15, Probius|Qhira|Ragnaros|Raynor|Rehgar|Rexxar|Samuro|Sgt. Hammer|Sonya|Stitches|Stukov...	UNKNOWN STEP	2026-10-04T09:37:19.8663619Z Info: Removed 285 vertice(s)
+make (5, 15, Probius|Qhira|Ragnaros|Raynor|Rehgar|Rexxar|Samuro|Sgt. Hammer|Sonya|Stitches|Stukov...	UNKNOWN STEP	2026-10-04T09:37:19.8663914Z Info: Removed: 0 vertices, 0 edges, 0 faces
+make (5, 15, Probius|Qhira|Ragnaros|Raynor|Rehgar|Rexxar|Samuro|Sgt. Hammer|Sonya|Stitches|Stukov...	UNKNOWN STEP	2026-10-04T09:37:19.8664214Z Info: Removed 4 vertice(s)
+make (5, 15, Probius|Qhira|Ragnaros|Raynor|Rehgar|Rexxar|Samuro|Sgt. Hammer|Sonya|Stitches|Stukov...	UNKNOWN STEP	2026-10-04T09:37:19.8664572Z Info: Removed: 0 vertices, 0 edges, 0 faces
+make (5, 15, Probius|Qhira|Ragnaros|Raynor|Rehgar|Rexxar|Samuro|Sgt. Hammer|Sonya|Stitches|Stukov...	UNKNOWN STEP	2026-10-04T09:37:19.8664924Z Info: Removed 0 vertice(s)
+make (5, 15, Probius|Qhira|Ragnaros|Raynor|Rehgar|Rexxar|Samuro|Sgt. Hammer|Sonya|Stitches|Stukov...	UNKNOWN STEP	2026-10-04T09:37:19.8665237Z Info: Removed: 0 vertices, 0 edges, 0 faces
+make (5, 15, Probius|Qhira|Ragnaros|Raynor|Rehgar|Rexxar|Samuro|Sgt. Hammer|Sonya|Stitches|Stukov...	UNKNOWN STEP	2026-10-04T09:37:19.8665548Z Info: Removed 0 vertice(s)
+make (5, 15, Probius|Qhira|Ragnaros|Raynor|Rehgar|Rexxar|Samuro|Sgt. Hammer|Sonya|Stitches|Stukov...	UNKNOWN STEP	2026-10-04T09:37:19.8665830Z Info: Removed: 0 vertices, 0 edges, 0 faces
+make (5, 15, Probius|Qhira|Ragnaros|Raynor|Rehgar|Rexxar|Samuro|Sgt. Hammer|Sonya|Stitches|Stukov...	UNKNOWN STEP	2026-10-04T09:37:19.8666263Z [09:37:19] Strict edge test failed; retrying clean voxel union at 0.620 mm
+make (5, 15, Probius|Qhira|Ragnaros|Raynor|Rehgar|Rexxar|Samuro|Sgt. Hammer|Sonya|Stitches|Stukov...	UNKNOWN STEP	2026-10-04T09:37:28.6760413Z [09:37:28] SUCCESS source stitches: 450000 print-ready triangles
+make (5, 15, Probius|Qhira|Ragnaros|Raynor|Rehgar|Rexxar|Samuro|Sgt. Hammer|Sonya|Stitches|Stukov...	UNKNOWN STEP	2026-10-04T09:37:28.6802410Z [09:37:28] Importing M3: /home/runner/work/HOTS-03/HOTS-03/storm_hero_stukov_base/storm_hero_stukov_base.m3
+make (5, 15, Probius|Qhira|Ragnaros|Raynor|Rehgar|Rexxar|Samuro|Sgt. Hammer|Sonya|Stitches|Stukov...	UNKNOWN STEP	2026-10-04T09:37:28.6806874Z 2026-10-04 09:37:28,680,680 DEBUG  base.py:152 Import /home/runner/work/HOTS-03/HOTS-03/storm_hero_stukov_base/storm_hero_stukov_base.m3
+make (5, 15, Probius|Qhira|Ragnaros|Raynor|Rehgar|Rexxar|Samuro|Sgt. Hammer|Sonya|Stitches|Stukov...	UNKNOWN STEP	2026-10-04T09:37:34.4122609Z Info: Removed 0 vertice(s)
+make (5, 15, Probius|Qhira|Ragnaros|Raynor|Rehgar|Rexxar|Samuro|Sgt. Hammer|Sonya|Stitches|Stukov...	UNKNOWN STEP	2026-10-04T09:37:34.4123376Z Info: Removed 41 vertice(s)
+make (5, 15, Probius|Qhira|Ragnaros|Raynor|Rehgar|Rexxar|Samuro|Sgt. Hammer|Sonya|Stitches|Stukov...	UNKNOWN STEP	2026-10-04T09:37:34.4123874Z Info: Removed 136 vertice(s)
+make (5, 15, Probius|Qhira|Ragnaros|Raynor|Rehgar|Rexxar|Samuro|Sgt. Hammer|Sonya|Stitches|Stukov...	UNKNOWN STEP	2026-10-04T09:37:34.4124418Z Info: Removed: 0 vertices, 0 edges, 0 faces
+make (5, 15, Probius|Qhira|Ragnaros|Raynor|Rehgar|Rexxar|Samuro|Sgt. Hammer|Sonya|Stitches|Stukov...	UNKNOWN STEP	2026-10-04T09:37:34.4125092Z Info: Removed 0 vertice(s)
+make (5, 15, Probius|Qhira|Ragnaros|Raynor|Rehgar|Rexxar|Samuro|Sgt. Hammer|Sonya|Stitches|Stukov...	UNKNOWN STEP	2026-10-04T09:37:34.4125618Z Info: Removed: 0 vertices, 0 edges, 0 faces
+make (5, 15, Probius|Qhira|Ragnaros|Raynor|Rehgar|Rexxar|Samuro|Sgt. Hammer|Sonya|Stitches|Stukov...	UNKNOWN STEP	2026-10-04T09:37:34.4126183Z Info: Removed 41 vertice(s)
+make (5, 15, Probius|Qhira|Ragnaros|Raynor|Rehgar|Rexxar|Samuro|Sgt. Hammer|Sonya|Stitches|Stukov...	UNKNOWN STEP	2026-10-04T09:37:34.4126879Z Info: Removed: 0 vertices, 0 edges, 0 faces
+make (5, 15, Probius|Qhira|Ragnaros|Raynor|Rehgar|Rexxar|Samuro|Sgt. Hammer|Sonya|Stitches|Stukov...	UNKNOWN STEP	2026-10-04T09:37:34.4127552Z Info: Removed 35 vertice(s)
+make (5, 15, Probius|Qhira|Ragnaros|Raynor|Rehgar|Rexxar|Samuro|Sgt. Hammer|Sonya|Stitches|Stukov...	UNKNOWN STEP	2026-10-04T09:37:34.4128191Z Info: Removed: 0 vertices, 0 edges, 0 faces
+make (5, 15, Probius|Qhira|Ragnaros|Raynor|Rehgar|Rexxar|Samuro|Sgt. Hammer|Sonya|Stitches|Stukov...	UNKNOWN STEP	2026-10-04T09:37:34.4128822Z [09:37:34] Strict edge test failed; retrying clean voxel union at 0.620 mm
+make (5, 15, Probius|Qhira|Ragnaros|Raynor|Rehgar|Rexxar|Samuro|Sgt. Hammer|Sonya|Stitches|Stukov...	UNKNOWN STEP	2026-10-04T09:37:38.2139816Z [09:37:38] SUCCESS source stukov: 278039 print-ready triangles
+make (5, 15, Probius|Qhira|Ragnaros|Raynor|Rehgar|Rexxar|Samuro|Sgt. Hammer|Sonya|Stitches|Stukov...	UNKNOWN STEP	2026-10-04T09:37:38.2187721Z [09:37:38] Importing M3: /home/runner/work/HOTS-03/HOTS-03/storm_hero_sylvanas_base/storm_hero_sylvanas_base.m3
+make (5, 15, Probius|Qhira|Ragnaros|Raynor|Rehgar|Rexxar|Samuro|Sgt. Hammer|Sonya|Stitches|Stukov...	UNKNOWN STEP	2026-10-04T09:37:38.2192193Z 2026-10-04 09:37:38,219,219 DEBUG  base.py:152 Import /home/runner/work/HOTS-03/HOTS-03/storm_hero_sylvanas_base/storm_hero_sylvanas_base.m3
+make (5, 15, Probius|Qhira|Ragnaros|Raynor|Rehgar|Rexxar|Samuro|Sgt. Hammer|Sonya|Stitches|Stukov...	UNKNOWN STEP	2026-10-04T09:37:43.3721844Z Info: Removed 369 vertice(s)
+make (5, 15, Probius|Qhira|Ragnaros|Raynor|Rehgar|Rexxar|Samuro|Sgt. Hammer|Sonya|Stitches|Stukov...	UNKNOWN STEP	2026-10-04T09:37:43.3722554Z Info: Removed 563 vertice(s)
+make (5, 15, Probius|Qhira|Ragnaros|Raynor|Rehgar|Rexxar|Samuro|Sgt. Hammer|Sonya|Stitches|Stukov...	UNKNOWN STEP	2026-10-04T09:37:43.3722924Z Info: Removed 0 vertice(s)
+make (5, 15, Probius|Qhira|Ragnaros|Raynor|Rehgar|Rexxar|Samuro|Sgt. Hammer|Sonya|Stitches|Stukov...	UNKNOWN STEP	2026-10-04T09:37:43.3723279Z Info: Removed 0 vertice(s)
+make (5, 15, Probius|Qhira|Ragnaros|Raynor|Rehgar|Rexxar|Samuro|Sgt. Hammer|Sonya|Stitches|Stukov...	UNKNOWN STEP	2026-10-04T09:37:43.3723621Z Info: Removed 908 vertice(s)
+make (5, 15, Probius|Qhira|Ragnaros|Raynor|Rehgar|Rexxar|Samuro|Sgt. Hammer|Sonya|Stitches|Stukov...	UNKNOWN STEP	2026-10-04T09:37:43.3724126Z Info: Removed: 0 vertices, 0 edges, 0 faces
+make (5, 15, Probius|Qhira|Ragnaros|Raynor|Rehgar|Rexxar|Samuro|Sgt. Hammer|Sonya|Stitches|Stukov...	UNKNOWN STEP	2026-10-04T09:37:43.3724684Z Info: Removed 349 vertice(s)
+make (5, 15, Probius|Qhira|Ragnaros|Raynor|Rehgar|Rexxar|Samuro|Sgt. Hammer|Sonya|Stitches|Stukov...	UNKNOWN STEP	2026-10-04T09:37:43.3725149Z Info: Removed: 0 vertices, 0 edges, 0 faces
+make (5, 15, Probius|Qhira|Ragnaros|Raynor|Rehgar|Rexxar|Samuro|Sgt. Hammer|Sonya|Stitches|Stukov...	UNKNOWN STEP	2026-10-04T09:37:43.3725509Z Info: Removed 535 vertice(s)
+make (5, 15, Probius|Qhira|Ragnaros|Raynor|Rehgar|Rexxar|Samuro|Sgt. Hammer|Sonya|Stitches|Stukov...	UNKNOWN STEP	2026-10-04T09:37:43.3725862Z Info: Removed: 0 vertices, 0 edges, 0 faces
+make (5, 15, Probius|Qhira|Ragnaros|Raynor|Rehgar|Rexxar|Samuro|Sgt. Hammer|Sonya|Stitches|Stukov...	UNKNOWN STEP	2026-10-04T09:37:43.3726207Z Info: Removed 0 vertice(s)
+make (5, 15, Probius|Qhira|Ragnaros|Raynor|Rehgar|Rexxar|Samuro|Sgt. Hammer|Sonya|Stitches|Stukov...	UNKNOWN STEP	2026-10-04T09:37:43.3726568Z Info: Removed: 0 vertices, 0 edges, 0 faces
+make (5, 15, Probius|Qhira|Ragnaros|Raynor|Rehgar|Rexxar|Samuro|Sgt. Hammer|Sonya|Stitches|Stukov...	UNKNOWN STEP	2026-10-04T09:37:43.3726907Z Info: Removed 0 vertice(s)
+make (5, 15, Probius|Qhira|Ragnaros|Raynor|Rehgar|Rexxar|Samuro|Sgt. Hammer|Sonya|Stitches|Stukov...	UNKNOWN STEP	2026-10-04T09:37:43.3727208Z Info: Removed: 0 vertices, 0 edges, 0 faces
+make (5, 15, Probius|Qhira|Ragnaros|Raynor|Rehgar|Rexxar|Samuro|Sgt. Hammer|Sonya|Stitches|Stukov...	UNKNOWN STEP	2026-10-04T09:37:43.3728096Z Info: Removed 0 vertice(s)
+make (5, 15, Probius|Qhira|Ragnaros|Raynor|Rehgar|Rexxar|Samuro|Sgt. Hammer|Sonya|Stitches|Stukov...	UNKNOWN STEP	2026-10-04T09:37:43.3728499Z Info: Removed: 0 vertices, 0 edges, 0 faces
+make (5, 15, Probius|Qhira|Ragnaros|Raynor|Rehgar|Rexxar|Samuro|Sgt. Hammer|Sonya|Stitches|Stukov...	UNKNOWN STEP	2026-10-04T09:37:43.3729126Z [09:37:43] Strict edge test failed; retrying clean voxel union at 0.620 mm
+make (5, 15, Probius|Qhira|Ragnaros|Raynor|Rehgar|Rexxar|Samuro|Sgt. Hammer|Sonya|Stitches|Stukov...	UNKNOWN STEP	2026-10-04T09:37:46.5284591Z [09:37:46] SUCCESS source sylvanas: 226128 print-ready triangles
+make (5, 15, Probius|Qhira|Ragnaros|Raynor|Rehgar|Rexxar|Samuro|Sgt. Hammer|Sonya|Stitches|Stukov...	UNKNOWN STEP	2026-10-04T09:37:46.5322619Z [09:37:46] Importing M3: /home/runner/work/HOTS-03/HOTS-03/storm_hero_tassadar_base/storm_hero_tassadar_base.m3
+make (5, 15, Probius|Qhira|Ragnaros|Raynor|Rehgar|Rexxar|Samuro|Sgt. Hammer|Sonya|Stitches|Stukov...	UNKNOWN STEP	2026-10-04T09:37:46.5326545Z 2026-10-04 09:37:46,532,532 DEBUG  base.py:152 Import /home/runner/work/HOTS-03/HOTS-03/storm_hero_tassadar_base/storm_hero_tassadar_base.m3
+make (5, 15, Probius|Qhira|Ragnaros|Raynor|Rehgar|Rexxar|Samuro|Sgt. Hammer|Sonya|Stitches|Stukov...	UNKNOWN STEP	2026-10-04T09:37:56.5763351Z Info: Removed 38 vertice(s)
+make (5, 15, Probius|Qhira|Ragnaros|Raynor|Rehgar|Rexxar|Samuro|Sgt. Hammer|Sonya|Stitches|Stukov...	UNKNOWN STEP	2026-10-04T09:37:56.5763953Z Info: Removed 879 vertice(s)
+make (5, 15, Probius|Qhira|Ragnaros|Raynor|Rehgar|Rexxar|Samuro|Sgt. Hammer|Sonya|Stitches|Stukov...	UNKNOWN STEP	2026-10-04T09:37:56.5765257Z Info: Removed 2 vertice(s)
+make (5, 15, Probius|Qhira|Ragnaros|Raynor|Rehgar|Rexxar|Samuro|Sgt. Hammer|Sonya|Stitches|Stukov...	UNKNOWN STEP	2026-10-04T09:37:56.5765622Z Info: Removed 50 vertice(s)
+make (5, 15, Probius|Qhira|Ragnaros|Raynor|Rehgar|Rexxar|Samuro|Sgt. Hammer|Sonya|Stitches|Stukov...	UNKNOWN STEP	2026-10-04T09:37:56.5766013Z Info: Removed 989 vertice(s)
+make (5, 15, Probius|Qhira|Ragnaros|Raynor|Rehgar|Rexxar|Samuro|Sgt. Hammer|Sonya|Stitches|Stukov...	UNKNOWN STEP	2026-10-04T09:37:56.5766437Z Info: Removed: 0 vertices, 0 edges, 0 faces
+make (5, 15, Probius|Qhira|Ragnaros|Raynor|Rehgar|Rexxar|Samuro|Sgt. Hammer|Sonya|Stitches|Stukov...	UNKNOWN STEP	2026-10-04T09:37:56.5766810Z Info: Removed 27 vertice(s)
+make (5, 15, Probius|Qhira|Ragnaros|Raynor|Rehgar|Rexxar|Samuro|Sgt. Hammer|Sonya|Stitches|Stukov...	UNKNOWN STEP	2026-10-04T09:37:56.5767129Z Info: Removed: 0 vertices, 0 edges, 0 faces
+make (5, 15, Probius|Qhira|Ragnaros|Raynor|Rehgar|Rexxar|Samuro|Sgt. Hammer|Sonya|Stitches|Stukov...	UNKNOWN STEP	2026-10-04T09:37:56.5767457Z Info: Removed 887 vertice(s)
+make (5, 15, Probius|Qhira|Ragnaros|Raynor|Rehgar|Rexxar|Samuro|Sgt. Hammer|Sonya|Stitches|Stukov...	UNKNOWN STEP	2026-10-04T09:37:56.5767857Z Info: Removed: 0 vertices, 0 edges, 0 faces
+make (5, 15, Probius|Qhira|Ragnaros|Raynor|Rehgar|Rexxar|Samuro|Sgt. Hammer|Sonya|Stitches|Stukov...	UNKNOWN STEP	2026-10-04T09:37:56.5768399Z Info: Removed 2 vertice(s)
+make (5, 15, Probius|Qhira|Ragnaros|Raynor|Rehgar|Rexxar|Samuro|Sgt. Hammer|Sonya|Stitches|Stukov...	UNKNOWN STEP	2026-10-04T09:37:56.5768789Z Info: Removed: 0 vertices, 0 edges, 0 faces
+make (5, 15, Probius|Qhira|Ragnaros|Raynor|Rehgar|Rexxar|Samuro|Sgt. Hammer|Sonya|Stitches|Stukov...	UNKNOWN STEP	2026-10-04T09:37:56.5769117Z Info: Removed 0 vertice(s)
+make (5, 15, Probius|Qhira|Ragnaros|Raynor|Rehgar|Rexxar|Samuro|Sgt. Hammer|Sonya|Stitches|Stukov...	UNKNOWN STEP	2026-10-04T09:37:56.5769406Z Info: Removed: 0 vertices, 0 edges, 0 faces
+make (5, 15, Probius|Qhira|Ragnaros|Raynor|Rehgar|Rexxar|Samuro|Sgt. Hammer|Sonya|Stitches|Stukov...	UNKNOWN STEP	2026-10-04T09:37:56.5769715Z Info: Removed 54 vertice(s)
+make (5, 15, Probius|Qhira|Ragnaros|Raynor|Rehgar|Rexxar|Samuro|Sgt. Hammer|Sonya|Stitches|Stukov...	UNKNOWN STEP	2026-10-04T09:37:56.5770057Z Info: Removed: 0 vertices, 0 edges, 0 faces
+make (5, 15, Probius|Qhira|Ragnaros|Raynor|Rehgar|Rexxar|Samuro|Sgt. Hammer|Sonya|Stitches|Stukov...	UNKNOWN STEP	2026-10-04T09:37:56.5770378Z Info: Removed 0 vertice(s)
+make (5, 15, Probius|Qhira|Ragnaros|Raynor|Rehgar|Rexxar|Samuro|Sgt. Hammer|Sonya|Stitches|Stukov...	UNKNOWN STEP	2026-10-04T09:37:56.5770670Z Info: Removed: 0 vertices, 0 edges, 0 faces
+make (5, 15, Probius|Qhira|Ragnaros|Raynor|Rehgar|Rexxar|Samuro|Sgt. Hammer|Sonya|Stitches|Stukov...	UNKNOWN STEP	2026-10-04T09:37:56.5771077Z [09:37:56] Strict edge test failed; retrying clean voxel union at 0.620 mm
+make (5, 15, Probius|Qhira|Ragnaros|Raynor|Rehgar|Rexxar|Samuro|Sgt. Hammer|Sonya|Stitches|Stukov...	UNKNOWN STEP	2026-10-04T09:38:02.0923661Z [09:38:02] SUCCESS source tassadar: 380651 print-ready triangles
+make (5, 15, Probius|Qhira|Ragnaros|Raynor|Rehgar|Rexxar|Samuro|Sgt. Hammer|Sonya|Stitches|Stukov...	UNKNOWN STEP	2026-10-04T09:38:02.0958028Z [09:38:02] Importing M3: /home/runner/work/HOTS-03/HOTS-03/storm_hero_lostbaleog_base/storm_hero_lostbaleog_base.m3
+make (5, 15, Probius|Qhira|Ragnaros|Raynor|Rehgar|Rexxar|Samuro|Sgt. Hammer|Sonya|Stitches|Stukov...	UNKNOWN STEP	2026-10-04T09:38:02.0962248Z 2026-10-04 09:38:02,096,96  DEBUG  base.py:152 Import /home/runner/work/HOTS-03/HOTS-03/storm_hero_lostbaleog_base/storm_hero_lostbaleog_base.m3
+make (5, 15, Probius|Qhira|Ragnaros|Raynor|Rehgar|Rexxar|Samuro|Sgt. Hammer|Sonya|Stitches|Stukov...	UNKNOWN STEP	2026-10-04T09:38:02.4385094Z Info: Removed 0 vertice(s)
+make (5, 15, Probius|Qhira|Ragnaros|Raynor|Rehgar|Rexxar|Samuro|Sgt. Hammer|Sonya|Stitches|Stukov...	UNKNOWN STEP	2026-10-04T09:38:02.4385614Z Info: Removed 0 vertice(s)
+make (5, 15, Probius|Qhira|Ragnaros|Raynor|Rehgar|Rexxar|Samuro|Sgt. Hammer|Sonya|Stitches|Stukov...	UNKNOWN STEP	2026-10-04T09:38:02.4386191Z Info: Removed 38 vertice(s)
+make (5, 15, Probius|Qhira|Ragnaros|Raynor|Rehgar|Rexxar|Samuro|Sgt. Hammer|Sonya|Stitches|Stukov...	UNKNOWN STEP	2026-10-04T09:38:02.4386865Z [09:38:02] Importing M3: /home/runner/work/HOTS-03/HOTS-03/storm_hero_losterik_base/storm_hero_losterik_base.m3
+make (5, 15, Probius|Qhira|Ragnaros|Raynor|Rehgar|Rexxar|Samuro|Sgt. Hammer|Sonya|Stitches|Stukov...	UNKNOWN STEP	2026-10-04T09:38:02.4390725Z 2026-10-04 09:38:02,438,438 DEBUG  base.py:152 Import /home/runner/work/HOTS-03/HOTS-03/storm_hero_losterik_base/storm_hero_losterik_base.m3
+make (5, 15, Probius|Qhira|Ragnaros|Raynor|Rehgar|Rexxar|Samuro|Sgt. Hammer|Sonya|Stitches|Stukov...	UNKNOWN STEP	2026-10-04T09:38:02.7678881Z Info: Removed 7 vertice(s)
+make (5, 15, Probius|Qhira|Ragnaros|Raynor|Rehgar|Rexxar|Samuro|Sgt. Hammer|Sonya|Stitches|Stukov...	UNKNOWN STEP	2026-10-04T09:38:02.7679611Z Info: Removed 27 vertice(s)
+make (5, 15, Probius|Qhira|Ragnaros|Raynor|Rehgar|Rexxar|Samuro|Sgt. Hammer|Sonya|Stitches|Stukov...	UNKNOWN STEP	2026-10-04T09:38:02.7680304Z [09:38:02] Importing M3: /home/runner/work/HOTS-03/HOTS-03/storm_hero_lostolaf_base/storm_hero_lostolaf_base.m3
+make (5, 15, Probius|Qhira|Ragnaros|Raynor|Rehgar|Rexxar|Samuro|Sgt. Hammer|Sonya|Stitches|Stukov...	UNKNOWN STEP	2026-10-04T09:38:02.7687032Z 2026-10-04 09:38:02,768,768 DEBUG  base.py:152 Import /home/runner/work/HOTS-03/HOTS-03/storm_hero_lostolaf_base/storm_hero_lostolaf_base.m3
+make (5, 15, Probius|Qhira|Ragnaros|Raynor|Rehgar|Rexxar|Samuro|Sgt. Hammer|Sonya|Stitches|Stukov...	UNKNOWN STEP	2026-10-04T09:38:15.8480863Z Info: Removed 0 vertice(s)
+make (5, 15, Probius|Qhira|Ragnaros|Raynor|Rehgar|Rexxar|Samuro|Sgt. Hammer|Sonya|Stitches|Stukov...	UNKNOWN STEP	2026-10-04T09:38:15.8481769Z Info: Removed 0 vertice(s)
+make (5, 15, Probius|Qhira|Ragnaros|Raynor|Rehgar|Rexxar|Samuro|Sgt. Hammer|Sonya|Stitches|Stukov...	UNKNOWN STEP	2026-10-04T09:38:15.8482278Z Info: Removed 106 vertice(s)
+make (5, 15, Probius|Qhira|Ragnaros|Raynor|Rehgar|Rexxar|Samuro|Sgt. Hammer|Sonya|Stitches|Stukov...	UNKNOWN STEP	2026-10-04T09:38:15.8482675Z Info: Removed 143 vertice(s)
+make (5, 15, Probius|Qhira|Ragnaros|Raynor|Rehgar|Rexxar|Samuro|Sgt. Hammer|Sonya|Stitches|Stukov...	UNKNOWN STEP	2026-10-04T09:38:15.8483137Z Info: Removed: 0 vertices, 0 edges, 0 faces
+make (5, 15, Probius|Qhira|Ragnaros|Raynor|Rehgar|Rexxar|Samuro|Sgt. Hammer|Sonya|Stitches|Stukov...	UNKNOWN STEP	2026-10-04T09:38:15.8483633Z Info: Removed 0 vertice(s)
+make (5, 15, Probius|Qhira|Ragnaros|Raynor|Rehgar|Rexxar|Samuro|Sgt. Hammer|Sonya|Stitches|Stukov...	UNKNOWN STEP	2026-10-04T09:38:15.8484044Z Info: Removed: 0 vertices, 0 edges, 0 faces
+make (5, 15, Probius|Qhira|Ragnaros|Raynor|Rehgar|Rexxar|Samuro|Sgt. Hammer|Sonya|Stitches|Stukov...	UNKNOWN STEP	2026-10-04T09:38:15.8484499Z Info: Removed 0 vertice(s)
+make (5, 15, Probius|Qhira|Ragnaros|Raynor|Rehgar|Rexxar|Samuro|Sgt. Hammer|Sonya|Stitches|Stukov...	UNKNOWN STEP	2026-10-04T09:38:15.8484904Z Info: Removed: 0 vertices, 0 edges, 0 faces
+make (5, 15, Probius|Qhira|Ragnaros|Raynor|Rehgar|Rexxar|Samuro|Sgt. Hammer|Sonya|Stitches|Stukov...	UNKNOWN STEP	2026-10-04T09:38:15.8485340Z Info: Removed 12 vertice(s)
+make (5, 15, Probius|Qhira|Ragnaros|Raynor|Rehgar|Rexxar|Samuro|Sgt. Hammer|Sonya|Stitches|Stukov...	UNKNOWN STEP	2026-10-04T09:38:15.8485705Z Info: Removed: 0 vertices, 0 edges, 0 faces
+make (5, 15, Probius|Qhira|Ragnaros|Raynor|Rehgar|Rexxar|Samuro|Sgt. Hammer|Sonya|Stitches|Stukov...	UNKNOWN STEP	2026-10-04T09:38:15.8486074Z Info: Removed 1 vertice(s)
+make (5, 15, Probius|Qhira|Ragnaros|Raynor|Rehgar|Rexxar|Samuro|Sgt. Hammer|Sonya|Stitches|Stukov...	UNKNOWN STEP	2026-10-04T09:38:15.8486479Z Info: Removed: 0 vertices, 0 edges, 0 faces
+make (5, 15, Probius|Qhira|Ragnaros|Raynor|Rehgar|Rexxar|Samuro|Sgt. Hammer|Sonya|Stitches|Stukov...	UNKNOWN STEP	2026-10-04T09:38:15.8486870Z Info: Removed 13 vertice(s)
+make (5, 15, Probius|Qhira|Ragnaros|Raynor|Rehgar|Rexxar|Samuro|Sgt. Hammer|Sonya|Stitches|Stukov...	UNKNOWN STEP	2026-10-04T09:38:15.8487560Z Info: Removed: 0 vertices, 0 edges, 0 faces
+make (5, 15, Probius|Qhira|Ragnaros|Raynor|Rehgar|Rexxar|Samuro|Sgt. Hammer|Sonya|Stitches|Stukov...	UNKNOWN STEP	2026-10-04T09:38:15.8487959Z Info: Removed 0 vertice(s)
+make (5, 15, Probius|Qhira|Ragnaros|Raynor|Rehgar|Rexxar|Samuro|Sgt. Hammer|Sonya|Stitches|Stukov...	UNKNOWN STEP	2026-10-04T09:38:15.8488303Z Info: Removed: 0 vertices, 0 edges, 0 faces
+make (5, 15, Probius|Qhira|Ragnaros|Raynor|Rehgar|Rexxar|Samuro|Sgt. Hammer|Sonya|Stitches|Stukov...	UNKNOWN STEP	2026-10-04T09:38:15.8488704Z Info: Removed 0 vertice(s)
+make (5, 15, Probius|Qhira|Ragnaros|Raynor|Rehgar|Rexxar|Samuro|Sgt. Hammer|Sonya|Stitches|Stukov...	UNKNOWN STEP	2026-10-04T09:38:15.8489214Z Info: Removed: 0 vertices, 0 edges, 0 faces
+make (5, 15, Probius|Qhira|Ragnaros|Raynor|Rehgar|Rexxar|Samuro|Sgt. Hammer|Sonya|Stitches|Stukov...	UNKNOWN STEP	2026-10-04T09:38:15.8489621Z Info: Removed 2 vertice(s)
+make (5, 15, Probius|Qhira|Ragnaros|Raynor|Rehgar|Rexxar|Samuro|Sgt. Hammer|Sonya|Stitches|Stukov...	UNKNOWN STEP	2026-10-04T09:38:15.8489996Z Info: Removed: 0 vertices, 0 edges, 0 faces
+make (5, 15, Probius|Qhira|Ragnaros|Raynor|Rehgar|Rexxar|Samuro|Sgt. Hammer|Sonya|Stitches|Stukov...	UNKNOWN STEP	2026-10-04T09:38:15.8490401Z Info: Removed 15 vertice(s)
+make (5, 15, Probius|Qhira|Ragnaros|Raynor|Rehgar|Rexxar|Samuro|Sgt. Hammer|Sonya|Stitches|Stukov...	UNKNOWN STEP	2026-10-04T09:38:15.8490772Z Info: Removed: 0 vertices, 0 edges, 0 faces
+make (5, 15, Probius|Qhira|Ragnaros|Raynor|Rehgar|Rexxar|Samuro|Sgt. Hammer|Sonya|Stitches|Stukov...	UNKNOWN STEP	2026-10-04T09:38:15.8491303Z [09:38:15] Strict edge test failed; retrying clean voxel union at 0.620 mm
+make (5, 15, Probius|Qhira|Ragnaros|Raynor|Rehgar|Rexxar|Samuro|Sgt. Hammer|Sonya|Stitches|Stukov...	UNKNOWN STEP	2026-10-04T09:38:24.9379838Z [09:38:24] SUCCESS source lostvikings_composite: 449999 print-ready triangles
+make (5, 15, Probius|Qhira|Ragnaros|Raynor|Rehgar|Rexxar|Samuro|Sgt. Hammer|Sonya|Stitches|Stukov...	UNKNOWN STEP	2026-10-04T09:38:24.9478934Z [09:38:24] Importing M3: /home/runner/work/HOTS-03/HOTS-03/storm_hero_thrall_base/storm_hero_thrall_base.m3
+make (5, 15, Probius|Qhira|Ragnaros|Raynor|Rehgar|Rexxar|Samuro|Sgt. Hammer|Sonya|Stitches|Stukov...	UNKNOWN STEP	2026-10-04T09:38:24.9485448Z 2026-10-04 09:38:24,948,948 DEBUG  base.py:152 Import /home/runner/work/HOTS-03/HOTS-03/storm_hero_thrall_base/storm_hero_thrall_base.m3
+make (5, 15, Probius|Qhira|Ragnaros|Raynor|Rehgar|Rexxar|Samuro|Sgt. Hammer|Sonya|Stitches|Stukov...	UNKNOWN STEP	2026-10-04T09:38:35.3037618Z Info: Removed 84 vertice(s)
+make (5, 15, Probius|Qhira|Ragnaros|Raynor|Rehgar|Rexxar|Samuro|Sgt. Hammer|Sonya|Stitches|Stukov...	UNKNOWN STEP	2026-10-04T09:38:35.3038172Z Info: Removed 918 vertice(s)
+make (5, 15, Probius|Qhira|Ragnaros|Raynor|Rehgar|Rexxar|Samuro|Sgt. Hammer|Sonya|Stitches|Stukov...	UNKNOWN STEP	2026-10-04T09:38:35.3038706Z Info: Removed 550 vertice(s)
+make (5, 15, Probius|Qhira|Ragnaros|Raynor|Rehgar|Rexxar|Samuro|Sgt. Hammer|Sonya|Stitches|Stukov...	UNKNOWN STEP	2026-10-04T09:38:35.3039191Z Info: Removed 1553 vertice(s)
+make (5, 15, Probius|Qhira|Ragnaros|Raynor|Rehgar|Rexxar|Samuro|Sgt. Hammer|Sonya|Stitches|Stukov...	UNKNOWN STEP	2026-10-04T09:38:35.3039642Z Info: Removed: 0 vertices, 0 edges, 0 faces
+make (5, 15, Probius|Qhira|Ragnaros|Raynor|Rehgar|Rexxar|Samuro|Sgt. Hammer|Sonya|Stitches|Stukov...	UNKNOWN STEP	2026-10-04T09:38:35.3040074Z Info: Removed 84 vertice(s)
+make (5, 15, Probius|Qhira|Ragnaros|Raynor|Rehgar|Rexxar|Samuro|Sgt. Hammer|Sonya|Stitches|Stukov...	UNKNOWN STEP	2026-10-04T09:38:35.3040450Z Info: Removed: 0 vertices, 0 edges, 0 faces
+make (5, 15, Probius|Qhira|Ragnaros|Raynor|Rehgar|Rexxar|Samuro|Sgt. Hammer|Sonya|Stitches|Stukov...	UNKNOWN STEP	2026-10-04T09:38:35.3040954Z Info: Removed 863 vertice(s)
+make (5, 15, Probius|Qhira|Ragnaros|Raynor|Rehgar|Rexxar|Samuro|Sgt. Hammer|Sonya|Stitches|Stukov...	UNKNOWN STEP	2026-10-04T09:38:35.3041337Z Info: Removed: 0 vertices, 0 edges, 0 faces
+make (5, 15, Probius|Qhira|Ragnaros|Raynor|Rehgar|Rexxar|Samuro|Sgt. Hammer|Sonya|Stitches|Stukov...	UNKNOWN STEP	2026-10-04T09:38:35.3042063Z Info: Removed 542 vertice(s)
+make (5, 15, Probius|Qhira|Ragnaros|Raynor|Rehgar|Rexxar|Samuro|Sgt. Hammer|Sonya|Stitches|Stukov...	UNKNOWN STEP	2026-10-04T09:38:35.3042502Z Info: Removed: 0 vertices, 0 edges, 0 faces
+make (5, 15, Probius|Qhira|Ragnaros|Raynor|Rehgar|Rexxar|Samuro|Sgt. Hammer|Sonya|Stitches|Stukov...	UNKNOWN STEP	2026-10-04T09:38:35.3042928Z Info: Removed 2 vertice(s)
+make (5, 15, Probius|Qhira|Ragnaros|Raynor|Rehgar|Rexxar|Samuro|Sgt. Hammer|Sonya|Stitches|Stukov...	UNKNOWN STEP	2026-10-04T09:38:35.3043338Z Info: Removed: 0 vertices, 0 edges, 0 faces
+make (5, 15, Probius|Qhira|Ragnaros|Raynor|Rehgar|Rexxar|Samuro|Sgt. Hammer|Sonya|Stitches|Stukov...	UNKNOWN STEP	2026-10-04T09:38:35.3043964Z [09:38:35] Strict edge test failed; retrying clean voxel union at 0.620 mm
+make (5, 15, Probius|Qhira|Ragnaros|Raynor|Rehgar|Rexxar|Samuro|Sgt. Hammer|Sonya|Stitches|Stukov...	UNKNOWN STEP	2026-10-04T09:38:41.0107596Z [09:38:41] SUCCESS source thrall: 387054 print-ready triangles
+make (5, 15, Probius|Qhira|Ragnaros|Raynor|Rehgar|Rexxar|Samuro|Sgt. Hammer|Sonya|Stitches|Stukov...	UNKNOWN STEP	2026-10-04T09:38:41.4254338Z [09:38:41] Completed: 15 successful roster entries, 0 missing/failed
+make (5, 15, Probius|Qhira|Ragnaros|Raynor|Rehgar|Rexxar|Samuro|Sgt. Hammer|Sonya|Stitches|Stukov...	UNKNOWN STEP	2026-10-04T09:38:41.4270538Z Blender 3.6.23 (hash e467db79ca8c built 2025-06-17 01:32:54)
+make (5, 15, Probius|Qhira|Ragnaros|Raynor|Rehgar|Rexxar|Samuro|Sgt. Hammer|Sonya|Stitches|Stukov...	UNKNOWN STEP	2026-10-04T09:38:41.6454193Z ##[group]Run actions/upload-artifact@v4
+make (5, 15, Probius|Qhira|Ragnaros|Raynor|Rehgar|Rexxar|Samuro|Sgt. Hammer|Sonya|Stitches|Stukov...	UNKNOWN STEP	2026-10-04T09:38:41.6454567Z with:
+make (5, 15, Probius|Qhira|Ragnaros|Raynor|Rehgar|Rexxar|Samuro|Sgt. Hammer|Sonya|Stitches|Stukov...	UNKNOWN STEP	2026-10-04T09:38:41.6454836Z   name: r2-c-5
+make (5, 15, Probius|Qhira|Ragnaros|Raynor|Rehgar|Rexxar|Samuro|Sgt. Hammer|Sonya|Stitches|Stukov...	UNKNOWN STEP	2026-10-04T09:38:41.6455123Z   path: /home/runner/work/_temp/chunk
+make (5, 15, Probius|Qhira|Ragnaros|Raynor|Rehgar|Rexxar|Samuro|Sgt. Hammer|Sonya|Stitches|Stukov...	UNKNOWN STEP	2026-10-04T09:38:41.6455466Z   retention-days: 30
+make (5, 15, Probius|Qhira|Ragnaros|Raynor|Rehgar|Rexxar|Samuro|Sgt. Hammer|Sonya|Stitches|Stukov...	UNKNOWN STEP	2026-10-04T09:38:41.6455748Z   compression-level: 0
+make (5, 15, Probius|Qhira|Ragnaros|Raynor|Rehgar|Rexxar|Samuro|Sgt. Hammer|Sonya|Stitches|Stukov...	UNKNOWN STEP	2026-10-04T09:38:41.6456418Z   if-no-files-found: warn
+make (5, 15, Probius|Qhira|Ragnaros|Raynor|Rehgar|Rexxar|Samuro|Sgt. Hammer|Sonya|Stitches|Stukov...	UNKNOWN STEP	2026-10-04T09:38:41.6456705Z   overwrite: false
+make (5, 15, Probius|Qhira|Ragnaros|Raynor|Rehgar|Rexxar|Samuro|Sgt. Hammer|Sonya|Stitches|Stukov...	UNKNOWN STEP	2026-10-04T09:38:41.6457043Z   include-hidden-files: false
+make (5, 15, Probius|Qhira|Ragnaros|Raynor|Rehgar|Rexxar|Samuro|Sgt. Hammer|Sonya|Stitches|Stukov...	UNKNOWN STEP	2026-10-04T09:38:41.6457342Z env:
+make (5, 15, Probius|Qhira|Ragnaros|Raynor|Rehgar|Rexxar|Samuro|Sgt. Hammer|Sonya|Stitches|Stukov...	UNKNOWN STEP	2026-10-04T09:38:41.6457597Z   BV: 3.6.23
+make (5, 15, Probius|Qhira|Ragnaros|Raynor|Rehgar|Rexxar|Samuro|Sgt. Hammer|Sonya|Stitches|Stukov...	UNKNOWN STEP	2026-10-04T09:38:41.6457886Z   M3: 58935005c4465a219a740f6b740253533eda773f
+make (5, 15, Probius|Qhira|Ragnaros|Raynor|Rehgar|Rexxar|Samuro|Sgt. Hammer|Sonya|Stitches|Stukov...	UNKNOWN STEP	2026-10-04T09:38:41.6458213Z ##[endgroup]
+make (5, 15, Probius|Qhira|Ragnaros|Raynor|Rehgar|Rexxar|Samuro|Sgt. Hammer|Sonya|Stitches|Stukov...	UNKNOWN STEP	2026-10-04T09:38:41.7963037Z (node:2646) [DEP0040] DeprecationWarning: The `punycode` module is deprecated. Please use a userland alternative instead.
+make (5, 15, Probius|Qhira|Ragnaros|Raynor|Rehgar|Rexxar|Samuro|Sgt. Hammer|Sonya|Stitches|Stukov...	UNKNOWN STEP	2026-10-04T09:38:41.7963720Z (Use `node --trace-deprecation ...` to show where the warning was created)
+make (5, 15, Probius|Qhira|Ragnaros|Raynor|Rehgar|Rexxar|Samuro|Sgt. Hammer|Sonya|Stitches|Stukov...	UNKNOWN STEP	2026-10-04T09:38:41.8042273Z With the provided path, there will be 18 files uploaded
+make (5, 15, Probius|Qhira|Ragnaros|Raynor|Rehgar|Rexxar|Samuro|Sgt. Hammer|Sonya|Stitches|Stukov...	UNKNOWN STEP	2026-10-04T09:38:41.8044058Z Artifact name is valid!
+make (5, 15, Probius|Qhira|Ragnaros|Raynor|Rehgar|Rexxar|Samuro|Sgt. Hammer|Sonya|Stitches|Stukov...	UNKNOWN STEP	2026-10-04T09:38:41.8044575Z Root directory input is valid!
+make (5, 15, Probius|Qhira|Ragnaros|Raynor|Rehgar|Rexxar|Samuro|Sgt. Hammer|Sonya|Stitches|Stukov...	UNKNOWN STEP	2026-10-04T09:38:42.1488517Z Beginning upload of artifact content to blob storage
+make (5, 15, Probius|Qhira|Ragnaros|Raynor|Rehgar|Rexxar|Samuro|Sgt. Hammer|Sonya|Stitches|Stukov...	UNKNOWN STEP	2026-10-04T09:38:42.1940367Z (node:2646) [DEP0169] DeprecationWarning: `url.parse()` behavior is not standardized and prone to errors that have security implications. Use the WHATWG URL API instead. CVEs are not issued for `url.parse()` vulnerabilities.
+make (5, 15, Probius|Qhira|Ragnaros|Raynor|Rehgar|Rexxar|Samuro|Sgt. Hammer|Sonya|Stitches|Stukov...	UNKNOWN STEP	2026-10-04T09:38:42.9179595Z Uploaded bytes 8388608
+make (5, 15, Probius|Qhira|Ragnaros|Raynor|Rehgar|Rexxar|Samuro|Sgt. Hammer|Sonya|Stitches|Stukov...	UNKNOWN STEP	2026-10-04T09:38:42.9301673Z Uploaded bytes 16777216
+make (5, 15, Probius|Qhira|Ragnaros|Raynor|Rehgar|Rexxar|Samuro|Sgt. Hammer|Sonya|Stitches|Stukov...	UNKNOWN STEP	2026-10-04T09:38:42.9398973Z Uploaded bytes 25165824
+make (5, 15, Probius|Qhira|Ragnaros|Raynor|Rehgar|Rexxar|Samuro|Sgt. Hammer|Sonya|Stitches|Stukov...	UNKNOWN STEP	2026-10-04T09:38:42.9615963Z Uploaded bytes 33554432
+make (5, 15, Probius|Qhira|Ragnaros|Raynor|Rehgar|Rexxar|Samuro|Sgt. Hammer|Sonya|Stitches|Stukov...	UNKNOWN STEP	2026-10-04T09:38:43.1512215Z Uploaded bytes 41943040
+make (5, 15, Probius|Qhira|Ragnaros|Raynor|Rehgar|Rexxar|Samuro|Sgt. Hammer|Sonya|Stitches|Stukov...	UNKNOWN STEP	2026-10-04T09:38:43.1609901Z Uploaded bytes 50331648
+make (5, 15, Probius|Qhira|Ragnaros|Raynor|Rehgar|Rexxar|Samuro|Sgt. Hammer|Sonya|Stitches|Stukov...	UNKNOWN STEP	2026-10-04T09:38:43.1700312Z Uploaded bytes 58720256
+make (5, 15, Probius|Qhira|Ragnaros|Raynor|Rehgar|Rexxar|Samuro|Sgt. Hammer|Sonya|Stitches|Stukov...	UNKNOWN STEP	2026-10-04T09:38:43.1951217Z Uploaded bytes 67108864
+make (5, 15, Probius|Qhira|Ragnaros|Raynor|Rehgar|Rexxar|Samuro|Sgt. Hammer|Sonya|Stitches|Stukov...	UNKNOWN STEP	2026-10-04T09:38:43.3892737Z Uploaded bytes 75497472
+make (5, 15, Probius|Qhira|Ragnaros|Raynor|Rehgar|Rexxar|Samuro|Sgt. Hammer|Sonya|Stitches|Stukov...	UNKNOWN STEP	2026-10-04T09:38:43.3983030Z Uploaded bytes 83886080
+make (5, 15, Probius|Qhira|Ragnaros|Raynor|Rehgar|Rexxar|Samuro|Sgt. Hammer|Sonya|Stitches|Stukov...	UNKNOWN STEP	2026-10-04T09:38:43.4086187Z Uploaded bytes 92274688
+make (5, 15, Probius|Qhira|Ragnaros|Raynor|Rehgar|Rexxar|Samuro|Sgt. Hammer|Sonya|Stitches|Stukov...	UNKNOWN STEP	2026-10-04T09:38:43.4284482Z Uploaded bytes 100663296
+make (5, 15, Probius|Qhira|Ragnaros|Raynor|Rehgar|Rexxar|Samuro|Sgt. Hammer|Sonya|Stitches|Stukov...	UNKNOWN STEP	2026-10-04T09:38:43.6253247Z Uploaded bytes 109051904
+make (5, 15, Probius|Qhira|Ragnaros|Raynor|Rehgar|Rexxar|Samuro|Sgt. Hammer|Sonya|Stitches|Stukov...	UNKNOWN STEP	2026-10-04T09:38:43.6346536Z Uploaded bytes 117440512
+make (5, 15, Probius|Qhira|Ragnaros|Raynor|Rehgar|Rexxar|Samuro|Sgt. Hammer|Sonya|Stitches|Stukov...	UNKNOWN STEP	2026-10-04T09:38:43.6531048Z Uploaded bytes 125829120
+make (5, 15, Probius|Qhira|Ragnaros|Raynor|Rehgar|Rexxar|Samuro|Sgt. Hammer|Sonya|Stitches|Stukov...	UNKNOWN STEP	2026-10-04T09:38:43.6996692Z Uploaded bytes 134217728
+make (5, 15, Probius|Qhira|Ragnaros|Raynor|Rehgar|Rexxar|Samuro|Sgt. Hammer|Sonya|Stitches|Stukov...	UNKNOWN STEP	2026-10-04T09:38:43.8490208Z Uploaded bytes 142606336
+make (5, 15, Probius|Qhira|Ragnaros|Raynor|Rehgar|Rexxar|Samuro|Sgt. Hammer|Sonya|Stitches|Stukov...	UNKNOWN STEP	2026-10-04T09:38:43.8752937Z Uploaded bytes 150994944
+make (5, 15, Probius|Qhira|Ragnaros|Raynor|Rehgar|Rexxar|Samuro|Sgt. Hammer|Sonya|Stitches|Stukov...	UNKNOWN STEP	2026-10-04T09:38:43.8843911Z Uploaded bytes 159383552
+make (5, 15, Probius|Qhira|Ragnaros|Raynor|Rehgar|Rexxar|Samuro|Sgt. Hammer|Sonya|Stitches|Stukov...	UNKNOWN STEP	2026-10-04T09:38:43.9116840Z Uploaded bytes 167772160
+make (5, 15, Probius|Qhira|Ragnaros|Raynor|Rehgar|Rexxar|Samuro|Sgt. Hammer|Sonya|Stitches|Stukov...	UNKNOWN STEP	2026-10-04T09:38:44.0646702Z Uploaded bytes 176160768
+make (5, 15, Probius|Qhira|Ragnaros|Raynor|Rehgar|Rexxar|Samuro|Sgt. Hammer|Sonya|Stitches|Stukov...	UNKNOWN STEP	2026-10-04T09:38:44.1124230Z Uploaded bytes 184549376
+make (5, 15, Probius|Qhira|Ragnaros|Raynor|Rehgar|Rexxar|Samuro|Sgt. Hammer|Sonya|Stitches|Stukov...	UNKNOWN STEP	2026-10-04T09:38:44.1340462Z Uploaded bytes 192937984
+make (5, 15, Probius|Qhira|Ragnaros|Raynor|Rehgar|Rexxar|Samuro|Sgt. Hammer|Sonya|Stitches|Stukov...	UNKNOWN STEP	2026-10-04T09:38:44.1718903Z Uploaded bytes 201326592
+make (5, 15, Probius|Qhira|Ragnaros|Raynor|Rehgar|Rexxar|Samuro|Sgt. Hammer|Sonya|Stitches|Stukov...	UNKNOWN STEP	2026-10-04T09:38:44.2760854Z Uploaded bytes 209715200
+make (5, 15, Probius|Qhira|Ragnaros|Raynor|Rehgar|Rexxar|Samuro|Sgt. Hammer|Sonya|Stitches|Stukov...	UNKNOWN STEP	2026-10-04T09:38:44.3283480Z Uploaded bytes 218103808
+make (5, 15, Probius|Qhira|Ragnaros|Raynor|Rehgar|Rexxar|Samuro|Sgt. Hammer|Sonya|Stitches|Stukov...	UNKNOWN STEP	2026-10-04T09:38:44.3637250Z Uploaded bytes 226492416
+make (5, 15, Probius|Qhira|Ragnaros|Raynor|Rehgar|Rexxar|Samuro|Sgt. Hammer|Sonya|Stitches|Stukov...	UNKNOWN STEP	2026-10-04T09:38:44.4301242Z Uploaded bytes 234881024
+make (5, 15, Probius|Qhira|Ragnaros|Raynor|Rehgar|Rexxar|Samuro|Sgt. Hammer|Sonya|Stitches|Stukov...	UNKNOWN STEP	2026-10-04T09:38:44.5198090Z Uploaded bytes 243269632
+make (5, 15, Probius|Qhira|Ragnaros|Raynor|Rehgar|Rexxar|Samuro|Sgt. Hammer|Sonya|Stitches|Stukov...	UNKNOWN STEP	2026-10-04T09:38:44.5872741Z Uploaded bytes 251658240
+make (5, 15, Probius|Qhira|Ragnaros|Raynor|Rehgar|Rexxar|Samuro|Sgt. Hammer|Sonya|Stitches|Stukov...	UNKNOWN STEP	2026-10-04T09:38:44.5976649Z Uploaded bytes 260046848
+make (5, 15, Probius|Qhira|Ragnaros|Raynor|Rehgar|Rexxar|Samuro|Sgt. Hammer|Sonya|Stitches|Stukov...	UNKNOWN STEP	2026-10-04T09:38:44.7492520Z Uploaded bytes 268435456
+make (5, 15, Probius|Qhira|Ragnaros|Raynor|Rehgar|Rexxar|Samuro|Sgt. Hammer|Sonya|Stitches|Stukov...	UNKNOWN STEP	2026-10-04T09:38:44.7505690Z Uploaded bytes 276824064
+make (5, 15, Probius|Qhira|Ragnaros|Raynor|Rehgar|Rexxar|Samuro|Sgt. Hammer|Sonya|Stitches|Stukov...	UNKNOWN STEP	2026-10-04T09:38:44.8311208Z Uploaded bytes 285212672
+make (5, 15, Probius|Qhira|Ragnaros|Raynor|Rehgar|Rexxar|Samuro|Sgt. Hammer|Sonya|Stitches|Stukov...	UNKNOWN STEP	2026-10-04T09:38:45.0062064Z Uploaded bytes 289785049
+make (5, 15, Probius|Qhira|Ragnaros|Raynor|Rehgar|Rexxar|Samuro|Sgt. Hammer|Sonya|Stitches|Stukov...	UNKNOWN STEP	2026-10-04T09:38:45.0650629Z Finished uploading artifact content to blob storage!
+make (5, 15, Probius|Qhira|Ragnaros|Raynor|Rehgar|Rexxar|Samuro|Sgt. Hammer|Sonya|Stitches|Stukov...	UNKNOWN STEP	2026-10-04T09:38:45.0654424Z SHA256 digest of uploaded artifact zip is 588c6bbdf6bf30eb333a95e60d48b860f2b1ed65fff6c1dc88cde44c4f717ec7
+make (5, 15, Probius|Qhira|Ragnaros|Raynor|Rehgar|Rexxar|Samuro|Sgt. Hammer|Sonya|Stitches|Stukov...	UNKNOWN STEP	2026-10-04T09:38:45.0656435Z Finalizing artifact upload
+make (5, 15, Probius|Qhira|Ragnaros|Raynor|Rehgar|Rexxar|Samuro|Sgt. Hammer|Sonya|Stitches|Stukov...	UNKNOWN STEP	2026-10-04T09:38:45.3211306Z Artifact r2-c-5.zip successfully finalized. Artifact ID 11299995655
+make (5, 15, Probius|Qhira|Ragnaros|Raynor|Rehgar|Rexxar|Samuro|Sgt. Hammer|Sonya|Stitches|Stukov...	UNKNOWN STEP	2026-10-04T09:38:45.3212742Z Artifact r2-c-5 has been successfully uploaded! Final size is 289785049 bytes. Artifact ID is 11299995655
+make (5, 15, Probius|Qhira|Ragnaros|Raynor|Rehgar|Rexxar|Samuro|Sgt. Hammer|Sonya|Stitches|Stukov...	UNKNOWN STEP	2026-10-04T09:38:45.3218681Z Artifact download URL: https://github.com/JimmyTheCool/HOTS-03/actions/runs/37192482532/artifacts/11299995655
+make (5, 15, Probius|Qhira|Ragnaros|Raynor|Rehgar|Rexxar|Samuro|Sgt. Hammer|Sonya|Stitches|Stukov...	UNKNOWN STEP	2026-10-04T09:38:45.3456249Z Post job cleanup.
+make (5, 15, Probius|Qhira|Ragnaros|Raynor|Rehgar|Rexxar|Samuro|Sgt. Hammer|Sonya|Stitches|Stukov...	UNKNOWN STEP	2026-10-04T09:38:45.4223634Z [command]/usr/bin/git version
+make (5, 15, Probius|Qhira|Ragnaros|Raynor|Rehgar|Rexxar|Samuro|Sgt. Hammer|Sonya|Stitches|Stukov...	UNKNOWN STEP	2026-10-04T09:38:45.4266289Z git version 2.55.0
+make (5, 15, Probius|Qhira|Ragnaros|Raynor|Rehgar|Rexxar|Samuro|Sgt. Hammer|Sonya|Stitches|Stukov...	UNKNOWN STEP	2026-10-04T09:38:45.4305549Z Temporarily overriding HOME='/home/runner/work/_temp/9c84cf3d-f3b6-4097-a070-3e0d625a6378' before making global git config changes
+make (5, 15, Probius|Qhira|Ragnaros|Raynor|Rehgar|Rexxar|Samuro|Sgt. Hammer|Sonya|Stitches|Stukov...	UNKNOWN STEP	2026-10-04T09:38:45.4306880Z Adding repository directory to the temporary git global config as a safe directory
+make (5, 15, Probius|Qhira|Ragnaros|Raynor|Rehgar|Rexxar|Samuro|Sgt. Hammer|Sonya|Stitches|Stukov...	UNKNOWN STEP	2026-10-04T09:38:45.4311781Z [command]/usr/bin/git config --global --add safe.directory /home/runner/work/HOTS-03/HOTS-03
+make (5, 15, Probius|Qhira|Ragnaros|Raynor|Rehgar|Rexxar|Samuro|Sgt. Hammer|Sonya|Stitches|Stukov...	UNKNOWN STEP	2026-10-04T09:38:45.4347244Z [command]/usr/bin/git config --local --name-only --get-regexp core\.sshCommand
+make (5, 15, Probius|Qhira|Ragnaros|Raynor|Rehgar|Rexxar|Samuro|Sgt. Hammer|Sonya|Stitches|Stukov...	UNKNOWN STEP	2026-10-04T09:38:45.4375124Z [command]/usr/bin/git submodule foreach --recursive sh -c "git config --local --name-only --get-regexp 'core\.sshCommand' && git config --local --unset-all 'core.sshCommand' || :"
+make (5, 15, Probius|Qhira|Ragnaros|Raynor|Rehgar|Rexxar|Samuro|Sgt. Hammer|Sonya|Stitches|Stukov...	UNKNOWN STEP	2026-10-04T09:38:45.4584356Z [command]/usr/bin/git config --local --name-only --get-regexp http\.https\:\/\/github\.com\/\.extraheader
+make (5, 15, Probius|Qhira|Ragnaros|Raynor|Rehgar|Rexxar|Samuro|Sgt. Hammer|Sonya|Stitches|Stukov...	UNKNOWN STEP	2026-10-04T09:38:45.4610683Z http.https://github.com/.extraheader
+make (5, 15, Probius|Qhira|Ragnaros|Raynor|Rehgar|Rexxar|Samuro|Sgt. Hammer|Sonya|Stitches|Stukov...	UNKNOWN STEP	2026-10-04T09:38:45.4620984Z [command]/usr/bin/git config --local --unset-all http.https://github.com/.extraheader
+make (5, 15, Probius|Qhira|Ragnaros|Raynor|Rehgar|Rexxar|Samuro|Sgt. Hammer|Sonya|Stitches|Stukov...	UNKNOWN STEP	2026-10-04T09:38:45.4655904Z [command]/usr/bin/git submodule foreach --recursive sh -c "git config --local --name-only --get-regexp 'http\.https\:\/\/github\.com\/\.extraheader' && git config --local --unset-all 'http.https://github.com/.extraheader' || :"
+make (5, 15, Probius|Qhira|Ragnaros|Raynor|Rehgar|Rexxar|Samuro|Sgt. Hammer|Sonya|Stitches|Stukov...	UNKNOWN STEP	2026-10-04T09:38:45.4857509Z [command]/usr/bin/git config --local --name-only --get-regexp ^includeIf\.gitdir:
+make (5, 15, Probius|Qhira|Ragnaros|Raynor|Rehgar|Rexxar|Samuro|Sgt. Hammer|Sonya|Stitches|Stukov...	UNKNOWN STEP	2026-10-04T09:38:45.4882360Z [command]/usr/bin/git submodule foreach --recursive git config --local --show-origin --name-only --get-regexp remote.origin.url
+make (5, 15, Probius|Qhira|Ragnaros|Raynor|Rehgar|Rexxar|Samuro|Sgt. Hammer|Sonya|Stitches|Stukov...	UNKNOWN STEP	2026-10-04T09:38:45.5198735Z Cleaning up orphan processes
+make (5, 15, Probius|Qhira|Ragnaros|Raynor|Rehgar|Rexxar|Samuro|Sgt. Hammer|Sonya|Stitches|Stukov...	UNKNOWN STEP	2026-10-04T09:38:45.5442188Z ##[warning]Node.js 20 is deprecated. The following actions target Node.js 20 but are being forced to run on Node.js 24: actions/checkout@v4, actions/upload-artifact@v4. For more information see: https://github.blog/changelog/2025-09-19-deprecation-of-node-20-on-github-actions-runners/

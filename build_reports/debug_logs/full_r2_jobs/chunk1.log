@@ -1,0 +1,372 @@
+make (1, 15, Abathur|Alarak|Alexstrasza|Ana|Anduin|Anub'arak|Artanis|Arthas|Auriel|Azmodan|Blaze|...	UNKNOWN STEP	﻿2026-10-04T09:32:28.6799646Z Current runner version: '2.337.0'
+make (1, 15, Abathur|Alarak|Alexstrasza|Ana|Anduin|Anub'arak|Artanis|Arthas|Auriel|Azmodan|Blaze|...	UNKNOWN STEP	2026-10-04T09:32:28.6823406Z ##[group]Runner Image Provisioner
+make (1, 15, Abathur|Alarak|Alexstrasza|Ana|Anduin|Anub'arak|Artanis|Arthas|Auriel|Azmodan|Blaze|...	UNKNOWN STEP	2026-10-04T09:32:28.6824401Z Hosted Compute Agent
+make (1, 15, Abathur|Alarak|Alexstrasza|Ana|Anduin|Anub'arak|Artanis|Arthas|Auriel|Azmodan|Blaze|...	UNKNOWN STEP	2026-10-04T09:32:28.6825019Z Version: 20260901.588
+make (1, 15, Abathur|Alarak|Alexstrasza|Ana|Anduin|Anub'arak|Artanis|Arthas|Auriel|Azmodan|Blaze|...	UNKNOWN STEP	2026-10-04T09:32:28.6825720Z Commit: f88ec8081b781fac6c440065ac7ff9e710ce3d0b
+make (1, 15, Abathur|Alarak|Alexstrasza|Ana|Anduin|Anub'arak|Artanis|Arthas|Auriel|Azmodan|Blaze|...	UNKNOWN STEP	2026-10-04T09:32:28.6826480Z Build Date: 2026-09-01T19:56:44Z
+make (1, 15, Abathur|Alarak|Alexstrasza|Ana|Anduin|Anub'arak|Artanis|Arthas|Auriel|Azmodan|Blaze|...	UNKNOWN STEP	2026-10-04T09:32:28.6827197Z Worker ID: {b5b1b148-f9f2-4ed8-9806-8a03b5671a22}
+make (1, 15, Abathur|Alarak|Alexstrasza|Ana|Anduin|Anub'arak|Artanis|Arthas|Auriel|Azmodan|Blaze|...	UNKNOWN STEP	2026-10-04T09:32:28.6828273Z Azure Region: westus
+make (1, 15, Abathur|Alarak|Alexstrasza|Ana|Anduin|Anub'arak|Artanis|Arthas|Auriel|Azmodan|Blaze|...	UNKNOWN STEP	2026-10-04T09:32:28.6828891Z ##[endgroup]
+make (1, 15, Abathur|Alarak|Alexstrasza|Ana|Anduin|Anub'arak|Artanis|Arthas|Auriel|Azmodan|Blaze|...	UNKNOWN STEP	2026-10-04T09:32:28.6830556Z ##[group]Operating System
+make (1, 15, Abathur|Alarak|Alexstrasza|Ana|Anduin|Anub'arak|Artanis|Arthas|Auriel|Azmodan|Blaze|...	UNKNOWN STEP	2026-10-04T09:32:28.6831259Z Ubuntu
+make (1, 15, Abathur|Alarak|Alexstrasza|Ana|Anduin|Anub'arak|Artanis|Arthas|Auriel|Azmodan|Blaze|...	UNKNOWN STEP	2026-10-04T09:32:28.6831791Z 22.04.5
+make (1, 15, Abathur|Alarak|Alexstrasza|Ana|Anduin|Anub'arak|Artanis|Arthas|Auriel|Azmodan|Blaze|...	UNKNOWN STEP	2026-10-04T09:32:28.6832371Z LTS
+make (1, 15, Abathur|Alarak|Alexstrasza|Ana|Anduin|Anub'arak|Artanis|Arthas|Auriel|Azmodan|Blaze|...	UNKNOWN STEP	2026-10-04T09:32:28.6832922Z ##[endgroup]
+make (1, 15, Abathur|Alarak|Alexstrasza|Ana|Anduin|Anub'arak|Artanis|Arthas|Auriel|Azmodan|Blaze|...	UNKNOWN STEP	2026-10-04T09:32:28.6833463Z ##[group]Runner Image
+make (1, 15, Abathur|Alarak|Alexstrasza|Ana|Anduin|Anub'arak|Artanis|Arthas|Auriel|Azmodan|Blaze|...	UNKNOWN STEP	2026-10-04T09:32:28.6834178Z Image: ubuntu-22.04
+make (1, 15, Abathur|Alarak|Alexstrasza|Ana|Anduin|Anub'arak|Artanis|Arthas|Auriel|Azmodan|Blaze|...	UNKNOWN STEP	2026-10-04T09:32:28.6834765Z Version: 20260927.309.1
+make (1, 15, Abathur|Alarak|Alexstrasza|Ana|Anduin|Anub'arak|Artanis|Arthas|Auriel|Azmodan|Blaze|...	UNKNOWN STEP	2026-10-04T09:32:28.6836105Z Included Software: https://github.com/actions/runner-images/blob/ubuntu22/20260927.309/images/ubuntu/Ubuntu2204-Readme.md
+make (1, 15, Abathur|Alarak|Alexstrasza|Ana|Anduin|Anub'arak|Artanis|Arthas|Auriel|Azmodan|Blaze|...	UNKNOWN STEP	2026-10-04T09:32:28.6838337Z Image Release: https://github.com/actions/runner-images/releases/tag/ubuntu22%2F20260927.309
+make (1, 15, Abathur|Alarak|Alexstrasza|Ana|Anduin|Anub'arak|Artanis|Arthas|Auriel|Azmodan|Blaze|...	UNKNOWN STEP	2026-10-04T09:32:28.6839491Z ##[endgroup]
+make (1, 15, Abathur|Alarak|Alexstrasza|Ana|Anduin|Anub'arak|Artanis|Arthas|Auriel|Azmodan|Blaze|...	UNKNOWN STEP	2026-10-04T09:32:28.6840629Z ##[group]GITHUB_TOKEN Permissions
+make (1, 15, Abathur|Alarak|Alexstrasza|Ana|Anduin|Anub'arak|Artanis|Arthas|Auriel|Azmodan|Blaze|...	UNKNOWN STEP	2026-10-04T09:32:28.6842774Z Contents: write
+make (1, 15, Abathur|Alarak|Alexstrasza|Ana|Anduin|Anub'arak|Artanis|Arthas|Auriel|Azmodan|Blaze|...	UNKNOWN STEP	2026-10-04T09:32:28.6843395Z Metadata: read
+make (1, 15, Abathur|Alarak|Alexstrasza|Ana|Anduin|Anub'arak|Artanis|Arthas|Auriel|Azmodan|Blaze|...	UNKNOWN STEP	2026-10-04T09:32:28.6844071Z ##[endgroup]
+make (1, 15, Abathur|Alarak|Alexstrasza|Ana|Anduin|Anub'arak|Artanis|Arthas|Auriel|Azmodan|Blaze|...	UNKNOWN STEP	2026-10-04T09:32:28.6846088Z Secret source: Actions
+make (1, 15, Abathur|Alarak|Alexstrasza|Ana|Anduin|Anub'arak|Artanis|Arthas|Auriel|Azmodan|Blaze|...	UNKNOWN STEP	2026-10-04T09:32:28.6847092Z Cache mode: write
+make (1, 15, Abathur|Alarak|Alexstrasza|Ana|Anduin|Anub'arak|Artanis|Arthas|Auriel|Azmodan|Blaze|...	UNKNOWN STEP	2026-10-04T09:32:28.6848300Z Prepare workflow directory
+make (1, 15, Abathur|Alarak|Alexstrasza|Ana|Anduin|Anub'arak|Artanis|Arthas|Auriel|Azmodan|Blaze|...	UNKNOWN STEP	2026-10-04T09:32:28.7296635Z Prepare all required actions
+make (1, 15, Abathur|Alarak|Alexstrasza|Ana|Anduin|Anub'arak|Artanis|Arthas|Auriel|Azmodan|Blaze|...	UNKNOWN STEP	2026-10-04T09:32:28.7344327Z Getting action download info
+make (1, 15, Abathur|Alarak|Alexstrasza|Ana|Anduin|Anub'arak|Artanis|Arthas|Auriel|Azmodan|Blaze|...	UNKNOWN STEP	2026-10-04T09:32:29.0641446Z Download action repository 'actions/checkout@v4' (SHA:11d5960a326750d5838078e36cf38b85af677262)
+make (1, 15, Abathur|Alarak|Alexstrasza|Ana|Anduin|Anub'arak|Artanis|Arthas|Auriel|Azmodan|Blaze|...	UNKNOWN STEP	2026-10-04T09:32:29.1556912Z Download action repository 'actions/upload-artifact@v4' (SHA:ea165f8d65b6e75b540449e92b4886f43607fa02)
+make (1, 15, Abathur|Alarak|Alexstrasza|Ana|Anduin|Anub'arak|Artanis|Arthas|Auriel|Azmodan|Blaze|...	UNKNOWN STEP	2026-10-04T09:32:29.3723218Z Complete job name: make (1, 15, Abathur|Alarak|Alexstrasza|Ana|Anduin|Anub'arak|Artanis|Arthas|Auriel|Azmodan|Blaze|...
+make (1, 15, Abathur|Alarak|Alexstrasza|Ana|Anduin|Anub'arak|Artanis|Arthas|Auriel|Azmodan|Blaze|...	UNKNOWN STEP	2026-10-04T09:32:29.4483304Z ##[group]Run actions/checkout@v4
+make (1, 15, Abathur|Alarak|Alexstrasza|Ana|Anduin|Anub'arak|Artanis|Arthas|Auriel|Azmodan|Blaze|...	UNKNOWN STEP	2026-10-04T09:32:29.4484178Z with:
+make (1, 15, Abathur|Alarak|Alexstrasza|Ana|Anduin|Anub'arak|Artanis|Arthas|Auriel|Azmodan|Blaze|...	UNKNOWN STEP	2026-10-04T09:32:29.4484617Z   ref: chatgpt-stl-builder
+make (1, 15, Abathur|Alarak|Alexstrasza|Ana|Anduin|Anub'arak|Artanis|Arthas|Auriel|Azmodan|Blaze|...	UNKNOWN STEP	2026-10-04T09:32:29.4485111Z   fetch-depth: 1
+make (1, 15, Abathur|Alarak|Alexstrasza|Ana|Anduin|Anub'arak|Artanis|Arthas|Auriel|Azmodan|Blaze|...	UNKNOWN STEP	2026-10-04T09:32:29.4485573Z   repository: JimmyTheCool/HOTS-03
+make (1, 15, Abathur|Alarak|Alexstrasza|Ana|Anduin|Anub'arak|Artanis|Arthas|Auriel|Azmodan|Blaze|...	UNKNOWN STEP	2026-10-04T09:32:29.4489847Z   token: ***
+make (1, 15, Abathur|Alarak|Alexstrasza|Ana|Anduin|Anub'arak|Artanis|Arthas|Auriel|Azmodan|Blaze|...	UNKNOWN STEP	2026-10-04T09:32:29.4490287Z   ssh-strict: true
+make (1, 15, Abathur|Alarak|Alexstrasza|Ana|Anduin|Anub'arak|Artanis|Arthas|Auriel|Azmodan|Blaze|...	UNKNOWN STEP	2026-10-04T09:32:29.4490720Z   ssh-user: git
+make (1, 15, Abathur|Alarak|Alexstrasza|Ana|Anduin|Anub'arak|Artanis|Arthas|Auriel|Azmodan|Blaze|...	UNKNOWN STEP	2026-10-04T09:32:29.4491156Z   persist-credentials: true
+make (1, 15, Abathur|Alarak|Alexstrasza|Ana|Anduin|Anub'arak|Artanis|Arthas|Auriel|Azmodan|Blaze|...	UNKNOWN STEP	2026-10-04T09:32:29.4491632Z   clean: true
+make (1, 15, Abathur|Alarak|Alexstrasza|Ana|Anduin|Anub'arak|Artanis|Arthas|Auriel|Azmodan|Blaze|...	UNKNOWN STEP	2026-10-04T09:32:29.4492070Z   sparse-checkout-cone-mode: true
+make (1, 15, Abathur|Alarak|Alexstrasza|Ana|Anduin|Anub'arak|Artanis|Arthas|Auriel|Azmodan|Blaze|...	UNKNOWN STEP	2026-10-04T09:32:29.4492583Z   fetch-tags: false
+make (1, 15, Abathur|Alarak|Alexstrasza|Ana|Anduin|Anub'arak|Artanis|Arthas|Auriel|Azmodan|Blaze|...	UNKNOWN STEP	2026-10-04T09:32:29.4493026Z   show-progress: true
+make (1, 15, Abathur|Alarak|Alexstrasza|Ana|Anduin|Anub'arak|Artanis|Arthas|Auriel|Azmodan|Blaze|...	UNKNOWN STEP	2026-10-04T09:32:29.4493467Z   lfs: false
+make (1, 15, Abathur|Alarak|Alexstrasza|Ana|Anduin|Anub'arak|Artanis|Arthas|Auriel|Azmodan|Blaze|...	UNKNOWN STEP	2026-10-04T09:32:29.4493876Z   submodules: false
+make (1, 15, Abathur|Alarak|Alexstrasza|Ana|Anduin|Anub'arak|Artanis|Arthas|Auriel|Azmodan|Blaze|...	UNKNOWN STEP	2026-10-04T09:32:29.4494323Z   set-safe-directory: true
+make (1, 15, Abathur|Alarak|Alexstrasza|Ana|Anduin|Anub'arak|Artanis|Arthas|Auriel|Azmodan|Blaze|...	UNKNOWN STEP	2026-10-04T09:32:29.4494833Z   allow-unsafe-pr-checkout: false
+make (1, 15, Abathur|Alarak|Alexstrasza|Ana|Anduin|Anub'arak|Artanis|Arthas|Auriel|Azmodan|Blaze|...	UNKNOWN STEP	2026-10-04T09:32:29.4495580Z env:
+make (1, 15, Abathur|Alarak|Alexstrasza|Ana|Anduin|Anub'arak|Artanis|Arthas|Auriel|Azmodan|Blaze|...	UNKNOWN STEP	2026-10-04T09:32:29.4495977Z   BV: 3.6.23
+make (1, 15, Abathur|Alarak|Alexstrasza|Ana|Anduin|Anub'arak|Artanis|Arthas|Auriel|Azmodan|Blaze|...	UNKNOWN STEP	2026-10-04T09:32:29.4496419Z   M3: 58935005c4465a219a740f6b740253533eda773f
+make (1, 15, Abathur|Alarak|Alexstrasza|Ana|Anduin|Anub'arak|Artanis|Arthas|Auriel|Azmodan|Blaze|...	UNKNOWN STEP	2026-10-04T09:32:29.4497034Z ##[endgroup]
+make (1, 15, Abathur|Alarak|Alexstrasza|Ana|Anduin|Anub'arak|Artanis|Arthas|Auriel|Azmodan|Blaze|...	UNKNOWN STEP	2026-10-04T09:32:29.5602601Z Syncing repository: JimmyTheCool/HOTS-03
+make (1, 15, Abathur|Alarak|Alexstrasza|Ana|Anduin|Anub'arak|Artanis|Arthas|Auriel|Azmodan|Blaze|...	UNKNOWN STEP	2026-10-04T09:32:29.5605142Z ##[group]Getting Git version info
+make (1, 15, Abathur|Alarak|Alexstrasza|Ana|Anduin|Anub'arak|Artanis|Arthas|Auriel|Azmodan|Blaze|...	UNKNOWN STEP	2026-10-04T09:32:29.5606267Z Working directory is '/home/runner/work/HOTS-03/HOTS-03'
+make (1, 15, Abathur|Alarak|Alexstrasza|Ana|Anduin|Anub'arak|Artanis|Arthas|Auriel|Azmodan|Blaze|...	UNKNOWN STEP	2026-10-04T09:32:29.5608580Z [command]/usr/bin/git version
+make (1, 15, Abathur|Alarak|Alexstrasza|Ana|Anduin|Anub'arak|Artanis|Arthas|Auriel|Azmodan|Blaze|...	UNKNOWN STEP	2026-10-04T09:32:29.5655333Z git version 2.55.0
+make (1, 15, Abathur|Alarak|Alexstrasza|Ana|Anduin|Anub'arak|Artanis|Arthas|Auriel|Azmodan|Blaze|...	UNKNOWN STEP	2026-10-04T09:32:29.5678036Z ##[endgroup]
+make (1, 15, Abathur|Alarak|Alexstrasza|Ana|Anduin|Anub'arak|Artanis|Arthas|Auriel|Azmodan|Blaze|...	UNKNOWN STEP	2026-10-04T09:32:29.5693265Z Temporarily overriding HOME='/home/runner/work/_temp/8156e8da-8e18-4123-b733-38d3b8c6d3b6' before making global git config changes
+make (1, 15, Abathur|Alarak|Alexstrasza|Ana|Anduin|Anub'arak|Artanis|Arthas|Auriel|Azmodan|Blaze|...	UNKNOWN STEP	2026-10-04T09:32:29.5695528Z Adding repository directory to the temporary git global config as a safe directory
+make (1, 15, Abathur|Alarak|Alexstrasza|Ana|Anduin|Anub'arak|Artanis|Arthas|Auriel|Azmodan|Blaze|...	UNKNOWN STEP	2026-10-04T09:32:29.5699463Z [command]/usr/bin/git config --global --add safe.directory /home/runner/work/HOTS-03/HOTS-03
+make (1, 15, Abathur|Alarak|Alexstrasza|Ana|Anduin|Anub'arak|Artanis|Arthas|Auriel|Azmodan|Blaze|...	UNKNOWN STEP	2026-10-04T09:32:29.5737536Z Deleting the contents of '/home/runner/work/HOTS-03/HOTS-03'
+make (1, 15, Abathur|Alarak|Alexstrasza|Ana|Anduin|Anub'arak|Artanis|Arthas|Auriel|Azmodan|Blaze|...	UNKNOWN STEP	2026-10-04T09:32:29.5742147Z ##[group]Initializing the repository
+make (1, 15, Abathur|Alarak|Alexstrasza|Ana|Anduin|Anub'arak|Artanis|Arthas|Auriel|Azmodan|Blaze|...	UNKNOWN STEP	2026-10-04T09:32:29.5745781Z [command]/usr/bin/git init /home/runner/work/HOTS-03/HOTS-03
+make (1, 15, Abathur|Alarak|Alexstrasza|Ana|Anduin|Anub'arak|Artanis|Arthas|Auriel|Azmodan|Blaze|...	UNKNOWN STEP	2026-10-04T09:32:29.5867362Z hint: Using 'master' as the name for the initial branch. This default branch name
+make (1, 15, Abathur|Alarak|Alexstrasza|Ana|Anduin|Anub'arak|Artanis|Arthas|Auriel|Azmodan|Blaze|...	UNKNOWN STEP	2026-10-04T09:32:29.5869902Z hint: will change to "main" in Git 3.0. To configure the initial branch name
+make (1, 15, Abathur|Alarak|Alexstrasza|Ana|Anduin|Anub'arak|Artanis|Arthas|Auriel|Azmodan|Blaze|...	UNKNOWN STEP	2026-10-04T09:32:29.5872156Z hint: to use in all of your new repositories, which will suppress this warning,
+make (1, 15, Abathur|Alarak|Alexstrasza|Ana|Anduin|Anub'arak|Artanis|Arthas|Auriel|Azmodan|Blaze|...	UNKNOWN STEP	2026-10-04T09:32:29.5874052Z hint: call:
+make (1, 15, Abathur|Alarak|Alexstrasza|Ana|Anduin|Anub'arak|Artanis|Arthas|Auriel|Azmodan|Blaze|...	UNKNOWN STEP	2026-10-04T09:32:29.5875166Z hint:
+make (1, 15, Abathur|Alarak|Alexstrasza|Ana|Anduin|Anub'arak|Artanis|Arthas|Auriel|Azmodan|Blaze|...	UNKNOWN STEP	2026-10-04T09:32:29.5876574Z hint: 	git config --global init.defaultBranch <name>
+make (1, 15, Abathur|Alarak|Alexstrasza|Ana|Anduin|Anub'arak|Artanis|Arthas|Auriel|Azmodan|Blaze|...	UNKNOWN STEP	2026-10-04T09:32:29.5878463Z hint:
+make (1, 15, Abathur|Alarak|Alexstrasza|Ana|Anduin|Anub'arak|Artanis|Arthas|Auriel|Azmodan|Blaze|...	UNKNOWN STEP	2026-10-04T09:32:29.5879868Z hint: Names commonly chosen instead of 'master' are 'main', 'trunk' and
+make (1, 15, Abathur|Alarak|Alexstrasza|Ana|Anduin|Anub'arak|Artanis|Arthas|Auriel|Azmodan|Blaze|...	UNKNOWN STEP	2026-10-04T09:32:29.5882149Z hint: 'development'. The just-created branch can be renamed via this command:
+make (1, 15, Abathur|Alarak|Alexstrasza|Ana|Anduin|Anub'arak|Artanis|Arthas|Auriel|Azmodan|Blaze|...	UNKNOWN STEP	2026-10-04T09:32:29.5883880Z hint:
+make (1, 15, Abathur|Alarak|Alexstrasza|Ana|Anduin|Anub'arak|Artanis|Arthas|Auriel|Azmodan|Blaze|...	UNKNOWN STEP	2026-10-04T09:32:29.5884962Z hint: 	git branch -m <name>
+make (1, 15, Abathur|Alarak|Alexstrasza|Ana|Anduin|Anub'arak|Artanis|Arthas|Auriel|Azmodan|Blaze|...	UNKNOWN STEP	2026-10-04T09:32:29.5886072Z hint:
+make (1, 15, Abathur|Alarak|Alexstrasza|Ana|Anduin|Anub'arak|Artanis|Arthas|Auriel|Azmodan|Blaze|...	UNKNOWN STEP	2026-10-04T09:32:29.5887380Z hint: Disable this message with "git config set advice.defaultBranchName false"
+make (1, 15, Abathur|Alarak|Alexstrasza|Ana|Anduin|Anub'arak|Artanis|Arthas|Auriel|Azmodan|Blaze|...	UNKNOWN STEP	2026-10-04T09:32:29.5889639Z Initialized empty Git repository in /home/runner/work/HOTS-03/HOTS-03/.git/
+make (1, 15, Abathur|Alarak|Alexstrasza|Ana|Anduin|Anub'arak|Artanis|Arthas|Auriel|Azmodan|Blaze|...	UNKNOWN STEP	2026-10-04T09:32:29.5892740Z [command]/usr/bin/git remote add origin https://github.com/JimmyTheCool/HOTS-03
+make (1, 15, Abathur|Alarak|Alexstrasza|Ana|Anduin|Anub'arak|Artanis|Arthas|Auriel|Azmodan|Blaze|...	UNKNOWN STEP	2026-10-04T09:32:29.5932490Z ##[endgroup]
+make (1, 15, Abathur|Alarak|Alexstrasza|Ana|Anduin|Anub'arak|Artanis|Arthas|Auriel|Azmodan|Blaze|...	UNKNOWN STEP	2026-10-04T09:32:29.5933816Z ##[group]Disabling automatic garbage collection
+make (1, 15, Abathur|Alarak|Alexstrasza|Ana|Anduin|Anub'arak|Artanis|Arthas|Auriel|Azmodan|Blaze|...	UNKNOWN STEP	2026-10-04T09:32:29.5944309Z [command]/usr/bin/git config --local gc.auto 0
+make (1, 15, Abathur|Alarak|Alexstrasza|Ana|Anduin|Anub'arak|Artanis|Arthas|Auriel|Azmodan|Blaze|...	UNKNOWN STEP	2026-10-04T09:32:29.5974753Z ##[endgroup]
+make (1, 15, Abathur|Alarak|Alexstrasza|Ana|Anduin|Anub'arak|Artanis|Arthas|Auriel|Azmodan|Blaze|...	UNKNOWN STEP	2026-10-04T09:32:29.5975731Z ##[group]Setting up auth
+make (1, 15, Abathur|Alarak|Alexstrasza|Ana|Anduin|Anub'arak|Artanis|Arthas|Auriel|Azmodan|Blaze|...	UNKNOWN STEP	2026-10-04T09:32:29.5984072Z [command]/usr/bin/git config --local --name-only --get-regexp core\.sshCommand
+make (1, 15, Abathur|Alarak|Alexstrasza|Ana|Anduin|Anub'arak|Artanis|Arthas|Auriel|Azmodan|Blaze|...	UNKNOWN STEP	2026-10-04T09:32:29.6023602Z [command]/usr/bin/git submodule foreach --recursive sh -c "git config --local --name-only --get-regexp 'core\.sshCommand' && git config --local --unset-all 'core.sshCommand' || :"
+make (1, 15, Abathur|Alarak|Alexstrasza|Ana|Anduin|Anub'arak|Artanis|Arthas|Auriel|Azmodan|Blaze|...	UNKNOWN STEP	2026-10-04T09:32:29.6454917Z [command]/usr/bin/git config --local --name-only --get-regexp http\.https\:\/\/github\.com\/\.extraheader
+make (1, 15, Abathur|Alarak|Alexstrasza|Ana|Anduin|Anub'arak|Artanis|Arthas|Auriel|Azmodan|Blaze|...	UNKNOWN STEP	2026-10-04T09:32:29.6511885Z [command]/usr/bin/git submodule foreach --recursive sh -c "git config --local --name-only --get-regexp 'http\.https\:\/\/github\.com\/\.extraheader' && git config --local --unset-all 'http.https://github.com/.extraheader' || :"
+make (1, 15, Abathur|Alarak|Alexstrasza|Ana|Anduin|Anub'arak|Artanis|Arthas|Auriel|Azmodan|Blaze|...	UNKNOWN STEP	2026-10-04T09:32:29.6789032Z [command]/usr/bin/git config --local --name-only --get-regexp ^includeIf\.gitdir:
+make (1, 15, Abathur|Alarak|Alexstrasza|Ana|Anduin|Anub'arak|Artanis|Arthas|Auriel|Azmodan|Blaze|...	UNKNOWN STEP	2026-10-04T09:32:29.6829014Z [command]/usr/bin/git submodule foreach --recursive git config --local --show-origin --name-only --get-regexp remote.origin.url
+make (1, 15, Abathur|Alarak|Alexstrasza|Ana|Anduin|Anub'arak|Artanis|Arthas|Auriel|Azmodan|Blaze|...	UNKNOWN STEP	2026-10-04T09:32:29.7091225Z [command]/usr/bin/git config --local http.https://github.com/.extraheader AUTHORIZATION: basic ***
+make (1, 15, Abathur|Alarak|Alexstrasza|Ana|Anduin|Anub'arak|Artanis|Arthas|Auriel|Azmodan|Blaze|...	UNKNOWN STEP	2026-10-04T09:32:29.7138003Z ##[endgroup]
+make (1, 15, Abathur|Alarak|Alexstrasza|Ana|Anduin|Anub'arak|Artanis|Arthas|Auriel|Azmodan|Blaze|...	UNKNOWN STEP	2026-10-04T09:32:29.7139029Z ##[group]Fetching the repository
+make (1, 15, Abathur|Alarak|Alexstrasza|Ana|Anduin|Anub'arak|Artanis|Arthas|Auriel|Azmodan|Blaze|...	UNKNOWN STEP	2026-10-04T09:32:29.7148204Z [command]/usr/bin/git -c protocol.version=2 fetch --no-tags --prune --no-recurse-submodules --depth=1 origin +refs/heads/chatgpt-stl-builder*:refs/remotes/origin/chatgpt-stl-builder* +refs/tags/chatgpt-stl-builder*:refs/tags/chatgpt-stl-builder*
+make (1, 15, Abathur|Alarak|Alexstrasza|Ana|Anduin|Anub'arak|Artanis|Arthas|Auriel|Azmodan|Blaze|...	UNKNOWN STEP	2026-10-04T09:32:45.0983120Z From https://github.com/JimmyTheCool/HOTS-03
+make (1, 15, Abathur|Alarak|Alexstrasza|Ana|Anduin|Anub'arak|Artanis|Arthas|Auriel|Azmodan|Blaze|...	UNKNOWN STEP	2026-10-04T09:32:45.0984798Z  * [new branch]      chatgpt-stl-builder -> origin/chatgpt-stl-builder
+make (1, 15, Abathur|Alarak|Alexstrasza|Ana|Anduin|Anub'arak|Artanis|Arthas|Auriel|Azmodan|Blaze|...	UNKNOWN STEP	2026-10-04T09:32:45.0989026Z ##[endgroup]
+make (1, 15, Abathur|Alarak|Alexstrasza|Ana|Anduin|Anub'arak|Artanis|Arthas|Auriel|Azmodan|Blaze|...	UNKNOWN STEP	2026-10-04T09:32:45.0990693Z ##[group]Determining the checkout info
+make (1, 15, Abathur|Alarak|Alexstrasza|Ana|Anduin|Anub'arak|Artanis|Arthas|Auriel|Azmodan|Blaze|...	UNKNOWN STEP	2026-10-04T09:32:45.0996665Z [command]/usr/bin/git branch --list --remote origin/chatgpt-stl-builder
+make (1, 15, Abathur|Alarak|Alexstrasza|Ana|Anduin|Anub'arak|Artanis|Arthas|Auriel|Azmodan|Blaze|...	UNKNOWN STEP	2026-10-04T09:32:45.1029872Z   origin/chatgpt-stl-builder
+make (1, 15, Abathur|Alarak|Alexstrasza|Ana|Anduin|Anub'arak|Artanis|Arthas|Auriel|Azmodan|Blaze|...	UNKNOWN STEP	2026-10-04T09:32:45.1034796Z ##[endgroup]
+make (1, 15, Abathur|Alarak|Alexstrasza|Ana|Anduin|Anub'arak|Artanis|Arthas|Auriel|Azmodan|Blaze|...	UNKNOWN STEP	2026-10-04T09:32:45.1040109Z [command]/usr/bin/git sparse-checkout disable
+make (1, 15, Abathur|Alarak|Alexstrasza|Ana|Anduin|Anub'arak|Artanis|Arthas|Auriel|Azmodan|Blaze|...	UNKNOWN STEP	2026-10-04T09:32:45.1091477Z [command]/usr/bin/git config --local --unset-all extensions.worktreeConfig
+make (1, 15, Abathur|Alarak|Alexstrasza|Ana|Anduin|Anub'arak|Artanis|Arthas|Auriel|Azmodan|Blaze|...	UNKNOWN STEP	2026-10-04T09:32:45.1129722Z ##[group]Checking out the ref
+make (1, 15, Abathur|Alarak|Alexstrasza|Ana|Anduin|Anub'arak|Artanis|Arthas|Auriel|Azmodan|Blaze|...	UNKNOWN STEP	2026-10-04T09:32:45.1133442Z [command]/usr/bin/git checkout --progress --force -B chatgpt-stl-builder refs/remotes/origin/chatgpt-stl-builder
+make (1, 15, Abathur|Alarak|Alexstrasza|Ana|Anduin|Anub'arak|Artanis|Arthas|Auriel|Azmodan|Blaze|...	UNKNOWN STEP	2026-10-04T09:32:46.1665848Z Updating files:  36% (278/771)
+make (1, 15, Abathur|Alarak|Alexstrasza|Ana|Anduin|Anub'arak|Artanis|Arthas|Auriel|Azmodan|Blaze|...	UNKNOWN STEP	2026-10-04T09:32:46.2021134Z Updating files:  37% (286/771)
+make (1, 15, Abathur|Alarak|Alexstrasza|Ana|Anduin|Anub'arak|Artanis|Arthas|Auriel|Azmodan|Blaze|...	UNKNOWN STEP	2026-10-04T09:32:46.2283566Z Updating files:  38% (293/771)
+make (1, 15, Abathur|Alarak|Alexstrasza|Ana|Anduin|Anub'arak|Artanis|Arthas|Auriel|Azmodan|Blaze|...	UNKNOWN STEP	2026-10-04T09:32:46.2525084Z Updating files:  39% (301/771)
+make (1, 15, Abathur|Alarak|Alexstrasza|Ana|Anduin|Anub'arak|Artanis|Arthas|Auriel|Azmodan|Blaze|...	UNKNOWN STEP	2026-10-04T09:32:46.2664013Z Updating files:  40% (309/771)
+make (1, 15, Abathur|Alarak|Alexstrasza|Ana|Anduin|Anub'arak|Artanis|Arthas|Auriel|Azmodan|Blaze|...	UNKNOWN STEP	2026-10-04T09:32:46.3001526Z Updating files:  41% (317/771)
+make (1, 15, Abathur|Alarak|Alexstrasza|Ana|Anduin|Anub'arak|Artanis|Arthas|Auriel|Azmodan|Blaze|...	UNKNOWN STEP	2026-10-04T09:32:46.3185215Z Updating files:  42% (324/771)
+make (1, 15, Abathur|Alarak|Alexstrasza|Ana|Anduin|Anub'arak|Artanis|Arthas|Auriel|Azmodan|Blaze|...	UNKNOWN STEP	2026-10-04T09:32:46.3445257Z Updating files:  43% (332/771)
+make (1, 15, Abathur|Alarak|Alexstrasza|Ana|Anduin|Anub'arak|Artanis|Arthas|Auriel|Azmodan|Blaze|...	UNKNOWN STEP	2026-10-04T09:32:46.3781487Z Updating files:  44% (340/771)
+make (1, 15, Abathur|Alarak|Alexstrasza|Ana|Anduin|Anub'arak|Artanis|Arthas|Auriel|Azmodan|Blaze|...	UNKNOWN STEP	2026-10-04T09:32:46.3958609Z Updating files:  45% (347/771)
+make (1, 15, Abathur|Alarak|Alexstrasza|Ana|Anduin|Anub'arak|Artanis|Arthas|Auriel|Azmodan|Blaze|...	UNKNOWN STEP	2026-10-04T09:32:46.4160757Z Updating files:  46% (355/771)
+make (1, 15, Abathur|Alarak|Alexstrasza|Ana|Anduin|Anub'arak|Artanis|Arthas|Auriel|Azmodan|Blaze|...	UNKNOWN STEP	2026-10-04T09:32:46.4507004Z Updating files:  47% (363/771)
+make (1, 15, Abathur|Alarak|Alexstrasza|Ana|Anduin|Anub'arak|Artanis|Arthas|Auriel|Azmodan|Blaze|...	UNKNOWN STEP	2026-10-04T09:32:46.4725132Z Updating files:  48% (371/771)
+make (1, 15, Abathur|Alarak|Alexstrasza|Ana|Anduin|Anub'arak|Artanis|Arthas|Auriel|Azmodan|Blaze|...	UNKNOWN STEP	2026-10-04T09:32:46.5017081Z Updating files:  49% (378/771)
+make (1, 15, Abathur|Alarak|Alexstrasza|Ana|Anduin|Anub'arak|Artanis|Arthas|Auriel|Azmodan|Blaze|...	UNKNOWN STEP	2026-10-04T09:32:46.5247734Z Updating files:  50% (386/771)
+make (1, 15, Abathur|Alarak|Alexstrasza|Ana|Anduin|Anub'arak|Artanis|Arthas|Auriel|Azmodan|Blaze|...	UNKNOWN STEP	2026-10-04T09:32:46.5520057Z Updating files:  51% (394/771)
+make (1, 15, Abathur|Alarak|Alexstrasza|Ana|Anduin|Anub'arak|Artanis|Arthas|Auriel|Azmodan|Blaze|...	UNKNOWN STEP	2026-10-04T09:32:46.5991509Z Updating files:  52% (401/771)
+make (1, 15, Abathur|Alarak|Alexstrasza|Ana|Anduin|Anub'arak|Artanis|Arthas|Auriel|Azmodan|Blaze|...	UNKNOWN STEP	2026-10-04T09:32:46.6201139Z Updating files:  53% (409/771)
+make (1, 15, Abathur|Alarak|Alexstrasza|Ana|Anduin|Anub'arak|Artanis|Arthas|Auriel|Azmodan|Blaze|...	UNKNOWN STEP	2026-10-04T09:32:46.6452300Z Updating files:  54% (417/771)
+make (1, 15, Abathur|Alarak|Alexstrasza|Ana|Anduin|Anub'arak|Artanis|Arthas|Auriel|Azmodan|Blaze|...	UNKNOWN STEP	2026-10-04T09:32:46.6851592Z Updating files:  55% (425/771)
+make (1, 15, Abathur|Alarak|Alexstrasza|Ana|Anduin|Anub'arak|Artanis|Arthas|Auriel|Azmodan|Blaze|...	UNKNOWN STEP	2026-10-04T09:32:46.7153767Z Updating files:  56% (432/771)
+make (1, 15, Abathur|Alarak|Alexstrasza|Ana|Anduin|Anub'arak|Artanis|Arthas|Auriel|Azmodan|Blaze|...	UNKNOWN STEP	2026-10-04T09:32:46.7614132Z Updating files:  57% (440/771)
+make (1, 15, Abathur|Alarak|Alexstrasza|Ana|Anduin|Anub'arak|Artanis|Arthas|Auriel|Azmodan|Blaze|...	UNKNOWN STEP	2026-10-04T09:32:46.7802128Z Updating files:  58% (448/771)
+make (1, 15, Abathur|Alarak|Alexstrasza|Ana|Anduin|Anub'arak|Artanis|Arthas|Auriel|Azmodan|Blaze|...	UNKNOWN STEP	2026-10-04T09:32:46.8276792Z Updating files:  59% (455/771)
+make (1, 15, Abathur|Alarak|Alexstrasza|Ana|Anduin|Anub'arak|Artanis|Arthas|Auriel|Azmodan|Blaze|...	UNKNOWN STEP	2026-10-04T09:32:46.8428191Z Updating files:  60% (463/771)
+make (1, 15, Abathur|Alarak|Alexstrasza|Ana|Anduin|Anub'arak|Artanis|Arthas|Auriel|Azmodan|Blaze|...	UNKNOWN STEP	2026-10-04T09:32:46.8705838Z Updating files:  61% (471/771)
+make (1, 15, Abathur|Alarak|Alexstrasza|Ana|Anduin|Anub'arak|Artanis|Arthas|Auriel|Azmodan|Blaze|...	UNKNOWN STEP	2026-10-04T09:32:46.9024897Z Updating files:  62% (479/771)
+make (1, 15, Abathur|Alarak|Alexstrasza|Ana|Anduin|Anub'arak|Artanis|Arthas|Auriel|Azmodan|Blaze|...	UNKNOWN STEP	2026-10-04T09:32:46.9303845Z Updating files:  63% (486/771)
+make (1, 15, Abathur|Alarak|Alexstrasza|Ana|Anduin|Anub'arak|Artanis|Arthas|Auriel|Azmodan|Blaze|...	UNKNOWN STEP	2026-10-04T09:32:46.9679013Z Updating files:  64% (494/771)
+make (1, 15, Abathur|Alarak|Alexstrasza|Ana|Anduin|Anub'arak|Artanis|Arthas|Auriel|Azmodan|Blaze|...	UNKNOWN STEP	2026-10-04T09:32:47.0216379Z Updating files:  65% (502/771)
+make (1, 15, Abathur|Alarak|Alexstrasza|Ana|Anduin|Anub'arak|Artanis|Arthas|Auriel|Azmodan|Blaze|...	UNKNOWN STEP	2026-10-04T09:32:47.0553182Z Updating files:  66% (509/771)
+make (1, 15, Abathur|Alarak|Alexstrasza|Ana|Anduin|Anub'arak|Artanis|Arthas|Auriel|Azmodan|Blaze|...	UNKNOWN STEP	2026-10-04T09:32:47.0786028Z Updating files:  67% (517/771)
+make (1, 15, Abathur|Alarak|Alexstrasza|Ana|Anduin|Anub'arak|Artanis|Arthas|Auriel|Azmodan|Blaze|...	UNKNOWN STEP	2026-10-04T09:32:47.1091486Z Updating files:  68% (525/771)
+make (1, 15, Abathur|Alarak|Alexstrasza|Ana|Anduin|Anub'arak|Artanis|Arthas|Auriel|Azmodan|Blaze|...	UNKNOWN STEP	2026-10-04T09:32:47.1249673Z Updating files:  69% (532/771)
+make (1, 15, Abathur|Alarak|Alexstrasza|Ana|Anduin|Anub'arak|Artanis|Arthas|Auriel|Azmodan|Blaze|...	UNKNOWN STEP	2026-10-04T09:32:47.1618138Z Updating files:  69% (535/771)
+make (1, 15, Abathur|Alarak|Alexstrasza|Ana|Anduin|Anub'arak|Artanis|Arthas|Auriel|Azmodan|Blaze|...	UNKNOWN STEP	2026-10-04T09:32:47.1880722Z Updating files:  70% (540/771)
+make (1, 15, Abathur|Alarak|Alexstrasza|Ana|Anduin|Anub'arak|Artanis|Arthas|Auriel|Azmodan|Blaze|...	UNKNOWN STEP	2026-10-04T09:32:47.2371177Z Updating files:  71% (548/771)
+make (1, 15, Abathur|Alarak|Alexstrasza|Ana|Anduin|Anub'arak|Artanis|Arthas|Auriel|Azmodan|Blaze|...	UNKNOWN STEP	2026-10-04T09:32:47.2694682Z Updating files:  72% (556/771)
+make (1, 15, Abathur|Alarak|Alexstrasza|Ana|Anduin|Anub'arak|Artanis|Arthas|Auriel|Azmodan|Blaze|...	UNKNOWN STEP	2026-10-04T09:32:47.3021673Z Updating files:  73% (563/771)
+make (1, 15, Abathur|Alarak|Alexstrasza|Ana|Anduin|Anub'arak|Artanis|Arthas|Auriel|Azmodan|Blaze|...	UNKNOWN STEP	2026-10-04T09:32:47.3365125Z Updating files:  74% (571/771)
+make (1, 15, Abathur|Alarak|Alexstrasza|Ana|Anduin|Anub'arak|Artanis|Arthas|Auriel|Azmodan|Blaze|...	UNKNOWN STEP	2026-10-04T09:32:47.3519005Z Updating files:  75% (579/771)
+make (1, 15, Abathur|Alarak|Alexstrasza|Ana|Anduin|Anub'arak|Artanis|Arthas|Auriel|Azmodan|Blaze|...	UNKNOWN STEP	2026-10-04T09:32:47.3839324Z Updating files:  76% (586/771)
+make (1, 15, Abathur|Alarak|Alexstrasza|Ana|Anduin|Anub'arak|Artanis|Arthas|Auriel|Azmodan|Blaze|...	UNKNOWN STEP	2026-10-04T09:32:47.4012103Z Updating files:  77% (594/771)
+make (1, 15, Abathur|Alarak|Alexstrasza|Ana|Anduin|Anub'arak|Artanis|Arthas|Auriel|Azmodan|Blaze|...	UNKNOWN STEP	2026-10-04T09:32:47.4439831Z Updating files:  78% (602/771)
+make (1, 15, Abathur|Alarak|Alexstrasza|Ana|Anduin|Anub'arak|Artanis|Arthas|Auriel|Azmodan|Blaze|...	UNKNOWN STEP	2026-10-04T09:32:47.4589123Z Updating files:  79% (610/771)
+make (1, 15, Abathur|Alarak|Alexstrasza|Ana|Anduin|Anub'arak|Artanis|Arthas|Auriel|Azmodan|Blaze|...	UNKNOWN STEP	2026-10-04T09:32:47.4804146Z Updating files:  80% (617/771)
+make (1, 15, Abathur|Alarak|Alexstrasza|Ana|Anduin|Anub'arak|Artanis|Arthas|Auriel|Azmodan|Blaze|...	UNKNOWN STEP	2026-10-04T09:32:47.5294076Z Updating files:  81% (625/771)
+make (1, 15, Abathur|Alarak|Alexstrasza|Ana|Anduin|Anub'arak|Artanis|Arthas|Auriel|Azmodan|Blaze|...	UNKNOWN STEP	2026-10-04T09:32:47.5442295Z Updating files:  82% (633/771)
+make (1, 15, Abathur|Alarak|Alexstrasza|Ana|Anduin|Anub'arak|Artanis|Arthas|Auriel|Azmodan|Blaze|...	UNKNOWN STEP	2026-10-04T09:32:47.5892987Z Updating files:  83% (640/771)
+make (1, 15, Abathur|Alarak|Alexstrasza|Ana|Anduin|Anub'arak|Artanis|Arthas|Auriel|Azmodan|Blaze|...	UNKNOWN STEP	2026-10-04T09:32:47.6257395Z Updating files:  84% (648/771)
+make (1, 15, Abathur|Alarak|Alexstrasza|Ana|Anduin|Anub'arak|Artanis|Arthas|Auriel|Azmodan|Blaze|...	UNKNOWN STEP	2026-10-04T09:32:47.6501584Z Updating files:  85% (656/771)
+make (1, 15, Abathur|Alarak|Alexstrasza|Ana|Anduin|Anub'arak|Artanis|Arthas|Auriel|Azmodan|Blaze|...	UNKNOWN STEP	2026-10-04T09:32:47.6653529Z Updating files:  86% (664/771)
+make (1, 15, Abathur|Alarak|Alexstrasza|Ana|Anduin|Anub'arak|Artanis|Arthas|Auriel|Azmodan|Blaze|...	UNKNOWN STEP	2026-10-04T09:32:47.7186054Z Updating files:  87% (671/771)
+make (1, 15, Abathur|Alarak|Alexstrasza|Ana|Anduin|Anub'arak|Artanis|Arthas|Auriel|Azmodan|Blaze|...	UNKNOWN STEP	2026-10-04T09:32:47.7375369Z Updating files:  88% (679/771)
+make (1, 15, Abathur|Alarak|Alexstrasza|Ana|Anduin|Anub'arak|Artanis|Arthas|Auriel|Azmodan|Blaze|...	UNKNOWN STEP	2026-10-04T09:32:47.7697284Z Updating files:  89% (687/771)
+make (1, 15, Abathur|Alarak|Alexstrasza|Ana|Anduin|Anub'arak|Artanis|Arthas|Auriel|Azmodan|Blaze|...	UNKNOWN STEP	2026-10-04T09:32:47.7890471Z Updating files:  90% (694/771)
+make (1, 15, Abathur|Alarak|Alexstrasza|Ana|Anduin|Anub'arak|Artanis|Arthas|Auriel|Azmodan|Blaze|...	UNKNOWN STEP	2026-10-04T09:32:47.8067616Z Updating files:  91% (702/771)
+make (1, 15, Abathur|Alarak|Alexstrasza|Ana|Anduin|Anub'arak|Artanis|Arthas|Auriel|Azmodan|Blaze|...	UNKNOWN STEP	2026-10-04T09:32:47.8264247Z Updating files:  92% (710/771)
+make (1, 15, Abathur|Alarak|Alexstrasza|Ana|Anduin|Anub'arak|Artanis|Arthas|Auriel|Azmodan|Blaze|...	UNKNOWN STEP	2026-10-04T09:32:47.8505686Z Updating files:  93% (718/771)
+make (1, 15, Abathur|Alarak|Alexstrasza|Ana|Anduin|Anub'arak|Artanis|Arthas|Auriel|Azmodan|Blaze|...	UNKNOWN STEP	2026-10-04T09:32:47.8646459Z Updating files:  94% (725/771)
+make (1, 15, Abathur|Alarak|Alexstrasza|Ana|Anduin|Anub'arak|Artanis|Arthas|Auriel|Azmodan|Blaze|...	UNKNOWN STEP	2026-10-04T09:32:47.8836153Z Updating files:  95% (733/771)
+make (1, 15, Abathur|Alarak|Alexstrasza|Ana|Anduin|Anub'arak|Artanis|Arthas|Auriel|Azmodan|Blaze|...	UNKNOWN STEP	2026-10-04T09:32:47.9166230Z Updating files:  96% (741/771)
+make (1, 15, Abathur|Alarak|Alexstrasza|Ana|Anduin|Anub'arak|Artanis|Arthas|Auriel|Azmodan|Blaze|...	UNKNOWN STEP	2026-10-04T09:32:47.9320102Z Updating files:  97% (748/771)
+make (1, 15, Abathur|Alarak|Alexstrasza|Ana|Anduin|Anub'arak|Artanis|Arthas|Auriel|Azmodan|Blaze|...	UNKNOWN STEP	2026-10-04T09:32:47.9473306Z Updating files:  98% (756/771)
+make (1, 15, Abathur|Alarak|Alexstrasza|Ana|Anduin|Anub'arak|Artanis|Arthas|Auriel|Azmodan|Blaze|...	UNKNOWN STEP	2026-10-04T09:32:47.9547305Z Updating files:  99% (764/771)
+make (1, 15, Abathur|Alarak|Alexstrasza|Ana|Anduin|Anub'arak|Artanis|Arthas|Auriel|Azmodan|Blaze|...	UNKNOWN STEP	2026-10-04T09:32:47.9548092Z Updating files: 100% (771/771)
+make (1, 15, Abathur|Alarak|Alexstrasza|Ana|Anduin|Anub'arak|Artanis|Arthas|Auriel|Azmodan|Blaze|...	UNKNOWN STEP	2026-10-04T09:32:47.9548488Z Updating files: 100% (771/771), done.
+make (1, 15, Abathur|Alarak|Alexstrasza|Ana|Anduin|Anub'arak|Artanis|Arthas|Auriel|Azmodan|Blaze|...	UNKNOWN STEP	2026-10-04T09:32:47.9583509Z Switched to a new branch 'chatgpt-stl-builder'
+make (1, 15, Abathur|Alarak|Alexstrasza|Ana|Anduin|Anub'arak|Artanis|Arthas|Auriel|Azmodan|Blaze|...	UNKNOWN STEP	2026-10-04T09:32:47.9588289Z branch 'chatgpt-stl-builder' set up to track 'origin/chatgpt-stl-builder'.
+make (1, 15, Abathur|Alarak|Alexstrasza|Ana|Anduin|Anub'arak|Artanis|Arthas|Auriel|Azmodan|Blaze|...	UNKNOWN STEP	2026-10-04T09:32:47.9710393Z ##[endgroup]
+make (1, 15, Abathur|Alarak|Alexstrasza|Ana|Anduin|Anub'arak|Artanis|Arthas|Auriel|Azmodan|Blaze|...	UNKNOWN STEP	2026-10-04T09:32:47.9776609Z [command]/usr/bin/git log -1 --format=%H
+make (1, 15, Abathur|Alarak|Alexstrasza|Ana|Anduin|Anub'arak|Artanis|Arthas|Auriel|Azmodan|Blaze|...	UNKNOWN STEP	2026-10-04T09:32:47.9809995Z 559933ffbf6a9fc142e663ce49a8b3f2791a7b47
+make (1, 15, Abathur|Alarak|Alexstrasza|Ana|Anduin|Anub'arak|Artanis|Arthas|Auriel|Azmodan|Blaze|...	UNKNOWN STEP	2026-10-04T09:32:48.0050493Z ##[group]Run set -euo pipefail
+make (1, 15, Abathur|Alarak|Alexstrasza|Ana|Anduin|Anub'arak|Artanis|Arthas|Auriel|Azmodan|Blaze|...	UNKNOWN STEP	2026-10-04T09:32:48.0050883Z ^[[36;1mset -euo pipefail^[[0m
+make (1, 15, Abathur|Alarak|Alexstrasza|Ana|Anduin|Anub'arak|Artanis|Arthas|Auriel|Azmodan|Blaze|...	UNKNOWN STEP	2026-10-04T09:32:48.0051303Z ^[[36;1mcp tools/hots_stl/runtime_extracted/build_hots_stls.py "$RUNNER_TEMP/b.py"^[[0m
+make (1, 15, Abathur|Alarak|Alexstrasza|Ana|Anduin|Anub'arak|Artanis|Arthas|Auriel|Azmodan|Blaze|...	UNKNOWN STEP	2026-10-04T09:32:48.0051831Z ^[[36;1mpython tools/hots_stl/runtime_patch_v2.py "$RUNNER_TEMP/b.py"^[[0m
+make (1, 15, Abathur|Alarak|Alexstrasza|Ana|Anduin|Anub'arak|Artanis|Arthas|Auriel|Azmodan|Blaze|...	UNKNOWN STEP	2026-10-04T09:32:48.0052325Z ^[[36;1mpython ci/patch_builder_external_validation.py "$RUNNER_TEMP/b.py"^[[0m
+make (1, 15, Abathur|Alarak|Alexstrasza|Ana|Anduin|Anub'arak|Artanis|Arthas|Auriel|Azmodan|Blaze|...	UNKNOWN STEP	2026-10-04T09:32:48.0052740Z ^[[36;1mpython - "$RUNNER_TEMP/b.py" <<'PY'^[[0m
+make (1, 15, Abathur|Alarak|Alexstrasza|Ana|Anduin|Anub'arak|Artanis|Arthas|Auriel|Azmodan|Blaze|...	UNKNOWN STEP	2026-10-04T09:32:48.0053038Z ^[[36;1mfrom pathlib import Path^[[0m
+make (1, 15, Abathur|Alarak|Alexstrasza|Ana|Anduin|Anub'arak|Artanis|Arthas|Auriel|Azmodan|Blaze|...	UNKNOWN STEP	2026-10-04T09:32:48.0053295Z ^[[36;1mimport sys^[[0m
+make (1, 15, Abathur|Alarak|Alexstrasza|Ana|Anduin|Anub'arak|Artanis|Arthas|Auriel|Azmodan|Blaze|...	UNKNOWN STEP	2026-10-04T09:32:48.0053629Z ^[[36;1mp=Path(sys.argv[1]); s=p.read_text(); a='    "Whitemane": ("whitemane",),\n'^[[0m
+make (1, 15, Abathur|Alarak|Alexstrasza|Ana|Anduin|Anub'arak|Artanis|Arthas|Auriel|Azmodan|Blaze|...	UNKNOWN STEP	2026-10-04T09:32:48.0054095Z ^[[36;1mif a not in s: raise SystemExit('roster anchor missing')^[[0m
+make (1, 15, Abathur|Alarak|Alexstrasza|Ana|Anduin|Anub'arak|Artanis|Arthas|Auriel|Azmodan|Blaze|...	UNKNOWN STEP	2026-10-04T09:32:48.0054571Z ^[[36;1mp.write_text(s.replace(a,a+'    "Xal\'atath": ("xalatath",),\n',1))^[[0m
+make (1, 15, Abathur|Alarak|Alexstrasza|Ana|Anduin|Anub'arak|Artanis|Arthas|Auriel|Azmodan|Blaze|...	UNKNOWN STEP	2026-10-04T09:32:48.0054974Z ^[[36;1mPY^[[0m
+make (1, 15, Abathur|Alarak|Alexstrasza|Ana|Anduin|Anub'arak|Artanis|Arthas|Auriel|Azmodan|Blaze|...	UNKNOWN STEP	2026-10-04T09:32:48.0055216Z ^[[36;1msudo apt-get update -qq^[[0m
+make (1, 15, Abathur|Alarak|Alexstrasza|Ana|Anduin|Anub'arak|Artanis|Arthas|Auriel|Azmodan|Blaze|...	UNKNOWN STEP	2026-10-04T09:32:48.0055939Z ^[[36;1msudo apt-get install -y --no-install-recommends ca-certificates curl git xz-utils libx11-6 libxi6 libxrender1 libxfixes3 libxkbcommon0 libsm6 libice6 libgl1 libegl1^[[0m
+make (1, 15, Abathur|Alarak|Alexstrasza|Ana|Anduin|Anub'arak|Artanis|Arthas|Auriel|Azmodan|Blaze|...	UNKNOWN STEP	2026-10-04T09:32:48.0056826Z ^[[36;1mgit clone --depth 1 https://github.com/JimmyTheCool/HOTS-02.git "$RUNNER_TEMP/H2"^[[0m
+make (1, 15, Abathur|Alarak|Alexstrasza|Ana|Anduin|Anub'arak|Artanis|Arthas|Auriel|Azmodan|Blaze|...	UNKNOWN STEP	2026-10-04T09:32:48.0057280Z ^[[36;1mcd "$RUNNER_TEMP"^[[0m
+make (1, 15, Abathur|Alarak|Alexstrasza|Ana|Anduin|Anub'arak|Artanis|Arthas|Auriel|Azmodan|Blaze|...	UNKNOWN STEP	2026-10-04T09:32:48.0058183Z ^[[36;1mcurl -fL --retry 5 "https://download.blender.org/release/Blender3.6/blender-${BV}-linux-x64.tar.xz" -o b.tar.xz^[[0m
+make (1, 15, Abathur|Alarak|Alexstrasza|Ana|Anduin|Anub'arak|Artanis|Arthas|Auriel|Azmodan|Blaze|...	UNKNOWN STEP	2026-10-04T09:32:48.0058754Z ^[[36;1mtar -xf b.tar.xz^[[0m
+make (1, 15, Abathur|Alarak|Alexstrasza|Ana|Anduin|Anub'arak|Artanis|Arthas|Auriel|Azmodan|Blaze|...	UNKNOWN STEP	2026-10-04T09:32:48.0059091Z ^[[36;1mgit clone -q https://github.com/SC2Mapster/m3addon.git m3^[[0m
+make (1, 15, Abathur|Alarak|Alexstrasza|Ana|Anduin|Anub'arak|Artanis|Arthas|Auriel|Azmodan|Blaze|...	UNKNOWN STEP	2026-10-04T09:32:48.0059466Z ^[[36;1mgit -C m3 checkout -q "$M3"^[[0m
+make (1, 15, Abathur|Alarak|Alexstrasza|Ana|Anduin|Anub'arak|Artanis|Arthas|Auriel|Azmodan|Blaze|...	UNKNOWN STEP	2026-10-04T09:32:48.0059790Z ^[[36;1mmkdir -p "$HOME/.config/blender/3.6/scripts/addons"^[[0m
+make (1, 15, Abathur|Alarak|Alexstrasza|Ana|Anduin|Anub'arak|Artanis|Arthas|Auriel|Azmodan|Blaze|...	UNKNOWN STEP	2026-10-04T09:32:48.0060234Z ^[[36;1mln -s "$RUNNER_TEMP/m3" "$HOME/.config/blender/3.6/scripts/addons/m3addon"^[[0m
+make (1, 15, Abathur|Alarak|Alexstrasza|Ana|Anduin|Anub'arak|Artanis|Arthas|Auriel|Azmodan|Blaze|...	UNKNOWN STEP	2026-10-04T09:32:48.0060679Z ^[[36;1mO="$RUNNER_TEMP/o"; mkdir -p "$O/00_Reports"^[[0m
+make (1, 15, Abathur|Alarak|Alexstrasza|Ana|Anduin|Anub'arak|Artanis|Arthas|Auriel|Azmodan|Blaze|...	UNKNOWN STEP	2026-10-04T09:32:48.0061479Z ^[[36;1mIFS='|' read -ra A <<< 'Abathur|Alarak|Alexstrasza|Ana|Anduin|Anub'arak|Artanis|Arthas|Auriel|Azmodan|Blaze|Brightwing|The Butcher|Cassia|Chen'; X=(); for v in "${A[@]}"; do X+=(--only "$v"); done^[[0m
+make (1, 15, Abathur|Alarak|Alexstrasza|Ana|Anduin|Anub'arak|Artanis|Arthas|Auriel|Azmodan|Blaze|...	UNKNOWN STEP	2026-10-04T09:32:48.0063286Z ^[[36;1m"$RUNNER_TEMP/blender-${BV}-linux-x64/blender" --background --factory-startup --python "$RUNNER_TEMP/b.py" -- --source "$RUNNER_TEMP/H2" --source "$GITHUB_WORKSPACE" --output "$O" --target-height-mm 110 --base-height-mm 4 --base-margin-mm 4 --voxel-mm 0.55 --thin-part-mm 0.72 --max-triangles 450000 --skip-animation "${X[@]}" 2>&1 | tee "$O/00_Reports/build.log"^[[0m
+make (1, 15, Abathur|Alarak|Alexstrasza|Ana|Anduin|Anub'arak|Artanis|Arthas|Auriel|Azmodan|Blaze|...	UNKNOWN STEP	2026-10-04T09:32:48.0064770Z ^[[36;1mN=$(find "$O/02_Print_Ready_Watertight" -name '*.stl' -type f | wc -l); test "$N" -eq '15'^[[0m
+make (1, 15, Abathur|Alarak|Alexstrasza|Ana|Anduin|Anub'arak|Artanis|Arthas|Auriel|Azmodan|Blaze|...	UNKNOWN STEP	2026-10-04T09:32:48.0065300Z ^[[36;1mmkdir -p "$RUNNER_TEMP/chunk/STL" "$RUNNER_TEMP/chunk/Reports"^[[0m
+make (1, 15, Abathur|Alarak|Alexstrasza|Ana|Anduin|Anub'arak|Artanis|Arthas|Auriel|Azmodan|Blaze|...	UNKNOWN STEP	2026-10-04T09:32:48.0065766Z ^[[36;1mcp "$O"/02_Print_Ready_Watertight/*.stl "$RUNNER_TEMP/chunk/STL/"^[[0m
+make (1, 15, Abathur|Alarak|Alexstrasza|Ana|Anduin|Anub'arak|Artanis|Arthas|Auriel|Azmodan|Blaze|...	UNKNOWN STEP	2026-10-04T09:32:48.0066186Z ^[[36;1mcp "$O"/00_Reports/* "$RUNNER_TEMP/chunk/Reports/"^[[0m
+make (1, 15, Abathur|Alarak|Alexstrasza|Ana|Anduin|Anub'arak|Artanis|Arthas|Auriel|Azmodan|Blaze|...	UNKNOWN STEP	2026-10-04T09:32:48.0437809Z shell: /usr/bin/bash --noprofile --norc -e -o pipefail {0}
+make (1, 15, Abathur|Alarak|Alexstrasza|Ana|Anduin|Anub'arak|Artanis|Arthas|Auriel|Azmodan|Blaze|...	UNKNOWN STEP	2026-10-04T09:32:48.0438187Z env:
+make (1, 15, Abathur|Alarak|Alexstrasza|Ana|Anduin|Anub'arak|Artanis|Arthas|Auriel|Azmodan|Blaze|...	UNKNOWN STEP	2026-10-04T09:32:48.0438395Z   BV: 3.6.23
+make (1, 15, Abathur|Alarak|Alexstrasza|Ana|Anduin|Anub'arak|Artanis|Arthas|Auriel|Azmodan|Blaze|...	UNKNOWN STEP	2026-10-04T09:32:48.0438641Z   M3: 58935005c4465a219a740f6b740253533eda773f
+make (1, 15, Abathur|Alarak|Alexstrasza|Ana|Anduin|Anub'arak|Artanis|Arthas|Auriel|Azmodan|Blaze|...	UNKNOWN STEP	2026-10-04T09:32:48.0438932Z ##[endgroup]
+make (1, 15, Abathur|Alarak|Alexstrasza|Ana|Anduin|Anub'arak|Artanis|Arthas|Auriel|Azmodan|Blaze|...	UNKNOWN STEP	2026-10-04T09:32:48.0789938Z Patched /home/runner/work/_temp/b.py to HOTS STL Builder v2.1.0
+make (1, 15, Abathur|Alarak|Alexstrasza|Ana|Anduin|Anub'arak|Artanis|Arthas|Auriel|Azmodan|Blaze|...	UNKNOWN STEP	2026-10-04T09:32:48.1017172Z Patched builder to defer geometric watertightness to independent trimesh validation
+make (1, 15, Abathur|Alarak|Alexstrasza|Ana|Anduin|Anub'arak|Artanis|Arthas|Auriel|Azmodan|Blaze|...	UNKNOWN STEP	2026-10-04T09:32:56.0671949Z Reading package lists...
+make (1, 15, Abathur|Alarak|Alexstrasza|Ana|Anduin|Anub'arak|Artanis|Arthas|Auriel|Azmodan|Blaze|...	UNKNOWN STEP	2026-10-04T09:32:56.3209555Z Building dependency tree...
+make (1, 15, Abathur|Alarak|Alexstrasza|Ana|Anduin|Anub'arak|Artanis|Arthas|Auriel|Azmodan|Blaze|...	UNKNOWN STEP	2026-10-04T09:32:56.3221670Z Reading state information...
+make (1, 15, Abathur|Alarak|Alexstrasza|Ana|Anduin|Anub'arak|Artanis|Arthas|Auriel|Azmodan|Blaze|...	UNKNOWN STEP	2026-10-04T09:32:56.4963240Z libgl1 is already the newest version (1.4.0-1).
+make (1, 15, Abathur|Alarak|Alexstrasza|Ana|Anduin|Anub'arak|Artanis|Arthas|Auriel|Azmodan|Blaze|...	UNKNOWN STEP	2026-10-04T09:32:56.4963920Z libgl1 set to manually installed.
+make (1, 15, Abathur|Alarak|Alexstrasza|Ana|Anduin|Anub'arak|Artanis|Arthas|Auriel|Azmodan|Blaze|...	UNKNOWN STEP	2026-10-04T09:32:56.4964556Z libice6 is already the newest version (2:1.0.10-1build2).
+make (1, 15, Abathur|Alarak|Alexstrasza|Ana|Anduin|Anub'arak|Artanis|Arthas|Auriel|Azmodan|Blaze|...	UNKNOWN STEP	2026-10-04T09:32:56.4966068Z libice6 set to manually installed.
+make (1, 15, Abathur|Alarak|Alexstrasza|Ana|Anduin|Anub'arak|Artanis|Arthas|Auriel|Azmodan|Blaze|...	UNKNOWN STEP	2026-10-04T09:32:56.4966581Z libsm6 is already the newest version (2:1.2.3-1build2).
+make (1, 15, Abathur|Alarak|Alexstrasza|Ana|Anduin|Anub'arak|Artanis|Arthas|Auriel|Azmodan|Blaze|...	UNKNOWN STEP	2026-10-04T09:32:56.4967087Z libsm6 set to manually installed.
+make (1, 15, Abathur|Alarak|Alexstrasza|Ana|Anduin|Anub'arak|Artanis|Arthas|Auriel|Azmodan|Blaze|...	UNKNOWN STEP	2026-10-04T09:32:56.4967896Z libxfixes3 is already the newest version (1:6.0.0-1).
+make (1, 15, Abathur|Alarak|Alexstrasza|Ana|Anduin|Anub'arak|Artanis|Arthas|Auriel|Azmodan|Blaze|...	UNKNOWN STEP	2026-10-04T09:32:56.4968434Z libxfixes3 set to manually installed.
+make (1, 15, Abathur|Alarak|Alexstrasza|Ana|Anduin|Anub'arak|Artanis|Arthas|Auriel|Azmodan|Blaze|...	UNKNOWN STEP	2026-10-04T09:32:56.4968915Z libxi6 is already the newest version (2:1.8-1build1).
+make (1, 15, Abathur|Alarak|Alexstrasza|Ana|Anduin|Anub'arak|Artanis|Arthas|Auriel|Azmodan|Blaze|...	UNKNOWN STEP	2026-10-04T09:32:56.4969688Z libxi6 set to manually installed.
+make (1, 15, Abathur|Alarak|Alexstrasza|Ana|Anduin|Anub'arak|Artanis|Arthas|Auriel|Azmodan|Blaze|...	UNKNOWN STEP	2026-10-04T09:32:56.4970164Z libxkbcommon0 is already the newest version (1.4.0-1).
+make (1, 15, Abathur|Alarak|Alexstrasza|Ana|Anduin|Anub'arak|Artanis|Arthas|Auriel|Azmodan|Blaze|...	UNKNOWN STEP	2026-10-04T09:32:56.4970678Z libxkbcommon0 set to manually installed.
+make (1, 15, Abathur|Alarak|Alexstrasza|Ana|Anduin|Anub'arak|Artanis|Arthas|Auriel|Azmodan|Blaze|...	UNKNOWN STEP	2026-10-04T09:32:56.4971220Z libxrender1 is already the newest version (1:0.9.10-1build4).
+make (1, 15, Abathur|Alarak|Alexstrasza|Ana|Anduin|Anub'arak|Artanis|Arthas|Auriel|Azmodan|Blaze|...	UNKNOWN STEP	2026-10-04T09:32:56.4971772Z libxrender1 set to manually installed.
+make (1, 15, Abathur|Alarak|Alexstrasza|Ana|Anduin|Anub'arak|Artanis|Arthas|Auriel|Azmodan|Blaze|...	UNKNOWN STEP	2026-10-04T09:32:56.4972322Z ca-certificates is already the newest version (20260601~22.04.1).
+make (1, 15, Abathur|Alarak|Alexstrasza|Ana|Anduin|Anub'arak|Artanis|Arthas|Auriel|Azmodan|Blaze|...	UNKNOWN STEP	2026-10-04T09:32:56.4972948Z curl is already the newest version (7.81.0-1ubuntu1.29).
+make (1, 15, Abathur|Alarak|Alexstrasza|Ana|Anduin|Anub'arak|Artanis|Arthas|Auriel|Azmodan|Blaze|...	UNKNOWN STEP	2026-10-04T09:32:56.4973560Z libx11-6 is already the newest version (2:1.7.5-1ubuntu0.3).
+make (1, 15, Abathur|Alarak|Alexstrasza|Ana|Anduin|Anub'arak|Artanis|Arthas|Auriel|Azmodan|Blaze|...	UNKNOWN STEP	2026-10-04T09:32:56.4974182Z libx11-6 set to manually installed.
+make (1, 15, Abathur|Alarak|Alexstrasza|Ana|Anduin|Anub'arak|Artanis|Arthas|Auriel|Azmodan|Blaze|...	UNKNOWN STEP	2026-10-04T09:32:56.4974798Z xz-utils is already the newest version (5.2.5-2ubuntu1.1).
+make (1, 15, Abathur|Alarak|Alexstrasza|Ana|Anduin|Anub'arak|Artanis|Arthas|Auriel|Azmodan|Blaze|...	UNKNOWN STEP	2026-10-04T09:32:56.5054327Z git is already the newest version (1:2.55.0-0ppa1~ubuntu22.04.2).
+make (1, 15, Abathur|Alarak|Alexstrasza|Ana|Anduin|Anub'arak|Artanis|Arthas|Auriel|Azmodan|Blaze|...	UNKNOWN STEP	2026-10-04T09:32:56.5055016Z The following additional packages will be installed:
+make (1, 15, Abathur|Alarak|Alexstrasza|Ana|Anduin|Anub'arak|Artanis|Arthas|Auriel|Azmodan|Blaze|...	UNKNOWN STEP	2026-10-04T09:32:56.5055510Z   libegl-mesa0
+make (1, 15, Abathur|Alarak|Alexstrasza|Ana|Anduin|Anub'arak|Artanis|Arthas|Auriel|Azmodan|Blaze|...	UNKNOWN STEP	2026-10-04T09:32:56.5195298Z The following NEW packages will be installed:
+make (1, 15, Abathur|Alarak|Alexstrasza|Ana|Anduin|Anub'arak|Artanis|Arthas|Auriel|Azmodan|Blaze|...	UNKNOWN STEP	2026-10-04T09:32:56.5201397Z   libegl-mesa0 libegl1
+make (1, 15, Abathur|Alarak|Alexstrasza|Ana|Anduin|Anub'arak|Artanis|Arthas|Auriel|Azmodan|Blaze|...	UNKNOWN STEP	2026-10-04T09:32:56.5379865Z 0 upgraded, 2 newly installed, 0 to remove and 20 not upgraded.
+make (1, 15, Abathur|Alarak|Alexstrasza|Ana|Anduin|Anub'arak|Artanis|Arthas|Auriel|Azmodan|Blaze|...	UNKNOWN STEP	2026-10-04T09:32:56.5380509Z Need to get 147 kB of archives.
+make (1, 15, Abathur|Alarak|Alexstrasza|Ana|Anduin|Anub'arak|Artanis|Arthas|Auriel|Azmodan|Blaze|...	UNKNOWN STEP	2026-10-04T09:32:56.5381124Z After this operation, 484 kB of additional disk space will be used.
+make (1, 15, Abathur|Alarak|Alexstrasza|Ana|Anduin|Anub'arak|Artanis|Arthas|Auriel|Azmodan|Blaze|...	UNKNOWN STEP	2026-10-04T09:32:56.5381645Z Get:1 file:/etc/apt/apt-mirrors.txt Mirrorlist [144 B]
+make (1, 15, Abathur|Alarak|Alexstrasza|Ana|Anduin|Anub'arak|Artanis|Arthas|Auriel|Azmodan|Blaze|...	UNKNOWN STEP	2026-10-04T09:32:56.6349145Z Get:2 http://azure.archive.ubuntu.com/ubuntu jammy-updates/main amd64 libegl-mesa0 amd64 23.2.1-1ubuntu3.1~22.04.4 [118 kB]
+make (1, 15, Abathur|Alarak|Alexstrasza|Ana|Anduin|Anub'arak|Artanis|Arthas|Auriel|Azmodan|Blaze|...	UNKNOWN STEP	2026-10-04T09:32:56.7100448Z Get:3 http://azure.archive.ubuntu.com/ubuntu jammy/main amd64 libegl1 amd64 1.4.0-1 [28.6 kB]
+make (1, 15, Abathur|Alarak|Alexstrasza|Ana|Anduin|Anub'arak|Artanis|Arthas|Auriel|Azmodan|Blaze|...	UNKNOWN STEP	2026-10-04T09:32:57.0340081Z Fetched 147 kB in 0s (793 kB/s)
+make (1, 15, Abathur|Alarak|Alexstrasza|Ana|Anduin|Anub'arak|Artanis|Arthas|Auriel|Azmodan|Blaze|...	UNKNOWN STEP	2026-10-04T09:32:57.0658439Z Selecting previously unselected package libegl-mesa0:amd64.
+make (1, 15, Abathur|Alarak|Alexstrasza|Ana|Anduin|Anub'arak|Artanis|Arthas|Auriel|Azmodan|Blaze|...	UNKNOWN STEP	2026-10-04T09:32:57.0996365Z (Reading database ... 
+make (1, 15, Abathur|Alarak|Alexstrasza|Ana|Anduin|Anub'arak|Artanis|Arthas|Auriel|Azmodan|Blaze|...	UNKNOWN STEP	2026-10-04T09:32:57.0996880Z (Reading database ... 5%
+make (1, 15, Abathur|Alarak|Alexstrasza|Ana|Anduin|Anub'arak|Artanis|Arthas|Auriel|Azmodan|Blaze|...	UNKNOWN STEP	2026-10-04T09:32:57.0997170Z (Reading database ... 10%
+make (1, 15, Abathur|Alarak|Alexstrasza|Ana|Anduin|Anub'arak|Artanis|Arthas|Auriel|Azmodan|Blaze|...	UNKNOWN STEP	2026-10-04T09:32:57.0997497Z (Reading database ... 15%
+make (1, 15, Abathur|Alarak|Alexstrasza|Ana|Anduin|Anub'arak|Artanis|Arthas|Auriel|Azmodan|Blaze|...	UNKNOWN STEP	2026-10-04T09:32:57.0998372Z (Reading database ... 20%
+make (1, 15, Abathur|Alarak|Alexstrasza|Ana|Anduin|Anub'arak|Artanis|Arthas|Auriel|Azmodan|Blaze|...	UNKNOWN STEP	2026-10-04T09:32:57.0998811Z (Reading database ... 25%
+make (1, 15, Abathur|Alarak|Alexstrasza|Ana|Anduin|Anub'arak|Artanis|Arthas|Auriel|Azmodan|Blaze|...	UNKNOWN STEP	2026-10-04T09:32:57.0999202Z (Reading database ... 30%
+make (1, 15, Abathur|Alarak|Alexstrasza|Ana|Anduin|Anub'arak|Artanis|Arthas|Auriel|Azmodan|Blaze|...	UNKNOWN STEP	2026-10-04T09:32:57.0999594Z (Reading database ... 35%
+make (1, 15, Abathur|Alarak|Alexstrasza|Ana|Anduin|Anub'arak|Artanis|Arthas|Auriel|Azmodan|Blaze|...	UNKNOWN STEP	2026-10-04T09:32:57.0999882Z (Reading database ... 40%
+make (1, 15, Abathur|Alarak|Alexstrasza|Ana|Anduin|Anub'arak|Artanis|Arthas|Auriel|Azmodan|Blaze|...	UNKNOWN STEP	2026-10-04T09:32:57.1000142Z (Reading database ... 45%
+make (1, 15, Abathur|Alarak|Alexstrasza|Ana|Anduin|Anub'arak|Artanis|Arthas|Auriel|Azmodan|Blaze|...	UNKNOWN STEP	2026-10-04T09:32:57.1000393Z (Reading database ... 50%
+make (1, 15, Abathur|Alarak|Alexstrasza|Ana|Anduin|Anub'arak|Artanis|Arthas|Auriel|Azmodan|Blaze|...	UNKNOWN STEP	2026-10-04T09:32:57.1887888Z (Reading database ... 55%
+make (1, 15, Abathur|Alarak|Alexstrasza|Ana|Anduin|Anub'arak|Artanis|Arthas|Auriel|Azmodan|Blaze|...	UNKNOWN STEP	2026-10-04T09:32:57.3945037Z (Reading database ... 60%
+make (1, 15, Abathur|Alarak|Alexstrasza|Ana|Anduin|Anub'arak|Artanis|Arthas|Auriel|Azmodan|Blaze|...	UNKNOWN STEP	2026-10-04T09:32:57.5869315Z (Reading database ... 65%
+make (1, 15, Abathur|Alarak|Alexstrasza|Ana|Anduin|Anub'arak|Artanis|Arthas|Auriel|Azmodan|Blaze|...	UNKNOWN STEP	2026-10-04T09:32:57.8096911Z (Reading database ... 70%
+make (1, 15, Abathur|Alarak|Alexstrasza|Ana|Anduin|Anub'arak|Artanis|Arthas|Auriel|Azmodan|Blaze|...	UNKNOWN STEP	2026-10-04T09:32:57.9371652Z (Reading database ... 75%
+make (1, 15, Abathur|Alarak|Alexstrasza|Ana|Anduin|Anub'arak|Artanis|Arthas|Auriel|Azmodan|Blaze|...	UNKNOWN STEP	2026-10-04T09:32:58.1838589Z (Reading database ... 80%
+make (1, 15, Abathur|Alarak|Alexstrasza|Ana|Anduin|Anub'arak|Artanis|Arthas|Auriel|Azmodan|Blaze|...	UNKNOWN STEP	2026-10-04T09:32:58.3873241Z (Reading database ... 85%
+make (1, 15, Abathur|Alarak|Alexstrasza|Ana|Anduin|Anub'arak|Artanis|Arthas|Auriel|Azmodan|Blaze|...	UNKNOWN STEP	2026-10-04T09:32:58.6439286Z (Reading database ... 90%
+make (1, 15, Abathur|Alarak|Alexstrasza|Ana|Anduin|Anub'arak|Artanis|Arthas|Auriel|Azmodan|Blaze|...	UNKNOWN STEP	2026-10-04T09:32:58.8563735Z (Reading database ... 95%
+make (1, 15, Abathur|Alarak|Alexstrasza|Ana|Anduin|Anub'arak|Artanis|Arthas|Auriel|Azmodan|Blaze|...	UNKNOWN STEP	2026-10-04T09:32:58.8564295Z (Reading database ... 100%
+make (1, 15, Abathur|Alarak|Alexstrasza|Ana|Anduin|Anub'arak|Artanis|Arthas|Auriel|Azmodan|Blaze|...	UNKNOWN STEP	2026-10-04T09:32:58.8565223Z (Reading database ... 260411 files and directories currently installed.)
+make (1, 15, Abathur|Alarak|Alexstrasza|Ana|Anduin|Anub'arak|Artanis|Arthas|Auriel|Azmodan|Blaze|...	UNKNOWN STEP	2026-10-04T09:32:58.8623650Z Preparing to unpack .../libegl-mesa0_23.2.1-1ubuntu3.1~22.04.4_amd64.deb ...
+make (1, 15, Abathur|Alarak|Alexstrasza|Ana|Anduin|Anub'arak|Artanis|Arthas|Auriel|Azmodan|Blaze|...	UNKNOWN STEP	2026-10-04T09:32:58.8666189Z Unpacking libegl-mesa0:amd64 (23.2.1-1ubuntu3.1~22.04.4) ...
+make (1, 15, Abathur|Alarak|Alexstrasza|Ana|Anduin|Anub'arak|Artanis|Arthas|Auriel|Azmodan|Blaze|...	UNKNOWN STEP	2026-10-04T09:32:58.8934626Z Selecting previously unselected package libegl1:amd64.
+make (1, 15, Abathur|Alarak|Alexstrasza|Ana|Anduin|Anub'arak|Artanis|Arthas|Auriel|Azmodan|Blaze|...	UNKNOWN STEP	2026-10-04T09:32:58.9145859Z Preparing to unpack .../libegl1_1.4.0-1_amd64.deb ...
+make (1, 15, Abathur|Alarak|Alexstrasza|Ana|Anduin|Anub'arak|Artanis|Arthas|Auriel|Azmodan|Blaze|...	UNKNOWN STEP	2026-10-04T09:32:58.9154166Z Unpacking libegl1:amd64 (1.4.0-1) ...
+make (1, 15, Abathur|Alarak|Alexstrasza|Ana|Anduin|Anub'arak|Artanis|Arthas|Auriel|Azmodan|Blaze|...	UNKNOWN STEP	2026-10-04T09:32:58.9644626Z Setting up libegl-mesa0:amd64 (23.2.1-1ubuntu3.1~22.04.4) ...
+make (1, 15, Abathur|Alarak|Alexstrasza|Ana|Anduin|Anub'arak|Artanis|Arthas|Auriel|Azmodan|Blaze|...	UNKNOWN STEP	2026-10-04T09:32:58.9665666Z Setting up libegl1:amd64 (1.4.0-1) ...
+make (1, 15, Abathur|Alarak|Alexstrasza|Ana|Anduin|Anub'arak|Artanis|Arthas|Auriel|Azmodan|Blaze|...	UNKNOWN STEP	2026-10-04T09:32:58.9688750Z Processing triggers for libc-bin (2.35-0ubuntu3.15) ...
+make (1, 15, Abathur|Alarak|Alexstrasza|Ana|Anduin|Anub'arak|Artanis|Arthas|Auriel|Azmodan|Blaze|...	UNKNOWN STEP	2026-10-04T09:32:59.6373511Z 
+make (1, 15, Abathur|Alarak|Alexstrasza|Ana|Anduin|Anub'arak|Artanis|Arthas|Auriel|Azmodan|Blaze|...	UNKNOWN STEP	2026-10-04T09:32:59.6374043Z Running kernel seems to be up-to-date.
+make (1, 15, Abathur|Alarak|Alexstrasza|Ana|Anduin|Anub'arak|Artanis|Arthas|Auriel|Azmodan|Blaze|...	UNKNOWN STEP	2026-10-04T09:32:59.6374543Z 
+make (1, 15, Abathur|Alarak|Alexstrasza|Ana|Anduin|Anub'arak|Artanis|Arthas|Auriel|Azmodan|Blaze|...	UNKNOWN STEP	2026-10-04T09:32:59.6374811Z No services need to be restarted.
+make (1, 15, Abathur|Alarak|Alexstrasza|Ana|Anduin|Anub'arak|Artanis|Arthas|Auriel|Azmodan|Blaze|...	UNKNOWN STEP	2026-10-04T09:32:59.6375222Z 
+make (1, 15, Abathur|Alarak|Alexstrasza|Ana|Anduin|Anub'arak|Artanis|Arthas|Auriel|Azmodan|Blaze|...	UNKNOWN STEP	2026-10-04T09:32:59.6375408Z No containers need to be restarted.
+make (1, 15, Abathur|Alarak|Alexstrasza|Ana|Anduin|Anub'arak|Artanis|Arthas|Auriel|Azmodan|Blaze|...	UNKNOWN STEP	2026-10-04T09:32:59.6375674Z 
+make (1, 15, Abathur|Alarak|Alexstrasza|Ana|Anduin|Anub'arak|Artanis|Arthas|Auriel|Azmodan|Blaze|...	UNKNOWN STEP	2026-10-04T09:32:59.6375857Z No user sessions are running outdated binaries.
+make (1, 15, Abathur|Alarak|Alexstrasza|Ana|Anduin|Anub'arak|Artanis|Arthas|Auriel|Azmodan|Blaze|...	UNKNOWN STEP	2026-10-04T09:32:59.6376191Z 
+make (1, 15, Abathur|Alarak|Alexstrasza|Ana|Anduin|Anub'arak|Artanis|Arthas|Auriel|Azmodan|Blaze|...	UNKNOWN STEP	2026-10-04T09:32:59.6376484Z No VM guests are running outdated hypervisor (qemu) binaries on this host.
+make (1, 15, Abathur|Alarak|Alexstrasza|Ana|Anduin|Anub'arak|Artanis|Arthas|Auriel|Azmodan|Blaze|...	UNKNOWN STEP	2026-10-04T09:33:01.3936161Z Cloning into '/home/runner/work/_temp/H2'...
+make (1, 15, Abathur|Alarak|Alexstrasza|Ana|Anduin|Anub'arak|Artanis|Arthas|Auriel|Azmodan|Blaze|...	UNKNOWN STEP	2026-10-04T09:33:09.8778112Z Updating files:  46% (276/600)
+make (1, 15, Abathur|Alarak|Alexstrasza|Ana|Anduin|Anub'arak|Artanis|Arthas|Auriel|Azmodan|Blaze|...	UNKNOWN STEP	2026-10-04T09:33:09.9028347Z Updating files:  47% (282/600)
+make (1, 15, Abathur|Alarak|Alexstrasza|Ana|Anduin|Anub'arak|Artanis|Arthas|Auriel|Azmodan|Blaze|...	UNKNOWN STEP	2026-10-04T09:33:09.9146407Z Updating files:  48% (288/600)
+make (1, 15, Abathur|Alarak|Alexstrasza|Ana|Anduin|Anub'arak|Artanis|Arthas|Auriel|Azmodan|Blaze|...	UNKNOWN STEP	2026-10-04T09:33:09.9348409Z Updating files:  49% (294/600)
+make (1, 15, Abathur|Alarak|Alexstrasza|Ana|Anduin|Anub'arak|Artanis|Arthas|Auriel|Azmodan|Blaze|...	UNKNOWN STEP	2026-10-04T09:33:09.9500881Z Updating files:  50% (300/600)
+make (1, 15, Abathur|Alarak|Alexstrasza|Ana|Anduin|Anub'arak|Artanis|Arthas|Auriel|Azmodan|Blaze|...	UNKNOWN STEP	2026-10-04T09:33:09.9626127Z Updating files:  51% (306/600)
+make (1, 15, Abathur|Alarak|Alexstrasza|Ana|Anduin|Anub'arak|Artanis|Arthas|Auriel|Azmodan|Blaze|...	UNKNOWN STEP	2026-10-04T09:33:09.9766074Z Updating files:  52% (312/600)
+make (1, 15, Abathur|Alarak|Alexstrasza|Ana|Anduin|Anub'arak|Artanis|Arthas|Auriel|Azmodan|Blaze|...	UNKNOWN STEP	2026-10-04T09:33:10.0091608Z Updating files:  53% (318/600)
+make (1, 15, Abathur|Alarak|Alexstrasza|Ana|Anduin|Anub'arak|Artanis|Arthas|Auriel|Azmodan|Blaze|...	UNKNOWN STEP	2026-10-04T09:33:10.0312777Z Updating files:  54% (324/600)
+make (1, 15, Abathur|Alarak|Alexstrasza|Ana|Anduin|Anub'arak|Artanis|Arthas|Auriel|Azmodan|Blaze|...	UNKNOWN STEP	2026-10-04T09:33:10.0582338Z Updating files:  55% (330/600)
+make (1, 15, Abathur|Alarak|Alexstrasza|Ana|Anduin|Anub'arak|Artanis|Arthas|Auriel|Azmodan|Blaze|...	UNKNOWN STEP	2026-10-04T09:33:10.0832880Z Updating files:  56% (336/600)
+make (1, 15, Abathur|Alarak|Alexstrasza|Ana|Anduin|Anub'arak|Artanis|Arthas|Auriel|Azmodan|Blaze|...	UNKNOWN STEP	2026-10-04T09:33:10.1073563Z Updating files:  57% (342/600)
+make (1, 15, Abathur|Alarak|Alexstrasza|Ana|Anduin|Anub'arak|Artanis|Arthas|Auriel|Azmodan|Blaze|...	UNKNOWN STEP	2026-10-04T09:33:10.1476890Z Updating files:  58% (348/600)
+make (1, 15, Abathur|Alarak|Alexstrasza|Ana|Anduin|Anub'arak|Artanis|Arthas|Auriel|Azmodan|Blaze|...	UNKNOWN STEP	2026-10-04T09:33:10.1698220Z Updating files:  59% (354/600)
+make (1, 15, Abathur|Alarak|Alexstrasza|Ana|Anduin|Anub'arak|Artanis|Arthas|Auriel|Azmodan|Blaze|...	UNKNOWN STEP	2026-10-04T09:33:10.1817219Z Updating files:  60% (360/600)
+make (1, 15, Abathur|Alarak|Alexstrasza|Ana|Anduin|Anub'arak|Artanis|Arthas|Auriel|Azmodan|Blaze|...	UNKNOWN STEP	2026-10-04T09:33:10.2208601Z Updating files:  61% (366/600)
+make (1, 15, Abathur|Alarak|Alexstrasza|Ana|Anduin|Anub'arak|Artanis|Arthas|Auriel|Azmodan|Blaze|...	UNKNOWN STEP	2026-10-04T09:33:10.2352732Z Updating files:  62% (372/600)
+make (1, 15, Abathur|Alarak|Alexstrasza|Ana|Anduin|Anub'arak|Artanis|Arthas|Auriel|Azmodan|Blaze|...	UNKNOWN STEP	2026-10-04T09:33:10.2504947Z Updating files:  63% (378/600)
+make (1, 15, Abathur|Alarak|Alexstrasza|Ana|Anduin|Anub'arak|Artanis|Arthas|Auriel|Azmodan|Blaze|...	UNKNOWN STEP	2026-10-04T09:33:10.3069360Z Updating files:  64% (384/600)
+make (1, 15, Abathur|Alarak|Alexstrasza|Ana|Anduin|Anub'arak|Artanis|Arthas|Auriel|Azmodan|Blaze|...	UNKNOWN STEP	2026-10-04T09:33:10.3359418Z Updating files:  65% (390/600)
+make (1, 15, Abathur|Alarak|Alexstrasza|Ana|Anduin|Anub'arak|Artanis|Arthas|Auriel|Azmodan|Blaze|...	UNKNOWN STEP	2026-10-04T09:33:10.3659353Z Updating files:  66% (396/600)
+make (1, 15, Abathur|Alarak|Alexstrasza|Ana|Anduin|Anub'arak|Artanis|Arthas|Auriel|Azmodan|Blaze|...	UNKNOWN STEP	2026-10-04T09:33:10.3796059Z Updating files:  67% (402/600)
+make (1, 15, Abathur|Alarak|Alexstrasza|Ana|Anduin|Anub'arak|Artanis|Arthas|Auriel|Azmodan|Blaze|...	UNKNOWN STEP	2026-10-04T09:33:10.3871237Z Updating files:  68% (408/600)
+make (1, 15, Abathur|Alarak|Alexstrasza|Ana|Anduin|Anub'arak|Artanis|Arthas|Auriel|Azmodan|Blaze|...	UNKNOWN STEP	2026-10-04T09:33:10.4087622Z Updating files:  69% (414/600)
+make (1, 15, Abathur|Alarak|Alexstrasza|Ana|Anduin|Anub'arak|Artanis|Arthas|Auriel|Azmodan|Blaze|...	UNKNOWN STEP	2026-10-04T09:33:10.4208294Z Updating files:  70% (420/600)
+make (1, 15, Abathur|Alarak|Alexstrasza|Ana|Anduin|Anub'arak|Artanis|Arthas|Auriel|Azmodan|Blaze|...	UNKNOWN STEP	2026-10-04T09:33:10.4413878Z Updating files:  71% (426/600)
+make (1, 15, Abathur|Alarak|Alexstrasza|Ana|Anduin|Anub'arak|Artanis|Arthas|Auriel|Azmodan|Blaze|...	UNKNOWN STEP	2026-10-04T09:33:10.4568266Z Updating files:  72% (432/600)
+make (1, 15, Abathur|Alarak|Alexstrasza|Ana|Anduin|Anub'arak|Artanis|Arthas|Auriel|Azmodan|Blaze|...	UNKNOWN STEP	2026-10-04T09:33:10.4829589Z Updating files:  73% (438/600)
+make (1, 15, Abathur|Alarak|Alexstrasza|Ana|Anduin|Anub'arak|Artanis|Arthas|Auriel|Azmodan|Blaze|...	UNKNOWN STEP	2026-10-04T09:33:10.5113582Z Updating files:  74% (444/600)
+make (1, 15, Abathur|Alarak|Alexstrasza|Ana|Anduin|Anub'arak|Artanis|Arthas|Auriel|Azmodan|Blaze|...	UNKNOWN STEP	2026-10-04T09:33:10.5508432Z Updating files:  75% (450/600)
+make (1, 15, Abathur|Alarak|Alexstrasza|Ana|Anduin|Anub'arak|Artanis|Arthas|Auriel|Azmodan|Blaze|...	UNKNOWN STEP	2026-10-04T09:33:10.5665788Z Updating files:  76% (456/600)
+make (1, 15, Abathur|Alarak|Alexstrasza|Ana|Anduin|Anub'arak|Artanis|Arthas|Auriel|Azmodan|Blaze|...	UNKNOWN STEP	2026-10-04T09:33:10.5791385Z Updating files:  77% (462/600)
+make (1, 15, Abathur|Alarak|Alexstrasza|Ana|Anduin|Anub'arak|Artanis|Arthas|Auriel|Azmodan|Blaze|...	UNKNOWN STEP	2026-10-04T09:33:10.6052978Z Updating files:  78% (468/600)
+make (1, 15, Abathur|Alarak|Alexstrasza|Ana|Anduin|Anub'arak|Artanis|Arthas|Auriel|Azmodan|Blaze|...	UNKNOWN STEP	2026-10-04T09:33:10.6247631Z Updating files:  79% (474/600)
+make (1, 15, Abathur|Alarak|Alexstrasza|Ana|Anduin|Anub'arak|Artanis|Arthas|Auriel|Azmodan|Blaze|...	UNKNOWN STEP	2026-10-04T09:33:10.6512941Z Updating files:  80% (480/600)
+make (1, 15, Abathur|Alarak|Alexstrasza|Ana|Anduin|Anub'arak|Artanis|Arthas|Auriel|Azmodan|Blaze|...	UNKNOWN STEP	2026-10-04T09:33:10.6829395Z Updating files:  81% (486/600)
+make (1, 15, Abathur|Alarak|Alexstrasza|Ana|Anduin|Anub'arak|Artanis|Arthas|Auriel|Azmodan|Blaze|...	UNKNOWN STEP	2026-10-04T09:33:10.6995743Z Updating files:  82% (492/600)
+make (1, 15, Abathur|Alarak|Alexstrasza|Ana|Anduin|Anub'arak|Artanis|Arthas|Auriel|Azmodan|Blaze|...	UNKNOWN STEP	2026-10-04T09:33:10.7299830Z Updating files:  83% (498/600)
+make (1, 15, Abathur|Alarak|Alexstrasza|Ana|Anduin|Anub'arak|Artanis|Arthas|Auriel|Azmodan|Blaze|...	UNKNOWN STEP	2026-10-04T09:33:10.7545565Z Updating files:  84% (504/600)
+make (1, 15, Abathur|Alarak|Alexstrasza|Ana|Anduin|Anub'arak|Artanis|Arthas|Auriel|Azmodan|Blaze|...	UNKNOWN STEP	2026-10-04T09:33:10.7652729Z Updating files:  85% (510/600)
+make (1, 15, Abathur|Alarak|Alexstrasza|Ana|Anduin|Anub'arak|Artanis|Arthas|Auriel|Azmodan|Blaze|...	UNKNOWN STEP	2026-10-04T09:33:10.7854114Z Updating files:  86% (516/600)
+make (1, 15, Abathur|Alarak|Alexstrasza|Ana|Anduin|Anub'arak|Artanis|Arthas|Auriel|Azmodan|Blaze|...	UNKNOWN STEP	2026-10-04T09:33:10.8135573Z Updating files:  87% (522/600)
+make (1, 15, Abathur|Alarak|Alexstrasza|Ana|Anduin|Anub'arak|Artanis|Arthas|Auriel|Azmodan|Blaze|...	UNKNOWN STEP	2026-10-04T09:33:10.8399804Z Updating files:  88% (528/600)
+make (1, 15, Abathur|Alarak|Alexstrasza|Ana|Anduin|Anub'arak|Artanis|Arthas|Auriel|Azmodan|Blaze|...	UNKNOWN STEP	2026-10-04T09:33:10.8660919Z Updating files:  89% (534/600)
+make (1, 15, Abathur|Alarak|Alexstrasza|Ana|Anduin|Anub'arak|Artanis|Arthas|Auriel|Azmodan|Blaze|...	UNKNOWN STEP	2026-10-04T09:33:10.8689298Z Updating files:  89% (539/600)
+make (1, 15, Abathur|Alarak|Alexstrasza|Ana|Anduin|Anub'arak|Artanis|Arthas|Auriel|Azmodan|Blaze|...	UNKNOWN STEP	2026-10-04T09:33:10.8957930Z Updating files:  90% (540/600)
+make (1, 15, Abathur|Alarak|Alexstrasza|Ana|Anduin|Anub'arak|Artanis|Arthas|Auriel|Azmodan|Blaze|...	UNKNOWN STEP	2026-10-04T09:33:10.9226142Z Updating files:  91% (546/600)
+make (1, 15, Abathur|Alarak|Alexstrasza|Ana|Anduin|Anub'arak|Artanis|Arthas|Auriel|Azmodan|Blaze|...	UNKNOWN STEP	2026-10-04T09:33:11.0008605Z Updating files:  92% (552/600)
+make (1, 15, Abathur|Alarak|Alexstrasza|Ana|Anduin|Anub'arak|Artanis|Arthas|Auriel|Azmodan|Blaze|...	UNKNOWN STEP	2026-10-04T09:33:11.0319725Z Updating files:  93% (558/600)
+make (1, 15, Abathur|Alarak|Alexstrasza|Ana|Anduin|Anub'arak|Artanis|Arthas|Auriel|Azmodan|Blaze|...	UNKNOWN STEP	2026-10-04T09:33:11.0447285Z Updating files:  94% (564/600)
+make (1, 15, Abathur|Alarak|Alexstrasza|Ana|Anduin|Anub'arak|Artanis|Arthas|Auriel|Azmodan|Blaze|...	UNKNOWN STEP	2026-10-04T09:33:11.0590639Z Updating files:  95% (570/600)
+make (1, 15, Abathur|Alarak|Alexstrasza|Ana|Anduin|Anub'arak|Artanis|Arthas|Auriel|Azmodan|Blaze|...	UNKNOWN STEP	2026-10-04T09:33:11.0904872Z Updating files:  96% (576/600)
+make (1, 15, Abathur|Alarak|Alexstrasza|Ana|Anduin|Anub'arak|Artanis|Arthas|Auriel|Azmodan|Blaze|...	UNKNOWN STEP	2026-10-04T09:33:11.1193584Z Updating files:  97% (582/600)
+make (1, 15, Abathur|Alarak|Alexstrasza|Ana|Anduin|Anub'arak|Artanis|Arthas|Auriel|Azmodan|Blaze|...	UNKNOWN STEP	2026-10-04T09:33:11.1292424Z Updating files:  98% (588/600)
+make (1, 15, Abathur|Alarak|Alexstrasza|Ana|Anduin|Anub'arak|Artanis|Arthas|Auriel|Azmodan|Blaze|...	UNKNOWN STEP	2026-10-04T09:33:11.1665529Z Updating files:  99% (594/600)
+make (1, 15, Abathur|Alarak|Alexstrasza|Ana|Anduin|Anub'arak|Artanis|Arthas|Auriel|Azmodan|Blaze|...	UNKNOWN STEP	2026-10-04T09:33:11.1666572Z Updating files: 100% (600/600)
+make (1, 15, Abathur|Alarak|Alexstrasza|Ana|Anduin|Anub'arak|Artanis|Arthas|Auriel|Azmodan|Blaze|...	UNKNOWN STEP	2026-10-04T09:33:11.1667033Z Updating files: 100% (600/600), done.
+make (1, 15, Abathur|Alarak|Alexstrasza|Ana|Anduin|Anub'arak|Artanis|Arthas|Auriel|Azmodan|Blaze|...	UNKNOWN STEP	2026-10-04T09:33:11.1869483Z   % Total    % Received % Xferd  Average Speed   Time    Time     Time  Current
+make (1, 15, Abathur|Alarak|Alexstrasza|Ana|Anduin|Anub'arak|Artanis|Arthas|Auriel|Azmodan|Blaze|...	UNKNOWN STEP	2026-10-04T09:33:11.1870443Z                                  Dload  Upload   Total   Spent    Left  Speed
+make (1, 15, Abathur|Alarak|Alexstrasza|Ana|Anduin|Anub'arak|Artanis|Arthas|Auriel|Azmodan|Blaze|...	UNKNOWN STEP	2026-10-04T09:33:11.1870869Z 
+make (1, 15, Abathur|Alarak|Alexstrasza|Ana|Anduin|Anub'arak|Artanis|Arthas|Auriel|Azmodan|Blaze|...	UNKNOWN STEP	2026-10-04T09:33:11.3279183Z   0     0    0     0    0     0      0      0 --:--:-- --:--:-- --:--:--     0
+make (1, 15, Abathur|Alarak|Alexstrasza|Ana|Anduin|Anub'arak|Artanis|Arthas|Auriel|Azmodan|Blaze|...	UNKNOWN STEP	2026-10-04T09:33:12.3233908Z   0     0    0     0    0     0      0      0 --:--:-- --:--:-- --:--:--     0
+make (1, 15, Abathur|Alarak|Alexstrasza|Ana|Anduin|Anub'arak|Artanis|Arthas|Auriel|Azmodan|Blaze|...	UNKNOWN STEP	2026-10-04T09:33:12.4685381Z  81  260M   81  212M    0     0   186M      0  0:00:01  0:00:01 --:--:--  186M
+make (1, 15, Abathur|Alarak|Alexstrasza|Ana|Anduin|Anub'arak|Artanis|Arthas|Auriel|Azmodan|Blaze|...	UNKNOWN STEP	2026-10-04T09:33:12.4686539Z 100  260M  100  260M    0     0   202M      0  0:00:01  0:00:01 --:--:--  202M
+make (1, 15, Abathur|Alarak|Alexstrasza|Ana|Anduin|Anub'arak|Artanis|Arthas|Auriel|Azmodan|Blaze|...	UNKNOWN STEP	2026-10-04T09:33:29.9852531Z /home/runner/work/_temp/b6e68bd2-dc7b-4cf6-b128-ddd715900877.sh: line 25: unexpected EOF while looking for matching `''
+make (1, 15, Abathur|Alarak|Alexstrasza|Ana|Anduin|Anub'arak|Artanis|Arthas|Auriel|Azmodan|Blaze|...	UNKNOWN STEP	2026-10-04T09:33:29.9867503Z ##[error]Process completed with exit code 2.
+make (1, 15, Abathur|Alarak|Alexstrasza|Ana|Anduin|Anub'arak|Artanis|Arthas|Auriel|Azmodan|Blaze|...	UNKNOWN STEP	2026-10-04T09:33:30.0013049Z Post job cleanup.
+make (1, 15, Abathur|Alarak|Alexstrasza|Ana|Anduin|Anub'arak|Artanis|Arthas|Auriel|Azmodan|Blaze|...	UNKNOWN STEP	2026-10-04T09:33:30.0903775Z [command]/usr/bin/git version
+make (1, 15, Abathur|Alarak|Alexstrasza|Ana|Anduin|Anub'arak|Artanis|Arthas|Auriel|Azmodan|Blaze|...	UNKNOWN STEP	2026-10-04T09:33:30.0949109Z git version 2.55.0
+make (1, 15, Abathur|Alarak|Alexstrasza|Ana|Anduin|Anub'arak|Artanis|Arthas|Auriel|Azmodan|Blaze|...	UNKNOWN STEP	2026-10-04T09:33:30.0993516Z Temporarily overriding HOME='/home/runner/work/_temp/bffabb94-9842-454b-a5bc-0b054869683e' before making global git config changes
+make (1, 15, Abathur|Alarak|Alexstrasza|Ana|Anduin|Anub'arak|Artanis|Arthas|Auriel|Azmodan|Blaze|...	UNKNOWN STEP	2026-10-04T09:33:30.0994717Z Adding repository directory to the temporary git global config as a safe directory
+make (1, 15, Abathur|Alarak|Alexstrasza|Ana|Anduin|Anub'arak|Artanis|Arthas|Auriel|Azmodan|Blaze|...	UNKNOWN STEP	2026-10-04T09:33:30.0999400Z [command]/usr/bin/git config --global --add safe.directory /home/runner/work/HOTS-03/HOTS-03
+make (1, 15, Abathur|Alarak|Alexstrasza|Ana|Anduin|Anub'arak|Artanis|Arthas|Auriel|Azmodan|Blaze|...	UNKNOWN STEP	2026-10-04T09:33:30.1046216Z [command]/usr/bin/git config --local --name-only --get-regexp core\.sshCommand
+make (1, 15, Abathur|Alarak|Alexstrasza|Ana|Anduin|Anub'arak|Artanis|Arthas|Auriel|Azmodan|Blaze|...	UNKNOWN STEP	2026-10-04T09:33:30.1087479Z [command]/usr/bin/git submodule foreach --recursive sh -c "git config --local --name-only --get-regexp 'core\.sshCommand' && git config --local --unset-all 'core.sshCommand' || :"
+make (1, 15, Abathur|Alarak|Alexstrasza|Ana|Anduin|Anub'arak|Artanis|Arthas|Auriel|Azmodan|Blaze|...	UNKNOWN STEP	2026-10-04T09:33:30.1377245Z [command]/usr/bin/git config --local --name-only --get-regexp http\.https\:\/\/github\.com\/\.extraheader
+make (1, 15, Abathur|Alarak|Alexstrasza|Ana|Anduin|Anub'arak|Artanis|Arthas|Auriel|Azmodan|Blaze|...	UNKNOWN STEP	2026-10-04T09:33:30.1406411Z http.https://github.com/.extraheader
+make (1, 15, Abathur|Alarak|Alexstrasza|Ana|Anduin|Anub'arak|Artanis|Arthas|Auriel|Azmodan|Blaze|...	UNKNOWN STEP	2026-10-04T09:33:30.1419337Z [command]/usr/bin/git config --local --unset-all http.https://github.com/.extraheader
+make (1, 15, Abathur|Alarak|Alexstrasza|Ana|Anduin|Anub'arak|Artanis|Arthas|Auriel|Azmodan|Blaze|...	UNKNOWN STEP	2026-10-04T09:33:30.1460793Z [command]/usr/bin/git submodule foreach --recursive sh -c "git config --local --name-only --get-regexp 'http\.https\:\/\/github\.com\/\.extraheader' && git config --local --unset-all 'http.https://github.com/.extraheader' || :"
+make (1, 15, Abathur|Alarak|Alexstrasza|Ana|Anduin|Anub'arak|Artanis|Arthas|Auriel|Azmodan|Blaze|...	UNKNOWN STEP	2026-10-04T09:33:30.1795577Z [command]/usr/bin/git config --local --name-only --get-regexp ^includeIf\.gitdir:
+make (1, 15, Abathur|Alarak|Alexstrasza|Ana|Anduin|Anub'arak|Artanis|Arthas|Auriel|Azmodan|Blaze|...	UNKNOWN STEP	2026-10-04T09:33:30.1838187Z [command]/usr/bin/git submodule foreach --recursive git config --local --show-origin --name-only --get-regexp remote.origin.url
+make (1, 15, Abathur|Alarak|Alexstrasza|Ana|Anduin|Anub'arak|Artanis|Arthas|Auriel|Azmodan|Blaze|...	UNKNOWN STEP	2026-10-04T09:33:30.2263872Z Cleaning up orphan processes
+make (1, 15, Abathur|Alarak|Alexstrasza|Ana|Anduin|Anub'arak|Artanis|Arthas|Auriel|Azmodan|Blaze|...	UNKNOWN STEP	2026-10-04T09:33:30.2620370Z ##[warning]Node.js 20 is deprecated. The following actions target Node.js 20 but are being forced to run on Node.js 24: actions/checkout@v4. For more information see: https://github.blog/changelog/2025-09-19-deprecation-of-node-20-on-github-actions-runners/

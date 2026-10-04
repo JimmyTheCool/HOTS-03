@@ -1,0 +1,376 @@
+make (6, 16, Tracer|Tychus|Tyrael|Tyrande|Uther|Valeera|Valla|Varian|Whitemane|Xal'atath|Xul|Yrel...	UNKNOWN STEP	﻿2026-10-04T09:32:28.6794960Z Current runner version: '2.337.0'
+make (6, 16, Tracer|Tychus|Tyrael|Tyrande|Uther|Valeera|Valla|Varian|Whitemane|Xal'atath|Xul|Yrel...	UNKNOWN STEP	2026-10-04T09:32:28.6819670Z ##[group]Runner Image Provisioner
+make (6, 16, Tracer|Tychus|Tyrael|Tyrande|Uther|Valeera|Valla|Varian|Whitemane|Xal'atath|Xul|Yrel...	UNKNOWN STEP	2026-10-04T09:32:28.6820719Z Hosted Compute Agent
+make (6, 16, Tracer|Tychus|Tyrael|Tyrande|Uther|Valeera|Valla|Varian|Whitemane|Xal'atath|Xul|Yrel...	UNKNOWN STEP	2026-10-04T09:32:28.6821401Z Version: 20260901.588
+make (6, 16, Tracer|Tychus|Tyrael|Tyrande|Uther|Valeera|Valla|Varian|Whitemane|Xal'atath|Xul|Yrel...	UNKNOWN STEP	2026-10-04T09:32:28.6822211Z Commit: f88ec8081b781fac6c440065ac7ff9e710ce3d0b
+make (6, 16, Tracer|Tychus|Tyrael|Tyrande|Uther|Valeera|Valla|Varian|Whitemane|Xal'atath|Xul|Yrel...	UNKNOWN STEP	2026-10-04T09:32:28.6822987Z Build Date: 2026-09-01T19:56:44Z
+make (6, 16, Tracer|Tychus|Tyrael|Tyrande|Uther|Valeera|Valla|Varian|Whitemane|Xal'atath|Xul|Yrel...	UNKNOWN STEP	2026-10-04T09:32:28.6823715Z Worker ID: {d12650bf-ab44-41aa-8cdd-fb561e3bb49a}
+make (6, 16, Tracer|Tychus|Tyrael|Tyrande|Uther|Valeera|Valla|Varian|Whitemane|Xal'atath|Xul|Yrel...	UNKNOWN STEP	2026-10-04T09:32:28.6824546Z Azure Region: westus2
+make (6, 16, Tracer|Tychus|Tyrael|Tyrande|Uther|Valeera|Valla|Varian|Whitemane|Xal'atath|Xul|Yrel...	UNKNOWN STEP	2026-10-04T09:32:28.6825554Z ##[endgroup]
+make (6, 16, Tracer|Tychus|Tyrael|Tyrande|Uther|Valeera|Valla|Varian|Whitemane|Xal'atath|Xul|Yrel...	UNKNOWN STEP	2026-10-04T09:32:28.6827463Z ##[group]Operating System
+make (6, 16, Tracer|Tychus|Tyrael|Tyrande|Uther|Valeera|Valla|Varian|Whitemane|Xal'atath|Xul|Yrel...	UNKNOWN STEP	2026-10-04T09:32:28.6828177Z Ubuntu
+make (6, 16, Tracer|Tychus|Tyrael|Tyrande|Uther|Valeera|Valla|Varian|Whitemane|Xal'atath|Xul|Yrel...	UNKNOWN STEP	2026-10-04T09:32:28.6828759Z 22.04.5
+make (6, 16, Tracer|Tychus|Tyrael|Tyrande|Uther|Valeera|Valla|Varian|Whitemane|Xal'atath|Xul|Yrel...	UNKNOWN STEP	2026-10-04T09:32:28.6829373Z LTS
+make (6, 16, Tracer|Tychus|Tyrael|Tyrande|Uther|Valeera|Valla|Varian|Whitemane|Xal'atath|Xul|Yrel...	UNKNOWN STEP	2026-10-04T09:32:28.6829952Z ##[endgroup]
+make (6, 16, Tracer|Tychus|Tyrael|Tyrande|Uther|Valeera|Valla|Varian|Whitemane|Xal'atath|Xul|Yrel...	UNKNOWN STEP	2026-10-04T09:32:28.6830634Z ##[group]Runner Image
+make (6, 16, Tracer|Tychus|Tyrael|Tyrande|Uther|Valeera|Valla|Varian|Whitemane|Xal'atath|Xul|Yrel...	UNKNOWN STEP	2026-10-04T09:32:28.6831340Z Image: ubuntu-22.04
+make (6, 16, Tracer|Tychus|Tyrael|Tyrande|Uther|Valeera|Valla|Varian|Whitemane|Xal'atath|Xul|Yrel...	UNKNOWN STEP	2026-10-04T09:32:28.6831958Z Version: 20260927.309.1
+make (6, 16, Tracer|Tychus|Tyrael|Tyrande|Uther|Valeera|Valla|Varian|Whitemane|Xal'atath|Xul|Yrel...	UNKNOWN STEP	2026-10-04T09:32:28.6833355Z Included Software: https://github.com/actions/runner-images/blob/ubuntu22/20260927.309/images/ubuntu/Ubuntu2204-Readme.md
+make (6, 16, Tracer|Tychus|Tyrael|Tyrande|Uther|Valeera|Valla|Varian|Whitemane|Xal'atath|Xul|Yrel...	UNKNOWN STEP	2026-10-04T09:32:28.6835756Z Image Release: https://github.com/actions/runner-images/releases/tag/ubuntu22%2F20260927.309
+make (6, 16, Tracer|Tychus|Tyrael|Tyrande|Uther|Valeera|Valla|Varian|Whitemane|Xal'atath|Xul|Yrel...	UNKNOWN STEP	2026-10-04T09:32:28.6836949Z ##[endgroup]
+make (6, 16, Tracer|Tychus|Tyrael|Tyrande|Uther|Valeera|Valla|Varian|Whitemane|Xal'atath|Xul|Yrel...	UNKNOWN STEP	2026-10-04T09:32:28.6838164Z ##[group]GITHUB_TOKEN Permissions
+make (6, 16, Tracer|Tychus|Tyrael|Tyrande|Uther|Valeera|Valla|Varian|Whitemane|Xal'atath|Xul|Yrel...	UNKNOWN STEP	2026-10-04T09:32:28.6840737Z Contents: write
+make (6, 16, Tracer|Tychus|Tyrael|Tyrande|Uther|Valeera|Valla|Varian|Whitemane|Xal'atath|Xul|Yrel...	UNKNOWN STEP	2026-10-04T09:32:28.6841461Z Metadata: read
+make (6, 16, Tracer|Tychus|Tyrael|Tyrande|Uther|Valeera|Valla|Varian|Whitemane|Xal'atath|Xul|Yrel...	UNKNOWN STEP	2026-10-04T09:32:28.6842190Z ##[endgroup]
+make (6, 16, Tracer|Tychus|Tyrael|Tyrande|Uther|Valeera|Valla|Varian|Whitemane|Xal'atath|Xul|Yrel...	UNKNOWN STEP	2026-10-04T09:32:28.6844283Z Secret source: Actions
+make (6, 16, Tracer|Tychus|Tyrael|Tyrande|Uther|Valeera|Valla|Varian|Whitemane|Xal'atath|Xul|Yrel...	UNKNOWN STEP	2026-10-04T09:32:28.6845690Z Cache mode: write
+make (6, 16, Tracer|Tychus|Tyrael|Tyrande|Uther|Valeera|Valla|Varian|Whitemane|Xal'atath|Xul|Yrel...	UNKNOWN STEP	2026-10-04T09:32:28.6846484Z Prepare workflow directory
+make (6, 16, Tracer|Tychus|Tyrael|Tyrande|Uther|Valeera|Valla|Varian|Whitemane|Xal'atath|Xul|Yrel...	UNKNOWN STEP	2026-10-04T09:32:28.7308608Z Prepare all required actions
+make (6, 16, Tracer|Tychus|Tyrael|Tyrande|Uther|Valeera|Valla|Varian|Whitemane|Xal'atath|Xul|Yrel...	UNKNOWN STEP	2026-10-04T09:32:28.7363388Z Getting action download info
+make (6, 16, Tracer|Tychus|Tyrael|Tyrande|Uther|Valeera|Valla|Varian|Whitemane|Xal'atath|Xul|Yrel...	UNKNOWN STEP	2026-10-04T09:32:29.0888125Z Download action repository 'actions/checkout@v4' (SHA:11d5960a326750d5838078e36cf38b85af677262)
+make (6, 16, Tracer|Tychus|Tyrael|Tyrande|Uther|Valeera|Valla|Varian|Whitemane|Xal'atath|Xul|Yrel...	UNKNOWN STEP	2026-10-04T09:32:29.2301559Z Download action repository 'actions/upload-artifact@v4' (SHA:ea165f8d65b6e75b540449e92b4886f43607fa02)
+make (6, 16, Tracer|Tychus|Tyrael|Tyrande|Uther|Valeera|Valla|Varian|Whitemane|Xal'atath|Xul|Yrel...	UNKNOWN STEP	2026-10-04T09:32:29.5364390Z Complete job name: make (6, 16, Tracer|Tychus|Tyrael|Tyrande|Uther|Valeera|Valla|Varian|Whitemane|Xal'atath|Xul|Yrel...
+make (6, 16, Tracer|Tychus|Tyrael|Tyrande|Uther|Valeera|Valla|Varian|Whitemane|Xal'atath|Xul|Yrel...	UNKNOWN STEP	2026-10-04T09:32:29.6156762Z ##[group]Run actions/checkout@v4
+make (6, 16, Tracer|Tychus|Tyrael|Tyrande|Uther|Valeera|Valla|Varian|Whitemane|Xal'atath|Xul|Yrel...	UNKNOWN STEP	2026-10-04T09:32:29.6157671Z with:
+make (6, 16, Tracer|Tychus|Tyrael|Tyrande|Uther|Valeera|Valla|Varian|Whitemane|Xal'atath|Xul|Yrel...	UNKNOWN STEP	2026-10-04T09:32:29.6158145Z   ref: chatgpt-stl-builder
+make (6, 16, Tracer|Tychus|Tyrael|Tyrande|Uther|Valeera|Valla|Varian|Whitemane|Xal'atath|Xul|Yrel...	UNKNOWN STEP	2026-10-04T09:32:29.6158663Z   fetch-depth: 1
+make (6, 16, Tracer|Tychus|Tyrael|Tyrande|Uther|Valeera|Valla|Varian|Whitemane|Xal'atath|Xul|Yrel...	UNKNOWN STEP	2026-10-04T09:32:29.6159135Z   repository: JimmyTheCool/HOTS-03
+make (6, 16, Tracer|Tychus|Tyrael|Tyrande|Uther|Valeera|Valla|Varian|Whitemane|Xal'atath|Xul|Yrel...	UNKNOWN STEP	2026-10-04T09:32:29.6162803Z   token: ***
+make (6, 16, Tracer|Tychus|Tyrael|Tyrande|Uther|Valeera|Valla|Varian|Whitemane|Xal'atath|Xul|Yrel...	UNKNOWN STEP	2026-10-04T09:32:29.6163249Z   ssh-strict: true
+make (6, 16, Tracer|Tychus|Tyrael|Tyrande|Uther|Valeera|Valla|Varian|Whitemane|Xal'atath|Xul|Yrel...	UNKNOWN STEP	2026-10-04T09:32:29.6163699Z   ssh-user: git
+make (6, 16, Tracer|Tychus|Tyrael|Tyrande|Uther|Valeera|Valla|Varian|Whitemane|Xal'atath|Xul|Yrel...	UNKNOWN STEP	2026-10-04T09:32:29.6164174Z   persist-credentials: true
+make (6, 16, Tracer|Tychus|Tyrael|Tyrande|Uther|Valeera|Valla|Varian|Whitemane|Xal'atath|Xul|Yrel...	UNKNOWN STEP	2026-10-04T09:32:29.6164682Z   clean: true
+make (6, 16, Tracer|Tychus|Tyrael|Tyrande|Uther|Valeera|Valla|Varian|Whitemane|Xal'atath|Xul|Yrel...	UNKNOWN STEP	2026-10-04T09:32:29.6165485Z   sparse-checkout-cone-mode: true
+make (6, 16, Tracer|Tychus|Tyrael|Tyrande|Uther|Valeera|Valla|Varian|Whitemane|Xal'atath|Xul|Yrel...	UNKNOWN STEP	2026-10-04T09:32:29.6166055Z   fetch-tags: false
+make (6, 16, Tracer|Tychus|Tyrael|Tyrande|Uther|Valeera|Valla|Varian|Whitemane|Xal'atath|Xul|Yrel...	UNKNOWN STEP	2026-10-04T09:32:29.6166514Z   show-progress: true
+make (6, 16, Tracer|Tychus|Tyrael|Tyrande|Uther|Valeera|Valla|Varian|Whitemane|Xal'atath|Xul|Yrel...	UNKNOWN STEP	2026-10-04T09:32:29.6166973Z   lfs: false
+make (6, 16, Tracer|Tychus|Tyrael|Tyrande|Uther|Valeera|Valla|Varian|Whitemane|Xal'atath|Xul|Yrel...	UNKNOWN STEP	2026-10-04T09:32:29.6167397Z   submodules: false
+make (6, 16, Tracer|Tychus|Tyrael|Tyrande|Uther|Valeera|Valla|Varian|Whitemane|Xal'atath|Xul|Yrel...	UNKNOWN STEP	2026-10-04T09:32:29.6167862Z   set-safe-directory: true
+make (6, 16, Tracer|Tychus|Tyrael|Tyrande|Uther|Valeera|Valla|Varian|Whitemane|Xal'atath|Xul|Yrel...	UNKNOWN STEP	2026-10-04T09:32:29.6168378Z   allow-unsafe-pr-checkout: false
+make (6, 16, Tracer|Tychus|Tyrael|Tyrande|Uther|Valeera|Valla|Varian|Whitemane|Xal'atath|Xul|Yrel...	UNKNOWN STEP	2026-10-04T09:32:29.6169201Z env:
+make (6, 16, Tracer|Tychus|Tyrael|Tyrande|Uther|Valeera|Valla|Varian|Whitemane|Xal'atath|Xul|Yrel...	UNKNOWN STEP	2026-10-04T09:32:29.6169627Z   BV: 3.6.23
+make (6, 16, Tracer|Tychus|Tyrael|Tyrande|Uther|Valeera|Valla|Varian|Whitemane|Xal'atath|Xul|Yrel...	UNKNOWN STEP	2026-10-04T09:32:29.6170101Z   M3: 58935005c4465a219a740f6b740253533eda773f
+make (6, 16, Tracer|Tychus|Tyrael|Tyrande|Uther|Valeera|Valla|Varian|Whitemane|Xal'atath|Xul|Yrel...	UNKNOWN STEP	2026-10-04T09:32:29.6170731Z ##[endgroup]
+make (6, 16, Tracer|Tychus|Tyrael|Tyrande|Uther|Valeera|Valla|Varian|Whitemane|Xal'atath|Xul|Yrel...	UNKNOWN STEP	2026-10-04T09:32:29.7256848Z Syncing repository: JimmyTheCool/HOTS-03
+make (6, 16, Tracer|Tychus|Tyrael|Tyrande|Uther|Valeera|Valla|Varian|Whitemane|Xal'atath|Xul|Yrel...	UNKNOWN STEP	2026-10-04T09:32:29.7259448Z ##[group]Getting Git version info
+make (6, 16, Tracer|Tychus|Tyrael|Tyrande|Uther|Valeera|Valla|Varian|Whitemane|Xal'atath|Xul|Yrel...	UNKNOWN STEP	2026-10-04T09:32:29.7260571Z Working directory is '/home/runner/work/HOTS-03/HOTS-03'
+make (6, 16, Tracer|Tychus|Tyrael|Tyrande|Uther|Valeera|Valla|Varian|Whitemane|Xal'atath|Xul|Yrel...	UNKNOWN STEP	2026-10-04T09:32:29.7262170Z [command]/usr/bin/git version
+make (6, 16, Tracer|Tychus|Tyrael|Tyrande|Uther|Valeera|Valla|Varian|Whitemane|Xal'atath|Xul|Yrel...	UNKNOWN STEP	2026-10-04T09:32:29.7337946Z git version 2.55.0
+make (6, 16, Tracer|Tychus|Tyrael|Tyrande|Uther|Valeera|Valla|Varian|Whitemane|Xal'atath|Xul|Yrel...	UNKNOWN STEP	2026-10-04T09:32:29.7371986Z ##[endgroup]
+make (6, 16, Tracer|Tychus|Tyrael|Tyrande|Uther|Valeera|Valla|Varian|Whitemane|Xal'atath|Xul|Yrel...	UNKNOWN STEP	2026-10-04T09:32:29.7390538Z Temporarily overriding HOME='/home/runner/work/_temp/c4363d12-0754-409b-990b-05d482c9f3e9' before making global git config changes
+make (6, 16, Tracer|Tychus|Tyrael|Tyrande|Uther|Valeera|Valla|Varian|Whitemane|Xal'atath|Xul|Yrel...	UNKNOWN STEP	2026-10-04T09:32:29.7392827Z Adding repository directory to the temporary git global config as a safe directory
+make (6, 16, Tracer|Tychus|Tyrael|Tyrande|Uther|Valeera|Valla|Varian|Whitemane|Xal'atath|Xul|Yrel...	UNKNOWN STEP	2026-10-04T09:32:29.7394761Z [command]/usr/bin/git config --global --add safe.directory /home/runner/work/HOTS-03/HOTS-03
+make (6, 16, Tracer|Tychus|Tyrael|Tyrande|Uther|Valeera|Valla|Varian|Whitemane|Xal'atath|Xul|Yrel...	UNKNOWN STEP	2026-10-04T09:32:29.7462895Z Deleting the contents of '/home/runner/work/HOTS-03/HOTS-03'
+make (6, 16, Tracer|Tychus|Tyrael|Tyrande|Uther|Valeera|Valla|Varian|Whitemane|Xal'atath|Xul|Yrel...	UNKNOWN STEP	2026-10-04T09:32:29.7469561Z ##[group]Initializing the repository
+make (6, 16, Tracer|Tychus|Tyrael|Tyrande|Uther|Valeera|Valla|Varian|Whitemane|Xal'atath|Xul|Yrel...	UNKNOWN STEP	2026-10-04T09:32:29.7474395Z [command]/usr/bin/git init /home/runner/work/HOTS-03/HOTS-03
+make (6, 16, Tracer|Tychus|Tyrael|Tyrande|Uther|Valeera|Valla|Varian|Whitemane|Xal'atath|Xul|Yrel...	UNKNOWN STEP	2026-10-04T09:32:29.7586893Z hint: Using 'master' as the name for the initial branch. This default branch name
+make (6, 16, Tracer|Tychus|Tyrael|Tyrande|Uther|Valeera|Valla|Varian|Whitemane|Xal'atath|Xul|Yrel...	UNKNOWN STEP	2026-10-04T09:32:29.7606954Z hint: will change to "main" in Git 3.0. To configure the initial branch name
+make (6, 16, Tracer|Tychus|Tyrael|Tyrande|Uther|Valeera|Valla|Varian|Whitemane|Xal'atath|Xul|Yrel...	UNKNOWN STEP	2026-10-04T09:32:29.7608865Z hint: to use in all of your new repositories, which will suppress this warning,
+make (6, 16, Tracer|Tychus|Tyrael|Tyrande|Uther|Valeera|Valla|Varian|Whitemane|Xal'atath|Xul|Yrel...	UNKNOWN STEP	2026-10-04T09:32:29.7610295Z hint: call:
+make (6, 16, Tracer|Tychus|Tyrael|Tyrande|Uther|Valeera|Valla|Varian|Whitemane|Xal'atath|Xul|Yrel...	UNKNOWN STEP	2026-10-04T09:32:29.7611165Z hint:
+make (6, 16, Tracer|Tychus|Tyrael|Tyrande|Uther|Valeera|Valla|Varian|Whitemane|Xal'atath|Xul|Yrel...	UNKNOWN STEP	2026-10-04T09:32:29.7612182Z hint: 	git config --global init.defaultBranch <name>
+make (6, 16, Tracer|Tychus|Tyrael|Tyrande|Uther|Valeera|Valla|Varian|Whitemane|Xal'atath|Xul|Yrel...	UNKNOWN STEP	2026-10-04T09:32:29.7613483Z hint:
+make (6, 16, Tracer|Tychus|Tyrael|Tyrande|Uther|Valeera|Valla|Varian|Whitemane|Xal'atath|Xul|Yrel...	UNKNOWN STEP	2026-10-04T09:32:29.7618410Z hint: Names commonly chosen instead of 'master' are 'main', 'trunk' and
+make (6, 16, Tracer|Tychus|Tyrael|Tyrande|Uther|Valeera|Valla|Varian|Whitemane|Xal'atath|Xul|Yrel...	UNKNOWN STEP	2026-10-04T09:32:29.7620288Z hint: 'development'. The just-created branch can be renamed via this command:
+make (6, 16, Tracer|Tychus|Tyrael|Tyrande|Uther|Valeera|Valla|Varian|Whitemane|Xal'atath|Xul|Yrel...	UNKNOWN STEP	2026-10-04T09:32:29.7621767Z hint:
+make (6, 16, Tracer|Tychus|Tyrael|Tyrande|Uther|Valeera|Valla|Varian|Whitemane|Xal'atath|Xul|Yrel...	UNKNOWN STEP	2026-10-04T09:32:29.7622726Z hint: 	git branch -m <name>
+make (6, 16, Tracer|Tychus|Tyrael|Tyrande|Uther|Valeera|Valla|Varian|Whitemane|Xal'atath|Xul|Yrel...	UNKNOWN STEP	2026-10-04T09:32:29.7623869Z hint:
+make (6, 16, Tracer|Tychus|Tyrael|Tyrande|Uther|Valeera|Valla|Varian|Whitemane|Xal'atath|Xul|Yrel...	UNKNOWN STEP	2026-10-04T09:32:29.7625437Z hint: Disable this message with "git config set advice.defaultBranchName false"
+make (6, 16, Tracer|Tychus|Tyrael|Tyrande|Uther|Valeera|Valla|Varian|Whitemane|Xal'atath|Xul|Yrel...	UNKNOWN STEP	2026-10-04T09:32:29.7627691Z Initialized empty Git repository in /home/runner/work/HOTS-03/HOTS-03/.git/
+make (6, 16, Tracer|Tychus|Tyrael|Tyrande|Uther|Valeera|Valla|Varian|Whitemane|Xal'atath|Xul|Yrel...	UNKNOWN STEP	2026-10-04T09:32:29.7630208Z [command]/usr/bin/git remote add origin https://github.com/JimmyTheCool/HOTS-03
+make (6, 16, Tracer|Tychus|Tyrael|Tyrande|Uther|Valeera|Valla|Varian|Whitemane|Xal'atath|Xul|Yrel...	UNKNOWN STEP	2026-10-04T09:32:29.7649290Z ##[endgroup]
+make (6, 16, Tracer|Tychus|Tyrael|Tyrande|Uther|Valeera|Valla|Varian|Whitemane|Xal'atath|Xul|Yrel...	UNKNOWN STEP	2026-10-04T09:32:29.7650852Z ##[group]Disabling automatic garbage collection
+make (6, 16, Tracer|Tychus|Tyrael|Tyrande|Uther|Valeera|Valla|Varian|Whitemane|Xal'atath|Xul|Yrel...	UNKNOWN STEP	2026-10-04T09:32:29.7653622Z [command]/usr/bin/git config --local gc.auto 0
+make (6, 16, Tracer|Tychus|Tyrael|Tyrande|Uther|Valeera|Valla|Varian|Whitemane|Xal'atath|Xul|Yrel...	UNKNOWN STEP	2026-10-04T09:32:29.7692938Z ##[endgroup]
+make (6, 16, Tracer|Tychus|Tyrael|Tyrande|Uther|Valeera|Valla|Varian|Whitemane|Xal'atath|Xul|Yrel...	UNKNOWN STEP	2026-10-04T09:32:29.7694573Z ##[group]Setting up auth
+make (6, 16, Tracer|Tychus|Tyrael|Tyrande|Uther|Valeera|Valla|Varian|Whitemane|Xal'atath|Xul|Yrel...	UNKNOWN STEP	2026-10-04T09:32:29.7701447Z [command]/usr/bin/git config --local --name-only --get-regexp core\.sshCommand
+make (6, 16, Tracer|Tychus|Tyrael|Tyrande|Uther|Valeera|Valla|Varian|Whitemane|Xal'atath|Xul|Yrel...	UNKNOWN STEP	2026-10-04T09:32:29.7740650Z [command]/usr/bin/git submodule foreach --recursive sh -c "git config --local --name-only --get-regexp 'core\.sshCommand' && git config --local --unset-all 'core.sshCommand' || :"
+make (6, 16, Tracer|Tychus|Tyrael|Tyrande|Uther|Valeera|Valla|Varian|Whitemane|Xal'atath|Xul|Yrel...	UNKNOWN STEP	2026-10-04T09:32:29.8164350Z [command]/usr/bin/git config --local --name-only --get-regexp http\.https\:\/\/github\.com\/\.extraheader
+make (6, 16, Tracer|Tychus|Tyrael|Tyrande|Uther|Valeera|Valla|Varian|Whitemane|Xal'atath|Xul|Yrel...	UNKNOWN STEP	2026-10-04T09:32:29.8208276Z [command]/usr/bin/git submodule foreach --recursive sh -c "git config --local --name-only --get-regexp 'http\.https\:\/\/github\.com\/\.extraheader' && git config --local --unset-all 'http.https://github.com/.extraheader' || :"
+make (6, 16, Tracer|Tychus|Tyrael|Tyrande|Uther|Valeera|Valla|Varian|Whitemane|Xal'atath|Xul|Yrel...	UNKNOWN STEP	2026-10-04T09:32:29.8499380Z [command]/usr/bin/git config --local --name-only --get-regexp ^includeIf\.gitdir:
+make (6, 16, Tracer|Tychus|Tyrael|Tyrande|Uther|Valeera|Valla|Varian|Whitemane|Xal'atath|Xul|Yrel...	UNKNOWN STEP	2026-10-04T09:32:29.8545947Z [command]/usr/bin/git submodule foreach --recursive git config --local --show-origin --name-only --get-regexp remote.origin.url
+make (6, 16, Tracer|Tychus|Tyrael|Tyrande|Uther|Valeera|Valla|Varian|Whitemane|Xal'atath|Xul|Yrel...	UNKNOWN STEP	2026-10-04T09:32:29.8814124Z [command]/usr/bin/git config --local http.https://github.com/.extraheader AUTHORIZATION: basic ***
+make (6, 16, Tracer|Tychus|Tyrael|Tyrande|Uther|Valeera|Valla|Varian|Whitemane|Xal'atath|Xul|Yrel...	UNKNOWN STEP	2026-10-04T09:32:29.8859430Z ##[endgroup]
+make (6, 16, Tracer|Tychus|Tyrael|Tyrande|Uther|Valeera|Valla|Varian|Whitemane|Xal'atath|Xul|Yrel...	UNKNOWN STEP	2026-10-04T09:32:29.8860205Z ##[group]Fetching the repository
+make (6, 16, Tracer|Tychus|Tyrael|Tyrande|Uther|Valeera|Valla|Varian|Whitemane|Xal'atath|Xul|Yrel...	UNKNOWN STEP	2026-10-04T09:32:29.8869957Z [command]/usr/bin/git -c protocol.version=2 fetch --no-tags --prune --no-recurse-submodules --depth=1 origin +refs/heads/chatgpt-stl-builder*:refs/remotes/origin/chatgpt-stl-builder* +refs/tags/chatgpt-stl-builder*:refs/tags/chatgpt-stl-builder*
+make (6, 16, Tracer|Tychus|Tyrael|Tyrande|Uther|Valeera|Valla|Varian|Whitemane|Xal'atath|Xul|Yrel...	UNKNOWN STEP	2026-10-04T09:32:37.1383881Z From https://github.com/JimmyTheCool/HOTS-03
+make (6, 16, Tracer|Tychus|Tyrael|Tyrande|Uther|Valeera|Valla|Varian|Whitemane|Xal'atath|Xul|Yrel...	UNKNOWN STEP	2026-10-04T09:32:37.1385306Z  * [new branch]      chatgpt-stl-builder -> origin/chatgpt-stl-builder
+make (6, 16, Tracer|Tychus|Tyrael|Tyrande|Uther|Valeera|Valla|Varian|Whitemane|Xal'atath|Xul|Yrel...	UNKNOWN STEP	2026-10-04T09:32:37.1388619Z ##[endgroup]
+make (6, 16, Tracer|Tychus|Tyrael|Tyrande|Uther|Valeera|Valla|Varian|Whitemane|Xal'atath|Xul|Yrel...	UNKNOWN STEP	2026-10-04T09:32:37.1389515Z ##[group]Determining the checkout info
+make (6, 16, Tracer|Tychus|Tyrael|Tyrande|Uther|Valeera|Valla|Varian|Whitemane|Xal'atath|Xul|Yrel...	UNKNOWN STEP	2026-10-04T09:32:37.1397180Z [command]/usr/bin/git branch --list --remote origin/chatgpt-stl-builder
+make (6, 16, Tracer|Tychus|Tyrael|Tyrande|Uther|Valeera|Valla|Varian|Whitemane|Xal'atath|Xul|Yrel...	UNKNOWN STEP	2026-10-04T09:32:37.1430967Z   origin/chatgpt-stl-builder
+make (6, 16, Tracer|Tychus|Tyrael|Tyrande|Uther|Valeera|Valla|Varian|Whitemane|Xal'atath|Xul|Yrel...	UNKNOWN STEP	2026-10-04T09:32:37.1435613Z ##[endgroup]
+make (6, 16, Tracer|Tychus|Tyrael|Tyrande|Uther|Valeera|Valla|Varian|Whitemane|Xal'atath|Xul|Yrel...	UNKNOWN STEP	2026-10-04T09:32:37.1440664Z [command]/usr/bin/git sparse-checkout disable
+make (6, 16, Tracer|Tychus|Tyrael|Tyrande|Uther|Valeera|Valla|Varian|Whitemane|Xal'atath|Xul|Yrel...	UNKNOWN STEP	2026-10-04T09:32:37.1493291Z [command]/usr/bin/git config --local --unset-all extensions.worktreeConfig
+make (6, 16, Tracer|Tychus|Tyrael|Tyrande|Uther|Valeera|Valla|Varian|Whitemane|Xal'atath|Xul|Yrel...	UNKNOWN STEP	2026-10-04T09:32:37.1566079Z ##[group]Checking out the ref
+make (6, 16, Tracer|Tychus|Tyrael|Tyrande|Uther|Valeera|Valla|Varian|Whitemane|Xal'atath|Xul|Yrel...	UNKNOWN STEP	2026-10-04T09:32:37.1570352Z [command]/usr/bin/git checkout --progress --force -B chatgpt-stl-builder refs/remotes/origin/chatgpt-stl-builder
+make (6, 16, Tracer|Tychus|Tyrael|Tyrande|Uther|Valeera|Valla|Varian|Whitemane|Xal'atath|Xul|Yrel...	UNKNOWN STEP	2026-10-04T09:32:38.2084908Z Updating files:  36% (279/771)
+make (6, 16, Tracer|Tychus|Tyrael|Tyrande|Uther|Valeera|Valla|Varian|Whitemane|Xal'atath|Xul|Yrel...	UNKNOWN STEP	2026-10-04T09:32:38.2441473Z Updating files:  37% (286/771)
+make (6, 16, Tracer|Tychus|Tyrael|Tyrande|Uther|Valeera|Valla|Varian|Whitemane|Xal'atath|Xul|Yrel...	UNKNOWN STEP	2026-10-04T09:32:38.2703161Z Updating files:  38% (293/771)
+make (6, 16, Tracer|Tychus|Tyrael|Tyrande|Uther|Valeera|Valla|Varian|Whitemane|Xal'atath|Xul|Yrel...	UNKNOWN STEP	2026-10-04T09:32:38.2943850Z Updating files:  39% (301/771)
+make (6, 16, Tracer|Tychus|Tyrael|Tyrande|Uther|Valeera|Valla|Varian|Whitemane|Xal'atath|Xul|Yrel...	UNKNOWN STEP	2026-10-04T09:32:38.3082636Z Updating files:  40% (309/771)
+make (6, 16, Tracer|Tychus|Tyrael|Tyrande|Uther|Valeera|Valla|Varian|Whitemane|Xal'atath|Xul|Yrel...	UNKNOWN STEP	2026-10-04T09:32:38.3420789Z Updating files:  41% (317/771)
+make (6, 16, Tracer|Tychus|Tyrael|Tyrande|Uther|Valeera|Valla|Varian|Whitemane|Xal'atath|Xul|Yrel...	UNKNOWN STEP	2026-10-04T09:32:38.3604703Z Updating files:  42% (324/771)
+make (6, 16, Tracer|Tychus|Tyrael|Tyrande|Uther|Valeera|Valla|Varian|Whitemane|Xal'atath|Xul|Yrel...	UNKNOWN STEP	2026-10-04T09:32:38.3864217Z Updating files:  43% (332/771)
+make (6, 16, Tracer|Tychus|Tyrael|Tyrande|Uther|Valeera|Valla|Varian|Whitemane|Xal'atath|Xul|Yrel...	UNKNOWN STEP	2026-10-04T09:32:38.4200160Z Updating files:  44% (340/771)
+make (6, 16, Tracer|Tychus|Tyrael|Tyrande|Uther|Valeera|Valla|Varian|Whitemane|Xal'atath|Xul|Yrel...	UNKNOWN STEP	2026-10-04T09:32:38.4376346Z Updating files:  45% (347/771)
+make (6, 16, Tracer|Tychus|Tyrael|Tyrande|Uther|Valeera|Valla|Varian|Whitemane|Xal'atath|Xul|Yrel...	UNKNOWN STEP	2026-10-04T09:32:38.4579515Z Updating files:  46% (355/771)
+make (6, 16, Tracer|Tychus|Tyrael|Tyrande|Uther|Valeera|Valla|Varian|Whitemane|Xal'atath|Xul|Yrel...	UNKNOWN STEP	2026-10-04T09:32:38.4929484Z Updating files:  47% (363/771)
+make (6, 16, Tracer|Tychus|Tyrael|Tyrande|Uther|Valeera|Valla|Varian|Whitemane|Xal'atath|Xul|Yrel...	UNKNOWN STEP	2026-10-04T09:32:38.5172942Z Updating files:  48% (371/771)
+make (6, 16, Tracer|Tychus|Tyrael|Tyrande|Uther|Valeera|Valla|Varian|Whitemane|Xal'atath|Xul|Yrel...	UNKNOWN STEP	2026-10-04T09:32:38.5460965Z Updating files:  49% (378/771)
+make (6, 16, Tracer|Tychus|Tyrael|Tyrande|Uther|Valeera|Valla|Varian|Whitemane|Xal'atath|Xul|Yrel...	UNKNOWN STEP	2026-10-04T09:32:38.5690556Z Updating files:  50% (386/771)
+make (6, 16, Tracer|Tychus|Tyrael|Tyrande|Uther|Valeera|Valla|Varian|Whitemane|Xal'atath|Xul|Yrel...	UNKNOWN STEP	2026-10-04T09:32:38.5959036Z Updating files:  51% (394/771)
+make (6, 16, Tracer|Tychus|Tyrael|Tyrande|Uther|Valeera|Valla|Varian|Whitemane|Xal'atath|Xul|Yrel...	UNKNOWN STEP	2026-10-04T09:32:38.6429070Z Updating files:  52% (401/771)
+make (6, 16, Tracer|Tychus|Tyrael|Tyrande|Uther|Valeera|Valla|Varian|Whitemane|Xal'atath|Xul|Yrel...	UNKNOWN STEP	2026-10-04T09:32:38.6640148Z Updating files:  53% (409/771)
+make (6, 16, Tracer|Tychus|Tyrael|Tyrande|Uther|Valeera|Valla|Varian|Whitemane|Xal'atath|Xul|Yrel...	UNKNOWN STEP	2026-10-04T09:32:38.6891523Z Updating files:  54% (417/771)
+make (6, 16, Tracer|Tychus|Tyrael|Tyrande|Uther|Valeera|Valla|Varian|Whitemane|Xal'atath|Xul|Yrel...	UNKNOWN STEP	2026-10-04T09:32:38.7287792Z Updating files:  55% (425/771)
+make (6, 16, Tracer|Tychus|Tyrael|Tyrande|Uther|Valeera|Valla|Varian|Whitemane|Xal'atath|Xul|Yrel...	UNKNOWN STEP	2026-10-04T09:32:38.7590315Z Updating files:  56% (432/771)
+make (6, 16, Tracer|Tychus|Tyrael|Tyrande|Uther|Valeera|Valla|Varian|Whitemane|Xal'atath|Xul|Yrel...	UNKNOWN STEP	2026-10-04T09:32:38.8045874Z Updating files:  57% (440/771)
+make (6, 16, Tracer|Tychus|Tyrael|Tyrande|Uther|Valeera|Valla|Varian|Whitemane|Xal'atath|Xul|Yrel...	UNKNOWN STEP	2026-10-04T09:32:38.8218029Z Updating files:  58% (448/771)
+make (6, 16, Tracer|Tychus|Tyrael|Tyrande|Uther|Valeera|Valla|Varian|Whitemane|Xal'atath|Xul|Yrel...	UNKNOWN STEP	2026-10-04T09:32:38.8675029Z Updating files:  59% (455/771)
+make (6, 16, Tracer|Tychus|Tyrael|Tyrande|Uther|Valeera|Valla|Varian|Whitemane|Xal'atath|Xul|Yrel...	UNKNOWN STEP	2026-10-04T09:32:38.8824751Z Updating files:  60% (463/771)
+make (6, 16, Tracer|Tychus|Tyrael|Tyrande|Uther|Valeera|Valla|Varian|Whitemane|Xal'atath|Xul|Yrel...	UNKNOWN STEP	2026-10-04T09:32:38.9105821Z Updating files:  61% (471/771)
+make (6, 16, Tracer|Tychus|Tyrael|Tyrande|Uther|Valeera|Valla|Varian|Whitemane|Xal'atath|Xul|Yrel...	UNKNOWN STEP	2026-10-04T09:32:38.9423840Z Updating files:  62% (479/771)
+make (6, 16, Tracer|Tychus|Tyrael|Tyrande|Uther|Valeera|Valla|Varian|Whitemane|Xal'atath|Xul|Yrel...	UNKNOWN STEP	2026-10-04T09:32:38.9704411Z Updating files:  63% (486/771)
+make (6, 16, Tracer|Tychus|Tyrael|Tyrande|Uther|Valeera|Valla|Varian|Whitemane|Xal'atath|Xul|Yrel...	UNKNOWN STEP	2026-10-04T09:32:39.0083705Z Updating files:  64% (494/771)
+make (6, 16, Tracer|Tychus|Tyrael|Tyrande|Uther|Valeera|Valla|Varian|Whitemane|Xal'atath|Xul|Yrel...	UNKNOWN STEP	2026-10-04T09:32:39.0613047Z Updating files:  65% (502/771)
+make (6, 16, Tracer|Tychus|Tyrael|Tyrande|Uther|Valeera|Valla|Varian|Whitemane|Xal'atath|Xul|Yrel...	UNKNOWN STEP	2026-10-04T09:32:39.0952349Z Updating files:  66% (509/771)
+make (6, 16, Tracer|Tychus|Tyrael|Tyrande|Uther|Valeera|Valla|Varian|Whitemane|Xal'atath|Xul|Yrel...	UNKNOWN STEP	2026-10-04T09:32:39.1184721Z Updating files:  67% (517/771)
+make (6, 16, Tracer|Tychus|Tyrael|Tyrande|Uther|Valeera|Valla|Varian|Whitemane|Xal'atath|Xul|Yrel...	UNKNOWN STEP	2026-10-04T09:32:39.1489648Z Updating files:  68% (525/771)
+make (6, 16, Tracer|Tychus|Tyrael|Tyrande|Uther|Valeera|Valla|Varian|Whitemane|Xal'atath|Xul|Yrel...	UNKNOWN STEP	2026-10-04T09:32:39.1827241Z Updating files:  69% (532/771)
+make (6, 16, Tracer|Tychus|Tyrael|Tyrande|Uther|Valeera|Valla|Varian|Whitemane|Xal'atath|Xul|Yrel...	UNKNOWN STEP	2026-10-04T09:32:39.2017177Z Updating files:  69% (536/771)
+make (6, 16, Tracer|Tychus|Tyrael|Tyrande|Uther|Valeera|Valla|Varian|Whitemane|Xal'atath|Xul|Yrel...	UNKNOWN STEP	2026-10-04T09:32:39.2280320Z Updating files:  70% (540/771)
+make (6, 16, Tracer|Tychus|Tyrael|Tyrande|Uther|Valeera|Valla|Varian|Whitemane|Xal'atath|Xul|Yrel...	UNKNOWN STEP	2026-10-04T09:32:39.2772957Z Updating files:  71% (548/771)
+make (6, 16, Tracer|Tychus|Tyrael|Tyrande|Uther|Valeera|Valla|Varian|Whitemane|Xal'atath|Xul|Yrel...	UNKNOWN STEP	2026-10-04T09:32:39.3092732Z Updating files:  72% (556/771)
+make (6, 16, Tracer|Tychus|Tyrael|Tyrande|Uther|Valeera|Valla|Varian|Whitemane|Xal'atath|Xul|Yrel...	UNKNOWN STEP	2026-10-04T09:32:39.3418791Z Updating files:  73% (563/771)
+make (6, 16, Tracer|Tychus|Tyrael|Tyrande|Uther|Valeera|Valla|Varian|Whitemane|Xal'atath|Xul|Yrel...	UNKNOWN STEP	2026-10-04T09:32:39.3763335Z Updating files:  74% (571/771)
+make (6, 16, Tracer|Tychus|Tyrael|Tyrande|Uther|Valeera|Valla|Varian|Whitemane|Xal'atath|Xul|Yrel...	UNKNOWN STEP	2026-10-04T09:32:39.3916177Z Updating files:  75% (579/771)
+make (6, 16, Tracer|Tychus|Tyrael|Tyrande|Uther|Valeera|Valla|Varian|Whitemane|Xal'atath|Xul|Yrel...	UNKNOWN STEP	2026-10-04T09:32:39.4238604Z Updating files:  76% (586/771)
+make (6, 16, Tracer|Tychus|Tyrael|Tyrande|Uther|Valeera|Valla|Varian|Whitemane|Xal'atath|Xul|Yrel...	UNKNOWN STEP	2026-10-04T09:32:39.4410720Z Updating files:  77% (594/771)
+make (6, 16, Tracer|Tychus|Tyrael|Tyrande|Uther|Valeera|Valla|Varian|Whitemane|Xal'atath|Xul|Yrel...	UNKNOWN STEP	2026-10-04T09:32:39.4841915Z Updating files:  78% (602/771)
+make (6, 16, Tracer|Tychus|Tyrael|Tyrande|Uther|Valeera|Valla|Varian|Whitemane|Xal'atath|Xul|Yrel...	UNKNOWN STEP	2026-10-04T09:32:39.4992600Z Updating files:  79% (610/771)
+make (6, 16, Tracer|Tychus|Tyrael|Tyrande|Uther|Valeera|Valla|Varian|Whitemane|Xal'atath|Xul|Yrel...	UNKNOWN STEP	2026-10-04T09:32:39.5209045Z Updating files:  80% (617/771)
+make (6, 16, Tracer|Tychus|Tyrael|Tyrande|Uther|Valeera|Valla|Varian|Whitemane|Xal'atath|Xul|Yrel...	UNKNOWN STEP	2026-10-04T09:32:39.5697285Z Updating files:  81% (625/771)
+make (6, 16, Tracer|Tychus|Tyrael|Tyrande|Uther|Valeera|Valla|Varian|Whitemane|Xal'atath|Xul|Yrel...	UNKNOWN STEP	2026-10-04T09:32:39.5845044Z Updating files:  82% (633/771)
+make (6, 16, Tracer|Tychus|Tyrael|Tyrande|Uther|Valeera|Valla|Varian|Whitemane|Xal'atath|Xul|Yrel...	UNKNOWN STEP	2026-10-04T09:32:39.6295053Z Updating files:  83% (640/771)
+make (6, 16, Tracer|Tychus|Tyrael|Tyrande|Uther|Valeera|Valla|Varian|Whitemane|Xal'atath|Xul|Yrel...	UNKNOWN STEP	2026-10-04T09:32:39.6660049Z Updating files:  84% (648/771)
+make (6, 16, Tracer|Tychus|Tyrael|Tyrande|Uther|Valeera|Valla|Varian|Whitemane|Xal'atath|Xul|Yrel...	UNKNOWN STEP	2026-10-04T09:32:39.6901694Z Updating files:  85% (656/771)
+make (6, 16, Tracer|Tychus|Tyrael|Tyrande|Uther|Valeera|Valla|Varian|Whitemane|Xal'atath|Xul|Yrel...	UNKNOWN STEP	2026-10-04T09:32:39.7053585Z Updating files:  86% (664/771)
+make (6, 16, Tracer|Tychus|Tyrael|Tyrande|Uther|Valeera|Valla|Varian|Whitemane|Xal'atath|Xul|Yrel...	UNKNOWN STEP	2026-10-04T09:32:39.7588059Z Updating files:  87% (671/771)
+make (6, 16, Tracer|Tychus|Tyrael|Tyrande|Uther|Valeera|Valla|Varian|Whitemane|Xal'atath|Xul|Yrel...	UNKNOWN STEP	2026-10-04T09:32:39.7824546Z Updating files:  88% (679/771)
+make (6, 16, Tracer|Tychus|Tyrael|Tyrande|Uther|Valeera|Valla|Varian|Whitemane|Xal'atath|Xul|Yrel...	UNKNOWN STEP	2026-10-04T09:32:39.8147007Z Updating files:  89% (687/771)
+make (6, 16, Tracer|Tychus|Tyrael|Tyrande|Uther|Valeera|Valla|Varian|Whitemane|Xal'atath|Xul|Yrel...	UNKNOWN STEP	2026-10-04T09:32:39.8339907Z Updating files:  90% (694/771)
+make (6, 16, Tracer|Tychus|Tyrael|Tyrande|Uther|Valeera|Valla|Varian|Whitemane|Xal'atath|Xul|Yrel...	UNKNOWN STEP	2026-10-04T09:32:39.8517440Z Updating files:  91% (702/771)
+make (6, 16, Tracer|Tychus|Tyrael|Tyrande|Uther|Valeera|Valla|Varian|Whitemane|Xal'atath|Xul|Yrel...	UNKNOWN STEP	2026-10-04T09:32:39.8713009Z Updating files:  92% (710/771)
+make (6, 16, Tracer|Tychus|Tyrael|Tyrande|Uther|Valeera|Valla|Varian|Whitemane|Xal'atath|Xul|Yrel...	UNKNOWN STEP	2026-10-04T09:32:39.8954286Z Updating files:  93% (718/771)
+make (6, 16, Tracer|Tychus|Tyrael|Tyrande|Uther|Valeera|Valla|Varian|Whitemane|Xal'atath|Xul|Yrel...	UNKNOWN STEP	2026-10-04T09:32:39.9094894Z Updating files:  94% (725/771)
+make (6, 16, Tracer|Tychus|Tyrael|Tyrande|Uther|Valeera|Valla|Varian|Whitemane|Xal'atath|Xul|Yrel...	UNKNOWN STEP	2026-10-04T09:32:39.9283404Z Updating files:  95% (733/771)
+make (6, 16, Tracer|Tychus|Tyrael|Tyrande|Uther|Valeera|Valla|Varian|Whitemane|Xal'atath|Xul|Yrel...	UNKNOWN STEP	2026-10-04T09:32:39.9611963Z Updating files:  96% (741/771)
+make (6, 16, Tracer|Tychus|Tyrael|Tyrande|Uther|Valeera|Valla|Varian|Whitemane|Xal'atath|Xul|Yrel...	UNKNOWN STEP	2026-10-04T09:32:39.9765035Z Updating files:  97% (748/771)
+make (6, 16, Tracer|Tychus|Tyrael|Tyrande|Uther|Valeera|Valla|Varian|Whitemane|Xal'atath|Xul|Yrel...	UNKNOWN STEP	2026-10-04T09:32:39.9919369Z Updating files:  98% (756/771)
+make (6, 16, Tracer|Tychus|Tyrael|Tyrande|Uther|Valeera|Valla|Varian|Whitemane|Xal'atath|Xul|Yrel...	UNKNOWN STEP	2026-10-04T09:32:39.9994159Z Updating files:  99% (764/771)
+make (6, 16, Tracer|Tychus|Tyrael|Tyrande|Uther|Valeera|Valla|Varian|Whitemane|Xal'atath|Xul|Yrel...	UNKNOWN STEP	2026-10-04T09:32:39.9994926Z Updating files: 100% (771/771)
+make (6, 16, Tracer|Tychus|Tyrael|Tyrande|Uther|Valeera|Valla|Varian|Whitemane|Xal'atath|Xul|Yrel...	UNKNOWN STEP	2026-10-04T09:32:39.9995846Z Updating files: 100% (771/771), done.
+make (6, 16, Tracer|Tychus|Tyrael|Tyrande|Uther|Valeera|Valla|Varian|Whitemane|Xal'atath|Xul|Yrel...	UNKNOWN STEP	2026-10-04T09:32:40.0031193Z Switched to a new branch 'chatgpt-stl-builder'
+make (6, 16, Tracer|Tychus|Tyrael|Tyrande|Uther|Valeera|Valla|Varian|Whitemane|Xal'atath|Xul|Yrel...	UNKNOWN STEP	2026-10-04T09:32:40.0035943Z branch 'chatgpt-stl-builder' set up to track 'origin/chatgpt-stl-builder'.
+make (6, 16, Tracer|Tychus|Tyrael|Tyrande|Uther|Valeera|Valla|Varian|Whitemane|Xal'atath|Xul|Yrel...	UNKNOWN STEP	2026-10-04T09:32:40.0157751Z ##[endgroup]
+make (6, 16, Tracer|Tychus|Tyrael|Tyrande|Uther|Valeera|Valla|Varian|Whitemane|Xal'atath|Xul|Yrel...	UNKNOWN STEP	2026-10-04T09:32:40.0207512Z [command]/usr/bin/git log -1 --format=%H
+make (6, 16, Tracer|Tychus|Tyrael|Tyrande|Uther|Valeera|Valla|Varian|Whitemane|Xal'atath|Xul|Yrel...	UNKNOWN STEP	2026-10-04T09:32:40.0251069Z 559933ffbf6a9fc142e663ce49a8b3f2791a7b47
+make (6, 16, Tracer|Tychus|Tyrael|Tyrande|Uther|Valeera|Valla|Varian|Whitemane|Xal'atath|Xul|Yrel...	UNKNOWN STEP	2026-10-04T09:32:40.0485400Z ##[group]Run set -euo pipefail
+make (6, 16, Tracer|Tychus|Tyrael|Tyrande|Uther|Valeera|Valla|Varian|Whitemane|Xal'atath|Xul|Yrel...	UNKNOWN STEP	2026-10-04T09:32:40.0485853Z ^[[36;1mset -euo pipefail^[[0m
+make (6, 16, Tracer|Tychus|Tyrael|Tyrande|Uther|Valeera|Valla|Varian|Whitemane|Xal'atath|Xul|Yrel...	UNKNOWN STEP	2026-10-04T09:32:40.0486265Z ^[[36;1mcp tools/hots_stl/runtime_extracted/build_hots_stls.py "$RUNNER_TEMP/b.py"^[[0m
+make (6, 16, Tracer|Tychus|Tyrael|Tyrande|Uther|Valeera|Valla|Varian|Whitemane|Xal'atath|Xul|Yrel...	UNKNOWN STEP	2026-10-04T09:32:40.0486788Z ^[[36;1mpython tools/hots_stl/runtime_patch_v2.py "$RUNNER_TEMP/b.py"^[[0m
+make (6, 16, Tracer|Tychus|Tyrael|Tyrande|Uther|Valeera|Valla|Varian|Whitemane|Xal'atath|Xul|Yrel...	UNKNOWN STEP	2026-10-04T09:32:40.0487277Z ^[[36;1mpython ci/patch_builder_external_validation.py "$RUNNER_TEMP/b.py"^[[0m
+make (6, 16, Tracer|Tychus|Tyrael|Tyrande|Uther|Valeera|Valla|Varian|Whitemane|Xal'atath|Xul|Yrel...	UNKNOWN STEP	2026-10-04T09:32:40.0487686Z ^[[36;1mpython - "$RUNNER_TEMP/b.py" <<'PY'^[[0m
+make (6, 16, Tracer|Tychus|Tyrael|Tyrande|Uther|Valeera|Valla|Varian|Whitemane|Xal'atath|Xul|Yrel...	UNKNOWN STEP	2026-10-04T09:32:40.0487983Z ^[[36;1mfrom pathlib import Path^[[0m
+make (6, 16, Tracer|Tychus|Tyrael|Tyrande|Uther|Valeera|Valla|Varian|Whitemane|Xal'atath|Xul|Yrel...	UNKNOWN STEP	2026-10-04T09:32:40.0488235Z ^[[36;1mimport sys^[[0m
+make (6, 16, Tracer|Tychus|Tyrael|Tyrande|Uther|Valeera|Valla|Varian|Whitemane|Xal'atath|Xul|Yrel...	UNKNOWN STEP	2026-10-04T09:32:40.0488562Z ^[[36;1mp=Path(sys.argv[1]); s=p.read_text(); a='    "Whitemane": ("whitemane",),\n'^[[0m
+make (6, 16, Tracer|Tychus|Tyrael|Tyrande|Uther|Valeera|Valla|Varian|Whitemane|Xal'atath|Xul|Yrel...	UNKNOWN STEP	2026-10-04T09:32:40.0489015Z ^[[36;1mif a not in s: raise SystemExit('roster anchor missing')^[[0m
+make (6, 16, Tracer|Tychus|Tyrael|Tyrande|Uther|Valeera|Valla|Varian|Whitemane|Xal'atath|Xul|Yrel...	UNKNOWN STEP	2026-10-04T09:32:40.0489463Z ^[[36;1mp.write_text(s.replace(a,a+'    "Xal\'atath": ("xalatath",),\n',1))^[[0m
+make (6, 16, Tracer|Tychus|Tyrael|Tyrande|Uther|Valeera|Valla|Varian|Whitemane|Xal'atath|Xul|Yrel...	UNKNOWN STEP	2026-10-04T09:32:40.0489848Z ^[[36;1mPY^[[0m
+make (6, 16, Tracer|Tychus|Tyrael|Tyrande|Uther|Valeera|Valla|Varian|Whitemane|Xal'atath|Xul|Yrel...	UNKNOWN STEP	2026-10-04T09:32:40.0490091Z ^[[36;1msudo apt-get update -qq^[[0m
+make (6, 16, Tracer|Tychus|Tyrael|Tyrande|Uther|Valeera|Valla|Varian|Whitemane|Xal'atath|Xul|Yrel...	UNKNOWN STEP	2026-10-04T09:32:40.0490813Z ^[[36;1msudo apt-get install -y --no-install-recommends ca-certificates curl git xz-utils libx11-6 libxi6 libxrender1 libxfixes3 libxkbcommon0 libsm6 libice6 libgl1 libegl1^[[0m
+make (6, 16, Tracer|Tychus|Tyrael|Tyrande|Uther|Valeera|Valla|Varian|Whitemane|Xal'atath|Xul|Yrel...	UNKNOWN STEP	2026-10-04T09:32:40.0491728Z ^[[36;1mgit clone --depth 1 https://github.com/JimmyTheCool/HOTS-02.git "$RUNNER_TEMP/H2"^[[0m
+make (6, 16, Tracer|Tychus|Tyrael|Tyrande|Uther|Valeera|Valla|Varian|Whitemane|Xal'atath|Xul|Yrel...	UNKNOWN STEP	2026-10-04T09:32:40.0492178Z ^[[36;1mcd "$RUNNER_TEMP"^[[0m
+make (6, 16, Tracer|Tychus|Tyrael|Tyrande|Uther|Valeera|Valla|Varian|Whitemane|Xal'atath|Xul|Yrel...	UNKNOWN STEP	2026-10-04T09:32:40.0492689Z ^[[36;1mcurl -fL --retry 5 "https://download.blender.org/release/Blender3.6/blender-${BV}-linux-x64.tar.xz" -o b.tar.xz^[[0m
+make (6, 16, Tracer|Tychus|Tyrael|Tyrande|Uther|Valeera|Valla|Varian|Whitemane|Xal'atath|Xul|Yrel...	UNKNOWN STEP	2026-10-04T09:32:40.0493232Z ^[[36;1mtar -xf b.tar.xz^[[0m
+make (6, 16, Tracer|Tychus|Tyrael|Tyrande|Uther|Valeera|Valla|Varian|Whitemane|Xal'atath|Xul|Yrel...	UNKNOWN STEP	2026-10-04T09:32:40.0493549Z ^[[36;1mgit clone -q https://github.com/SC2Mapster/m3addon.git m3^[[0m
+make (6, 16, Tracer|Tychus|Tyrael|Tyrande|Uther|Valeera|Valla|Varian|Whitemane|Xal'atath|Xul|Yrel...	UNKNOWN STEP	2026-10-04T09:32:40.0493908Z ^[[36;1mgit -C m3 checkout -q "$M3"^[[0m
+make (6, 16, Tracer|Tychus|Tyrael|Tyrande|Uther|Valeera|Valla|Varian|Whitemane|Xal'atath|Xul|Yrel...	UNKNOWN STEP	2026-10-04T09:32:40.0494233Z ^[[36;1mmkdir -p "$HOME/.config/blender/3.6/scripts/addons"^[[0m
+make (6, 16, Tracer|Tychus|Tyrael|Tyrande|Uther|Valeera|Valla|Varian|Whitemane|Xal'atath|Xul|Yrel...	UNKNOWN STEP	2026-10-04T09:32:40.0494673Z ^[[36;1mln -s "$RUNNER_TEMP/m3" "$HOME/.config/blender/3.6/scripts/addons/m3addon"^[[0m
+make (6, 16, Tracer|Tychus|Tyrael|Tyrande|Uther|Valeera|Valla|Varian|Whitemane|Xal'atath|Xul|Yrel...	UNKNOWN STEP	2026-10-04T09:32:40.0495398Z ^[[36;1mO="$RUNNER_TEMP/o"; mkdir -p "$O/00_Reports"^[[0m
+make (6, 16, Tracer|Tychus|Tyrael|Tyrande|Uther|Valeera|Valla|Varian|Whitemane|Xal'atath|Xul|Yrel...	UNKNOWN STEP	2026-10-04T09:32:40.0496220Z ^[[36;1mIFS='|' read -ra A <<< 'Tracer|Tychus|Tyrael|Tyrande|Uther|Valeera|Valla|Varian|Whitemane|Xal'atath|Xul|Yrel|Zagara|Zarya|Zeratul|Zul'jin'; X=(); for v in "${A[@]}"; do X+=(--only "$v"); done^[[0m
+make (6, 16, Tracer|Tychus|Tyrael|Tyrande|Uther|Valeera|Valla|Varian|Whitemane|Xal'atath|Xul|Yrel...	UNKNOWN STEP	2026-10-04T09:32:40.0498062Z ^[[36;1m"$RUNNER_TEMP/blender-${BV}-linux-x64/blender" --background --factory-startup --python "$RUNNER_TEMP/b.py" -- --source "$RUNNER_TEMP/H2" --source "$GITHUB_WORKSPACE" --output "$O" --target-height-mm 110 --base-height-mm 4 --base-margin-mm 4 --voxel-mm 0.55 --thin-part-mm 0.72 --max-triangles 450000 --skip-animation "${X[@]}" 2>&1 | tee "$O/00_Reports/build.log"^[[0m
+make (6, 16, Tracer|Tychus|Tyrael|Tyrande|Uther|Valeera|Valla|Varian|Whitemane|Xal'atath|Xul|Yrel...	UNKNOWN STEP	2026-10-04T09:32:40.0499588Z ^[[36;1mN=$(find "$O/02_Print_Ready_Watertight" -name '*.stl' -type f | wc -l); test "$N" -eq '16'^[[0m
+make (6, 16, Tracer|Tychus|Tyrael|Tyrande|Uther|Valeera|Valla|Varian|Whitemane|Xal'atath|Xul|Yrel...	UNKNOWN STEP	2026-10-04T09:32:40.0500123Z ^[[36;1mmkdir -p "$RUNNER_TEMP/chunk/STL" "$RUNNER_TEMP/chunk/Reports"^[[0m
+make (6, 16, Tracer|Tychus|Tyrael|Tyrande|Uther|Valeera|Valla|Varian|Whitemane|Xal'atath|Xul|Yrel...	UNKNOWN STEP	2026-10-04T09:32:40.0500592Z ^[[36;1mcp "$O"/02_Print_Ready_Watertight/*.stl "$RUNNER_TEMP/chunk/STL/"^[[0m
+make (6, 16, Tracer|Tychus|Tyrael|Tyrande|Uther|Valeera|Valla|Varian|Whitemane|Xal'atath|Xul|Yrel...	UNKNOWN STEP	2026-10-04T09:32:40.0501012Z ^[[36;1mcp "$O"/00_Reports/* "$RUNNER_TEMP/chunk/Reports/"^[[0m
+make (6, 16, Tracer|Tychus|Tyrael|Tyrande|Uther|Valeera|Valla|Varian|Whitemane|Xal'atath|Xul|Yrel...	UNKNOWN STEP	2026-10-04T09:32:40.0874267Z shell: /usr/bin/bash --noprofile --norc -e -o pipefail {0}
+make (6, 16, Tracer|Tychus|Tyrael|Tyrande|Uther|Valeera|Valla|Varian|Whitemane|Xal'atath|Xul|Yrel...	UNKNOWN STEP	2026-10-04T09:32:40.0874641Z env:
+make (6, 16, Tracer|Tychus|Tyrael|Tyrande|Uther|Valeera|Valla|Varian|Whitemane|Xal'atath|Xul|Yrel...	UNKNOWN STEP	2026-10-04T09:32:40.0874841Z   BV: 3.6.23
+make (6, 16, Tracer|Tychus|Tyrael|Tyrande|Uther|Valeera|Valla|Varian|Whitemane|Xal'atath|Xul|Yrel...	UNKNOWN STEP	2026-10-04T09:32:40.0875310Z   M3: 58935005c4465a219a740f6b740253533eda773f
+make (6, 16, Tracer|Tychus|Tyrael|Tyrande|Uther|Valeera|Valla|Varian|Whitemane|Xal'atath|Xul|Yrel...	UNKNOWN STEP	2026-10-04T09:32:40.0875600Z ##[endgroup]
+make (6, 16, Tracer|Tychus|Tyrael|Tyrande|Uther|Valeera|Valla|Varian|Whitemane|Xal'atath|Xul|Yrel...	UNKNOWN STEP	2026-10-04T09:32:40.1234873Z Patched /home/runner/work/_temp/b.py to HOTS STL Builder v2.1.0
+make (6, 16, Tracer|Tychus|Tyrael|Tyrande|Uther|Valeera|Valla|Varian|Whitemane|Xal'atath|Xul|Yrel...	UNKNOWN STEP	2026-10-04T09:32:40.1461781Z Patched builder to defer geometric watertightness to independent trimesh validation
+make (6, 16, Tracer|Tychus|Tyrael|Tyrande|Uther|Valeera|Valla|Varian|Whitemane|Xal'atath|Xul|Yrel...	UNKNOWN STEP	2026-10-04T09:32:50.6529724Z Reading package lists...
+make (6, 16, Tracer|Tychus|Tyrael|Tyrande|Uther|Valeera|Valla|Varian|Whitemane|Xal'atath|Xul|Yrel...	UNKNOWN STEP	2026-10-04T09:32:50.8989766Z Building dependency tree...
+make (6, 16, Tracer|Tychus|Tyrael|Tyrande|Uther|Valeera|Valla|Varian|Whitemane|Xal'atath|Xul|Yrel...	UNKNOWN STEP	2026-10-04T09:32:50.9001065Z Reading state information...
+make (6, 16, Tracer|Tychus|Tyrael|Tyrande|Uther|Valeera|Valla|Varian|Whitemane|Xal'atath|Xul|Yrel...	UNKNOWN STEP	2026-10-04T09:32:51.0686669Z libgl1 is already the newest version (1.4.0-1).
+make (6, 16, Tracer|Tychus|Tyrael|Tyrande|Uther|Valeera|Valla|Varian|Whitemane|Xal'atath|Xul|Yrel...	UNKNOWN STEP	2026-10-04T09:32:51.0687261Z libgl1 set to manually installed.
+make (6, 16, Tracer|Tychus|Tyrael|Tyrande|Uther|Valeera|Valla|Varian|Whitemane|Xal'atath|Xul|Yrel...	UNKNOWN STEP	2026-10-04T09:32:51.0687765Z libice6 is already the newest version (2:1.0.10-1build2).
+make (6, 16, Tracer|Tychus|Tyrael|Tyrande|Uther|Valeera|Valla|Varian|Whitemane|Xal'atath|Xul|Yrel...	UNKNOWN STEP	2026-10-04T09:32:51.0689132Z libice6 set to manually installed.
+make (6, 16, Tracer|Tychus|Tyrael|Tyrande|Uther|Valeera|Valla|Varian|Whitemane|Xal'atath|Xul|Yrel...	UNKNOWN STEP	2026-10-04T09:32:51.0689630Z libsm6 is already the newest version (2:1.2.3-1build2).
+make (6, 16, Tracer|Tychus|Tyrael|Tyrande|Uther|Valeera|Valla|Varian|Whitemane|Xal'atath|Xul|Yrel...	UNKNOWN STEP	2026-10-04T09:32:51.0690153Z libsm6 set to manually installed.
+make (6, 16, Tracer|Tychus|Tyrael|Tyrande|Uther|Valeera|Valla|Varian|Whitemane|Xal'atath|Xul|Yrel...	UNKNOWN STEP	2026-10-04T09:32:51.0690628Z libxfixes3 is already the newest version (1:6.0.0-1).
+make (6, 16, Tracer|Tychus|Tyrael|Tyrande|Uther|Valeera|Valla|Varian|Whitemane|Xal'atath|Xul|Yrel...	UNKNOWN STEP	2026-10-04T09:32:51.0691316Z libxfixes3 set to manually installed.
+make (6, 16, Tracer|Tychus|Tyrael|Tyrande|Uther|Valeera|Valla|Varian|Whitemane|Xal'atath|Xul|Yrel...	UNKNOWN STEP	2026-10-04T09:32:51.0691927Z libxi6 is already the newest version (2:1.8-1build1).
+make (6, 16, Tracer|Tychus|Tyrael|Tyrande|Uther|Valeera|Valla|Varian|Whitemane|Xal'atath|Xul|Yrel...	UNKNOWN STEP	2026-10-04T09:32:51.0692424Z libxi6 set to manually installed.
+make (6, 16, Tracer|Tychus|Tyrael|Tyrande|Uther|Valeera|Valla|Varian|Whitemane|Xal'atath|Xul|Yrel...	UNKNOWN STEP	2026-10-04T09:32:51.0692901Z libxkbcommon0 is already the newest version (1.4.0-1).
+make (6, 16, Tracer|Tychus|Tyrael|Tyrande|Uther|Valeera|Valla|Varian|Whitemane|Xal'atath|Xul|Yrel...	UNKNOWN STEP	2026-10-04T09:32:51.0693436Z libxkbcommon0 set to manually installed.
+make (6, 16, Tracer|Tychus|Tyrael|Tyrande|Uther|Valeera|Valla|Varian|Whitemane|Xal'atath|Xul|Yrel...	UNKNOWN STEP	2026-10-04T09:32:51.0693990Z libxrender1 is already the newest version (1:0.9.10-1build4).
+make (6, 16, Tracer|Tychus|Tyrael|Tyrande|Uther|Valeera|Valla|Varian|Whitemane|Xal'atath|Xul|Yrel...	UNKNOWN STEP	2026-10-04T09:32:51.0694553Z libxrender1 set to manually installed.
+make (6, 16, Tracer|Tychus|Tyrael|Tyrande|Uther|Valeera|Valla|Varian|Whitemane|Xal'atath|Xul|Yrel...	UNKNOWN STEP	2026-10-04T09:32:51.0695439Z ca-certificates is already the newest version (20260601~22.04.1).
+make (6, 16, Tracer|Tychus|Tyrael|Tyrande|Uther|Valeera|Valla|Varian|Whitemane|Xal'atath|Xul|Yrel...	UNKNOWN STEP	2026-10-04T09:32:51.0696099Z curl is already the newest version (7.81.0-1ubuntu1.29).
+make (6, 16, Tracer|Tychus|Tyrael|Tyrande|Uther|Valeera|Valla|Varian|Whitemane|Xal'atath|Xul|Yrel...	UNKNOWN STEP	2026-10-04T09:32:51.0771386Z libx11-6 is already the newest version (2:1.7.5-1ubuntu0.3).
+make (6, 16, Tracer|Tychus|Tyrael|Tyrande|Uther|Valeera|Valla|Varian|Whitemane|Xal'atath|Xul|Yrel...	UNKNOWN STEP	2026-10-04T09:32:51.0771981Z libx11-6 set to manually installed.
+make (6, 16, Tracer|Tychus|Tyrael|Tyrande|Uther|Valeera|Valla|Varian|Whitemane|Xal'atath|Xul|Yrel...	UNKNOWN STEP	2026-10-04T09:32:51.0772477Z xz-utils is already the newest version (5.2.5-2ubuntu1.1).
+make (6, 16, Tracer|Tychus|Tyrael|Tyrande|Uther|Valeera|Valla|Varian|Whitemane|Xal'atath|Xul|Yrel...	UNKNOWN STEP	2026-10-04T09:32:51.0772936Z git is already the newest version (1:2.55.0-0ppa1~ubuntu22.04.2).
+make (6, 16, Tracer|Tychus|Tyrael|Tyrande|Uther|Valeera|Valla|Varian|Whitemane|Xal'atath|Xul|Yrel...	UNKNOWN STEP	2026-10-04T09:32:51.0773387Z The following additional packages will be installed:
+make (6, 16, Tracer|Tychus|Tyrael|Tyrande|Uther|Valeera|Valla|Varian|Whitemane|Xal'atath|Xul|Yrel...	UNKNOWN STEP	2026-10-04T09:32:51.0773739Z   libegl-mesa0
+make (6, 16, Tracer|Tychus|Tyrael|Tyrande|Uther|Valeera|Valla|Varian|Whitemane|Xal'atath|Xul|Yrel...	UNKNOWN STEP	2026-10-04T09:32:51.1004365Z The following NEW packages will be installed:
+make (6, 16, Tracer|Tychus|Tyrael|Tyrande|Uther|Valeera|Valla|Varian|Whitemane|Xal'atath|Xul|Yrel...	UNKNOWN STEP	2026-10-04T09:32:51.1009716Z   libegl-mesa0 libegl1
+make (6, 16, Tracer|Tychus|Tyrael|Tyrande|Uther|Valeera|Valla|Varian|Whitemane|Xal'atath|Xul|Yrel...	UNKNOWN STEP	2026-10-04T09:32:51.1191980Z 0 upgraded, 2 newly installed, 0 to remove and 20 not upgraded.
+make (6, 16, Tracer|Tychus|Tyrael|Tyrande|Uther|Valeera|Valla|Varian|Whitemane|Xal'atath|Xul|Yrel...	UNKNOWN STEP	2026-10-04T09:32:51.1192493Z Need to get 147 kB of archives.
+make (6, 16, Tracer|Tychus|Tyrael|Tyrande|Uther|Valeera|Valla|Varian|Whitemane|Xal'atath|Xul|Yrel...	UNKNOWN STEP	2026-10-04T09:32:51.1192842Z After this operation, 484 kB of additional disk space will be used.
+make (6, 16, Tracer|Tychus|Tyrael|Tyrande|Uther|Valeera|Valla|Varian|Whitemane|Xal'atath|Xul|Yrel...	UNKNOWN STEP	2026-10-04T09:32:51.1193273Z Get:1 file:/etc/apt/apt-mirrors.txt Mirrorlist [144 B]
+make (6, 16, Tracer|Tychus|Tyrael|Tyrande|Uther|Valeera|Valla|Varian|Whitemane|Xal'atath|Xul|Yrel...	UNKNOWN STEP	2026-10-04T09:32:51.4197314Z Get:2 http://azure.archive.ubuntu.com/ubuntu jammy-updates/main amd64 libegl-mesa0 amd64 23.2.1-1ubuntu3.1~22.04.4 [118 kB]
+make (6, 16, Tracer|Tychus|Tyrael|Tyrande|Uther|Valeera|Valla|Varian|Whitemane|Xal'atath|Xul|Yrel...	UNKNOWN STEP	2026-10-04T09:32:52.0350095Z Get:3 http://azure.archive.ubuntu.com/ubuntu jammy/main amd64 libegl1 amd64 1.4.0-1 [28.6 kB]
+make (6, 16, Tracer|Tychus|Tyrael|Tyrande|Uther|Valeera|Valla|Varian|Whitemane|Xal'atath|Xul|Yrel...	UNKNOWN STEP	2026-10-04T09:32:52.3815941Z Fetched 147 kB in 1s (154 kB/s)
+make (6, 16, Tracer|Tychus|Tyrael|Tyrande|Uther|Valeera|Valla|Varian|Whitemane|Xal'atath|Xul|Yrel...	UNKNOWN STEP	2026-10-04T09:32:52.4441973Z Selecting previously unselected package libegl-mesa0:amd64.
+make (6, 16, Tracer|Tychus|Tyrael|Tyrande|Uther|Valeera|Valla|Varian|Whitemane|Xal'atath|Xul|Yrel...	UNKNOWN STEP	2026-10-04T09:32:52.5383554Z (Reading database ... 
+make (6, 16, Tracer|Tychus|Tyrael|Tyrande|Uther|Valeera|Valla|Varian|Whitemane|Xal'atath|Xul|Yrel...	UNKNOWN STEP	2026-10-04T09:32:52.5384042Z (Reading database ... 5%
+make (6, 16, Tracer|Tychus|Tyrael|Tyrande|Uther|Valeera|Valla|Varian|Whitemane|Xal'atath|Xul|Yrel...	UNKNOWN STEP	2026-10-04T09:32:52.5384635Z (Reading database ... 10%
+make (6, 16, Tracer|Tychus|Tyrael|Tyrande|Uther|Valeera|Valla|Varian|Whitemane|Xal'atath|Xul|Yrel...	UNKNOWN STEP	2026-10-04T09:32:52.5385452Z (Reading database ... 15%
+make (6, 16, Tracer|Tychus|Tyrael|Tyrande|Uther|Valeera|Valla|Varian|Whitemane|Xal'atath|Xul|Yrel...	UNKNOWN STEP	2026-10-04T09:32:52.5385987Z (Reading database ... 20%
+make (6, 16, Tracer|Tychus|Tyrael|Tyrande|Uther|Valeera|Valla|Varian|Whitemane|Xal'atath|Xul|Yrel...	UNKNOWN STEP	2026-10-04T09:32:52.5386532Z (Reading database ... 25%
+make (6, 16, Tracer|Tychus|Tyrael|Tyrande|Uther|Valeera|Valla|Varian|Whitemane|Xal'atath|Xul|Yrel...	UNKNOWN STEP	2026-10-04T09:32:52.5387062Z (Reading database ... 30%
+make (6, 16, Tracer|Tychus|Tyrael|Tyrande|Uther|Valeera|Valla|Varian|Whitemane|Xal'atath|Xul|Yrel...	UNKNOWN STEP	2026-10-04T09:32:52.5387603Z (Reading database ... 35%
+make (6, 16, Tracer|Tychus|Tyrael|Tyrande|Uther|Valeera|Valla|Varian|Whitemane|Xal'atath|Xul|Yrel...	UNKNOWN STEP	2026-10-04T09:32:52.5387973Z (Reading database ... 40%
+make (6, 16, Tracer|Tychus|Tyrael|Tyrande|Uther|Valeera|Valla|Varian|Whitemane|Xal'atath|Xul|Yrel...	UNKNOWN STEP	2026-10-04T09:32:52.5388246Z (Reading database ... 45%
+make (6, 16, Tracer|Tychus|Tyrael|Tyrande|Uther|Valeera|Valla|Varian|Whitemane|Xal'atath|Xul|Yrel...	UNKNOWN STEP	2026-10-04T09:32:52.5388760Z (Reading database ... 50%
+make (6, 16, Tracer|Tychus|Tyrael|Tyrande|Uther|Valeera|Valla|Varian|Whitemane|Xal'atath|Xul|Yrel...	UNKNOWN STEP	2026-10-04T09:32:53.0051625Z (Reading database ... 55%
+make (6, 16, Tracer|Tychus|Tyrael|Tyrande|Uther|Valeera|Valla|Varian|Whitemane|Xal'atath|Xul|Yrel...	UNKNOWN STEP	2026-10-04T09:32:53.4267658Z (Reading database ... 60%
+make (6, 16, Tracer|Tychus|Tyrael|Tyrande|Uther|Valeera|Valla|Varian|Whitemane|Xal'atath|Xul|Yrel...	UNKNOWN STEP	2026-10-04T09:32:54.1370446Z (Reading database ... 65%
+make (6, 16, Tracer|Tychus|Tyrael|Tyrande|Uther|Valeera|Valla|Varian|Whitemane|Xal'atath|Xul|Yrel...	UNKNOWN STEP	2026-10-04T09:32:54.4734802Z (Reading database ... 70%
+make (6, 16, Tracer|Tychus|Tyrael|Tyrande|Uther|Valeera|Valla|Varian|Whitemane|Xal'atath|Xul|Yrel...	UNKNOWN STEP	2026-10-04T09:32:55.1737069Z (Reading database ... 75%
+make (6, 16, Tracer|Tychus|Tyrael|Tyrande|Uther|Valeera|Valla|Varian|Whitemane|Xal'atath|Xul|Yrel...	UNKNOWN STEP	2026-10-04T09:32:56.1593866Z (Reading database ... 80%
+make (6, 16, Tracer|Tychus|Tyrael|Tyrande|Uther|Valeera|Valla|Varian|Whitemane|Xal'atath|Xul|Yrel...	UNKNOWN STEP	2026-10-04T09:32:57.0581347Z (Reading database ... 85%
+make (6, 16, Tracer|Tychus|Tyrael|Tyrande|Uther|Valeera|Valla|Varian|Whitemane|Xal'atath|Xul|Yrel...	UNKNOWN STEP	2026-10-04T09:32:57.7695754Z (Reading database ... 90%
+make (6, 16, Tracer|Tychus|Tyrael|Tyrande|Uther|Valeera|Valla|Varian|Whitemane|Xal'atath|Xul|Yrel...	UNKNOWN STEP	2026-10-04T09:32:58.6950020Z (Reading database ... 95%
+make (6, 16, Tracer|Tychus|Tyrael|Tyrande|Uther|Valeera|Valla|Varian|Whitemane|Xal'atath|Xul|Yrel...	UNKNOWN STEP	2026-10-04T09:32:58.6950581Z (Reading database ... 100%
+make (6, 16, Tracer|Tychus|Tyrael|Tyrande|Uther|Valeera|Valla|Varian|Whitemane|Xal'atath|Xul|Yrel...	UNKNOWN STEP	2026-10-04T09:32:58.6951274Z (Reading database ... 260411 files and directories currently installed.)
+make (6, 16, Tracer|Tychus|Tyrael|Tyrande|Uther|Valeera|Valla|Varian|Whitemane|Xal'atath|Xul|Yrel...	UNKNOWN STEP	2026-10-04T09:32:58.7006912Z Preparing to unpack .../libegl-mesa0_23.2.1-1ubuntu3.1~22.04.4_amd64.deb ...
+make (6, 16, Tracer|Tychus|Tyrael|Tyrande|Uther|Valeera|Valla|Varian|Whitemane|Xal'atath|Xul|Yrel...	UNKNOWN STEP	2026-10-04T09:32:58.7045128Z Unpacking libegl-mesa0:amd64 (23.2.1-1ubuntu3.1~22.04.4) ...
+make (6, 16, Tracer|Tychus|Tyrael|Tyrande|Uther|Valeera|Valla|Varian|Whitemane|Xal'atath|Xul|Yrel...	UNKNOWN STEP	2026-10-04T09:32:58.7445291Z Selecting previously unselected package libegl1:amd64.
+make (6, 16, Tracer|Tychus|Tyrael|Tyrande|Uther|Valeera|Valla|Varian|Whitemane|Xal'atath|Xul|Yrel...	UNKNOWN STEP	2026-10-04T09:32:58.7646357Z Preparing to unpack .../libegl1_1.4.0-1_amd64.deb ...
+make (6, 16, Tracer|Tychus|Tyrael|Tyrande|Uther|Valeera|Valla|Varian|Whitemane|Xal'atath|Xul|Yrel...	UNKNOWN STEP	2026-10-04T09:32:58.7654133Z Unpacking libegl1:amd64 (1.4.0-1) ...
+make (6, 16, Tracer|Tychus|Tyrael|Tyrande|Uther|Valeera|Valla|Varian|Whitemane|Xal'atath|Xul|Yrel...	UNKNOWN STEP	2026-10-04T09:32:58.8194952Z Setting up libegl-mesa0:amd64 (23.2.1-1ubuntu3.1~22.04.4) ...
+make (6, 16, Tracer|Tychus|Tyrael|Tyrande|Uther|Valeera|Valla|Varian|Whitemane|Xal'atath|Xul|Yrel...	UNKNOWN STEP	2026-10-04T09:32:58.8217714Z Setting up libegl1:amd64 (1.4.0-1) ...
+make (6, 16, Tracer|Tychus|Tyrael|Tyrande|Uther|Valeera|Valla|Varian|Whitemane|Xal'atath|Xul|Yrel...	UNKNOWN STEP	2026-10-04T09:32:58.8240165Z Processing triggers for libc-bin (2.35-0ubuntu3.15) ...
+make (6, 16, Tracer|Tychus|Tyrael|Tyrande|Uther|Valeera|Valla|Varian|Whitemane|Xal'atath|Xul|Yrel...	UNKNOWN STEP	2026-10-04T09:33:00.0951282Z 
+make (6, 16, Tracer|Tychus|Tyrael|Tyrande|Uther|Valeera|Valla|Varian|Whitemane|Xal'atath|Xul|Yrel...	UNKNOWN STEP	2026-10-04T09:33:00.0951884Z Running kernel seems to be up-to-date.
+make (6, 16, Tracer|Tychus|Tyrael|Tyrande|Uther|Valeera|Valla|Varian|Whitemane|Xal'atath|Xul|Yrel...	UNKNOWN STEP	2026-10-04T09:33:00.0952448Z 
+make (6, 16, Tracer|Tychus|Tyrael|Tyrande|Uther|Valeera|Valla|Varian|Whitemane|Xal'atath|Xul|Yrel...	UNKNOWN STEP	2026-10-04T09:33:00.0952617Z No services need to be restarted.
+make (6, 16, Tracer|Tychus|Tyrael|Tyrande|Uther|Valeera|Valla|Varian|Whitemane|Xal'atath|Xul|Yrel...	UNKNOWN STEP	2026-10-04T09:33:00.0952863Z 
+make (6, 16, Tracer|Tychus|Tyrael|Tyrande|Uther|Valeera|Valla|Varian|Whitemane|Xal'atath|Xul|Yrel...	UNKNOWN STEP	2026-10-04T09:33:00.0952995Z No containers need to be restarted.
+make (6, 16, Tracer|Tychus|Tyrael|Tyrande|Uther|Valeera|Valla|Varian|Whitemane|Xal'atath|Xul|Yrel...	UNKNOWN STEP	2026-10-04T09:33:00.0953243Z 
+make (6, 16, Tracer|Tychus|Tyrael|Tyrande|Uther|Valeera|Valla|Varian|Whitemane|Xal'atath|Xul|Yrel...	UNKNOWN STEP	2026-10-04T09:33:00.0953402Z No user sessions are running outdated binaries.
+make (6, 16, Tracer|Tychus|Tyrael|Tyrande|Uther|Valeera|Valla|Varian|Whitemane|Xal'atath|Xul|Yrel...	UNKNOWN STEP	2026-10-04T09:33:00.0953702Z 
+make (6, 16, Tracer|Tychus|Tyrael|Tyrande|Uther|Valeera|Valla|Varian|Whitemane|Xal'atath|Xul|Yrel...	UNKNOWN STEP	2026-10-04T09:33:00.0953981Z No VM guests are running outdated hypervisor (qemu) binaries on this host.
+make (6, 16, Tracer|Tychus|Tyrael|Tyrande|Uther|Valeera|Valla|Varian|Whitemane|Xal'atath|Xul|Yrel...	UNKNOWN STEP	2026-10-04T09:33:01.8446549Z Cloning into '/home/runner/work/_temp/H2'...
+make (6, 16, Tracer|Tychus|Tyrael|Tyrande|Uther|Valeera|Valla|Varian|Whitemane|Xal'atath|Xul|Yrel...	UNKNOWN STEP	2026-10-04T09:33:08.0022014Z Updating files:  46% (277/600)
+make (6, 16, Tracer|Tychus|Tyrael|Tyrande|Uther|Valeera|Valla|Varian|Whitemane|Xal'atath|Xul|Yrel...	UNKNOWN STEP	2026-10-04T09:33:08.0272095Z Updating files:  47% (282/600)
+make (6, 16, Tracer|Tychus|Tyrael|Tyrande|Uther|Valeera|Valla|Varian|Whitemane|Xal'atath|Xul|Yrel...	UNKNOWN STEP	2026-10-04T09:33:08.0392179Z Updating files:  48% (288/600)
+make (6, 16, Tracer|Tychus|Tyrael|Tyrande|Uther|Valeera|Valla|Varian|Whitemane|Xal'atath|Xul|Yrel...	UNKNOWN STEP	2026-10-04T09:33:08.0594607Z Updating files:  49% (294/600)
+make (6, 16, Tracer|Tychus|Tyrael|Tyrande|Uther|Valeera|Valla|Varian|Whitemane|Xal'atath|Xul|Yrel...	UNKNOWN STEP	2026-10-04T09:33:08.0747587Z Updating files:  50% (300/600)
+make (6, 16, Tracer|Tychus|Tyrael|Tyrande|Uther|Valeera|Valla|Varian|Whitemane|Xal'atath|Xul|Yrel...	UNKNOWN STEP	2026-10-04T09:33:08.0872399Z Updating files:  51% (306/600)
+make (6, 16, Tracer|Tychus|Tyrael|Tyrande|Uther|Valeera|Valla|Varian|Whitemane|Xal'atath|Xul|Yrel...	UNKNOWN STEP	2026-10-04T09:33:08.1012579Z Updating files:  52% (312/600)
+make (6, 16, Tracer|Tychus|Tyrael|Tyrande|Uther|Valeera|Valla|Varian|Whitemane|Xal'atath|Xul|Yrel...	UNKNOWN STEP	2026-10-04T09:33:08.1338956Z Updating files:  53% (318/600)
+make (6, 16, Tracer|Tychus|Tyrael|Tyrande|Uther|Valeera|Valla|Varian|Whitemane|Xal'atath|Xul|Yrel...	UNKNOWN STEP	2026-10-04T09:33:08.1572088Z Updating files:  54% (324/600)
+make (6, 16, Tracer|Tychus|Tyrael|Tyrande|Uther|Valeera|Valla|Varian|Whitemane|Xal'atath|Xul|Yrel...	UNKNOWN STEP	2026-10-04T09:33:08.1843182Z Updating files:  55% (330/600)
+make (6, 16, Tracer|Tychus|Tyrael|Tyrande|Uther|Valeera|Valla|Varian|Whitemane|Xal'atath|Xul|Yrel...	UNKNOWN STEP	2026-10-04T09:33:08.2094551Z Updating files:  56% (336/600)
+make (6, 16, Tracer|Tychus|Tyrael|Tyrande|Uther|Valeera|Valla|Varian|Whitemane|Xal'atath|Xul|Yrel...	UNKNOWN STEP	2026-10-04T09:33:08.2335067Z Updating files:  57% (342/600)
+make (6, 16, Tracer|Tychus|Tyrael|Tyrande|Uther|Valeera|Valla|Varian|Whitemane|Xal'atath|Xul|Yrel...	UNKNOWN STEP	2026-10-04T09:33:08.2737697Z Updating files:  58% (348/600)
+make (6, 16, Tracer|Tychus|Tyrael|Tyrande|Uther|Valeera|Valla|Varian|Whitemane|Xal'atath|Xul|Yrel...	UNKNOWN STEP	2026-10-04T09:33:08.2959151Z Updating files:  59% (354/600)
+make (6, 16, Tracer|Tychus|Tyrael|Tyrande|Uther|Valeera|Valla|Varian|Whitemane|Xal'atath|Xul|Yrel...	UNKNOWN STEP	2026-10-04T09:33:08.3079017Z Updating files:  60% (360/600)
+make (6, 16, Tracer|Tychus|Tyrael|Tyrande|Uther|Valeera|Valla|Varian|Whitemane|Xal'atath|Xul|Yrel...	UNKNOWN STEP	2026-10-04T09:33:08.3556840Z Updating files:  61% (366/600)
+make (6, 16, Tracer|Tychus|Tyrael|Tyrande|Uther|Valeera|Valla|Varian|Whitemane|Xal'atath|Xul|Yrel...	UNKNOWN STEP	2026-10-04T09:33:08.3714462Z Updating files:  62% (372/600)
+make (6, 16, Tracer|Tychus|Tyrael|Tyrande|Uther|Valeera|Valla|Varian|Whitemane|Xal'atath|Xul|Yrel...	UNKNOWN STEP	2026-10-04T09:33:08.3866620Z Updating files:  63% (378/600)
+make (6, 16, Tracer|Tychus|Tyrael|Tyrande|Uther|Valeera|Valla|Varian|Whitemane|Xal'atath|Xul|Yrel...	UNKNOWN STEP	2026-10-04T09:33:08.4578062Z Updating files:  64% (384/600)
+make (6, 16, Tracer|Tychus|Tyrael|Tyrande|Uther|Valeera|Valla|Varian|Whitemane|Xal'atath|Xul|Yrel...	UNKNOWN STEP	2026-10-04T09:33:08.4867882Z Updating files:  65% (390/600)
+make (6, 16, Tracer|Tychus|Tyrael|Tyrande|Uther|Valeera|Valla|Varian|Whitemane|Xal'atath|Xul|Yrel...	UNKNOWN STEP	2026-10-04T09:33:08.5286797Z Updating files:  66% (396/600)
+make (6, 16, Tracer|Tychus|Tyrael|Tyrande|Uther|Valeera|Valla|Varian|Whitemane|Xal'atath|Xul|Yrel...	UNKNOWN STEP	2026-10-04T09:33:08.5423570Z Updating files:  67% (402/600)
+make (6, 16, Tracer|Tychus|Tyrael|Tyrande|Uther|Valeera|Valla|Varian|Whitemane|Xal'atath|Xul|Yrel...	UNKNOWN STEP	2026-10-04T09:33:08.5498713Z Updating files:  68% (408/600)
+make (6, 16, Tracer|Tychus|Tyrael|Tyrande|Uther|Valeera|Valla|Varian|Whitemane|Xal'atath|Xul|Yrel...	UNKNOWN STEP	2026-10-04T09:33:08.5715566Z Updating files:  69% (414/600)
+make (6, 16, Tracer|Tychus|Tyrael|Tyrande|Uther|Valeera|Valla|Varian|Whitemane|Xal'atath|Xul|Yrel...	UNKNOWN STEP	2026-10-04T09:33:08.5836520Z Updating files:  70% (420/600)
+make (6, 16, Tracer|Tychus|Tyrael|Tyrande|Uther|Valeera|Valla|Varian|Whitemane|Xal'atath|Xul|Yrel...	UNKNOWN STEP	2026-10-04T09:33:08.6172553Z Updating files:  71% (426/600)
+make (6, 16, Tracer|Tychus|Tyrael|Tyrande|Uther|Valeera|Valla|Varian|Whitemane|Xal'atath|Xul|Yrel...	UNKNOWN STEP	2026-10-04T09:33:08.6354139Z Updating files:  72% (432/600)
+make (6, 16, Tracer|Tychus|Tyrael|Tyrande|Uther|Valeera|Valla|Varian|Whitemane|Xal'atath|Xul|Yrel...	UNKNOWN STEP	2026-10-04T09:33:08.6616709Z Updating files:  73% (438/600)
+make (6, 16, Tracer|Tychus|Tyrael|Tyrande|Uther|Valeera|Valla|Varian|Whitemane|Xal'atath|Xul|Yrel...	UNKNOWN STEP	2026-10-04T09:33:08.6901051Z Updating files:  74% (444/600)
+make (6, 16, Tracer|Tychus|Tyrael|Tyrande|Uther|Valeera|Valla|Varian|Whitemane|Xal'atath|Xul|Yrel...	UNKNOWN STEP	2026-10-04T09:33:08.7286720Z Updating files:  75% (450/600)
+make (6, 16, Tracer|Tychus|Tyrael|Tyrande|Uther|Valeera|Valla|Varian|Whitemane|Xal'atath|Xul|Yrel...	UNKNOWN STEP	2026-10-04T09:33:08.7443102Z Updating files:  76% (456/600)
+make (6, 16, Tracer|Tychus|Tyrael|Tyrande|Uther|Valeera|Valla|Varian|Whitemane|Xal'atath|Xul|Yrel...	UNKNOWN STEP	2026-10-04T09:33:08.7568606Z Updating files:  77% (462/600)
+make (6, 16, Tracer|Tychus|Tyrael|Tyrande|Uther|Valeera|Valla|Varian|Whitemane|Xal'atath|Xul|Yrel...	UNKNOWN STEP	2026-10-04T09:33:08.7828568Z Updating files:  78% (468/600)
+make (6, 16, Tracer|Tychus|Tyrael|Tyrande|Uther|Valeera|Valla|Varian|Whitemane|Xal'atath|Xul|Yrel...	UNKNOWN STEP	2026-10-04T09:33:08.8024514Z Updating files:  79% (474/600)
+make (6, 16, Tracer|Tychus|Tyrael|Tyrande|Uther|Valeera|Valla|Varian|Whitemane|Xal'atath|Xul|Yrel...	UNKNOWN STEP	2026-10-04T09:33:08.8289562Z Updating files:  80% (480/600)
+make (6, 16, Tracer|Tychus|Tyrael|Tyrande|Uther|Valeera|Valla|Varian|Whitemane|Xal'atath|Xul|Yrel...	UNKNOWN STEP	2026-10-04T09:33:08.8604085Z Updating files:  81% (486/600)
+make (6, 16, Tracer|Tychus|Tyrael|Tyrande|Uther|Valeera|Valla|Varian|Whitemane|Xal'atath|Xul|Yrel...	UNKNOWN STEP	2026-10-04T09:33:08.8770136Z Updating files:  82% (492/600)
+make (6, 16, Tracer|Tychus|Tyrael|Tyrande|Uther|Valeera|Valla|Varian|Whitemane|Xal'atath|Xul|Yrel...	UNKNOWN STEP	2026-10-04T09:33:08.9075003Z Updating files:  83% (498/600)
+make (6, 16, Tracer|Tychus|Tyrael|Tyrande|Uther|Valeera|Valla|Varian|Whitemane|Xal'atath|Xul|Yrel...	UNKNOWN STEP	2026-10-04T09:33:08.9320092Z Updating files:  84% (504/600)
+make (6, 16, Tracer|Tychus|Tyrael|Tyrande|Uther|Valeera|Valla|Varian|Whitemane|Xal'atath|Xul|Yrel...	UNKNOWN STEP	2026-10-04T09:33:08.9427200Z Updating files:  85% (510/600)
+make (6, 16, Tracer|Tychus|Tyrael|Tyrande|Uther|Valeera|Valla|Varian|Whitemane|Xal'atath|Xul|Yrel...	UNKNOWN STEP	2026-10-04T09:33:08.9627369Z Updating files:  86% (516/600)
+make (6, 16, Tracer|Tychus|Tyrael|Tyrande|Uther|Valeera|Valla|Varian|Whitemane|Xal'atath|Xul|Yrel...	UNKNOWN STEP	2026-10-04T09:33:08.9888827Z Updating files:  87% (522/600)
+make (6, 16, Tracer|Tychus|Tyrael|Tyrande|Uther|Valeera|Valla|Varian|Whitemane|Xal'atath|Xul|Yrel...	UNKNOWN STEP	2026-10-04T09:33:08.9909809Z Updating files:  87% (527/600)
+make (6, 16, Tracer|Tychus|Tyrael|Tyrande|Uther|Valeera|Valla|Varian|Whitemane|Xal'atath|Xul|Yrel...	UNKNOWN STEP	2026-10-04T09:33:09.0173868Z Updating files:  88% (528/600)
+make (6, 16, Tracer|Tychus|Tyrael|Tyrande|Uther|Valeera|Valla|Varian|Whitemane|Xal'atath|Xul|Yrel...	UNKNOWN STEP	2026-10-04T09:33:09.0464173Z Updating files:  89% (534/600)
+make (6, 16, Tracer|Tychus|Tyrael|Tyrande|Uther|Valeera|Valla|Varian|Whitemane|Xal'atath|Xul|Yrel...	UNKNOWN STEP	2026-10-04T09:33:09.0699063Z Updating files:  90% (540/600)
+make (6, 16, Tracer|Tychus|Tyrael|Tyrande|Uther|Valeera|Valla|Varian|Whitemane|Xal'atath|Xul|Yrel...	UNKNOWN STEP	2026-10-04T09:33:09.0938755Z Updating files:  91% (546/600)
+make (6, 16, Tracer|Tychus|Tyrael|Tyrande|Uther|Valeera|Valla|Varian|Whitemane|Xal'atath|Xul|Yrel...	UNKNOWN STEP	2026-10-04T09:33:09.1723123Z Updating files:  92% (552/600)
+make (6, 16, Tracer|Tychus|Tyrael|Tyrande|Uther|Valeera|Valla|Varian|Whitemane|Xal'atath|Xul|Yrel...	UNKNOWN STEP	2026-10-04T09:33:09.2030830Z Updating files:  93% (558/600)
+make (6, 16, Tracer|Tychus|Tyrael|Tyrande|Uther|Valeera|Valla|Varian|Whitemane|Xal'atath|Xul|Yrel...	UNKNOWN STEP	2026-10-04T09:33:09.2157568Z Updating files:  94% (564/600)
+make (6, 16, Tracer|Tychus|Tyrael|Tyrande|Uther|Valeera|Valla|Varian|Whitemane|Xal'atath|Xul|Yrel...	UNKNOWN STEP	2026-10-04T09:33:09.2300029Z Updating files:  95% (570/600)
+make (6, 16, Tracer|Tychus|Tyrael|Tyrande|Uther|Valeera|Valla|Varian|Whitemane|Xal'atath|Xul|Yrel...	UNKNOWN STEP	2026-10-04T09:33:09.2612971Z Updating files:  96% (576/600)
+make (6, 16, Tracer|Tychus|Tyrael|Tyrande|Uther|Valeera|Valla|Varian|Whitemane|Xal'atath|Xul|Yrel...	UNKNOWN STEP	2026-10-04T09:33:09.2902194Z Updating files:  97% (582/600)
+make (6, 16, Tracer|Tychus|Tyrael|Tyrande|Uther|Valeera|Valla|Varian|Whitemane|Xal'atath|Xul|Yrel...	UNKNOWN STEP	2026-10-04T09:33:09.3001552Z Updating files:  98% (588/600)
+make (6, 16, Tracer|Tychus|Tyrael|Tyrande|Uther|Valeera|Valla|Varian|Whitemane|Xal'atath|Xul|Yrel...	UNKNOWN STEP	2026-10-04T09:33:09.3373992Z Updating files:  99% (594/600)
+make (6, 16, Tracer|Tychus|Tyrael|Tyrande|Uther|Valeera|Valla|Varian|Whitemane|Xal'atath|Xul|Yrel...	UNKNOWN STEP	2026-10-04T09:33:09.3375555Z Updating files: 100% (600/600)
+make (6, 16, Tracer|Tychus|Tyrael|Tyrande|Uther|Valeera|Valla|Varian|Whitemane|Xal'atath|Xul|Yrel...	UNKNOWN STEP	2026-10-04T09:33:09.3376192Z Updating files: 100% (600/600), done.
+make (6, 16, Tracer|Tychus|Tyrael|Tyrande|Uther|Valeera|Valla|Varian|Whitemane|Xal'atath|Xul|Yrel...	UNKNOWN STEP	2026-10-04T09:33:09.3752038Z   % Total    % Received % Xferd  Average Speed   Time    Time     Time  Current
+make (6, 16, Tracer|Tychus|Tyrael|Tyrande|Uther|Valeera|Valla|Varian|Whitemane|Xal'atath|Xul|Yrel...	UNKNOWN STEP	2026-10-04T09:33:09.3752981Z                                  Dload  Upload   Total   Spent    Left  Speed
+make (6, 16, Tracer|Tychus|Tyrael|Tyrande|Uther|Valeera|Valla|Varian|Whitemane|Xal'atath|Xul|Yrel...	UNKNOWN STEP	2026-10-04T09:33:09.3754163Z 
+make (6, 16, Tracer|Tychus|Tyrael|Tyrande|Uther|Valeera|Valla|Varian|Whitemane|Xal'atath|Xul|Yrel...	UNKNOWN STEP	2026-10-04T09:33:09.7201150Z   0     0    0     0    0     0      0      0 --:--:-- --:--:-- --:--:--     0
+make (6, 16, Tracer|Tychus|Tyrael|Tyrande|Uther|Valeera|Valla|Varian|Whitemane|Xal'atath|Xul|Yrel...	UNKNOWN STEP	2026-10-04T09:33:10.3490248Z  12  260M   12 32.3M    0     0  93.7M      0  0:00:02 --:--:--  0:00:02 93.7M
+make (6, 16, Tracer|Tychus|Tyrael|Tyrande|Uther|Valeera|Valla|Varian|Whitemane|Xal'atath|Xul|Yrel...	UNKNOWN STEP	2026-10-04T09:33:10.3491192Z 100  260M  100  260M    0     0   267M      0 --:--:-- --:--:-- --:--:--  267M
+make (6, 16, Tracer|Tychus|Tyrael|Tyrande|Uther|Valeera|Valla|Varian|Whitemane|Xal'atath|Xul|Yrel...	UNKNOWN STEP	2026-10-04T09:33:27.7521206Z /home/runner/work/_temp/830e54d6-d729-4d8d-91e1-9cdb5eb2b441.sh: line 23: Xul: command not found
+make (6, 16, Tracer|Tychus|Tyrael|Tyrande|Uther|Valeera|Valla|Varian|Whitemane|Xal'atath|Xul|Yrel...	UNKNOWN STEP	2026-10-04T09:33:27.7522904Z /home/runner/work/_temp/830e54d6-d729-4d8d-91e1-9cdb5eb2b441.sh: line 23: Yrel: command not found
+make (6, 16, Tracer|Tychus|Tyrael|Tyrande|Uther|Valeera|Valla|Varian|Whitemane|Xal'atath|Xul|Yrel...	UNKNOWN STEP	2026-10-04T09:33:27.7528745Z /home/runner/work/_temp/830e54d6-d729-4d8d-91e1-9cdb5eb2b441.sh: line 23: Zuljin: command not found
+make (6, 16, Tracer|Tychus|Tyrael|Tyrande|Uther|Valeera|Valla|Varian|Whitemane|Xal'atath|Xul|Yrel...	UNKNOWN STEP	2026-10-04T09:33:27.7529466Z /home/runner/work/_temp/830e54d6-d729-4d8d-91e1-9cdb5eb2b441.sh: line 23: Zagara: command not found
+make (6, 16, Tracer|Tychus|Tyrael|Tyrande|Uther|Valeera|Valla|Varian|Whitemane|Xal'atath|Xul|Yrel...	UNKNOWN STEP	2026-10-04T09:33:27.7532776Z /home/runner/work/_temp/830e54d6-d729-4d8d-91e1-9cdb5eb2b441.sh: line 23: Zarya: command not found
+make (6, 16, Tracer|Tychus|Tyrael|Tyrande|Uther|Valeera|Valla|Varian|Whitemane|Xal'atath|Xul|Yrel...	UNKNOWN STEP	2026-10-04T09:33:27.7536855Z /home/runner/work/_temp/830e54d6-d729-4d8d-91e1-9cdb5eb2b441.sh: line 23: Zeratul: command not found
+make (6, 16, Tracer|Tychus|Tyrael|Tyrande|Uther|Valeera|Valla|Varian|Whitemane|Xal'atath|Xul|Yrel...	UNKNOWN STEP	2026-10-04T09:33:27.7558470Z ##[error]Process completed with exit code 127.
+make (6, 16, Tracer|Tychus|Tyrael|Tyrande|Uther|Valeera|Valla|Varian|Whitemane|Xal'atath|Xul|Yrel...	UNKNOWN STEP	2026-10-04T09:33:27.7704436Z Post job cleanup.
+make (6, 16, Tracer|Tychus|Tyrael|Tyrande|Uther|Valeera|Valla|Varian|Whitemane|Xal'atath|Xul|Yrel...	UNKNOWN STEP	2026-10-04T09:33:27.8596417Z [command]/usr/bin/git version
+make (6, 16, Tracer|Tychus|Tyrael|Tyrande|Uther|Valeera|Valla|Varian|Whitemane|Xal'atath|Xul|Yrel...	UNKNOWN STEP	2026-10-04T09:33:27.8642244Z git version 2.55.0
+make (6, 16, Tracer|Tychus|Tyrael|Tyrande|Uther|Valeera|Valla|Varian|Whitemane|Xal'atath|Xul|Yrel...	UNKNOWN STEP	2026-10-04T09:33:27.8683908Z Temporarily overriding HOME='/home/runner/work/_temp/a13f6601-1c58-42df-93d6-ba0b1aa144d7' before making global git config changes
+make (6, 16, Tracer|Tychus|Tyrael|Tyrande|Uther|Valeera|Valla|Varian|Whitemane|Xal'atath|Xul|Yrel...	UNKNOWN STEP	2026-10-04T09:33:27.8686445Z Adding repository directory to the temporary git global config as a safe directory
+make (6, 16, Tracer|Tychus|Tyrael|Tyrande|Uther|Valeera|Valla|Varian|Whitemane|Xal'atath|Xul|Yrel...	UNKNOWN STEP	2026-10-04T09:33:27.8690859Z [command]/usr/bin/git config --global --add safe.directory /home/runner/work/HOTS-03/HOTS-03
+make (6, 16, Tracer|Tychus|Tyrael|Tyrande|Uther|Valeera|Valla|Varian|Whitemane|Xal'atath|Xul|Yrel...	UNKNOWN STEP	2026-10-04T09:33:27.8734563Z [command]/usr/bin/git config --local --name-only --get-regexp core\.sshCommand
+make (6, 16, Tracer|Tychus|Tyrael|Tyrande|Uther|Valeera|Valla|Varian|Whitemane|Xal'atath|Xul|Yrel...	UNKNOWN STEP	2026-10-04T09:33:27.8776194Z [command]/usr/bin/git submodule foreach --recursive sh -c "git config --local --name-only --get-regexp 'core\.sshCommand' && git config --local --unset-all 'core.sshCommand' || :"
+make (6, 16, Tracer|Tychus|Tyrael|Tyrande|Uther|Valeera|Valla|Varian|Whitemane|Xal'atath|Xul|Yrel...	UNKNOWN STEP	2026-10-04T09:33:27.9075807Z [command]/usr/bin/git config --local --name-only --get-regexp http\.https\:\/\/github\.com\/\.extraheader
+make (6, 16, Tracer|Tychus|Tyrael|Tyrande|Uther|Valeera|Valla|Varian|Whitemane|Xal'atath|Xul|Yrel...	UNKNOWN STEP	2026-10-04T09:33:27.9104879Z http.https://github.com/.extraheader
+make (6, 16, Tracer|Tychus|Tyrael|Tyrande|Uther|Valeera|Valla|Varian|Whitemane|Xal'atath|Xul|Yrel...	UNKNOWN STEP	2026-10-04T09:33:27.9119652Z [command]/usr/bin/git config --local --unset-all http.https://github.com/.extraheader
+make (6, 16, Tracer|Tychus|Tyrael|Tyrande|Uther|Valeera|Valla|Varian|Whitemane|Xal'atath|Xul|Yrel...	UNKNOWN STEP	2026-10-04T09:33:27.9162412Z [command]/usr/bin/git submodule foreach --recursive sh -c "git config --local --name-only --get-regexp 'http\.https\:\/\/github\.com\/\.extraheader' && git config --local --unset-all 'http.https://github.com/.extraheader' || :"
+make (6, 16, Tracer|Tychus|Tyrael|Tyrande|Uther|Valeera|Valla|Varian|Whitemane|Xal'atath|Xul|Yrel...	UNKNOWN STEP	2026-10-04T09:33:27.9466229Z [command]/usr/bin/git config --local --name-only --get-regexp ^includeIf\.gitdir:
+make (6, 16, Tracer|Tychus|Tyrael|Tyrande|Uther|Valeera|Valla|Varian|Whitemane|Xal'atath|Xul|Yrel...	UNKNOWN STEP	2026-10-04T09:33:27.9502747Z [command]/usr/bin/git submodule foreach --recursive git config --local --show-origin --name-only --get-regexp remote.origin.url
+make (6, 16, Tracer|Tychus|Tyrael|Tyrande|Uther|Valeera|Valla|Varian|Whitemane|Xal'atath|Xul|Yrel...	UNKNOWN STEP	2026-10-04T09:33:28.0001702Z Cleaning up orphan processes
+make (6, 16, Tracer|Tychus|Tyrael|Tyrande|Uther|Valeera|Valla|Varian|Whitemane|Xal'atath|Xul|Yrel...	UNKNOWN STEP	2026-10-04T09:33:28.0338257Z ##[warning]Node.js 20 is deprecated. The following actions target Node.js 20 but are being forced to run on Node.js 24: actions/checkout@v4. For more information see: https://github.blog/changelog/2025-09-19-deprecation-of-node-20-on-github-actions-runners/

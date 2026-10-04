@@ -1,0 +1,370 @@
+make (4, 15, Lt. Morales|Lucio|Lunara|Maiev|Mal'Ganis|Malfurion|Malthael|Medivh|Mei|Mephisto|Mura...	UNKNOWN STEP	﻿2026-10-04T09:32:27.4485503Z Current runner version: '2.337.0'
+make (4, 15, Lt. Morales|Lucio|Lunara|Maiev|Mal'Ganis|Malfurion|Malthael|Medivh|Mei|Mephisto|Mura...	UNKNOWN STEP	2026-10-04T09:32:27.4524915Z ##[group]Runner Image Provisioner
+make (4, 15, Lt. Morales|Lucio|Lunara|Maiev|Mal'Ganis|Malfurion|Malthael|Medivh|Mei|Mephisto|Mura...	UNKNOWN STEP	2026-10-04T09:32:27.4526808Z Hosted Compute Agent
+make (4, 15, Lt. Morales|Lucio|Lunara|Maiev|Mal'Ganis|Malfurion|Malthael|Medivh|Mei|Mephisto|Mura...	UNKNOWN STEP	2026-10-04T09:32:27.4528116Z Version: 20260901.588
+make (4, 15, Lt. Morales|Lucio|Lunara|Maiev|Mal'Ganis|Malfurion|Malthael|Medivh|Mei|Mephisto|Mura...	UNKNOWN STEP	2026-10-04T09:32:27.4529332Z Commit: f88ec8081b781fac6c440065ac7ff9e710ce3d0b
+make (4, 15, Lt. Morales|Lucio|Lunara|Maiev|Mal'Ganis|Malfurion|Malthael|Medivh|Mei|Mephisto|Mura...	UNKNOWN STEP	2026-10-04T09:32:27.4531382Z Build Date: 2026-09-01T19:56:44Z
+make (4, 15, Lt. Morales|Lucio|Lunara|Maiev|Mal'Ganis|Malfurion|Malthael|Medivh|Mei|Mephisto|Mura...	UNKNOWN STEP	2026-10-04T09:32:27.4532997Z Worker ID: {a81b5245-64c7-4098-9b94-cff3a4d91088}
+make (4, 15, Lt. Morales|Lucio|Lunara|Maiev|Mal'Ganis|Malfurion|Malthael|Medivh|Mei|Mephisto|Mura...	UNKNOWN STEP	2026-10-04T09:32:27.4534296Z Azure Region: eastus
+make (4, 15, Lt. Morales|Lucio|Lunara|Maiev|Mal'Ganis|Malfurion|Malthael|Medivh|Mei|Mephisto|Mura...	UNKNOWN STEP	2026-10-04T09:32:27.4535485Z ##[endgroup]
+make (4, 15, Lt. Morales|Lucio|Lunara|Maiev|Mal'Ganis|Malfurion|Malthael|Medivh|Mei|Mephisto|Mura...	UNKNOWN STEP	2026-10-04T09:32:27.4538356Z ##[group]Operating System
+make (4, 15, Lt. Morales|Lucio|Lunara|Maiev|Mal'Ganis|Malfurion|Malthael|Medivh|Mei|Mephisto|Mura...	UNKNOWN STEP	2026-10-04T09:32:27.4539791Z Ubuntu
+make (4, 15, Lt. Morales|Lucio|Lunara|Maiev|Mal'Ganis|Malfurion|Malthael|Medivh|Mei|Mephisto|Mura...	UNKNOWN STEP	2026-10-04T09:32:27.4540812Z 22.04.5
+make (4, 15, Lt. Morales|Lucio|Lunara|Maiev|Mal'Ganis|Malfurion|Malthael|Medivh|Mei|Mephisto|Mura...	UNKNOWN STEP	2026-10-04T09:32:27.4541792Z LTS
+make (4, 15, Lt. Morales|Lucio|Lunara|Maiev|Mal'Ganis|Malfurion|Malthael|Medivh|Mei|Mephisto|Mura...	UNKNOWN STEP	2026-10-04T09:32:27.4542945Z ##[endgroup]
+make (4, 15, Lt. Morales|Lucio|Lunara|Maiev|Mal'Ganis|Malfurion|Malthael|Medivh|Mei|Mephisto|Mura...	UNKNOWN STEP	2026-10-04T09:32:27.4543943Z ##[group]Runner Image
+make (4, 15, Lt. Morales|Lucio|Lunara|Maiev|Mal'Ganis|Malfurion|Malthael|Medivh|Mei|Mephisto|Mura...	UNKNOWN STEP	2026-10-04T09:32:27.4545121Z Image: ubuntu-22.04
+make (4, 15, Lt. Morales|Lucio|Lunara|Maiev|Mal'Ganis|Malfurion|Malthael|Medivh|Mei|Mephisto|Mura...	UNKNOWN STEP	2026-10-04T09:32:27.4546401Z Version: 20260927.309.1
+make (4, 15, Lt. Morales|Lucio|Lunara|Maiev|Mal'Ganis|Malfurion|Malthael|Medivh|Mei|Mephisto|Mura...	UNKNOWN STEP	2026-10-04T09:32:27.4548730Z Included Software: https://github.com/actions/runner-images/blob/ubuntu22/20260927.309/images/ubuntu/Ubuntu2204-Readme.md
+make (4, 15, Lt. Morales|Lucio|Lunara|Maiev|Mal'Ganis|Malfurion|Malthael|Medivh|Mei|Mephisto|Mura...	UNKNOWN STEP	2026-10-04T09:32:27.4551520Z Image Release: https://github.com/actions/runner-images/releases/tag/ubuntu22%2F20260927.309
+make (4, 15, Lt. Morales|Lucio|Lunara|Maiev|Mal'Ganis|Malfurion|Malthael|Medivh|Mei|Mephisto|Mura...	UNKNOWN STEP	2026-10-04T09:32:27.4553435Z ##[endgroup]
+make (4, 15, Lt. Morales|Lucio|Lunara|Maiev|Mal'Ganis|Malfurion|Malthael|Medivh|Mei|Mephisto|Mura...	UNKNOWN STEP	2026-10-04T09:32:27.4555488Z ##[group]GITHUB_TOKEN Permissions
+make (4, 15, Lt. Morales|Lucio|Lunara|Maiev|Mal'Ganis|Malfurion|Malthael|Medivh|Mei|Mephisto|Mura...	UNKNOWN STEP	2026-10-04T09:32:27.4559548Z Contents: write
+make (4, 15, Lt. Morales|Lucio|Lunara|Maiev|Mal'Ganis|Malfurion|Malthael|Medivh|Mei|Mephisto|Mura...	UNKNOWN STEP	2026-10-04T09:32:27.4560675Z Metadata: read
+make (4, 15, Lt. Morales|Lucio|Lunara|Maiev|Mal'Ganis|Malfurion|Malthael|Medivh|Mei|Mephisto|Mura...	UNKNOWN STEP	2026-10-04T09:32:27.4561916Z ##[endgroup]
+make (4, 15, Lt. Morales|Lucio|Lunara|Maiev|Mal'Ganis|Malfurion|Malthael|Medivh|Mei|Mephisto|Mura...	UNKNOWN STEP	2026-10-04T09:32:27.4564972Z Secret source: Actions
+make (4, 15, Lt. Morales|Lucio|Lunara|Maiev|Mal'Ganis|Malfurion|Malthael|Medivh|Mei|Mephisto|Mura...	UNKNOWN STEP	2026-10-04T09:32:27.4567027Z Cache mode: write
+make (4, 15, Lt. Morales|Lucio|Lunara|Maiev|Mal'Ganis|Malfurion|Malthael|Medivh|Mei|Mephisto|Mura...	UNKNOWN STEP	2026-10-04T09:32:27.4568523Z Prepare workflow directory
+make (4, 15, Lt. Morales|Lucio|Lunara|Maiev|Mal'Ganis|Malfurion|Malthael|Medivh|Mei|Mephisto|Mura...	UNKNOWN STEP	2026-10-04T09:32:27.5160184Z Prepare all required actions
+make (4, 15, Lt. Morales|Lucio|Lunara|Maiev|Mal'Ganis|Malfurion|Malthael|Medivh|Mei|Mephisto|Mura...	UNKNOWN STEP	2026-10-04T09:32:27.5233144Z Getting action download info
+make (4, 15, Lt. Morales|Lucio|Lunara|Maiev|Mal'Ganis|Malfurion|Malthael|Medivh|Mei|Mephisto|Mura...	UNKNOWN STEP	2026-10-04T09:32:27.7085723Z Download action repository 'actions/checkout@v4' (SHA:11d5960a326750d5838078e36cf38b85af677262)
+make (4, 15, Lt. Morales|Lucio|Lunara|Maiev|Mal'Ganis|Malfurion|Malthael|Medivh|Mei|Mephisto|Mura...	UNKNOWN STEP	2026-10-04T09:32:27.8335315Z Download action repository 'actions/upload-artifact@v4' (SHA:ea165f8d65b6e75b540449e92b4886f43607fa02)
+make (4, 15, Lt. Morales|Lucio|Lunara|Maiev|Mal'Ganis|Malfurion|Malthael|Medivh|Mei|Mephisto|Mura...	UNKNOWN STEP	2026-10-04T09:32:28.1280603Z Complete job name: make (4, 15, Lt. Morales|Lucio|Lunara|Maiev|Mal'Ganis|Malfurion|Malthael|Medivh|Mei|Mephisto|Mura...
+make (4, 15, Lt. Morales|Lucio|Lunara|Maiev|Mal'Ganis|Malfurion|Malthael|Medivh|Mei|Mephisto|Mura...	UNKNOWN STEP	2026-10-04T09:32:28.2148350Z ##[group]Run actions/checkout@v4
+make (4, 15, Lt. Morales|Lucio|Lunara|Maiev|Mal'Ganis|Malfurion|Malthael|Medivh|Mei|Mephisto|Mura...	UNKNOWN STEP	2026-10-04T09:32:28.2149242Z with:
+make (4, 15, Lt. Morales|Lucio|Lunara|Maiev|Mal'Ganis|Malfurion|Malthael|Medivh|Mei|Mephisto|Mura...	UNKNOWN STEP	2026-10-04T09:32:28.2149680Z   ref: chatgpt-stl-builder
+make (4, 15, Lt. Morales|Lucio|Lunara|Maiev|Mal'Ganis|Malfurion|Malthael|Medivh|Mei|Mephisto|Mura...	UNKNOWN STEP	2026-10-04T09:32:28.2150180Z   fetch-depth: 1
+make (4, 15, Lt. Morales|Lucio|Lunara|Maiev|Mal'Ganis|Malfurion|Malthael|Medivh|Mei|Mephisto|Mura...	UNKNOWN STEP	2026-10-04T09:32:28.2150647Z   repository: JimmyTheCool/HOTS-03
+make (4, 15, Lt. Morales|Lucio|Lunara|Maiev|Mal'Ganis|Malfurion|Malthael|Medivh|Mei|Mephisto|Mura...	UNKNOWN STEP	2026-10-04T09:32:28.2154434Z   token: ***
+make (4, 15, Lt. Morales|Lucio|Lunara|Maiev|Mal'Ganis|Malfurion|Malthael|Medivh|Mei|Mephisto|Mura...	UNKNOWN STEP	2026-10-04T09:32:28.2154862Z   ssh-strict: true
+make (4, 15, Lt. Morales|Lucio|Lunara|Maiev|Mal'Ganis|Malfurion|Malthael|Medivh|Mei|Mephisto|Mura...	UNKNOWN STEP	2026-10-04T09:32:28.2155294Z   ssh-user: git
+make (4, 15, Lt. Morales|Lucio|Lunara|Maiev|Mal'Ganis|Malfurion|Malthael|Medivh|Mei|Mephisto|Mura...	UNKNOWN STEP	2026-10-04T09:32:28.2155752Z   persist-credentials: true
+make (4, 15, Lt. Morales|Lucio|Lunara|Maiev|Mal'Ganis|Malfurion|Malthael|Medivh|Mei|Mephisto|Mura...	UNKNOWN STEP	2026-10-04T09:32:28.2156610Z   clean: true
+make (4, 15, Lt. Morales|Lucio|Lunara|Maiev|Mal'Ganis|Malfurion|Malthael|Medivh|Mei|Mephisto|Mura...	UNKNOWN STEP	2026-10-04T09:32:28.2157068Z   sparse-checkout-cone-mode: true
+make (4, 15, Lt. Morales|Lucio|Lunara|Maiev|Mal'Ganis|Malfurion|Malthael|Medivh|Mei|Mephisto|Mura...	UNKNOWN STEP	2026-10-04T09:32:28.2157585Z   fetch-tags: false
+make (4, 15, Lt. Morales|Lucio|Lunara|Maiev|Mal'Ganis|Malfurion|Malthael|Medivh|Mei|Mephisto|Mura...	UNKNOWN STEP	2026-10-04T09:32:28.2158021Z   show-progress: true
+make (4, 15, Lt. Morales|Lucio|Lunara|Maiev|Mal'Ganis|Malfurion|Malthael|Medivh|Mei|Mephisto|Mura...	UNKNOWN STEP	2026-10-04T09:32:28.2158469Z   lfs: false
+make (4, 15, Lt. Morales|Lucio|Lunara|Maiev|Mal'Ganis|Malfurion|Malthael|Medivh|Mei|Mephisto|Mura...	UNKNOWN STEP	2026-10-04T09:32:28.2158876Z   submodules: false
+make (4, 15, Lt. Morales|Lucio|Lunara|Maiev|Mal'Ganis|Malfurion|Malthael|Medivh|Mei|Mephisto|Mura...	UNKNOWN STEP	2026-10-04T09:32:28.2159325Z   set-safe-directory: true
+make (4, 15, Lt. Morales|Lucio|Lunara|Maiev|Mal'Ganis|Malfurion|Malthael|Medivh|Mei|Mephisto|Mura...	UNKNOWN STEP	2026-10-04T09:32:28.2159824Z   allow-unsafe-pr-checkout: false
+make (4, 15, Lt. Morales|Lucio|Lunara|Maiev|Mal'Ganis|Malfurion|Malthael|Medivh|Mei|Mephisto|Mura...	UNKNOWN STEP	2026-10-04T09:32:28.2160646Z env:
+make (4, 15, Lt. Morales|Lucio|Lunara|Maiev|Mal'Ganis|Malfurion|Malthael|Medivh|Mei|Mephisto|Mura...	UNKNOWN STEP	2026-10-04T09:32:28.2161046Z   BV: 3.6.23
+make (4, 15, Lt. Morales|Lucio|Lunara|Maiev|Mal'Ganis|Malfurion|Malthael|Medivh|Mei|Mephisto|Mura...	UNKNOWN STEP	2026-10-04T09:32:28.2161503Z   M3: 58935005c4465a219a740f6b740253533eda773f
+make (4, 15, Lt. Morales|Lucio|Lunara|Maiev|Mal'Ganis|Malfurion|Malthael|Medivh|Mei|Mephisto|Mura...	UNKNOWN STEP	2026-10-04T09:32:28.2162107Z ##[endgroup]
+make (4, 15, Lt. Morales|Lucio|Lunara|Maiev|Mal'Ganis|Malfurion|Malthael|Medivh|Mei|Mephisto|Mura...	UNKNOWN STEP	2026-10-04T09:32:28.3212131Z Syncing repository: JimmyTheCool/HOTS-03
+make (4, 15, Lt. Morales|Lucio|Lunara|Maiev|Mal'Ganis|Malfurion|Malthael|Medivh|Mei|Mephisto|Mura...	UNKNOWN STEP	2026-10-04T09:32:28.3213904Z ##[group]Getting Git version info
+make (4, 15, Lt. Morales|Lucio|Lunara|Maiev|Mal'Ganis|Malfurion|Malthael|Medivh|Mei|Mephisto|Mura...	UNKNOWN STEP	2026-10-04T09:32:28.3214618Z Working directory is '/home/runner/work/HOTS-03/HOTS-03'
+make (4, 15, Lt. Morales|Lucio|Lunara|Maiev|Mal'Ganis|Malfurion|Malthael|Medivh|Mei|Mephisto|Mura...	UNKNOWN STEP	2026-10-04T09:32:28.3215650Z [command]/usr/bin/git version
+make (4, 15, Lt. Morales|Lucio|Lunara|Maiev|Mal'Ganis|Malfurion|Malthael|Medivh|Mei|Mephisto|Mura...	UNKNOWN STEP	2026-10-04T09:32:28.4163518Z git version 2.55.0
+make (4, 15, Lt. Morales|Lucio|Lunara|Maiev|Mal'Ganis|Malfurion|Malthael|Medivh|Mei|Mephisto|Mura...	UNKNOWN STEP	2026-10-04T09:32:28.4187521Z ##[endgroup]
+make (4, 15, Lt. Morales|Lucio|Lunara|Maiev|Mal'Ganis|Malfurion|Malthael|Medivh|Mei|Mephisto|Mura...	UNKNOWN STEP	2026-10-04T09:32:28.4204619Z Temporarily overriding HOME='/home/runner/work/_temp/dfbc8eb3-0a11-4d6d-ab07-ec16d5999c90' before making global git config changes
+make (4, 15, Lt. Morales|Lucio|Lunara|Maiev|Mal'Ganis|Malfurion|Malthael|Medivh|Mei|Mephisto|Mura...	UNKNOWN STEP	2026-10-04T09:32:28.4207524Z Adding repository directory to the temporary git global config as a safe directory
+make (4, 15, Lt. Morales|Lucio|Lunara|Maiev|Mal'Ganis|Malfurion|Malthael|Medivh|Mei|Mephisto|Mura...	UNKNOWN STEP	2026-10-04T09:32:28.4211555Z [command]/usr/bin/git config --global --add safe.directory /home/runner/work/HOTS-03/HOTS-03
+make (4, 15, Lt. Morales|Lucio|Lunara|Maiev|Mal'Ganis|Malfurion|Malthael|Medivh|Mei|Mephisto|Mura...	UNKNOWN STEP	2026-10-04T09:32:28.4258161Z Deleting the contents of '/home/runner/work/HOTS-03/HOTS-03'
+make (4, 15, Lt. Morales|Lucio|Lunara|Maiev|Mal'Ganis|Malfurion|Malthael|Medivh|Mei|Mephisto|Mura...	UNKNOWN STEP	2026-10-04T09:32:28.4263561Z ##[group]Initializing the repository
+make (4, 15, Lt. Morales|Lucio|Lunara|Maiev|Mal'Ganis|Malfurion|Malthael|Medivh|Mei|Mephisto|Mura...	UNKNOWN STEP	2026-10-04T09:32:28.4268733Z [command]/usr/bin/git init /home/runner/work/HOTS-03/HOTS-03
+make (4, 15, Lt. Morales|Lucio|Lunara|Maiev|Mal'Ganis|Malfurion|Malthael|Medivh|Mei|Mephisto|Mura...	UNKNOWN STEP	2026-10-04T09:32:28.4676640Z hint: Using 'master' as the name for the initial branch. This default branch name
+make (4, 15, Lt. Morales|Lucio|Lunara|Maiev|Mal'Ganis|Malfurion|Malthael|Medivh|Mei|Mephisto|Mura...	UNKNOWN STEP	2026-10-04T09:32:28.4679156Z hint: will change to "main" in Git 3.0. To configure the initial branch name
+make (4, 15, Lt. Morales|Lucio|Lunara|Maiev|Mal'Ganis|Malfurion|Malthael|Medivh|Mei|Mephisto|Mura...	UNKNOWN STEP	2026-10-04T09:32:28.4681241Z hint: to use in all of your new repositories, which will suppress this warning,
+make (4, 15, Lt. Morales|Lucio|Lunara|Maiev|Mal'Ganis|Malfurion|Malthael|Medivh|Mei|Mephisto|Mura...	UNKNOWN STEP	2026-10-04T09:32:28.4682862Z hint: call:
+make (4, 15, Lt. Morales|Lucio|Lunara|Maiev|Mal'Ganis|Malfurion|Malthael|Medivh|Mei|Mephisto|Mura...	UNKNOWN STEP	2026-10-04T09:32:28.4683755Z hint:
+make (4, 15, Lt. Morales|Lucio|Lunara|Maiev|Mal'Ganis|Malfurion|Malthael|Medivh|Mei|Mephisto|Mura...	UNKNOWN STEP	2026-10-04T09:32:28.4684836Z hint: 	git config --global init.defaultBranch <name>
+make (4, 15, Lt. Morales|Lucio|Lunara|Maiev|Mal'Ganis|Malfurion|Malthael|Medivh|Mei|Mephisto|Mura...	UNKNOWN STEP	2026-10-04T09:32:28.4686407Z hint:
+make (4, 15, Lt. Morales|Lucio|Lunara|Maiev|Mal'Ganis|Malfurion|Malthael|Medivh|Mei|Mephisto|Mura...	UNKNOWN STEP	2026-10-04T09:32:28.4687891Z hint: Names commonly chosen instead of 'master' are 'main', 'trunk' and
+make (4, 15, Lt. Morales|Lucio|Lunara|Maiev|Mal'Ganis|Malfurion|Malthael|Medivh|Mei|Mephisto|Mura...	UNKNOWN STEP	2026-10-04T09:32:28.4689730Z hint: 'development'. The just-created branch can be renamed via this command:
+make (4, 15, Lt. Morales|Lucio|Lunara|Maiev|Mal'Ganis|Malfurion|Malthael|Medivh|Mei|Mephisto|Mura...	UNKNOWN STEP	2026-10-04T09:32:28.4691201Z hint:
+make (4, 15, Lt. Morales|Lucio|Lunara|Maiev|Mal'Ganis|Malfurion|Malthael|Medivh|Mei|Mephisto|Mura...	UNKNOWN STEP	2026-10-04T09:32:28.4691870Z hint: 	git branch -m <name>
+make (4, 15, Lt. Morales|Lucio|Lunara|Maiev|Mal'Ganis|Malfurion|Malthael|Medivh|Mei|Mephisto|Mura...	UNKNOWN STEP	2026-10-04T09:32:28.4692362Z hint:
+make (4, 15, Lt. Morales|Lucio|Lunara|Maiev|Mal'Ganis|Malfurion|Malthael|Medivh|Mei|Mephisto|Mura...	UNKNOWN STEP	2026-10-04T09:32:28.4693009Z hint: Disable this message with "git config set advice.defaultBranchName false"
+make (4, 15, Lt. Morales|Lucio|Lunara|Maiev|Mal'Ganis|Malfurion|Malthael|Medivh|Mei|Mephisto|Mura...	UNKNOWN STEP	2026-10-04T09:32:28.4694038Z Initialized empty Git repository in /home/runner/work/HOTS-03/HOTS-03/.git/
+make (4, 15, Lt. Morales|Lucio|Lunara|Maiev|Mal'Ganis|Malfurion|Malthael|Medivh|Mei|Mephisto|Mura...	UNKNOWN STEP	2026-10-04T09:32:28.4695820Z [command]/usr/bin/git remote add origin https://github.com/JimmyTheCool/HOTS-03
+make (4, 15, Lt. Morales|Lucio|Lunara|Maiev|Mal'Ganis|Malfurion|Malthael|Medivh|Mei|Mephisto|Mura...	UNKNOWN STEP	2026-10-04T09:32:28.4793068Z ##[endgroup]
+make (4, 15, Lt. Morales|Lucio|Lunara|Maiev|Mal'Ganis|Malfurion|Malthael|Medivh|Mei|Mephisto|Mura...	UNKNOWN STEP	2026-10-04T09:32:28.4794294Z ##[group]Disabling automatic garbage collection
+make (4, 15, Lt. Morales|Lucio|Lunara|Maiev|Mal'Ganis|Malfurion|Malthael|Medivh|Mei|Mephisto|Mura...	UNKNOWN STEP	2026-10-04T09:32:28.4798932Z [command]/usr/bin/git config --local gc.auto 0
+make (4, 15, Lt. Morales|Lucio|Lunara|Maiev|Mal'Ganis|Malfurion|Malthael|Medivh|Mei|Mephisto|Mura...	UNKNOWN STEP	2026-10-04T09:32:28.4839484Z ##[endgroup]
+make (4, 15, Lt. Morales|Lucio|Lunara|Maiev|Mal'Ganis|Malfurion|Malthael|Medivh|Mei|Mephisto|Mura...	UNKNOWN STEP	2026-10-04T09:32:28.4840214Z ##[group]Setting up auth
+make (4, 15, Lt. Morales|Lucio|Lunara|Maiev|Mal'Ganis|Malfurion|Malthael|Medivh|Mei|Mephisto|Mura...	UNKNOWN STEP	2026-10-04T09:32:28.4847358Z [command]/usr/bin/git config --local --name-only --get-regexp core\.sshCommand
+make (4, 15, Lt. Morales|Lucio|Lunara|Maiev|Mal'Ganis|Malfurion|Malthael|Medivh|Mei|Mephisto|Mura...	UNKNOWN STEP	2026-10-04T09:32:28.4889510Z [command]/usr/bin/git submodule foreach --recursive sh -c "git config --local --name-only --get-regexp 'core\.sshCommand' && git config --local --unset-all 'core.sshCommand' || :"
+make (4, 15, Lt. Morales|Lucio|Lunara|Maiev|Mal'Ganis|Malfurion|Malthael|Medivh|Mei|Mephisto|Mura...	UNKNOWN STEP	2026-10-04T09:32:28.6923230Z [command]/usr/bin/git config --local --name-only --get-regexp http\.https\:\/\/github\.com\/\.extraheader
+make (4, 15, Lt. Morales|Lucio|Lunara|Maiev|Mal'Ganis|Malfurion|Malthael|Medivh|Mei|Mephisto|Mura...	UNKNOWN STEP	2026-10-04T09:32:28.6964857Z [command]/usr/bin/git submodule foreach --recursive sh -c "git config --local --name-only --get-regexp 'http\.https\:\/\/github\.com\/\.extraheader' && git config --local --unset-all 'http.https://github.com/.extraheader' || :"
+make (4, 15, Lt. Morales|Lucio|Lunara|Maiev|Mal'Ganis|Malfurion|Malthael|Medivh|Mei|Mephisto|Mura...	UNKNOWN STEP	2026-10-04T09:32:28.7239151Z [command]/usr/bin/git config --local --name-only --get-regexp ^includeIf\.gitdir:
+make (4, 15, Lt. Morales|Lucio|Lunara|Maiev|Mal'Ganis|Malfurion|Malthael|Medivh|Mei|Mephisto|Mura...	UNKNOWN STEP	2026-10-04T09:32:28.7286641Z [command]/usr/bin/git submodule foreach --recursive git config --local --show-origin --name-only --get-regexp remote.origin.url
+make (4, 15, Lt. Morales|Lucio|Lunara|Maiev|Mal'Ganis|Malfurion|Malthael|Medivh|Mei|Mephisto|Mura...	UNKNOWN STEP	2026-10-04T09:32:28.7575759Z [command]/usr/bin/git config --local http.https://github.com/.extraheader AUTHORIZATION: basic ***
+make (4, 15, Lt. Morales|Lucio|Lunara|Maiev|Mal'Ganis|Malfurion|Malthael|Medivh|Mei|Mephisto|Mura...	UNKNOWN STEP	2026-10-04T09:32:28.7621441Z ##[endgroup]
+make (4, 15, Lt. Morales|Lucio|Lunara|Maiev|Mal'Ganis|Malfurion|Malthael|Medivh|Mei|Mephisto|Mura...	UNKNOWN STEP	2026-10-04T09:32:28.7622601Z ##[group]Fetching the repository
+make (4, 15, Lt. Morales|Lucio|Lunara|Maiev|Mal'Ganis|Malfurion|Malthael|Medivh|Mei|Mephisto|Mura...	UNKNOWN STEP	2026-10-04T09:32:28.7632155Z [command]/usr/bin/git -c protocol.version=2 fetch --no-tags --prune --no-recurse-submodules --depth=1 origin +refs/heads/chatgpt-stl-builder*:refs/remotes/origin/chatgpt-stl-builder* +refs/tags/chatgpt-stl-builder*:refs/tags/chatgpt-stl-builder*
+make (4, 15, Lt. Morales|Lucio|Lunara|Maiev|Mal'Ganis|Malfurion|Malthael|Medivh|Mei|Mephisto|Mura...	UNKNOWN STEP	2026-10-04T09:32:35.7854474Z From https://github.com/JimmyTheCool/HOTS-03
+make (4, 15, Lt. Morales|Lucio|Lunara|Maiev|Mal'Ganis|Malfurion|Malthael|Medivh|Mei|Mephisto|Mura...	UNKNOWN STEP	2026-10-04T09:32:35.7855508Z  * [new branch]      chatgpt-stl-builder -> origin/chatgpt-stl-builder
+make (4, 15, Lt. Morales|Lucio|Lunara|Maiev|Mal'Ganis|Malfurion|Malthael|Medivh|Mei|Mephisto|Mura...	UNKNOWN STEP	2026-10-04T09:32:35.7859621Z ##[endgroup]
+make (4, 15, Lt. Morales|Lucio|Lunara|Maiev|Mal'Ganis|Malfurion|Malthael|Medivh|Mei|Mephisto|Mura...	UNKNOWN STEP	2026-10-04T09:32:35.7860435Z ##[group]Determining the checkout info
+make (4, 15, Lt. Morales|Lucio|Lunara|Maiev|Mal'Ganis|Malfurion|Malthael|Medivh|Mei|Mephisto|Mura...	UNKNOWN STEP	2026-10-04T09:32:35.7867689Z [command]/usr/bin/git branch --list --remote origin/chatgpt-stl-builder
+make (4, 15, Lt. Morales|Lucio|Lunara|Maiev|Mal'Ganis|Malfurion|Malthael|Medivh|Mei|Mephisto|Mura...	UNKNOWN STEP	2026-10-04T09:32:35.7899571Z   origin/chatgpt-stl-builder
+make (4, 15, Lt. Morales|Lucio|Lunara|Maiev|Mal'Ganis|Malfurion|Malthael|Medivh|Mei|Mephisto|Mura...	UNKNOWN STEP	2026-10-04T09:32:35.7904331Z ##[endgroup]
+make (4, 15, Lt. Morales|Lucio|Lunara|Maiev|Mal'Ganis|Malfurion|Malthael|Medivh|Mei|Mephisto|Mura...	UNKNOWN STEP	2026-10-04T09:32:35.7909465Z [command]/usr/bin/git sparse-checkout disable
+make (4, 15, Lt. Morales|Lucio|Lunara|Maiev|Mal'Ganis|Malfurion|Malthael|Medivh|Mei|Mephisto|Mura...	UNKNOWN STEP	2026-10-04T09:32:35.8004753Z [command]/usr/bin/git config --local --unset-all extensions.worktreeConfig
+make (4, 15, Lt. Morales|Lucio|Lunara|Maiev|Mal'Ganis|Malfurion|Malthael|Medivh|Mei|Mephisto|Mura...	UNKNOWN STEP	2026-10-04T09:32:35.8074645Z ##[group]Checking out the ref
+make (4, 15, Lt. Morales|Lucio|Lunara|Maiev|Mal'Ganis|Malfurion|Malthael|Medivh|Mei|Mephisto|Mura...	UNKNOWN STEP	2026-10-04T09:32:35.8080857Z [command]/usr/bin/git checkout --progress --force -B chatgpt-stl-builder refs/remotes/origin/chatgpt-stl-builder
+make (4, 15, Lt. Morales|Lucio|Lunara|Maiev|Mal'Ganis|Malfurion|Malthael|Medivh|Mei|Mephisto|Mura...	UNKNOWN STEP	2026-10-04T09:32:36.8644081Z Updating files:  36% (280/771)
+make (4, 15, Lt. Morales|Lucio|Lunara|Maiev|Mal'Ganis|Malfurion|Malthael|Medivh|Mei|Mephisto|Mura...	UNKNOWN STEP	2026-10-04T09:32:36.8997543Z Updating files:  37% (286/771)
+make (4, 15, Lt. Morales|Lucio|Lunara|Maiev|Mal'Ganis|Malfurion|Malthael|Medivh|Mei|Mephisto|Mura...	UNKNOWN STEP	2026-10-04T09:32:36.9261803Z Updating files:  38% (293/771)
+make (4, 15, Lt. Morales|Lucio|Lunara|Maiev|Mal'Ganis|Malfurion|Malthael|Medivh|Mei|Mephisto|Mura...	UNKNOWN STEP	2026-10-04T09:32:36.9503684Z Updating files:  39% (301/771)
+make (4, 15, Lt. Morales|Lucio|Lunara|Maiev|Mal'Ganis|Malfurion|Malthael|Medivh|Mei|Mephisto|Mura...	UNKNOWN STEP	2026-10-04T09:32:36.9642725Z Updating files:  40% (309/771)
+make (4, 15, Lt. Morales|Lucio|Lunara|Maiev|Mal'Ganis|Malfurion|Malthael|Medivh|Mei|Mephisto|Mura...	UNKNOWN STEP	2026-10-04T09:32:36.9979980Z Updating files:  41% (317/771)
+make (4, 15, Lt. Morales|Lucio|Lunara|Maiev|Mal'Ganis|Malfurion|Malthael|Medivh|Mei|Mephisto|Mura...	UNKNOWN STEP	2026-10-04T09:32:37.0165247Z Updating files:  42% (324/771)
+make (4, 15, Lt. Morales|Lucio|Lunara|Maiev|Mal'Ganis|Malfurion|Malthael|Medivh|Mei|Mephisto|Mura...	UNKNOWN STEP	2026-10-04T09:32:37.0424888Z Updating files:  43% (332/771)
+make (4, 15, Lt. Morales|Lucio|Lunara|Maiev|Mal'Ganis|Malfurion|Malthael|Medivh|Mei|Mephisto|Mura...	UNKNOWN STEP	2026-10-04T09:32:37.0764835Z Updating files:  44% (340/771)
+make (4, 15, Lt. Morales|Lucio|Lunara|Maiev|Mal'Ganis|Malfurion|Malthael|Medivh|Mei|Mephisto|Mura...	UNKNOWN STEP	2026-10-04T09:32:37.0940912Z Updating files:  45% (347/771)
+make (4, 15, Lt. Morales|Lucio|Lunara|Maiev|Mal'Ganis|Malfurion|Malthael|Medivh|Mei|Mephisto|Mura...	UNKNOWN STEP	2026-10-04T09:32:37.1141815Z Updating files:  46% (355/771)
+make (4, 15, Lt. Morales|Lucio|Lunara|Maiev|Mal'Ganis|Malfurion|Malthael|Medivh|Mei|Mephisto|Mura...	UNKNOWN STEP	2026-10-04T09:32:37.1487631Z Updating files:  47% (363/771)
+make (4, 15, Lt. Morales|Lucio|Lunara|Maiev|Mal'Ganis|Malfurion|Malthael|Medivh|Mei|Mephisto|Mura...	UNKNOWN STEP	2026-10-04T09:32:37.1705209Z Updating files:  48% (371/771)
+make (4, 15, Lt. Morales|Lucio|Lunara|Maiev|Mal'Ganis|Malfurion|Malthael|Medivh|Mei|Mephisto|Mura...	UNKNOWN STEP	2026-10-04T09:32:37.1993289Z Updating files:  49% (378/771)
+make (4, 15, Lt. Morales|Lucio|Lunara|Maiev|Mal'Ganis|Malfurion|Malthael|Medivh|Mei|Mephisto|Mura...	UNKNOWN STEP	2026-10-04T09:32:37.2219893Z Updating files:  50% (386/771)
+make (4, 15, Lt. Morales|Lucio|Lunara|Maiev|Mal'Ganis|Malfurion|Malthael|Medivh|Mei|Mephisto|Mura...	UNKNOWN STEP	2026-10-04T09:32:37.2488750Z Updating files:  51% (394/771)
+make (4, 15, Lt. Morales|Lucio|Lunara|Maiev|Mal'Ganis|Malfurion|Malthael|Medivh|Mei|Mephisto|Mura...	UNKNOWN STEP	2026-10-04T09:32:37.2957348Z Updating files:  52% (401/771)
+make (4, 15, Lt. Morales|Lucio|Lunara|Maiev|Mal'Ganis|Malfurion|Malthael|Medivh|Mei|Mephisto|Mura...	UNKNOWN STEP	2026-10-04T09:32:37.3170185Z Updating files:  53% (409/771)
+make (4, 15, Lt. Morales|Lucio|Lunara|Maiev|Mal'Ganis|Malfurion|Malthael|Medivh|Mei|Mephisto|Mura...	UNKNOWN STEP	2026-10-04T09:32:37.3466181Z Updating files:  54% (417/771)
+make (4, 15, Lt. Morales|Lucio|Lunara|Maiev|Mal'Ganis|Malfurion|Malthael|Medivh|Mei|Mephisto|Mura...	UNKNOWN STEP	2026-10-04T09:32:37.3862538Z Updating files:  55% (425/771)
+make (4, 15, Lt. Morales|Lucio|Lunara|Maiev|Mal'Ganis|Malfurion|Malthael|Medivh|Mei|Mephisto|Mura...	UNKNOWN STEP	2026-10-04T09:32:37.4165647Z Updating files:  56% (432/771)
+make (4, 15, Lt. Morales|Lucio|Lunara|Maiev|Mal'Ganis|Malfurion|Malthael|Medivh|Mei|Mephisto|Mura...	UNKNOWN STEP	2026-10-04T09:32:37.4619692Z Updating files:  57% (440/771)
+make (4, 15, Lt. Morales|Lucio|Lunara|Maiev|Mal'Ganis|Malfurion|Malthael|Medivh|Mei|Mephisto|Mura...	UNKNOWN STEP	2026-10-04T09:32:37.4793457Z Updating files:  58% (448/771)
+make (4, 15, Lt. Morales|Lucio|Lunara|Maiev|Mal'Ganis|Malfurion|Malthael|Medivh|Mei|Mephisto|Mura...	UNKNOWN STEP	2026-10-04T09:32:37.5249359Z Updating files:  59% (455/771)
+make (4, 15, Lt. Morales|Lucio|Lunara|Maiev|Mal'Ganis|Malfurion|Malthael|Medivh|Mei|Mephisto|Mura...	UNKNOWN STEP	2026-10-04T09:32:37.5393270Z Updating files:  60% (463/771)
+make (4, 15, Lt. Morales|Lucio|Lunara|Maiev|Mal'Ganis|Malfurion|Malthael|Medivh|Mei|Mephisto|Mura...	UNKNOWN STEP	2026-10-04T09:32:37.5674716Z Updating files:  61% (471/771)
+make (4, 15, Lt. Morales|Lucio|Lunara|Maiev|Mal'Ganis|Malfurion|Malthael|Medivh|Mei|Mephisto|Mura...	UNKNOWN STEP	2026-10-04T09:32:37.5991996Z Updating files:  62% (479/771)
+make (4, 15, Lt. Morales|Lucio|Lunara|Maiev|Mal'Ganis|Malfurion|Malthael|Medivh|Mei|Mephisto|Mura...	UNKNOWN STEP	2026-10-04T09:32:37.6269898Z Updating files:  63% (486/771)
+make (4, 15, Lt. Morales|Lucio|Lunara|Maiev|Mal'Ganis|Malfurion|Malthael|Medivh|Mei|Mephisto|Mura...	UNKNOWN STEP	2026-10-04T09:32:37.6644620Z Updating files:  64% (494/771)
+make (4, 15, Lt. Morales|Lucio|Lunara|Maiev|Mal'Ganis|Malfurion|Malthael|Medivh|Mei|Mephisto|Mura...	UNKNOWN STEP	2026-10-04T09:32:37.7193545Z Updating files:  65% (502/771)
+make (4, 15, Lt. Morales|Lucio|Lunara|Maiev|Mal'Ganis|Malfurion|Malthael|Medivh|Mei|Mephisto|Mura...	UNKNOWN STEP	2026-10-04T09:32:37.7532730Z Updating files:  66% (509/771)
+make (4, 15, Lt. Morales|Lucio|Lunara|Maiev|Mal'Ganis|Malfurion|Malthael|Medivh|Mei|Mephisto|Mura...	UNKNOWN STEP	2026-10-04T09:32:37.7767277Z Updating files:  67% (517/771)
+make (4, 15, Lt. Morales|Lucio|Lunara|Maiev|Mal'Ganis|Malfurion|Malthael|Medivh|Mei|Mephisto|Mura...	UNKNOWN STEP	2026-10-04T09:32:37.8074212Z Updating files:  68% (525/771)
+make (4, 15, Lt. Morales|Lucio|Lunara|Maiev|Mal'Ganis|Malfurion|Malthael|Medivh|Mei|Mephisto|Mura...	UNKNOWN STEP	2026-10-04T09:32:37.8257111Z Updating files:  69% (532/771)
+make (4, 15, Lt. Morales|Lucio|Lunara|Maiev|Mal'Ganis|Malfurion|Malthael|Medivh|Mei|Mephisto|Mura...	UNKNOWN STEP	2026-10-04T09:32:37.8623758Z Updating files:  69% (535/771)
+make (4, 15, Lt. Morales|Lucio|Lunara|Maiev|Mal'Ganis|Malfurion|Malthael|Medivh|Mei|Mephisto|Mura...	UNKNOWN STEP	2026-10-04T09:32:37.8889931Z Updating files:  70% (540/771)
+make (4, 15, Lt. Morales|Lucio|Lunara|Maiev|Mal'Ganis|Malfurion|Malthael|Medivh|Mei|Mephisto|Mura...	UNKNOWN STEP	2026-10-04T09:32:37.9380925Z Updating files:  71% (548/771)
+make (4, 15, Lt. Morales|Lucio|Lunara|Maiev|Mal'Ganis|Malfurion|Malthael|Medivh|Mei|Mephisto|Mura...	UNKNOWN STEP	2026-10-04T09:32:37.9700133Z Updating files:  72% (556/771)
+make (4, 15, Lt. Morales|Lucio|Lunara|Maiev|Mal'Ganis|Malfurion|Malthael|Medivh|Mei|Mephisto|Mura...	UNKNOWN STEP	2026-10-04T09:32:38.0027460Z Updating files:  73% (563/771)
+make (4, 15, Lt. Morales|Lucio|Lunara|Maiev|Mal'Ganis|Malfurion|Malthael|Medivh|Mei|Mephisto|Mura...	UNKNOWN STEP	2026-10-04T09:32:38.0372404Z Updating files:  74% (571/771)
+make (4, 15, Lt. Morales|Lucio|Lunara|Maiev|Mal'Ganis|Malfurion|Malthael|Medivh|Mei|Mephisto|Mura...	UNKNOWN STEP	2026-10-04T09:32:38.0524746Z Updating files:  75% (579/771)
+make (4, 15, Lt. Morales|Lucio|Lunara|Maiev|Mal'Ganis|Malfurion|Malthael|Medivh|Mei|Mephisto|Mura...	UNKNOWN STEP	2026-10-04T09:32:38.0844978Z Updating files:  76% (586/771)
+make (4, 15, Lt. Morales|Lucio|Lunara|Maiev|Mal'Ganis|Malfurion|Malthael|Medivh|Mei|Mephisto|Mura...	UNKNOWN STEP	2026-10-04T09:32:38.1016647Z Updating files:  77% (594/771)
+make (4, 15, Lt. Morales|Lucio|Lunara|Maiev|Mal'Ganis|Malfurion|Malthael|Medivh|Mei|Mephisto|Mura...	UNKNOWN STEP	2026-10-04T09:32:38.1443081Z Updating files:  78% (602/771)
+make (4, 15, Lt. Morales|Lucio|Lunara|Maiev|Mal'Ganis|Malfurion|Malthael|Medivh|Mei|Mephisto|Mura...	UNKNOWN STEP	2026-10-04T09:32:38.1591258Z Updating files:  79% (610/771)
+make (4, 15, Lt. Morales|Lucio|Lunara|Maiev|Mal'Ganis|Malfurion|Malthael|Medivh|Mei|Mephisto|Mura...	UNKNOWN STEP	2026-10-04T09:32:38.1806673Z Updating files:  80% (617/771)
+make (4, 15, Lt. Morales|Lucio|Lunara|Maiev|Mal'Ganis|Malfurion|Malthael|Medivh|Mei|Mephisto|Mura...	UNKNOWN STEP	2026-10-04T09:32:38.2294278Z Updating files:  81% (625/771)
+make (4, 15, Lt. Morales|Lucio|Lunara|Maiev|Mal'Ganis|Malfurion|Malthael|Medivh|Mei|Mephisto|Mura...	UNKNOWN STEP	2026-10-04T09:32:38.2441233Z Updating files:  82% (633/771)
+make (4, 15, Lt. Morales|Lucio|Lunara|Maiev|Mal'Ganis|Malfurion|Malthael|Medivh|Mei|Mephisto|Mura...	UNKNOWN STEP	2026-10-04T09:32:38.2892398Z Updating files:  83% (640/771)
+make (4, 15, Lt. Morales|Lucio|Lunara|Maiev|Mal'Ganis|Malfurion|Malthael|Medivh|Mei|Mephisto|Mura...	UNKNOWN STEP	2026-10-04T09:32:38.3256326Z Updating files:  84% (648/771)
+make (4, 15, Lt. Morales|Lucio|Lunara|Maiev|Mal'Ganis|Malfurion|Malthael|Medivh|Mei|Mephisto|Mura...	UNKNOWN STEP	2026-10-04T09:32:38.3497849Z Updating files:  85% (656/771)
+make (4, 15, Lt. Morales|Lucio|Lunara|Maiev|Mal'Ganis|Malfurion|Malthael|Medivh|Mei|Mephisto|Mura...	UNKNOWN STEP	2026-10-04T09:32:38.3693879Z Updating files:  86% (664/771)
+make (4, 15, Lt. Morales|Lucio|Lunara|Maiev|Mal'Ganis|Malfurion|Malthael|Medivh|Mei|Mephisto|Mura...	UNKNOWN STEP	2026-10-04T09:32:38.4232245Z Updating files:  87% (671/771)
+make (4, 15, Lt. Morales|Lucio|Lunara|Maiev|Mal'Ganis|Malfurion|Malthael|Medivh|Mei|Mephisto|Mura...	UNKNOWN STEP	2026-10-04T09:32:38.4421352Z Updating files:  88% (679/771)
+make (4, 15, Lt. Morales|Lucio|Lunara|Maiev|Mal'Ganis|Malfurion|Malthael|Medivh|Mei|Mephisto|Mura...	UNKNOWN STEP	2026-10-04T09:32:38.4742407Z Updating files:  89% (687/771)
+make (4, 15, Lt. Morales|Lucio|Lunara|Maiev|Mal'Ganis|Malfurion|Malthael|Medivh|Mei|Mephisto|Mura...	UNKNOWN STEP	2026-10-04T09:32:38.4934719Z Updating files:  90% (694/771)
+make (4, 15, Lt. Morales|Lucio|Lunara|Maiev|Mal'Ganis|Malfurion|Malthael|Medivh|Mei|Mephisto|Mura...	UNKNOWN STEP	2026-10-04T09:32:38.5111092Z Updating files:  91% (702/771)
+make (4, 15, Lt. Morales|Lucio|Lunara|Maiev|Mal'Ganis|Malfurion|Malthael|Medivh|Mei|Mephisto|Mura...	UNKNOWN STEP	2026-10-04T09:32:38.5306824Z Updating files:  92% (710/771)
+make (4, 15, Lt. Morales|Lucio|Lunara|Maiev|Mal'Ganis|Malfurion|Malthael|Medivh|Mei|Mephisto|Mura...	UNKNOWN STEP	2026-10-04T09:32:38.5550289Z Updating files:  93% (718/771)
+make (4, 15, Lt. Morales|Lucio|Lunara|Maiev|Mal'Ganis|Malfurion|Malthael|Medivh|Mei|Mephisto|Mura...	UNKNOWN STEP	2026-10-04T09:32:38.5691017Z Updating files:  94% (725/771)
+make (4, 15, Lt. Morales|Lucio|Lunara|Maiev|Mal'Ganis|Malfurion|Malthael|Medivh|Mei|Mephisto|Mura...	UNKNOWN STEP	2026-10-04T09:32:38.5880956Z Updating files:  95% (733/771)
+make (4, 15, Lt. Morales|Lucio|Lunara|Maiev|Mal'Ganis|Malfurion|Malthael|Medivh|Mei|Mephisto|Mura...	UNKNOWN STEP	2026-10-04T09:32:38.6208078Z Updating files:  96% (741/771)
+make (4, 15, Lt. Morales|Lucio|Lunara|Maiev|Mal'Ganis|Malfurion|Malthael|Medivh|Mei|Mephisto|Mura...	UNKNOWN STEP	2026-10-04T09:32:38.6360698Z Updating files:  97% (748/771)
+make (4, 15, Lt. Morales|Lucio|Lunara|Maiev|Mal'Ganis|Malfurion|Malthael|Medivh|Mei|Mephisto|Mura...	UNKNOWN STEP	2026-10-04T09:32:38.6513095Z Updating files:  98% (756/771)
+make (4, 15, Lt. Morales|Lucio|Lunara|Maiev|Mal'Ganis|Malfurion|Malthael|Medivh|Mei|Mephisto|Mura...	UNKNOWN STEP	2026-10-04T09:32:38.6586891Z Updating files:  99% (764/771)
+make (4, 15, Lt. Morales|Lucio|Lunara|Maiev|Mal'Ganis|Malfurion|Malthael|Medivh|Mei|Mephisto|Mura...	UNKNOWN STEP	2026-10-04T09:32:38.6587357Z Updating files: 100% (771/771)
+make (4, 15, Lt. Morales|Lucio|Lunara|Maiev|Mal'Ganis|Malfurion|Malthael|Medivh|Mei|Mephisto|Mura...	UNKNOWN STEP	2026-10-04T09:32:38.6587990Z Updating files: 100% (771/771), done.
+make (4, 15, Lt. Morales|Lucio|Lunara|Maiev|Mal'Ganis|Malfurion|Malthael|Medivh|Mei|Mephisto|Mura...	UNKNOWN STEP	2026-10-04T09:32:38.6624173Z Switched to a new branch 'chatgpt-stl-builder'
+make (4, 15, Lt. Morales|Lucio|Lunara|Maiev|Mal'Ganis|Malfurion|Malthael|Medivh|Mei|Mephisto|Mura...	UNKNOWN STEP	2026-10-04T09:32:38.6629033Z branch 'chatgpt-stl-builder' set up to track 'origin/chatgpt-stl-builder'.
+make (4, 15, Lt. Morales|Lucio|Lunara|Maiev|Mal'Ganis|Malfurion|Malthael|Medivh|Mei|Mephisto|Mura...	UNKNOWN STEP	2026-10-04T09:32:38.6751802Z ##[endgroup]
+make (4, 15, Lt. Morales|Lucio|Lunara|Maiev|Mal'Ganis|Malfurion|Malthael|Medivh|Mei|Mephisto|Mura...	UNKNOWN STEP	2026-10-04T09:32:38.6816777Z [command]/usr/bin/git log -1 --format=%H
+make (4, 15, Lt. Morales|Lucio|Lunara|Maiev|Mal'Ganis|Malfurion|Malthael|Medivh|Mei|Mephisto|Mura...	UNKNOWN STEP	2026-10-04T09:32:38.6848958Z 559933ffbf6a9fc142e663ce49a8b3f2791a7b47
+make (4, 15, Lt. Morales|Lucio|Lunara|Maiev|Mal'Ganis|Malfurion|Malthael|Medivh|Mei|Mephisto|Mura...	UNKNOWN STEP	2026-10-04T09:32:38.7079068Z ##[group]Run set -euo pipefail
+make (4, 15, Lt. Morales|Lucio|Lunara|Maiev|Mal'Ganis|Malfurion|Malthael|Medivh|Mei|Mephisto|Mura...	UNKNOWN STEP	2026-10-04T09:32:38.7079441Z ^[[36;1mset -euo pipefail^[[0m
+make (4, 15, Lt. Morales|Lucio|Lunara|Maiev|Mal'Ganis|Malfurion|Malthael|Medivh|Mei|Mephisto|Mura...	UNKNOWN STEP	2026-10-04T09:32:38.7079869Z ^[[36;1mcp tools/hots_stl/runtime_extracted/build_hots_stls.py "$RUNNER_TEMP/b.py"^[[0m
+make (4, 15, Lt. Morales|Lucio|Lunara|Maiev|Mal'Ganis|Malfurion|Malthael|Medivh|Mei|Mephisto|Mura...	UNKNOWN STEP	2026-10-04T09:32:38.7080387Z ^[[36;1mpython tools/hots_stl/runtime_patch_v2.py "$RUNNER_TEMP/b.py"^[[0m
+make (4, 15, Lt. Morales|Lucio|Lunara|Maiev|Mal'Ganis|Malfurion|Malthael|Medivh|Mei|Mephisto|Mura...	UNKNOWN STEP	2026-10-04T09:32:38.7080871Z ^[[36;1mpython ci/patch_builder_external_validation.py "$RUNNER_TEMP/b.py"^[[0m
+make (4, 15, Lt. Morales|Lucio|Lunara|Maiev|Mal'Ganis|Malfurion|Malthael|Medivh|Mei|Mephisto|Mura...	UNKNOWN STEP	2026-10-04T09:32:38.7081284Z ^[[36;1mpython - "$RUNNER_TEMP/b.py" <<'PY'^[[0m
+make (4, 15, Lt. Morales|Lucio|Lunara|Maiev|Mal'Ganis|Malfurion|Malthael|Medivh|Mei|Mephisto|Mura...	UNKNOWN STEP	2026-10-04T09:32:38.7081581Z ^[[36;1mfrom pathlib import Path^[[0m
+make (4, 15, Lt. Morales|Lucio|Lunara|Maiev|Mal'Ganis|Malfurion|Malthael|Medivh|Mei|Mephisto|Mura...	UNKNOWN STEP	2026-10-04T09:32:38.7081841Z ^[[36;1mimport sys^[[0m
+make (4, 15, Lt. Morales|Lucio|Lunara|Maiev|Mal'Ganis|Malfurion|Malthael|Medivh|Mei|Mephisto|Mura...	UNKNOWN STEP	2026-10-04T09:32:38.7082179Z ^[[36;1mp=Path(sys.argv[1]); s=p.read_text(); a='    "Whitemane": ("whitemane",),\n'^[[0m
+make (4, 15, Lt. Morales|Lucio|Lunara|Maiev|Mal'Ganis|Malfurion|Malthael|Medivh|Mei|Mephisto|Mura...	UNKNOWN STEP	2026-10-04T09:32:38.7082645Z ^[[36;1mif a not in s: raise SystemExit('roster anchor missing')^[[0m
+make (4, 15, Lt. Morales|Lucio|Lunara|Maiev|Mal'Ganis|Malfurion|Malthael|Medivh|Mei|Mephisto|Mura...	UNKNOWN STEP	2026-10-04T09:32:38.7083097Z ^[[36;1mp.write_text(s.replace(a,a+'    "Xal\'atath": ("xalatath",),\n',1))^[[0m
+make (4, 15, Lt. Morales|Lucio|Lunara|Maiev|Mal'Ganis|Malfurion|Malthael|Medivh|Mei|Mephisto|Mura...	UNKNOWN STEP	2026-10-04T09:32:38.7083487Z ^[[36;1mPY^[[0m
+make (4, 15, Lt. Morales|Lucio|Lunara|Maiev|Mal'Ganis|Malfurion|Malthael|Medivh|Mei|Mephisto|Mura...	UNKNOWN STEP	2026-10-04T09:32:38.7083732Z ^[[36;1msudo apt-get update -qq^[[0m
+make (4, 15, Lt. Morales|Lucio|Lunara|Maiev|Mal'Ganis|Malfurion|Malthael|Medivh|Mei|Mephisto|Mura...	UNKNOWN STEP	2026-10-04T09:32:38.7084453Z ^[[36;1msudo apt-get install -y --no-install-recommends ca-certificates curl git xz-utils libx11-6 libxi6 libxrender1 libxfixes3 libxkbcommon0 libsm6 libice6 libgl1 libegl1^[[0m
+make (4, 15, Lt. Morales|Lucio|Lunara|Maiev|Mal'Ganis|Malfurion|Malthael|Medivh|Mei|Mephisto|Mura...	UNKNOWN STEP	2026-10-04T09:32:38.7085382Z ^[[36;1mgit clone --depth 1 https://github.com/JimmyTheCool/HOTS-02.git "$RUNNER_TEMP/H2"^[[0m
+make (4, 15, Lt. Morales|Lucio|Lunara|Maiev|Mal'Ganis|Malfurion|Malthael|Medivh|Mei|Mephisto|Mura...	UNKNOWN STEP	2026-10-04T09:32:38.7085829Z ^[[36;1mcd "$RUNNER_TEMP"^[[0m
+make (4, 15, Lt. Morales|Lucio|Lunara|Maiev|Mal'Ganis|Malfurion|Malthael|Medivh|Mei|Mephisto|Mura...	UNKNOWN STEP	2026-10-04T09:32:38.7086675Z ^[[36;1mcurl -fL --retry 5 "https://download.blender.org/release/Blender3.6/blender-${BV}-linux-x64.tar.xz" -o b.tar.xz^[[0m
+make (4, 15, Lt. Morales|Lucio|Lunara|Maiev|Mal'Ganis|Malfurion|Malthael|Medivh|Mei|Mephisto|Mura...	UNKNOWN STEP	2026-10-04T09:32:38.7087244Z ^[[36;1mtar -xf b.tar.xz^[[0m
+make (4, 15, Lt. Morales|Lucio|Lunara|Maiev|Mal'Ganis|Malfurion|Malthael|Medivh|Mei|Mephisto|Mura...	UNKNOWN STEP	2026-10-04T09:32:38.7087563Z ^[[36;1mgit clone -q https://github.com/SC2Mapster/m3addon.git m3^[[0m
+make (4, 15, Lt. Morales|Lucio|Lunara|Maiev|Mal'Ganis|Malfurion|Malthael|Medivh|Mei|Mephisto|Mura...	UNKNOWN STEP	2026-10-04T09:32:38.7087948Z ^[[36;1mgit -C m3 checkout -q "$M3"^[[0m
+make (4, 15, Lt. Morales|Lucio|Lunara|Maiev|Mal'Ganis|Malfurion|Malthael|Medivh|Mei|Mephisto|Mura...	UNKNOWN STEP	2026-10-04T09:32:38.7088275Z ^[[36;1mmkdir -p "$HOME/.config/blender/3.6/scripts/addons"^[[0m
+make (4, 15, Lt. Morales|Lucio|Lunara|Maiev|Mal'Ganis|Malfurion|Malthael|Medivh|Mei|Mephisto|Mura...	UNKNOWN STEP	2026-10-04T09:32:38.7088723Z ^[[36;1mln -s "$RUNNER_TEMP/m3" "$HOME/.config/blender/3.6/scripts/addons/m3addon"^[[0m
+make (4, 15, Lt. Morales|Lucio|Lunara|Maiev|Mal'Ganis|Malfurion|Malthael|Medivh|Mei|Mephisto|Mura...	UNKNOWN STEP	2026-10-04T09:32:38.7089171Z ^[[36;1mO="$RUNNER_TEMP/o"; mkdir -p "$O/00_Reports"^[[0m
+make (4, 15, Lt. Morales|Lucio|Lunara|Maiev|Mal'Ganis|Malfurion|Malthael|Medivh|Mei|Mephisto|Mura...	UNKNOWN STEP	2026-10-04T09:32:38.7089955Z ^[[36;1mIFS='|' read -ra A <<< 'Lt. Morales|Lucio|Lunara|Maiev|Mal'Ganis|Malfurion|Malthael|Medivh|Mei|Mephisto|Muradin|Murky|Nazeebo|Nova|Orphea'; X=(); for v in "${A[@]}"; do X+=(--only "$v"); done^[[0m
+make (4, 15, Lt. Morales|Lucio|Lunara|Maiev|Mal'Ganis|Malfurion|Malthael|Medivh|Mei|Mephisto|Mura...	UNKNOWN STEP	2026-10-04T09:32:38.7091762Z ^[[36;1m"$RUNNER_TEMP/blender-${BV}-linux-x64/blender" --background --factory-startup --python "$RUNNER_TEMP/b.py" -- --source "$RUNNER_TEMP/H2" --source "$GITHUB_WORKSPACE" --output "$O" --target-height-mm 110 --base-height-mm 4 --base-margin-mm 4 --voxel-mm 0.55 --thin-part-mm 0.72 --max-triangles 450000 --skip-animation "${X[@]}" 2>&1 | tee "$O/00_Reports/build.log"^[[0m
+make (4, 15, Lt. Morales|Lucio|Lunara|Maiev|Mal'Ganis|Malfurion|Malthael|Medivh|Mei|Mephisto|Mura...	UNKNOWN STEP	2026-10-04T09:32:38.7093233Z ^[[36;1mN=$(find "$O/02_Print_Ready_Watertight" -name '*.stl' -type f | wc -l); test "$N" -eq '15'^[[0m
+make (4, 15, Lt. Morales|Lucio|Lunara|Maiev|Mal'Ganis|Malfurion|Malthael|Medivh|Mei|Mephisto|Mura...	UNKNOWN STEP	2026-10-04T09:32:38.7093768Z ^[[36;1mmkdir -p "$RUNNER_TEMP/chunk/STL" "$RUNNER_TEMP/chunk/Reports"^[[0m
+make (4, 15, Lt. Morales|Lucio|Lunara|Maiev|Mal'Ganis|Malfurion|Malthael|Medivh|Mei|Mephisto|Mura...	UNKNOWN STEP	2026-10-04T09:32:38.7094235Z ^[[36;1mcp "$O"/02_Print_Ready_Watertight/*.stl "$RUNNER_TEMP/chunk/STL/"^[[0m
+make (4, 15, Lt. Morales|Lucio|Lunara|Maiev|Mal'Ganis|Malfurion|Malthael|Medivh|Mei|Mephisto|Mura...	UNKNOWN STEP	2026-10-04T09:32:38.7094657Z ^[[36;1mcp "$O"/00_Reports/* "$RUNNER_TEMP/chunk/Reports/"^[[0m
+make (4, 15, Lt. Morales|Lucio|Lunara|Maiev|Mal'Ganis|Malfurion|Malthael|Medivh|Mei|Mephisto|Mura...	UNKNOWN STEP	2026-10-04T09:32:38.8885545Z shell: /usr/bin/bash --noprofile --norc -e -o pipefail {0}
+make (4, 15, Lt. Morales|Lucio|Lunara|Maiev|Mal'Ganis|Malfurion|Malthael|Medivh|Mei|Mephisto|Mura...	UNKNOWN STEP	2026-10-04T09:32:38.8886316Z env:
+make (4, 15, Lt. Morales|Lucio|Lunara|Maiev|Mal'Ganis|Malfurion|Malthael|Medivh|Mei|Mephisto|Mura...	UNKNOWN STEP	2026-10-04T09:32:38.8886597Z   BV: 3.6.23
+make (4, 15, Lt. Morales|Lucio|Lunara|Maiev|Mal'Ganis|Malfurion|Malthael|Medivh|Mei|Mephisto|Mura...	UNKNOWN STEP	2026-10-04T09:32:38.8886839Z   M3: 58935005c4465a219a740f6b740253533eda773f
+make (4, 15, Lt. Morales|Lucio|Lunara|Maiev|Mal'Ganis|Malfurion|Malthael|Medivh|Mei|Mephisto|Mura...	UNKNOWN STEP	2026-10-04T09:32:38.8887238Z ##[endgroup]
+make (4, 15, Lt. Morales|Lucio|Lunara|Maiev|Mal'Ganis|Malfurion|Malthael|Medivh|Mei|Mephisto|Mura...	UNKNOWN STEP	2026-10-04T09:32:38.9241468Z Patched /home/runner/work/_temp/b.py to HOTS STL Builder v2.1.0
+make (4, 15, Lt. Morales|Lucio|Lunara|Maiev|Mal'Ganis|Malfurion|Malthael|Medivh|Mei|Mephisto|Mura...	UNKNOWN STEP	2026-10-04T09:32:38.9468794Z Patched builder to defer geometric watertightness to independent trimesh validation
+make (4, 15, Lt. Morales|Lucio|Lunara|Maiev|Mal'Ganis|Malfurion|Malthael|Medivh|Mei|Mephisto|Mura...	UNKNOWN STEP	2026-10-04T09:32:49.2141424Z Reading package lists...
+make (4, 15, Lt. Morales|Lucio|Lunara|Maiev|Mal'Ganis|Malfurion|Malthael|Medivh|Mei|Mephisto|Mura...	UNKNOWN STEP	2026-10-04T09:32:49.4623196Z Building dependency tree...
+make (4, 15, Lt. Morales|Lucio|Lunara|Maiev|Mal'Ganis|Malfurion|Malthael|Medivh|Mei|Mephisto|Mura...	UNKNOWN STEP	2026-10-04T09:32:49.4634711Z Reading state information...
+make (4, 15, Lt. Morales|Lucio|Lunara|Maiev|Mal'Ganis|Malfurion|Malthael|Medivh|Mei|Mephisto|Mura...	UNKNOWN STEP	2026-10-04T09:32:49.6356560Z libgl1 is already the newest version (1.4.0-1).
+make (4, 15, Lt. Morales|Lucio|Lunara|Maiev|Mal'Ganis|Malfurion|Malthael|Medivh|Mei|Mephisto|Mura...	UNKNOWN STEP	2026-10-04T09:32:49.6357568Z libgl1 set to manually installed.
+make (4, 15, Lt. Morales|Lucio|Lunara|Maiev|Mal'Ganis|Malfurion|Malthael|Medivh|Mei|Mephisto|Mura...	UNKNOWN STEP	2026-10-04T09:32:49.6358224Z libice6 is already the newest version (2:1.0.10-1build2).
+make (4, 15, Lt. Morales|Lucio|Lunara|Maiev|Mal'Ganis|Malfurion|Malthael|Medivh|Mei|Mephisto|Mura...	UNKNOWN STEP	2026-10-04T09:32:49.6360052Z libice6 set to manually installed.
+make (4, 15, Lt. Morales|Lucio|Lunara|Maiev|Mal'Ganis|Malfurion|Malthael|Medivh|Mei|Mephisto|Mura...	UNKNOWN STEP	2026-10-04T09:32:49.6459777Z libsm6 is already the newest version (2:1.2.3-1build2).
+make (4, 15, Lt. Morales|Lucio|Lunara|Maiev|Mal'Ganis|Malfurion|Malthael|Medivh|Mei|Mephisto|Mura...	UNKNOWN STEP	2026-10-04T09:32:49.6460295Z libsm6 set to manually installed.
+make (4, 15, Lt. Morales|Lucio|Lunara|Maiev|Mal'Ganis|Malfurion|Malthael|Medivh|Mei|Mephisto|Mura...	UNKNOWN STEP	2026-10-04T09:32:49.6460741Z libxfixes3 is already the newest version (1:6.0.0-1).
+make (4, 15, Lt. Morales|Lucio|Lunara|Maiev|Mal'Ganis|Malfurion|Malthael|Medivh|Mei|Mephisto|Mura...	UNKNOWN STEP	2026-10-04T09:32:49.6461220Z libxfixes3 set to manually installed.
+make (4, 15, Lt. Morales|Lucio|Lunara|Maiev|Mal'Ganis|Malfurion|Malthael|Medivh|Mei|Mephisto|Mura...	UNKNOWN STEP	2026-10-04T09:32:49.6461668Z libxi6 is already the newest version (2:1.8-1build1).
+make (4, 15, Lt. Morales|Lucio|Lunara|Maiev|Mal'Ganis|Malfurion|Malthael|Medivh|Mei|Mephisto|Mura...	UNKNOWN STEP	2026-10-04T09:32:49.6462136Z libxi6 set to manually installed.
+make (4, 15, Lt. Morales|Lucio|Lunara|Maiev|Mal'Ganis|Malfurion|Malthael|Medivh|Mei|Mephisto|Mura...	UNKNOWN STEP	2026-10-04T09:32:49.6462657Z libxkbcommon0 is already the newest version (1.4.0-1).
+make (4, 15, Lt. Morales|Lucio|Lunara|Maiev|Mal'Ganis|Malfurion|Malthael|Medivh|Mei|Mephisto|Mura...	UNKNOWN STEP	2026-10-04T09:32:49.6463155Z libxkbcommon0 set to manually installed.
+make (4, 15, Lt. Morales|Lucio|Lunara|Maiev|Mal'Ganis|Malfurion|Malthael|Medivh|Mei|Mephisto|Mura...	UNKNOWN STEP	2026-10-04T09:32:49.6463658Z libxrender1 is already the newest version (1:0.9.10-1build4).
+make (4, 15, Lt. Morales|Lucio|Lunara|Maiev|Mal'Ganis|Malfurion|Malthael|Medivh|Mei|Mephisto|Mura...	UNKNOWN STEP	2026-10-04T09:32:49.6464173Z libxrender1 set to manually installed.
+make (4, 15, Lt. Morales|Lucio|Lunara|Maiev|Mal'Ganis|Malfurion|Malthael|Medivh|Mei|Mephisto|Mura...	UNKNOWN STEP	2026-10-04T09:32:49.6464686Z ca-certificates is already the newest version (20260601~22.04.1).
+make (4, 15, Lt. Morales|Lucio|Lunara|Maiev|Mal'Ganis|Malfurion|Malthael|Medivh|Mei|Mephisto|Mura...	UNKNOWN STEP	2026-10-04T09:32:49.6465277Z curl is already the newest version (7.81.0-1ubuntu1.29).
+make (4, 15, Lt. Morales|Lucio|Lunara|Maiev|Mal'Ganis|Malfurion|Malthael|Medivh|Mei|Mephisto|Mura...	UNKNOWN STEP	2026-10-04T09:32:49.6465866Z libx11-6 is already the newest version (2:1.7.5-1ubuntu0.3).
+make (4, 15, Lt. Morales|Lucio|Lunara|Maiev|Mal'Ganis|Malfurion|Malthael|Medivh|Mei|Mephisto|Mura...	UNKNOWN STEP	2026-10-04T09:32:49.6466569Z libx11-6 set to manually installed.
+make (4, 15, Lt. Morales|Lucio|Lunara|Maiev|Mal'Ganis|Malfurion|Malthael|Medivh|Mei|Mephisto|Mura...	UNKNOWN STEP	2026-10-04T09:32:49.6467034Z xz-utils is already the newest version (5.2.5-2ubuntu1.1).
+make (4, 15, Lt. Morales|Lucio|Lunara|Maiev|Mal'Ganis|Malfurion|Malthael|Medivh|Mei|Mephisto|Mura...	UNKNOWN STEP	2026-10-04T09:32:49.6467618Z git is already the newest version (1:2.55.0-0ppa1~ubuntu22.04.2).
+make (4, 15, Lt. Morales|Lucio|Lunara|Maiev|Mal'Ganis|Malfurion|Malthael|Medivh|Mei|Mephisto|Mura...	UNKNOWN STEP	2026-10-04T09:32:49.6468207Z The following additional packages will be installed:
+make (4, 15, Lt. Morales|Lucio|Lunara|Maiev|Mal'Ganis|Malfurion|Malthael|Medivh|Mei|Mephisto|Mura...	UNKNOWN STEP	2026-10-04T09:32:49.6469117Z   libegl-mesa0
+make (4, 15, Lt. Morales|Lucio|Lunara|Maiev|Mal'Ganis|Malfurion|Malthael|Medivh|Mei|Mephisto|Mura...	UNKNOWN STEP	2026-10-04T09:32:49.6642001Z The following NEW packages will be installed:
+make (4, 15, Lt. Morales|Lucio|Lunara|Maiev|Mal'Ganis|Malfurion|Malthael|Medivh|Mei|Mephisto|Mura...	UNKNOWN STEP	2026-10-04T09:32:49.6648855Z   libegl-mesa0 libegl1
+make (4, 15, Lt. Morales|Lucio|Lunara|Maiev|Mal'Ganis|Malfurion|Malthael|Medivh|Mei|Mephisto|Mura...	UNKNOWN STEP	2026-10-04T09:32:49.6833337Z 0 upgraded, 2 newly installed, 0 to remove and 20 not upgraded.
+make (4, 15, Lt. Morales|Lucio|Lunara|Maiev|Mal'Ganis|Malfurion|Malthael|Medivh|Mei|Mephisto|Mura...	UNKNOWN STEP	2026-10-04T09:32:49.6833998Z Need to get 147 kB of archives.
+make (4, 15, Lt. Morales|Lucio|Lunara|Maiev|Mal'Ganis|Malfurion|Malthael|Medivh|Mei|Mephisto|Mura...	UNKNOWN STEP	2026-10-04T09:32:49.6834546Z After this operation, 484 kB of additional disk space will be used.
+make (4, 15, Lt. Morales|Lucio|Lunara|Maiev|Mal'Ganis|Malfurion|Malthael|Medivh|Mei|Mephisto|Mura...	UNKNOWN STEP	2026-10-04T09:32:49.6834968Z Get:1 file:/etc/apt/apt-mirrors.txt Mirrorlist [144 B]
+make (4, 15, Lt. Morales|Lucio|Lunara|Maiev|Mal'Ganis|Malfurion|Malthael|Medivh|Mei|Mephisto|Mura...	UNKNOWN STEP	2026-10-04T09:32:49.7850958Z Get:2 http://azure.archive.ubuntu.com/ubuntu jammy-updates/main amd64 libegl-mesa0 amd64 23.2.1-1ubuntu3.1~22.04.4 [118 kB]
+make (4, 15, Lt. Morales|Lucio|Lunara|Maiev|Mal'Ganis|Malfurion|Malthael|Medivh|Mei|Mephisto|Mura...	UNKNOWN STEP	2026-10-04T09:32:49.8688689Z Get:3 http://azure.archive.ubuntu.com/ubuntu jammy/main amd64 libegl1 amd64 1.4.0-1 [28.6 kB]
+make (4, 15, Lt. Morales|Lucio|Lunara|Maiev|Mal'Ganis|Malfurion|Malthael|Medivh|Mei|Mephisto|Mura...	UNKNOWN STEP	2026-10-04T09:32:50.1984722Z Fetched 147 kB in 0s (738 kB/s)
+make (4, 15, Lt. Morales|Lucio|Lunara|Maiev|Mal'Ganis|Malfurion|Malthael|Medivh|Mei|Mephisto|Mura...	UNKNOWN STEP	2026-10-04T09:32:50.2583018Z Selecting previously unselected package libegl-mesa0:amd64.
+make (4, 15, Lt. Morales|Lucio|Lunara|Maiev|Mal'Ganis|Malfurion|Malthael|Medivh|Mei|Mephisto|Mura...	UNKNOWN STEP	2026-10-04T09:32:50.3468411Z (Reading database ... 
+make (4, 15, Lt. Morales|Lucio|Lunara|Maiev|Mal'Ganis|Malfurion|Malthael|Medivh|Mei|Mephisto|Mura...	UNKNOWN STEP	2026-10-04T09:32:50.3468967Z (Reading database ... 5%
+make (4, 15, Lt. Morales|Lucio|Lunara|Maiev|Mal'Ganis|Malfurion|Malthael|Medivh|Mei|Mephisto|Mura...	UNKNOWN STEP	2026-10-04T09:32:50.3469477Z (Reading database ... 10%
+make (4, 15, Lt. Morales|Lucio|Lunara|Maiev|Mal'Ganis|Malfurion|Malthael|Medivh|Mei|Mephisto|Mura...	UNKNOWN STEP	2026-10-04T09:32:50.3469946Z (Reading database ... 15%
+make (4, 15, Lt. Morales|Lucio|Lunara|Maiev|Mal'Ganis|Malfurion|Malthael|Medivh|Mei|Mephisto|Mura...	UNKNOWN STEP	2026-10-04T09:32:50.3470253Z (Reading database ... 20%
+make (4, 15, Lt. Morales|Lucio|Lunara|Maiev|Mal'Ganis|Malfurion|Malthael|Medivh|Mei|Mephisto|Mura...	UNKNOWN STEP	2026-10-04T09:32:50.3470547Z (Reading database ... 25%
+make (4, 15, Lt. Morales|Lucio|Lunara|Maiev|Mal'Ganis|Malfurion|Malthael|Medivh|Mei|Mephisto|Mura...	UNKNOWN STEP	2026-10-04T09:32:50.3470835Z (Reading database ... 30%
+make (4, 15, Lt. Morales|Lucio|Lunara|Maiev|Mal'Ganis|Malfurion|Malthael|Medivh|Mei|Mephisto|Mura...	UNKNOWN STEP	2026-10-04T09:32:50.3471143Z (Reading database ... 35%
+make (4, 15, Lt. Morales|Lucio|Lunara|Maiev|Mal'Ganis|Malfurion|Malthael|Medivh|Mei|Mephisto|Mura...	UNKNOWN STEP	2026-10-04T09:32:50.3471431Z (Reading database ... 40%
+make (4, 15, Lt. Morales|Lucio|Lunara|Maiev|Mal'Ganis|Malfurion|Malthael|Medivh|Mei|Mephisto|Mura...	UNKNOWN STEP	2026-10-04T09:32:50.3471717Z (Reading database ... 45%
+make (4, 15, Lt. Morales|Lucio|Lunara|Maiev|Mal'Ganis|Malfurion|Malthael|Medivh|Mei|Mephisto|Mura...	UNKNOWN STEP	2026-10-04T09:32:50.3472005Z (Reading database ... 50%
+make (4, 15, Lt. Morales|Lucio|Lunara|Maiev|Mal'Ganis|Malfurion|Malthael|Medivh|Mei|Mephisto|Mura...	UNKNOWN STEP	2026-10-04T09:32:50.7482259Z (Reading database ... 55%
+make (4, 15, Lt. Morales|Lucio|Lunara|Maiev|Mal'Ganis|Malfurion|Malthael|Medivh|Mei|Mephisto|Mura...	UNKNOWN STEP	2026-10-04T09:32:51.1349907Z (Reading database ... 60%
+make (4, 15, Lt. Morales|Lucio|Lunara|Maiev|Mal'Ganis|Malfurion|Malthael|Medivh|Mei|Mephisto|Mura...	UNKNOWN STEP	2026-10-04T09:32:51.4465683Z (Reading database ... 65%
+make (4, 15, Lt. Morales|Lucio|Lunara|Maiev|Mal'Ganis|Malfurion|Malthael|Medivh|Mei|Mephisto|Mura...	UNKNOWN STEP	2026-10-04T09:32:51.7463991Z (Reading database ... 70%
+make (4, 15, Lt. Morales|Lucio|Lunara|Maiev|Mal'Ganis|Malfurion|Malthael|Medivh|Mei|Mephisto|Mura...	UNKNOWN STEP	2026-10-04T09:32:52.3111204Z (Reading database ... 75%
+make (4, 15, Lt. Morales|Lucio|Lunara|Maiev|Mal'Ganis|Malfurion|Malthael|Medivh|Mei|Mephisto|Mura...	UNKNOWN STEP	2026-10-04T09:32:52.9500479Z (Reading database ... 80%
+make (4, 15, Lt. Morales|Lucio|Lunara|Maiev|Mal'Ganis|Malfurion|Malthael|Medivh|Mei|Mephisto|Mura...	UNKNOWN STEP	2026-10-04T09:32:53.7021523Z (Reading database ... 85%
+make (4, 15, Lt. Morales|Lucio|Lunara|Maiev|Mal'Ganis|Malfurion|Malthael|Medivh|Mei|Mephisto|Mura...	UNKNOWN STEP	2026-10-04T09:32:54.2933447Z (Reading database ... 90%
+make (4, 15, Lt. Morales|Lucio|Lunara|Maiev|Mal'Ganis|Malfurion|Malthael|Medivh|Mei|Mephisto|Mura...	UNKNOWN STEP	2026-10-04T09:32:55.0088281Z (Reading database ... 95%
+make (4, 15, Lt. Morales|Lucio|Lunara|Maiev|Mal'Ganis|Malfurion|Malthael|Medivh|Mei|Mephisto|Mura...	UNKNOWN STEP	2026-10-04T09:32:55.0088971Z (Reading database ... 100%
+make (4, 15, Lt. Morales|Lucio|Lunara|Maiev|Mal'Ganis|Malfurion|Malthael|Medivh|Mei|Mephisto|Mura...	UNKNOWN STEP	2026-10-04T09:32:55.0089827Z (Reading database ... 260411 files and directories currently installed.)
+make (4, 15, Lt. Morales|Lucio|Lunara|Maiev|Mal'Ganis|Malfurion|Malthael|Medivh|Mei|Mephisto|Mura...	UNKNOWN STEP	2026-10-04T09:32:55.0144263Z Preparing to unpack .../libegl-mesa0_23.2.1-1ubuntu3.1~22.04.4_amd64.deb ...
+make (4, 15, Lt. Morales|Lucio|Lunara|Maiev|Mal'Ganis|Malfurion|Malthael|Medivh|Mei|Mephisto|Mura...	UNKNOWN STEP	2026-10-04T09:32:55.0184682Z Unpacking libegl-mesa0:amd64 (23.2.1-1ubuntu3.1~22.04.4) ...
+make (4, 15, Lt. Morales|Lucio|Lunara|Maiev|Mal'Ganis|Malfurion|Malthael|Medivh|Mei|Mephisto|Mura...	UNKNOWN STEP	2026-10-04T09:32:55.0599570Z Selecting previously unselected package libegl1:amd64.
+make (4, 15, Lt. Morales|Lucio|Lunara|Maiev|Mal'Ganis|Malfurion|Malthael|Medivh|Mei|Mephisto|Mura...	UNKNOWN STEP	2026-10-04T09:32:55.0802440Z Preparing to unpack .../libegl1_1.4.0-1_amd64.deb ...
+make (4, 15, Lt. Morales|Lucio|Lunara|Maiev|Mal'Ganis|Malfurion|Malthael|Medivh|Mei|Mephisto|Mura...	UNKNOWN STEP	2026-10-04T09:32:55.0810591Z Unpacking libegl1:amd64 (1.4.0-1) ...
+make (4, 15, Lt. Morales|Lucio|Lunara|Maiev|Mal'Ganis|Malfurion|Malthael|Medivh|Mei|Mephisto|Mura...	UNKNOWN STEP	2026-10-04T09:32:55.1331964Z Setting up libegl-mesa0:amd64 (23.2.1-1ubuntu3.1~22.04.4) ...
+make (4, 15, Lt. Morales|Lucio|Lunara|Maiev|Mal'Ganis|Malfurion|Malthael|Medivh|Mei|Mephisto|Mura...	UNKNOWN STEP	2026-10-04T09:32:55.1354849Z Setting up libegl1:amd64 (1.4.0-1) ...
+make (4, 15, Lt. Morales|Lucio|Lunara|Maiev|Mal'Ganis|Malfurion|Malthael|Medivh|Mei|Mephisto|Mura...	UNKNOWN STEP	2026-10-04T09:32:55.1377666Z Processing triggers for libc-bin (2.35-0ubuntu3.15) ...
+make (4, 15, Lt. Morales|Lucio|Lunara|Maiev|Mal'Ganis|Malfurion|Malthael|Medivh|Mei|Mephisto|Mura...	UNKNOWN STEP	2026-10-04T09:32:56.3106680Z 
+make (4, 15, Lt. Morales|Lucio|Lunara|Maiev|Mal'Ganis|Malfurion|Malthael|Medivh|Mei|Mephisto|Mura...	UNKNOWN STEP	2026-10-04T09:32:56.3107680Z Running kernel seems to be up-to-date.
+make (4, 15, Lt. Morales|Lucio|Lunara|Maiev|Mal'Ganis|Malfurion|Malthael|Medivh|Mei|Mephisto|Mura...	UNKNOWN STEP	2026-10-04T09:32:56.3108252Z 
+make (4, 15, Lt. Morales|Lucio|Lunara|Maiev|Mal'Ganis|Malfurion|Malthael|Medivh|Mei|Mephisto|Mura...	UNKNOWN STEP	2026-10-04T09:32:56.3108509Z No services need to be restarted.
+make (4, 15, Lt. Morales|Lucio|Lunara|Maiev|Mal'Ganis|Malfurion|Malthael|Medivh|Mei|Mephisto|Mura...	UNKNOWN STEP	2026-10-04T09:32:56.3108948Z 
+make (4, 15, Lt. Morales|Lucio|Lunara|Maiev|Mal'Ganis|Malfurion|Malthael|Medivh|Mei|Mephisto|Mura...	UNKNOWN STEP	2026-10-04T09:32:56.3109206Z No containers need to be restarted.
+make (4, 15, Lt. Morales|Lucio|Lunara|Maiev|Mal'Ganis|Malfurion|Malthael|Medivh|Mei|Mephisto|Mura...	UNKNOWN STEP	2026-10-04T09:32:56.3109670Z 
+make (4, 15, Lt. Morales|Lucio|Lunara|Maiev|Mal'Ganis|Malfurion|Malthael|Medivh|Mei|Mephisto|Mura...	UNKNOWN STEP	2026-10-04T09:32:56.3109983Z No user sessions are running outdated binaries.
+make (4, 15, Lt. Morales|Lucio|Lunara|Maiev|Mal'Ganis|Malfurion|Malthael|Medivh|Mei|Mephisto|Mura...	UNKNOWN STEP	2026-10-04T09:32:56.3110529Z 
+make (4, 15, Lt. Morales|Lucio|Lunara|Maiev|Mal'Ganis|Malfurion|Malthael|Medivh|Mei|Mephisto|Mura...	UNKNOWN STEP	2026-10-04T09:32:56.3110851Z No VM guests are running outdated hypervisor (qemu) binaries on this host.
+make (4, 15, Lt. Morales|Lucio|Lunara|Maiev|Mal'Ganis|Malfurion|Malthael|Medivh|Mei|Mephisto|Mura...	UNKNOWN STEP	2026-10-04T09:32:58.1307429Z Cloning into '/home/runner/work/_temp/H2'...
+make (4, 15, Lt. Morales|Lucio|Lunara|Maiev|Mal'Ganis|Malfurion|Malthael|Medivh|Mei|Mephisto|Mura...	UNKNOWN STEP	2026-10-04T09:33:04.4001001Z Updating files:  46% (276/600)
+make (4, 15, Lt. Morales|Lucio|Lunara|Maiev|Mal'Ganis|Malfurion|Malthael|Medivh|Mei|Mephisto|Mura...	UNKNOWN STEP	2026-10-04T09:33:04.4252493Z Updating files:  47% (282/600)
+make (4, 15, Lt. Morales|Lucio|Lunara|Maiev|Mal'Ganis|Malfurion|Malthael|Medivh|Mei|Mephisto|Mura...	UNKNOWN STEP	2026-10-04T09:33:04.4371286Z Updating files:  48% (288/600)
+make (4, 15, Lt. Morales|Lucio|Lunara|Maiev|Mal'Ganis|Malfurion|Malthael|Medivh|Mei|Mephisto|Mura...	UNKNOWN STEP	2026-10-04T09:33:04.4574924Z Updating files:  49% (294/600)
+make (4, 15, Lt. Morales|Lucio|Lunara|Maiev|Mal'Ganis|Malfurion|Malthael|Medivh|Mei|Mephisto|Mura...	UNKNOWN STEP	2026-10-04T09:33:04.4727736Z Updating files:  50% (300/600)
+make (4, 15, Lt. Morales|Lucio|Lunara|Maiev|Mal'Ganis|Malfurion|Malthael|Medivh|Mei|Mephisto|Mura...	UNKNOWN STEP	2026-10-04T09:33:04.4853055Z Updating files:  51% (306/600)
+make (4, 15, Lt. Morales|Lucio|Lunara|Maiev|Mal'Ganis|Malfurion|Malthael|Medivh|Mei|Mephisto|Mura...	UNKNOWN STEP	2026-10-04T09:33:04.4994568Z Updating files:  52% (312/600)
+make (4, 15, Lt. Morales|Lucio|Lunara|Maiev|Mal'Ganis|Malfurion|Malthael|Medivh|Mei|Mephisto|Mura...	UNKNOWN STEP	2026-10-04T09:33:04.5320006Z Updating files:  53% (318/600)
+make (4, 15, Lt. Morales|Lucio|Lunara|Maiev|Mal'Ganis|Malfurion|Malthael|Medivh|Mei|Mephisto|Mura...	UNKNOWN STEP	2026-10-04T09:33:04.5540142Z Updating files:  54% (324/600)
+make (4, 15, Lt. Morales|Lucio|Lunara|Maiev|Mal'Ganis|Malfurion|Malthael|Medivh|Mei|Mephisto|Mura...	UNKNOWN STEP	2026-10-04T09:33:04.5809977Z Updating files:  55% (330/600)
+make (4, 15, Lt. Morales|Lucio|Lunara|Maiev|Mal'Ganis|Malfurion|Malthael|Medivh|Mei|Mephisto|Mura...	UNKNOWN STEP	2026-10-04T09:33:04.6061094Z Updating files:  56% (336/600)
+make (4, 15, Lt. Morales|Lucio|Lunara|Maiev|Mal'Ganis|Malfurion|Malthael|Medivh|Mei|Mephisto|Mura...	UNKNOWN STEP	2026-10-04T09:33:04.6301485Z Updating files:  57% (342/600)
+make (4, 15, Lt. Morales|Lucio|Lunara|Maiev|Mal'Ganis|Malfurion|Malthael|Medivh|Mei|Mephisto|Mura...	UNKNOWN STEP	2026-10-04T09:33:04.6705385Z Updating files:  58% (348/600)
+make (4, 15, Lt. Morales|Lucio|Lunara|Maiev|Mal'Ganis|Malfurion|Malthael|Medivh|Mei|Mephisto|Mura...	UNKNOWN STEP	2026-10-04T09:33:04.6927242Z Updating files:  59% (354/600)
+make (4, 15, Lt. Morales|Lucio|Lunara|Maiev|Mal'Ganis|Malfurion|Malthael|Medivh|Mei|Mephisto|Mura...	UNKNOWN STEP	2026-10-04T09:33:04.7058365Z Updating files:  60% (360/600)
+make (4, 15, Lt. Morales|Lucio|Lunara|Maiev|Mal'Ganis|Malfurion|Malthael|Medivh|Mei|Mephisto|Mura...	UNKNOWN STEP	2026-10-04T09:33:04.7450339Z Updating files:  61% (366/600)
+make (4, 15, Lt. Morales|Lucio|Lunara|Maiev|Mal'Ganis|Malfurion|Malthael|Medivh|Mei|Mephisto|Mura...	UNKNOWN STEP	2026-10-04T09:33:04.7593698Z Updating files:  62% (372/600)
+make (4, 15, Lt. Morales|Lucio|Lunara|Maiev|Mal'Ganis|Malfurion|Malthael|Medivh|Mei|Mephisto|Mura...	UNKNOWN STEP	2026-10-04T09:33:04.7745404Z Updating files:  63% (378/600)
+make (4, 15, Lt. Morales|Lucio|Lunara|Maiev|Mal'Ganis|Malfurion|Malthael|Medivh|Mei|Mephisto|Mura...	UNKNOWN STEP	2026-10-04T09:33:04.8309815Z Updating files:  64% (384/600)
+make (4, 15, Lt. Morales|Lucio|Lunara|Maiev|Mal'Ganis|Malfurion|Malthael|Medivh|Mei|Mephisto|Mura...	UNKNOWN STEP	2026-10-04T09:33:04.8600223Z Updating files:  65% (390/600)
+make (4, 15, Lt. Morales|Lucio|Lunara|Maiev|Mal'Ganis|Malfurion|Malthael|Medivh|Mei|Mephisto|Mura...	UNKNOWN STEP	2026-10-04T09:33:04.8900121Z Updating files:  66% (396/600)
+make (4, 15, Lt. Morales|Lucio|Lunara|Maiev|Mal'Ganis|Malfurion|Malthael|Medivh|Mei|Mephisto|Mura...	UNKNOWN STEP	2026-10-04T09:33:04.9037481Z Updating files:  67% (402/600)
+make (4, 15, Lt. Morales|Lucio|Lunara|Maiev|Mal'Ganis|Malfurion|Malthael|Medivh|Mei|Mephisto|Mura...	UNKNOWN STEP	2026-10-04T09:33:04.9112629Z Updating files:  68% (408/600)
+make (4, 15, Lt. Morales|Lucio|Lunara|Maiev|Mal'Ganis|Malfurion|Malthael|Medivh|Mei|Mephisto|Mura...	UNKNOWN STEP	2026-10-04T09:33:04.9331184Z Updating files:  69% (414/600)
+make (4, 15, Lt. Morales|Lucio|Lunara|Maiev|Mal'Ganis|Malfurion|Malthael|Medivh|Mei|Mephisto|Mura...	UNKNOWN STEP	2026-10-04T09:33:04.9451881Z Updating files:  70% (420/600)
+make (4, 15, Lt. Morales|Lucio|Lunara|Maiev|Mal'Ganis|Malfurion|Malthael|Medivh|Mei|Mephisto|Mura...	UNKNOWN STEP	2026-10-04T09:33:04.9659705Z Updating files:  71% (426/600)
+make (4, 15, Lt. Morales|Lucio|Lunara|Maiev|Mal'Ganis|Malfurion|Malthael|Medivh|Mei|Mephisto|Mura...	UNKNOWN STEP	2026-10-04T09:33:04.9814419Z Updating files:  72% (432/600)
+make (4, 15, Lt. Morales|Lucio|Lunara|Maiev|Mal'Ganis|Malfurion|Malthael|Medivh|Mei|Mephisto|Mura...	UNKNOWN STEP	2026-10-04T09:33:05.0076720Z Updating files:  73% (438/600)
+make (4, 15, Lt. Morales|Lucio|Lunara|Maiev|Mal'Ganis|Malfurion|Malthael|Medivh|Mei|Mephisto|Mura...	UNKNOWN STEP	2026-10-04T09:33:05.0362429Z Updating files:  74% (444/600)
+make (4, 15, Lt. Morales|Lucio|Lunara|Maiev|Mal'Ganis|Malfurion|Malthael|Medivh|Mei|Mephisto|Mura...	UNKNOWN STEP	2026-10-04T09:33:05.0750481Z Updating files:  75% (450/600)
+make (4, 15, Lt. Morales|Lucio|Lunara|Maiev|Mal'Ganis|Malfurion|Malthael|Medivh|Mei|Mephisto|Mura...	UNKNOWN STEP	2026-10-04T09:33:05.0906841Z Updating files:  76% (456/600)
+make (4, 15, Lt. Morales|Lucio|Lunara|Maiev|Mal'Ganis|Malfurion|Malthael|Medivh|Mei|Mephisto|Mura...	UNKNOWN STEP	2026-10-04T09:33:05.1032265Z Updating files:  77% (462/600)
+make (4, 15, Lt. Morales|Lucio|Lunara|Maiev|Mal'Ganis|Malfurion|Malthael|Medivh|Mei|Mephisto|Mura...	UNKNOWN STEP	2026-10-04T09:33:05.1292828Z Updating files:  78% (468/600)
+make (4, 15, Lt. Morales|Lucio|Lunara|Maiev|Mal'Ganis|Malfurion|Malthael|Medivh|Mei|Mephisto|Mura...	UNKNOWN STEP	2026-10-04T09:33:05.1488983Z Updating files:  79% (474/600)
+make (4, 15, Lt. Morales|Lucio|Lunara|Maiev|Mal'Ganis|Malfurion|Malthael|Medivh|Mei|Mephisto|Mura...	UNKNOWN STEP	2026-10-04T09:33:05.1753934Z Updating files:  80% (480/600)
+make (4, 15, Lt. Morales|Lucio|Lunara|Maiev|Mal'Ganis|Malfurion|Malthael|Medivh|Mei|Mephisto|Mura...	UNKNOWN STEP	2026-10-04T09:33:05.2069637Z Updating files:  81% (486/600)
+make (4, 15, Lt. Morales|Lucio|Lunara|Maiev|Mal'Ganis|Malfurion|Malthael|Medivh|Mei|Mephisto|Mura...	UNKNOWN STEP	2026-10-04T09:33:05.2235504Z Updating files:  82% (492/600)
+make (4, 15, Lt. Morales|Lucio|Lunara|Maiev|Mal'Ganis|Malfurion|Malthael|Medivh|Mei|Mephisto|Mura...	UNKNOWN STEP	2026-10-04T09:33:05.2540990Z Updating files:  83% (498/600)
+make (4, 15, Lt. Morales|Lucio|Lunara|Maiev|Mal'Ganis|Malfurion|Malthael|Medivh|Mei|Mephisto|Mura...	UNKNOWN STEP	2026-10-04T09:33:05.2785533Z Updating files:  84% (504/600)
+make (4, 15, Lt. Morales|Lucio|Lunara|Maiev|Mal'Ganis|Malfurion|Malthael|Medivh|Mei|Mephisto|Mura...	UNKNOWN STEP	2026-10-04T09:33:05.2892606Z Updating files:  85% (510/600)
+make (4, 15, Lt. Morales|Lucio|Lunara|Maiev|Mal'Ganis|Malfurion|Malthael|Medivh|Mei|Mephisto|Mura...	UNKNOWN STEP	2026-10-04T09:33:05.3092818Z Updating files:  86% (516/600)
+make (4, 15, Lt. Morales|Lucio|Lunara|Maiev|Mal'Ganis|Malfurion|Malthael|Medivh|Mei|Mephisto|Mura...	UNKNOWN STEP	2026-10-04T09:33:05.3374884Z Updating files:  87% (522/600)
+make (4, 15, Lt. Morales|Lucio|Lunara|Maiev|Mal'Ganis|Malfurion|Malthael|Medivh|Mei|Mephisto|Mura...	UNKNOWN STEP	2026-10-04T09:33:05.3639952Z Updating files:  88% (528/600)
+make (4, 15, Lt. Morales|Lucio|Lunara|Maiev|Mal'Ganis|Malfurion|Malthael|Medivh|Mei|Mephisto|Mura...	UNKNOWN STEP	2026-10-04T09:33:05.3901632Z Updating files:  89% (534/600)
+make (4, 15, Lt. Morales|Lucio|Lunara|Maiev|Mal'Ganis|Malfurion|Malthael|Medivh|Mei|Mephisto|Mura...	UNKNOWN STEP	2026-10-04T09:33:05.3924603Z Updating files:  89% (539/600)
+make (4, 15, Lt. Morales|Lucio|Lunara|Maiev|Mal'Ganis|Malfurion|Malthael|Medivh|Mei|Mephisto|Mura...	UNKNOWN STEP	2026-10-04T09:33:05.4144017Z Updating files:  90% (540/600)
+make (4, 15, Lt. Morales|Lucio|Lunara|Maiev|Mal'Ganis|Malfurion|Malthael|Medivh|Mei|Mephisto|Mura...	UNKNOWN STEP	2026-10-04T09:33:05.4384132Z Updating files:  91% (546/600)
+make (4, 15, Lt. Morales|Lucio|Lunara|Maiev|Mal'Ganis|Malfurion|Malthael|Medivh|Mei|Mephisto|Mura...	UNKNOWN STEP	2026-10-04T09:33:05.5168483Z Updating files:  92% (552/600)
+make (4, 15, Lt. Morales|Lucio|Lunara|Maiev|Mal'Ganis|Malfurion|Malthael|Medivh|Mei|Mephisto|Mura...	UNKNOWN STEP	2026-10-04T09:33:05.5478646Z Updating files:  93% (558/600)
+make (4, 15, Lt. Morales|Lucio|Lunara|Maiev|Mal'Ganis|Malfurion|Malthael|Medivh|Mei|Mephisto|Mura...	UNKNOWN STEP	2026-10-04T09:33:05.5605492Z Updating files:  94% (564/600)
+make (4, 15, Lt. Morales|Lucio|Lunara|Maiev|Mal'Ganis|Malfurion|Malthael|Medivh|Mei|Mephisto|Mura...	UNKNOWN STEP	2026-10-04T09:33:05.5748701Z Updating files:  95% (570/600)
+make (4, 15, Lt. Morales|Lucio|Lunara|Maiev|Mal'Ganis|Malfurion|Malthael|Medivh|Mei|Mephisto|Mura...	UNKNOWN STEP	2026-10-04T09:33:05.6061280Z Updating files:  96% (576/600)
+make (4, 15, Lt. Morales|Lucio|Lunara|Maiev|Mal'Ganis|Malfurion|Malthael|Medivh|Mei|Mephisto|Mura...	UNKNOWN STEP	2026-10-04T09:33:05.6351488Z Updating files:  97% (582/600)
+make (4, 15, Lt. Morales|Lucio|Lunara|Maiev|Mal'Ganis|Malfurion|Malthael|Medivh|Mei|Mephisto|Mura...	UNKNOWN STEP	2026-10-04T09:33:05.6450419Z Updating files:  98% (588/600)
+make (4, 15, Lt. Morales|Lucio|Lunara|Maiev|Mal'Ganis|Malfurion|Malthael|Medivh|Mei|Mephisto|Mura...	UNKNOWN STEP	2026-10-04T09:33:05.6823670Z Updating files:  99% (594/600)
+make (4, 15, Lt. Morales|Lucio|Lunara|Maiev|Mal'Ganis|Malfurion|Malthael|Medivh|Mei|Mephisto|Mura...	UNKNOWN STEP	2026-10-04T09:33:05.6825092Z Updating files: 100% (600/600)
+make (4, 15, Lt. Morales|Lucio|Lunara|Maiev|Mal'Ganis|Malfurion|Malthael|Medivh|Mei|Mephisto|Mura...	UNKNOWN STEP	2026-10-04T09:33:05.6825653Z Updating files: 100% (600/600), done.
+make (4, 15, Lt. Morales|Lucio|Lunara|Maiev|Mal'Ganis|Malfurion|Malthael|Medivh|Mei|Mephisto|Mura...	UNKNOWN STEP	2026-10-04T09:33:05.7229008Z   % Total    % Received % Xferd  Average Speed   Time    Time     Time  Current
+make (4, 15, Lt. Morales|Lucio|Lunara|Maiev|Mal'Ganis|Malfurion|Malthael|Medivh|Mei|Mephisto|Mura...	UNKNOWN STEP	2026-10-04T09:33:05.7229902Z                                  Dload  Upload   Total   Spent    Left  Speed
+make (4, 15, Lt. Morales|Lucio|Lunara|Maiev|Mal'Ganis|Malfurion|Malthael|Medivh|Mei|Mephisto|Mura...	UNKNOWN STEP	2026-10-04T09:33:05.7230512Z 
+make (4, 15, Lt. Morales|Lucio|Lunara|Maiev|Mal'Ganis|Malfurion|Malthael|Medivh|Mei|Mephisto|Mura...	UNKNOWN STEP	2026-10-04T09:33:06.5286845Z   0     0    0     0    0     0      0      0 --:--:-- --:--:-- --:--:--     0
+make (4, 15, Lt. Morales|Lucio|Lunara|Maiev|Mal'Ganis|Malfurion|Malthael|Medivh|Mei|Mephisto|Mura...	UNKNOWN STEP	2026-10-04T09:33:06.5287574Z 100  260M  100  260M    0     0   322M      0 --:--:-- --:--:-- --:--:--  323M
+make (4, 15, Lt. Morales|Lucio|Lunara|Maiev|Mal'Ganis|Malfurion|Malthael|Medivh|Mei|Mephisto|Mura...	UNKNOWN STEP	2026-10-04T09:33:23.8704778Z /home/runner/work/_temp/a89c2d0a-aefd-4871-8c43-3f86d1ce1a5f.sh: line 25: unexpected EOF while looking for matching `''
+make (4, 15, Lt. Morales|Lucio|Lunara|Maiev|Mal'Ganis|Malfurion|Malthael|Medivh|Mei|Mephisto|Mura...	UNKNOWN STEP	2026-10-04T09:33:23.8723442Z ##[error]Process completed with exit code 2.
+make (4, 15, Lt. Morales|Lucio|Lunara|Maiev|Mal'Ganis|Malfurion|Malthael|Medivh|Mei|Mephisto|Mura...	UNKNOWN STEP	2026-10-04T09:33:23.8867732Z Post job cleanup.
+make (4, 15, Lt. Morales|Lucio|Lunara|Maiev|Mal'Ganis|Malfurion|Malthael|Medivh|Mei|Mephisto|Mura...	UNKNOWN STEP	2026-10-04T09:33:23.9764502Z [command]/usr/bin/git version
+make (4, 15, Lt. Morales|Lucio|Lunara|Maiev|Mal'Ganis|Malfurion|Malthael|Medivh|Mei|Mephisto|Mura...	UNKNOWN STEP	2026-10-04T09:33:23.9811179Z git version 2.55.0
+make (4, 15, Lt. Morales|Lucio|Lunara|Maiev|Mal'Ganis|Malfurion|Malthael|Medivh|Mei|Mephisto|Mura...	UNKNOWN STEP	2026-10-04T09:33:23.9851460Z Temporarily overriding HOME='/home/runner/work/_temp/361a3ec4-4aab-4322-9caf-dd1870df296e' before making global git config changes
+make (4, 15, Lt. Morales|Lucio|Lunara|Maiev|Mal'Ganis|Malfurion|Malthael|Medivh|Mei|Mephisto|Mura...	UNKNOWN STEP	2026-10-04T09:33:23.9852921Z Adding repository directory to the temporary git global config as a safe directory
+make (4, 15, Lt. Morales|Lucio|Lunara|Maiev|Mal'Ganis|Malfurion|Malthael|Medivh|Mei|Mephisto|Mura...	UNKNOWN STEP	2026-10-04T09:33:23.9857633Z [command]/usr/bin/git config --global --add safe.directory /home/runner/work/HOTS-03/HOTS-03
+make (4, 15, Lt. Morales|Lucio|Lunara|Maiev|Mal'Ganis|Malfurion|Malthael|Medivh|Mei|Mephisto|Mura...	UNKNOWN STEP	2026-10-04T09:33:23.9899249Z [command]/usr/bin/git config --local --name-only --get-regexp core\.sshCommand
+make (4, 15, Lt. Morales|Lucio|Lunara|Maiev|Mal'Ganis|Malfurion|Malthael|Medivh|Mei|Mephisto|Mura...	UNKNOWN STEP	2026-10-04T09:33:23.9937574Z [command]/usr/bin/git submodule foreach --recursive sh -c "git config --local --name-only --get-regexp 'core\.sshCommand' && git config --local --unset-all 'core.sshCommand' || :"
+make (4, 15, Lt. Morales|Lucio|Lunara|Maiev|Mal'Ganis|Malfurion|Malthael|Medivh|Mei|Mephisto|Mura...	UNKNOWN STEP	2026-10-04T09:33:24.0236527Z [command]/usr/bin/git config --local --name-only --get-regexp http\.https\:\/\/github\.com\/\.extraheader
+make (4, 15, Lt. Morales|Lucio|Lunara|Maiev|Mal'Ganis|Malfurion|Malthael|Medivh|Mei|Mephisto|Mura...	UNKNOWN STEP	2026-10-04T09:33:24.0265561Z http.https://github.com/.extraheader
+make (4, 15, Lt. Morales|Lucio|Lunara|Maiev|Mal'Ganis|Malfurion|Malthael|Medivh|Mei|Mephisto|Mura...	UNKNOWN STEP	2026-10-04T09:33:24.0278407Z [command]/usr/bin/git config --local --unset-all http.https://github.com/.extraheader
+make (4, 15, Lt. Morales|Lucio|Lunara|Maiev|Mal'Ganis|Malfurion|Malthael|Medivh|Mei|Mephisto|Mura...	UNKNOWN STEP	2026-10-04T09:33:24.0317088Z [command]/usr/bin/git submodule foreach --recursive sh -c "git config --local --name-only --get-regexp 'http\.https\:\/\/github\.com\/\.extraheader' && git config --local --unset-all 'http.https://github.com/.extraheader' || :"
+make (4, 15, Lt. Morales|Lucio|Lunara|Maiev|Mal'Ganis|Malfurion|Malthael|Medivh|Mei|Mephisto|Mura...	UNKNOWN STEP	2026-10-04T09:33:24.0621761Z [command]/usr/bin/git config --local --name-only --get-regexp ^includeIf\.gitdir:
+make (4, 15, Lt. Morales|Lucio|Lunara|Maiev|Mal'Ganis|Malfurion|Malthael|Medivh|Mei|Mephisto|Mura...	UNKNOWN STEP	2026-10-04T09:33:24.0663110Z [command]/usr/bin/git submodule foreach --recursive git config --local --show-origin --name-only --get-regexp remote.origin.url
+make (4, 15, Lt. Morales|Lucio|Lunara|Maiev|Mal'Ganis|Malfurion|Malthael|Medivh|Mei|Mephisto|Mura...	UNKNOWN STEP	2026-10-04T09:33:24.1130969Z Cleaning up orphan processes
+make (4, 15, Lt. Morales|Lucio|Lunara|Maiev|Mal'Ganis|Malfurion|Malthael|Medivh|Mei|Mephisto|Mura...	UNKNOWN STEP	2026-10-04T09:33:24.1532515Z ##[warning]Node.js 20 is deprecated. The following actions target Node.js 20 but are being forced to run on Node.js 24: actions/checkout@v4. For more information see: https://github.blog/changelog/2025-09-19-deprecation-of-node-20-on-github-actions-runners/

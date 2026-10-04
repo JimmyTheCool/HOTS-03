@@ -1,0 +1,372 @@
+make (3, 15, Gul'dan|Hanzo|Hogger|Illidan|Imperius|Jaina|Johanna|Junkrat|Kael'thas|Kel'Thuzad|Ker...	UNKNOWN STEP	﻿2026-10-04T09:32:28.7694006Z Current runner version: '2.337.0'
+make (3, 15, Gul'dan|Hanzo|Hogger|Illidan|Imperius|Jaina|Johanna|Junkrat|Kael'thas|Kel'Thuzad|Ker...	UNKNOWN STEP	2026-10-04T09:32:28.7721550Z ##[group]Runner Image Provisioner
+make (3, 15, Gul'dan|Hanzo|Hogger|Illidan|Imperius|Jaina|Johanna|Junkrat|Kael'thas|Kel'Thuzad|Ker...	UNKNOWN STEP	2026-10-04T09:32:28.7722570Z Hosted Compute Agent
+make (3, 15, Gul'dan|Hanzo|Hogger|Illidan|Imperius|Jaina|Johanna|Junkrat|Kael'thas|Kel'Thuzad|Ker...	UNKNOWN STEP	2026-10-04T09:32:28.7723185Z Version: 20260901.588
+make (3, 15, Gul'dan|Hanzo|Hogger|Illidan|Imperius|Jaina|Johanna|Junkrat|Kael'thas|Kel'Thuzad|Ker...	UNKNOWN STEP	2026-10-04T09:32:28.7723921Z Commit: f88ec8081b781fac6c440065ac7ff9e710ce3d0b
+make (3, 15, Gul'dan|Hanzo|Hogger|Illidan|Imperius|Jaina|Johanna|Junkrat|Kael'thas|Kel'Thuzad|Ker...	UNKNOWN STEP	2026-10-04T09:32:28.7724743Z Build Date: 2026-09-01T19:56:44Z
+make (3, 15, Gul'dan|Hanzo|Hogger|Illidan|Imperius|Jaina|Johanna|Junkrat|Kael'thas|Kel'Thuzad|Ker...	UNKNOWN STEP	2026-10-04T09:32:28.7725697Z Worker ID: {f1e2d361-9777-40fb-9aaf-aea1e5ff3d9d}
+make (3, 15, Gul'dan|Hanzo|Hogger|Illidan|Imperius|Jaina|Johanna|Junkrat|Kael'thas|Kel'Thuzad|Ker...	UNKNOWN STEP	2026-10-04T09:32:28.7726540Z Azure Region: westus
+make (3, 15, Gul'dan|Hanzo|Hogger|Illidan|Imperius|Jaina|Johanna|Junkrat|Kael'thas|Kel'Thuzad|Ker...	UNKNOWN STEP	2026-10-04T09:32:28.7727151Z ##[endgroup]
+make (3, 15, Gul'dan|Hanzo|Hogger|Illidan|Imperius|Jaina|Johanna|Junkrat|Kael'thas|Kel'Thuzad|Ker...	UNKNOWN STEP	2026-10-04T09:32:28.7728921Z ##[group]Operating System
+make (3, 15, Gul'dan|Hanzo|Hogger|Illidan|Imperius|Jaina|Johanna|Junkrat|Kael'thas|Kel'Thuzad|Ker...	UNKNOWN STEP	2026-10-04T09:32:28.7729621Z Ubuntu
+make (3, 15, Gul'dan|Hanzo|Hogger|Illidan|Imperius|Jaina|Johanna|Junkrat|Kael'thas|Kel'Thuzad|Ker...	UNKNOWN STEP	2026-10-04T09:32:28.7730188Z 22.04.5
+make (3, 15, Gul'dan|Hanzo|Hogger|Illidan|Imperius|Jaina|Johanna|Junkrat|Kael'thas|Kel'Thuzad|Ker...	UNKNOWN STEP	2026-10-04T09:32:28.7730793Z LTS
+make (3, 15, Gul'dan|Hanzo|Hogger|Illidan|Imperius|Jaina|Johanna|Junkrat|Kael'thas|Kel'Thuzad|Ker...	UNKNOWN STEP	2026-10-04T09:32:28.7731351Z ##[endgroup]
+make (3, 15, Gul'dan|Hanzo|Hogger|Illidan|Imperius|Jaina|Johanna|Junkrat|Kael'thas|Kel'Thuzad|Ker...	UNKNOWN STEP	2026-10-04T09:32:28.7731907Z ##[group]Runner Image
+make (3, 15, Gul'dan|Hanzo|Hogger|Illidan|Imperius|Jaina|Johanna|Junkrat|Kael'thas|Kel'Thuzad|Ker...	UNKNOWN STEP	2026-10-04T09:32:28.7732673Z Image: ubuntu-22.04
+make (3, 15, Gul'dan|Hanzo|Hogger|Illidan|Imperius|Jaina|Johanna|Junkrat|Kael'thas|Kel'Thuzad|Ker...	UNKNOWN STEP	2026-10-04T09:32:28.7733265Z Version: 20260927.309.1
+make (3, 15, Gul'dan|Hanzo|Hogger|Illidan|Imperius|Jaina|Johanna|Junkrat|Kael'thas|Kel'Thuzad|Ker...	UNKNOWN STEP	2026-10-04T09:32:28.7734632Z Included Software: https://github.com/actions/runner-images/blob/ubuntu22/20260927.309/images/ubuntu/Ubuntu2204-Readme.md
+make (3, 15, Gul'dan|Hanzo|Hogger|Illidan|Imperius|Jaina|Johanna|Junkrat|Kael'thas|Kel'Thuzad|Ker...	UNKNOWN STEP	2026-10-04T09:32:28.7736996Z Image Release: https://github.com/actions/runner-images/releases/tag/ubuntu22%2F20260927.309
+make (3, 15, Gul'dan|Hanzo|Hogger|Illidan|Imperius|Jaina|Johanna|Junkrat|Kael'thas|Kel'Thuzad|Ker...	UNKNOWN STEP	2026-10-04T09:32:28.7738057Z ##[endgroup]
+make (3, 15, Gul'dan|Hanzo|Hogger|Illidan|Imperius|Jaina|Johanna|Junkrat|Kael'thas|Kel'Thuzad|Ker...	UNKNOWN STEP	2026-10-04T09:32:28.7739166Z ##[group]GITHUB_TOKEN Permissions
+make (3, 15, Gul'dan|Hanzo|Hogger|Illidan|Imperius|Jaina|Johanna|Junkrat|Kael'thas|Kel'Thuzad|Ker...	UNKNOWN STEP	2026-10-04T09:32:28.7741441Z Contents: write
+make (3, 15, Gul'dan|Hanzo|Hogger|Illidan|Imperius|Jaina|Johanna|Junkrat|Kael'thas|Kel'Thuzad|Ker...	UNKNOWN STEP	2026-10-04T09:32:28.7742079Z Metadata: read
+make (3, 15, Gul'dan|Hanzo|Hogger|Illidan|Imperius|Jaina|Johanna|Junkrat|Kael'thas|Kel'Thuzad|Ker...	UNKNOWN STEP	2026-10-04T09:32:28.7742780Z ##[endgroup]
+make (3, 15, Gul'dan|Hanzo|Hogger|Illidan|Imperius|Jaina|Johanna|Junkrat|Kael'thas|Kel'Thuzad|Ker...	UNKNOWN STEP	2026-10-04T09:32:28.7745037Z Secret source: Actions
+make (3, 15, Gul'dan|Hanzo|Hogger|Illidan|Imperius|Jaina|Johanna|Junkrat|Kael'thas|Kel'Thuzad|Ker...	UNKNOWN STEP	2026-10-04T09:32:28.7746441Z Cache mode: write
+make (3, 15, Gul'dan|Hanzo|Hogger|Illidan|Imperius|Jaina|Johanna|Junkrat|Kael'thas|Kel'Thuzad|Ker...	UNKNOWN STEP	2026-10-04T09:32:28.7747177Z Prepare workflow directory
+make (3, 15, Gul'dan|Hanzo|Hogger|Illidan|Imperius|Jaina|Johanna|Junkrat|Kael'thas|Kel'Thuzad|Ker...	UNKNOWN STEP	2026-10-04T09:32:28.8165672Z Prepare all required actions
+make (3, 15, Gul'dan|Hanzo|Hogger|Illidan|Imperius|Jaina|Johanna|Junkrat|Kael'thas|Kel'Thuzad|Ker...	UNKNOWN STEP	2026-10-04T09:32:28.8218010Z Getting action download info
+make (3, 15, Gul'dan|Hanzo|Hogger|Illidan|Imperius|Jaina|Johanna|Junkrat|Kael'thas|Kel'Thuzad|Ker...	UNKNOWN STEP	2026-10-04T09:32:29.1801148Z Download action repository 'actions/checkout@v4' (SHA:11d5960a326750d5838078e36cf38b85af677262)
+make (3, 15, Gul'dan|Hanzo|Hogger|Illidan|Imperius|Jaina|Johanna|Junkrat|Kael'thas|Kel'Thuzad|Ker...	UNKNOWN STEP	2026-10-04T09:32:29.2971735Z Download action repository 'actions/upload-artifact@v4' (SHA:ea165f8d65b6e75b540449e92b4886f43607fa02)
+make (3, 15, Gul'dan|Hanzo|Hogger|Illidan|Imperius|Jaina|Johanna|Junkrat|Kael'thas|Kel'Thuzad|Ker...	UNKNOWN STEP	2026-10-04T09:32:29.6071573Z Complete job name: make (3, 15, Gul'dan|Hanzo|Hogger|Illidan|Imperius|Jaina|Johanna|Junkrat|Kael'thas|Kel'Thuzad|Ker...
+make (3, 15, Gul'dan|Hanzo|Hogger|Illidan|Imperius|Jaina|Johanna|Junkrat|Kael'thas|Kel'Thuzad|Ker...	UNKNOWN STEP	2026-10-04T09:32:29.6872236Z ##[group]Run actions/checkout@v4
+make (3, 15, Gul'dan|Hanzo|Hogger|Illidan|Imperius|Jaina|Johanna|Junkrat|Kael'thas|Kel'Thuzad|Ker...	UNKNOWN STEP	2026-10-04T09:32:29.6873160Z with:
+make (3, 15, Gul'dan|Hanzo|Hogger|Illidan|Imperius|Jaina|Johanna|Junkrat|Kael'thas|Kel'Thuzad|Ker...	UNKNOWN STEP	2026-10-04T09:32:29.6873663Z   ref: chatgpt-stl-builder
+make (3, 15, Gul'dan|Hanzo|Hogger|Illidan|Imperius|Jaina|Johanna|Junkrat|Kael'thas|Kel'Thuzad|Ker...	UNKNOWN STEP	2026-10-04T09:32:29.6874166Z   fetch-depth: 1
+make (3, 15, Gul'dan|Hanzo|Hogger|Illidan|Imperius|Jaina|Johanna|Junkrat|Kael'thas|Kel'Thuzad|Ker...	UNKNOWN STEP	2026-10-04T09:32:29.6874636Z   repository: JimmyTheCool/HOTS-03
+make (3, 15, Gul'dan|Hanzo|Hogger|Illidan|Imperius|Jaina|Johanna|Junkrat|Kael'thas|Kel'Thuzad|Ker...	UNKNOWN STEP	2026-10-04T09:32:29.6878760Z   token: ***
+make (3, 15, Gul'dan|Hanzo|Hogger|Illidan|Imperius|Jaina|Johanna|Junkrat|Kael'thas|Kel'Thuzad|Ker...	UNKNOWN STEP	2026-10-04T09:32:29.6879194Z   ssh-strict: true
+make (3, 15, Gul'dan|Hanzo|Hogger|Illidan|Imperius|Jaina|Johanna|Junkrat|Kael'thas|Kel'Thuzad|Ker...	UNKNOWN STEP	2026-10-04T09:32:29.6879633Z   ssh-user: git
+make (3, 15, Gul'dan|Hanzo|Hogger|Illidan|Imperius|Jaina|Johanna|Junkrat|Kael'thas|Kel'Thuzad|Ker...	UNKNOWN STEP	2026-10-04T09:32:29.6880092Z   persist-credentials: true
+make (3, 15, Gul'dan|Hanzo|Hogger|Illidan|Imperius|Jaina|Johanna|Junkrat|Kael'thas|Kel'Thuzad|Ker...	UNKNOWN STEP	2026-10-04T09:32:29.6880583Z   clean: true
+make (3, 15, Gul'dan|Hanzo|Hogger|Illidan|Imperius|Jaina|Johanna|Junkrat|Kael'thas|Kel'Thuzad|Ker...	UNKNOWN STEP	2026-10-04T09:32:29.6881042Z   sparse-checkout-cone-mode: true
+make (3, 15, Gul'dan|Hanzo|Hogger|Illidan|Imperius|Jaina|Johanna|Junkrat|Kael'thas|Kel'Thuzad|Ker...	UNKNOWN STEP	2026-10-04T09:32:29.6881571Z   fetch-tags: false
+make (3, 15, Gul'dan|Hanzo|Hogger|Illidan|Imperius|Jaina|Johanna|Junkrat|Kael'thas|Kel'Thuzad|Ker...	UNKNOWN STEP	2026-10-04T09:32:29.6882026Z   show-progress: true
+make (3, 15, Gul'dan|Hanzo|Hogger|Illidan|Imperius|Jaina|Johanna|Junkrat|Kael'thas|Kel'Thuzad|Ker...	UNKNOWN STEP	2026-10-04T09:32:29.6882466Z   lfs: false
+make (3, 15, Gul'dan|Hanzo|Hogger|Illidan|Imperius|Jaina|Johanna|Junkrat|Kael'thas|Kel'Thuzad|Ker...	UNKNOWN STEP	2026-10-04T09:32:29.6882881Z   submodules: false
+make (3, 15, Gul'dan|Hanzo|Hogger|Illidan|Imperius|Jaina|Johanna|Junkrat|Kael'thas|Kel'Thuzad|Ker...	UNKNOWN STEP	2026-10-04T09:32:29.6883333Z   set-safe-directory: true
+make (3, 15, Gul'dan|Hanzo|Hogger|Illidan|Imperius|Jaina|Johanna|Junkrat|Kael'thas|Kel'Thuzad|Ker...	UNKNOWN STEP	2026-10-04T09:32:29.6883837Z   allow-unsafe-pr-checkout: false
+make (3, 15, Gul'dan|Hanzo|Hogger|Illidan|Imperius|Jaina|Johanna|Junkrat|Kael'thas|Kel'Thuzad|Ker...	UNKNOWN STEP	2026-10-04T09:32:29.6884606Z env:
+make (3, 15, Gul'dan|Hanzo|Hogger|Illidan|Imperius|Jaina|Johanna|Junkrat|Kael'thas|Kel'Thuzad|Ker...	UNKNOWN STEP	2026-10-04T09:32:29.6885003Z   BV: 3.6.23
+make (3, 15, Gul'dan|Hanzo|Hogger|Illidan|Imperius|Jaina|Johanna|Junkrat|Kael'thas|Kel'Thuzad|Ker...	UNKNOWN STEP	2026-10-04T09:32:29.6885617Z   M3: 58935005c4465a219a740f6b740253533eda773f
+make (3, 15, Gul'dan|Hanzo|Hogger|Illidan|Imperius|Jaina|Johanna|Junkrat|Kael'thas|Kel'Thuzad|Ker...	UNKNOWN STEP	2026-10-04T09:32:29.6886236Z ##[endgroup]
+make (3, 15, Gul'dan|Hanzo|Hogger|Illidan|Imperius|Jaina|Johanna|Junkrat|Kael'thas|Kel'Thuzad|Ker...	UNKNOWN STEP	2026-10-04T09:32:29.7989934Z Syncing repository: JimmyTheCool/HOTS-03
+make (3, 15, Gul'dan|Hanzo|Hogger|Illidan|Imperius|Jaina|Johanna|Junkrat|Kael'thas|Kel'Thuzad|Ker...	UNKNOWN STEP	2026-10-04T09:32:29.7992412Z ##[group]Getting Git version info
+make (3, 15, Gul'dan|Hanzo|Hogger|Illidan|Imperius|Jaina|Johanna|Junkrat|Kael'thas|Kel'Thuzad|Ker...	UNKNOWN STEP	2026-10-04T09:32:29.7993751Z Working directory is '/home/runner/work/HOTS-03/HOTS-03'
+make (3, 15, Gul'dan|Hanzo|Hogger|Illidan|Imperius|Jaina|Johanna|Junkrat|Kael'thas|Kel'Thuzad|Ker...	UNKNOWN STEP	2026-10-04T09:32:29.7995217Z [command]/usr/bin/git version
+make (3, 15, Gul'dan|Hanzo|Hogger|Illidan|Imperius|Jaina|Johanna|Junkrat|Kael'thas|Kel'Thuzad|Ker...	UNKNOWN STEP	2026-10-04T09:32:29.8067004Z git version 2.55.0
+make (3, 15, Gul'dan|Hanzo|Hogger|Illidan|Imperius|Jaina|Johanna|Junkrat|Kael'thas|Kel'Thuzad|Ker...	UNKNOWN STEP	2026-10-04T09:32:29.8092366Z ##[endgroup]
+make (3, 15, Gul'dan|Hanzo|Hogger|Illidan|Imperius|Jaina|Johanna|Junkrat|Kael'thas|Kel'Thuzad|Ker...	UNKNOWN STEP	2026-10-04T09:32:29.8108500Z Temporarily overriding HOME='/home/runner/work/_temp/1e7ac816-6445-416e-8a17-af0482a62a18' before making global git config changes
+make (3, 15, Gul'dan|Hanzo|Hogger|Illidan|Imperius|Jaina|Johanna|Junkrat|Kael'thas|Kel'Thuzad|Ker...	UNKNOWN STEP	2026-10-04T09:32:29.8114614Z Adding repository directory to the temporary git global config as a safe directory
+make (3, 15, Gul'dan|Hanzo|Hogger|Illidan|Imperius|Jaina|Johanna|Junkrat|Kael'thas|Kel'Thuzad|Ker...	UNKNOWN STEP	2026-10-04T09:32:29.8116322Z [command]/usr/bin/git config --global --add safe.directory /home/runner/work/HOTS-03/HOTS-03
+make (3, 15, Gul'dan|Hanzo|Hogger|Illidan|Imperius|Jaina|Johanna|Junkrat|Kael'thas|Kel'Thuzad|Ker...	UNKNOWN STEP	2026-10-04T09:32:29.8160537Z Deleting the contents of '/home/runner/work/HOTS-03/HOTS-03'
+make (3, 15, Gul'dan|Hanzo|Hogger|Illidan|Imperius|Jaina|Johanna|Junkrat|Kael'thas|Kel'Thuzad|Ker...	UNKNOWN STEP	2026-10-04T09:32:29.8164889Z ##[group]Initializing the repository
+make (3, 15, Gul'dan|Hanzo|Hogger|Illidan|Imperius|Jaina|Johanna|Junkrat|Kael'thas|Kel'Thuzad|Ker...	UNKNOWN STEP	2026-10-04T09:32:29.8171553Z [command]/usr/bin/git init /home/runner/work/HOTS-03/HOTS-03
+make (3, 15, Gul'dan|Hanzo|Hogger|Illidan|Imperius|Jaina|Johanna|Junkrat|Kael'thas|Kel'Thuzad|Ker...	UNKNOWN STEP	2026-10-04T09:32:29.8310513Z hint: Using 'master' as the name for the initial branch. This default branch name
+make (3, 15, Gul'dan|Hanzo|Hogger|Illidan|Imperius|Jaina|Johanna|Junkrat|Kael'thas|Kel'Thuzad|Ker...	UNKNOWN STEP	2026-10-04T09:32:29.8312443Z hint: will change to "main" in Git 3.0. To configure the initial branch name
+make (3, 15, Gul'dan|Hanzo|Hogger|Illidan|Imperius|Jaina|Johanna|Junkrat|Kael'thas|Kel'Thuzad|Ker...	UNKNOWN STEP	2026-10-04T09:32:29.8326784Z hint: to use in all of your new repositories, which will suppress this warning,
+make (3, 15, Gul'dan|Hanzo|Hogger|Illidan|Imperius|Jaina|Johanna|Junkrat|Kael'thas|Kel'Thuzad|Ker...	UNKNOWN STEP	2026-10-04T09:32:29.8337402Z hint: call:
+make (3, 15, Gul'dan|Hanzo|Hogger|Illidan|Imperius|Jaina|Johanna|Junkrat|Kael'thas|Kel'Thuzad|Ker...	UNKNOWN STEP	2026-10-04T09:32:29.8366591Z hint:
+make (3, 15, Gul'dan|Hanzo|Hogger|Illidan|Imperius|Jaina|Johanna|Junkrat|Kael'thas|Kel'Thuzad|Ker...	UNKNOWN STEP	2026-10-04T09:32:29.8380328Z hint: 	git config --global init.defaultBranch <name>
+make (3, 15, Gul'dan|Hanzo|Hogger|Illidan|Imperius|Jaina|Johanna|Junkrat|Kael'thas|Kel'Thuzad|Ker...	UNKNOWN STEP	2026-10-04T09:32:29.8393833Z hint:
+make (3, 15, Gul'dan|Hanzo|Hogger|Illidan|Imperius|Jaina|Johanna|Junkrat|Kael'thas|Kel'Thuzad|Ker...	UNKNOWN STEP	2026-10-04T09:32:29.8395230Z hint: Names commonly chosen instead of 'master' are 'main', 'trunk' and
+make (3, 15, Gul'dan|Hanzo|Hogger|Illidan|Imperius|Jaina|Johanna|Junkrat|Kael'thas|Kel'Thuzad|Ker...	UNKNOWN STEP	2026-10-04T09:32:29.8397430Z hint: 'development'. The just-created branch can be renamed via this command:
+make (3, 15, Gul'dan|Hanzo|Hogger|Illidan|Imperius|Jaina|Johanna|Junkrat|Kael'thas|Kel'Thuzad|Ker...	UNKNOWN STEP	2026-10-04T09:32:29.8399020Z hint:
+make (3, 15, Gul'dan|Hanzo|Hogger|Illidan|Imperius|Jaina|Johanna|Junkrat|Kael'thas|Kel'Thuzad|Ker...	UNKNOWN STEP	2026-10-04T09:32:29.8399915Z hint: 	git branch -m <name>
+make (3, 15, Gul'dan|Hanzo|Hogger|Illidan|Imperius|Jaina|Johanna|Junkrat|Kael'thas|Kel'Thuzad|Ker...	UNKNOWN STEP	2026-10-04T09:32:29.8400921Z hint:
+make (3, 15, Gul'dan|Hanzo|Hogger|Illidan|Imperius|Jaina|Johanna|Junkrat|Kael'thas|Kel'Thuzad|Ker...	UNKNOWN STEP	2026-10-04T09:32:29.8402227Z hint: Disable this message with "git config set advice.defaultBranchName false"
+make (3, 15, Gul'dan|Hanzo|Hogger|Illidan|Imperius|Jaina|Johanna|Junkrat|Kael'thas|Kel'Thuzad|Ker...	UNKNOWN STEP	2026-10-04T09:32:29.8404475Z Initialized empty Git repository in /home/runner/work/HOTS-03/HOTS-03/.git/
+make (3, 15, Gul'dan|Hanzo|Hogger|Illidan|Imperius|Jaina|Johanna|Junkrat|Kael'thas|Kel'Thuzad|Ker...	UNKNOWN STEP	2026-10-04T09:32:29.8408623Z [command]/usr/bin/git remote add origin https://github.com/JimmyTheCool/HOTS-03
+make (3, 15, Gul'dan|Hanzo|Hogger|Illidan|Imperius|Jaina|Johanna|Junkrat|Kael'thas|Kel'Thuzad|Ker...	UNKNOWN STEP	2026-10-04T09:32:29.8411782Z ##[endgroup]
+make (3, 15, Gul'dan|Hanzo|Hogger|Illidan|Imperius|Jaina|Johanna|Junkrat|Kael'thas|Kel'Thuzad|Ker...	UNKNOWN STEP	2026-10-04T09:32:29.8413343Z ##[group]Disabling automatic garbage collection
+make (3, 15, Gul'dan|Hanzo|Hogger|Illidan|Imperius|Jaina|Johanna|Junkrat|Kael'thas|Kel'Thuzad|Ker...	UNKNOWN STEP	2026-10-04T09:32:29.8414689Z [command]/usr/bin/git config --local gc.auto 0
+make (3, 15, Gul'dan|Hanzo|Hogger|Illidan|Imperius|Jaina|Johanna|Junkrat|Kael'thas|Kel'Thuzad|Ker...	UNKNOWN STEP	2026-10-04T09:32:29.8449450Z ##[endgroup]
+make (3, 15, Gul'dan|Hanzo|Hogger|Illidan|Imperius|Jaina|Johanna|Junkrat|Kael'thas|Kel'Thuzad|Ker...	UNKNOWN STEP	2026-10-04T09:32:29.8451125Z ##[group]Setting up auth
+make (3, 15, Gul'dan|Hanzo|Hogger|Illidan|Imperius|Jaina|Johanna|Junkrat|Kael'thas|Kel'Thuzad|Ker...	UNKNOWN STEP	2026-10-04T09:32:29.8457779Z [command]/usr/bin/git config --local --name-only --get-regexp core\.sshCommand
+make (3, 15, Gul'dan|Hanzo|Hogger|Illidan|Imperius|Jaina|Johanna|Junkrat|Kael'thas|Kel'Thuzad|Ker...	UNKNOWN STEP	2026-10-04T09:32:29.8527927Z [command]/usr/bin/git submodule foreach --recursive sh -c "git config --local --name-only --get-regexp 'core\.sshCommand' && git config --local --unset-all 'core.sshCommand' || :"
+make (3, 15, Gul'dan|Hanzo|Hogger|Illidan|Imperius|Jaina|Johanna|Junkrat|Kael'thas|Kel'Thuzad|Ker...	UNKNOWN STEP	2026-10-04T09:32:29.8973852Z [command]/usr/bin/git config --local --name-only --get-regexp http\.https\:\/\/github\.com\/\.extraheader
+make (3, 15, Gul'dan|Hanzo|Hogger|Illidan|Imperius|Jaina|Johanna|Junkrat|Kael'thas|Kel'Thuzad|Ker...	UNKNOWN STEP	2026-10-04T09:32:29.9014648Z [command]/usr/bin/git submodule foreach --recursive sh -c "git config --local --name-only --get-regexp 'http\.https\:\/\/github\.com\/\.extraheader' && git config --local --unset-all 'http.https://github.com/.extraheader' || :"
+make (3, 15, Gul'dan|Hanzo|Hogger|Illidan|Imperius|Jaina|Johanna|Junkrat|Kael'thas|Kel'Thuzad|Ker...	UNKNOWN STEP	2026-10-04T09:32:29.9318819Z [command]/usr/bin/git config --local --name-only --get-regexp ^includeIf\.gitdir:
+make (3, 15, Gul'dan|Hanzo|Hogger|Illidan|Imperius|Jaina|Johanna|Junkrat|Kael'thas|Kel'Thuzad|Ker...	UNKNOWN STEP	2026-10-04T09:32:29.9360282Z [command]/usr/bin/git submodule foreach --recursive git config --local --show-origin --name-only --get-regexp remote.origin.url
+make (3, 15, Gul'dan|Hanzo|Hogger|Illidan|Imperius|Jaina|Johanna|Junkrat|Kael'thas|Kel'Thuzad|Ker...	UNKNOWN STEP	2026-10-04T09:32:29.9633384Z [command]/usr/bin/git config --local http.https://github.com/.extraheader AUTHORIZATION: basic ***
+make (3, 15, Gul'dan|Hanzo|Hogger|Illidan|Imperius|Jaina|Johanna|Junkrat|Kael'thas|Kel'Thuzad|Ker...	UNKNOWN STEP	2026-10-04T09:32:29.9680551Z ##[endgroup]
+make (3, 15, Gul'dan|Hanzo|Hogger|Illidan|Imperius|Jaina|Johanna|Junkrat|Kael'thas|Kel'Thuzad|Ker...	UNKNOWN STEP	2026-10-04T09:32:29.9681361Z ##[group]Fetching the repository
+make (3, 15, Gul'dan|Hanzo|Hogger|Illidan|Imperius|Jaina|Johanna|Junkrat|Kael'thas|Kel'Thuzad|Ker...	UNKNOWN STEP	2026-10-04T09:32:29.9691004Z [command]/usr/bin/git -c protocol.version=2 fetch --no-tags --prune --no-recurse-submodules --depth=1 origin +refs/heads/chatgpt-stl-builder*:refs/remotes/origin/chatgpt-stl-builder* +refs/tags/chatgpt-stl-builder*:refs/tags/chatgpt-stl-builder*
+make (3, 15, Gul'dan|Hanzo|Hogger|Illidan|Imperius|Jaina|Johanna|Junkrat|Kael'thas|Kel'Thuzad|Ker...	UNKNOWN STEP	2026-10-04T09:32:39.2960377Z From https://github.com/JimmyTheCool/HOTS-03
+make (3, 15, Gul'dan|Hanzo|Hogger|Illidan|Imperius|Jaina|Johanna|Junkrat|Kael'thas|Kel'Thuzad|Ker...	UNKNOWN STEP	2026-10-04T09:32:39.2961649Z  * [new branch]      chatgpt-stl-builder -> origin/chatgpt-stl-builder
+make (3, 15, Gul'dan|Hanzo|Hogger|Illidan|Imperius|Jaina|Johanna|Junkrat|Kael'thas|Kel'Thuzad|Ker...	UNKNOWN STEP	2026-10-04T09:32:39.2966261Z ##[endgroup]
+make (3, 15, Gul'dan|Hanzo|Hogger|Illidan|Imperius|Jaina|Johanna|Junkrat|Kael'thas|Kel'Thuzad|Ker...	UNKNOWN STEP	2026-10-04T09:32:39.2967595Z ##[group]Determining the checkout info
+make (3, 15, Gul'dan|Hanzo|Hogger|Illidan|Imperius|Jaina|Johanna|Junkrat|Kael'thas|Kel'Thuzad|Ker...	UNKNOWN STEP	2026-10-04T09:32:39.2977790Z [command]/usr/bin/git branch --list --remote origin/chatgpt-stl-builder
+make (3, 15, Gul'dan|Hanzo|Hogger|Illidan|Imperius|Jaina|Johanna|Junkrat|Kael'thas|Kel'Thuzad|Ker...	UNKNOWN STEP	2026-10-04T09:32:39.3014660Z   origin/chatgpt-stl-builder
+make (3, 15, Gul'dan|Hanzo|Hogger|Illidan|Imperius|Jaina|Johanna|Junkrat|Kael'thas|Kel'Thuzad|Ker...	UNKNOWN STEP	2026-10-04T09:32:39.3026030Z ##[endgroup]
+make (3, 15, Gul'dan|Hanzo|Hogger|Illidan|Imperius|Jaina|Johanna|Junkrat|Kael'thas|Kel'Thuzad|Ker...	UNKNOWN STEP	2026-10-04T09:32:39.3028648Z [command]/usr/bin/git sparse-checkout disable
+make (3, 15, Gul'dan|Hanzo|Hogger|Illidan|Imperius|Jaina|Johanna|Junkrat|Kael'thas|Kel'Thuzad|Ker...	UNKNOWN STEP	2026-10-04T09:32:39.3099427Z [command]/usr/bin/git config --local --unset-all extensions.worktreeConfig
+make (3, 15, Gul'dan|Hanzo|Hogger|Illidan|Imperius|Jaina|Johanna|Junkrat|Kael'thas|Kel'Thuzad|Ker...	UNKNOWN STEP	2026-10-04T09:32:39.3141830Z ##[group]Checking out the ref
+make (3, 15, Gul'dan|Hanzo|Hogger|Illidan|Imperius|Jaina|Johanna|Junkrat|Kael'thas|Kel'Thuzad|Ker...	UNKNOWN STEP	2026-10-04T09:32:39.3147791Z [command]/usr/bin/git checkout --progress --force -B chatgpt-stl-builder refs/remotes/origin/chatgpt-stl-builder
+make (3, 15, Gul'dan|Hanzo|Hogger|Illidan|Imperius|Jaina|Johanna|Junkrat|Kael'thas|Kel'Thuzad|Ker...	UNKNOWN STEP	2026-10-04T09:32:40.3264794Z Updating files:  35% (277/771)
+make (3, 15, Gul'dan|Hanzo|Hogger|Illidan|Imperius|Jaina|Johanna|Junkrat|Kael'thas|Kel'Thuzad|Ker...	UNKNOWN STEP	2026-10-04T09:32:40.3712437Z Updating files:  36% (278/771)
+make (3, 15, Gul'dan|Hanzo|Hogger|Illidan|Imperius|Jaina|Johanna|Junkrat|Kael'thas|Kel'Thuzad|Ker...	UNKNOWN STEP	2026-10-04T09:32:40.4073639Z Updating files:  37% (286/771)
+make (3, 15, Gul'dan|Hanzo|Hogger|Illidan|Imperius|Jaina|Johanna|Junkrat|Kael'thas|Kel'Thuzad|Ker...	UNKNOWN STEP	2026-10-04T09:32:40.4358963Z Updating files:  38% (293/771)
+make (3, 15, Gul'dan|Hanzo|Hogger|Illidan|Imperius|Jaina|Johanna|Junkrat|Kael'thas|Kel'Thuzad|Ker...	UNKNOWN STEP	2026-10-04T09:32:40.4606163Z Updating files:  39% (301/771)
+make (3, 15, Gul'dan|Hanzo|Hogger|Illidan|Imperius|Jaina|Johanna|Junkrat|Kael'thas|Kel'Thuzad|Ker...	UNKNOWN STEP	2026-10-04T09:32:40.4746221Z Updating files:  40% (309/771)
+make (3, 15, Gul'dan|Hanzo|Hogger|Illidan|Imperius|Jaina|Johanna|Junkrat|Kael'thas|Kel'Thuzad|Ker...	UNKNOWN STEP	2026-10-04T09:32:40.5087567Z Updating files:  41% (317/771)
+make (3, 15, Gul'dan|Hanzo|Hogger|Illidan|Imperius|Jaina|Johanna|Junkrat|Kael'thas|Kel'Thuzad|Ker...	UNKNOWN STEP	2026-10-04T09:32:40.5273196Z Updating files:  42% (324/771)
+make (3, 15, Gul'dan|Hanzo|Hogger|Illidan|Imperius|Jaina|Johanna|Junkrat|Kael'thas|Kel'Thuzad|Ker...	UNKNOWN STEP	2026-10-04T09:32:40.5533999Z Updating files:  43% (332/771)
+make (3, 15, Gul'dan|Hanzo|Hogger|Illidan|Imperius|Jaina|Johanna|Junkrat|Kael'thas|Kel'Thuzad|Ker...	UNKNOWN STEP	2026-10-04T09:32:40.5873534Z Updating files:  44% (340/771)
+make (3, 15, Gul'dan|Hanzo|Hogger|Illidan|Imperius|Jaina|Johanna|Junkrat|Kael'thas|Kel'Thuzad|Ker...	UNKNOWN STEP	2026-10-04T09:32:40.6049773Z Updating files:  45% (347/771)
+make (3, 15, Gul'dan|Hanzo|Hogger|Illidan|Imperius|Jaina|Johanna|Junkrat|Kael'thas|Kel'Thuzad|Ker...	UNKNOWN STEP	2026-10-04T09:32:40.6284476Z Updating files:  46% (355/771)
+make (3, 15, Gul'dan|Hanzo|Hogger|Illidan|Imperius|Jaina|Johanna|Junkrat|Kael'thas|Kel'Thuzad|Ker...	UNKNOWN STEP	2026-10-04T09:32:40.6633909Z Updating files:  47% (363/771)
+make (3, 15, Gul'dan|Hanzo|Hogger|Illidan|Imperius|Jaina|Johanna|Junkrat|Kael'thas|Kel'Thuzad|Ker...	UNKNOWN STEP	2026-10-04T09:32:40.6852499Z Updating files:  48% (371/771)
+make (3, 15, Gul'dan|Hanzo|Hogger|Illidan|Imperius|Jaina|Johanna|Junkrat|Kael'thas|Kel'Thuzad|Ker...	UNKNOWN STEP	2026-10-04T09:32:40.7142901Z Updating files:  49% (378/771)
+make (3, 15, Gul'dan|Hanzo|Hogger|Illidan|Imperius|Jaina|Johanna|Junkrat|Kael'thas|Kel'Thuzad|Ker...	UNKNOWN STEP	2026-10-04T09:32:40.7371288Z Updating files:  50% (386/771)
+make (3, 15, Gul'dan|Hanzo|Hogger|Illidan|Imperius|Jaina|Johanna|Junkrat|Kael'thas|Kel'Thuzad|Ker...	UNKNOWN STEP	2026-10-04T09:32:40.7642493Z Updating files:  51% (394/771)
+make (3, 15, Gul'dan|Hanzo|Hogger|Illidan|Imperius|Jaina|Johanna|Junkrat|Kael'thas|Kel'Thuzad|Ker...	UNKNOWN STEP	2026-10-04T09:32:40.8118184Z Updating files:  52% (401/771)
+make (3, 15, Gul'dan|Hanzo|Hogger|Illidan|Imperius|Jaina|Johanna|Junkrat|Kael'thas|Kel'Thuzad|Ker...	UNKNOWN STEP	2026-10-04T09:32:40.8342688Z Updating files:  53% (409/771)
+make (3, 15, Gul'dan|Hanzo|Hogger|Illidan|Imperius|Jaina|Johanna|Junkrat|Kael'thas|Kel'Thuzad|Ker...	UNKNOWN STEP	2026-10-04T09:32:40.8614750Z Updating files:  54% (417/771)
+make (3, 15, Gul'dan|Hanzo|Hogger|Illidan|Imperius|Jaina|Johanna|Junkrat|Kael'thas|Kel'Thuzad|Ker...	UNKNOWN STEP	2026-10-04T09:32:40.9013096Z Updating files:  55% (425/771)
+make (3, 15, Gul'dan|Hanzo|Hogger|Illidan|Imperius|Jaina|Johanna|Junkrat|Kael'thas|Kel'Thuzad|Ker...	UNKNOWN STEP	2026-10-04T09:32:40.9316748Z Updating files:  56% (432/771)
+make (3, 15, Gul'dan|Hanzo|Hogger|Illidan|Imperius|Jaina|Johanna|Junkrat|Kael'thas|Kel'Thuzad|Ker...	UNKNOWN STEP	2026-10-04T09:32:40.9779649Z Updating files:  57% (440/771)
+make (3, 15, Gul'dan|Hanzo|Hogger|Illidan|Imperius|Jaina|Johanna|Junkrat|Kael'thas|Kel'Thuzad|Ker...	UNKNOWN STEP	2026-10-04T09:32:40.9957647Z Updating files:  58% (448/771)
+make (3, 15, Gul'dan|Hanzo|Hogger|Illidan|Imperius|Jaina|Johanna|Junkrat|Kael'thas|Kel'Thuzad|Ker...	UNKNOWN STEP	2026-10-04T09:32:41.0416006Z Updating files:  59% (455/771)
+make (3, 15, Gul'dan|Hanzo|Hogger|Illidan|Imperius|Jaina|Johanna|Junkrat|Kael'thas|Kel'Thuzad|Ker...	UNKNOWN STEP	2026-10-04T09:32:41.0560941Z Updating files:  60% (463/771)
+make (3, 15, Gul'dan|Hanzo|Hogger|Illidan|Imperius|Jaina|Johanna|Junkrat|Kael'thas|Kel'Thuzad|Ker...	UNKNOWN STEP	2026-10-04T09:32:41.0841894Z Updating files:  61% (471/771)
+make (3, 15, Gul'dan|Hanzo|Hogger|Illidan|Imperius|Jaina|Johanna|Junkrat|Kael'thas|Kel'Thuzad|Ker...	UNKNOWN STEP	2026-10-04T09:32:41.1163931Z Updating files:  62% (479/771)
+make (3, 15, Gul'dan|Hanzo|Hogger|Illidan|Imperius|Jaina|Johanna|Junkrat|Kael'thas|Kel'Thuzad|Ker...	UNKNOWN STEP	2026-10-04T09:32:41.1446395Z Updating files:  63% (486/771)
+make (3, 15, Gul'dan|Hanzo|Hogger|Illidan|Imperius|Jaina|Johanna|Junkrat|Kael'thas|Kel'Thuzad|Ker...	UNKNOWN STEP	2026-10-04T09:32:41.1824115Z Updating files:  64% (494/771)
+make (3, 15, Gul'dan|Hanzo|Hogger|Illidan|Imperius|Jaina|Johanna|Junkrat|Kael'thas|Kel'Thuzad|Ker...	UNKNOWN STEP	2026-10-04T09:32:41.2354685Z Updating files:  65% (502/771)
+make (3, 15, Gul'dan|Hanzo|Hogger|Illidan|Imperius|Jaina|Johanna|Junkrat|Kael'thas|Kel'Thuzad|Ker...	UNKNOWN STEP	2026-10-04T09:32:41.2692000Z Updating files:  66% (509/771)
+make (3, 15, Gul'dan|Hanzo|Hogger|Illidan|Imperius|Jaina|Johanna|Junkrat|Kael'thas|Kel'Thuzad|Ker...	UNKNOWN STEP	2026-10-04T09:32:41.2924490Z Updating files:  67% (517/771)
+make (3, 15, Gul'dan|Hanzo|Hogger|Illidan|Imperius|Jaina|Johanna|Junkrat|Kael'thas|Kel'Thuzad|Ker...	UNKNOWN STEP	2026-10-04T09:32:41.3230081Z Updating files:  68% (525/771)
+make (3, 15, Gul'dan|Hanzo|Hogger|Illidan|Imperius|Jaina|Johanna|Junkrat|Kael'thas|Kel'Thuzad|Ker...	UNKNOWN STEP	2026-10-04T09:32:41.3318059Z Updating files:  69% (532/771)
+make (3, 15, Gul'dan|Hanzo|Hogger|Illidan|Imperius|Jaina|Johanna|Junkrat|Kael'thas|Kel'Thuzad|Ker...	UNKNOWN STEP	2026-10-04T09:32:41.3758319Z Updating files:  69% (534/771)
+make (3, 15, Gul'dan|Hanzo|Hogger|Illidan|Imperius|Jaina|Johanna|Junkrat|Kael'thas|Kel'Thuzad|Ker...	UNKNOWN STEP	2026-10-04T09:32:41.4023048Z Updating files:  70% (540/771)
+make (3, 15, Gul'dan|Hanzo|Hogger|Illidan|Imperius|Jaina|Johanna|Junkrat|Kael'thas|Kel'Thuzad|Ker...	UNKNOWN STEP	2026-10-04T09:32:41.4515223Z Updating files:  71% (548/771)
+make (3, 15, Gul'dan|Hanzo|Hogger|Illidan|Imperius|Jaina|Johanna|Junkrat|Kael'thas|Kel'Thuzad|Ker...	UNKNOWN STEP	2026-10-04T09:32:41.4837192Z Updating files:  72% (556/771)
+make (3, 15, Gul'dan|Hanzo|Hogger|Illidan|Imperius|Jaina|Johanna|Junkrat|Kael'thas|Kel'Thuzad|Ker...	UNKNOWN STEP	2026-10-04T09:32:41.5165853Z Updating files:  73% (563/771)
+make (3, 15, Gul'dan|Hanzo|Hogger|Illidan|Imperius|Jaina|Johanna|Junkrat|Kael'thas|Kel'Thuzad|Ker...	UNKNOWN STEP	2026-10-04T09:32:41.5510768Z Updating files:  74% (571/771)
+make (3, 15, Gul'dan|Hanzo|Hogger|Illidan|Imperius|Jaina|Johanna|Junkrat|Kael'thas|Kel'Thuzad|Ker...	UNKNOWN STEP	2026-10-04T09:32:41.5666124Z Updating files:  75% (579/771)
+make (3, 15, Gul'dan|Hanzo|Hogger|Illidan|Imperius|Jaina|Johanna|Junkrat|Kael'thas|Kel'Thuzad|Ker...	UNKNOWN STEP	2026-10-04T09:32:41.6039884Z Updating files:  76% (586/771)
+make (3, 15, Gul'dan|Hanzo|Hogger|Illidan|Imperius|Jaina|Johanna|Junkrat|Kael'thas|Kel'Thuzad|Ker...	UNKNOWN STEP	2026-10-04T09:32:41.6214447Z Updating files:  77% (594/771)
+make (3, 15, Gul'dan|Hanzo|Hogger|Illidan|Imperius|Jaina|Johanna|Junkrat|Kael'thas|Kel'Thuzad|Ker...	UNKNOWN STEP	2026-10-04T09:32:41.6643754Z Updating files:  78% (602/771)
+make (3, 15, Gul'dan|Hanzo|Hogger|Illidan|Imperius|Jaina|Johanna|Junkrat|Kael'thas|Kel'Thuzad|Ker...	UNKNOWN STEP	2026-10-04T09:32:41.6791941Z Updating files:  79% (610/771)
+make (3, 15, Gul'dan|Hanzo|Hogger|Illidan|Imperius|Jaina|Johanna|Junkrat|Kael'thas|Kel'Thuzad|Ker...	UNKNOWN STEP	2026-10-04T09:32:41.7007732Z Updating files:  80% (617/771)
+make (3, 15, Gul'dan|Hanzo|Hogger|Illidan|Imperius|Jaina|Johanna|Junkrat|Kael'thas|Kel'Thuzad|Ker...	UNKNOWN STEP	2026-10-04T09:32:41.7497110Z Updating files:  81% (625/771)
+make (3, 15, Gul'dan|Hanzo|Hogger|Illidan|Imperius|Jaina|Johanna|Junkrat|Kael'thas|Kel'Thuzad|Ker...	UNKNOWN STEP	2026-10-04T09:32:41.7646212Z Updating files:  82% (633/771)
+make (3, 15, Gul'dan|Hanzo|Hogger|Illidan|Imperius|Jaina|Johanna|Junkrat|Kael'thas|Kel'Thuzad|Ker...	UNKNOWN STEP	2026-10-04T09:32:41.8096745Z Updating files:  83% (640/771)
+make (3, 15, Gul'dan|Hanzo|Hogger|Illidan|Imperius|Jaina|Johanna|Junkrat|Kael'thas|Kel'Thuzad|Ker...	UNKNOWN STEP	2026-10-04T09:32:41.8463261Z Updating files:  84% (648/771)
+make (3, 15, Gul'dan|Hanzo|Hogger|Illidan|Imperius|Jaina|Johanna|Junkrat|Kael'thas|Kel'Thuzad|Ker...	UNKNOWN STEP	2026-10-04T09:32:41.8729616Z Updating files:  85% (656/771)
+make (3, 15, Gul'dan|Hanzo|Hogger|Illidan|Imperius|Jaina|Johanna|Junkrat|Kael'thas|Kel'Thuzad|Ker...	UNKNOWN STEP	2026-10-04T09:32:41.8882400Z Updating files:  86% (664/771)
+make (3, 15, Gul'dan|Hanzo|Hogger|Illidan|Imperius|Jaina|Johanna|Junkrat|Kael'thas|Kel'Thuzad|Ker...	UNKNOWN STEP	2026-10-04T09:32:41.9426073Z Updating files:  87% (671/771)
+make (3, 15, Gul'dan|Hanzo|Hogger|Illidan|Imperius|Jaina|Johanna|Junkrat|Kael'thas|Kel'Thuzad|Ker...	UNKNOWN STEP	2026-10-04T09:32:41.9615208Z Updating files:  88% (679/771)
+make (3, 15, Gul'dan|Hanzo|Hogger|Illidan|Imperius|Jaina|Johanna|Junkrat|Kael'thas|Kel'Thuzad|Ker...	UNKNOWN STEP	2026-10-04T09:32:41.9936747Z Updating files:  89% (687/771)
+make (3, 15, Gul'dan|Hanzo|Hogger|Illidan|Imperius|Jaina|Johanna|Junkrat|Kael'thas|Kel'Thuzad|Ker...	UNKNOWN STEP	2026-10-04T09:32:42.0129763Z Updating files:  90% (694/771)
+make (3, 15, Gul'dan|Hanzo|Hogger|Illidan|Imperius|Jaina|Johanna|Junkrat|Kael'thas|Kel'Thuzad|Ker...	UNKNOWN STEP	2026-10-04T09:32:42.0308159Z Updating files:  91% (702/771)
+make (3, 15, Gul'dan|Hanzo|Hogger|Illidan|Imperius|Jaina|Johanna|Junkrat|Kael'thas|Kel'Thuzad|Ker...	UNKNOWN STEP	2026-10-04T09:32:42.0503478Z Updating files:  92% (710/771)
+make (3, 15, Gul'dan|Hanzo|Hogger|Illidan|Imperius|Jaina|Johanna|Junkrat|Kael'thas|Kel'Thuzad|Ker...	UNKNOWN STEP	2026-10-04T09:32:42.0744970Z Updating files:  93% (718/771)
+make (3, 15, Gul'dan|Hanzo|Hogger|Illidan|Imperius|Jaina|Johanna|Junkrat|Kael'thas|Kel'Thuzad|Ker...	UNKNOWN STEP	2026-10-04T09:32:42.0886702Z Updating files:  94% (725/771)
+make (3, 15, Gul'dan|Hanzo|Hogger|Illidan|Imperius|Jaina|Johanna|Junkrat|Kael'thas|Kel'Thuzad|Ker...	UNKNOWN STEP	2026-10-04T09:32:42.1076510Z Updating files:  95% (733/771)
+make (3, 15, Gul'dan|Hanzo|Hogger|Illidan|Imperius|Jaina|Johanna|Junkrat|Kael'thas|Kel'Thuzad|Ker...	UNKNOWN STEP	2026-10-04T09:32:42.1417360Z Updating files:  96% (741/771)
+make (3, 15, Gul'dan|Hanzo|Hogger|Illidan|Imperius|Jaina|Johanna|Junkrat|Kael'thas|Kel'Thuzad|Ker...	UNKNOWN STEP	2026-10-04T09:32:42.1571232Z Updating files:  97% (748/771)
+make (3, 15, Gul'dan|Hanzo|Hogger|Illidan|Imperius|Jaina|Johanna|Junkrat|Kael'thas|Kel'Thuzad|Ker...	UNKNOWN STEP	2026-10-04T09:32:42.1734568Z Updating files:  98% (756/771)
+make (3, 15, Gul'dan|Hanzo|Hogger|Illidan|Imperius|Jaina|Johanna|Junkrat|Kael'thas|Kel'Thuzad|Ker...	UNKNOWN STEP	2026-10-04T09:32:42.1808970Z Updating files:  99% (764/771)
+make (3, 15, Gul'dan|Hanzo|Hogger|Illidan|Imperius|Jaina|Johanna|Junkrat|Kael'thas|Kel'Thuzad|Ker...	UNKNOWN STEP	2026-10-04T09:32:42.1809735Z Updating files: 100% (771/771)
+make (3, 15, Gul'dan|Hanzo|Hogger|Illidan|Imperius|Jaina|Johanna|Junkrat|Kael'thas|Kel'Thuzad|Ker...	UNKNOWN STEP	2026-10-04T09:32:42.1810936Z Updating files: 100% (771/771), done.
+make (3, 15, Gul'dan|Hanzo|Hogger|Illidan|Imperius|Jaina|Johanna|Junkrat|Kael'thas|Kel'Thuzad|Ker...	UNKNOWN STEP	2026-10-04T09:32:42.1844282Z Switched to a new branch 'chatgpt-stl-builder'
+make (3, 15, Gul'dan|Hanzo|Hogger|Illidan|Imperius|Jaina|Johanna|Junkrat|Kael'thas|Kel'Thuzad|Ker...	UNKNOWN STEP	2026-10-04T09:32:42.1848426Z branch 'chatgpt-stl-builder' set up to track 'origin/chatgpt-stl-builder'.
+make (3, 15, Gul'dan|Hanzo|Hogger|Illidan|Imperius|Jaina|Johanna|Junkrat|Kael'thas|Kel'Thuzad|Ker...	UNKNOWN STEP	2026-10-04T09:32:42.1984772Z ##[endgroup]
+make (3, 15, Gul'dan|Hanzo|Hogger|Illidan|Imperius|Jaina|Johanna|Junkrat|Kael'thas|Kel'Thuzad|Ker...	UNKNOWN STEP	2026-10-04T09:32:42.2056338Z [command]/usr/bin/git log -1 --format=%H
+make (3, 15, Gul'dan|Hanzo|Hogger|Illidan|Imperius|Jaina|Johanna|Junkrat|Kael'thas|Kel'Thuzad|Ker...	UNKNOWN STEP	2026-10-04T09:32:42.2076521Z 559933ffbf6a9fc142e663ce49a8b3f2791a7b47
+make (3, 15, Gul'dan|Hanzo|Hogger|Illidan|Imperius|Jaina|Johanna|Junkrat|Kael'thas|Kel'Thuzad|Ker...	UNKNOWN STEP	2026-10-04T09:32:42.2326263Z ##[group]Run set -euo pipefail
+make (3, 15, Gul'dan|Hanzo|Hogger|Illidan|Imperius|Jaina|Johanna|Junkrat|Kael'thas|Kel'Thuzad|Ker...	UNKNOWN STEP	2026-10-04T09:32:42.2326721Z ^[[36;1mset -euo pipefail^[[0m
+make (3, 15, Gul'dan|Hanzo|Hogger|Illidan|Imperius|Jaina|Johanna|Junkrat|Kael'thas|Kel'Thuzad|Ker...	UNKNOWN STEP	2026-10-04T09:32:42.2327150Z ^[[36;1mcp tools/hots_stl/runtime_extracted/build_hots_stls.py "$RUNNER_TEMP/b.py"^[[0m
+make (3, 15, Gul'dan|Hanzo|Hogger|Illidan|Imperius|Jaina|Johanna|Junkrat|Kael'thas|Kel'Thuzad|Ker...	UNKNOWN STEP	2026-10-04T09:32:42.2327677Z ^[[36;1mpython tools/hots_stl/runtime_patch_v2.py "$RUNNER_TEMP/b.py"^[[0m
+make (3, 15, Gul'dan|Hanzo|Hogger|Illidan|Imperius|Jaina|Johanna|Junkrat|Kael'thas|Kel'Thuzad|Ker...	UNKNOWN STEP	2026-10-04T09:32:42.2328161Z ^[[36;1mpython ci/patch_builder_external_validation.py "$RUNNER_TEMP/b.py"^[[0m
+make (3, 15, Gul'dan|Hanzo|Hogger|Illidan|Imperius|Jaina|Johanna|Junkrat|Kael'thas|Kel'Thuzad|Ker...	UNKNOWN STEP	2026-10-04T09:32:42.2328579Z ^[[36;1mpython - "$RUNNER_TEMP/b.py" <<'PY'^[[0m
+make (3, 15, Gul'dan|Hanzo|Hogger|Illidan|Imperius|Jaina|Johanna|Junkrat|Kael'thas|Kel'Thuzad|Ker...	UNKNOWN STEP	2026-10-04T09:32:42.2328872Z ^[[36;1mfrom pathlib import Path^[[0m
+make (3, 15, Gul'dan|Hanzo|Hogger|Illidan|Imperius|Jaina|Johanna|Junkrat|Kael'thas|Kel'Thuzad|Ker...	UNKNOWN STEP	2026-10-04T09:32:42.2329124Z ^[[36;1mimport sys^[[0m
+make (3, 15, Gul'dan|Hanzo|Hogger|Illidan|Imperius|Jaina|Johanna|Junkrat|Kael'thas|Kel'Thuzad|Ker...	UNKNOWN STEP	2026-10-04T09:32:42.2329454Z ^[[36;1mp=Path(sys.argv[1]); s=p.read_text(); a='    "Whitemane": ("whitemane",),\n'^[[0m
+make (3, 15, Gul'dan|Hanzo|Hogger|Illidan|Imperius|Jaina|Johanna|Junkrat|Kael'thas|Kel'Thuzad|Ker...	UNKNOWN STEP	2026-10-04T09:32:42.2329926Z ^[[36;1mif a not in s: raise SystemExit('roster anchor missing')^[[0m
+make (3, 15, Gul'dan|Hanzo|Hogger|Illidan|Imperius|Jaina|Johanna|Junkrat|Kael'thas|Kel'Thuzad|Ker...	UNKNOWN STEP	2026-10-04T09:32:42.2330372Z ^[[36;1mp.write_text(s.replace(a,a+'    "Xal\'atath": ("xalatath",),\n',1))^[[0m
+make (3, 15, Gul'dan|Hanzo|Hogger|Illidan|Imperius|Jaina|Johanna|Junkrat|Kael'thas|Kel'Thuzad|Ker...	UNKNOWN STEP	2026-10-04T09:32:42.2330760Z ^[[36;1mPY^[[0m
+make (3, 15, Gul'dan|Hanzo|Hogger|Illidan|Imperius|Jaina|Johanna|Junkrat|Kael'thas|Kel'Thuzad|Ker...	UNKNOWN STEP	2026-10-04T09:32:42.2330993Z ^[[36;1msudo apt-get update -qq^[[0m
+make (3, 15, Gul'dan|Hanzo|Hogger|Illidan|Imperius|Jaina|Johanna|Junkrat|Kael'thas|Kel'Thuzad|Ker...	UNKNOWN STEP	2026-10-04T09:32:42.2331707Z ^[[36;1msudo apt-get install -y --no-install-recommends ca-certificates curl git xz-utils libx11-6 libxi6 libxrender1 libxfixes3 libxkbcommon0 libsm6 libice6 libgl1 libegl1^[[0m
+make (3, 15, Gul'dan|Hanzo|Hogger|Illidan|Imperius|Jaina|Johanna|Junkrat|Kael'thas|Kel'Thuzad|Ker...	UNKNOWN STEP	2026-10-04T09:32:42.2332712Z ^[[36;1mgit clone --depth 1 https://github.com/JimmyTheCool/HOTS-02.git "$RUNNER_TEMP/H2"^[[0m
+make (3, 15, Gul'dan|Hanzo|Hogger|Illidan|Imperius|Jaina|Johanna|Junkrat|Kael'thas|Kel'Thuzad|Ker...	UNKNOWN STEP	2026-10-04T09:32:42.2333156Z ^[[36;1mcd "$RUNNER_TEMP"^[[0m
+make (3, 15, Gul'dan|Hanzo|Hogger|Illidan|Imperius|Jaina|Johanna|Junkrat|Kael'thas|Kel'Thuzad|Ker...	UNKNOWN STEP	2026-10-04T09:32:42.2333681Z ^[[36;1mcurl -fL --retry 5 "https://download.blender.org/release/Blender3.6/blender-${BV}-linux-x64.tar.xz" -o b.tar.xz^[[0m
+make (3, 15, Gul'dan|Hanzo|Hogger|Illidan|Imperius|Jaina|Johanna|Junkrat|Kael'thas|Kel'Thuzad|Ker...	UNKNOWN STEP	2026-10-04T09:32:42.2334220Z ^[[36;1mtar -xf b.tar.xz^[[0m
+make (3, 15, Gul'dan|Hanzo|Hogger|Illidan|Imperius|Jaina|Johanna|Junkrat|Kael'thas|Kel'Thuzad|Ker...	UNKNOWN STEP	2026-10-04T09:32:42.2334540Z ^[[36;1mgit clone -q https://github.com/SC2Mapster/m3addon.git m3^[[0m
+make (3, 15, Gul'dan|Hanzo|Hogger|Illidan|Imperius|Jaina|Johanna|Junkrat|Kael'thas|Kel'Thuzad|Ker...	UNKNOWN STEP	2026-10-04T09:32:42.2334903Z ^[[36;1mgit -C m3 checkout -q "$M3"^[[0m
+make (3, 15, Gul'dan|Hanzo|Hogger|Illidan|Imperius|Jaina|Johanna|Junkrat|Kael'thas|Kel'Thuzad|Ker...	UNKNOWN STEP	2026-10-04T09:32:42.2335225Z ^[[36;1mmkdir -p "$HOME/.config/blender/3.6/scripts/addons"^[[0m
+make (3, 15, Gul'dan|Hanzo|Hogger|Illidan|Imperius|Jaina|Johanna|Junkrat|Kael'thas|Kel'Thuzad|Ker...	UNKNOWN STEP	2026-10-04T09:32:42.2335842Z ^[[36;1mln -s "$RUNNER_TEMP/m3" "$HOME/.config/blender/3.6/scripts/addons/m3addon"^[[0m
+make (3, 15, Gul'dan|Hanzo|Hogger|Illidan|Imperius|Jaina|Johanna|Junkrat|Kael'thas|Kel'Thuzad|Ker...	UNKNOWN STEP	2026-10-04T09:32:42.2336285Z ^[[36;1mO="$RUNNER_TEMP/o"; mkdir -p "$O/00_Reports"^[[0m
+make (3, 15, Gul'dan|Hanzo|Hogger|Illidan|Imperius|Jaina|Johanna|Junkrat|Kael'thas|Kel'Thuzad|Ker...	UNKNOWN STEP	2026-10-04T09:32:42.2337070Z ^[[36;1mIFS='|' read -ra A <<< 'Gul'dan|Hanzo|Hogger|Illidan|Imperius|Jaina|Johanna|Junkrat|Kael'thas|Kel'Thuzad|Kerrigan|Kharazim|Leoric|Li Li|Li-Ming'; X=(); for v in "${A[@]}"; do X+=(--only "$v"); done^[[0m
+make (3, 15, Gul'dan|Hanzo|Hogger|Illidan|Imperius|Jaina|Johanna|Junkrat|Kael'thas|Kel'Thuzad|Ker...	UNKNOWN STEP	2026-10-04T09:32:42.2338873Z ^[[36;1m"$RUNNER_TEMP/blender-${BV}-linux-x64/blender" --background --factory-startup --python "$RUNNER_TEMP/b.py" -- --source "$RUNNER_TEMP/H2" --source "$GITHUB_WORKSPACE" --output "$O" --target-height-mm 110 --base-height-mm 4 --base-margin-mm 4 --voxel-mm 0.55 --thin-part-mm 0.72 --max-triangles 450000 --skip-animation "${X[@]}" 2>&1 | tee "$O/00_Reports/build.log"^[[0m
+make (3, 15, Gul'dan|Hanzo|Hogger|Illidan|Imperius|Jaina|Johanna|Junkrat|Kael'thas|Kel'Thuzad|Ker...	UNKNOWN STEP	2026-10-04T09:32:42.2340358Z ^[[36;1mN=$(find "$O/02_Print_Ready_Watertight" -name '*.stl' -type f | wc -l); test "$N" -eq '15'^[[0m
+make (3, 15, Gul'dan|Hanzo|Hogger|Illidan|Imperius|Jaina|Johanna|Junkrat|Kael'thas|Kel'Thuzad|Ker...	UNKNOWN STEP	2026-10-04T09:32:42.2340891Z ^[[36;1mmkdir -p "$RUNNER_TEMP/chunk/STL" "$RUNNER_TEMP/chunk/Reports"^[[0m
+make (3, 15, Gul'dan|Hanzo|Hogger|Illidan|Imperius|Jaina|Johanna|Junkrat|Kael'thas|Kel'Thuzad|Ker...	UNKNOWN STEP	2026-10-04T09:32:42.2341358Z ^[[36;1mcp "$O"/02_Print_Ready_Watertight/*.stl "$RUNNER_TEMP/chunk/STL/"^[[0m
+make (3, 15, Gul'dan|Hanzo|Hogger|Illidan|Imperius|Jaina|Johanna|Junkrat|Kael'thas|Kel'Thuzad|Ker...	UNKNOWN STEP	2026-10-04T09:32:42.2341771Z ^[[36;1mcp "$O"/00_Reports/* "$RUNNER_TEMP/chunk/Reports/"^[[0m
+make (3, 15, Gul'dan|Hanzo|Hogger|Illidan|Imperius|Jaina|Johanna|Junkrat|Kael'thas|Kel'Thuzad|Ker...	UNKNOWN STEP	2026-10-04T09:32:42.2688012Z shell: /usr/bin/bash --noprofile --norc -e -o pipefail {0}
+make (3, 15, Gul'dan|Hanzo|Hogger|Illidan|Imperius|Jaina|Johanna|Junkrat|Kael'thas|Kel'Thuzad|Ker...	UNKNOWN STEP	2026-10-04T09:32:42.2688393Z env:
+make (3, 15, Gul'dan|Hanzo|Hogger|Illidan|Imperius|Jaina|Johanna|Junkrat|Kael'thas|Kel'Thuzad|Ker...	UNKNOWN STEP	2026-10-04T09:32:42.2688603Z   BV: 3.6.23
+make (3, 15, Gul'dan|Hanzo|Hogger|Illidan|Imperius|Jaina|Johanna|Junkrat|Kael'thas|Kel'Thuzad|Ker...	UNKNOWN STEP	2026-10-04T09:32:42.2688833Z   M3: 58935005c4465a219a740f6b740253533eda773f
+make (3, 15, Gul'dan|Hanzo|Hogger|Illidan|Imperius|Jaina|Johanna|Junkrat|Kael'thas|Kel'Thuzad|Ker...	UNKNOWN STEP	2026-10-04T09:32:42.2689116Z ##[endgroup]
+make (3, 15, Gul'dan|Hanzo|Hogger|Illidan|Imperius|Jaina|Johanna|Junkrat|Kael'thas|Kel'Thuzad|Ker...	UNKNOWN STEP	2026-10-04T09:32:42.3064206Z Patched /home/runner/work/_temp/b.py to HOTS STL Builder v2.1.0
+make (3, 15, Gul'dan|Hanzo|Hogger|Illidan|Imperius|Jaina|Johanna|Junkrat|Kael'thas|Kel'Thuzad|Ker...	UNKNOWN STEP	2026-10-04T09:32:42.3293849Z Patched builder to defer geometric watertightness to independent trimesh validation
+make (3, 15, Gul'dan|Hanzo|Hogger|Illidan|Imperius|Jaina|Johanna|Junkrat|Kael'thas|Kel'Thuzad|Ker...	UNKNOWN STEP	2026-10-04T09:32:50.8311889Z Reading package lists...
+make (3, 15, Gul'dan|Hanzo|Hogger|Illidan|Imperius|Jaina|Johanna|Junkrat|Kael'thas|Kel'Thuzad|Ker...	UNKNOWN STEP	2026-10-04T09:32:51.1168148Z Building dependency tree...
+make (3, 15, Gul'dan|Hanzo|Hogger|Illidan|Imperius|Jaina|Johanna|Junkrat|Kael'thas|Kel'Thuzad|Ker...	UNKNOWN STEP	2026-10-04T09:32:51.1179837Z Reading state information...
+make (3, 15, Gul'dan|Hanzo|Hogger|Illidan|Imperius|Jaina|Johanna|Junkrat|Kael'thas|Kel'Thuzad|Ker...	UNKNOWN STEP	2026-10-04T09:32:51.3295938Z libgl1 is already the newest version (1.4.0-1).
+make (3, 15, Gul'dan|Hanzo|Hogger|Illidan|Imperius|Jaina|Johanna|Junkrat|Kael'thas|Kel'Thuzad|Ker...	UNKNOWN STEP	2026-10-04T09:32:51.3296489Z libgl1 set to manually installed.
+make (3, 15, Gul'dan|Hanzo|Hogger|Illidan|Imperius|Jaina|Johanna|Junkrat|Kael'thas|Kel'Thuzad|Ker...	UNKNOWN STEP	2026-10-04T09:32:51.3297518Z libice6 is already the newest version (2:1.0.10-1build2).
+make (3, 15, Gul'dan|Hanzo|Hogger|Illidan|Imperius|Jaina|Johanna|Junkrat|Kael'thas|Kel'Thuzad|Ker...	UNKNOWN STEP	2026-10-04T09:32:51.3298222Z libice6 set to manually installed.
+make (3, 15, Gul'dan|Hanzo|Hogger|Illidan|Imperius|Jaina|Johanna|Junkrat|Kael'thas|Kel'Thuzad|Ker...	UNKNOWN STEP	2026-10-04T09:32:51.3298605Z libsm6 is already the newest version (2:1.2.3-1build2).
+make (3, 15, Gul'dan|Hanzo|Hogger|Illidan|Imperius|Jaina|Johanna|Junkrat|Kael'thas|Kel'Thuzad|Ker...	UNKNOWN STEP	2026-10-04T09:32:51.3298986Z libsm6 set to manually installed.
+make (3, 15, Gul'dan|Hanzo|Hogger|Illidan|Imperius|Jaina|Johanna|Junkrat|Kael'thas|Kel'Thuzad|Ker...	UNKNOWN STEP	2026-10-04T09:32:51.3299333Z libxfixes3 is already the newest version (1:6.0.0-1).
+make (3, 15, Gul'dan|Hanzo|Hogger|Illidan|Imperius|Jaina|Johanna|Junkrat|Kael'thas|Kel'Thuzad|Ker...	UNKNOWN STEP	2026-10-04T09:32:51.3299721Z libxfixes3 set to manually installed.
+make (3, 15, Gul'dan|Hanzo|Hogger|Illidan|Imperius|Jaina|Johanna|Junkrat|Kael'thas|Kel'Thuzad|Ker...	UNKNOWN STEP	2026-10-04T09:32:51.3300081Z libxi6 is already the newest version (2:1.8-1build1).
+make (3, 15, Gul'dan|Hanzo|Hogger|Illidan|Imperius|Jaina|Johanna|Junkrat|Kael'thas|Kel'Thuzad|Ker...	UNKNOWN STEP	2026-10-04T09:32:51.3300447Z libxi6 set to manually installed.
+make (3, 15, Gul'dan|Hanzo|Hogger|Illidan|Imperius|Jaina|Johanna|Junkrat|Kael'thas|Kel'Thuzad|Ker...	UNKNOWN STEP	2026-10-04T09:32:51.3300800Z libxkbcommon0 is already the newest version (1.4.0-1).
+make (3, 15, Gul'dan|Hanzo|Hogger|Illidan|Imperius|Jaina|Johanna|Junkrat|Kael'thas|Kel'Thuzad|Ker...	UNKNOWN STEP	2026-10-04T09:32:51.3301394Z libxkbcommon0 set to manually installed.
+make (3, 15, Gul'dan|Hanzo|Hogger|Illidan|Imperius|Jaina|Johanna|Junkrat|Kael'thas|Kel'Thuzad|Ker...	UNKNOWN STEP	2026-10-04T09:32:51.3301910Z libxrender1 is already the newest version (1:0.9.10-1build4).
+make (3, 15, Gul'dan|Hanzo|Hogger|Illidan|Imperius|Jaina|Johanna|Junkrat|Kael'thas|Kel'Thuzad|Ker...	UNKNOWN STEP	2026-10-04T09:32:51.3302324Z libxrender1 set to manually installed.
+make (3, 15, Gul'dan|Hanzo|Hogger|Illidan|Imperius|Jaina|Johanna|Junkrat|Kael'thas|Kel'Thuzad|Ker...	UNKNOWN STEP	2026-10-04T09:32:51.3302737Z ca-certificates is already the newest version (20260601~22.04.1).
+make (3, 15, Gul'dan|Hanzo|Hogger|Illidan|Imperius|Jaina|Johanna|Junkrat|Kael'thas|Kel'Thuzad|Ker...	UNKNOWN STEP	2026-10-04T09:32:51.3303220Z curl is already the newest version (7.81.0-1ubuntu1.29).
+make (3, 15, Gul'dan|Hanzo|Hogger|Illidan|Imperius|Jaina|Johanna|Junkrat|Kael'thas|Kel'Thuzad|Ker...	UNKNOWN STEP	2026-10-04T09:32:51.3303690Z libx11-6 is already the newest version (2:1.7.5-1ubuntu0.3).
+make (3, 15, Gul'dan|Hanzo|Hogger|Illidan|Imperius|Jaina|Johanna|Junkrat|Kael'thas|Kel'Thuzad|Ker...	UNKNOWN STEP	2026-10-04T09:32:51.3304090Z libx11-6 set to manually installed.
+make (3, 15, Gul'dan|Hanzo|Hogger|Illidan|Imperius|Jaina|Johanna|Junkrat|Kael'thas|Kel'Thuzad|Ker...	UNKNOWN STEP	2026-10-04T09:32:51.3304463Z xz-utils is already the newest version (5.2.5-2ubuntu1.1).
+make (3, 15, Gul'dan|Hanzo|Hogger|Illidan|Imperius|Jaina|Johanna|Junkrat|Kael'thas|Kel'Thuzad|Ker...	UNKNOWN STEP	2026-10-04T09:32:51.3383550Z git is already the newest version (1:2.55.0-0ppa1~ubuntu22.04.2).
+make (3, 15, Gul'dan|Hanzo|Hogger|Illidan|Imperius|Jaina|Johanna|Junkrat|Kael'thas|Kel'Thuzad|Ker...	UNKNOWN STEP	2026-10-04T09:32:51.3384258Z The following additional packages will be installed:
+make (3, 15, Gul'dan|Hanzo|Hogger|Illidan|Imperius|Jaina|Johanna|Junkrat|Kael'thas|Kel'Thuzad|Ker...	UNKNOWN STEP	2026-10-04T09:32:51.3384892Z   libegl-mesa0
+make (3, 15, Gul'dan|Hanzo|Hogger|Illidan|Imperius|Jaina|Johanna|Junkrat|Kael'thas|Kel'Thuzad|Ker...	UNKNOWN STEP	2026-10-04T09:32:51.3544111Z The following NEW packages will be installed:
+make (3, 15, Gul'dan|Hanzo|Hogger|Illidan|Imperius|Jaina|Johanna|Junkrat|Kael'thas|Kel'Thuzad|Ker...	UNKNOWN STEP	2026-10-04T09:32:51.3550976Z   libegl-mesa0 libegl1
+make (3, 15, Gul'dan|Hanzo|Hogger|Illidan|Imperius|Jaina|Johanna|Junkrat|Kael'thas|Kel'Thuzad|Ker...	UNKNOWN STEP	2026-10-04T09:32:51.3745822Z 0 upgraded, 2 newly installed, 0 to remove and 20 not upgraded.
+make (3, 15, Gul'dan|Hanzo|Hogger|Illidan|Imperius|Jaina|Johanna|Junkrat|Kael'thas|Kel'Thuzad|Ker...	UNKNOWN STEP	2026-10-04T09:32:51.3746406Z Need to get 147 kB of archives.
+make (3, 15, Gul'dan|Hanzo|Hogger|Illidan|Imperius|Jaina|Johanna|Junkrat|Kael'thas|Kel'Thuzad|Ker...	UNKNOWN STEP	2026-10-04T09:32:51.3746766Z After this operation, 484 kB of additional disk space will be used.
+make (3, 15, Gul'dan|Hanzo|Hogger|Illidan|Imperius|Jaina|Johanna|Junkrat|Kael'thas|Kel'Thuzad|Ker...	UNKNOWN STEP	2026-10-04T09:32:51.3747193Z Get:1 file:/etc/apt/apt-mirrors.txt Mirrorlist [144 B]
+make (3, 15, Gul'dan|Hanzo|Hogger|Illidan|Imperius|Jaina|Johanna|Junkrat|Kael'thas|Kel'Thuzad|Ker...	UNKNOWN STEP	2026-10-04T09:32:51.5370614Z Get:2 http://azure.archive.ubuntu.com/ubuntu jammy-updates/main amd64 libegl-mesa0 amd64 23.2.1-1ubuntu3.1~22.04.4 [118 kB]
+make (3, 15, Gul'dan|Hanzo|Hogger|Illidan|Imperius|Jaina|Johanna|Junkrat|Kael'thas|Kel'Thuzad|Ker...	UNKNOWN STEP	2026-10-04T09:32:51.8567709Z Get:3 http://azure.archive.ubuntu.com/ubuntu jammy/main amd64 libegl1 amd64 1.4.0-1 [28.6 kB]
+make (3, 15, Gul'dan|Hanzo|Hogger|Illidan|Imperius|Jaina|Johanna|Junkrat|Kael'thas|Kel'Thuzad|Ker...	UNKNOWN STEP	2026-10-04T09:32:52.2228160Z Fetched 147 kB in 1s (278 kB/s)
+make (3, 15, Gul'dan|Hanzo|Hogger|Illidan|Imperius|Jaina|Johanna|Junkrat|Kael'thas|Kel'Thuzad|Ker...	UNKNOWN STEP	2026-10-04T09:32:52.2558463Z Selecting previously unselected package libegl-mesa0:amd64.
+make (3, 15, Gul'dan|Hanzo|Hogger|Illidan|Imperius|Jaina|Johanna|Junkrat|Kael'thas|Kel'Thuzad|Ker...	UNKNOWN STEP	2026-10-04T09:32:52.2926120Z (Reading database ... 
+make (3, 15, Gul'dan|Hanzo|Hogger|Illidan|Imperius|Jaina|Johanna|Junkrat|Kael'thas|Kel'Thuzad|Ker...	UNKNOWN STEP	2026-10-04T09:32:52.2926581Z (Reading database ... 5%
+make (3, 15, Gul'dan|Hanzo|Hogger|Illidan|Imperius|Jaina|Johanna|Junkrat|Kael'thas|Kel'Thuzad|Ker...	UNKNOWN STEP	2026-10-04T09:32:52.2926992Z (Reading database ... 10%
+make (3, 15, Gul'dan|Hanzo|Hogger|Illidan|Imperius|Jaina|Johanna|Junkrat|Kael'thas|Kel'Thuzad|Ker...	UNKNOWN STEP	2026-10-04T09:32:52.2927387Z (Reading database ... 15%
+make (3, 15, Gul'dan|Hanzo|Hogger|Illidan|Imperius|Jaina|Johanna|Junkrat|Kael'thas|Kel'Thuzad|Ker...	UNKNOWN STEP	2026-10-04T09:32:52.2927779Z (Reading database ... 20%
+make (3, 15, Gul'dan|Hanzo|Hogger|Illidan|Imperius|Jaina|Johanna|Junkrat|Kael'thas|Kel'Thuzad|Ker...	UNKNOWN STEP	2026-10-04T09:32:52.2928168Z (Reading database ... 25%
+make (3, 15, Gul'dan|Hanzo|Hogger|Illidan|Imperius|Jaina|Johanna|Junkrat|Kael'thas|Kel'Thuzad|Ker...	UNKNOWN STEP	2026-10-04T09:32:52.2928471Z (Reading database ... 30%
+make (3, 15, Gul'dan|Hanzo|Hogger|Illidan|Imperius|Jaina|Johanna|Junkrat|Kael'thas|Kel'Thuzad|Ker...	UNKNOWN STEP	2026-10-04T09:32:52.2928716Z (Reading database ... 35%
+make (3, 15, Gul'dan|Hanzo|Hogger|Illidan|Imperius|Jaina|Johanna|Junkrat|Kael'thas|Kel'Thuzad|Ker...	UNKNOWN STEP	2026-10-04T09:32:52.2929333Z (Reading database ... 40%
+make (3, 15, Gul'dan|Hanzo|Hogger|Illidan|Imperius|Jaina|Johanna|Junkrat|Kael'thas|Kel'Thuzad|Ker...	UNKNOWN STEP	2026-10-04T09:32:52.2929744Z (Reading database ... 45%
+make (3, 15, Gul'dan|Hanzo|Hogger|Illidan|Imperius|Jaina|Johanna|Junkrat|Kael'thas|Kel'Thuzad|Ker...	UNKNOWN STEP	2026-10-04T09:32:52.2930053Z (Reading database ... 50%
+make (3, 15, Gul'dan|Hanzo|Hogger|Illidan|Imperius|Jaina|Johanna|Junkrat|Kael'thas|Kel'Thuzad|Ker...	UNKNOWN STEP	2026-10-04T09:32:52.3656678Z (Reading database ... 55%
+make (3, 15, Gul'dan|Hanzo|Hogger|Illidan|Imperius|Jaina|Johanna|Junkrat|Kael'thas|Kel'Thuzad|Ker...	UNKNOWN STEP	2026-10-04T09:32:52.5344986Z (Reading database ... 60%
+make (3, 15, Gul'dan|Hanzo|Hogger|Illidan|Imperius|Jaina|Johanna|Junkrat|Kael'thas|Kel'Thuzad|Ker...	UNKNOWN STEP	2026-10-04T09:32:52.7162849Z (Reading database ... 65%
+make (3, 15, Gul'dan|Hanzo|Hogger|Illidan|Imperius|Jaina|Johanna|Junkrat|Kael'thas|Kel'Thuzad|Ker...	UNKNOWN STEP	2026-10-04T09:32:52.8993450Z (Reading database ... 70%
+make (3, 15, Gul'dan|Hanzo|Hogger|Illidan|Imperius|Jaina|Johanna|Junkrat|Kael'thas|Kel'Thuzad|Ker...	UNKNOWN STEP	2026-10-04T09:32:53.0191958Z (Reading database ... 75%
+make (3, 15, Gul'dan|Hanzo|Hogger|Illidan|Imperius|Jaina|Johanna|Junkrat|Kael'thas|Kel'Thuzad|Ker...	UNKNOWN STEP	2026-10-04T09:32:53.1829153Z (Reading database ... 80%
+make (3, 15, Gul'dan|Hanzo|Hogger|Illidan|Imperius|Jaina|Johanna|Junkrat|Kael'thas|Kel'Thuzad|Ker...	UNKNOWN STEP	2026-10-04T09:32:53.3503751Z (Reading database ... 85%
+make (3, 15, Gul'dan|Hanzo|Hogger|Illidan|Imperius|Jaina|Johanna|Junkrat|Kael'thas|Kel'Thuzad|Ker...	UNKNOWN STEP	2026-10-04T09:32:53.5794891Z (Reading database ... 90%
+make (3, 15, Gul'dan|Hanzo|Hogger|Illidan|Imperius|Jaina|Johanna|Junkrat|Kael'thas|Kel'Thuzad|Ker...	UNKNOWN STEP	2026-10-04T09:32:53.7933086Z (Reading database ... 95%
+make (3, 15, Gul'dan|Hanzo|Hogger|Illidan|Imperius|Jaina|Johanna|Junkrat|Kael'thas|Kel'Thuzad|Ker...	UNKNOWN STEP	2026-10-04T09:32:53.7933540Z (Reading database ... 100%
+make (3, 15, Gul'dan|Hanzo|Hogger|Illidan|Imperius|Jaina|Johanna|Junkrat|Kael'thas|Kel'Thuzad|Ker...	UNKNOWN STEP	2026-10-04T09:32:53.7934067Z (Reading database ... 260411 files and directories currently installed.)
+make (3, 15, Gul'dan|Hanzo|Hogger|Illidan|Imperius|Jaina|Johanna|Junkrat|Kael'thas|Kel'Thuzad|Ker...	UNKNOWN STEP	2026-10-04T09:32:53.7988229Z Preparing to unpack .../libegl-mesa0_23.2.1-1ubuntu3.1~22.04.4_amd64.deb ...
+make (3, 15, Gul'dan|Hanzo|Hogger|Illidan|Imperius|Jaina|Johanna|Junkrat|Kael'thas|Kel'Thuzad|Ker...	UNKNOWN STEP	2026-10-04T09:32:53.8029158Z Unpacking libegl-mesa0:amd64 (23.2.1-1ubuntu3.1~22.04.4) ...
+make (3, 15, Gul'dan|Hanzo|Hogger|Illidan|Imperius|Jaina|Johanna|Junkrat|Kael'thas|Kel'Thuzad|Ker...	UNKNOWN STEP	2026-10-04T09:32:53.8304901Z Selecting previously unselected package libegl1:amd64.
+make (3, 15, Gul'dan|Hanzo|Hogger|Illidan|Imperius|Jaina|Johanna|Junkrat|Kael'thas|Kel'Thuzad|Ker...	UNKNOWN STEP	2026-10-04T09:32:53.8509287Z Preparing to unpack .../libegl1_1.4.0-1_amd64.deb ...
+make (3, 15, Gul'dan|Hanzo|Hogger|Illidan|Imperius|Jaina|Johanna|Junkrat|Kael'thas|Kel'Thuzad|Ker...	UNKNOWN STEP	2026-10-04T09:32:53.8518384Z Unpacking libegl1:amd64 (1.4.0-1) ...
+make (3, 15, Gul'dan|Hanzo|Hogger|Illidan|Imperius|Jaina|Johanna|Junkrat|Kael'thas|Kel'Thuzad|Ker...	UNKNOWN STEP	2026-10-04T09:32:53.9042274Z Setting up libegl-mesa0:amd64 (23.2.1-1ubuntu3.1~22.04.4) ...
+make (3, 15, Gul'dan|Hanzo|Hogger|Illidan|Imperius|Jaina|Johanna|Junkrat|Kael'thas|Kel'Thuzad|Ker...	UNKNOWN STEP	2026-10-04T09:32:53.9067778Z Setting up libegl1:amd64 (1.4.0-1) ...
+make (3, 15, Gul'dan|Hanzo|Hogger|Illidan|Imperius|Jaina|Johanna|Junkrat|Kael'thas|Kel'Thuzad|Ker...	UNKNOWN STEP	2026-10-04T09:32:53.9096838Z Processing triggers for libc-bin (2.35-0ubuntu3.15) ...
+make (3, 15, Gul'dan|Hanzo|Hogger|Illidan|Imperius|Jaina|Johanna|Junkrat|Kael'thas|Kel'Thuzad|Ker...	UNKNOWN STEP	2026-10-04T09:32:54.5883748Z 
+make (3, 15, Gul'dan|Hanzo|Hogger|Illidan|Imperius|Jaina|Johanna|Junkrat|Kael'thas|Kel'Thuzad|Ker...	UNKNOWN STEP	2026-10-04T09:32:54.5884437Z Running kernel seems to be up-to-date.
+make (3, 15, Gul'dan|Hanzo|Hogger|Illidan|Imperius|Jaina|Johanna|Junkrat|Kael'thas|Kel'Thuzad|Ker...	UNKNOWN STEP	2026-10-04T09:32:54.5884886Z 
+make (3, 15, Gul'dan|Hanzo|Hogger|Illidan|Imperius|Jaina|Johanna|Junkrat|Kael'thas|Kel'Thuzad|Ker...	UNKNOWN STEP	2026-10-04T09:32:54.5885067Z No services need to be restarted.
+make (3, 15, Gul'dan|Hanzo|Hogger|Illidan|Imperius|Jaina|Johanna|Junkrat|Kael'thas|Kel'Thuzad|Ker...	UNKNOWN STEP	2026-10-04T09:32:54.5885620Z 
+make (3, 15, Gul'dan|Hanzo|Hogger|Illidan|Imperius|Jaina|Johanna|Junkrat|Kael'thas|Kel'Thuzad|Ker...	UNKNOWN STEP	2026-10-04T09:32:54.5885834Z No containers need to be restarted.
+make (3, 15, Gul'dan|Hanzo|Hogger|Illidan|Imperius|Jaina|Johanna|Junkrat|Kael'thas|Kel'Thuzad|Ker...	UNKNOWN STEP	2026-10-04T09:32:54.5886177Z 
+make (3, 15, Gul'dan|Hanzo|Hogger|Illidan|Imperius|Jaina|Johanna|Junkrat|Kael'thas|Kel'Thuzad|Ker...	UNKNOWN STEP	2026-10-04T09:32:54.5886406Z No user sessions are running outdated binaries.
+make (3, 15, Gul'dan|Hanzo|Hogger|Illidan|Imperius|Jaina|Johanna|Junkrat|Kael'thas|Kel'Thuzad|Ker...	UNKNOWN STEP	2026-10-04T09:32:54.5886792Z 
+make (3, 15, Gul'dan|Hanzo|Hogger|Illidan|Imperius|Jaina|Johanna|Junkrat|Kael'thas|Kel'Thuzad|Ker...	UNKNOWN STEP	2026-10-04T09:32:54.5887047Z No VM guests are running outdated hypervisor (qemu) binaries on this host.
+make (3, 15, Gul'dan|Hanzo|Hogger|Illidan|Imperius|Jaina|Johanna|Junkrat|Kael'thas|Kel'Thuzad|Ker...	UNKNOWN STEP	2026-10-04T09:32:56.5104072Z Cloning into '/home/runner/work/_temp/H2'...
+make (3, 15, Gul'dan|Hanzo|Hogger|Illidan|Imperius|Jaina|Johanna|Junkrat|Kael'thas|Kel'Thuzad|Ker...	UNKNOWN STEP	2026-10-04T09:33:11.2154269Z Updating files:  46% (276/600)
+make (3, 15, Gul'dan|Hanzo|Hogger|Illidan|Imperius|Jaina|Johanna|Junkrat|Kael'thas|Kel'Thuzad|Ker...	UNKNOWN STEP	2026-10-04T09:33:11.2405842Z Updating files:  47% (282/600)
+make (3, 15, Gul'dan|Hanzo|Hogger|Illidan|Imperius|Jaina|Johanna|Junkrat|Kael'thas|Kel'Thuzad|Ker...	UNKNOWN STEP	2026-10-04T09:33:11.2523417Z Updating files:  48% (288/600)
+make (3, 15, Gul'dan|Hanzo|Hogger|Illidan|Imperius|Jaina|Johanna|Junkrat|Kael'thas|Kel'Thuzad|Ker...	UNKNOWN STEP	2026-10-04T09:33:11.2726523Z Updating files:  49% (294/600)
+make (3, 15, Gul'dan|Hanzo|Hogger|Illidan|Imperius|Jaina|Johanna|Junkrat|Kael'thas|Kel'Thuzad|Ker...	UNKNOWN STEP	2026-10-04T09:33:11.2879024Z Updating files:  50% (300/600)
+make (3, 15, Gul'dan|Hanzo|Hogger|Illidan|Imperius|Jaina|Johanna|Junkrat|Kael'thas|Kel'Thuzad|Ker...	UNKNOWN STEP	2026-10-04T09:33:11.3003915Z Updating files:  51% (306/600)
+make (3, 15, Gul'dan|Hanzo|Hogger|Illidan|Imperius|Jaina|Johanna|Junkrat|Kael'thas|Kel'Thuzad|Ker...	UNKNOWN STEP	2026-10-04T09:33:11.3143794Z Updating files:  52% (312/600)
+make (3, 15, Gul'dan|Hanzo|Hogger|Illidan|Imperius|Jaina|Johanna|Junkrat|Kael'thas|Kel'Thuzad|Ker...	UNKNOWN STEP	2026-10-04T09:33:11.3469415Z Updating files:  53% (318/600)
+make (3, 15, Gul'dan|Hanzo|Hogger|Illidan|Imperius|Jaina|Johanna|Junkrat|Kael'thas|Kel'Thuzad|Ker...	UNKNOWN STEP	2026-10-04T09:33:11.3689451Z Updating files:  54% (324/600)
+make (3, 15, Gul'dan|Hanzo|Hogger|Illidan|Imperius|Jaina|Johanna|Junkrat|Kael'thas|Kel'Thuzad|Ker...	UNKNOWN STEP	2026-10-04T09:33:11.3959852Z Updating files:  55% (330/600)
+make (3, 15, Gul'dan|Hanzo|Hogger|Illidan|Imperius|Jaina|Johanna|Junkrat|Kael'thas|Kel'Thuzad|Ker...	UNKNOWN STEP	2026-10-04T09:33:11.4215914Z Updating files:  56% (336/600)
+make (3, 15, Gul'dan|Hanzo|Hogger|Illidan|Imperius|Jaina|Johanna|Junkrat|Kael'thas|Kel'Thuzad|Ker...	UNKNOWN STEP	2026-10-04T09:33:11.4456493Z Updating files:  57% (342/600)
+make (3, 15, Gul'dan|Hanzo|Hogger|Illidan|Imperius|Jaina|Johanna|Junkrat|Kael'thas|Kel'Thuzad|Ker...	UNKNOWN STEP	2026-10-04T09:33:11.4860880Z Updating files:  58% (348/600)
+make (3, 15, Gul'dan|Hanzo|Hogger|Illidan|Imperius|Jaina|Johanna|Junkrat|Kael'thas|Kel'Thuzad|Ker...	UNKNOWN STEP	2026-10-04T09:33:11.5081827Z Updating files:  59% (354/600)
+make (3, 15, Gul'dan|Hanzo|Hogger|Illidan|Imperius|Jaina|Johanna|Junkrat|Kael'thas|Kel'Thuzad|Ker...	UNKNOWN STEP	2026-10-04T09:33:11.5200577Z Updating files:  60% (360/600)
+make (3, 15, Gul'dan|Hanzo|Hogger|Illidan|Imperius|Jaina|Johanna|Junkrat|Kael'thas|Kel'Thuzad|Ker...	UNKNOWN STEP	2026-10-04T09:33:11.5592245Z Updating files:  61% (366/600)
+make (3, 15, Gul'dan|Hanzo|Hogger|Illidan|Imperius|Jaina|Johanna|Junkrat|Kael'thas|Kel'Thuzad|Ker...	UNKNOWN STEP	2026-10-04T09:33:11.5736418Z Updating files:  62% (372/600)
+make (3, 15, Gul'dan|Hanzo|Hogger|Illidan|Imperius|Jaina|Johanna|Junkrat|Kael'thas|Kel'Thuzad|Ker...	UNKNOWN STEP	2026-10-04T09:33:11.5889845Z Updating files:  63% (378/600)
+make (3, 15, Gul'dan|Hanzo|Hogger|Illidan|Imperius|Jaina|Johanna|Junkrat|Kael'thas|Kel'Thuzad|Ker...	UNKNOWN STEP	2026-10-04T09:33:11.6457943Z Updating files:  64% (384/600)
+make (3, 15, Gul'dan|Hanzo|Hogger|Illidan|Imperius|Jaina|Johanna|Junkrat|Kael'thas|Kel'Thuzad|Ker...	UNKNOWN STEP	2026-10-04T09:33:11.6774251Z Updating files:  65% (390/600)
+make (3, 15, Gul'dan|Hanzo|Hogger|Illidan|Imperius|Jaina|Johanna|Junkrat|Kael'thas|Kel'Thuzad|Ker...	UNKNOWN STEP	2026-10-04T09:33:11.7075100Z Updating files:  66% (396/600)
+make (3, 15, Gul'dan|Hanzo|Hogger|Illidan|Imperius|Jaina|Johanna|Junkrat|Kael'thas|Kel'Thuzad|Ker...	UNKNOWN STEP	2026-10-04T09:33:11.7211632Z Updating files:  67% (402/600)
+make (3, 15, Gul'dan|Hanzo|Hogger|Illidan|Imperius|Jaina|Johanna|Junkrat|Kael'thas|Kel'Thuzad|Ker...	UNKNOWN STEP	2026-10-04T09:33:11.7286606Z Updating files:  68% (408/600)
+make (3, 15, Gul'dan|Hanzo|Hogger|Illidan|Imperius|Jaina|Johanna|Junkrat|Kael'thas|Kel'Thuzad|Ker...	UNKNOWN STEP	2026-10-04T09:33:11.7504983Z Updating files:  69% (414/600)
+make (3, 15, Gul'dan|Hanzo|Hogger|Illidan|Imperius|Jaina|Johanna|Junkrat|Kael'thas|Kel'Thuzad|Ker...	UNKNOWN STEP	2026-10-04T09:33:11.7625917Z Updating files:  70% (420/600)
+make (3, 15, Gul'dan|Hanzo|Hogger|Illidan|Imperius|Jaina|Johanna|Junkrat|Kael'thas|Kel'Thuzad|Ker...	UNKNOWN STEP	2026-10-04T09:33:11.7831449Z Updating files:  71% (426/600)
+make (3, 15, Gul'dan|Hanzo|Hogger|Illidan|Imperius|Jaina|Johanna|Junkrat|Kael'thas|Kel'Thuzad|Ker...	UNKNOWN STEP	2026-10-04T09:33:11.7985657Z Updating files:  72% (432/600)
+make (3, 15, Gul'dan|Hanzo|Hogger|Illidan|Imperius|Jaina|Johanna|Junkrat|Kael'thas|Kel'Thuzad|Ker...	UNKNOWN STEP	2026-10-04T09:33:11.8248433Z Updating files:  73% (438/600)
+make (3, 15, Gul'dan|Hanzo|Hogger|Illidan|Imperius|Jaina|Johanna|Junkrat|Kael'thas|Kel'Thuzad|Ker...	UNKNOWN STEP	2026-10-04T09:33:11.8535889Z Updating files:  74% (444/600)
+make (3, 15, Gul'dan|Hanzo|Hogger|Illidan|Imperius|Jaina|Johanna|Junkrat|Kael'thas|Kel'Thuzad|Ker...	UNKNOWN STEP	2026-10-04T09:33:11.8923079Z Updating files:  75% (450/600)
+make (3, 15, Gul'dan|Hanzo|Hogger|Illidan|Imperius|Jaina|Johanna|Junkrat|Kael'thas|Kel'Thuzad|Ker...	UNKNOWN STEP	2026-10-04T09:33:11.9086404Z Updating files:  76% (456/600)
+make (3, 15, Gul'dan|Hanzo|Hogger|Illidan|Imperius|Jaina|Johanna|Junkrat|Kael'thas|Kel'Thuzad|Ker...	UNKNOWN STEP	2026-10-04T09:33:11.9211454Z Updating files:  77% (462/600)
+make (3, 15, Gul'dan|Hanzo|Hogger|Illidan|Imperius|Jaina|Johanna|Junkrat|Kael'thas|Kel'Thuzad|Ker...	UNKNOWN STEP	2026-10-04T09:33:11.9473140Z Updating files:  78% (468/600)
+make (3, 15, Gul'dan|Hanzo|Hogger|Illidan|Imperius|Jaina|Johanna|Junkrat|Kael'thas|Kel'Thuzad|Ker...	UNKNOWN STEP	2026-10-04T09:33:11.9668955Z Updating files:  79% (474/600)
+make (3, 15, Gul'dan|Hanzo|Hogger|Illidan|Imperius|Jaina|Johanna|Junkrat|Kael'thas|Kel'Thuzad|Ker...	UNKNOWN STEP	2026-10-04T09:33:11.9935828Z Updating files:  80% (480/600)
+make (3, 15, Gul'dan|Hanzo|Hogger|Illidan|Imperius|Jaina|Johanna|Junkrat|Kael'thas|Kel'Thuzad|Ker...	UNKNOWN STEP	2026-10-04T09:33:12.0251710Z Updating files:  81% (486/600)
+make (3, 15, Gul'dan|Hanzo|Hogger|Illidan|Imperius|Jaina|Johanna|Junkrat|Kael'thas|Kel'Thuzad|Ker...	UNKNOWN STEP	2026-10-04T09:33:12.0418506Z Updating files:  82% (492/600)
+make (3, 15, Gul'dan|Hanzo|Hogger|Illidan|Imperius|Jaina|Johanna|Junkrat|Kael'thas|Kel'Thuzad|Ker...	UNKNOWN STEP	2026-10-04T09:33:12.0724101Z Updating files:  83% (498/600)
+make (3, 15, Gul'dan|Hanzo|Hogger|Illidan|Imperius|Jaina|Johanna|Junkrat|Kael'thas|Kel'Thuzad|Ker...	UNKNOWN STEP	2026-10-04T09:33:12.0969409Z Updating files:  84% (504/600)
+make (3, 15, Gul'dan|Hanzo|Hogger|Illidan|Imperius|Jaina|Johanna|Junkrat|Kael'thas|Kel'Thuzad|Ker...	UNKNOWN STEP	2026-10-04T09:33:12.1076321Z Updating files:  85% (510/600)
+make (3, 15, Gul'dan|Hanzo|Hogger|Illidan|Imperius|Jaina|Johanna|Junkrat|Kael'thas|Kel'Thuzad|Ker...	UNKNOWN STEP	2026-10-04T09:33:12.1277831Z Updating files:  86% (516/600)
+make (3, 15, Gul'dan|Hanzo|Hogger|Illidan|Imperius|Jaina|Johanna|Junkrat|Kael'thas|Kel'Thuzad|Ker...	UNKNOWN STEP	2026-10-04T09:33:12.1572201Z Updating files:  87% (522/600)
+make (3, 15, Gul'dan|Hanzo|Hogger|Illidan|Imperius|Jaina|Johanna|Junkrat|Kael'thas|Kel'Thuzad|Ker...	UNKNOWN STEP	2026-10-04T09:33:12.1839170Z Updating files:  88% (528/600)
+make (3, 15, Gul'dan|Hanzo|Hogger|Illidan|Imperius|Jaina|Johanna|Junkrat|Kael'thas|Kel'Thuzad|Ker...	UNKNOWN STEP	2026-10-04T09:33:12.1971390Z Updating files:  89% (534/600)
+make (3, 15, Gul'dan|Hanzo|Hogger|Illidan|Imperius|Jaina|Johanna|Junkrat|Kael'thas|Kel'Thuzad|Ker...	UNKNOWN STEP	2026-10-04T09:33:12.2122247Z Updating files:  89% (538/600)
+make (3, 15, Gul'dan|Hanzo|Hogger|Illidan|Imperius|Jaina|Johanna|Junkrat|Kael'thas|Kel'Thuzad|Ker...	UNKNOWN STEP	2026-10-04T09:33:12.2361277Z Updating files:  90% (540/600)
+make (3, 15, Gul'dan|Hanzo|Hogger|Illidan|Imperius|Jaina|Johanna|Junkrat|Kael'thas|Kel'Thuzad|Ker...	UNKNOWN STEP	2026-10-04T09:33:12.2640626Z Updating files:  91% (546/600)
+make (3, 15, Gul'dan|Hanzo|Hogger|Illidan|Imperius|Jaina|Johanna|Junkrat|Kael'thas|Kel'Thuzad|Ker...	UNKNOWN STEP	2026-10-04T09:33:12.3448847Z Updating files:  92% (552/600)
+make (3, 15, Gul'dan|Hanzo|Hogger|Illidan|Imperius|Jaina|Johanna|Junkrat|Kael'thas|Kel'Thuzad|Ker...	UNKNOWN STEP	2026-10-04T09:33:12.3767352Z Updating files:  93% (558/600)
+make (3, 15, Gul'dan|Hanzo|Hogger|Illidan|Imperius|Jaina|Johanna|Junkrat|Kael'thas|Kel'Thuzad|Ker...	UNKNOWN STEP	2026-10-04T09:33:12.3894127Z Updating files:  94% (564/600)
+make (3, 15, Gul'dan|Hanzo|Hogger|Illidan|Imperius|Jaina|Johanna|Junkrat|Kael'thas|Kel'Thuzad|Ker...	UNKNOWN STEP	2026-10-04T09:33:12.4038627Z Updating files:  95% (570/600)
+make (3, 15, Gul'dan|Hanzo|Hogger|Illidan|Imperius|Jaina|Johanna|Junkrat|Kael'thas|Kel'Thuzad|Ker...	UNKNOWN STEP	2026-10-04T09:33:12.4359902Z Updating files:  96% (576/600)
+make (3, 15, Gul'dan|Hanzo|Hogger|Illidan|Imperius|Jaina|Johanna|Junkrat|Kael'thas|Kel'Thuzad|Ker...	UNKNOWN STEP	2026-10-04T09:33:12.4649294Z Updating files:  97% (582/600)
+make (3, 15, Gul'dan|Hanzo|Hogger|Illidan|Imperius|Jaina|Johanna|Junkrat|Kael'thas|Kel'Thuzad|Ker...	UNKNOWN STEP	2026-10-04T09:33:12.4748364Z Updating files:  98% (588/600)
+make (3, 15, Gul'dan|Hanzo|Hogger|Illidan|Imperius|Jaina|Johanna|Junkrat|Kael'thas|Kel'Thuzad|Ker...	UNKNOWN STEP	2026-10-04T09:33:12.5138656Z Updating files:  99% (594/600)
+make (3, 15, Gul'dan|Hanzo|Hogger|Illidan|Imperius|Jaina|Johanna|Junkrat|Kael'thas|Kel'Thuzad|Ker...	UNKNOWN STEP	2026-10-04T09:33:12.5139479Z Updating files: 100% (600/600)
+make (3, 15, Gul'dan|Hanzo|Hogger|Illidan|Imperius|Jaina|Johanna|Junkrat|Kael'thas|Kel'Thuzad|Ker...	UNKNOWN STEP	2026-10-04T09:33:12.5139841Z Updating files: 100% (600/600), done.
+make (3, 15, Gul'dan|Hanzo|Hogger|Illidan|Imperius|Jaina|Johanna|Junkrat|Kael'thas|Kel'Thuzad|Ker...	UNKNOWN STEP	2026-10-04T09:33:12.9178497Z   % Total    % Received % Xferd  Average Speed   Time    Time     Time  Current
+make (3, 15, Gul'dan|Hanzo|Hogger|Illidan|Imperius|Jaina|Johanna|Junkrat|Kael'thas|Kel'Thuzad|Ker...	UNKNOWN STEP	2026-10-04T09:33:12.9179383Z                                  Dload  Upload   Total   Spent    Left  Speed
+make (3, 15, Gul'dan|Hanzo|Hogger|Illidan|Imperius|Jaina|Johanna|Junkrat|Kael'thas|Kel'Thuzad|Ker...	UNKNOWN STEP	2026-10-04T09:33:12.9179846Z 
+make (3, 15, Gul'dan|Hanzo|Hogger|Illidan|Imperius|Jaina|Johanna|Junkrat|Kael'thas|Kel'Thuzad|Ker...	UNKNOWN STEP	2026-10-04T09:33:13.2335623Z   0     0    0     0    0     0      0      0 --:--:-- --:--:-- --:--:--     0
+make (3, 15, Gul'dan|Hanzo|Hogger|Illidan|Imperius|Jaina|Johanna|Junkrat|Kael'thas|Kel'Thuzad|Ker...	UNKNOWN STEP	2026-10-04T09:33:13.9200322Z   1  260M    1 3674k    0     0  10.2M      0  0:00:25 --:--:--  0:00:25 11.3M
+make (3, 15, Gul'dan|Hanzo|Hogger|Illidan|Imperius|Jaina|Johanna|Junkrat|Kael'thas|Kel'Thuzad|Ker...	UNKNOWN STEP	2026-10-04T09:33:13.9201287Z 100  260M  100  260M    0     0   250M      0  0:00:01  0:00:01 --:--:--  259M
+make (3, 15, Gul'dan|Hanzo|Hogger|Illidan|Imperius|Jaina|Johanna|Junkrat|Kael'thas|Kel'Thuzad|Ker...	UNKNOWN STEP	2026-10-04T09:33:31.8365530Z /home/runner/work/_temp/f63b9e89-1ce4-4593-baec-450aeb33d124.sh: line 25: unexpected EOF while looking for matching `''
+make (3, 15, Gul'dan|Hanzo|Hogger|Illidan|Imperius|Jaina|Johanna|Junkrat|Kael'thas|Kel'Thuzad|Ker...	UNKNOWN STEP	2026-10-04T09:33:31.8381283Z ##[error]Process completed with exit code 2.
+make (3, 15, Gul'dan|Hanzo|Hogger|Illidan|Imperius|Jaina|Johanna|Junkrat|Kael'thas|Kel'Thuzad|Ker...	UNKNOWN STEP	2026-10-04T09:33:31.8529049Z Post job cleanup.
+make (3, 15, Gul'dan|Hanzo|Hogger|Illidan|Imperius|Jaina|Johanna|Junkrat|Kael'thas|Kel'Thuzad|Ker...	UNKNOWN STEP	2026-10-04T09:33:31.9468276Z [command]/usr/bin/git version
+make (3, 15, Gul'dan|Hanzo|Hogger|Illidan|Imperius|Jaina|Johanna|Junkrat|Kael'thas|Kel'Thuzad|Ker...	UNKNOWN STEP	2026-10-04T09:33:31.9513209Z git version 2.55.0
+make (3, 15, Gul'dan|Hanzo|Hogger|Illidan|Imperius|Jaina|Johanna|Junkrat|Kael'thas|Kel'Thuzad|Ker...	UNKNOWN STEP	2026-10-04T09:33:31.9553831Z Temporarily overriding HOME='/home/runner/work/_temp/b16bdf80-c892-4874-8047-45e893be8e64' before making global git config changes
+make (3, 15, Gul'dan|Hanzo|Hogger|Illidan|Imperius|Jaina|Johanna|Junkrat|Kael'thas|Kel'Thuzad|Ker...	UNKNOWN STEP	2026-10-04T09:33:31.9555503Z Adding repository directory to the temporary git global config as a safe directory
+make (3, 15, Gul'dan|Hanzo|Hogger|Illidan|Imperius|Jaina|Johanna|Junkrat|Kael'thas|Kel'Thuzad|Ker...	UNKNOWN STEP	2026-10-04T09:33:31.9561435Z [command]/usr/bin/git config --global --add safe.directory /home/runner/work/HOTS-03/HOTS-03
+make (3, 15, Gul'dan|Hanzo|Hogger|Illidan|Imperius|Jaina|Johanna|Junkrat|Kael'thas|Kel'Thuzad|Ker...	UNKNOWN STEP	2026-10-04T09:33:31.9608103Z [command]/usr/bin/git config --local --name-only --get-regexp core\.sshCommand
+make (3, 15, Gul'dan|Hanzo|Hogger|Illidan|Imperius|Jaina|Johanna|Junkrat|Kael'thas|Kel'Thuzad|Ker...	UNKNOWN STEP	2026-10-04T09:33:31.9651930Z [command]/usr/bin/git submodule foreach --recursive sh -c "git config --local --name-only --get-regexp 'core\.sshCommand' && git config --local --unset-all 'core.sshCommand' || :"
+make (3, 15, Gul'dan|Hanzo|Hogger|Illidan|Imperius|Jaina|Johanna|Junkrat|Kael'thas|Kel'Thuzad|Ker...	UNKNOWN STEP	2026-10-04T09:33:31.9946495Z [command]/usr/bin/git config --local --name-only --get-regexp http\.https\:\/\/github\.com\/\.extraheader
+make (3, 15, Gul'dan|Hanzo|Hogger|Illidan|Imperius|Jaina|Johanna|Junkrat|Kael'thas|Kel'Thuzad|Ker...	UNKNOWN STEP	2026-10-04T09:33:32.0006582Z http.https://github.com/.extraheader
+make (3, 15, Gul'dan|Hanzo|Hogger|Illidan|Imperius|Jaina|Johanna|Junkrat|Kael'thas|Kel'Thuzad|Ker...	UNKNOWN STEP	2026-10-04T09:33:32.0009758Z [command]/usr/bin/git config --local --unset-all http.https://github.com/.extraheader
+make (3, 15, Gul'dan|Hanzo|Hogger|Illidan|Imperius|Jaina|Johanna|Junkrat|Kael'thas|Kel'Thuzad|Ker...	UNKNOWN STEP	2026-10-04T09:33:32.0057479Z [command]/usr/bin/git submodule foreach --recursive sh -c "git config --local --name-only --get-regexp 'http\.https\:\/\/github\.com\/\.extraheader' && git config --local --unset-all 'http.https://github.com/.extraheader' || :"
+make (3, 15, Gul'dan|Hanzo|Hogger|Illidan|Imperius|Jaina|Johanna|Junkrat|Kael'thas|Kel'Thuzad|Ker...	UNKNOWN STEP	2026-10-04T09:33:32.0347096Z [command]/usr/bin/git config --local --name-only --get-regexp ^includeIf\.gitdir:
+make (3, 15, Gul'dan|Hanzo|Hogger|Illidan|Imperius|Jaina|Johanna|Junkrat|Kael'thas|Kel'Thuzad|Ker...	UNKNOWN STEP	2026-10-04T09:33:32.0413338Z [command]/usr/bin/git submodule foreach --recursive git config --local --show-origin --name-only --get-regexp remote.origin.url
+make (3, 15, Gul'dan|Hanzo|Hogger|Illidan|Imperius|Jaina|Johanna|Junkrat|Kael'thas|Kel'Thuzad|Ker...	UNKNOWN STEP	2026-10-04T09:33:32.0909319Z Cleaning up orphan processes
+make (3, 15, Gul'dan|Hanzo|Hogger|Illidan|Imperius|Jaina|Johanna|Junkrat|Kael'thas|Kel'Thuzad|Ker...	UNKNOWN STEP	2026-10-04T09:33:32.1288317Z ##[warning]Node.js 20 is deprecated. The following actions target Node.js 20 but are being forced to run on Node.js 24: actions/checkout@v4. For more information see: https://github.blog/changelog/2025-09-19-deprecation-of-node-20-on-github-actions-runners/
