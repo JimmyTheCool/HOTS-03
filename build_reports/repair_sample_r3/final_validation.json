@@ -1,0 +1,77 @@
+{
+  "input_folder": "/home/runner/work/_temp/sample_repaired/STL",
+  "expected_files": 3,
+  "found_files": 3,
+  "duplicate_filenames": [],
+  "passed": true,
+  "quality_requirements": {
+    "watertight": true,
+    "winding_consistent": true,
+    "finite_coordinates": true,
+    "positive_volume_mm3": true,
+    "triangle_range": [
+      100,
+      500000
+    ],
+    "dimension_range_mm": [
+      2.0,
+      350.0
+    ],
+    "connected_bodies": 1,
+    "vertex_weld_tolerance_approx_mm": 0.01
+  },
+  "failed_files": [],
+  "files": [
+    {
+      "file": "Brightwing.stl",
+      "bytes": 13023284,
+      "sha256": "e5148b8d39b1f91a3c0928bb79342c8b7517ee199d7090121862cbc522de9a99",
+      "vertices": 130226,
+      "triangles": 260464,
+      "watertight": true,
+      "winding_consistent": true,
+      "finite_coordinates": true,
+      "volume_mm3": 71073.93593020107,
+      "x_mm": 117.02271270751953,
+      "y_mm": 117.02271270751953,
+      "z_mm": 112.68762969970703,
+      "connected_bodies": 1,
+      "error": "",
+      "passed": true
+    },
+    {
+      "file": "D.Va.stl",
+      "bytes": 18585984,
+      "sha256": "596a116c38bf0c446ca5c69be31306d9ae379e53814d59ed4e9bf9b068a6e16a",
+      "vertices": 185715,
+      "triangles": 371718,
+      "watertight": true,
+      "winding_consistent": true,
+      "finite_coordinates": true,
+      "volume_mm3": 124269.14572891277,
+      "x_mm": 114.69999694824219,
+      "y_mm": 114.69999694824219,
+      "z_mm": 112.21999877691269,
+      "connected_bodies": 1,
+      "error": "",
+      "passed": true
+    },
+    {
+      "file": "Tychus.stl",
+      "bytes": 14711384,
+      "sha256": "5d0ff16184c0e1cfbc8b082395c95cdca72b7270ed7698ee624a040fa22cfb89",
+      "vertices": 146355,
+      "triangles": 294226,
+      "watertight": true,
+      "winding_consistent": true,
+      "finite_coordinates": true,
+      "volume_mm3": 94994.79218232865,
+      "x_mm": 143.22000122070312,
+      "y_mm": 143.22000122070312,
+      "z_mm": 112.21999877691269,
+      "connected_bodies": 1,
+      "error": "",
+      "passed": true
+    }
+  ]
+}

@@ -1,0 +1,271 @@
+{
+  "input_folder": "/home/runner/work/_temp/sample_raw",
+  "output_folder": "/home/runner/work/_temp/sample_repaired/STL",
+  "expected_files": 3,
+  "found_files": 3,
+  "expected_count_passed": true,
+  "all_passed": true,
+  "settings": {
+    "voxel_pitch_mm": 0.62,
+    "max_triangles": 500000,
+    "target_triangles": 440000,
+    "minimum_dimension_mm": 2.0,
+    "maximum_dimension_mm": 350.0,
+    "minimum_dimension_retention": 0.9,
+    "maximum_dimension_retention": 1.1,
+    "vertex_weld_digits": 2,
+    "required_connected_bodies": 1
+  },
+  "failed_files": [],
+  "files": [
+    {
+      "file": "Brightwing.stl",
+      "input_bytes": 13060284,
+      "input_sha256": "8d4acba68a784ded165692f26519dc9d2a7cc46e655e338eb2a66f92e4142c56",
+      "attempts": {
+        "rounded_vertex_merge": {
+          "vertices": 130595,
+          "triangles": 261204,
+          "watertight": false,
+          "winding_consistent": true,
+          "finite_coordinates": true,
+          "volume_mm3": 71074.81732869113,
+          "x_mm": 117.02271270751953,
+          "y_mm": 117.02271270751953,
+          "z_mm": 112.68762969970703,
+          "connected_bodies": 1,
+          "dimension_retention": {
+            "x_mm": 1.0,
+            "y_mm": 1.0,
+            "z_mm": 1.0
+          }
+        },
+        "pymeshfix": {
+          "vertices": 130226,
+          "triangles": 260464,
+          "watertight": true,
+          "winding_consistent": true,
+          "finite_coordinates": true,
+          "volume_mm3": 71073.93593020107,
+          "x_mm": 117.02271270751953,
+          "y_mm": 117.02271270751953,
+          "z_mm": 112.68762969970703,
+          "connected_bodies": 1,
+          "dimension_retention": {
+            "x_mm": 1.0,
+            "y_mm": 1.0,
+            "z_mm": 1.0
+          }
+        }
+      },
+      "passed": true,
+      "selected_method": "pymeshfix",
+      "output_bytes": 13023284,
+      "output_sha256": "e5148b8d39b1f91a3c0928bb79342c8b7517ee199d7090121862cbc522de9a99",
+      "final": {
+        "vertices": 130226,
+        "triangles": 260464,
+        "watertight": true,
+        "winding_consistent": true,
+        "finite_coordinates": true,
+        "volume_mm3": 71073.93593020107,
+        "x_mm": 117.02271270751953,
+        "y_mm": 117.02271270751953,
+        "z_mm": 112.68762969970703,
+        "connected_bodies": 1,
+        "dimension_retention": {
+          "x_mm": 1.0,
+          "y_mm": 1.0,
+          "z_mm": 1.0
+        }
+      }
+    },
+    {
+      "file": "D.Va.stl",
+      "input_bytes": 18786784,
+      "input_sha256": "0493218e43546705f480f265d806e28bd203289832f96922f2edcd2e9457008a",
+      "attempts": {
+        "rounded_vertex_merge": {
+          "vertices": 187678,
+          "triangles": 375734,
+          "watertight": false,
+          "winding_consistent": true,
+          "finite_coordinates": true,
+          "volume_mm3": 58491.602912790935,
+          "x_mm": 115.5499267578125,
+          "y_mm": 115.5499267578125,
+          "z_mm": 112.7909164428711,
+          "connected_bodies": 7,
+          "dimension_retention": {
+            "x_mm": 1.0,
+            "y_mm": 1.0,
+            "z_mm": 1.0
+          }
+        },
+        "pymeshfix": {
+          "vertices": 121351,
+          "triangles": 242750,
+          "watertight": true,
+          "winding_consistent": true,
+          "finite_coordinates": true,
+          "volume_mm3": 100913.30556164052,
+          "x_mm": 107.29349899291992,
+          "y_mm": 85.31526947021484,
+          "z_mm": 102.33184242248535,
+          "connected_bodies": 1,
+          "dimension_retention": {
+            "x_mm": 0.9285466637967008,
+            "y_mm": 0.7383411817216626,
+            "z_mm": 0.9072702452445868
+          }
+        },
+        "connected_voxel": {
+          "vertices": 185715,
+          "triangles": 371718,
+          "watertight": true,
+          "winding_consistent": true,
+          "finite_coordinates": true,
+          "volume_mm3": 124269.14464533329,
+          "x_mm": 114.69999999999999,
+          "y_mm": 114.69999999999999,
+          "z_mm": 112.22,
+          "connected_bodies": 1,
+          "dimension_retention": {
+            "x_mm": 0.992644506304241,
+            "y_mm": 0.992644506304241,
+            "z_mm": 0.9949382764066798
+          }
+        }
+      },
+      "passed": true,
+      "voxel_connectivity": {
+        "initial_components": 2,
+        "removed_tiny_components": 0,
+        "bridges_added": 1,
+        "final_components": 1
+      },
+      "selected_method": "connected_voxel",
+      "output_bytes": 18585984,
+      "output_sha256": "596a116c38bf0c446ca5c69be31306d9ae379e53814d59ed4e9bf9b068a6e16a",
+      "final": {
+        "vertices": 185715,
+        "triangles": 371718,
+        "watertight": true,
+        "winding_consistent": true,
+        "finite_coordinates": true,
+        "volume_mm3": 124269.14572891277,
+        "x_mm": 114.69999694824219,
+        "y_mm": 114.69999694824219,
+        "z_mm": 112.21999877691269,
+        "connected_bodies": 1,
+        "dimension_retention": {
+          "x_mm": 0.9926444798935119,
+          "y_mm": 0.9926444798935119,
+          "z_mm": 0.9949382655628339
+        }
+      }
+    },
+    {
+      "file": "Tychus.stl",
+      "input_bytes": 22500034,
+      "input_sha256": "a5f20207cde0b288fd7400d05701899f47a32d2e3550c24e1a16ab5a7b4906c3",
+      "attempts": {
+        "rounded_vertex_merge": {
+          "vertices": 223486,
+          "triangles": 449999,
+          "watertight": false,
+          "winding_consistent": true,
+          "finite_coordinates": true,
+          "volume_mm3": 185782.35952480676,
+          "x_mm": 144.0771484375,
+          "y_mm": 144.0771484375,
+          "z_mm": 112.71670532226562,
+          "connected_bodies": 164,
+          "dimension_retention": {
+            "x_mm": 1.0,
+            "y_mm": 1.0,
+            "z_mm": 1.0
+          }
+        },
+        "pymeshfix": {
+          "vertices": 104147,
+          "triangles": 208334,
+          "watertight": true,
+          "winding_consistent": true,
+          "finite_coordinates": true,
+          "volume_mm3": 127036.58218233976,
+          "x_mm": 144.0771484375,
+          "y_mm": 144.0771484375,
+          "z_mm": 66.44026184082031,
+          "connected_bodies": 1,
+          "dimension_retention": {
+            "x_mm": 1.0,
+            "y_mm": 1.0,
+            "z_mm": 0.5894446759321306
+          }
+        },
+        "connected_voxel": {
+          "vertices": 217962,
+          "triangles": 438984,
+          "watertight": true,
+          "winding_consistent": true,
+          "finite_coordinates": true,
+          "volume_mm3": 98106.11248599998,
+          "x_mm": 143.22000000000014,
+          "y_mm": 143.22000000000017,
+          "z_mm": 112.2200000000005,
+          "connected_bodies": 2,
+          "dimension_retention": {
+            "x_mm": 0.9940507676144653,
+            "y_mm": 0.9940507676144655,
+            "z_mm": 0.9955933300139939
+          }
+        },
+        "connected_voxel_plus_meshfix": {
+          "vertices": 146355,
+          "triangles": 294226,
+          "watertight": true,
+          "winding_consistent": true,
+          "finite_coordinates": true,
+          "volume_mm3": 94994.79218232865,
+          "x_mm": 143.22000122070312,
+          "y_mm": 143.22000122070312,
+          "z_mm": 112.21999877691269,
+          "connected_bodies": 1,
+          "dimension_retention": {
+            "x_mm": 0.9940507760870302,
+            "y_mm": 0.9940507760870302,
+            "z_mm": 0.9955933191630042
+          }
+        }
+      },
+      "passed": true,
+      "voxel_connectivity": {
+        "initial_components": 2,
+        "removed_tiny_components": 0,
+        "bridges_added": 1,
+        "final_components": 1
+      },
+      "selected_method": "connected_voxel_plus_meshfix",
+      "output_bytes": 14711384,
+      "output_sha256": "5d0ff16184c0e1cfbc8b082395c95cdca72b7270ed7698ee624a040fa22cfb89",
+      "final": {
+        "vertices": 146355,
+        "triangles": 294226,
+        "watertight": true,
+        "winding_consistent": true,
+        "finite_coordinates": true,
+        "volume_mm3": 94994.79218232865,
+        "x_mm": 143.22000122070312,
+        "y_mm": 143.22000122070312,
+        "z_mm": 112.21999877691269,
+        "connected_bodies": 1,
+        "dimension_retention": {
+          "x_mm": 0.9940507760870302,
+          "y_mm": 0.9940507760870302,
+          "z_mm": 0.9955933191630042
+        }
+      }
+    }
+  ]
+}
