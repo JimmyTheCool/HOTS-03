@@ -1,0 +1,81 @@
+name: Test Repair from V3 Artifacts
+
+on:
+  workflow_dispatch:
+  push:
+    branches: [chatgpt-stl-builder]
+    paths: [.github/workflows/test-repair-from-v3-artifacts.yml]
+
+permissions:
+  actions: read
+  contents: read
+
+jobs:
+  test:
+    runs-on: ubuntu-22.04
+    timeout-minutes: 180
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          ref: chatgpt-stl-builder
+          fetch-depth: 1
+
+      - name: Download representative raw STL files
+        env:
+          GH_TOKEN: ${{ github.token }}
+        shell: bash
+        run: |
+          set -euo pipefail
+          mkdir -p "$RUNNER_TEMP/chunk1" "$RUNNER_TEMP/chunk2" "$RUNNER_TEMP/chunk6" "$RUNNER_TEMP/sample_raw"
+          gh run download 37193141976 --repo "$GITHUB_REPOSITORY" --name HOTS-v3-chunk-1 --dir "$RUNNER_TEMP/chunk1"
+          gh run download 37193141976 --repo "$GITHUB_REPOSITORY" --name HOTS-v3-chunk-2 --dir "$RUNNER_TEMP/chunk2"
+          gh run download 37193141976 --repo "$GITHUB_REPOSITORY" --name HOTS-v3-chunk-6 --dir "$RUNNER_TEMP/chunk6"
+          cp "$RUNNER_TEMP/chunk1/STL/Brightwing.stl" "$RUNNER_TEMP/sample_raw/"
+          cp "$RUNNER_TEMP/chunk2/STL/D.Va.stl" "$RUNNER_TEMP/sample_raw/"
+          cp "$RUNNER_TEMP/chunk6/STL/Tychus.stl" "$RUNNER_TEMP/sample_raw/"
+          find "$RUNNER_TEMP/sample_raw" -type f -printf '%f %s bytes\n'
+
+      - name: Install mesh repair dependencies
+        shell: bash
+        run: |
+          set -euo pipefail
+          python -m pip install --disable-pip-version-check --quiet \
+            trimesh==4.8.3 \
+            numpy==2.2.6 \
+            scipy==1.15.3 \
+            scikit-image==0.25.2 \
+            pymeshfix==0.18.1 \
+            fast-simplification==0.1.12
+
+      - name: Repair and validate sample STL files
+        shell: bash
+        run: |
+          set -euo pipefail
+          mkdir -p "$RUNNER_TEMP/sample_repaired/Reports"
+          python ci/repair_stl_collection.py \
+            --input "$RUNNER_TEMP/sample_raw" \
+            --output "$RUNNER_TEMP/sample_repaired/STL" \
+            --report-json "$RUNNER_TEMP/sample_repaired/Reports/repair_validation.json" \
+            --report-csv "$RUNNER_TEMP/sample_repaired/Reports/repair_validation.csv" \
+            --expected 3 \
+            --pitch 0.62 \
+            --max-triangles 500000 \
+            --target-triangles 440000
+
+      - name: Stage results
+        if: always()
+        shell: bash
+        run: |
+          set -euo pipefail
+          mkdir -p "$GITHUB_WORKSPACE/repair_sample"
+          if [[ -d "$RUNNER_TEMP/sample_repaired" ]]; then
+            cp -r "$RUNNER_TEMP/sample_repaired/." "$GITHUB_WORKSPACE/repair_sample/"
+          fi
+
+      - uses: actions/upload-artifact@v4
+        if: always()
+        with:
+          name: HOTS-repair-sample
+          path: repair_sample
+          retention-days: 30
+          compression-level: 0
