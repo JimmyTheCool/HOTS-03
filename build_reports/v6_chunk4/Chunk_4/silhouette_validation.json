@@ -1,0 +1,705 @@
+{
+  "raw_folder": "/home/runner/work/_temp/raw_4/STL",
+  "repaired_folder": "/home/runner/work/_temp/fixed_4/STL",
+  "expected_files": 15,
+  "found_files": 15,
+  "passed": false,
+  "requirements": {
+    "pixel_mm": 0.65,
+    "tolerance_mm": 1.95,
+    "minimum_raw_coverage": 0.985,
+    "minimum_repaired_coverage": 0.97,
+    "minimum_iou": 0.94,
+    "views": [
+      "front_xz",
+      "side_yz",
+      "top_xy"
+    ]
+  },
+  "failed_files": [
+    {
+      "file": "Lt._Morales.stl",
+      "passed": false,
+      "views": {
+        "front_xz": {
+          "raw_pixel_count": 13007,
+          "repaired_pixel_count": 10837,
+          "raw_coverage": 0.8380871838240948,
+          "repaired_coverage": 1.0,
+          "iou": 0.8329529243937233,
+          "passed": false
+        },
+        "side_yz": {
+          "raw_pixel_count": 8787,
+          "repaired_pixel_count": 7677,
+          "raw_coverage": 0.9314897006942073,
+          "repaired_coverage": 1.0,
+          "iou": 0.8835033119545789,
+          "passed": false
+        },
+        "top_xy": {
+          "raw_pixel_count": 15370,
+          "repaired_pixel_count": 15370,
+          "raw_coverage": 1.0,
+          "repaired_coverage": 1.0,
+          "iou": 1.0,
+          "passed": true
+        }
+      },
+      "error": ""
+    },
+    {
+      "file": "Maiev.stl",
+      "passed": false,
+      "views": {
+        "front_xz": {
+          "raw_pixel_count": 13749,
+          "repaired_pixel_count": 13095,
+          "raw_coverage": 0.9532329623972653,
+          "repaired_coverage": 1.0,
+          "iou": 0.9458027709861451,
+          "passed": false
+        },
+        "side_yz": {
+          "raw_pixel_count": 10980,
+          "repaired_pixel_count": 8702,
+          "raw_coverage": 0.8222222222222222,
+          "repaired_coverage": 1.0,
+          "iou": 0.7997640316871735,
+          "passed": false
+        },
+        "top_xy": {
+          "raw_pixel_count": 19850,
+          "repaired_pixel_count": 19666,
+          "raw_coverage": 0.9930982367758187,
+          "repaired_coverage": 1.0,
+          "iou": 0.9895705219658583,
+          "passed": true
+        }
+      },
+      "error": ""
+    },
+    {
+      "file": "Malthael.stl",
+      "passed": false,
+      "views": {
+        "front_xz": {
+          "raw_pixel_count": 14706,
+          "repaired_pixel_count": 12077,
+          "raw_coverage": 0.9073167414660682,
+          "repaired_coverage": 0.9993375838370456,
+          "iou": 0.8338278931750742,
+          "passed": false
+        },
+        "side_yz": {
+          "raw_pixel_count": 8195,
+          "repaired_pixel_count": 7746,
+          "raw_coverage": 0.9941427699816962,
+          "repaired_coverage": 1.0,
+          "iou": 0.9501456419448802,
+          "passed": true
+        },
+        "top_xy": {
+          "raw_pixel_count": 13067,
+          "repaired_pixel_count": 13065,
+          "raw_coverage": 1.0,
+          "repaired_coverage": 1.0,
+          "iou": 0.9998511350949014,
+          "passed": true
+        }
+      },
+      "error": ""
+    },
+    {
+      "file": "Medivh.stl",
+      "passed": false,
+      "views": {
+        "front_xz": {
+          "raw_pixel_count": 11135,
+          "repaired_pixel_count": 10223,
+          "raw_coverage": 0.9513246519982038,
+          "repaired_coverage": 1.0,
+          "iou": 0.9218879153579104,
+          "passed": false
+        },
+        "side_yz": {
+          "raw_pixel_count": 7501,
+          "repaired_pixel_count": 7153,
+          "raw_coverage": 0.9788028262898281,
+          "repaired_coverage": 1.0,
+          "iou": 0.9515181194906954,
+          "passed": false
+        },
+        "top_xy": {
+          "raw_pixel_count": 17457,
+          "repaired_pixel_count": 17457,
+          "raw_coverage": 1.0,
+          "repaired_coverage": 1.0,
+          "iou": 1.0,
+          "passed": true
+        }
+      },
+      "error": ""
+    },
+    {
+      "file": "Mei.stl",
+      "passed": false,
+      "views": {
+        "front_xz": {
+          "raw_pixel_count": 16477,
+          "repaired_pixel_count": 12762,
+          "raw_coverage": 0.782241912969594,
+          "repaired_coverage": 1.0,
+          "iou": 0.768128967028029,
+          "passed": false
+        },
+        "side_yz": {
+          "raw_pixel_count": 9318,
+          "repaired_pixel_count": 9271,
+          "raw_coverage": 0.9995707233311869,
+          "repaired_coverage": 1.0,
+          "iou": 0.9960722702278083,
+          "passed": true
+        },
+        "top_xy": {
+          "raw_pixel_count": 49974,
+          "repaired_pixel_count": 49974,
+          "raw_coverage": 1.0,
+          "repaired_coverage": 1.0,
+          "iou": 1.0,
+          "passed": true
+        }
+      },
+      "error": ""
+    },
+    {
+      "file": "Muradin.stl",
+      "passed": false,
+      "views": {
+        "front_xz": {
+          "raw_pixel_count": 13518,
+          "repaired_pixel_count": 13297,
+          "raw_coverage": 0.9973368841544608,
+          "repaired_coverage": 1.0,
+          "iou": 0.9883704735376044,
+          "passed": true
+        },
+        "side_yz": {
+          "raw_pixel_count": 11101,
+          "repaired_pixel_count": 10374,
+          "raw_coverage": 0.959913521304387,
+          "repaired_coverage": 1.0,
+          "iou": 0.9380449362843729,
+          "passed": false
+        },
+        "top_xy": {
+          "raw_pixel_count": 14936,
+          "repaired_pixel_count": 14936,
+          "raw_coverage": 1.0,
+          "repaired_coverage": 1.0,
+          "iou": 1.0,
+          "passed": true
+        }
+      },
+      "error": ""
+    },
+    {
+      "file": "Murky.stl",
+      "passed": false,
+      "views": {
+        "front_xz": {
+          "raw_pixel_count": 3576,
+          "repaired_pixel_count": 3915,
+          "raw_coverage": 0.9972035794183445,
+          "repaired_coverage": 0.9535121328224776,
+          "iou": 0.8834110592938041,
+          "passed": false
+        },
+        "side_yz": {
+          "raw_pixel_count": 4036,
+          "repaired_pixel_count": 4467,
+          "raw_coverage": 0.9975222993062438,
+          "repaired_coverage": 0.9523169912693082,
+          "iou": 0.8777712379831273,
+          "passed": false
+        },
+        "top_xy": {
+          "raw_pixel_count": 4550,
+          "repaired_pixel_count": 4558,
+          "raw_coverage": 1.0,
+          "repaired_coverage": 1.0,
+          "iou": 0.9768019884009942,
+          "passed": true
+        }
+      },
+      "error": ""
+    }
+  ],
+  "files": [
+    {
+      "file": "Lt._Morales.stl",
+      "passed": false,
+      "views": {
+        "front_xz": {
+          "raw_pixel_count": 13007,
+          "repaired_pixel_count": 10837,
+          "raw_coverage": 0.8380871838240948,
+          "repaired_coverage": 1.0,
+          "iou": 0.8329529243937233,
+          "passed": false
+        },
+        "side_yz": {
+          "raw_pixel_count": 8787,
+          "repaired_pixel_count": 7677,
+          "raw_coverage": 0.9314897006942073,
+          "repaired_coverage": 1.0,
+          "iou": 0.8835033119545789,
+          "passed": false
+        },
+        "top_xy": {
+          "raw_pixel_count": 15370,
+          "repaired_pixel_count": 15370,
+          "raw_coverage": 1.0,
+          "repaired_coverage": 1.0,
+          "iou": 1.0,
+          "passed": true
+        }
+      },
+      "error": ""
+    },
+    {
+      "file": "Lucio.stl",
+      "passed": true,
+      "views": {
+        "front_xz": {
+          "raw_pixel_count": 10065,
+          "repaired_pixel_count": 10065,
+          "raw_coverage": 1.0,
+          "repaired_coverage": 1.0,
+          "iou": 1.0,
+          "passed": true
+        },
+        "side_yz": {
+          "raw_pixel_count": 6765,
+          "repaired_pixel_count": 6765,
+          "raw_coverage": 1.0,
+          "repaired_coverage": 1.0,
+          "iou": 1.0,
+          "passed": true
+        },
+        "top_xy": {
+          "raw_pixel_count": 15252,
+          "repaired_pixel_count": 15252,
+          "raw_coverage": 1.0,
+          "repaired_coverage": 1.0,
+          "iou": 1.0,
+          "passed": true
+        }
+      },
+      "error": ""
+    },
+    {
+      "file": "Lunara.stl",
+      "passed": true,
+      "views": {
+        "front_xz": {
+          "raw_pixel_count": 7356,
+          "repaired_pixel_count": 7734,
+          "raw_coverage": 0.9991843393148451,
+          "repaired_coverage": 1.0,
+          "iou": 0.9478753541076487,
+          "passed": true
+        },
+        "side_yz": {
+          "raw_pixel_count": 10641,
+          "repaired_pixel_count": 10941,
+          "raw_coverage": 0.9994361432196223,
+          "repaired_coverage": 1.0,
+          "iou": 0.9674776144619024,
+          "passed": true
+        },
+        "top_xy": {
+          "raw_pixel_count": 16337,
+          "repaired_pixel_count": 16598,
+          "raw_coverage": 1.0,
+          "repaired_coverage": 1.0,
+          "iou": 0.9844300822561692,
+          "passed": true
+        }
+      },
+      "error": ""
+    },
+    {
+      "file": "Maiev.stl",
+      "passed": false,
+      "views": {
+        "front_xz": {
+          "raw_pixel_count": 13749,
+          "repaired_pixel_count": 13095,
+          "raw_coverage": 0.9532329623972653,
+          "repaired_coverage": 1.0,
+          "iou": 0.9458027709861451,
+          "passed": false
+        },
+        "side_yz": {
+          "raw_pixel_count": 10980,
+          "repaired_pixel_count": 8702,
+          "raw_coverage": 0.8222222222222222,
+          "repaired_coverage": 1.0,
+          "iou": 0.7997640316871735,
+          "passed": false
+        },
+        "top_xy": {
+          "raw_pixel_count": 19850,
+          "repaired_pixel_count": 19666,
+          "raw_coverage": 0.9930982367758187,
+          "repaired_coverage": 1.0,
+          "iou": 0.9895705219658583,
+          "passed": true
+        }
+      },
+      "error": ""
+    },
+    {
+      "file": "Mal_Ganis.stl",
+      "passed": true,
+      "views": {
+        "front_xz": {
+          "raw_pixel_count": 17811,
+          "repaired_pixel_count": 17789,
+          "raw_coverage": 1.0,
+          "repaired_coverage": 1.0,
+          "iou": 0.9988842250677434,
+          "passed": true
+        },
+        "side_yz": {
+          "raw_pixel_count": 9080,
+          "repaired_pixel_count": 9073,
+          "raw_coverage": 1.0,
+          "repaired_coverage": 1.0,
+          "iou": 0.9993076162215628,
+          "passed": true
+        },
+        "top_xy": {
+          "raw_pixel_count": 20917,
+          "repaired_pixel_count": 20917,
+          "raw_coverage": 1.0,
+          "repaired_coverage": 1.0,
+          "iou": 1.0,
+          "passed": true
+        }
+      },
+      "error": ""
+    },
+    {
+      "file": "Malfurion.stl",
+      "passed": true,
+      "views": {
+        "front_xz": {
+          "raw_pixel_count": 15126,
+          "repaired_pixel_count": 15499,
+          "raw_coverage": 0.9985455507073913,
+          "repaired_coverage": 1.0,
+          "iou": 0.9675810473815462,
+          "passed": true
+        },
+        "side_yz": {
+          "raw_pixel_count": 9828,
+          "repaired_pixel_count": 10149,
+          "raw_coverage": 0.9977614977614978,
+          "repaired_coverage": 1.0,
+          "iou": 0.9554840439796192,
+          "passed": true
+        },
+        "top_xy": {
+          "raw_pixel_count": 25109,
+          "repaired_pixel_count": 25319,
+          "raw_coverage": 1.0,
+          "repaired_coverage": 1.0,
+          "iou": 0.9864859647090621,
+          "passed": true
+        }
+      },
+      "error": ""
+    },
+    {
+      "file": "Malthael.stl",
+      "passed": false,
+      "views": {
+        "front_xz": {
+          "raw_pixel_count": 14706,
+          "repaired_pixel_count": 12077,
+          "raw_coverage": 0.9073167414660682,
+          "repaired_coverage": 0.9993375838370456,
+          "iou": 0.8338278931750742,
+          "passed": false
+        },
+        "side_yz": {
+          "raw_pixel_count": 8195,
+          "repaired_pixel_count": 7746,
+          "raw_coverage": 0.9941427699816962,
+          "repaired_coverage": 1.0,
+          "iou": 0.9501456419448802,
+          "passed": true
+        },
+        "top_xy": {
+          "raw_pixel_count": 13067,
+          "repaired_pixel_count": 13065,
+          "raw_coverage": 1.0,
+          "repaired_coverage": 1.0,
+          "iou": 0.9998511350949014,
+          "passed": true
+        }
+      },
+      "error": ""
+    },
+    {
+      "file": "Medivh.stl",
+      "passed": false,
+      "views": {
+        "front_xz": {
+          "raw_pixel_count": 11135,
+          "repaired_pixel_count": 10223,
+          "raw_coverage": 0.9513246519982038,
+          "repaired_coverage": 1.0,
+          "iou": 0.9218879153579104,
+          "passed": false
+        },
+        "side_yz": {
+          "raw_pixel_count": 7501,
+          "repaired_pixel_count": 7153,
+          "raw_coverage": 0.9788028262898281,
+          "repaired_coverage": 1.0,
+          "iou": 0.9515181194906954,
+          "passed": false
+        },
+        "top_xy": {
+          "raw_pixel_count": 17457,
+          "repaired_pixel_count": 17457,
+          "raw_coverage": 1.0,
+          "repaired_coverage": 1.0,
+          "iou": 1.0,
+          "passed": true
+        }
+      },
+      "error": ""
+    },
+    {
+      "file": "Mei.stl",
+      "passed": false,
+      "views": {
+        "front_xz": {
+          "raw_pixel_count": 16477,
+          "repaired_pixel_count": 12762,
+          "raw_coverage": 0.782241912969594,
+          "repaired_coverage": 1.0,
+          "iou": 0.768128967028029,
+          "passed": false
+        },
+        "side_yz": {
+          "raw_pixel_count": 9318,
+          "repaired_pixel_count": 9271,
+          "raw_coverage": 0.9995707233311869,
+          "repaired_coverage": 1.0,
+          "iou": 0.9960722702278083,
+          "passed": true
+        },
+        "top_xy": {
+          "raw_pixel_count": 49974,
+          "repaired_pixel_count": 49974,
+          "raw_coverage": 1.0,
+          "repaired_coverage": 1.0,
+          "iou": 1.0,
+          "passed": true
+        }
+      },
+      "error": ""
+    },
+    {
+      "file": "Mephisto.stl",
+      "passed": true,
+      "views": {
+        "front_xz": {
+          "raw_pixel_count": 8601,
+          "repaired_pixel_count": 8567,
+          "raw_coverage": 1.0,
+          "repaired_coverage": 1.0,
+          "iou": 0.9965156794425087,
+          "passed": true
+        },
+        "side_yz": {
+          "raw_pixel_count": 5100,
+          "repaired_pixel_count": 5091,
+          "raw_coverage": 1.0,
+          "repaired_coverage": 1.0,
+          "iou": 0.9978070175438597,
+          "passed": true
+        },
+        "top_xy": {
+          "raw_pixel_count": 30646,
+          "repaired_pixel_count": 30646,
+          "raw_coverage": 1.0,
+          "repaired_coverage": 1.0,
+          "iou": 1.0,
+          "passed": true
+        }
+      },
+      "error": ""
+    },
+    {
+      "file": "Muradin.stl",
+      "passed": false,
+      "views": {
+        "front_xz": {
+          "raw_pixel_count": 13518,
+          "repaired_pixel_count": 13297,
+          "raw_coverage": 0.9973368841544608,
+          "repaired_coverage": 1.0,
+          "iou": 0.9883704735376044,
+          "passed": true
+        },
+        "side_yz": {
+          "raw_pixel_count": 11101,
+          "repaired_pixel_count": 10374,
+          "raw_coverage": 0.959913521304387,
+          "repaired_coverage": 1.0,
+          "iou": 0.9380449362843729,
+          "passed": false
+        },
+        "top_xy": {
+          "raw_pixel_count": 14936,
+          "repaired_pixel_count": 14936,
+          "raw_coverage": 1.0,
+          "repaired_coverage": 1.0,
+          "iou": 1.0,
+          "passed": true
+        }
+      },
+      "error": ""
+    },
+    {
+      "file": "Murky.stl",
+      "passed": false,
+      "views": {
+        "front_xz": {
+          "raw_pixel_count": 3576,
+          "repaired_pixel_count": 3915,
+          "raw_coverage": 0.9972035794183445,
+          "repaired_coverage": 0.9535121328224776,
+          "iou": 0.8834110592938041,
+          "passed": false
+        },
+        "side_yz": {
+          "raw_pixel_count": 4036,
+          "repaired_pixel_count": 4467,
+          "raw_coverage": 0.9975222993062438,
+          "repaired_coverage": 0.9523169912693082,
+          "iou": 0.8777712379831273,
+          "passed": false
+        },
+        "top_xy": {
+          "raw_pixel_count": 4550,
+          "repaired_pixel_count": 4558,
+          "raw_coverage": 1.0,
+          "repaired_coverage": 1.0,
+          "iou": 0.9768019884009942,
+          "passed": true
+        }
+      },
+      "error": ""
+    },
+    {
+      "file": "Nazeebo.stl",
+      "passed": true,
+      "views": {
+        "front_xz": {
+          "raw_pixel_count": 9191,
+          "repaired_pixel_count": 9536,
+          "raw_coverage": 0.998911979109999,
+          "repaired_coverage": 1.0,
+          "iou": 0.9533639143730887,
+          "passed": true
+        },
+        "side_yz": {
+          "raw_pixel_count": 5687,
+          "repaired_pixel_count": 5930,
+          "raw_coverage": 0.9982416036574644,
+          "repaired_coverage": 1.0,
+          "iou": 0.941970310391363,
+          "passed": true
+        },
+        "top_xy": {
+          "raw_pixel_count": 9524,
+          "repaired_pixel_count": 9600,
+          "raw_coverage": 1.0,
+          "repaired_coverage": 1.0,
+          "iou": 0.9791583166332666,
+          "passed": true
+        }
+      },
+      "error": ""
+    },
+    {
+      "file": "Nova.stl",
+      "passed": true,
+      "views": {
+        "front_xz": {
+          "raw_pixel_count": 8510,
+          "repaired_pixel_count": 8810,
+          "raw_coverage": 0.999529964747356,
+          "repaired_coverage": 1.0,
+          "iou": 0.9600825167612171,
+          "passed": true
+        },
+        "side_yz": {
+          "raw_pixel_count": 7791,
+          "repaired_pixel_count": 8179,
+          "raw_coverage": 0.9992298806314979,
+          "repaired_coverage": 1.0,
+          "iou": 0.9448913043478261,
+          "passed": true
+        },
+        "top_xy": {
+          "raw_pixel_count": 21304,
+          "repaired_pixel_count": 21525,
+          "raw_coverage": 1.0,
+          "repaired_coverage": 1.0,
+          "iou": 0.9878724563953488,
+          "passed": true
+        }
+      },
+      "error": ""
+    },
+    {
+      "file": "Orphea.stl",
+      "passed": true,
+      "views": {
+        "front_xz": {
+          "raw_pixel_count": 9351,
+          "repaired_pixel_count": 9661,
+          "raw_coverage": 0.9997861191316437,
+          "repaired_coverage": 1.0,
+          "iou": 0.9625889594152721,
+          "passed": true
+        },
+        "side_yz": {
+          "raw_pixel_count": 9032,
+          "repaired_pixel_count": 9527,
+          "raw_coverage": 0.99977856510186,
+          "repaired_coverage": 0.997060984570169,
+          "iou": 0.9544123389301055,
+          "passed": true
+        },
+        "top_xy": {
+          "raw_pixel_count": 9096,
+          "repaired_pixel_count": 9251,
+          "raw_coverage": 1.0,
+          "repaired_coverage": 1.0,
+          "iou": 0.9804679339878839,
+          "passed": true
+        }
+      },
+      "error": ""
+    }
+  ]
+}

@@ -1,0 +1,4685 @@
+{
+  "builder_version": "2.1.0",
+  "generated_utc": "2026-10-04T09:46:01.943128+00:00",
+  "blender_runtime": "3.6.23",
+  "expected_blender": "3.6.23",
+  "m3addon_commit": "58935005c4465a219a740f6b740253533eda773f",
+  "source_roots": [
+    "/home/runner/work/_temp/HOTS-02",
+    "/home/runner/work/HOTS-03/HOTS-03"
+  ],
+  "settings": {
+    "target_height_mm": 110.0,
+    "base_height_mm": 4.0,
+    "base_margin_mm": 4.0,
+    "voxel_mm": 0.55,
+    "thin_part_mm": 0.72,
+    "max_triangles": 450000,
+    "skip_animation": true
+  },
+  "heroes": [
+    {
+      "hero": "Lt. Morales",
+      "source_key": "medic",
+      "source_paths": [
+        "/home/runner/work/HOTS-03/HOTS-03/storm_hero_medic_base/storm_hero_medic_base.m3"
+      ],
+      "import": {
+        "imported_paths": [
+          "/home/runner/work/HOTS-03/HOTS-03/storm_hero_medic_base/storm_hero_medic_base.m3"
+        ],
+        "animation_paths": [],
+        "pose": null
+      },
+      "normalization": {
+        "scale_factor": 31.96498863216891,
+        "bounds_before": [
+          [
+            -47.28424835205078,
+            -17.342628479003906,
+            -0.0616428405046463
+          ],
+          [
+            33.53889465332031,
+            31.401195526123047,
+            109.9383544921875
+          ]
+        ],
+        "bounds_after": [
+          [
+            -40.41157150268555,
+            -24.371912002563477,
+            0.0
+          ],
+          [
+            40.41157150268555,
+            24.371912002563477,
+            110.0
+          ]
+        ],
+        "dimensions_mm": [
+          80.8231430053711,
+          48.74382400512695,
+          110.0
+        ]
+      },
+      "detail": {
+        "path": "/home/runner/work/_temp/HOTS_STL_chunk_4/01_Detail_Preserving/Lt._Morales.stl",
+        "bytes": 584734,
+        "sha256": "e47dd11d1413b7a9f3b717407700b6cdbb6bb9f19f347de057c3b9a6a39b724f",
+        "triangles": 11693,
+        "bounds_mm": [
+          [
+            -40.41157150268555,
+            -24.371912002563477,
+            0.0
+          ],
+          [
+            40.41157150268555,
+            24.371912002563477,
+            110.0
+          ]
+        ],
+        "dimensions_mm": [
+          80.8231430053711,
+          48.74382400512695,
+          110.0
+        ],
+        "validation": {
+          "valid_binary_stl": true,
+          "watertight_edge_test": false,
+          "boundary_edges": 727,
+          "nonmanifold_edges": 32,
+          "degenerate_triangles": 0,
+          "triangles": 11693
+        },
+        "source_artifact": "/home/runner/work/_temp/HOTS_STL_chunk_4/.build_cache/detail/medic.stl"
+      },
+      "print_ready": {
+        "path": "/home/runner/work/_temp/HOTS_STL_chunk_4/02_Print_Ready_Watertight/Lt._Morales.stl",
+        "bytes": 12023384,
+        "sha256": "acdd964e7c9771c520d0a210470ac3b971fd405fffe9faf39f1c4569542fd750",
+        "triangles": 240466,
+        "bounds_mm": [
+          [
+            -44.482425689697266,
+            -44.482425689697266,
+            0.0
+          ],
+          [
+            44.482425689697266,
+            44.482425689697266,
+            112.79356384277344
+          ]
+        ],
+        "dimensions_mm": [
+          88.96485137939453,
+          88.96485137939453,
+          112.79356384277344
+        ],
+        "validation": {
+          "valid_binary_stl": true,
+          "watertight_edge_test": true,
+          "boundary_edges": 0,
+          "nonmanifold_edges": 0,
+          "degenerate_triangles": 0,
+          "triangles": 240466
+        },
+        "source_artifact": "/home/runner/work/_temp/HOTS_STL_chunk_4/.build_cache/print_ready/medic.stl"
+      },
+      "decimation": {
+        "triangles_before_decimate": 308801,
+        "decimated": false,
+        "triangles_after_decimate": 308801,
+        "retry_voxel_mm": 0.62,
+        "retry": {
+          "triangles_before_decimate": 240466,
+          "decimated": false,
+          "triangles_after_decimate": 240466
+        }
+      },
+      "elapsed_source_seconds": 11.52,
+      "status": "success",
+      "resolution": "exact canonical base"
+    },
+    {
+      "hero": "Lucio",
+      "source_key": "lucio",
+      "source_paths": [
+        "/home/runner/work/HOTS-03/HOTS-03/storm_hero_lucio_base/storm_hero_lucio_base.m3"
+      ],
+      "import": {
+        "imported_paths": [
+          "/home/runner/work/HOTS-03/HOTS-03/storm_hero_lucio_base/storm_hero_lucio_base.m3"
+        ],
+        "animation_paths": [],
+        "pose": null
+      },
+      "normalization": {
+        "scale_factor": 36.077489587831224,
+        "bounds_before": [
+          [
+            -47.666202545166016,
+            -17.71727180480957,
+            0.20118364691734314
+          ],
+          [
+            32.83965301513672,
+            28.20016098022461,
+            110.20117950439453
+          ]
+        ],
+        "bounds_after": [
+          [
+            -40.2529296875,
+            -22.958717346191406,
+            0.0
+          ],
+          [
+            40.2529296875,
+            22.958717346191406,
+            109.99999237060547
+          ]
+        ],
+        "dimensions_mm": [
+          80.505859375,
+          45.91743469238281,
+          109.99999237060547
+        ]
+      },
+      "detail": {
+        "path": "/home/runner/work/_temp/HOTS_STL_chunk_4/01_Detail_Preserving/Lucio.stl",
+        "bytes": 591384,
+        "sha256": "97cbcdc65cbd0d7885914e823e14d4ad5d6ca8cbdb0e5635fa477b6745fbb849",
+        "triangles": 11826,
+        "bounds_mm": [
+          [
+            -40.2529296875,
+            -22.958717346191406,
+            0.0
+          ],
+          [
+            40.2529296875,
+            22.958717346191406,
+            109.99999237060547
+          ]
+        ],
+        "dimensions_mm": [
+          80.505859375,
+          45.91743469238281,
+          109.99999237060547
+        ],
+        "validation": {
+          "valid_binary_stl": true,
+          "watertight_edge_test": false,
+          "boundary_edges": 576,
+          "nonmanifold_edges": 143,
+          "degenerate_triangles": 0,
+          "triangles": 11826
+        },
+        "source_artifact": "/home/runner/work/_temp/HOTS_STL_chunk_4/.build_cache/detail/lucio.stl"
+      },
+      "print_ready": {
+        "path": "/home/runner/work/_temp/HOTS_STL_chunk_4/02_Print_Ready_Watertight/Lucio.stl",
+        "bytes": 8850734,
+        "sha256": "ceefc4337eef2d76740d3252dd208cd3b9176ae75c38fa554911a2c1bc1f43cc",
+        "triangles": 177013,
+        "bounds_mm": [
+          [
+            -44.320369720458984,
+            -44.320369720458984,
+            0.0
+          ],
+          [
+            44.320369720458984,
+            44.320369720458984,
+            112.75321197509766
+          ]
+        ],
+        "dimensions_mm": [
+          88.64073944091797,
+          88.64073944091797,
+          112.75321197509766
+        ],
+        "validation": {
+          "valid_binary_stl": true,
+          "watertight_edge_test": false,
+          "boundary_edges": 6,
+          "nonmanifold_edges": 3,
+          "degenerate_triangles": 0,
+          "triangles": 177013
+        },
+        "source_artifact": "/home/runner/work/_temp/HOTS_STL_chunk_4/.build_cache/print_ready/lucio.stl"
+      },
+      "decimation": {
+        "triangles_before_decimate": 229124,
+        "decimated": false,
+        "triangles_after_decimate": 229124,
+        "retry_voxel_mm": 0.62,
+        "retry": {
+          "triangles_before_decimate": 177013,
+          "decimated": false,
+          "triangles_after_decimate": 177013
+        }
+      },
+      "elapsed_source_seconds": 8.22,
+      "status": "success",
+      "resolution": "exact canonical base"
+    },
+    {
+      "hero": "Lunara",
+      "source_key": "dryad",
+      "source_paths": [
+        "/home/runner/work/_temp/HOTS-02/storm_hero_dryad_base/storm_hero_dryad_base.m3"
+      ],
+      "import": {
+        "imported_paths": [
+          "/home/runner/work/_temp/HOTS-02/storm_hero_dryad_base/storm_hero_dryad_base.m3"
+        ],
+        "animation_paths": [],
+        "pose": null
+      },
+      "normalization": {
+        "scale_factor": 28.933751816145836,
+        "bounds_before": [
+          [
+            -31.92315673828125,
+            -25.412992477416992,
+            -0.16656741499900818
+          ],
+          [
+            45.481483459472656,
+            58.125709533691406,
+            109.83343505859375
+          ]
+        ],
+        "bounds_after": [
+          [
+            -38.70232009887695,
+            -41.76934814453125,
+            0.0
+          ],
+          [
+            38.70232009887695,
+            41.769351959228516,
+            110.0
+          ]
+        ],
+        "dimensions_mm": [
+          77.4046401977539,
+          83.5386962890625,
+          110.0
+        ]
+      },
+      "detail": {
+        "path": "/home/runner/work/_temp/HOTS_STL_chunk_4/01_Detail_Preserving/Lunara.stl",
+        "bytes": 523134,
+        "sha256": "082e719fc292eef2fd48feaeb80f37c9650183a6437c81f3f177d443e013f0c0",
+        "triangles": 10461,
+        "bounds_mm": [
+          [
+            -38.70232009887695,
+            -41.76934814453125,
+            0.0
+          ],
+          [
+            38.70232009887695,
+            41.769351959228516,
+            110.0
+          ]
+        ],
+        "dimensions_mm": [
+          77.4046401977539,
+          83.5386962890625,
+          110.0
+        ],
+        "validation": {
+          "valid_binary_stl": true,
+          "watertight_edge_test": false,
+          "boundary_edges": 1457,
+          "nonmanifold_edges": 55,
+          "degenerate_triangles": 0,
+          "triangles": 10461
+        },
+        "source_artifact": "/home/runner/work/_temp/HOTS_STL_chunk_4/.build_cache/detail/dryad.stl"
+      },
+      "print_ready": {
+        "path": "/home/runner/work/_temp/HOTS_STL_chunk_4/02_Print_Ready_Watertight/Lunara.stl",
+        "bytes": 8825734,
+        "sha256": "f8dc541e0804812d54a21fa4ceecfdc99d3ed2cc7ee5df811fba20eebcbba8bc",
+        "triangles": 176513,
+        "bounds_mm": [
+          [
+            -45.788299560546875,
+            -45.788299560546875,
+            0.0
+          ],
+          [
+            45.788299560546875,
+            45.788299560546875,
+            111.8513412475586
+          ]
+        ],
+        "dimensions_mm": [
+          91.57659912109375,
+          91.57659912109375,
+          111.8513412475586
+        ],
+        "validation": {
+          "valid_binary_stl": true,
+          "watertight_edge_test": false,
+          "boundary_edges": 41,
+          "nonmanifold_edges": 40,
+          "degenerate_triangles": 0,
+          "triangles": 176513
+        },
+        "source_artifact": "/home/runner/work/_temp/HOTS_STL_chunk_4/.build_cache/print_ready/dryad.stl"
+      },
+      "decimation": {
+        "triangles_before_decimate": 229085,
+        "decimated": false,
+        "triangles_after_decimate": 229085,
+        "retry_voxel_mm": 0.62,
+        "retry": {
+          "triangles_before_decimate": 176513,
+          "decimated": false,
+          "triangles_after_decimate": 176513
+        }
+      },
+      "elapsed_source_seconds": 8.33,
+      "status": "success",
+      "resolution": "exact canonical base"
+    },
+    {
+      "hero": "Maiev",
+      "source_key": "maiev",
+      "source_paths": [
+        "/home/runner/work/HOTS-03/HOTS-03/storm_hero_maiev_base/storm_hero_maiev_base.m3"
+      ],
+      "import": {
+        "imported_paths": [
+          "/home/runner/work/HOTS-03/HOTS-03/storm_hero_maiev_base/storm_hero_maiev_base.m3"
+        ],
+        "animation_paths": [],
+        "pose": null
+      },
+      "normalization": {
+        "scale_factor": 35.00193644529639,
+        "bounds_before": [
+          [
+            -37.02731704711914,
+            -33.896183013916016,
+            -1.952745795249939
+          ],
+          [
+            55.75862121582031,
+            48.791481018066406,
+            108.04725646972656
+          ]
+        ],
+        "bounds_after": [
+          [
+            -46.392967224121094,
+            -41.343833923339844,
+            0.0
+          ],
+          [
+            46.392967224121094,
+            41.343833923339844,
+            110.0
+          ]
+        ],
+        "dimensions_mm": [
+          92.78593444824219,
+          82.68766784667969,
+          110.0
+        ]
+      },
+      "detail": {
+        "path": "/home/runner/work/_temp/HOTS_STL_chunk_4/01_Detail_Preserving/Maiev.stl",
+        "bytes": 763734,
+        "sha256": "191922fa3532f9d6e3840dd84d0dfd59c8e9b517e66bce127fae7b760d68748a",
+        "triangles": 15273,
+        "bounds_mm": [
+          [
+            -46.392967224121094,
+            -41.343833923339844,
+            0.0
+          ],
+          [
+            46.392967224121094,
+            41.343833923339844,
+            110.0
+          ]
+        ],
+        "dimensions_mm": [
+          92.78593444824219,
+          82.68766784667969,
+          110.0
+        ],
+        "validation": {
+          "valid_binary_stl": true,
+          "watertight_edge_test": false,
+          "boundary_edges": 478,
+          "nonmanifold_edges": 5,
+          "degenerate_triangles": 0,
+          "triangles": 15273
+        },
+        "source_artifact": "/home/runner/work/_temp/HOTS_STL_chunk_4/.build_cache/detail/maiev.stl"
+      },
+      "print_ready": {
+        "path": "/home/runner/work/_temp/HOTS_STL_chunk_4/02_Print_Ready_Watertight/Maiev.stl",
+        "bytes": 13978684,
+        "sha256": "1bd431f2fcd6151bcf550bbd4e4b2fcc29d3549ffb2dd6615a0b2102793006c7",
+        "triangles": 279572,
+        "bounds_mm": [
+          [
+            -50.46006393432617,
+            -50.46006393432617,
+            0.0
+          ],
+          [
+            50.46006393432617,
+            50.46006393432617,
+            112.6695556640625
+          ]
+        ],
+        "dimensions_mm": [
+          100.92012786865234,
+          100.92012786865234,
+          112.6695556640625
+        ],
+        "validation": {
+          "valid_binary_stl": true,
+          "watertight_edge_test": false,
+          "boundary_edges": 19,
+          "nonmanifold_edges": 4,
+          "degenerate_triangles": 0,
+          "triangles": 279572
+        },
+        "source_artifact": "/home/runner/work/_temp/HOTS_STL_chunk_4/.build_cache/print_ready/maiev.stl"
+      },
+      "decimation": {
+        "triangles_before_decimate": 367221,
+        "decimated": false,
+        "triangles_after_decimate": 367221,
+        "retry_voxel_mm": 0.62,
+        "retry": {
+          "triangles_before_decimate": 279572,
+          "decimated": false,
+          "triangles_after_decimate": 279572
+        }
+      },
+      "elapsed_source_seconds": 13.02,
+      "status": "success",
+      "resolution": "exact canonical base"
+    },
+    {
+      "hero": "Mal'Ganis",
+      "source_key": "malganis",
+      "source_paths": [
+        "/home/runner/work/HOTS-03/HOTS-03/storm_hero_malganis_base/storm_hero_malganis_base.m3"
+      ],
+      "import": {
+        "imported_paths": [
+          "/home/runner/work/HOTS-03/HOTS-03/storm_hero_malganis_base/storm_hero_malganis_base.m3"
+        ],
+        "animation_paths": [],
+        "pose": null
+      },
+      "normalization": {
+        "scale_factor": 28.163145663852834,
+        "bounds_before": [
+          [
+            -48.0055046081543,
+            -15.621991157531738,
+            0.05859510600566864
+          ],
+          [
+            48.00563430786133,
+            38.326171875,
+            110.05858612060547
+          ]
+        ],
+        "bounds_after": [
+          [
+            -48.00556945800781,
+            -26.974082946777344,
+            0.0
+          ],
+          [
+            48.00556945800781,
+            26.97408103942871,
+            109.99999237060547
+          ]
+        ],
+        "dimensions_mm": [
+          96.01113891601562,
+          53.94816589355469,
+          109.99999237060547
+        ]
+      },
+      "detail": {
+        "path": "/home/runner/work/_temp/HOTS_STL_chunk_4/01_Detail_Preserving/Mal_Ganis.stl",
+        "bytes": 751784,
+        "sha256": "d42b5ed35cf2afd68b064a416b8ccf71703115c878e44711a96c23c1158e8d96",
+        "triangles": 15034,
+        "bounds_mm": [
+          [
+            -48.00556945800781,
+            -26.974082946777344,
+            0.0
+          ],
+          [
+            48.00556945800781,
+            26.97408103942871,
+            109.99999237060547
+          ]
+        ],
+        "dimensions_mm": [
+          96.01113891601562,
+          53.94816589355469,
+          109.99999237060547
+        ],
+        "validation": {
+          "valid_binary_stl": true,
+          "watertight_edge_test": false,
+          "boundary_edges": 136,
+          "nonmanifold_edges": 16,
+          "degenerate_triangles": 0,
+          "triangles": 15034
+        },
+        "source_artifact": "/home/runner/work/_temp/HOTS_STL_chunk_4/.build_cache/detail/malganis.stl"
+      },
+      "print_ready": {
+        "path": "/home/runner/work/_temp/HOTS_STL_chunk_4/02_Print_Ready_Watertight/Mal_Ganis.stl",
+        "bytes": 14715284,
+        "sha256": "3176c501a6a07a8751f4721f6e78a23905181ba9c6aaf0a64d953a26260bf9eb",
+        "triangles": 294304,
+        "bounds_mm": [
+          [
+            -52.060386657714844,
+            -52.060386657714844,
+            0.0
+          ],
+          [
+            52.060386657714844,
+            52.060386657714844,
+            112.73590850830078
+          ]
+        ],
+        "dimensions_mm": [
+          104.12077331542969,
+          104.12077331542969,
+          112.73590850830078
+        ],
+        "validation": {
+          "valid_binary_stl": true,
+          "watertight_edge_test": false,
+          "boundary_edges": 2,
+          "nonmanifold_edges": 13,
+          "degenerate_triangles": 0,
+          "triangles": 294304
+        },
+        "source_artifact": "/home/runner/work/_temp/HOTS_STL_chunk_4/.build_cache/print_ready/malganis.stl"
+      },
+      "decimation": {
+        "triangles_before_decimate": 380230,
+        "decimated": false,
+        "triangles_after_decimate": 380230,
+        "retry_voxel_mm": 0.62,
+        "retry": {
+          "triangles_before_decimate": 294304,
+          "decimated": false,
+          "triangles_after_decimate": 294304
+        }
+      },
+      "elapsed_source_seconds": 13.76,
+      "status": "success",
+      "resolution": "exact canonical base"
+    },
+    {
+      "hero": "Malfurion",
+      "source_key": "malfurion",
+      "source_paths": [
+        "/home/runner/work/HOTS-03/HOTS-03/storm_hero_malfurion_base/storm_hero_malfurion_base.m3"
+      ],
+      "import": {
+        "imported_paths": [
+          "/home/runner/work/HOTS-03/HOTS-03/storm_hero_malfurion_base/storm_hero_malfurion_base.m3"
+        ],
+        "animation_paths": [],
+        "pose": null
+      },
+      "normalization": {
+        "scale_factor": 28.41385868125994,
+        "bounds_before": [
+          [
+            -53.09476089477539,
+            -54.56534194946289,
+            -0.2621249258518219
+          ],
+          [
+            53.09473419189453,
+            37.250431060791016,
+            109.73786926269531
+          ]
+        ],
+        "bounds_after": [
+          [
+            -53.094749450683594,
+            -45.90788650512695,
+            0.0
+          ],
+          [
+            53.094749450683594,
+            45.90788650512695,
+            109.99999237060547
+          ]
+        ],
+        "dimensions_mm": [
+          106.18949890136719,
+          91.8157730102539,
+          109.99999237060547
+        ]
+      },
+      "detail": {
+        "path": "/home/runner/work/_temp/HOTS_STL_chunk_4/01_Detail_Preserving/Malfurion.stl",
+        "bytes": 756534,
+        "sha256": "5f5d8cb39596ea8322ace95bdd5161a6302932f99a4d46791df268eded760e12",
+        "triangles": 15129,
+        "bounds_mm": [
+          [
+            -53.094749450683594,
+            -45.90788650512695,
+            0.0
+          ],
+          [
+            53.094749450683594,
+            45.90788650512695,
+            109.99999237060547
+          ]
+        ],
+        "dimensions_mm": [
+          106.18949890136719,
+          91.8157730102539,
+          109.99999237060547
+        ],
+        "validation": {
+          "valid_binary_stl": true,
+          "watertight_edge_test": false,
+          "boundary_edges": 1091,
+          "nonmanifold_edges": 50,
+          "degenerate_triangles": 0,
+          "triangles": 15129
+        },
+        "source_artifact": "/home/runner/work/_temp/HOTS_STL_chunk_4/.build_cache/detail/malfurion.stl"
+      },
+      "print_ready": {
+        "path": "/home/runner/work/_temp/HOTS_STL_chunk_4/02_Print_Ready_Watertight/Malfurion.stl",
+        "bytes": 15424884,
+        "sha256": "e1bfafe244afcae20e12fa42cd2fa3e91d0f1647d17ff4a73e4c605e0a12eb54",
+        "triangles": 308496,
+        "bounds_mm": [
+          [
+            -57.131553649902344,
+            -57.131553649902344,
+            0.0
+          ],
+          [
+            57.131553649902344,
+            57.131553649902344,
+            112.55387878417969
+          ]
+        ],
+        "dimensions_mm": [
+          114.26310729980469,
+          114.26310729980469,
+          112.55387878417969
+        ],
+        "validation": {
+          "valid_binary_stl": true,
+          "watertight_edge_test": false,
+          "boundary_edges": 58,
+          "nonmanifold_edges": 303,
+          "degenerate_triangles": 0,
+          "triangles": 308496
+        },
+        "source_artifact": "/home/runner/work/_temp/HOTS_STL_chunk_4/.build_cache/print_ready/malfurion.stl"
+      },
+      "decimation": {
+        "triangles_before_decimate": 402907,
+        "decimated": false,
+        "triangles_after_decimate": 402907,
+        "retry_voxel_mm": 0.62,
+        "retry": {
+          "triangles_before_decimate": 308496,
+          "decimated": false,
+          "triangles_after_decimate": 308496
+        }
+      },
+      "elapsed_source_seconds": 15.12,
+      "status": "success",
+      "resolution": "exact canonical base"
+    },
+    {
+      "hero": "Malthael",
+      "source_key": "malthael",
+      "source_paths": [
+        "/home/runner/work/HOTS-03/HOTS-03/storm_hero_malthael_base/storm_hero_malthael_base.m3"
+      ],
+      "import": {
+        "imported_paths": [
+          "/home/runner/work/HOTS-03/HOTS-03/storm_hero_malthael_base/storm_hero_malthael_base.m3"
+        ],
+        "animation_paths": [],
+        "pose": null
+      },
+      "normalization": {
+        "scale_factor": 26.687326723395444,
+        "bounds_before": [
+          [
+            -36.86544418334961,
+            -24.046432495117188,
+            -4.2284321784973145
+          ],
+          [
+            36.865455627441406,
+            23.806114196777344,
+            105.77156829833984
+          ]
+        ],
+        "bounds_after": [
+          [
+            -36.865447998046875,
+            -23.926273345947266,
+            0.0
+          ],
+          [
+            36.865447998046875,
+            23.926273345947266,
+            110.0
+          ]
+        ],
+        "dimensions_mm": [
+          73.73089599609375,
+          47.85254669189453,
+          110.0
+        ]
+      },
+      "detail": {
+        "path": "/home/runner/work/_temp/HOTS_STL_chunk_4/01_Detail_Preserving/Malthael.stl",
+        "bytes": 774634,
+        "sha256": "51d7c523a3d5c1dac20f9ae57f3318b721fcb8831d611a3eb8ff2f1c56255a1d",
+        "triangles": 15491,
+        "bounds_mm": [
+          [
+            -36.865447998046875,
+            -23.926273345947266,
+            0.0
+          ],
+          [
+            36.865447998046875,
+            23.926273345947266,
+            110.0
+          ]
+        ],
+        "dimensions_mm": [
+          73.73089599609375,
+          47.85254669189453,
+          110.0
+        ],
+        "validation": {
+          "valid_binary_stl": true,
+          "watertight_edge_test": false,
+          "boundary_edges": 296,
+          "nonmanifold_edges": 238,
+          "degenerate_triangles": 0,
+          "triangles": 15491
+        },
+        "source_artifact": "/home/runner/work/_temp/HOTS_STL_chunk_4/.build_cache/detail/malthael.stl"
+      },
+      "print_ready": {
+        "path": "/home/runner/work/_temp/HOTS_STL_chunk_4/02_Print_Ready_Watertight/Malthael.stl",
+        "bytes": 11970784,
+        "sha256": "8b8c3ca923138ecc0fac55adb91cc5d1ba1996a62653c76a3d0f1bfa25eac91e",
+        "triangles": 239414,
+        "bounds_mm": [
+          [
+            -40.9342155456543,
+            -40.9342155456543,
+            0.0
+          ],
+          [
+            40.9342155456543,
+            40.9342155456543,
+            112.7406005859375
+          ]
+        ],
+        "dimensions_mm": [
+          81.8684310913086,
+          81.8684310913086,
+          112.7406005859375
+        ],
+        "validation": {
+          "valid_binary_stl": true,
+          "watertight_edge_test": false,
+          "boundary_edges": 54,
+          "nonmanifold_edges": 411,
+          "degenerate_triangles": 0,
+          "triangles": 239414
+        },
+        "source_artifact": "/home/runner/work/_temp/HOTS_STL_chunk_4/.build_cache/print_ready/malthael.stl"
+      },
+      "decimation": {
+        "triangles_before_decimate": 316771,
+        "decimated": false,
+        "triangles_after_decimate": 316771,
+        "retry_voxel_mm": 0.62,
+        "retry": {
+          "triangles_before_decimate": 239414,
+          "decimated": false,
+          "triangles_after_decimate": 239414
+        }
+      },
+      "elapsed_source_seconds": 12.05,
+      "status": "success",
+      "resolution": "exact canonical base"
+    },
+    {
+      "hero": "Medivh",
+      "source_key": "medivh",
+      "source_paths": [
+        "/home/runner/work/HOTS-03/HOTS-03/storm_hero_medivh_base/storm_hero_medivh_base.m3"
+      ],
+      "import": {
+        "imported_paths": [
+          "/home/runner/work/HOTS-03/HOTS-03/storm_hero_medivh_base/storm_hero_medivh_base.m3"
+        ],
+        "animation_paths": [],
+        "pose": null
+      },
+      "normalization": {
+        "scale_factor": 30.525288819333742,
+        "bounds_before": [
+          [
+            -53.56094741821289,
+            -12.476459503173828,
+            -0.8247453570365906
+          ],
+          [
+            33.30299377441406,
+            22.17429542541504,
+            109.17525482177734
+          ]
+        ],
+        "bounds_after": [
+          [
+            -43.431968688964844,
+            -17.32537841796875,
+            0.0
+          ],
+          [
+            43.431968688964844,
+            17.32537841796875,
+            110.0
+          ]
+        ],
+        "dimensions_mm": [
+          86.86393737792969,
+          34.6507568359375,
+          110.0
+        ]
+      },
+      "detail": {
+        "path": "/home/runner/work/_temp/HOTS_STL_chunk_4/01_Detail_Preserving/Medivh.stl",
+        "bytes": 635934,
+        "sha256": "db5e886c231068d6b5982b33106b42e705c544441c3af003466163511f0bf14b",
+        "triangles": 12717,
+        "bounds_mm": [
+          [
+            -43.431968688964844,
+            -17.32537841796875,
+            0.0
+          ],
+          [
+            43.431968688964844,
+            17.32537841796875,
+            110.0
+          ]
+        ],
+        "dimensions_mm": [
+          86.86393737792969,
+          34.6507568359375,
+          110.0
+        ],
+        "validation": {
+          "valid_binary_stl": true,
+          "watertight_edge_test": false,
+          "boundary_edges": 1204,
+          "nonmanifold_edges": 53,
+          "degenerate_triangles": 0,
+          "triangles": 12717
+        },
+        "source_artifact": "/home/runner/work/_temp/HOTS_STL_chunk_4/.build_cache/detail/medivh.stl"
+      },
+      "print_ready": {
+        "path": "/home/runner/work/_temp/HOTS_STL_chunk_4/02_Print_Ready_Watertight/Medivh.stl",
+        "bytes": 11538784,
+        "sha256": "98e7e9c16ad298efe448015298a188b294e6e857c87f7146807deffd3d5605fd",
+        "triangles": 230774,
+        "bounds_mm": [
+          [
+            -47.4582405090332,
+            -47.4582405090332,
+            0.0
+          ],
+          [
+            47.4582405090332,
+            47.4582405090332,
+            112.56220245361328
+          ]
+        ],
+        "dimensions_mm": [
+          94.9164810180664,
+          94.9164810180664,
+          112.56220245361328
+        ],
+        "validation": {
+          "valid_binary_stl": true,
+          "watertight_edge_test": false,
+          "boundary_edges": 69,
+          "nonmanifold_edges": 233,
+          "degenerate_triangles": 0,
+          "triangles": 230774
+        },
+        "source_artifact": "/home/runner/work/_temp/HOTS_STL_chunk_4/.build_cache/print_ready/medivh.stl"
+      },
+      "decimation": {
+        "triangles_before_decimate": 299698,
+        "decimated": false,
+        "triangles_after_decimate": 299698,
+        "retry_voxel_mm": 0.62,
+        "retry": {
+          "triangles_before_decimate": 230774,
+          "decimated": false,
+          "triangles_after_decimate": 230774
+        }
+      },
+      "elapsed_source_seconds": 11.16,
+      "status": "success",
+      "resolution": "exact canonical base"
+    },
+    {
+      "hero": "Mei",
+      "source_key": "meiow",
+      "source_paths": [
+        "/home/runner/work/HOTS-03/HOTS-03/storm_hero_meiow_base/storm_hero_meiow_base.m3"
+      ],
+      "import": {
+        "imported_paths": [
+          "/home/runner/work/HOTS-03/HOTS-03/storm_hero_meiow_base/storm_hero_meiow_base.m3"
+        ],
+        "animation_paths": [],
+        "pose": null
+      },
+      "normalization": {
+        "scale_factor": 41.31565427785365,
+        "bounds_before": [
+          [
+            -117.13001251220703,
+            -15.093682289123535,
+            -2.012874126434326
+          ],
+          [
+            36.78007507324219,
+            31.908658981323242,
+            107.98712921142578
+          ]
+        ],
+        "bounds_after": [
+          [
+            -76.95504760742188,
+            -23.501171112060547,
+            0.0
+          ],
+          [
+            76.95504760742188,
+            23.501171112060547,
+            110.0
+          ]
+        ],
+        "dimensions_mm": [
+          153.91009521484375,
+          47.002342224121094,
+          110.0
+        ]
+      },
+      "detail": {
+        "path": "/home/runner/work/_temp/HOTS_STL_chunk_4/01_Detail_Preserving/Mei.stl",
+        "bytes": 697184,
+        "sha256": "402507c354c23869f9397a95a2793f1de8958c22a310e88940864b76db5616f8",
+        "triangles": 13942,
+        "bounds_mm": [
+          [
+            -76.95504760742188,
+            -23.501171112060547,
+            0.0
+          ],
+          [
+            76.95504760742188,
+            23.501171112060547,
+            110.0
+          ]
+        ],
+        "dimensions_mm": [
+          153.91009521484375,
+          47.002342224121094,
+          110.0
+        ],
+        "validation": {
+          "valid_binary_stl": true,
+          "watertight_edge_test": false,
+          "boundary_edges": 690,
+          "nonmanifold_edges": 0,
+          "degenerate_triangles": 0,
+          "triangles": 13942
+        },
+        "source_artifact": "/home/runner/work/_temp/HOTS_STL_chunk_4/.build_cache/detail/meiow.stl"
+      },
+      "print_ready": {
+        "path": "/home/runner/work/_temp/HOTS_STL_chunk_4/02_Print_Ready_Watertight/Mei.stl",
+        "bytes": 19523334,
+        "sha256": "cf542d5fef1c1c0e1027aa80098762da3f7ce2992c0a797700ca091438bb4a2b",
+        "triangles": 390465,
+        "bounds_mm": [
+          [
+            -81.02494812011719,
+            -81.02494812011719,
+            0.0
+          ],
+          [
+            81.02494812011719,
+            81.02494812011719,
+            112.7152099609375
+          ]
+        ],
+        "dimensions_mm": [
+          162.04989624023438,
+          162.04989624023438,
+          112.7152099609375
+        ],
+        "validation": {
+          "valid_binary_stl": true,
+          "watertight_edge_test": false,
+          "boundary_edges": 109,
+          "nonmanifold_edges": 324,
+          "degenerate_triangles": 0,
+          "triangles": 390465
+        },
+        "source_artifact": "/home/runner/work/_temp/HOTS_STL_chunk_4/.build_cache/print_ready/meiow.stl"
+      },
+      "decimation": {
+        "triangles_before_decimate": 503516,
+        "decimated": true,
+        "decimate_ratio": 0.8937153933539351,
+        "triangles_after_decimate": 449999,
+        "retry_voxel_mm": 0.62,
+        "retry": {
+          "triangles_before_decimate": 390465,
+          "decimated": false,
+          "triangles_after_decimate": 390465
+        }
+      },
+      "elapsed_source_seconds": 21.01,
+      "status": "success",
+      "resolution": "exact canonical base"
+    },
+    {
+      "hero": "Mephisto",
+      "source_key": "mephisto",
+      "source_paths": [
+        "/home/runner/work/HOTS-03/HOTS-03/storm_hero_mephisto_base/storm_hero_mephisto_base.m3"
+      ],
+      "import": {
+        "imported_paths": [
+          "/home/runner/work/HOTS-03/HOTS-03/storm_hero_mephisto_base/storm_hero_mephisto_base.m3"
+        ],
+        "animation_paths": [],
+        "pose": null
+      },
+      "normalization": {
+        "scale_factor": 22.252877075824845,
+        "bounds_before": [
+          [
+            -59.20688247680664,
+            -20.42167091369629,
+            -15.604215621948242
+          ],
+          [
+            59.206871032714844,
+            19.402904510498047,
+            94.39578247070312
+          ]
+        ],
+        "bounds_after": [
+          [
+            -59.206878662109375,
+            -19.912288665771484,
+            0.0
+          ],
+          [
+            59.206878662109375,
+            19.912288665771484,
+            110.0
+          ]
+        ],
+        "dimensions_mm": [
+          118.41375732421875,
+          39.82457733154297,
+          110.0
+        ]
+      },
+      "detail": {
+        "path": "/home/runner/work/_temp/HOTS_STL_chunk_4/01_Detail_Preserving/Mephisto.stl",
+        "bytes": 669884,
+        "sha256": "2b1df6485dd1c460295017c90bb4dc1b57bad69973570f36ac88228bebf43ed6",
+        "triangles": 13396,
+        "bounds_mm": [
+          [
+            -59.206878662109375,
+            -19.912288665771484,
+            0.0
+          ],
+          [
+            59.206878662109375,
+            19.912288665771484,
+            110.0
+          ]
+        ],
+        "dimensions_mm": [
+          118.41375732421875,
+          39.82457733154297,
+          110.0
+        ],
+        "validation": {
+          "valid_binary_stl": true,
+          "watertight_edge_test": false,
+          "boundary_edges": 22,
+          "nonmanifold_edges": 0,
+          "degenerate_triangles": 0,
+          "triangles": 13396
+        },
+        "source_artifact": "/home/runner/work/_temp/HOTS_STL_chunk_4/.build_cache/detail/mephisto.stl"
+      },
+      "print_ready": {
+        "path": "/home/runner/work/_temp/HOTS_STL_chunk_4/02_Print_Ready_Watertight/Mephisto.stl",
+        "bytes": 10696534,
+        "sha256": "edbf5b2a872f1c1c1e48e20746596bb3aa5adbd17c44aeeb05b988639c195edf",
+        "triangles": 213929,
+        "bounds_mm": [
+          [
+            -63.238338470458984,
+            -63.238338470458984,
+            0.0
+          ],
+          [
+            63.238338470458984,
+            63.238338470458984,
+            112.61534881591797
+          ]
+        ],
+        "dimensions_mm": [
+          126.47667694091797,
+          126.47667694091797,
+          112.61534881591797
+        ],
+        "validation": {
+          "valid_binary_stl": true,
+          "watertight_edge_test": false,
+          "boundary_edges": 18,
+          "nonmanifold_edges": 9,
+          "degenerate_triangles": 0,
+          "triangles": 213929
+        },
+        "source_artifact": "/home/runner/work/_temp/HOTS_STL_chunk_4/.build_cache/print_ready/mephisto.stl"
+      },
+      "decimation": {
+        "triangles_before_decimate": 274081,
+        "decimated": false,
+        "triangles_after_decimate": 274081,
+        "retry_voxel_mm": 0.62,
+        "retry": {
+          "triangles_before_decimate": 213929,
+          "decimated": false,
+          "triangles_after_decimate": 213929
+        }
+      },
+      "elapsed_source_seconds": 10.26,
+      "status": "success",
+      "resolution": "exact canonical base"
+    },
+    {
+      "hero": "Muradin",
+      "source_key": "muradin",
+      "source_paths": [
+        "/home/runner/work/HOTS-03/HOTS-03/storm_hero_muradin_base/storm_hero_muradin_base.m3"
+      ],
+      "import": {
+        "imported_paths": [
+          "/home/runner/work/HOTS-03/HOTS-03/storm_hero_muradin_base/storm_hero_muradin_base.m3"
+        ],
+        "animation_paths": [],
+        "pose": null
+      },
+      "normalization": {
+        "scale_factor": 40.21102678762858,
+        "bounds_before": [
+          [
+            -41.23906326293945,
+            -27.894834518432617,
+            -13.726633071899414
+          ],
+          [
+            37.8252067565918,
+            42.754154205322266,
+            96.27336120605469
+          ]
+        ],
+        "bounds_after": [
+          [
+            -39.532135009765625,
+            -35.324493408203125,
+            0.0
+          ],
+          [
+            39.532135009765625,
+            35.324493408203125,
+            109.99999237060547
+          ]
+        ],
+        "dimensions_mm": [
+          79.06427001953125,
+          70.64898681640625,
+          109.99999237060547
+        ]
+      },
+      "detail": {
+        "path": "/home/runner/work/_temp/HOTS_STL_chunk_4/01_Detail_Preserving/Muradin.stl",
+        "bytes": 519584,
+        "sha256": "9c17e6f51b1888949b0c19d6b8a9fc881171026db6dd8187db8646c30504e8e4",
+        "triangles": 10390,
+        "bounds_mm": [
+          [
+            -39.532135009765625,
+            -35.324493408203125,
+            0.0
+          ],
+          [
+            39.532135009765625,
+            35.324493408203125,
+            109.99999237060547
+          ]
+        ],
+        "dimensions_mm": [
+          79.06427001953125,
+          70.64898681640625,
+          109.99999237060547
+        ],
+        "validation": {
+          "valid_binary_stl": true,
+          "watertight_edge_test": false,
+          "boundary_edges": 644,
+          "nonmanifold_edges": 44,
+          "degenerate_triangles": 0,
+          "triangles": 10390
+        },
+        "source_artifact": "/home/runner/work/_temp/HOTS_STL_chunk_4/.build_cache/detail/muradin.stl"
+      },
+      "print_ready": {
+        "path": "/home/runner/work/_temp/HOTS_STL_chunk_4/02_Print_Ready_Watertight/Muradin.stl",
+        "bytes": 16982234,
+        "sha256": "a3e5f546f79f54d5b1279b5c466c8b36c4275f03c6057040c3a072a5a55caef8",
+        "triangles": 339643,
+        "bounds_mm": [
+          [
+            -43.59406661987305,
+            -43.59406661987305,
+            0.0
+          ],
+          [
+            43.59406661987305,
+            43.59406661987305,
+            112.60359191894531
+          ]
+        ],
+        "dimensions_mm": [
+          87.1881332397461,
+          87.1881332397461,
+          112.60359191894531
+        ],
+        "validation": {
+          "valid_binary_stl": true,
+          "watertight_edge_test": false,
+          "boundary_edges": 128,
+          "nonmanifold_edges": 1127,
+          "degenerate_triangles": 0,
+          "triangles": 339643
+        },
+        "source_artifact": "/home/runner/work/_temp/HOTS_STL_chunk_4/.build_cache/print_ready/muradin.stl"
+      },
+      "decimation": {
+        "triangles_before_decimate": 443495,
+        "decimated": false,
+        "triangles_after_decimate": 443495,
+        "retry_voxel_mm": 0.62,
+        "retry": {
+          "triangles_before_decimate": 339643,
+          "decimated": false,
+          "triangles_after_decimate": 339643
+        }
+      },
+      "elapsed_source_seconds": 17.19,
+      "status": "success",
+      "resolution": "exact canonical base"
+    },
+    {
+      "hero": "Murky",
+      "source_key": "murky",
+      "source_paths": [
+        "/home/runner/work/HOTS-03/HOTS-03/storm_hero_murky_base/storm_hero_murky_base.m3"
+      ],
+      "import": {
+        "imported_paths": [
+          "/home/runner/work/HOTS-03/HOTS-03/storm_hero_murky_base/storm_hero_murky_base.m3"
+        ],
+        "animation_paths": [],
+        "pose": null
+      },
+      "normalization": {
+        "scale_factor": 9.65963709999912,
+        "bounds_before": [
+          [
+            -18.329116821289062,
+            -33.71646499633789,
+            -93.97315979003906
+          ],
+          [
+            11.954192161560059,
+            5.590492248535156,
+            16.026845932006836
+          ]
+        ],
+        "bounds_after": [
+          [
+            -15.141654968261719,
+            -19.653478622436523,
+            0.0
+          ],
+          [
+            15.141654968261719,
+            19.653478622436523,
+            110.00000762939453
+          ]
+        ],
+        "dimensions_mm": [
+          30.283309936523438,
+          39.30695724487305,
+          110.00000762939453
+        ]
+      },
+      "detail": {
+        "path": "/home/runner/work/_temp/HOTS_STL_chunk_4/01_Detail_Preserving/Murky.stl",
+        "bytes": 606434,
+        "sha256": "ff32f2106408464dee6417cab4e17420381923550221723206b2260450753cc4",
+        "triangles": 12127,
+        "bounds_mm": [
+          [
+            -15.141654968261719,
+            -19.653478622436523,
+            0.0
+          ],
+          [
+            15.141654968261719,
+            19.653478622436523,
+            110.00000762939453
+          ]
+        ],
+        "dimensions_mm": [
+          30.283309936523438,
+          39.30695724487305,
+          110.00000762939453
+        ],
+        "validation": {
+          "valid_binary_stl": true,
+          "watertight_edge_test": false,
+          "boundary_edges": 371,
+          "nonmanifold_edges": 0,
+          "degenerate_triangles": 0,
+          "triangles": 12127
+        },
+        "source_artifact": "/home/runner/work/_temp/HOTS_STL_chunk_4/.build_cache/detail/murky.stl"
+      },
+      "print_ready": {
+        "path": "/home/runner/work/_temp/HOTS_STL_chunk_4/02_Print_Ready_Watertight/Murky.stl",
+        "bytes": 2729734,
+        "sha256": "fc7104ba5d065870e3b917fe7fbdeb28f2248cc2eb94d3441e8fee8975974186",
+        "triangles": 54593,
+        "bounds_mm": [
+          [
+            -23.7055606842041,
+            -23.7055606842041,
+            0.0
+          ],
+          [
+            23.7055606842041,
+            23.7055606842041,
+            112.63333892822266
+          ]
+        ],
+        "dimensions_mm": [
+          47.4111213684082,
+          47.4111213684082,
+          112.63333892822266
+        ],
+        "validation": {
+          "valid_binary_stl": true,
+          "watertight_edge_test": false,
+          "boundary_edges": 2,
+          "nonmanifold_edges": 4,
+          "degenerate_triangles": 0,
+          "triangles": 54593
+        },
+        "source_artifact": "/home/runner/work/_temp/HOTS_STL_chunk_4/.build_cache/print_ready/murky.stl"
+      },
+      "decimation": {
+        "triangles_before_decimate": 70243,
+        "decimated": false,
+        "triangles_after_decimate": 70243,
+        "retry_voxel_mm": 0.62,
+        "retry": {
+          "triangles_before_decimate": 54593,
+          "decimated": false,
+          "triangles_after_decimate": 54593
+        }
+      },
+      "elapsed_source_seconds": 2.88,
+      "status": "success",
+      "resolution": "exact canonical base"
+    },
+    {
+      "hero": "Nazeebo",
+      "source_key": "d3witchdoctorm",
+      "source_paths": [
+        "/home/runner/work/_temp/HOTS-02/storm_hero_d3witchdoctorm_base/storm_hero_d3witchdoctorm_base.m3"
+      ],
+      "import": {
+        "imported_paths": [
+          "/home/runner/work/_temp/HOTS-02/storm_hero_d3witchdoctorm_base/storm_hero_d3witchdoctorm_base.m3"
+        ],
+        "animation_paths": [],
+        "pose": null
+      },
+      "normalization": {
+        "scale_factor": 30.725058560111837,
+        "bounds_before": [
+          [
+            -30.755836486816406,
+            -13.31623363494873,
+            0.012676647864282131
+          ],
+          [
+            30.755807876586914,
+            30.857696533203125,
+            110.01268005371094
+          ]
+        ],
+        "bounds_after": [
+          [
+            -30.755821228027344,
+            -22.086963653564453,
+            0.0
+          ],
+          [
+            30.755821228027344,
+            22.086965560913086,
+            110.0
+          ]
+        ],
+        "dimensions_mm": [
+          61.51164245605469,
+          44.173927307128906,
+          110.0
+        ]
+      },
+      "detail": {
+        "path": "/home/runner/work/_temp/HOTS_STL_chunk_4/01_Detail_Preserving/Nazeebo.stl",
+        "bytes": 624984,
+        "sha256": "3cb34c2fbcadc5c0ea8ed9a32f3348fdb8e4606efde9c481c452dd67a2037407",
+        "triangles": 12498,
+        "bounds_mm": [
+          [
+            -30.755821228027344,
+            -22.086963653564453,
+            0.0
+          ],
+          [
+            30.755821228027344,
+            22.086965560913086,
+            110.0
+          ]
+        ],
+        "dimensions_mm": [
+          61.51164245605469,
+          44.173927307128906,
+          110.0
+        ],
+        "validation": {
+          "valid_binary_stl": true,
+          "watertight_edge_test": false,
+          "boundary_edges": 1386,
+          "nonmanifold_edges": 99,
+          "degenerate_triangles": 0,
+          "triangles": 12498
+        },
+        "source_artifact": "/home/runner/work/_temp/HOTS_STL_chunk_4/.build_cache/detail/d3witchdoctorm.stl"
+      },
+      "print_ready": {
+        "path": "/home/runner/work/_temp/HOTS_STL_chunk_4/02_Print_Ready_Watertight/Nazeebo.stl",
+        "bytes": 8505534,
+        "sha256": "b5b5a09227efdad05e30dce1902d8836959f68025709490d023b9738b51e9d66",
+        "triangles": 170109,
+        "bounds_mm": [
+          [
+            -34.80695724487305,
+            -34.80695724487305,
+            0.0
+          ],
+          [
+            34.80695724487305,
+            34.80695724487305,
+            111.80017852783203
+          ]
+        ],
+        "dimensions_mm": [
+          69.6139144897461,
+          69.6139144897461,
+          111.80017852783203
+        ],
+        "validation": {
+          "valid_binary_stl": true,
+          "watertight_edge_test": false,
+          "boundary_edges": 123,
+          "nonmanifold_edges": 438,
+          "degenerate_triangles": 0,
+          "triangles": 170109
+        },
+        "source_artifact": "/home/runner/work/_temp/HOTS_STL_chunk_4/.build_cache/print_ready/d3witchdoctorm.stl"
+      },
+      "decimation": {
+        "triangles_before_decimate": 228323,
+        "decimated": false,
+        "triangles_after_decimate": 228323,
+        "retry_voxel_mm": 0.62,
+        "retry": {
+          "triangles_before_decimate": 170109,
+          "decimated": false,
+          "triangles_after_decimate": 170109
+        }
+      },
+      "elapsed_source_seconds": 8.65,
+      "status": "success",
+      "resolution": "exact canonical base"
+    },
+    {
+      "hero": "Nova",
+      "source_key": "nova",
+      "source_paths": [
+        "/home/runner/work/HOTS-03/HOTS-03/storm_hero_nova_base/storm_hero_nova_base_v05.m3"
+      ],
+      "import": {
+        "imported_paths": [
+          "/home/runner/work/HOTS-03/HOTS-03/storm_hero_nova_base/storm_hero_nova_base_v05.m3"
+        ],
+        "animation_paths": [],
+        "pose": null
+      },
+      "normalization": {
+        "scale_factor": 40.37667815930908,
+        "bounds_before": [
+          [
+            -39.057621002197266,
+            -60.21799087524414,
+            -4.99502420425415
+          ],
+          [
+            39.057613372802734,
+            36.829986572265625,
+            105.00497436523438
+          ]
+        ],
+        "bounds_after": [
+          [
+            -39.0576171875,
+            -48.52398681640625,
+            0.0
+          ],
+          [
+            39.0576171875,
+            48.52398681640625,
+            110.0
+          ]
+        ],
+        "dimensions_mm": [
+          78.115234375,
+          97.0479736328125,
+          110.0
+        ]
+      },
+      "detail": {
+        "path": "/home/runner/work/_temp/HOTS_STL_chunk_4/01_Detail_Preserving/Nova.stl",
+        "bytes": 482584,
+        "sha256": "1394df4cd158868f9db3097e65e3ce033872179cfa3c0d2b747e73cbee3dece3",
+        "triangles": 9650,
+        "bounds_mm": [
+          [
+            -39.0576171875,
+            -48.52398681640625,
+            0.0
+          ],
+          [
+            39.0576171875,
+            48.52398681640625,
+            110.0
+          ]
+        ],
+        "dimensions_mm": [
+          78.115234375,
+          97.0479736328125,
+          110.0
+        ],
+        "validation": {
+          "valid_binary_stl": true,
+          "watertight_edge_test": false,
+          "boundary_edges": 714,
+          "nonmanifold_edges": 48,
+          "degenerate_triangles": 0,
+          "triangles": 9650
+        },
+        "source_artifact": "/home/runner/work/_temp/HOTS_STL_chunk_4/.build_cache/detail/nova.stl"
+      },
+      "print_ready": {
+        "path": "/home/runner/work/_temp/HOTS_STL_chunk_4/02_Print_Ready_Watertight/Nova.stl",
+        "bytes": 9346434,
+        "sha256": "d6f09e65ade51face1312cb847ae8d796137da0d7f36a6ab6909e3f4bb766561",
+        "triangles": 186927,
+        "bounds_mm": [
+          [
+            -52.54941177368164,
+            -52.54941177368164,
+            0.0
+          ],
+          [
+            52.54941177368164,
+            52.54941177368164,
+            112.37530517578125
+          ]
+        ],
+        "dimensions_mm": [
+          105.09882354736328,
+          105.09882354736328,
+          112.37530517578125
+        ],
+        "validation": {
+          "valid_binary_stl": true,
+          "watertight_edge_test": false,
+          "boundary_edges": 1,
+          "nonmanifold_edges": 6,
+          "degenerate_triangles": 0,
+          "triangles": 186927
+        },
+        "source_artifact": "/home/runner/work/_temp/HOTS_STL_chunk_4/.build_cache/print_ready/nova.stl"
+      },
+      "decimation": {
+        "triangles_before_decimate": 239029,
+        "decimated": false,
+        "triangles_after_decimate": 239029,
+        "retry_voxel_mm": 0.62,
+        "retry": {
+          "triangles_before_decimate": 186927,
+          "decimated": false,
+          "triangles_after_decimate": 186927
+        }
+      },
+      "elapsed_source_seconds": 8.49,
+      "status": "success",
+      "resolution": "exact canonical base"
+    },
+    {
+      "hero": "Orphea",
+      "source_key": "orphea",
+      "source_paths": [
+        "/home/runner/work/HOTS-03/HOTS-03/storm_hero_orphea_base/storm_hero_orphea_base.m3"
+      ],
+      "import": {
+        "imported_paths": [
+          "/home/runner/work/HOTS-03/HOTS-03/storm_hero_orphea_base/storm_hero_orphea_base.m3"
+        ],
+        "animation_paths": [],
+        "pose": null
+      },
+      "normalization": {
+        "scale_factor": 37.79118374469447,
+        "bounds_before": [
+          [
+            -29.920978546142578,
+            -10.781399726867676,
+            -0.047483332455158234
+          ],
+          [
+            29.920930862426758,
+            37.926185607910156,
+            109.9525146484375
+          ]
+        ],
+        "bounds_after": [
+          [
+            -29.920955657958984,
+            -24.35379409790039,
+            0.0
+          ],
+          [
+            29.920955657958984,
+            24.353792190551758,
+            110.0
+          ]
+        ],
+        "dimensions_mm": [
+          59.84191131591797,
+          48.70758819580078,
+          110.0
+        ]
+      },
+      "detail": {
+        "path": "/home/runner/work/_temp/HOTS_STL_chunk_4/01_Detail_Preserving/Orphea.stl",
+        "bytes": 738434,
+        "sha256": "e33b7051262e4a15cd1b82e62742ffc8413e7cadd4e7b4bd41c4adc54935475c",
+        "triangles": 14767,
+        "bounds_mm": [
+          [
+            -29.920955657958984,
+            -24.35379409790039,
+            0.0
+          ],
+          [
+            29.920955657958984,
+            24.353792190551758,
+            110.0
+          ]
+        ],
+        "dimensions_mm": [
+          59.84191131591797,
+          48.70758819580078,
+          110.0
+        ],
+        "validation": {
+          "valid_binary_stl": true,
+          "watertight_edge_test": false,
+          "boundary_edges": 547,
+          "nonmanifold_edges": 26,
+          "degenerate_triangles": 0,
+          "triangles": 14767
+        },
+        "source_artifact": "/home/runner/work/_temp/HOTS_STL_chunk_4/.build_cache/detail/orphea.stl"
+      },
+      "print_ready": {
+        "path": "/home/runner/work/_temp/HOTS_STL_chunk_4/02_Print_Ready_Watertight/Orphea.stl",
+        "bytes": 10948834,
+        "sha256": "7d67527966d5ed08221d3d208e05578e11e30e5bc221f3f4fb8d78fbdc822f80",
+        "triangles": 218975,
+        "bounds_mm": [
+          [
+            -33.990257263183594,
+            -33.990257263183594,
+            0.0
+          ],
+          [
+            33.990257263183594,
+            33.990257263183594,
+            112.53858947753906
+          ]
+        ],
+        "dimensions_mm": [
+          67.98051452636719,
+          67.98051452636719,
+          112.53858947753906
+        ],
+        "validation": {
+          "valid_binary_stl": true,
+          "watertight_edge_test": false,
+          "boundary_edges": 88,
+          "nonmanifold_edges": 675,
+          "degenerate_triangles": 0,
+          "triangles": 218975
+        },
+        "source_artifact": "/home/runner/work/_temp/HOTS_STL_chunk_4/.build_cache/print_ready/orphea.stl"
+      },
+      "decimation": {
+        "triangles_before_decimate": 285259,
+        "decimated": false,
+        "triangles_after_decimate": 285259,
+        "retry_voxel_mm": 0.62,
+        "retry": {
+          "triangles_before_decimate": 218975,
+          "decimated": false,
+          "triangles_after_decimate": 218975
+        }
+      },
+      "elapsed_source_seconds": 10.62,
+      "status": "success",
+      "resolution": "exact canonical base"
+    }
+  ],
+  "source_results": {
+    "medic": {
+      "source_key": "medic",
+      "source_paths": [
+        "/home/runner/work/HOTS-03/HOTS-03/storm_hero_medic_base/storm_hero_medic_base.m3"
+      ],
+      "import": {
+        "imported_paths": [
+          "/home/runner/work/HOTS-03/HOTS-03/storm_hero_medic_base/storm_hero_medic_base.m3"
+        ],
+        "animation_paths": [],
+        "pose": null
+      },
+      "normalization": {
+        "scale_factor": 31.96498863216891,
+        "bounds_before": [
+          [
+            -47.28424835205078,
+            -17.342628479003906,
+            -0.0616428405046463
+          ],
+          [
+            33.53889465332031,
+            31.401195526123047,
+            109.9383544921875
+          ]
+        ],
+        "bounds_after": [
+          [
+            -40.41157150268555,
+            -24.371912002563477,
+            0.0
+          ],
+          [
+            40.41157150268555,
+            24.371912002563477,
+            110.0
+          ]
+        ],
+        "dimensions_mm": [
+          80.8231430053711,
+          48.74382400512695,
+          110.0
+        ]
+      },
+      "components": [
+        {
+          "name": "mesh",
+          "sheet_solidified": false,
+          "topology_before": {
+            "boundary_edges": 175,
+            "nonmanifold_edges": 1,
+            "edges": 1527,
+            "boundary_ratio": 0.114603798297315,
+            "dimensions": [
+              13.812915802001953,
+              14.128138542175293,
+              11.708847045898438
+            ],
+            "min_dimension": 11.708847045898438,
+            "max_dimension": 14.128138542175293
+          }
+        },
+        {
+          "name": "mesh.001",
+          "sheet_solidified": false,
+          "topology_before": {
+            "boundary_edges": 595,
+            "nonmanifold_edges": 31,
+            "edges": 16143,
+            "boundary_ratio": 0.03685808090193892,
+            "dimensions": [
+              80.8231430053711,
+              48.74382400512695,
+              110.0
+            ],
+            "min_dimension": 48.74382400512695,
+            "max_dimension": 110.0
+          }
+        },
+        {
+          "name": "mesh.002",
+          "sheet_solidified": true,
+          "topology_before": {
+            "boundary_edges": 63,
+            "nonmanifold_edges": 0,
+            "edges": 270,
+            "boundary_ratio": 0.23333333333333334,
+            "dimensions": [
+              4.673421859741211,
+              5.411913871765137,
+              5.156593322753906
+            ],
+            "min_dimension": 4.673421859741211,
+            "max_dimension": 5.411913871765137
+          }
+        }
+      ],
+      "detail": {
+        "path": "/home/runner/work/_temp/HOTS_STL_chunk_4/.build_cache/detail/medic.stl",
+        "bytes": 584734,
+        "sha256": "e47dd11d1413b7a9f3b717407700b6cdbb6bb9f19f347de057c3b9a6a39b724f",
+        "triangles": 11693,
+        "bounds_mm": [
+          [
+            -40.41157150268555,
+            -24.371912002563477,
+            0.0
+          ],
+          [
+            40.41157150268555,
+            24.371912002563477,
+            110.0
+          ]
+        ],
+        "dimensions_mm": [
+          80.8231430053711,
+          48.74382400512695,
+          110.0
+        ],
+        "validation": {
+          "valid_binary_stl": true,
+          "watertight_edge_test": false,
+          "boundary_edges": 727,
+          "nonmanifold_edges": 32,
+          "degenerate_triangles": 0,
+          "triangles": 11693
+        }
+      },
+      "print_ready": {
+        "path": "/home/runner/work/_temp/HOTS_STL_chunk_4/.build_cache/print_ready/medic.stl",
+        "bytes": 12023384,
+        "sha256": "acdd964e7c9771c520d0a210470ac3b971fd405fffe9faf39f1c4569542fd750",
+        "triangles": 240466,
+        "bounds_mm": [
+          [
+            -44.482425689697266,
+            -44.482425689697266,
+            0.0
+          ],
+          [
+            44.482425689697266,
+            44.482425689697266,
+            112.79356384277344
+          ]
+        ],
+        "dimensions_mm": [
+          88.96485137939453,
+          88.96485137939453,
+          112.79356384277344
+        ],
+        "validation": {
+          "valid_binary_stl": true,
+          "watertight_edge_test": true,
+          "boundary_edges": 0,
+          "nonmanifold_edges": 0,
+          "degenerate_triangles": 0,
+          "triangles": 240466
+        }
+      },
+      "decimation": {
+        "triangles_before_decimate": 308801,
+        "decimated": false,
+        "triangles_after_decimate": 308801,
+        "retry_voxel_mm": 0.62,
+        "retry": {
+          "triangles_before_decimate": 240466,
+          "decimated": false,
+          "triangles_after_decimate": 240466
+        }
+      },
+      "blend_path": null,
+      "elapsed_seconds": 11.52
+    },
+    "lucio": {
+      "source_key": "lucio",
+      "source_paths": [
+        "/home/runner/work/HOTS-03/HOTS-03/storm_hero_lucio_base/storm_hero_lucio_base.m3"
+      ],
+      "import": {
+        "imported_paths": [
+          "/home/runner/work/HOTS-03/HOTS-03/storm_hero_lucio_base/storm_hero_lucio_base.m3"
+        ],
+        "animation_paths": [],
+        "pose": null
+      },
+      "normalization": {
+        "scale_factor": 36.077489587831224,
+        "bounds_before": [
+          [
+            -47.666202545166016,
+            -17.71727180480957,
+            0.20118364691734314
+          ],
+          [
+            32.83965301513672,
+            28.20016098022461,
+            110.20117950439453
+          ]
+        ],
+        "bounds_after": [
+          [
+            -40.2529296875,
+            -22.958717346191406,
+            0.0
+          ],
+          [
+            40.2529296875,
+            22.958717346191406,
+            109.99999237060547
+          ]
+        ],
+        "dimensions_mm": [
+          80.505859375,
+          45.91743469238281,
+          109.99999237060547
+        ]
+      },
+      "components": [
+        {
+          "name": "mesh",
+          "sheet_solidified": false,
+          "topology_before": {
+            "boundary_edges": 550,
+            "nonmanifold_edges": 4,
+            "edges": 14250,
+            "boundary_ratio": 0.03859649122807018,
+            "dimensions": [
+              80.505859375,
+              45.91743469238281,
+              79.18510437011719
+            ],
+            "min_dimension": 45.91743469238281,
+            "max_dimension": 80.505859375
+          }
+        },
+        {
+          "name": "bone_head",
+          "sheet_solidified": false,
+          "topology_before": {
+            "boundary_edges": 24,
+            "nonmanifold_edges": 0,
+            "edges": 117,
+            "boundary_ratio": 0.20512820512820512,
+            "dimensions": [
+              7.523743152618408,
+              3.7239317893981934,
+              2.5853195190429688
+            ],
+            "min_dimension": 2.5853195190429688,
+            "max_dimension": 7.523743152618408
+          }
+        },
+        {
+          "name": "mesh.001",
+          "sheet_solidified": false,
+          "topology_before": {
+            "boundary_edges": 80,
+            "nonmanifold_edges": 125,
+            "edges": 3618,
+            "boundary_ratio": 0.02211166390270868,
+            "dimensions": [
+              37.83504104614258,
+              30.190019607543945,
+              91.32378387451172
+            ],
+            "min_dimension": 30.190019607543945,
+            "max_dimension": 91.32378387451172
+          }
+        }
+      ],
+      "detail": {
+        "path": "/home/runner/work/_temp/HOTS_STL_chunk_4/.build_cache/detail/lucio.stl",
+        "bytes": 591384,
+        "sha256": "97cbcdc65cbd0d7885914e823e14d4ad5d6ca8cbdb0e5635fa477b6745fbb849",
+        "triangles": 11826,
+        "bounds_mm": [
+          [
+            -40.2529296875,
+            -22.958717346191406,
+            0.0
+          ],
+          [
+            40.2529296875,
+            22.958717346191406,
+            109.99999237060547
+          ]
+        ],
+        "dimensions_mm": [
+          80.505859375,
+          45.91743469238281,
+          109.99999237060547
+        ],
+        "validation": {
+          "valid_binary_stl": true,
+          "watertight_edge_test": false,
+          "boundary_edges": 576,
+          "nonmanifold_edges": 143,
+          "degenerate_triangles": 0,
+          "triangles": 11826
+        }
+      },
+      "print_ready": {
+        "path": "/home/runner/work/_temp/HOTS_STL_chunk_4/.build_cache/print_ready/lucio.stl",
+        "bytes": 8850734,
+        "sha256": "ceefc4337eef2d76740d3252dd208cd3b9176ae75c38fa554911a2c1bc1f43cc",
+        "triangles": 177013,
+        "bounds_mm": [
+          [
+            -44.320369720458984,
+            -44.320369720458984,
+            0.0
+          ],
+          [
+            44.320369720458984,
+            44.320369720458984,
+            112.75321197509766
+          ]
+        ],
+        "dimensions_mm": [
+          88.64073944091797,
+          88.64073944091797,
+          112.75321197509766
+        ],
+        "validation": {
+          "valid_binary_stl": true,
+          "watertight_edge_test": false,
+          "boundary_edges": 6,
+          "nonmanifold_edges": 3,
+          "degenerate_triangles": 0,
+          "triangles": 177013
+        }
+      },
+      "decimation": {
+        "triangles_before_decimate": 229124,
+        "decimated": false,
+        "triangles_after_decimate": 229124,
+        "retry_voxel_mm": 0.62,
+        "retry": {
+          "triangles_before_decimate": 177013,
+          "decimated": false,
+          "triangles_after_decimate": 177013
+        }
+      },
+      "blend_path": null,
+      "elapsed_seconds": 8.22
+    },
+    "dryad": {
+      "source_key": "dryad",
+      "source_paths": [
+        "/home/runner/work/_temp/HOTS-02/storm_hero_dryad_base/storm_hero_dryad_base.m3"
+      ],
+      "import": {
+        "imported_paths": [
+          "/home/runner/work/_temp/HOTS-02/storm_hero_dryad_base/storm_hero_dryad_base.m3"
+        ],
+        "animation_paths": [],
+        "pose": null
+      },
+      "normalization": {
+        "scale_factor": 28.933751816145836,
+        "bounds_before": [
+          [
+            -31.92315673828125,
+            -25.412992477416992,
+            -0.16656741499900818
+          ],
+          [
+            45.481483459472656,
+            58.125709533691406,
+            109.83343505859375
+          ]
+        ],
+        "bounds_after": [
+          [
+            -38.70232009887695,
+            -41.76934814453125,
+            0.0
+          ],
+          [
+            38.70232009887695,
+            41.769351959228516,
+            110.0
+          ]
+        ],
+        "dimensions_mm": [
+          77.4046401977539,
+          83.5386962890625,
+          110.0
+        ]
+      },
+      "components": [
+        {
+          "name": "mesh",
+          "sheet_solidified": true,
+          "topology_before": {
+            "boundary_edges": 20,
+            "nonmanifold_edges": 0,
+            "edges": 88,
+            "boundary_ratio": 0.22727272727272727,
+            "dimensions": [
+              14.070655822753906,
+              5.30157470703125,
+              30.572402954101562
+            ],
+            "min_dimension": 5.30157470703125,
+            "max_dimension": 30.572402954101562
+          }
+        },
+        {
+          "name": "mesh.001",
+          "sheet_solidified": false,
+          "topology_before": {
+            "boundary_edges": 20,
+            "nonmanifold_edges": 0,
+            "edges": 397,
+            "boundary_ratio": 0.05037783375314862,
+            "dimensions": [
+              14.070655822753906,
+              6.347393035888672,
+              33.64549255371094
+            ],
+            "min_dimension": 6.347393035888672,
+            "max_dimension": 33.64549255371094
+          }
+        },
+        {
+          "name": "bone_weapon",
+          "sheet_solidified": false,
+          "topology_before": {
+            "boundary_edges": 107,
+            "nonmanifold_edges": 0,
+            "edges": 901,
+            "boundary_ratio": 0.11875693673695893,
+            "dimensions": [
+              9.206661224365234,
+              7.391966819763184,
+              105.89088439941406
+            ],
+            "min_dimension": 7.391966819763184,
+            "max_dimension": 105.89088439941406
+          }
+        },
+        {
+          "name": "mesh.002",
+          "sheet_solidified": false,
+          "topology_before": {
+            "boundary_edges": 1361,
+            "nonmanifold_edges": 45,
+            "edges": 12395,
+            "boundary_ratio": 0.10980233965308592,
+            "dimensions": [
+              45.892051696777344,
+              82.4576416015625,
+              97.33767700195312
+            ],
+            "min_dimension": 45.892051696777344,
+            "max_dimension": 97.33767700195312
+          }
+        },
+        {
+          "name": "mesh.003",
+          "sheet_solidified": false,
+          "topology_before": {
+            "boundary_edges": 65,
+            "nonmanifold_edges": 0,
+            "edges": 2674,
+            "boundary_ratio": 0.024308152580403888,
+            "dimensions": [
+              63.17308044433594,
+              40.88513946533203,
+              84.80479431152344
+            ],
+            "min_dimension": 40.88513946533203,
+            "max_dimension": 84.80479431152344
+          }
+        }
+      ],
+      "detail": {
+        "path": "/home/runner/work/_temp/HOTS_STL_chunk_4/.build_cache/detail/dryad.stl",
+        "bytes": 523134,
+        "sha256": "082e719fc292eef2fd48feaeb80f37c9650183a6437c81f3f177d443e013f0c0",
+        "triangles": 10461,
+        "bounds_mm": [
+          [
+            -38.70232009887695,
+            -41.76934814453125,
+            0.0
+          ],
+          [
+            38.70232009887695,
+            41.769351959228516,
+            110.0
+          ]
+        ],
+        "dimensions_mm": [
+          77.4046401977539,
+          83.5386962890625,
+          110.0
+        ],
+        "validation": {
+          "valid_binary_stl": true,
+          "watertight_edge_test": false,
+          "boundary_edges": 1457,
+          "nonmanifold_edges": 55,
+          "degenerate_triangles": 0,
+          "triangles": 10461
+        }
+      },
+      "print_ready": {
+        "path": "/home/runner/work/_temp/HOTS_STL_chunk_4/.build_cache/print_ready/dryad.stl",
+        "bytes": 8825734,
+        "sha256": "f8dc541e0804812d54a21fa4ceecfdc99d3ed2cc7ee5df811fba20eebcbba8bc",
+        "triangles": 176513,
+        "bounds_mm": [
+          [
+            -45.788299560546875,
+            -45.788299560546875,
+            0.0
+          ],
+          [
+            45.788299560546875,
+            45.788299560546875,
+            111.8513412475586
+          ]
+        ],
+        "dimensions_mm": [
+          91.57659912109375,
+          91.57659912109375,
+          111.8513412475586
+        ],
+        "validation": {
+          "valid_binary_stl": true,
+          "watertight_edge_test": false,
+          "boundary_edges": 41,
+          "nonmanifold_edges": 40,
+          "degenerate_triangles": 0,
+          "triangles": 176513
+        }
+      },
+      "decimation": {
+        "triangles_before_decimate": 229085,
+        "decimated": false,
+        "triangles_after_decimate": 229085,
+        "retry_voxel_mm": 0.62,
+        "retry": {
+          "triangles_before_decimate": 176513,
+          "decimated": false,
+          "triangles_after_decimate": 176513
+        }
+      },
+      "blend_path": null,
+      "elapsed_seconds": 8.33
+    },
+    "maiev": {
+      "source_key": "maiev",
+      "source_paths": [
+        "/home/runner/work/HOTS-03/HOTS-03/storm_hero_maiev_base/storm_hero_maiev_base.m3"
+      ],
+      "import": {
+        "imported_paths": [
+          "/home/runner/work/HOTS-03/HOTS-03/storm_hero_maiev_base/storm_hero_maiev_base.m3"
+        ],
+        "animation_paths": [],
+        "pose": null
+      },
+      "normalization": {
+        "scale_factor": 35.00193644529639,
+        "bounds_before": [
+          [
+            -37.02731704711914,
+            -33.896183013916016,
+            -1.952745795249939
+          ],
+          [
+            55.75862121582031,
+            48.791481018066406,
+            108.04725646972656
+          ]
+        ],
+        "bounds_after": [
+          [
+            -46.392967224121094,
+            -41.343833923339844,
+            0.0
+          ],
+          [
+            46.392967224121094,
+            41.343833923339844,
+            110.0
+          ]
+        ],
+        "dimensions_mm": [
+          92.78593444824219,
+          82.68766784667969,
+          110.0
+        ]
+      },
+      "components": [
+        {
+          "name": "mesh",
+          "sheet_solidified": false,
+          "topology_before": {
+            "boundary_edges": 516,
+            "nonmanifold_edges": 5,
+            "edges": 22364,
+            "boundary_ratio": 0.023072795564299767,
+            "dimensions": [
+              92.78593444824219,
+              82.68766784667969,
+              108.04727172851562
+            ],
+            "min_dimension": 82.68766784667969,
+            "max_dimension": 108.04727172851562
+          }
+        },
+        {
+          "name": "mesh.001",
+          "sheet_solidified": false,
+          "topology_before": {
+            "boundary_edges": 38,
+            "nonmanifold_edges": 0,
+            "edges": 820,
+            "boundary_ratio": 0.046341463414634146,
+            "dimensions": [
+              46.291221618652344,
+              17.3490047454834,
+              79.3237075805664
+            ],
+            "min_dimension": 17.3490047454834,
+            "max_dimension": 79.3237075805664
+          }
+        }
+      ],
+      "detail": {
+        "path": "/home/runner/work/_temp/HOTS_STL_chunk_4/.build_cache/detail/maiev.stl",
+        "bytes": 763734,
+        "sha256": "191922fa3532f9d6e3840dd84d0dfd59c8e9b517e66bce127fae7b760d68748a",
+        "triangles": 15273,
+        "bounds_mm": [
+          [
+            -46.392967224121094,
+            -41.343833923339844,
+            0.0
+          ],
+          [
+            46.392967224121094,
+            41.343833923339844,
+            110.0
+          ]
+        ],
+        "dimensions_mm": [
+          92.78593444824219,
+          82.68766784667969,
+          110.0
+        ],
+        "validation": {
+          "valid_binary_stl": true,
+          "watertight_edge_test": false,
+          "boundary_edges": 478,
+          "nonmanifold_edges": 5,
+          "degenerate_triangles": 0,
+          "triangles": 15273
+        }
+      },
+      "print_ready": {
+        "path": "/home/runner/work/_temp/HOTS_STL_chunk_4/.build_cache/print_ready/maiev.stl",
+        "bytes": 13978684,
+        "sha256": "1bd431f2fcd6151bcf550bbd4e4b2fcc29d3549ffb2dd6615a0b2102793006c7",
+        "triangles": 279572,
+        "bounds_mm": [
+          [
+            -50.46006393432617,
+            -50.46006393432617,
+            0.0
+          ],
+          [
+            50.46006393432617,
+            50.46006393432617,
+            112.6695556640625
+          ]
+        ],
+        "dimensions_mm": [
+          100.92012786865234,
+          100.92012786865234,
+          112.6695556640625
+        ],
+        "validation": {
+          "valid_binary_stl": true,
+          "watertight_edge_test": false,
+          "boundary_edges": 19,
+          "nonmanifold_edges": 4,
+          "degenerate_triangles": 0,
+          "triangles": 279572
+        }
+      },
+      "decimation": {
+        "triangles_before_decimate": 367221,
+        "decimated": false,
+        "triangles_after_decimate": 367221,
+        "retry_voxel_mm": 0.62,
+        "retry": {
+          "triangles_before_decimate": 279572,
+          "decimated": false,
+          "triangles_after_decimate": 279572
+        }
+      },
+      "blend_path": null,
+      "elapsed_seconds": 13.02
+    },
+    "malganis": {
+      "source_key": "malganis",
+      "source_paths": [
+        "/home/runner/work/HOTS-03/HOTS-03/storm_hero_malganis_base/storm_hero_malganis_base.m3"
+      ],
+      "import": {
+        "imported_paths": [
+          "/home/runner/work/HOTS-03/HOTS-03/storm_hero_malganis_base/storm_hero_malganis_base.m3"
+        ],
+        "animation_paths": [],
+        "pose": null
+      },
+      "normalization": {
+        "scale_factor": 28.163145663852834,
+        "bounds_before": [
+          [
+            -48.0055046081543,
+            -15.621991157531738,
+            0.05859510600566864
+          ],
+          [
+            48.00563430786133,
+            38.326171875,
+            110.05858612060547
+          ]
+        ],
+        "bounds_after": [
+          [
+            -48.00556945800781,
+            -26.974082946777344,
+            0.0
+          ],
+          [
+            48.00556945800781,
+            26.97408103942871,
+            109.99999237060547
+          ]
+        ],
+        "dimensions_mm": [
+          96.01113891601562,
+          53.94816589355469,
+          109.99999237060547
+        ]
+      },
+      "components": [
+        {
+          "name": "mesh",
+          "sheet_solidified": false,
+          "topology_before": {
+            "boundary_edges": 80,
+            "nonmanifold_edges": 0,
+            "edges": 4207,
+            "boundary_ratio": 0.019015925837889233,
+            "dimensions": [
+              62.145652770996094,
+              24.89159393310547,
+              82.0612564086914
+            ],
+            "min_dimension": 24.89159393310547,
+            "max_dimension": 82.0612564086914
+          }
+        },
+        {
+          "name": "mesh.001",
+          "sheet_solidified": false,
+          "topology_before": {
+            "boundary_edges": 112,
+            "nonmanifold_edges": 12,
+            "edges": 17545,
+            "boundary_ratio": 0.006383585066970647,
+            "dimensions": [
+              96.01113891601562,
+              53.94816589355469,
+              103.06261444091797
+            ],
+            "min_dimension": 53.94816589355469,
+            "max_dimension": 103.06261444091797
+          }
+        },
+        {
+          "name": "mesh.002",
+          "sheet_solidified": false,
+          "topology_before": {
+            "boundary_edges": 0,
+            "nonmanifold_edges": 0,
+            "edges": 795,
+            "boundary_ratio": 0.0,
+            "dimensions": [
+              12.175592422485352,
+              19.525300979614258,
+              36.92076873779297
+            ],
+            "min_dimension": 12.175592422485352,
+            "max_dimension": 36.92076873779297
+          }
+        },
+        {
+          "name": "mesh.003",
+          "sheet_solidified": true,
+          "topology_before": {
+            "boundary_edges": 38,
+            "nonmanifold_edges": 0,
+            "edges": 109,
+            "boundary_ratio": 0.3486238532110092,
+            "dimensions": [
+              13.49913215637207,
+              18.172317504882812,
+              38.93363952636719
+            ],
+            "min_dimension": 13.49913215637207,
+            "max_dimension": 38.93363952636719
+          }
+        }
+      ],
+      "detail": {
+        "path": "/home/runner/work/_temp/HOTS_STL_chunk_4/.build_cache/detail/malganis.stl",
+        "bytes": 751784,
+        "sha256": "d42b5ed35cf2afd68b064a416b8ccf71703115c878e44711a96c23c1158e8d96",
+        "triangles": 15034,
+        "bounds_mm": [
+          [
+            -48.00556945800781,
+            -26.974082946777344,
+            0.0
+          ],
+          [
+            48.00556945800781,
+            26.97408103942871,
+            109.99999237060547
+          ]
+        ],
+        "dimensions_mm": [
+          96.01113891601562,
+          53.94816589355469,
+          109.99999237060547
+        ],
+        "validation": {
+          "valid_binary_stl": true,
+          "watertight_edge_test": false,
+          "boundary_edges": 136,
+          "nonmanifold_edges": 16,
+          "degenerate_triangles": 0,
+          "triangles": 15034
+        }
+      },
+      "print_ready": {
+        "path": "/home/runner/work/_temp/HOTS_STL_chunk_4/.build_cache/print_ready/malganis.stl",
+        "bytes": 14715284,
+        "sha256": "3176c501a6a07a8751f4721f6e78a23905181ba9c6aaf0a64d953a26260bf9eb",
+        "triangles": 294304,
+        "bounds_mm": [
+          [
+            -52.060386657714844,
+            -52.060386657714844,
+            0.0
+          ],
+          [
+            52.060386657714844,
+            52.060386657714844,
+            112.73590850830078
+          ]
+        ],
+        "dimensions_mm": [
+          104.12077331542969,
+          104.12077331542969,
+          112.73590850830078
+        ],
+        "validation": {
+          "valid_binary_stl": true,
+          "watertight_edge_test": false,
+          "boundary_edges": 2,
+          "nonmanifold_edges": 13,
+          "degenerate_triangles": 0,
+          "triangles": 294304
+        }
+      },
+      "decimation": {
+        "triangles_before_decimate": 380230,
+        "decimated": false,
+        "triangles_after_decimate": 380230,
+        "retry_voxel_mm": 0.62,
+        "retry": {
+          "triangles_before_decimate": 294304,
+          "decimated": false,
+          "triangles_after_decimate": 294304
+        }
+      },
+      "blend_path": null,
+      "elapsed_seconds": 13.76
+    },
+    "malfurion": {
+      "source_key": "malfurion",
+      "source_paths": [
+        "/home/runner/work/HOTS-03/HOTS-03/storm_hero_malfurion_base/storm_hero_malfurion_base.m3"
+      ],
+      "import": {
+        "imported_paths": [
+          "/home/runner/work/HOTS-03/HOTS-03/storm_hero_malfurion_base/storm_hero_malfurion_base.m3"
+        ],
+        "animation_paths": [],
+        "pose": null
+      },
+      "normalization": {
+        "scale_factor": 28.41385868125994,
+        "bounds_before": [
+          [
+            -53.09476089477539,
+            -54.56534194946289,
+            -0.2621249258518219
+          ],
+          [
+            53.09473419189453,
+            37.250431060791016,
+            109.73786926269531
+          ]
+        ],
+        "bounds_after": [
+          [
+            -53.094749450683594,
+            -45.90788650512695,
+            0.0
+          ],
+          [
+            53.094749450683594,
+            45.90788650512695,
+            109.99999237060547
+          ]
+        ],
+        "dimensions_mm": [
+          106.18949890136719,
+          91.8157730102539,
+          109.99999237060547
+        ]
+      },
+      "components": [
+        {
+          "name": "fxmesh_staff",
+          "sheet_solidified": false,
+          "topology_before": {
+            "boundary_edges": 0,
+            "nonmanifold_edges": 0,
+            "edges": 483,
+            "boundary_ratio": 0.0,
+            "dimensions": [
+              23.808860778808594,
+              91.8157730102539,
+              27.39366912841797
+            ],
+            "min_dimension": 23.808860778808594,
+            "max_dimension": 91.8157730102539
+          }
+        },
+        {
+          "name": "mesh",
+          "sheet_solidified": false,
+          "topology_before": {
+            "boundary_edges": 779,
+            "nonmanifold_edges": 32,
+            "edges": 10823,
+            "boundary_ratio": 0.07197634666913055,
+            "dimensions": [
+              106.18949890136719,
+              90.59867095947266,
+              107.13411712646484
+            ],
+            "min_dimension": 90.59867095947266,
+            "max_dimension": 107.13411712646484
+          }
+        },
+        {
+          "name": "mesh.001",
+          "sheet_solidified": false,
+          "topology_before": {
+            "boundary_edges": 328,
+            "nonmanifold_edges": 18,
+            "edges": 11909,
+            "boundary_ratio": 0.027542194978587623,
+            "dimensions": [
+              73.64675903320312,
+              23.10215950012207,
+              70.90408325195312
+            ],
+            "min_dimension": 23.10215950012207,
+            "max_dimension": 73.64675903320312
+          }
+        }
+      ],
+      "detail": {
+        "path": "/home/runner/work/_temp/HOTS_STL_chunk_4/.build_cache/detail/malfurion.stl",
+        "bytes": 756534,
+        "sha256": "5f5d8cb39596ea8322ace95bdd5161a6302932f99a4d46791df268eded760e12",
+        "triangles": 15129,
+        "bounds_mm": [
+          [
+            -53.094749450683594,
+            -45.90788650512695,
+            0.0
+          ],
+          [
+            53.094749450683594,
+            45.90788650512695,
+            109.99999237060547
+          ]
+        ],
+        "dimensions_mm": [
+          106.18949890136719,
+          91.8157730102539,
+          109.99999237060547
+        ],
+        "validation": {
+          "valid_binary_stl": true,
+          "watertight_edge_test": false,
+          "boundary_edges": 1091,
+          "nonmanifold_edges": 50,
+          "degenerate_triangles": 0,
+          "triangles": 15129
+        }
+      },
+      "print_ready": {
+        "path": "/home/runner/work/_temp/HOTS_STL_chunk_4/.build_cache/print_ready/malfurion.stl",
+        "bytes": 15424884,
+        "sha256": "e1bfafe244afcae20e12fa42cd2fa3e91d0f1647d17ff4a73e4c605e0a12eb54",
+        "triangles": 308496,
+        "bounds_mm": [
+          [
+            -57.131553649902344,
+            -57.131553649902344,
+            0.0
+          ],
+          [
+            57.131553649902344,
+            57.131553649902344,
+            112.55387878417969
+          ]
+        ],
+        "dimensions_mm": [
+          114.26310729980469,
+          114.26310729980469,
+          112.55387878417969
+        ],
+        "validation": {
+          "valid_binary_stl": true,
+          "watertight_edge_test": false,
+          "boundary_edges": 58,
+          "nonmanifold_edges": 303,
+          "degenerate_triangles": 0,
+          "triangles": 308496
+        }
+      },
+      "decimation": {
+        "triangles_before_decimate": 402907,
+        "decimated": false,
+        "triangles_after_decimate": 402907,
+        "retry_voxel_mm": 0.62,
+        "retry": {
+          "triangles_before_decimate": 308496,
+          "decimated": false,
+          "triangles_after_decimate": 308496
+        }
+      },
+      "blend_path": null,
+      "elapsed_seconds": 15.12
+    },
+    "malthael": {
+      "source_key": "malthael",
+      "source_paths": [
+        "/home/runner/work/HOTS-03/HOTS-03/storm_hero_malthael_base/storm_hero_malthael_base.m3"
+      ],
+      "import": {
+        "imported_paths": [
+          "/home/runner/work/HOTS-03/HOTS-03/storm_hero_malthael_base/storm_hero_malthael_base.m3"
+        ],
+        "animation_paths": [],
+        "pose": null
+      },
+      "normalization": {
+        "scale_factor": 26.687326723395444,
+        "bounds_before": [
+          [
+            -36.86544418334961,
+            -24.046432495117188,
+            -4.2284321784973145
+          ],
+          [
+            36.865455627441406,
+            23.806114196777344,
+            105.77156829833984
+          ]
+        ],
+        "bounds_after": [
+          [
+            -36.865447998046875,
+            -23.926273345947266,
+            0.0
+          ],
+          [
+            36.865447998046875,
+            23.926273345947266,
+            110.0
+          ]
+        ],
+        "dimensions_mm": [
+          73.73089599609375,
+          47.85254669189453,
+          110.0
+        ]
+      },
+      "components": [
+        {
+          "name": "mesh",
+          "sheet_solidified": false,
+          "topology_before": {
+            "boundary_edges": 22,
+            "nonmanifold_edges": 0,
+            "edges": 2735,
+            "boundary_ratio": 0.008043875685557587,
+            "dimensions": [
+              52.53367614746094,
+              34.35240173339844,
+              76.71611785888672
+            ],
+            "min_dimension": 34.35240173339844,
+            "max_dimension": 76.71611785888672
+          }
+        },
+        {
+          "name": "mesh.001",
+          "sheet_solidified": false,
+          "topology_before": {
+            "boundary_edges": 17,
+            "nonmanifold_edges": 0,
+            "edges": 5533,
+            "boundary_ratio": 0.003072474245436472,
+            "dimensions": [
+              51.90196228027344,
+              33.951019287109375,
+              43.926448822021484
+            ],
+            "min_dimension": 33.951019287109375,
+            "max_dimension": 51.90196228027344
+          }
+        },
+        {
+          "name": "mesh.002",
+          "sheet_solidified": false,
+          "topology_before": {
+            "boundary_edges": 236,
+            "nonmanifold_edges": 214,
+            "edges": 2502,
+            "boundary_ratio": 0.09432454036770584,
+            "dimensions": [
+              73.73089599609375,
+              24.2418212890625,
+              110.0
+            ],
+            "min_dimension": 24.2418212890625,
+            "max_dimension": 110.0
+          }
+        },
+        {
+          "name": "mesh.003",
+          "sheet_solidified": false,
+          "topology_before": {
+            "boundary_edges": 55,
+            "nonmanifold_edges": 24,
+            "edges": 12498,
+            "boundary_ratio": 0.004400704112658025,
+            "dimensions": [
+              49.98834991455078,
+              27.76901626586914,
+              86.78701782226562
+            ],
+            "min_dimension": 27.76901626586914,
+            "max_dimension": 86.78701782226562
+          }
+        }
+      ],
+      "detail": {
+        "path": "/home/runner/work/_temp/HOTS_STL_chunk_4/.build_cache/detail/malthael.stl",
+        "bytes": 774634,
+        "sha256": "51d7c523a3d5c1dac20f9ae57f3318b721fcb8831d611a3eb8ff2f1c56255a1d",
+        "triangles": 15491,
+        "bounds_mm": [
+          [
+            -36.865447998046875,
+            -23.926273345947266,
+            0.0
+          ],
+          [
+            36.865447998046875,
+            23.926273345947266,
+            110.0
+          ]
+        ],
+        "dimensions_mm": [
+          73.73089599609375,
+          47.85254669189453,
+          110.0
+        ],
+        "validation": {
+          "valid_binary_stl": true,
+          "watertight_edge_test": false,
+          "boundary_edges": 296,
+          "nonmanifold_edges": 238,
+          "degenerate_triangles": 0,
+          "triangles": 15491
+        }
+      },
+      "print_ready": {
+        "path": "/home/runner/work/_temp/HOTS_STL_chunk_4/.build_cache/print_ready/malthael.stl",
+        "bytes": 11970784,
+        "sha256": "8b8c3ca923138ecc0fac55adb91cc5d1ba1996a62653c76a3d0f1bfa25eac91e",
+        "triangles": 239414,
+        "bounds_mm": [
+          [
+            -40.9342155456543,
+            -40.9342155456543,
+            0.0
+          ],
+          [
+            40.9342155456543,
+            40.9342155456543,
+            112.7406005859375
+          ]
+        ],
+        "dimensions_mm": [
+          81.8684310913086,
+          81.8684310913086,
+          112.7406005859375
+        ],
+        "validation": {
+          "valid_binary_stl": true,
+          "watertight_edge_test": false,
+          "boundary_edges": 54,
+          "nonmanifold_edges": 411,
+          "degenerate_triangles": 0,
+          "triangles": 239414
+        }
+      },
+      "decimation": {
+        "triangles_before_decimate": 316771,
+        "decimated": false,
+        "triangles_after_decimate": 316771,
+        "retry_voxel_mm": 0.62,
+        "retry": {
+          "triangles_before_decimate": 239414,
+          "decimated": false,
+          "triangles_after_decimate": 239414
+        }
+      },
+      "blend_path": null,
+      "elapsed_seconds": 12.05
+    },
+    "medivh": {
+      "source_key": "medivh",
+      "source_paths": [
+        "/home/runner/work/HOTS-03/HOTS-03/storm_hero_medivh_base/storm_hero_medivh_base.m3"
+      ],
+      "import": {
+        "imported_paths": [
+          "/home/runner/work/HOTS-03/HOTS-03/storm_hero_medivh_base/storm_hero_medivh_base.m3"
+        ],
+        "animation_paths": [],
+        "pose": null
+      },
+      "normalization": {
+        "scale_factor": 30.525288819333742,
+        "bounds_before": [
+          [
+            -53.56094741821289,
+            -12.476459503173828,
+            -0.8247453570365906
+          ],
+          [
+            33.30299377441406,
+            22.17429542541504,
+            109.17525482177734
+          ]
+        ],
+        "bounds_after": [
+          [
+            -43.431968688964844,
+            -17.32537841796875,
+            0.0
+          ],
+          [
+            43.431968688964844,
+            17.32537841796875,
+            110.0
+          ]
+        ],
+        "dimensions_mm": [
+          86.86393737792969,
+          34.6507568359375,
+          110.0
+        ]
+      },
+      "components": [
+        {
+          "name": "mesh",
+          "sheet_solidified": false,
+          "topology_before": {
+            "boundary_edges": 44,
+            "nonmanifold_edges": 0,
+            "edges": 337,
+            "boundary_ratio": 0.13056379821958458,
+            "dimensions": [
+              45.471961975097656,
+              33.537837982177734,
+              61.30778884887695
+            ],
+            "min_dimension": 33.537837982177734,
+            "max_dimension": 61.30778884887695
+          }
+        },
+        {
+          "name": "mesh.001",
+          "sheet_solidified": false,
+          "topology_before": {
+            "boundary_edges": 32,
+            "nonmanifold_edges": 0,
+            "edges": 1255,
+            "boundary_ratio": 0.02549800796812749,
+            "dimensions": [
+              44.86308288574219,
+              34.079917907714844,
+              61.39950942993164
+            ],
+            "min_dimension": 34.079917907714844,
+            "max_dimension": 61.39950942993164
+          }
+        },
+        {
+          "name": "mesh.002",
+          "sheet_solidified": false,
+          "topology_before": {
+            "boundary_edges": 82,
+            "nonmanifold_edges": 0,
+            "edges": 1820,
+            "boundary_ratio": 0.045054945054945054,
+            "dimensions": [
+              55.30857849121094,
+              30.143308639526367,
+              109.17523956298828
+            ],
+            "min_dimension": 30.143308639526367,
+            "max_dimension": 109.17523956298828
+          }
+        },
+        {
+          "name": "mesh.003",
+          "sheet_solidified": false,
+          "topology_before": {
+            "boundary_edges": 1073,
+            "nonmanifold_edges": 8,
+            "edges": 16344,
+            "boundary_ratio": 0.06565100342633383,
+            "dimensions": [
+              66.6059799194336,
+              33.014892578125,
+              79.9104232788086
+            ],
+            "min_dimension": 33.014892578125,
+            "max_dimension": 79.9104232788086
+          }
+        }
+      ],
+      "detail": {
+        "path": "/home/runner/work/_temp/HOTS_STL_chunk_4/.build_cache/detail/medivh.stl",
+        "bytes": 635934,
+        "sha256": "db5e886c231068d6b5982b33106b42e705c544441c3af003466163511f0bf14b",
+        "triangles": 12717,
+        "bounds_mm": [
+          [
+            -43.431968688964844,
+            -17.32537841796875,
+            0.0
+          ],
+          [
+            43.431968688964844,
+            17.32537841796875,
+            110.0
+          ]
+        ],
+        "dimensions_mm": [
+          86.86393737792969,
+          34.6507568359375,
+          110.0
+        ],
+        "validation": {
+          "valid_binary_stl": true,
+          "watertight_edge_test": false,
+          "boundary_edges": 1204,
+          "nonmanifold_edges": 53,
+          "degenerate_triangles": 0,
+          "triangles": 12717
+        }
+      },
+      "print_ready": {
+        "path": "/home/runner/work/_temp/HOTS_STL_chunk_4/.build_cache/print_ready/medivh.stl",
+        "bytes": 11538784,
+        "sha256": "98e7e9c16ad298efe448015298a188b294e6e857c87f7146807deffd3d5605fd",
+        "triangles": 230774,
+        "bounds_mm": [
+          [
+            -47.4582405090332,
+            -47.4582405090332,
+            0.0
+          ],
+          [
+            47.4582405090332,
+            47.4582405090332,
+            112.56220245361328
+          ]
+        ],
+        "dimensions_mm": [
+          94.9164810180664,
+          94.9164810180664,
+          112.56220245361328
+        ],
+        "validation": {
+          "valid_binary_stl": true,
+          "watertight_edge_test": false,
+          "boundary_edges": 69,
+          "nonmanifold_edges": 233,
+          "degenerate_triangles": 0,
+          "triangles": 230774
+        }
+      },
+      "decimation": {
+        "triangles_before_decimate": 299698,
+        "decimated": false,
+        "triangles_after_decimate": 299698,
+        "retry_voxel_mm": 0.62,
+        "retry": {
+          "triangles_before_decimate": 230774,
+          "decimated": false,
+          "triangles_after_decimate": 230774
+        }
+      },
+      "blend_path": null,
+      "elapsed_seconds": 11.16
+    },
+    "meiow": {
+      "source_key": "meiow",
+      "source_paths": [
+        "/home/runner/work/HOTS-03/HOTS-03/storm_hero_meiow_base/storm_hero_meiow_base.m3"
+      ],
+      "import": {
+        "imported_paths": [
+          "/home/runner/work/HOTS-03/HOTS-03/storm_hero_meiow_base/storm_hero_meiow_base.m3"
+        ],
+        "animation_paths": [],
+        "pose": null
+      },
+      "normalization": {
+        "scale_factor": 41.31565427785365,
+        "bounds_before": [
+          [
+            -117.13001251220703,
+            -15.093682289123535,
+            -2.012874126434326
+          ],
+          [
+            36.78007507324219,
+            31.908658981323242,
+            107.98712921142578
+          ]
+        ],
+        "bounds_after": [
+          [
+            -76.95504760742188,
+            -23.501171112060547,
+            0.0
+          ],
+          [
+            76.95504760742188,
+            23.501171112060547,
+            110.0
+          ]
+        ],
+        "dimensions_mm": [
+          153.91009521484375,
+          47.002342224121094,
+          110.0
+        ]
+      },
+      "components": [
+        {
+          "name": "mesh",
+          "sheet_solidified": false,
+          "topology_before": {
+            "boundary_edges": 40,
+            "nonmanifold_edges": 0,
+            "edges": 392,
+            "boundary_ratio": 0.10204081632653061,
+            "dimensions": [
+              34.554508209228516,
+              3.0259552001953125,
+              20.69098663330078
+            ],
+            "min_dimension": 3.0259552001953125,
+            "max_dimension": 34.554508209228516
+          }
+        },
+        {
+          "name": "mesh.001",
+          "sheet_solidified": false,
+          "topology_before": {
+            "boundary_edges": 360,
+            "nonmanifold_edges": 0,
+            "edges": 8217,
+            "boundary_ratio": 0.04381161007667032,
+            "dimensions": [
+              136.49557495117188,
+              47.002342224121094,
+              106.25739288330078
+            ],
+            "min_dimension": 47.002342224121094,
+            "max_dimension": 136.49557495117188
+          }
+        },
+        {
+          "name": "mesh.002",
+          "sheet_solidified": false,
+          "topology_before": {
+            "boundary_edges": 286,
+            "nonmanifold_edges": 0,
+            "edges": 12521,
+            "boundary_ratio": 0.022841626068205414,
+            "dimensions": [
+              73.56011199951172,
+              34.669044494628906,
+              110.0
+            ],
+            "min_dimension": 34.669044494628906,
+            "max_dimension": 110.0
+          }
+        },
+        {
+          "name": "mesh.003",
+          "sheet_solidified": true,
+          "topology_before": {
+            "boundary_edges": 52,
+            "nonmanifold_edges": 0,
+            "edges": 152,
+            "boundary_ratio": 0.34210526315789475,
+            "dimensions": [
+              27.00812530517578,
+              33.550079345703125,
+              36.12057876586914
+            ],
+            "min_dimension": 27.00812530517578,
+            "max_dimension": 36.12057876586914
+          }
+        }
+      ],
+      "detail": {
+        "path": "/home/runner/work/_temp/HOTS_STL_chunk_4/.build_cache/detail/meiow.stl",
+        "bytes": 697184,
+        "sha256": "402507c354c23869f9397a95a2793f1de8958c22a310e88940864b76db5616f8",
+        "triangles": 13942,
+        "bounds_mm": [
+          [
+            -76.95504760742188,
+            -23.501171112060547,
+            0.0
+          ],
+          [
+            76.95504760742188,
+            23.501171112060547,
+            110.0
+          ]
+        ],
+        "dimensions_mm": [
+          153.91009521484375,
+          47.002342224121094,
+          110.0
+        ],
+        "validation": {
+          "valid_binary_stl": true,
+          "watertight_edge_test": false,
+          "boundary_edges": 690,
+          "nonmanifold_edges": 0,
+          "degenerate_triangles": 0,
+          "triangles": 13942
+        }
+      },
+      "print_ready": {
+        "path": "/home/runner/work/_temp/HOTS_STL_chunk_4/.build_cache/print_ready/meiow.stl",
+        "bytes": 19523334,
+        "sha256": "cf542d5fef1c1c0e1027aa80098762da3f7ce2992c0a797700ca091438bb4a2b",
+        "triangles": 390465,
+        "bounds_mm": [
+          [
+            -81.02494812011719,
+            -81.02494812011719,
+            0.0
+          ],
+          [
+            81.02494812011719,
+            81.02494812011719,
+            112.7152099609375
+          ]
+        ],
+        "dimensions_mm": [
+          162.04989624023438,
+          162.04989624023438,
+          112.7152099609375
+        ],
+        "validation": {
+          "valid_binary_stl": true,
+          "watertight_edge_test": false,
+          "boundary_edges": 109,
+          "nonmanifold_edges": 324,
+          "degenerate_triangles": 0,
+          "triangles": 390465
+        }
+      },
+      "decimation": {
+        "triangles_before_decimate": 503516,
+        "decimated": true,
+        "decimate_ratio": 0.8937153933539351,
+        "triangles_after_decimate": 449999,
+        "retry_voxel_mm": 0.62,
+        "retry": {
+          "triangles_before_decimate": 390465,
+          "decimated": false,
+          "triangles_after_decimate": 390465
+        }
+      },
+      "blend_path": null,
+      "elapsed_seconds": 21.01
+    },
+    "mephisto": {
+      "source_key": "mephisto",
+      "source_paths": [
+        "/home/runner/work/HOTS-03/HOTS-03/storm_hero_mephisto_base/storm_hero_mephisto_base.m3"
+      ],
+      "import": {
+        "imported_paths": [
+          "/home/runner/work/HOTS-03/HOTS-03/storm_hero_mephisto_base/storm_hero_mephisto_base.m3"
+        ],
+        "animation_paths": [],
+        "pose": null
+      },
+      "normalization": {
+        "scale_factor": 22.252877075824845,
+        "bounds_before": [
+          [
+            -59.20688247680664,
+            -20.42167091369629,
+            -15.604215621948242
+          ],
+          [
+            59.206871032714844,
+            19.402904510498047,
+            94.39578247070312
+          ]
+        ],
+        "bounds_after": [
+          [
+            -59.206878662109375,
+            -19.912288665771484,
+            0.0
+          ],
+          [
+            59.206878662109375,
+            19.912288665771484,
+            110.0
+          ]
+        ],
+        "dimensions_mm": [
+          118.41375732421875,
+          39.82457733154297,
+          110.0
+        ]
+      },
+      "components": [
+        {
+          "name": "mesh",
+          "sheet_solidified": false,
+          "topology_before": {
+            "boundary_edges": 0,
+            "nonmanifold_edges": 0,
+            "edges": 18504,
+            "boundary_ratio": 0.0,
+            "dimensions": [
+              118.41375732421875,
+              39.82457733154297,
+              109.11007690429688
+            ],
+            "min_dimension": 39.82457733154297,
+            "max_dimension": 118.41375732421875
+          }
+        },
+        {
+          "name": "mesh_glow_hardpointfront",
+          "sheet_solidified": true,
+          "topology_before": {
+            "boundary_edges": 4,
+            "nonmanifold_edges": 0,
+            "edges": 5,
+            "boundary_ratio": 0.8,
+            "dimensions": [
+              22.252880096435547,
+              6.67572021484375e-06,
+              22.25287628173828
+            ],
+            "min_dimension": 6.67572021484375e-06,
+            "max_dimension": 22.252880096435547
+          }
+        },
+        {
+          "name": "bone_chainlink_l",
+          "sheet_solidified": false,
+          "topology_before": {
+            "boundary_edges": 0,
+            "nonmanifold_edges": 0,
+            "edges": 294,
+            "boundary_ratio": 0.0,
+            "dimensions": [
+              5.216226577758789,
+              8.220396041870117,
+              7.1456146240234375
+            ],
+            "min_dimension": 5.216226577758789,
+            "max_dimension": 8.220396041870117
+          }
+        },
+        {
+          "name": "mesh.001",
+          "sheet_solidified": false,
+          "topology_before": {
+            "boundary_edges": 14,
+            "nonmanifold_edges": 0,
+            "edges": 1297,
+            "boundary_ratio": 0.01079414032382421,
+            "dimensions": [
+              11.90853214263916,
+              9.466728210449219,
+              53.72107696533203
+            ],
+            "min_dimension": 9.466728210449219,
+            "max_dimension": 53.72107696533203
+          }
+        },
+        {
+          "name": "mesh_glow_centerback",
+          "sheet_solidified": true,
+          "topology_before": {
+            "boundary_edges": 4,
+            "nonmanifold_edges": 0,
+            "edges": 5,
+            "boundary_ratio": 0.8,
+            "dimensions": [
+              33.379310607910156,
+              2.6166439056396484e-05,
+              33.37931823730469
+            ],
+            "min_dimension": 2.6166439056396484e-05,
+            "max_dimension": 33.37931823730469
+          }
+        }
+      ],
+      "detail": {
+        "path": "/home/runner/work/_temp/HOTS_STL_chunk_4/.build_cache/detail/mephisto.stl",
+        "bytes": 669884,
+        "sha256": "2b1df6485dd1c460295017c90bb4dc1b57bad69973570f36ac88228bebf43ed6",
+        "triangles": 13396,
+        "bounds_mm": [
+          [
+            -59.206878662109375,
+            -19.912288665771484,
+            0.0
+          ],
+          [
+            59.206878662109375,
+            19.912288665771484,
+            110.0
+          ]
+        ],
+        "dimensions_mm": [
+          118.41375732421875,
+          39.82457733154297,
+          110.0
+        ],
+        "validation": {
+          "valid_binary_stl": true,
+          "watertight_edge_test": false,
+          "boundary_edges": 22,
+          "nonmanifold_edges": 0,
+          "degenerate_triangles": 0,
+          "triangles": 13396
+        }
+      },
+      "print_ready": {
+        "path": "/home/runner/work/_temp/HOTS_STL_chunk_4/.build_cache/print_ready/mephisto.stl",
+        "bytes": 10696534,
+        "sha256": "edbf5b2a872f1c1c1e48e20746596bb3aa5adbd17c44aeeb05b988639c195edf",
+        "triangles": 213929,
+        "bounds_mm": [
+          [
+            -63.238338470458984,
+            -63.238338470458984,
+            0.0
+          ],
+          [
+            63.238338470458984,
+            63.238338470458984,
+            112.61534881591797
+          ]
+        ],
+        "dimensions_mm": [
+          126.47667694091797,
+          126.47667694091797,
+          112.61534881591797
+        ],
+        "validation": {
+          "valid_binary_stl": true,
+          "watertight_edge_test": false,
+          "boundary_edges": 18,
+          "nonmanifold_edges": 9,
+          "degenerate_triangles": 0,
+          "triangles": 213929
+        }
+      },
+      "decimation": {
+        "triangles_before_decimate": 274081,
+        "decimated": false,
+        "triangles_after_decimate": 274081,
+        "retry_voxel_mm": 0.62,
+        "retry": {
+          "triangles_before_decimate": 213929,
+          "decimated": false,
+          "triangles_after_decimate": 213929
+        }
+      },
+      "blend_path": null,
+      "elapsed_seconds": 10.26
+    },
+    "muradin": {
+      "source_key": "muradin",
+      "source_paths": [
+        "/home/runner/work/HOTS-03/HOTS-03/storm_hero_muradin_base/storm_hero_muradin_base.m3"
+      ],
+      "import": {
+        "imported_paths": [
+          "/home/runner/work/HOTS-03/HOTS-03/storm_hero_muradin_base/storm_hero_muradin_base.m3"
+        ],
+        "animation_paths": [],
+        "pose": null
+      },
+      "normalization": {
+        "scale_factor": 40.21102678762858,
+        "bounds_before": [
+          [
+            -41.23906326293945,
+            -27.894834518432617,
+            -13.726633071899414
+          ],
+          [
+            37.8252067565918,
+            42.754154205322266,
+            96.27336120605469
+          ]
+        ],
+        "bounds_after": [
+          [
+            -39.532135009765625,
+            -35.324493408203125,
+            0.0
+          ],
+          [
+            39.532135009765625,
+            35.324493408203125,
+            109.99999237060547
+          ]
+        ],
+        "dimensions_mm": [
+          79.06427001953125,
+          70.64898681640625,
+          109.99999237060547
+        ]
+      },
+      "components": [
+        {
+          "name": "bone_sword_r",
+          "sheet_solidified": false,
+          "topology_before": {
+            "boundary_edges": 16,
+            "nonmanifold_edges": 0,
+            "edges": 425,
+            "boundary_ratio": 0.03764705882352941,
+            "dimensions": [
+              21.90715789794922,
+              55.137672424316406,
+              32.27852249145508
+            ],
+            "min_dimension": 21.90715789794922,
+            "max_dimension": 55.137672424316406
+          }
+        },
+        {
+          "name": "fxmesh_hammer1",
+          "sheet_solidified": false,
+          "topology_before": {
+            "boundary_edges": 16,
+            "nonmanifold_edges": 0,
+            "edges": 425,
+            "boundary_ratio": 0.03764705882352941,
+            "dimensions": [
+              24.874479293823242,
+              62.60600280761719,
+              36.65065002441406
+            ],
+            "min_dimension": 24.874479293823242,
+            "max_dimension": 62.60600280761719
+          }
+        },
+        {
+          "name": "storm_hero_muradin_stein",
+          "sheet_solidified": false,
+          "topology_before": {
+            "boundary_edges": 32,
+            "nonmanifold_edges": 0,
+            "edges": 850,
+            "boundary_ratio": 0.03764705882352941,
+            "dimensions": [
+              23.075498580932617,
+              18.44852066040039,
+              25.325210571289062
+            ],
+            "min_dimension": 18.44852066040039,
+            "max_dimension": 25.325210571289062
+          }
+        },
+        {
+          "name": "mesh",
+          "sheet_solidified": false,
+          "topology_before": {
+            "boundary_edges": 168,
+            "nonmanifold_edges": 0,
+            "edges": 2919,
+            "boundary_ratio": 0.05755395683453238,
+            "dimensions": [
+              57.302581787109375,
+              55.66498565673828,
+              60.92272186279297
+            ],
+            "min_dimension": 55.66498565673828,
+            "max_dimension": 60.92272186279297
+          }
+        },
+        {
+          "name": "bone_sword_l",
+          "sheet_solidified": false,
+          "topology_before": {
+            "boundary_edges": 16,
+            "nonmanifold_edges": 0,
+            "edges": 632,
+            "boundary_ratio": 0.02531645569620253,
+            "dimensions": [
+              13.110383987426758,
+              61.51204299926758,
+              44.427528381347656
+            ],
+            "min_dimension": 13.110383987426758,
+            "max_dimension": 61.51204299926758
+          }
+        },
+        {
+          "name": "mesh.001",
+          "sheet_solidified": false,
+          "topology_before": {
+            "boundary_edges": 105,
+            "nonmanifold_edges": 20,
+            "edges": 4583,
+            "boundary_ratio": 0.022910757145974254,
+            "dimensions": [
+              75.65042877197266,
+              34.385414123535156,
+              54.92045593261719
+            ],
+            "min_dimension": 34.385414123535156,
+            "max_dimension": 75.65042877197266
+          }
+        },
+        {
+          "name": "mesh.002",
+          "sheet_solidified": false,
+          "topology_before": {
+            "boundary_edges": 309,
+            "nonmanifold_edges": 24,
+            "edges": 6060,
+            "boundary_ratio": 0.05099009900990099,
+            "dimensions": [
+              56.084938049316406,
+              43.826820373535156,
+              67.8642807006836
+            ],
+            "min_dimension": 43.826820373535156,
+            "max_dimension": 67.8642807006836
+          }
+        }
+      ],
+      "detail": {
+        "path": "/home/runner/work/_temp/HOTS_STL_chunk_4/.build_cache/detail/muradin.stl",
+        "bytes": 519584,
+        "sha256": "9c17e6f51b1888949b0c19d6b8a9fc881171026db6dd8187db8646c30504e8e4",
+        "triangles": 10390,
+        "bounds_mm": [
+          [
+            -39.532135009765625,
+            -35.324493408203125,
+            0.0
+          ],
+          [
+            39.532135009765625,
+            35.324493408203125,
+            109.99999237060547
+          ]
+        ],
+        "dimensions_mm": [
+          79.06427001953125,
+          70.64898681640625,
+          109.99999237060547
+        ],
+        "validation": {
+          "valid_binary_stl": true,
+          "watertight_edge_test": false,
+          "boundary_edges": 644,
+          "nonmanifold_edges": 44,
+          "degenerate_triangles": 0,
+          "triangles": 10390
+        }
+      },
+      "print_ready": {
+        "path": "/home/runner/work/_temp/HOTS_STL_chunk_4/.build_cache/print_ready/muradin.stl",
+        "bytes": 16982234,
+        "sha256": "a3e5f546f79f54d5b1279b5c466c8b36c4275f03c6057040c3a072a5a55caef8",
+        "triangles": 339643,
+        "bounds_mm": [
+          [
+            -43.59406661987305,
+            -43.59406661987305,
+            0.0
+          ],
+          [
+            43.59406661987305,
+            43.59406661987305,
+            112.60359191894531
+          ]
+        ],
+        "dimensions_mm": [
+          87.1881332397461,
+          87.1881332397461,
+          112.60359191894531
+        ],
+        "validation": {
+          "valid_binary_stl": true,
+          "watertight_edge_test": false,
+          "boundary_edges": 128,
+          "nonmanifold_edges": 1127,
+          "degenerate_triangles": 0,
+          "triangles": 339643
+        }
+      },
+      "decimation": {
+        "triangles_before_decimate": 443495,
+        "decimated": false,
+        "triangles_after_decimate": 443495,
+        "retry_voxel_mm": 0.62,
+        "retry": {
+          "triangles_before_decimate": 339643,
+          "decimated": false,
+          "triangles_after_decimate": 339643
+        }
+      },
+      "blend_path": null,
+      "elapsed_seconds": 17.19
+    },
+    "murky": {
+      "source_key": "murky",
+      "source_paths": [
+        "/home/runner/work/HOTS-03/HOTS-03/storm_hero_murky_base/storm_hero_murky_base.m3"
+      ],
+      "import": {
+        "imported_paths": [
+          "/home/runner/work/HOTS-03/HOTS-03/storm_hero_murky_base/storm_hero_murky_base.m3"
+        ],
+        "animation_paths": [],
+        "pose": null
+      },
+      "normalization": {
+        "scale_factor": 9.65963709999912,
+        "bounds_before": [
+          [
+            -18.329116821289062,
+            -33.71646499633789,
+            -93.97315979003906
+          ],
+          [
+            11.954192161560059,
+            5.590492248535156,
+            16.026845932006836
+          ]
+        ],
+        "bounds_after": [
+          [
+            -15.141654968261719,
+            -19.653478622436523,
+            0.0
+          ],
+          [
+            15.141654968261719,
+            19.653478622436523,
+            110.00000762939453
+          ]
+        ],
+        "dimensions_mm": [
+          30.283309936523438,
+          39.30695724487305,
+          110.00000762939453
+        ]
+      },
+      "components": [
+        {
+          "name": "mesh",
+          "sheet_solidified": false,
+          "topology_before": {
+            "boundary_edges": 72,
+            "nonmanifold_edges": 0,
+            "edges": 1890,
+            "boundary_ratio": 0.0380952380952381,
+            "dimensions": [
+              5.3899078369140625,
+              13.203205108642578,
+              5.623161315917969
+            ],
+            "min_dimension": 5.3899078369140625,
+            "max_dimension": 13.203205108642578
+          }
+        },
+        {
+          "name": "mesh.001",
+          "sheet_solidified": false,
+          "topology_before": {
+            "boundary_edges": 216,
+            "nonmanifold_edges": 0,
+            "edges": 4407,
+            "boundary_ratio": 0.04901293396868618,
+            "dimensions": [
+              30.283309936523438,
+              28.303491592407227,
+              74.26285552978516
+            ],
+            "min_dimension": 28.303491592407227,
+            "max_dimension": 74.26285552978516
+          }
+        },
+        {
+          "name": "bone_weapon_fish_root",
+          "sheet_solidified": false,
+          "topology_before": {
+            "boundary_edges": 0,
+            "nonmanifold_edges": 0,
+            "edges": 2112,
+            "boundary_ratio": 0.0,
+            "dimensions": [
+              5.728943824768066,
+              8.930802345275879,
+              4.828559875488281
+            ],
+            "min_dimension": 4.828559875488281,
+            "max_dimension": 8.930802345275879
+          }
+        },
+        {
+          "name": "mesh.002",
+          "sheet_solidified": false,
+          "topology_before": {
+            "boundary_edges": 97,
+            "nonmanifold_edges": 0,
+            "edges": 8882,
+            "boundary_ratio": 0.01092096374690385,
+            "dimensions": [
+              12.868371963500977,
+              14.357489585876465,
+              13.059410095214844
+            ],
+            "min_dimension": 12.868371963500977,
+            "max_dimension": 14.357489585876465
+          }
+        },
+        {
+          "name": "mesh.003",
+          "sheet_solidified": false,
+          "topology_before": {
+            "boundary_edges": 30,
+            "nonmanifold_edges": 0,
+            "edges": 1107,
+            "boundary_ratio": 0.02710027100271003,
+            "dimensions": [
+              5.393418312072754,
+              12.626533508300781,
+              7.2546234130859375
+            ],
+            "min_dimension": 5.393418312072754,
+            "max_dimension": 12.626533508300781
+          }
+        }
+      ],
+      "detail": {
+        "path": "/home/runner/work/_temp/HOTS_STL_chunk_4/.build_cache/detail/murky.stl",
+        "bytes": 606434,
+        "sha256": "ff32f2106408464dee6417cab4e17420381923550221723206b2260450753cc4",
+        "triangles": 12127,
+        "bounds_mm": [
+          [
+            -15.141654968261719,
+            -19.653478622436523,
+            0.0
+          ],
+          [
+            15.141654968261719,
+            19.653478622436523,
+            110.00000762939453
+          ]
+        ],
+        "dimensions_mm": [
+          30.283309936523438,
+          39.30695724487305,
+          110.00000762939453
+        ],
+        "validation": {
+          "valid_binary_stl": true,
+          "watertight_edge_test": false,
+          "boundary_edges": 371,
+          "nonmanifold_edges": 0,
+          "degenerate_triangles": 0,
+          "triangles": 12127
+        }
+      },
+      "print_ready": {
+        "path": "/home/runner/work/_temp/HOTS_STL_chunk_4/.build_cache/print_ready/murky.stl",
+        "bytes": 2729734,
+        "sha256": "fc7104ba5d065870e3b917fe7fbdeb28f2248cc2eb94d3441e8fee8975974186",
+        "triangles": 54593,
+        "bounds_mm": [
+          [
+            -23.7055606842041,
+            -23.7055606842041,
+            0.0
+          ],
+          [
+            23.7055606842041,
+            23.7055606842041,
+            112.63333892822266
+          ]
+        ],
+        "dimensions_mm": [
+          47.4111213684082,
+          47.4111213684082,
+          112.63333892822266
+        ],
+        "validation": {
+          "valid_binary_stl": true,
+          "watertight_edge_test": false,
+          "boundary_edges": 2,
+          "nonmanifold_edges": 4,
+          "degenerate_triangles": 0,
+          "triangles": 54593
+        }
+      },
+      "decimation": {
+        "triangles_before_decimate": 70243,
+        "decimated": false,
+        "triangles_after_decimate": 70243,
+        "retry_voxel_mm": 0.62,
+        "retry": {
+          "triangles_before_decimate": 54593,
+          "decimated": false,
+          "triangles_after_decimate": 54593
+        }
+      },
+      "blend_path": null,
+      "elapsed_seconds": 2.88
+    },
+    "d3witchdoctorm": {
+      "source_key": "d3witchdoctorm",
+      "source_paths": [
+        "/home/runner/work/_temp/HOTS-02/storm_hero_d3witchdoctorm_base/storm_hero_d3witchdoctorm_base.m3"
+      ],
+      "import": {
+        "imported_paths": [
+          "/home/runner/work/_temp/HOTS-02/storm_hero_d3witchdoctorm_base/storm_hero_d3witchdoctorm_base.m3"
+        ],
+        "animation_paths": [],
+        "pose": null
+      },
+      "normalization": {
+        "scale_factor": 30.725058560111837,
+        "bounds_before": [
+          [
+            -30.755836486816406,
+            -13.31623363494873,
+            0.012676647864282131
+          ],
+          [
+            30.755807876586914,
+            30.857696533203125,
+            110.01268005371094
+          ]
+        ],
+        "bounds_after": [
+          [
+            -30.755821228027344,
+            -22.086963653564453,
+            0.0
+          ],
+          [
+            30.755821228027344,
+            22.086965560913086,
+            110.0
+          ]
+        ],
+        "dimensions_mm": [
+          61.51164245605469,
+          44.173927307128906,
+          110.0
+        ]
+      },
+      "components": [
+        {
+          "name": "mesh",
+          "sheet_solidified": false,
+          "topology_before": {
+            "boundary_edges": 552,
+            "nonmanifold_edges": 0,
+            "edges": 11601,
+            "boundary_ratio": 0.04758210499094906,
+            "dimensions": [
+              45.39965057373047,
+              19.500276565551758,
+              79.19511413574219
+            ],
+            "min_dimension": 19.500276565551758,
+            "max_dimension": 79.19511413574219
+          }
+        },
+        {
+          "name": "mesh.001",
+          "sheet_solidified": false,
+          "topology_before": {
+            "boundary_edges": 364,
+            "nonmanifold_edges": 5,
+            "edges": 6743,
+            "boundary_ratio": 0.05398190716298384,
+            "dimensions": [
+              61.51164245605469,
+              44.173927307128906,
+              105.09335327148438
+            ],
+            "min_dimension": 44.173927307128906,
+            "max_dimension": 105.09335327148438
+          }
+        },
+        {
+          "name": "mesh.002",
+          "sheet_solidified": true,
+          "topology_before": {
+            "boundary_edges": 360,
+            "nonmanifold_edges": 0,
+            "edges": 609,
+            "boundary_ratio": 0.5911330049261084,
+            "dimensions": [
+              22.92150115966797,
+              18.147293090820312,
+              20.283554077148438
+            ],
+            "min_dimension": 18.147293090820312,
+            "max_dimension": 22.92150115966797
+          }
+        },
+        {
+          "name": "mesh.003",
+          "sheet_solidified": true,
+          "topology_before": {
+            "boundary_edges": 360,
+            "nonmanifold_edges": 0,
+            "edges": 609,
+            "boundary_ratio": 0.5911330049261084,
+            "dimensions": [
+              22.134071350097656,
+              18.147293090820312,
+              20.283552169799805
+            ],
+            "min_dimension": 18.147293090820312,
+            "max_dimension": 22.134071350097656
+          }
+        }
+      ],
+      "detail": {
+        "path": "/home/runner/work/_temp/HOTS_STL_chunk_4/.build_cache/detail/d3witchdoctorm.stl",
+        "bytes": 624984,
+        "sha256": "3cb34c2fbcadc5c0ea8ed9a32f3348fdb8e4606efde9c481c452dd67a2037407",
+        "triangles": 12498,
+        "bounds_mm": [
+          [
+            -30.755821228027344,
+            -22.086963653564453,
+            0.0
+          ],
+          [
+            30.755821228027344,
+            22.086965560913086,
+            110.0
+          ]
+        ],
+        "dimensions_mm": [
+          61.51164245605469,
+          44.173927307128906,
+          110.0
+        ],
+        "validation": {
+          "valid_binary_stl": true,
+          "watertight_edge_test": false,
+          "boundary_edges": 1386,
+          "nonmanifold_edges": 99,
+          "degenerate_triangles": 0,
+          "triangles": 12498
+        }
+      },
+      "print_ready": {
+        "path": "/home/runner/work/_temp/HOTS_STL_chunk_4/.build_cache/print_ready/d3witchdoctorm.stl",
+        "bytes": 8505534,
+        "sha256": "b5b5a09227efdad05e30dce1902d8836959f68025709490d023b9738b51e9d66",
+        "triangles": 170109,
+        "bounds_mm": [
+          [
+            -34.80695724487305,
+            -34.80695724487305,
+            0.0
+          ],
+          [
+            34.80695724487305,
+            34.80695724487305,
+            111.80017852783203
+          ]
+        ],
+        "dimensions_mm": [
+          69.6139144897461,
+          69.6139144897461,
+          111.80017852783203
+        ],
+        "validation": {
+          "valid_binary_stl": true,
+          "watertight_edge_test": false,
+          "boundary_edges": 123,
+          "nonmanifold_edges": 438,
+          "degenerate_triangles": 0,
+          "triangles": 170109
+        }
+      },
+      "decimation": {
+        "triangles_before_decimate": 228323,
+        "decimated": false,
+        "triangles_after_decimate": 228323,
+        "retry_voxel_mm": 0.62,
+        "retry": {
+          "triangles_before_decimate": 170109,
+          "decimated": false,
+          "triangles_after_decimate": 170109
+        }
+      },
+      "blend_path": null,
+      "elapsed_seconds": 8.65
+    },
+    "nova": {
+      "source_key": "nova",
+      "source_paths": [
+        "/home/runner/work/HOTS-03/HOTS-03/storm_hero_nova_base/storm_hero_nova_base_v05.m3"
+      ],
+      "import": {
+        "imported_paths": [
+          "/home/runner/work/HOTS-03/HOTS-03/storm_hero_nova_base/storm_hero_nova_base_v05.m3"
+        ],
+        "animation_paths": [],
+        "pose": null
+      },
+      "normalization": {
+        "scale_factor": 40.37667815930908,
+        "bounds_before": [
+          [
+            -39.057621002197266,
+            -60.21799087524414,
+            -4.99502420425415
+          ],
+          [
+            39.057613372802734,
+            36.829986572265625,
+            105.00497436523438
+          ]
+        ],
+        "bounds_after": [
+          [
+            -39.0576171875,
+            -48.52398681640625,
+            0.0
+          ],
+          [
+            39.0576171875,
+            48.52398681640625,
+            110.0
+          ]
+        ],
+        "dimensions_mm": [
+          78.115234375,
+          97.0479736328125,
+          110.0
+        ]
+      },
+      "components": [
+        {
+          "name": "mesh",
+          "sheet_solidified": false,
+          "topology_before": {
+            "boundary_edges": 165,
+            "nonmanifold_edges": 0,
+            "edges": 2478,
+            "boundary_ratio": 0.06658595641646489,
+            "dimensions": [
+              57.02567672729492,
+              79.95440673828125,
+              107.56230926513672
+            ],
+            "min_dimension": 57.02567672729492,
+            "max_dimension": 107.56230926513672
+          }
+        },
+        {
+          "name": "mesh.001",
+          "sheet_solidified": false,
+          "topology_before": {
+            "boundary_edges": 587,
+            "nonmanifold_edges": 48,
+            "edges": 12333,
+            "boundary_ratio": 0.04759588096975594,
+            "dimensions": [
+              77.18392944335938,
+              41.53129196166992,
+              105.23941040039062
+            ],
+            "min_dimension": 41.53129196166992,
+            "max_dimension": 105.23941040039062
+          }
+        }
+      ],
+      "detail": {
+        "path": "/home/runner/work/_temp/HOTS_STL_chunk_4/.build_cache/detail/nova.stl",
+        "bytes": 482584,
+        "sha256": "1394df4cd158868f9db3097e65e3ce033872179cfa3c0d2b747e73cbee3dece3",
+        "triangles": 9650,
+        "bounds_mm": [
+          [
+            -39.0576171875,
+            -48.52398681640625,
+            0.0
+          ],
+          [
+            39.0576171875,
+            48.52398681640625,
+            110.0
+          ]
+        ],
+        "dimensions_mm": [
+          78.115234375,
+          97.0479736328125,
+          110.0
+        ],
+        "validation": {
+          "valid_binary_stl": true,
+          "watertight_edge_test": false,
+          "boundary_edges": 714,
+          "nonmanifold_edges": 48,
+          "degenerate_triangles": 0,
+          "triangles": 9650
+        }
+      },
+      "print_ready": {
+        "path": "/home/runner/work/_temp/HOTS_STL_chunk_4/.build_cache/print_ready/nova.stl",
+        "bytes": 9346434,
+        "sha256": "d6f09e65ade51face1312cb847ae8d796137da0d7f36a6ab6909e3f4bb766561",
+        "triangles": 186927,
+        "bounds_mm": [
+          [
+            -52.54941177368164,
+            -52.54941177368164,
+            0.0
+          ],
+          [
+            52.54941177368164,
+            52.54941177368164,
+            112.37530517578125
+          ]
+        ],
+        "dimensions_mm": [
+          105.09882354736328,
+          105.09882354736328,
+          112.37530517578125
+        ],
+        "validation": {
+          "valid_binary_stl": true,
+          "watertight_edge_test": false,
+          "boundary_edges": 1,
+          "nonmanifold_edges": 6,
+          "degenerate_triangles": 0,
+          "triangles": 186927
+        }
+      },
+      "decimation": {
+        "triangles_before_decimate": 239029,
+        "decimated": false,
+        "triangles_after_decimate": 239029,
+        "retry_voxel_mm": 0.62,
+        "retry": {
+          "triangles_before_decimate": 186927,
+          "decimated": false,
+          "triangles_after_decimate": 186927
+        }
+      },
+      "blend_path": null,
+      "elapsed_seconds": 8.49
+    },
+    "orphea": {
+      "source_key": "orphea",
+      "source_paths": [
+        "/home/runner/work/HOTS-03/HOTS-03/storm_hero_orphea_base/storm_hero_orphea_base.m3"
+      ],
+      "import": {
+        "imported_paths": [
+          "/home/runner/work/HOTS-03/HOTS-03/storm_hero_orphea_base/storm_hero_orphea_base.m3"
+        ],
+        "animation_paths": [],
+        "pose": null
+      },
+      "normalization": {
+        "scale_factor": 37.79118374469447,
+        "bounds_before": [
+          [
+            -29.920978546142578,
+            -10.781399726867676,
+            -0.047483332455158234
+          ],
+          [
+            29.920930862426758,
+            37.926185607910156,
+            109.9525146484375
+          ]
+        ],
+        "bounds_after": [
+          [
+            -29.920955657958984,
+            -24.35379409790039,
+            0.0
+          ],
+          [
+            29.920955657958984,
+            24.353792190551758,
+            110.0
+          ]
+        ],
+        "dimensions_mm": [
+          59.84191131591797,
+          48.70758819580078,
+          110.0
+        ]
+      },
+      "components": [
+        {
+          "name": "mesh",
+          "sheet_solidified": false,
+          "topology_before": {
+            "boundary_edges": 129,
+            "nonmanifold_edges": 0,
+            "edges": 3828,
+            "boundary_ratio": 0.03369905956112853,
+            "dimensions": [
+              59.84191131591797,
+              46.93937301635742,
+              80.74952697753906
+            ],
+            "min_dimension": 46.93937301635742,
+            "max_dimension": 80.74952697753906
+          }
+        },
+        {
+          "name": "mesh.001",
+          "sheet_solidified": false,
+          "topology_before": {
+            "boundary_edges": 520,
+            "nonmanifold_edges": 26,
+            "edges": 18634,
+            "boundary_ratio": 0.02790597831920146,
+            "dimensions": [
+              53.89636993408203,
+              46.984466552734375,
+              109.99999237060547
+            ],
+            "min_dimension": 46.984466552734375,
+            "max_dimension": 109.99999237060547
+          }
+        }
+      ],
+      "detail": {
+        "path": "/home/runner/work/_temp/HOTS_STL_chunk_4/.build_cache/detail/orphea.stl",
+        "bytes": 738434,
+        "sha256": "e33b7051262e4a15cd1b82e62742ffc8413e7cadd4e7b4bd41c4adc54935475c",
+        "triangles": 14767,
+        "bounds_mm": [
+          [
+            -29.920955657958984,
+            -24.35379409790039,
+            0.0
+          ],
+          [
+            29.920955657958984,
+            24.353792190551758,
+            110.0
+          ]
+        ],
+        "dimensions_mm": [
+          59.84191131591797,
+          48.70758819580078,
+          110.0
+        ],
+        "validation": {
+          "valid_binary_stl": true,
+          "watertight_edge_test": false,
+          "boundary_edges": 547,
+          "nonmanifold_edges": 26,
+          "degenerate_triangles": 0,
+          "triangles": 14767
+        }
+      },
+      "print_ready": {
+        "path": "/home/runner/work/_temp/HOTS_STL_chunk_4/.build_cache/print_ready/orphea.stl",
+        "bytes": 10948834,
+        "sha256": "7d67527966d5ed08221d3d208e05578e11e30e5bc221f3f4fb8d78fbdc822f80",
+        "triangles": 218975,
+        "bounds_mm": [
+          [
+            -33.990257263183594,
+            -33.990257263183594,
+            0.0
+          ],
+          [
+            33.990257263183594,
+            33.990257263183594,
+            112.53858947753906
+          ]
+        ],
+        "dimensions_mm": [
+          67.98051452636719,
+          67.98051452636719,
+          112.53858947753906
+        ],
+        "validation": {
+          "valid_binary_stl": true,
+          "watertight_edge_test": false,
+          "boundary_edges": 88,
+          "nonmanifold_edges": 675,
+          "degenerate_triangles": 0,
+          "triangles": 218975
+        }
+      },
+      "decimation": {
+        "triangles_before_decimate": 285259,
+        "decimated": false,
+        "triangles_after_decimate": 285259,
+        "retry_voxel_mm": 0.62,
+        "retry": {
+          "triangles_before_decimate": 218975,
+          "decimated": false,
+          "triangles_after_decimate": 218975
+        }
+      },
+      "blend_path": null,
+      "elapsed_seconds": 10.62
+    }
+  }
+}
