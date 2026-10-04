@@ -1,0 +1,147 @@
+{
+  "raw_folder": "/home/runner/work/_temp/raw",
+  "repaired_folder": "/home/runner/work/_temp/repaired",
+  "expected_files": 3,
+  "found_files": 3,
+  "passed": false,
+  "requirements": {
+    "pixel_mm": 0.65,
+    "tolerance_mm": 1.95,
+    "minimum_raw_coverage": 0.985,
+    "minimum_repaired_coverage": 0.97,
+    "minimum_iou": 0.94,
+    "views": [
+      "front_xz",
+      "side_yz",
+      "top_xy"
+    ]
+  },
+  "failed_files": [
+    {
+      "file": "Tychus.stl",
+      "passed": false,
+      "views": {
+        "front_xz": {
+          "raw_pixel_count": 21879,
+          "repaired_pixel_count": 21643,
+          "raw_coverage": 0.9898075780428721,
+          "repaired_coverage": 1.0,
+          "iou": 0.9601317534328614,
+          "passed": true
+        },
+        "side_yz": {
+          "raw_pixel_count": 17178,
+          "repaired_pixel_count": 15528,
+          "raw_coverage": 0.9048783327511933,
+          "repaired_coverage": 1.0,
+          "iou": 0.8765652951699463,
+          "passed": false
+        },
+        "top_xy": {
+          "raw_pixel_count": 39969,
+          "repaired_pixel_count": 39860,
+          "raw_coverage": 0.9964222272261002,
+          "repaired_coverage": 1.0,
+          "iou": 0.9819967266775778,
+          "passed": true
+        }
+      },
+      "error": ""
+    }
+  ],
+  "files": [
+    {
+      "file": "Brightwing.stl",
+      "passed": true,
+      "views": {
+        "front_xz": {
+          "raw_pixel_count": 9749,
+          "repaired_pixel_count": 9745,
+          "raw_coverage": 1.0,
+          "repaired_coverage": 1.0,
+          "iou": 0.9996277338296883,
+          "passed": true
+        },
+        "side_yz": {
+          "raw_pixel_count": 11163,
+          "repaired_pixel_count": 11157,
+          "raw_coverage": 1.0,
+          "repaired_coverage": 1.0,
+          "iou": 0.9993515441355273,
+          "passed": true
+        },
+        "top_xy": {
+          "raw_pixel_count": 26496,
+          "repaired_pixel_count": 26496,
+          "raw_coverage": 1.0,
+          "repaired_coverage": 1.0,
+          "iou": 1.0,
+          "passed": true
+        }
+      },
+      "error": ""
+    },
+    {
+      "file": "D.Va.stl",
+      "passed": true,
+      "views": {
+        "front_xz": {
+          "raw_pixel_count": 13867,
+          "repaired_pixel_count": 14145,
+          "raw_coverage": 0.9984134996754885,
+          "repaired_coverage": 1.0,
+          "iou": 0.968478546986049,
+          "passed": true
+        },
+        "side_yz": {
+          "raw_pixel_count": 12509,
+          "repaired_pixel_count": 12775,
+          "raw_coverage": 0.9982412662882725,
+          "repaired_coverage": 1.0,
+          "iou": 0.9665505732114352,
+          "passed": true
+        },
+        "top_xy": {
+          "raw_pixel_count": 25665,
+          "repaired_pixel_count": 25865,
+          "raw_coverage": 1.0,
+          "repaired_coverage": 1.0,
+          "iou": 0.9872953454077967,
+          "passed": true
+        }
+      },
+      "error": ""
+    },
+    {
+      "file": "Tychus.stl",
+      "passed": false,
+      "views": {
+        "front_xz": {
+          "raw_pixel_count": 21879,
+          "repaired_pixel_count": 21643,
+          "raw_coverage": 0.9898075780428721,
+          "repaired_coverage": 1.0,
+          "iou": 0.9601317534328614,
+          "passed": true
+        },
+        "side_yz": {
+          "raw_pixel_count": 17178,
+          "repaired_pixel_count": 15528,
+          "raw_coverage": 0.9048783327511933,
+          "repaired_coverage": 1.0,
+          "iou": 0.8765652951699463,
+          "passed": false
+        },
+        "top_xy": {
+          "raw_pixel_count": 39969,
+          "repaired_pixel_count": 39860,
+          "raw_coverage": 0.9964222272261002,
+          "repaired_coverage": 1.0,
+          "iou": 0.9819967266775778,
+          "passed": true
+        }
+      },
+      "error": ""
+    }
+  ]
+}

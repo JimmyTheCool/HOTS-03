@@ -1,0 +1,4 @@
+﻿file,passed,error,front_xz_raw_coverage,front_xz_repaired_coverage,front_xz_iou,side_yz_raw_coverage,side_yz_repaired_coverage,side_yz_iou,top_xy_raw_coverage,top_xy_repaired_coverage,top_xy_iou
+Brightwing.stl,True,,1.0,1.0,0.9996277338296883,1.0,1.0,0.9993515441355273,1.0,1.0,1.0
+D.Va.stl,True,,0.9984134996754885,1.0,0.968478546986049,0.9982412662882725,1.0,0.9665505732114352,1.0,1.0,0.9872953454077967
+Tychus.stl,False,,0.9898075780428721,1.0,0.9601317534328614,0.9048783327511933,1.0,0.8765652951699463,0.9964222272261002,1.0,0.9819967266775778
