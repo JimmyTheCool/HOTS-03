@@ -1,0 +1,39 @@
+name: Summarise Fenix Rescue Log
+
+on:
+  workflow_dispatch:
+  push:
+    branches: [chatgpt-stl-builder]
+    paths: [.github/workflows/summarise-fenix-rescue-log.yml]
+
+permissions:
+  contents: write
+
+jobs:
+  summarise:
+    runs-on: ubuntu-22.04
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          ref: chatgpt-stl-builder
+          fetch-depth: 0
+      - name: Extract diagnostic tail
+        shell: bash
+        run: |
+          set -euo pipefail
+          SRC=build_reports/fenix_rescue_failure/job.log
+          DEST=build_reports/fenix_rescue_failure/job_tail.txt
+          test -f "$SRC"
+          {
+            echo '=== LAST 260 LINES ==='
+            tail -n 260 "$SRC"
+            echo
+            echo '=== KEY DIAGNOSTIC LINES ==='
+            grep -Ei 'candidate|selected|passed|failed|error|traceback|killed|memory|coverage|iou|watertight|component|dimension|exit code' "$SRC" | tail -n 320 || true
+          } > "$DEST"
+          git config user.name "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git add "$DEST"
+          git commit -m "Add concise Fenix failure diagnostics [skip ci]"
+          git pull --rebase origin chatgpt-stl-builder
+          git push origin HEAD:chatgpt-stl-builder
