@@ -1,0 +1,219 @@
+name: Build HOTS printable STL package
+
+on:
+  workflow_dispatch:
+    inputs:
+      build_mode:
+        description: Build scope
+        required: true
+        default: smoke
+        type: choice
+        options:
+          - smoke
+          - full
+  push:
+    branches:
+      - chatgpt-stl-builder
+    paths:
+      - .github/workflows/build-hots-stl.yml
+      - tools/hots_stl/**
+
+permissions:
+  contents: write
+
+env:
+  BLENDER_VERSION: 3.6.23
+  M3ADDON_COMMIT: 58935005c4465a219a740f6b740253533eda773f
+
+jobs:
+  build:
+    runs-on: ubuntu-22.04
+    timeout-minutes: 360
+    steps:
+      - name: Check out HOTS-03 and builder
+        uses: actions/checkout@v4
+        with:
+          fetch-depth: 1
+
+      - name: Unpack pinned builder scripts
+        shell: bash
+        run: |
+          set -euo pipefail
+          tar -xzf "$GITHUB_WORKSPACE/tools/hots_stl/builder_bundle.tar.gz" \
+            -C "$GITHUB_WORKSPACE/tools/hots_stl"
+          python -m py_compile \
+            "$GITHUB_WORKSPACE/tools/hots_stl/build_hots_stls.py" \
+            "$GITHUB_WORKSPACE/tools/hots_stl/check_manifest.py"
+
+      - name: Resolve build mode
+        id: mode
+        shell: bash
+        run: |
+          set -euo pipefail
+          MODE="${{ github.event.inputs.build_mode || 'smoke' }}"
+          echo "mode=$MODE" >> "$GITHUB_OUTPUT"
+          if [[ "$MODE" == "full" ]]; then
+            echo "archive=HOTS_All_91_Heroes_Printable_STL.zip" >> "$GITHUB_OUTPUT"
+            echo "minimum_success=91" >> "$GITHUB_OUTPUT"
+            echo "require_roster=91" >> "$GITHUB_OUTPUT"
+            echo "only_args=" >> "$GITHUB_OUTPUT"
+          else
+            echo "archive=HOTS_STL_SMOKE_TEST.zip" >> "$GITHUB_OUTPUT"
+            echo "minimum_success=3" >> "$GITHUB_OUTPUT"
+            echo "require_roster=3" >> "$GITHUB_OUTPUT"
+            echo "only_args=--only Abathur --only Johanna --only Xal'atath" >> "$GITHUB_OUTPUT"
+          fi
+
+      - name: Install Blender runtime libraries
+        shell: bash
+        run: |
+          set -euo pipefail
+          sudo apt-get update -qq
+          sudo apt-get install -y --no-install-recommends \
+            ca-certificates curl git xz-utils p7zip-full \
+            libx11-6 libxi6 libxrender1 libxfixes3 libxkbcommon0 \
+            libsm6 libice6 libgl1 libegl1
+
+      - name: Check out HOTS-02 source meshes
+        shell: bash
+        run: |
+          set -euo pipefail
+          git clone --depth 1 https://github.com/JimmyTheCool/HOTS-02.git "$RUNNER_TEMP/HOTS-02"
+
+      - name: Install Blender 3.6 LTS
+        id: blender
+        shell: bash
+        run: |
+          set -euo pipefail
+          cd "$RUNNER_TEMP"
+          ARCHIVE="blender-${BLENDER_VERSION}-linux-x64.tar.xz"
+          curl --fail --location --retry 5 --retry-delay 5 \
+            "https://download.blender.org/release/Blender3.6/${ARCHIVE}" \
+            --output "$ARCHIVE"
+          curl --fail --location --retry 5 --retry-delay 5 \
+            "https://download.blender.org/release/Blender3.6/blender-${BLENDER_VERSION}.sha256" \
+            --output "blender-${BLENDER_VERSION}.sha256"
+          sha256sum --check "blender-${BLENDER_VERSION}.sha256" --ignore-missing
+          tar -xf "$ARCHIVE"
+          BLENDER="$RUNNER_TEMP/blender-${BLENDER_VERSION}-linux-x64/blender"
+          test -x "$BLENDER"
+          "$BLENDER" --version | head -n 2
+          echo "executable=$BLENDER" >> "$GITHUB_OUTPUT"
+
+      - name: Install pinned M3 importer
+        shell: bash
+        run: |
+          set -euo pipefail
+          git clone https://github.com/SC2Mapster/m3addon.git "$RUNNER_TEMP/m3addon-src"
+          git -C "$RUNNER_TEMP/m3addon-src" checkout "$M3ADDON_COMMIT"
+          ADDON_DIR="$HOME/.config/blender/3.6/scripts/addons"
+          mkdir -p "$ADDON_DIR"
+          ln -s "$RUNNER_TEMP/m3addon-src" "$ADDON_DIR/m3addon"
+
+      - name: Convert, pose, repair and validate meshes
+        id: convert
+        continue-on-error: true
+        shell: bash
+        run: |
+          set -uo pipefail
+          OUTPUT="$RUNNER_TEMP/HOTS_STL_Output"
+          mkdir -p "$OUTPUT/00_Reports"
+          read -r -a ONLY_ARGS <<< "${{ steps.mode.outputs.only_args }}"
+          set +e
+          "${{ steps.blender.outputs.executable }}" \
+            --background \
+            --factory-startup \
+            --python "$GITHUB_WORKSPACE/tools/hots_stl/build_hots_stls.py" \
+            -- \
+            --source "$RUNNER_TEMP/HOTS-02" \
+            --source "$GITHUB_WORKSPACE" \
+            --output "$OUTPUT" \
+            --target-height-mm 110 \
+            --base-height-mm 4 \
+            --base-margin-mm 4 \
+            --voxel-mm 0.38 \
+            --thin-part-mm 0.70 \
+            --max-triangles 650000 \
+            "${ONLY_ARGS[@]}" \
+            2>&1 | tee "$OUTPUT/00_Reports/blender_build.log"
+          STATUS=${PIPESTATUS[0]}
+          set -e
+          echo "$STATUS" > "$OUTPUT/00_Reports/blender_exit_code.txt"
+          exit "$STATUS"
+
+      - name: Create ZIP and checksums
+        id: package
+        if: always()
+        shell: bash
+        run: |
+          set -euo pipefail
+          OUTPUT="$RUNNER_TEMP/HOTS_STL_Output"
+          ARCHIVE="$GITHUB_WORKSPACE/${{ steps.mode.outputs.archive }}"
+          test -d "$OUTPUT"
+          cd "$RUNNER_TEMP"
+          7z a -tzip -mx=9 "$ARCHIVE" HOTS_STL_Output
+          sha256sum "$ARCHIVE" > "${ARCHIVE}.sha256"
+          echo "archive=$ARCHIVE" >> "$GITHUB_OUTPUT"
+          echo "checksum=${ARCHIVE}.sha256" >> "$GITHUB_OUTPUT"
+
+      - name: Upload workflow artifact
+        if: always() && steps.package.outcome == 'success'
+        uses: actions/upload-artifact@v4
+        with:
+          name: ${{ steps.mode.outputs.archive }}
+          path: |
+            ${{ steps.package.outputs.archive }}
+            ${{ steps.package.outputs.checksum }}
+          retention-days: 30
+          compression-level: 0
+
+      - name: Publish downloadable prerelease
+        if: always() && steps.package.outcome == 'success'
+        env:
+          GH_TOKEN: ${{ github.token }}
+        shell: bash
+        run: |
+          set -euo pipefail
+          MODE="${{ steps.mode.outputs.mode }}"
+          TAG="hots-stl-${MODE}-${GITHUB_RUN_NUMBER}-${GITHUB_RUN_ATTEMPT}"
+          TITLE="HOTS printable STL ${MODE} build ${GITHUB_RUN_NUMBER}.${GITHUB_RUN_ATTEMPT}"
+          NOTES="$RUNNER_TEMP/release-notes.txt"
+          cat > "$NOTES" <<EOF
+          Automated Heroes of the Storm M3-to-STL build.
+
+          Mode: ${MODE}
+          Source branch/commit: ${GITHUB_REF_NAME} / ${GITHUB_SHA}
+          Blender: ${BLENDER_VERSION}
+          M3 importer: ${M3ADDON_COMMIT}
+          Convert step outcome: ${{ steps.convert.outcome }}
+
+          The ZIP includes the build manifest, detailed log, detail-preserving STL files and watertight print-prepared STL files.
+          EOF
+          ASSETS=(
+            "${{ steps.package.outputs.archive }}"
+            "${{ steps.package.outputs.checksum }}"
+          )
+          MANIFEST="$RUNNER_TEMP/HOTS_STL_Output/00_Reports/manifest.json"
+          CSV="$RUNNER_TEMP/HOTS_STL_Output/00_Reports/manifest.csv"
+          LOG="$RUNNER_TEMP/HOTS_STL_Output/00_Reports/blender_build.log"
+          [[ -f "$MANIFEST" ]] && ASSETS+=("$MANIFEST#manifest.json")
+          [[ -f "$CSV" ]] && ASSETS+=("$CSV#manifest.csv")
+          [[ -f "$LOG" ]] && ASSETS+=("$LOG#blender_build.log")
+          gh release create "$TAG" "${ASSETS[@]}" \
+            --repo "$GITHUB_REPOSITORY" \
+            --target "$GITHUB_SHA" \
+            --title "$TITLE" \
+            --notes-file "$NOTES" \
+            --prerelease
+
+      - name: Enforce manifest quality gate
+        if: always()
+        shell: bash
+        run: |
+          set -euo pipefail
+          MANIFEST="$RUNNER_TEMP/HOTS_STL_Output/00_Reports/manifest.json"
+          test -f "$MANIFEST"
+          python "$GITHUB_WORKSPACE/tools/hots_stl/check_manifest.py" \
+            "$MANIFEST" \
+            --minimum-success "${{ steps.mode.outputs.minimum_success }}" \
+            --require-roster "${{ steps.mode.outputs.require_roster }}"
