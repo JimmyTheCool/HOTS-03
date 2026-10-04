@@ -1,0 +1,60 @@
+name: Index HOTS Source Directories
+
+on:
+  workflow_dispatch:
+  push:
+    branches:
+      - chatgpt-stl-builder
+    paths:
+      - .github/workflows/index-hots-source-dirs.yml
+
+permissions:
+  contents: write
+
+jobs:
+  index:
+    runs-on: ubuntu-22.04
+    steps:
+      - name: Sparse checkout builder branch
+        uses: actions/checkout@v4
+        with:
+          ref: chatgpt-stl-builder
+          fetch-depth: 1
+          filter: blob:none
+          sparse-checkout: |
+            .github
+            build_reports
+          sparse-checkout-cone-mode: true
+
+      - name: Read source repository directory trees without downloading meshes
+        shell: bash
+        run: |
+          set -euo pipefail
+          rm -rf /tmp/hots02 /tmp/hots03
+          git clone --filter=blob:none --no-checkout --depth 1 --branch main https://github.com/JimmyTheCool/HOTS-02.git /tmp/hots02
+          git clone --filter=blob:none --no-checkout --depth 1 --branch main https://github.com/JimmyTheCool/HOTS-03.git /tmp/hots03
+          mkdir -p build_reports/source_index
+          git -C /tmp/hots02 ls-tree -d --name-only HEAD | sort > build_reports/source_index/hots02_root_dirs.txt
+          git -C /tmp/hots03 ls-tree -d --name-only HEAD | sort > build_reports/source_index/hots03_root_dirs.txt
+          {
+            echo '=== HOTS-02 LIKELY ALIASES ==='
+            grep -Ei 'nova|ghost|hammer|siege|tank|tychus|marine|soldier|odin|thor|cruiser|shadow|spectre|widow|banshee' build_reports/source_index/hots02_root_dirs.txt || true
+            echo
+            echo '=== HOTS-03 LIKELY ALIASES ==='
+            grep -Ei 'nova|ghost|hammer|siege|tank|tychus|marine|soldier|odin|thor|cruiser|shadow|spectre|widow|banshee' build_reports/source_index/hots03_root_dirs.txt || true
+          } > build_reports/source_index/likely_aliases.txt
+          cat build_reports/source_index/likely_aliases.txt
+
+      - name: Commit source indexes
+        shell: bash
+        run: |
+          set -euo pipefail
+          git config user.name "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git add build_reports/source_index
+          if git diff --cached --quiet; then
+            echo 'No source index changes.'
+          else
+            git commit -m 'Index HOTS source model directories'
+            git push origin HEAD:chatgpt-stl-builder
+          fi
