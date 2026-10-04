@@ -1,0 +1,81 @@
+name: Test Shape Preservation Sample
+
+on:
+  workflow_dispatch:
+  push:
+    branches: [chatgpt-stl-builder]
+    paths: [.github/workflows/test-shape-preservation-sample.yml]
+
+permissions:
+  actions: read
+  contents: write
+
+jobs:
+  compare:
+    runs-on: ubuntu-22.04
+    timeout-minutes: 120
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          ref: chatgpt-stl-builder
+          fetch-depth: 0
+
+      - name: Download raw and repaired samples
+        env:
+          GH_TOKEN: ${{ github.token }}
+        shell: bash
+        run: |
+          set -euo pipefail
+          mkdir -p "$RUNNER_TEMP/chunk1" "$RUNNER_TEMP/chunk2" "$RUNNER_TEMP/chunk6"
+          mkdir -p "$RUNNER_TEMP/raw" "$RUNNER_TEMP/repaired"
+          gh run download 37193141976 --repo "$GITHUB_REPOSITORY" --name HOTS-v3-chunk-1 --dir "$RUNNER_TEMP/chunk1"
+          gh run download 37193141976 --repo "$GITHUB_REPOSITORY" --name HOTS-v3-chunk-2 --dir "$RUNNER_TEMP/chunk2"
+          gh run download 37193141976 --repo "$GITHUB_REPOSITORY" --name HOTS-v3-chunk-6 --dir "$RUNNER_TEMP/chunk6"
+          cp "$RUNNER_TEMP/chunk1/STL/Brightwing.stl" "$RUNNER_TEMP/raw/"
+          cp "$RUNNER_TEMP/chunk2/STL/D.Va.stl" "$RUNNER_TEMP/raw/"
+          cp "$RUNNER_TEMP/chunk6/STL/Tychus.stl" "$RUNNER_TEMP/raw/"
+          gh run download 37194196530 --repo "$GITHUB_REPOSITORY" --name HOTS-repair-sample-r3 --dir "$RUNNER_TEMP/sample_r3"
+          cp "$RUNNER_TEMP/sample_r3/STL/"*.stl "$RUNNER_TEMP/repaired/"
+
+      - name: Install comparison dependencies
+        shell: bash
+        run: |
+          set -euo pipefail
+          python -m pip install --disable-pip-version-check --quiet \
+            trimesh==4.8.3 numpy==2.2.6 scipy==1.15.3
+
+      - name: Compare repaired surfaces with raw surfaces
+        shell: bash
+        run: |
+          set -euo pipefail
+          mkdir -p "$RUNNER_TEMP/report"
+          python ci/compare_stl_shape.py \
+            --raw "$RUNNER_TEMP/raw" \
+            --repaired "$RUNNER_TEMP/repaired" \
+            --report-json "$RUNNER_TEMP/report/shape_preservation.json" \
+            --report-csv "$RUNNER_TEMP/report/shape_preservation.csv" \
+            --expected 3 \
+            --distance-mm 1.75 \
+            --minimum-raw-coverage 0.96 \
+            --minimum-repaired-coverage 0.85 \
+            --maximum-p95-mm 2.50 \
+            --maximum-p99-mm 5.00 \
+            --maximum-points 250000
+
+      - name: Publish report to branch
+        if: always()
+        shell: bash
+        run: |
+          set -euo pipefail
+          DEST=build_reports/shape_preservation_sample
+          mkdir -p "$DEST"
+          cp "$RUNNER_TEMP/report/"* "$DEST/" 2>/dev/null || true
+          git config user.name "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git add "$DEST"
+          if git diff --cached --quiet; then
+            exit 0
+          fi
+          git commit -m "Add shape-preservation sample report [skip ci]"
+          git pull --rebase origin chatgpt-stl-builder
+          git push origin HEAD:chatgpt-stl-builder
