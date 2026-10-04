@@ -1,0 +1,244 @@
+=== LAST 260 LINES ===
+rescue (Fenix, Fenix.stl)	Set up job	﻿2026-10-04T11:39:03.3668996Z Current runner version: '2.337.0'
+rescue (Fenix, Fenix.stl)	Set up job	2026-10-04T11:39:03.3696000Z ##[group]Runner Image Provisioner
+rescue (Fenix, Fenix.stl)	Set up job	2026-10-04T11:39:03.3696933Z Hosted Compute Agent
+rescue (Fenix, Fenix.stl)	Set up job	2026-10-04T11:39:03.3697555Z Version: 20260901.588
+rescue (Fenix, Fenix.stl)	Set up job	2026-10-04T11:39:03.3698334Z Commit: f88ec8081b781fac6c440065ac7ff9e710ce3d0b
+rescue (Fenix, Fenix.stl)	Set up job	2026-10-04T11:39:03.3699104Z Build Date: 2026-09-01T19:56:44Z
+rescue (Fenix, Fenix.stl)	Set up job	2026-10-04T11:39:03.3700259Z Worker ID: {ebdf05ba-ecdf-4e46-9fd9-864accbed740}
+rescue (Fenix, Fenix.stl)	Set up job	2026-10-04T11:39:03.3701066Z Azure Region: westus
+rescue (Fenix, Fenix.stl)	Set up job	2026-10-04T11:39:03.3701708Z ##[endgroup]
+rescue (Fenix, Fenix.stl)	Set up job	2026-10-04T11:39:03.3703521Z ##[group]Operating System
+rescue (Fenix, Fenix.stl)	Set up job	2026-10-04T11:39:03.3704241Z Ubuntu
+rescue (Fenix, Fenix.stl)	Set up job	2026-10-04T11:39:03.3704854Z 22.04.5
+rescue (Fenix, Fenix.stl)	Set up job	2026-10-04T11:39:03.3705434Z LTS
+rescue (Fenix, Fenix.stl)	Set up job	2026-10-04T11:39:03.3706034Z ##[endgroup]
+rescue (Fenix, Fenix.stl)	Set up job	2026-10-04T11:39:03.3707098Z ##[group]Runner Image
+rescue (Fenix, Fenix.stl)	Set up job	2026-10-04T11:39:03.3707759Z Image: ubuntu-22.04
+rescue (Fenix, Fenix.stl)	Set up job	2026-10-04T11:39:03.3708363Z Version: 20260927.309.1
+rescue (Fenix, Fenix.stl)	Set up job	2026-10-04T11:39:03.3709546Z Included Software: https://github.com/actions/runner-images/blob/ubuntu22/20260927.309/images/ubuntu/Ubuntu2204-Readme.md
+rescue (Fenix, Fenix.stl)	Set up job	2026-10-04T11:39:03.3711701Z Image Release: https://github.com/actions/runner-images/releases/tag/ubuntu22%2F20260927.309
+rescue (Fenix, Fenix.stl)	Set up job	2026-10-04T11:39:03.3712712Z ##[endgroup]
+rescue (Fenix, Fenix.stl)	Set up job	2026-10-04T11:39:03.3714032Z ##[group]GITHUB_TOKEN Permissions
+rescue (Fenix, Fenix.stl)	Set up job	2026-10-04T11:39:03.3716219Z Actions: read
+rescue (Fenix, Fenix.stl)	Set up job	2026-10-04T11:39:03.3716992Z Contents: read
+rescue (Fenix, Fenix.stl)	Set up job	2026-10-04T11:39:03.3717639Z Metadata: read
+rescue (Fenix, Fenix.stl)	Set up job	2026-10-04T11:39:03.3718241Z ##[endgroup]
+rescue (Fenix, Fenix.stl)	Set up job	2026-10-04T11:39:03.3720853Z Secret source: Actions
+rescue (Fenix, Fenix.stl)	Set up job	2026-10-04T11:39:03.3721870Z Cache mode: write
+rescue (Fenix, Fenix.stl)	Set up job	2026-10-04T11:39:03.3722717Z Prepare workflow directory
+rescue (Fenix, Fenix.stl)	Set up job	2026-10-04T11:39:03.4204773Z Prepare all required actions
+rescue (Fenix, Fenix.stl)	Set up job	2026-10-04T11:39:03.4254657Z Getting action download info
+rescue (Fenix, Fenix.stl)	Set up job	2026-10-04T11:39:03.7774994Z Download action repository 'actions/checkout@v4' (SHA:11d5960a326750d5838078e36cf38b85af677262)
+rescue (Fenix, Fenix.stl)	Set up job	2026-10-04T11:39:03.9044213Z Download action repository 'actions/upload-artifact@v4' (SHA:ea165f8d65b6e75b540449e92b4886f43607fa02)
+rescue (Fenix, Fenix.stl)	Set up job	2026-10-04T11:39:04.1300565Z Complete job name: rescue (Fenix, Fenix.stl)
+rescue (Fenix, Fenix.stl)	Run actions/checkout@v4	﻿2026-10-04T11:39:04.2124044Z ##[group]Run actions/checkout@v4
+rescue (Fenix, Fenix.stl)	Run actions/checkout@v4	2026-10-04T11:39:04.2125011Z with:
+rescue (Fenix, Fenix.stl)	Run actions/checkout@v4	2026-10-04T11:39:04.2125477Z   ref: chatgpt-stl-builder
+rescue (Fenix, Fenix.stl)	Run actions/checkout@v4	2026-10-04T11:39:04.2126000Z   fetch-depth: 1
+rescue (Fenix, Fenix.stl)	Run actions/checkout@v4	2026-10-04T11:39:04.2126485Z   repository: JimmyTheCool/HOTS-03
+rescue (Fenix, Fenix.stl)	Run actions/checkout@v4	2026-10-04T11:39:04.2130928Z   token: ***
+rescue (Fenix, Fenix.stl)	Run actions/checkout@v4	2026-10-04T11:39:04.2131406Z   ssh-strict: true
+rescue (Fenix, Fenix.stl)	Run actions/checkout@v4	2026-10-04T11:39:04.2131868Z   ssh-user: git
+rescue (Fenix, Fenix.stl)	Run actions/checkout@v4	2026-10-04T11:39:04.2132334Z   persist-credentials: true
+rescue (Fenix, Fenix.stl)	Run actions/checkout@v4	2026-10-04T11:39:04.2132839Z   clean: true
+rescue (Fenix, Fenix.stl)	Run actions/checkout@v4	2026-10-04T11:39:04.2133298Z   sparse-checkout-cone-mode: true
+rescue (Fenix, Fenix.stl)	Run actions/checkout@v4	2026-10-04T11:39:04.2133838Z   fetch-tags: false
+rescue (Fenix, Fenix.stl)	Run actions/checkout@v4	2026-10-04T11:39:04.2134296Z   show-progress: true
+rescue (Fenix, Fenix.stl)	Run actions/checkout@v4	2026-10-04T11:39:04.2134755Z   lfs: false
+rescue (Fenix, Fenix.stl)	Run actions/checkout@v4	2026-10-04T11:39:04.2135179Z   submodules: false
+rescue (Fenix, Fenix.stl)	Run actions/checkout@v4	2026-10-04T11:39:04.2135638Z   set-safe-directory: true
+rescue (Fenix, Fenix.stl)	Run actions/checkout@v4	2026-10-04T11:39:04.2136154Z   allow-unsafe-pr-checkout: false
+rescue (Fenix, Fenix.stl)	Run actions/checkout@v4	2026-10-04T11:39:04.2136991Z env:
+rescue (Fenix, Fenix.stl)	Run actions/checkout@v4	2026-10-04T11:39:04.2137441Z   RAW_BUILD_RUN_ID: 37193141976
+rescue (Fenix, Fenix.stl)	Run actions/checkout@v4	2026-10-04T11:39:04.2137949Z ##[endgroup]
+rescue (Fenix, Fenix.stl)	Run actions/checkout@v4	2026-10-04T11:39:04.3203097Z Syncing repository: JimmyTheCool/HOTS-03
+rescue (Fenix, Fenix.stl)	Run actions/checkout@v4	2026-10-04T11:39:04.3205151Z ##[group]Getting Git version info
+rescue (Fenix, Fenix.stl)	Run actions/checkout@v4	2026-10-04T11:39:04.3205887Z Working directory is '/home/runner/work/HOTS-03/HOTS-03'
+rescue (Fenix, Fenix.stl)	Run actions/checkout@v4	2026-10-04T11:39:04.3206926Z [command]/usr/bin/git version
+rescue (Fenix, Fenix.stl)	Run actions/checkout@v4	2026-10-04T11:39:04.3292795Z git version 2.55.0
+rescue (Fenix, Fenix.stl)	Run actions/checkout@v4	2026-10-04T11:39:04.3330068Z ##[endgroup]
+rescue (Fenix, Fenix.stl)	Run actions/checkout@v4	2026-10-04T11:39:04.3344208Z Temporarily overriding HOME='/home/runner/work/_temp/ee23779e-0e61-4b43-9943-f49d22db5258' before making global git config changes
+rescue (Fenix, Fenix.stl)	Run actions/checkout@v4	2026-10-04T11:39:04.3347086Z Adding repository directory to the temporary git global config as a safe directory
+rescue (Fenix, Fenix.stl)	Run actions/checkout@v4	2026-10-04T11:39:04.3352147Z [command]/usr/bin/git config --global --add safe.directory /home/runner/work/HOTS-03/HOTS-03
+rescue (Fenix, Fenix.stl)	Run actions/checkout@v4	2026-10-04T11:39:04.3408283Z Deleting the contents of '/home/runner/work/HOTS-03/HOTS-03'
+rescue (Fenix, Fenix.stl)	Run actions/checkout@v4	2026-10-04T11:39:04.3441264Z ##[group]Initializing the repository
+rescue (Fenix, Fenix.stl)	Run actions/checkout@v4	2026-10-04T11:39:04.3444989Z [command]/usr/bin/git init /home/runner/work/HOTS-03/HOTS-03
+rescue (Fenix, Fenix.stl)	Run actions/checkout@v4	2026-10-04T11:39:04.3604842Z hint: Using 'master' as the name for the initial branch. This default branch name
+rescue (Fenix, Fenix.stl)	Run actions/checkout@v4	2026-10-04T11:39:04.3617023Z hint: will change to "main" in Git 3.0. To configure the initial branch name
+rescue (Fenix, Fenix.stl)	Run actions/checkout@v4	2026-10-04T11:39:04.3619112Z hint: to use in all of your new repositories, which will suppress this warning,
+rescue (Fenix, Fenix.stl)	Run actions/checkout@v4	2026-10-04T11:39:04.3621002Z hint: call:
+rescue (Fenix, Fenix.stl)	Run actions/checkout@v4	2026-10-04T11:39:04.3622063Z hint:
+rescue (Fenix, Fenix.stl)	Run actions/checkout@v4	2026-10-04T11:39:04.3623044Z hint: 	git config --global init.defaultBranch <name>
+rescue (Fenix, Fenix.stl)	Run actions/checkout@v4	2026-10-04T11:39:04.3624193Z hint:
+rescue (Fenix, Fenix.stl)	Run actions/checkout@v4	2026-10-04T11:39:04.3625146Z hint: Names commonly chosen instead of 'master' are 'main', 'trunk' and
+rescue (Fenix, Fenix.stl)	Run actions/checkout@v4	2026-10-04T11:39:04.3626677Z hint: 'development'. The just-created branch can be renamed via this command:
+rescue (Fenix, Fenix.stl)	Run actions/checkout@v4	2026-10-04T11:39:04.3627910Z hint:
+rescue (Fenix, Fenix.stl)	Run actions/checkout@v4	2026-10-04T11:39:04.3628614Z hint: 	git branch -m <name>
+rescue (Fenix, Fenix.stl)	Run actions/checkout@v4	2026-10-04T11:39:04.3629426Z hint:
+rescue (Fenix, Fenix.stl)	Run actions/checkout@v4	2026-10-04T11:39:04.3630646Z hint: Disable this message with "git config set advice.defaultBranchName false"
+rescue (Fenix, Fenix.stl)	Run actions/checkout@v4	2026-10-04T11:39:04.3632239Z Initialized empty Git repository in /home/runner/work/HOTS-03/HOTS-03/.git/
+rescue (Fenix, Fenix.stl)	Run actions/checkout@v4	2026-10-04T11:39:04.3635100Z [command]/usr/bin/git remote add origin https://github.com/JimmyTheCool/HOTS-03
+rescue (Fenix, Fenix.stl)	Run actions/checkout@v4	2026-10-04T11:39:04.3656286Z ##[endgroup]
+rescue (Fenix, Fenix.stl)	Run actions/checkout@v4	2026-10-04T11:39:04.3657660Z ##[group]Disabling automatic garbage collection
+rescue (Fenix, Fenix.stl)	Run actions/checkout@v4	2026-10-04T11:39:04.3660948Z [command]/usr/bin/git config --local gc.auto 0
+rescue (Fenix, Fenix.stl)	Run actions/checkout@v4	2026-10-04T11:39:04.3699572Z ##[endgroup]
+rescue (Fenix, Fenix.stl)	Run actions/checkout@v4	2026-10-04T11:39:04.3700987Z ##[group]Setting up auth
+rescue (Fenix, Fenix.stl)	Run actions/checkout@v4	2026-10-04T11:39:04.3707630Z [command]/usr/bin/git config --local --name-only --get-regexp core\.sshCommand
+rescue (Fenix, Fenix.stl)	Run actions/checkout@v4	2026-10-04T11:39:04.3749946Z [command]/usr/bin/git submodule foreach --recursive sh -c "git config --local --name-only --get-regexp 'core\.sshCommand' && git config --local --unset-all 'core.sshCommand' || :"
+rescue (Fenix, Fenix.stl)	Run actions/checkout@v4	2026-10-04T11:39:04.4158871Z [command]/usr/bin/git config --local --name-only --get-regexp http\.https\:\/\/github\.com\/\.extraheader
+rescue (Fenix, Fenix.stl)	Run actions/checkout@v4	2026-10-04T11:39:04.4207512Z [command]/usr/bin/git submodule foreach --recursive sh -c "git config --local --name-only --get-regexp 'http\.https\:\/\/github\.com\/\.extraheader' && git config --local --unset-all 'http.https://github.com/.extraheader' || :"
+rescue (Fenix, Fenix.stl)	Run actions/checkout@v4	2026-10-04T11:39:04.4507458Z [command]/usr/bin/git config --local --name-only --get-regexp ^includeIf\.gitdir:
+rescue (Fenix, Fenix.stl)	Run actions/checkout@v4	2026-10-04T11:39:04.4554795Z [command]/usr/bin/git submodule foreach --recursive git config --local --show-origin --name-only --get-regexp remote.origin.url
+rescue (Fenix, Fenix.stl)	Run actions/checkout@v4	2026-10-04T11:39:04.4854971Z [command]/usr/bin/git config --local http.https://github.com/.extraheader AUTHORIZATION: basic ***
+rescue (Fenix, Fenix.stl)	Run actions/checkout@v4	2026-10-04T11:39:04.4907348Z ##[endgroup]
+rescue (Fenix, Fenix.stl)	Run actions/checkout@v4	2026-10-04T11:39:04.4908488Z ##[group]Fetching the repository
+rescue (Fenix, Fenix.stl)	Run actions/checkout@v4	2026-10-04T11:39:04.4918524Z [command]/usr/bin/git -c protocol.version=2 fetch --no-tags --prune --no-recurse-submodules --depth=1 origin +refs/heads/chatgpt-stl-builder*:refs/remotes/origin/chatgpt-stl-builder* +refs/tags/chatgpt-stl-builder*:refs/tags/chatgpt-stl-builder*
+rescue (Fenix, Fenix.stl)	Run actions/checkout@v4	2026-10-04T11:39:15.7462394Z From https://github.com/JimmyTheCool/HOTS-03
+rescue (Fenix, Fenix.stl)	Run actions/checkout@v4	2026-10-04T11:39:15.7464701Z  * [new branch]      chatgpt-stl-builder -> origin/chatgpt-stl-builder
+rescue (Fenix, Fenix.stl)	Run actions/checkout@v4	2026-10-04T11:39:15.7473052Z ##[endgroup]
+rescue (Fenix, Fenix.stl)	Run actions/checkout@v4	2026-10-04T11:39:15.7474204Z ##[group]Determining the checkout info
+rescue (Fenix, Fenix.stl)	Run actions/checkout@v4	2026-10-04T11:39:15.7475955Z [command]/usr/bin/git branch --list --remote origin/chatgpt-stl-builder
+rescue (Fenix, Fenix.stl)	Run actions/checkout@v4	2026-10-04T11:39:15.7508607Z   origin/chatgpt-stl-builder
+rescue (Fenix, Fenix.stl)	Run actions/checkout@v4	2026-10-04T11:39:15.7515040Z ##[endgroup]
+rescue (Fenix, Fenix.stl)	Run actions/checkout@v4	2026-10-04T11:39:15.7521552Z [command]/usr/bin/git sparse-checkout disable
+rescue (Fenix, Fenix.stl)	Run actions/checkout@v4	2026-10-04T11:39:15.7577447Z [command]/usr/bin/git config --local --unset-all extensions.worktreeConfig
+rescue (Fenix, Fenix.stl)	Run actions/checkout@v4	2026-10-04T11:39:15.7653908Z ##[group]Checking out the ref
+rescue (Fenix, Fenix.stl)	Run actions/checkout@v4	2026-10-04T11:39:15.7657732Z [command]/usr/bin/git checkout --progress --force -B chatgpt-stl-builder refs/remotes/origin/chatgpt-stl-builder
+rescue (Fenix, Fenix.stl)	Run actions/checkout@v4	2026-10-04T11:39:16.7986420Z Updating files:  45% (414/916)
+rescue (Fenix, Fenix.stl)	Run actions/checkout@v4	2026-10-04T11:39:16.8452627Z Updating files:  46% (422/916)
+rescue (Fenix, Fenix.stl)	Run actions/checkout@v4	2026-10-04T11:39:16.8855652Z Updating files:  47% (431/916)
+rescue (Fenix, Fenix.stl)	Run actions/checkout@v4	2026-10-04T11:39:16.9229597Z Updating files:  48% (440/916)
+rescue (Fenix, Fenix.stl)	Run actions/checkout@v4	2026-10-04T11:39:16.9384162Z Updating files:  49% (449/916)
+rescue (Fenix, Fenix.stl)	Run actions/checkout@v4	2026-10-04T11:39:16.9782941Z Updating files:  50% (458/916)
+rescue (Fenix, Fenix.stl)	Run actions/checkout@v4	2026-10-04T11:39:16.9991607Z Updating files:  51% (468/916)
+rescue (Fenix, Fenix.stl)	Run actions/checkout@v4	2026-10-04T11:39:17.0361779Z Updating files:  52% (477/916)
+rescue (Fenix, Fenix.stl)	Run actions/checkout@v4	2026-10-04T11:39:17.0654821Z Updating files:  53% (486/916)
+rescue (Fenix, Fenix.stl)	Run actions/checkout@v4	2026-10-04T11:39:17.0882792Z Updating files:  54% (495/916)
+rescue (Fenix, Fenix.stl)	Run actions/checkout@v4	2026-10-04T11:39:17.1221055Z Updating files:  55% (504/916)
+rescue (Fenix, Fenix.stl)	Run actions/checkout@v4	2026-10-04T11:39:17.1539552Z Updating files:  56% (513/916)
+rescue (Fenix, Fenix.stl)	Run actions/checkout@v4	2026-10-04T11:39:17.1850098Z Updating files:  57% (523/916)
+rescue (Fenix, Fenix.stl)	Run actions/checkout@v4	2026-10-04T11:39:17.2193491Z Updating files:  58% (532/916)
+rescue (Fenix, Fenix.stl)	Run actions/checkout@v4	2026-10-04T11:39:17.2538119Z Updating files:  59% (541/916)
+rescue (Fenix, Fenix.stl)	Run actions/checkout@v4	2026-10-04T11:39:17.2947394Z Updating files:  60% (550/916)
+rescue (Fenix, Fenix.stl)	Run actions/checkout@v4	2026-10-04T11:39:17.3141191Z Updating files:  61% (559/916)
+rescue (Fenix, Fenix.stl)	Run actions/checkout@v4	2026-10-04T11:39:17.3694757Z Updating files:  62% (568/916)
+rescue (Fenix, Fenix.stl)	Run actions/checkout@v4	2026-10-04T11:39:17.4016028Z Updating files:  63% (578/916)
+rescue (Fenix, Fenix.stl)	Run actions/checkout@v4	2026-10-04T11:39:17.4508638Z Updating files:  64% (587/916)
+rescue (Fenix, Fenix.stl)	Run actions/checkout@v4	2026-10-04T11:39:17.4839297Z Updating files:  65% (596/916)
+rescue (Fenix, Fenix.stl)	Run actions/checkout@v4	2026-10-04T11:39:17.5184525Z Updating files:  66% (605/916)
+rescue (Fenix, Fenix.stl)	Run actions/checkout@v4	2026-10-04T11:39:17.5476212Z Updating files:  67% (614/916)
+rescue (Fenix, Fenix.stl)	Run actions/checkout@v4	2026-10-04T11:39:17.5860389Z Updating files:  68% (623/916)
+rescue (Fenix, Fenix.stl)	Run actions/checkout@v4	2026-10-04T11:39:17.6268134Z Updating files:  69% (633/916)
+rescue (Fenix, Fenix.stl)	Run actions/checkout@v4	2026-10-04T11:39:17.6557927Z Updating files:  70% (642/916)
+rescue (Fenix, Fenix.stl)	Run actions/checkout@v4	2026-10-04T11:39:17.7313284Z Updating files:  71% (651/916)
+rescue (Fenix, Fenix.stl)	Run actions/checkout@v4	2026-10-04T11:39:17.7569630Z Updating files:  72% (660/916)
+rescue (Fenix, Fenix.stl)	Run actions/checkout@v4	2026-10-04T11:39:17.7862650Z Updating files:  73% (669/916)
+rescue (Fenix, Fenix.stl)	Run actions/checkout@v4	2026-10-04T11:39:17.7903296Z Updating files:  73% (675/916)
+rescue (Fenix, Fenix.stl)	Run actions/checkout@v4	2026-10-04T11:39:17.8538236Z Updating files:  74% (678/916)
+rescue (Fenix, Fenix.stl)	Run actions/checkout@v4	2026-10-04T11:39:17.9072637Z Updating files:  75% (687/916)
+rescue (Fenix, Fenix.stl)	Run actions/checkout@v4	2026-10-04T11:39:17.9465441Z Updating files:  76% (697/916)
+rescue (Fenix, Fenix.stl)	Run actions/checkout@v4	2026-10-04T11:39:17.9836020Z Updating files:  77% (706/916)
+rescue (Fenix, Fenix.stl)	Run actions/checkout@v4	2026-10-04T11:39:18.0186759Z Updating files:  78% (715/916)
+rescue (Fenix, Fenix.stl)	Run actions/checkout@v4	2026-10-04T11:39:18.0390897Z Updating files:  79% (724/916)
+rescue (Fenix, Fenix.stl)	Run actions/checkout@v4	2026-10-04T11:39:18.0731124Z Updating files:  80% (733/916)
+rescue (Fenix, Fenix.stl)	Run actions/checkout@v4	2026-10-04T11:39:18.1089471Z Updating files:  81% (742/916)
+rescue (Fenix, Fenix.stl)	Run actions/checkout@v4	2026-10-04T11:39:18.1442429Z Updating files:  82% (752/916)
+rescue (Fenix, Fenix.stl)	Run actions/checkout@v4	2026-10-04T11:39:18.1714057Z Updating files:  83% (761/916)
+rescue (Fenix, Fenix.stl)	Run actions/checkout@v4	2026-10-04T11:39:18.2258076Z Updating files:  84% (770/916)
+rescue (Fenix, Fenix.stl)	Run actions/checkout@v4	2026-10-04T11:39:18.2711627Z Updating files:  85% (779/916)
+rescue (Fenix, Fenix.stl)	Run actions/checkout@v4	2026-10-04T11:39:18.3092467Z Updating files:  86% (788/916)
+rescue (Fenix, Fenix.stl)	Run actions/checkout@v4	2026-10-04T11:39:18.3372664Z Updating files:  87% (797/916)
+rescue (Fenix, Fenix.stl)	Run actions/checkout@v4	2026-10-04T11:39:18.3576673Z Updating files:  88% (807/916)
+rescue (Fenix, Fenix.stl)	Run actions/checkout@v4	2026-10-04T11:39:18.4144943Z Updating files:  89% (816/916)
+rescue (Fenix, Fenix.stl)	Run actions/checkout@v4	2026-10-04T11:39:18.4352197Z Updating files:  90% (825/916)
+rescue (Fenix, Fenix.stl)	Run actions/checkout@v4	2026-10-04T11:39:18.4790533Z Updating files:  91% (834/916)
+rescue (Fenix, Fenix.stl)	Run actions/checkout@v4	2026-10-04T11:39:18.4849500Z Updating files:  92% (843/916)
+rescue (Fenix, Fenix.stl)	Run actions/checkout@v4	2026-10-04T11:39:18.5157467Z Updating files:  93% (852/916)
+rescue (Fenix, Fenix.stl)	Run actions/checkout@v4	2026-10-04T11:39:18.5457626Z Updating files:  94% (862/916)
+rescue (Fenix, Fenix.stl)	Run actions/checkout@v4	2026-10-04T11:39:18.5615020Z Updating files:  95% (871/916)
+rescue (Fenix, Fenix.stl)	Run actions/checkout@v4	2026-10-04T11:39:18.6013697Z Updating files:  96% (880/916)
+rescue (Fenix, Fenix.stl)	Run actions/checkout@v4	2026-10-04T11:39:18.6214649Z Updating files:  97% (889/916)
+rescue (Fenix, Fenix.stl)	Run actions/checkout@v4	2026-10-04T11:39:18.6336040Z Updating files:  98% (898/916)
+rescue (Fenix, Fenix.stl)	Run actions/checkout@v4	2026-10-04T11:39:18.6490535Z Updating files:  99% (907/916)
+rescue (Fenix, Fenix.stl)	Run actions/checkout@v4	2026-10-04T11:39:18.6491166Z Updating files: 100% (916/916)
+rescue (Fenix, Fenix.stl)	Run actions/checkout@v4	2026-10-04T11:39:18.6491642Z Updating files: 100% (916/916), done.
+rescue (Fenix, Fenix.stl)	Run actions/checkout@v4	2026-10-04T11:39:18.6527726Z Switched to a new branch 'chatgpt-stl-builder'
+rescue (Fenix, Fenix.stl)	Run actions/checkout@v4	2026-10-04T11:39:18.6531929Z branch 'chatgpt-stl-builder' set up to track 'origin/chatgpt-stl-builder'.
+rescue (Fenix, Fenix.stl)	Run actions/checkout@v4	2026-10-04T11:39:18.6655664Z ##[endgroup]
+rescue (Fenix, Fenix.stl)	Run actions/checkout@v4	2026-10-04T11:39:18.6711914Z [command]/usr/bin/git log -1 --format=%H
+rescue (Fenix, Fenix.stl)	Run actions/checkout@v4	2026-10-04T11:39:18.6747095Z d6c46f0573a81ea35cd293c1ba00839ce5fb364d
+rescue (Fenix, Fenix.stl)	Download isolated source model	﻿2026-10-04T11:39:18.7009538Z ##[group]Run set -euo pipefail
+rescue (Fenix, Fenix.stl)	Download isolated source model	2026-10-04T11:39:18.7010232Z ^[[36;1mset -euo pipefail^[[0m
+rescue (Fenix, Fenix.stl)	Download isolated source model	2026-10-04T11:39:18.7010580Z ^[[36;1mmkdir -p "$RUNNER_TEMP/raw_chunk" "$RUNNER_TEMP/source"^[[0m
+rescue (Fenix, Fenix.stl)	Download isolated source model	2026-10-04T11:39:18.7010969Z ^[[36;1mgh run download "$RAW_BUILD_RUN_ID" \^[[0m
+rescue (Fenix, Fenix.stl)	Download isolated source model	2026-10-04T11:39:18.7011290Z ^[[36;1m  --repo "$GITHUB_REPOSITORY" \^[[0m
+rescue (Fenix, Fenix.stl)	Download isolated source model	2026-10-04T11:39:18.7011577Z ^[[36;1m  --name HOTS-v3-chunk-2 \^[[0m
+rescue (Fenix, Fenix.stl)	Download isolated source model	2026-10-04T11:39:18.7011845Z ^[[36;1m  --dir "$RUNNER_TEMP/raw_chunk"^[[0m
+rescue (Fenix, Fenix.stl)	Download isolated source model	2026-10-04T11:39:18.7012164Z ^[[36;1mtest -f "$RUNNER_TEMP/raw_chunk/STL/Fenix.stl"^[[0m
+rescue (Fenix, Fenix.stl)	Download isolated source model	2026-10-04T11:39:18.7012846Z ^[[36;1mcp "$RUNNER_TEMP/raw_chunk/STL/Fenix.stl" "$RUNNER_TEMP/source/"^[[0m
+rescue (Fenix, Fenix.stl)	Download isolated source model	2026-10-04T11:39:18.7413878Z shell: /usr/bin/bash --noprofile --norc -e -o pipefail {0}
+rescue (Fenix, Fenix.stl)	Download isolated source model	2026-10-04T11:39:18.7414276Z env:
+rescue (Fenix, Fenix.stl)	Download isolated source model	2026-10-04T11:39:18.7414488Z   RAW_BUILD_RUN_ID: 37193141976
+rescue (Fenix, Fenix.stl)	Download isolated source model	2026-10-04T11:39:18.7417674Z   GH_TOKEN: ***
+rescue (Fenix, Fenix.stl)	Download isolated source model	2026-10-04T11:39:18.7417888Z ##[endgroup]
+rescue (Fenix, Fenix.stl)	Install repair dependencies	﻿2026-10-04T11:39:30.7995617Z ##[group]Run set -euo pipefail
+rescue (Fenix, Fenix.stl)	Install repair dependencies	2026-10-04T11:39:30.7995975Z ^[[36;1mset -euo pipefail^[[0m
+rescue (Fenix, Fenix.stl)	Install repair dependencies	2026-10-04T11:39:30.7996335Z ^[[36;1mpython -m pip install --disable-pip-version-check --quiet \^[[0m
+rescue (Fenix, Fenix.stl)	Install repair dependencies	2026-10-04T11:39:30.7996756Z ^[[36;1m  trimesh==4.8.3 numpy==2.2.6 scipy==1.15.3 \^[[0m
+rescue (Fenix, Fenix.stl)	Install repair dependencies	2026-10-04T11:39:30.7997089Z ^[[36;1m  scikit-image==0.25.2 pymeshfix==0.18.1 \^[[0m
+rescue (Fenix, Fenix.stl)	Install repair dependencies	2026-10-04T11:39:30.7997436Z ^[[36;1m  fast-simplification==0.1.12 matplotlib==3.10.1^[[0m
+rescue (Fenix, Fenix.stl)	Install repair dependencies	2026-10-04T11:39:30.8072969Z shell: /usr/bin/bash --noprofile --norc -e -o pipefail {0}
+rescue (Fenix, Fenix.stl)	Install repair dependencies	2026-10-04T11:39:30.8073327Z env:
+rescue (Fenix, Fenix.stl)	Install repair dependencies	2026-10-04T11:39:30.8073538Z   RAW_BUILD_RUN_ID: 37193141976
+rescue (Fenix, Fenix.stl)	Install repair dependencies	2026-10-04T11:39:30.8073793Z ##[endgroup]
+rescue (Fenix, Fenix.stl)	Prepare repair engines	﻿2026-10-04T11:39:47.0383257Z ##[group]Run set -euo pipefail
+rescue (Fenix, Fenix.stl)	Prepare repair engines	2026-10-04T11:39:47.0383625Z ^[[36;1mset -euo pipefail^[[0m
+rescue (Fenix, Fenix.stl)	Prepare repair engines	2026-10-04T11:39:47.0383987Z ^[[36;1mcp ci/repair_stl_collection.py "$RUNNER_TEMP/repair_normal.py"^[[0m
+rescue (Fenix, Fenix.stl)	Prepare repair engines	2026-10-04T11:39:47.0384549Z ^[[36;1mpython ci/patch_repair_dimension_retention.py "$RUNNER_TEMP/repair_normal.py"^[[0m
+rescue (Fenix, Fenix.stl)	Prepare repair engines	2026-10-04T11:39:47.0385149Z ^[[36;1mpython ci/patch_repair_voxel_translation.py "$RUNNER_TEMP/repair_normal.py"^[[0m
+rescue (Fenix, Fenix.stl)	Prepare repair engines	2026-10-04T11:39:47.0385708Z ^[[36;1mpython ci/patch_repair_face_connectivity.py "$RUNNER_TEMP/repair_normal.py"^[[0m
+rescue (Fenix, Fenix.stl)	Prepare repair engines	2026-10-04T11:39:47.0386232Z ^[[36;1mcp "$RUNNER_TEMP/repair_normal.py" "$RUNNER_TEMP/repair_voxel.py"^[[0m
+rescue (Fenix, Fenix.stl)	Prepare repair engines	2026-10-04T11:39:47.0386728Z ^[[36;1mpython ci/patch_repair_force_voxel.py "$RUNNER_TEMP/repair_voxel.py"^[[0m
+rescue (Fenix, Fenix.stl)	Prepare repair engines	2026-10-04T11:39:47.0387373Z ^[[36;1mpython -m py_compile "$RUNNER_TEMP/repair_normal.py" "$RUNNER_TEMP/repair_voxel.py" ci/repair_one_adaptive.py^[[0m
+rescue (Fenix, Fenix.stl)	Prepare repair engines	2026-10-04T11:39:47.0458755Z shell: /usr/bin/bash --noprofile --norc -e -o pipefail {0}
+rescue (Fenix, Fenix.stl)	Prepare repair engines	2026-10-04T11:39:47.0459131Z env:
+rescue (Fenix, Fenix.stl)	Prepare repair engines	2026-10-04T11:39:47.0459385Z   RAW_BUILD_RUN_ID: 37193141976
+rescue (Fenix, Fenix.stl)	Prepare repair engines	2026-10-04T11:39:47.0459757Z ##[endgroup]
+rescue (Fenix, Fenix.stl)	Prepare repair engines	2026-10-04T11:39:47.1303602Z Patched /home/runner/work/_temp/repair_normal.py with dimensional-retention protection
+rescue (Fenix, Fenix.stl)	Prepare repair engines	2026-10-04T11:39:47.3303397Z Patched /home/runner/work/_temp/repair_normal.py to use VoxelGrid.translation
+rescue (Fenix, Fenix.stl)	Prepare repair engines	2026-10-04T11:39:47.4913083Z Patched /home/runner/work/_temp/repair_normal.py for face-connected voxel unions
+rescue (Fenix, Fenix.stl)	Prepare repair engines	2026-10-04T11:39:47.5176383Z Patched /home/runner/work/_temp/repair_voxel.py to force face-connected voxel reconstruction when needed
+rescue (Fenix, Fenix.stl)	Repair one hero adaptively	﻿2026-10-04T11:39:47.5616470Z ##[group]Run set -euo pipefail
+rescue (Fenix, Fenix.stl)	Repair one hero adaptively	2026-10-04T11:39:47.5616815Z ^[[36;1mset -euo pipefail^[[0m
+rescue (Fenix, Fenix.stl)	Repair one hero adaptively	2026-10-04T11:39:47.5617064Z ^[[36;1mOUT="$RUNNER_TEMP/fixed"^[[0m
+rescue (Fenix, Fenix.stl)	Repair one hero adaptively	2026-10-04T11:39:47.5617358Z ^[[36;1mmkdir -p "$OUT/STL" "$OUT/Reports/Fenix"^[[0m
+rescue (Fenix, Fenix.stl)	Repair one hero adaptively	2026-10-04T11:39:47.5617691Z ^[[36;1mpython ci/repair_one_adaptive.py \^[[0m
+rescue (Fenix, Fenix.stl)	Repair one hero adaptively	2026-10-04T11:39:47.5618070Z ^[[36;1m  --input-file "$RUNNER_TEMP/source/Fenix.stl" \^[[0m
+rescue (Fenix, Fenix.stl)	Repair one hero adaptively	2026-10-04T11:39:47.5618420Z ^[[36;1m  --output "$OUT/STL" \^[[0m
+rescue (Fenix, Fenix.stl)	Repair one hero adaptively	2026-10-04T11:39:47.5618706Z ^[[36;1m  --report-dir "$OUT/Reports/Fenix" \^[[0m
+rescue (Fenix, Fenix.stl)	Repair one hero adaptively	2026-10-04T11:39:47.5619080Z ^[[36;1m  --normal-script "$RUNNER_TEMP/repair_normal.py" \^[[0m
+rescue (Fenix, Fenix.stl)	Repair one hero adaptively	2026-10-04T11:39:47.5619465Z ^[[36;1m  --voxel-script "$RUNNER_TEMP/repair_voxel.py" \^[[0m
+rescue (Fenix, Fenix.stl)	Repair one hero adaptively	2026-10-04T11:39:47.5620035Z ^[[36;1m  --validator ci/validate_stl_collection.py \^[[0m
+rescue (Fenix, Fenix.stl)	Repair one hero adaptively	2026-10-04T11:39:47.5620390Z ^[[36;1m  --silhouette ci/compare_stl_silhouette.py \^[[0m
+rescue (Fenix, Fenix.stl)	Repair one hero adaptively	2026-10-04T11:39:47.5620698Z ^[[36;1m  --max-triangles 500000 \^[[0m
+rescue (Fenix, Fenix.stl)	Repair one hero adaptively	2026-10-04T11:39:47.5620963Z ^[[36;1m  --target-triangles 440000 \^[[0m
+rescue (Fenix, Fenix.stl)	Repair one hero adaptively	2026-10-04T11:39:47.5621292Z ^[[36;1m  --minimum-dimension-retention 0.90 \^[[0m
+rescue (Fenix, Fenix.stl)	Repair one hero adaptively	2026-10-04T11:39:47.5621614Z ^[[36;1m  --maximum-dimension-retention 1.10^[[0m
+rescue (Fenix, Fenix.stl)	Repair one hero adaptively	2026-10-04T11:39:47.5692885Z shell: /usr/bin/bash --noprofile --norc -e -o pipefail {0}
+rescue (Fenix, Fenix.stl)	Repair one hero adaptively	2026-10-04T11:39:47.5693251Z env:
+rescue (Fenix, Fenix.stl)	Repair one hero adaptively	2026-10-04T11:39:47.5693449Z   RAW_BUILD_RUN_ID: 37193141976
+rescue (Fenix, Fenix.stl)	Repair one hero adaptively	2026-10-04T11:39:47.5693919Z ##[endgroup]
+rescue (Fenix, Fenix.stl)	Repair one hero adaptively	2026-10-04T11:39:48.6938705Z 
+rescue (Fenix, Fenix.stl)	Repair one hero adaptively	2026-10-04T11:39:48.6939488Z === Fenix.stl: candidate normal_0.62 ===
+rescue (Fenix, Fenix.stl)	Repair one hero adaptively	2026-10-04T11:41:19.1513691Z ##[error]Process completed with exit code 143.
+rescue (Fenix, Fenix.stl)	Complete job	﻿2026-10-04T11:41:19.2829255Z Cleaning up orphan processes
+rescue (Fenix, Fenix.stl)	Complete job	2026-10-04T11:41:19.4337971Z ##[warning]Node.js 20 is deprecated. The following actions target Node.js 20 but are being forced to run on Node.js 24: actions/checkout@v4. For more information see: https://github.blog/changelog/2025-09-19-deprecation-of-node-20-on-github-actions-runners/
+
+=== KEY DIAGNOSTIC LINES ===
+rescue (Fenix, Fenix.stl)	Prepare repair engines	2026-10-04T11:39:47.0384549Z ^[[36;1mpython ci/patch_repair_dimension_retention.py "$RUNNER_TEMP/repair_normal.py"^[[0m
+rescue (Fenix, Fenix.stl)	Prepare repair engines	2026-10-04T11:39:47.1303602Z Patched /home/runner/work/_temp/repair_normal.py with dimensional-retention protection
+rescue (Fenix, Fenix.stl)	Repair one hero adaptively	2026-10-04T11:39:47.5621292Z ^[[36;1m  --minimum-dimension-retention 0.90 \^[[0m
+rescue (Fenix, Fenix.stl)	Repair one hero adaptively	2026-10-04T11:39:47.5621614Z ^[[36;1m  --maximum-dimension-retention 1.10^[[0m
+rescue (Fenix, Fenix.stl)	Repair one hero adaptively	2026-10-04T11:39:48.6939488Z === Fenix.stl: candidate normal_0.62 ===
+rescue (Fenix, Fenix.stl)	Repair one hero adaptively	2026-10-04T11:41:19.1513691Z ##[error]Process completed with exit code 143.
