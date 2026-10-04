@@ -1,0 +1,146 @@
+{
+  "raw_folder": "/home/runner/work/_temp/raw",
+  "repaired_folder": "/home/runner/work/_temp/out/STL",
+  "expected_files": 4,
+  "found_files": 4,
+  "passed": true,
+  "requirements": {
+    "pixel_mm": 0.65,
+    "tolerance_mm": 1.95,
+    "minimum_raw_coverage": 0.985,
+    "minimum_repaired_coverage": 0.97,
+    "minimum_iou": 0.94,
+    "views": [
+      "front_xz",
+      "side_yz",
+      "top_xy"
+    ]
+  },
+  "failed_files": [],
+  "files": [
+    {
+      "file": "D.Va.stl",
+      "passed": true,
+      "views": {
+        "front_xz": {
+          "raw_pixel_count": 13867,
+          "repaired_pixel_count": 14147,
+          "raw_coverage": 0.9984134996754885,
+          "repaired_coverage": 1.0,
+          "iou": 0.9683510988287932,
+          "passed": true
+        },
+        "side_yz": {
+          "raw_pixel_count": 12509,
+          "repaired_pixel_count": 12777,
+          "raw_coverage": 0.9982412662882725,
+          "repaired_coverage": 1.0,
+          "iou": 0.9663377829367382,
+          "passed": true
+        },
+        "top_xy": {
+          "raw_pixel_count": 25665,
+          "repaired_pixel_count": 25865,
+          "raw_coverage": 1.0,
+          "repaired_coverage": 1.0,
+          "iou": 0.9872953454077967,
+          "passed": true
+        }
+      },
+      "error": ""
+    },
+    {
+      "file": "Lunara.stl",
+      "passed": true,
+      "views": {
+        "front_xz": {
+          "raw_pixel_count": 7356,
+          "repaired_pixel_count": 7734,
+          "raw_coverage": 0.9991843393148451,
+          "repaired_coverage": 1.0,
+          "iou": 0.9478753541076487,
+          "passed": true
+        },
+        "side_yz": {
+          "raw_pixel_count": 10641,
+          "repaired_pixel_count": 10941,
+          "raw_coverage": 0.9994361432196223,
+          "repaired_coverage": 1.0,
+          "iou": 0.9674776144619024,
+          "passed": true
+        },
+        "top_xy": {
+          "raw_pixel_count": 16337,
+          "repaired_pixel_count": 16598,
+          "raw_coverage": 1.0,
+          "repaired_coverage": 1.0,
+          "iou": 0.9844300822561692,
+          "passed": true
+        }
+      },
+      "error": ""
+    },
+    {
+      "file": "Nazeebo.stl",
+      "passed": true,
+      "views": {
+        "front_xz": {
+          "raw_pixel_count": 9191,
+          "repaired_pixel_count": 9536,
+          "raw_coverage": 0.998911979109999,
+          "repaired_coverage": 1.0,
+          "iou": 0.9533639143730887,
+          "passed": true
+        },
+        "side_yz": {
+          "raw_pixel_count": 5687,
+          "repaired_pixel_count": 5930,
+          "raw_coverage": 0.9982416036574644,
+          "repaired_coverage": 1.0,
+          "iou": 0.941970310391363,
+          "passed": true
+        },
+        "top_xy": {
+          "raw_pixel_count": 9524,
+          "repaired_pixel_count": 9600,
+          "raw_coverage": 1.0,
+          "repaired_coverage": 1.0,
+          "iou": 0.9791583166332666,
+          "passed": true
+        }
+      },
+      "error": ""
+    },
+    {
+      "file": "Tychus.stl",
+      "passed": true,
+      "views": {
+        "front_xz": {
+          "raw_pixel_count": 21879,
+          "repaired_pixel_count": 22192,
+          "raw_coverage": 0.9988116458704694,
+          "repaired_coverage": 1.0,
+          "iou": 0.9765082072052867,
+          "passed": true
+        },
+        "side_yz": {
+          "raw_pixel_count": 17178,
+          "repaired_pixel_count": 17428,
+          "raw_coverage": 0.9984864361392479,
+          "repaired_coverage": 1.0,
+          "iou": 0.9749757307733794,
+          "passed": true
+        },
+        "top_xy": {
+          "raw_pixel_count": 39969,
+          "repaired_pixel_count": 40248,
+          "raw_coverage": 1.0,
+          "repaired_coverage": 1.0,
+          "iou": 0.9899694935936547,
+          "passed": true
+        }
+      },
+      "error": ""
+    }
+  ]
+}

@@ -1,0 +1,94 @@
+{
+  "input_folder": "/home/runner/work/_temp/out/STL",
+  "expected_files": 4,
+  "found_files": 4,
+  "duplicate_filenames": [],
+  "passed": true,
+  "quality_requirements": {
+    "watertight": true,
+    "winding_consistent": true,
+    "finite_coordinates": true,
+    "positive_volume_mm3": true,
+    "triangle_range": [
+      100,
+      500000
+    ],
+    "dimension_range_mm": [
+      2.0,
+      350.0
+    ],
+    "connected_bodies": 1,
+    "vertex_weld_tolerance_approx_mm": 0.01
+  },
+  "failed_files": [],
+  "files": [
+    {
+      "file": "D.Va.stl",
+      "bytes": 18588384,
+      "sha256": "2973de72bfa124d9c7799551929a1cf3f31d07e1c3a2f553435b28ea443ba10f",
+      "vertices": 185739,
+      "triangles": 371766,
+      "watertight": true,
+      "winding_consistent": true,
+      "finite_coordinates": true,
+      "volume_mm3": 124272.31350431674,
+      "x_mm": 114.69999694824219,
+      "y_mm": 114.69999694824219,
+      "z_mm": 112.21999877691269,
+      "connected_bodies": 1,
+      "error": "",
+      "passed": true
+    },
+    {
+      "file": "Lunara.stl",
+      "bytes": 12329584,
+      "sha256": "caca951ef6f2982f99758edc3269b7994222fdefaec5b236bc29ba8e0c6a5313",
+      "vertices": 122981,
+      "triangles": 246590,
+      "watertight": true,
+      "winding_consistent": true,
+      "finite_coordinates": true,
+      "volume_mm3": 16387.533125970247,
+      "x_mm": 91.13999938964844,
+      "y_mm": 91.13999938964844,
+      "z_mm": 110.98000091314316,
+      "connected_bodies": 1,
+      "error": "",
+      "passed": true
+    },
+    {
+      "file": "Nazeebo.stl",
+      "bytes": 8361184,
+      "sha256": "41263da2a86d0057a1433b47a0fbc125884b248301c9fedd5f54af09e93b6922",
+      "vertices": 83257,
+      "triangles": 167222,
+      "watertight": true,
+      "winding_consistent": true,
+      "finite_coordinates": true,
+      "volume_mm3": 18662.473105428144,
+      "x_mm": 68.81999969482422,
+      "y_mm": 68.81999969482422,
+      "z_mm": 110.35999816656113,
+      "connected_bodies": 1,
+      "error": "",
+      "passed": true
+    },
+    {
+      "file": "Tychus.stl",
+      "bytes": 21949184,
+      "sha256": "4926d850059d4f884eb77f513f4f924cf78006721238682db66d63908659a995",
+      "vertices": 217961,
+      "triangles": 438982,
+      "watertight": true,
+      "winding_consistent": true,
+      "finite_coordinates": true,
+      "volume_mm3": 98123.81280646512,
+      "x_mm": 143.22000122070312,
+      "y_mm": 143.22000122070312,
+      "z_mm": 112.21999877691269,
+      "connected_bodies": 1,
+      "error": "",
+      "passed": true
+    }
+  ]
+}
