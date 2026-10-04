@@ -1,0 +1,45 @@
+name: Collect HOTS v7 Failed Group Reports
+
+on:
+  workflow_dispatch:
+  push:
+    branches: [chatgpt-stl-builder]
+    paths: [.github/workflows/collect-v7-failed-group-reports.yml]
+
+permissions:
+  actions: read
+  contents: write
+
+jobs:
+  collect:
+    runs-on: ubuntu-22.04
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          ref: chatgpt-stl-builder
+          fetch-depth: 0
+      - name: Download completed failed-group artifacts
+        env:
+          GH_TOKEN: ${{ github.token }}
+        shell: bash
+        run: |
+          set -euo pipefail
+          DEST=build_reports/v7_failed_groups
+          mkdir -p "$DEST"
+          for group in 10 11; do
+            TMP="$RUNNER_TEMP/group_$group"
+            mkdir -p "$TMP" "$DEST/Group_$group"
+            gh run download 37198554829 \
+              --repo "$GITHUB_REPOSITORY" \
+              --name "HOTS-v7-group-$group" \
+              --dir "$TMP"
+            cp -r "$TMP/Reports/Group_$group/." "$DEST/Group_$group/"
+          done
+          git config user.name "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git add "$DEST"
+          if ! git diff --cached --quiet; then
+            git commit -m "Add HOTS v7 failed group reports [skip ci]"
+            git pull --rebase origin chatgpt-stl-builder
+            git push origin HEAD:chatgpt-stl-builder
+          fi
