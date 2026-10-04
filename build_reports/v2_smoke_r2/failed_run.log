@@ -1,0 +1,283 @@
+smoke	Convert representative heroes	﻿2026-10-04T09:22:37.6167971Z ##[group]Run set -euo pipefail
+smoke	Convert representative heroes	2026-10-04T09:22:37.6168561Z ^[[36;1mset -euo pipefail^[[0m
+smoke	Convert representative heroes	2026-10-04T09:22:37.6169069Z ^[[36;1mOUTPUT="$RUNNER_TEMP/HOTS_STL_v2_Smoke_R2"^[[0m
+smoke	Convert representative heroes	2026-10-04T09:22:37.6169839Z ^[[36;1mBLENDER="$RUNNER_TEMP/blender-${BLENDER_VERSION}-linux-x64/blender"^[[0m
+smoke	Convert representative heroes	2026-10-04T09:22:37.6170569Z ^[[36;1mmkdir -p "$OUTPUT/00_Reports"^[[0m
+smoke	Convert representative heroes	2026-10-04T09:22:37.6171392Z ^[[36;1m"$BLENDER" --background --factory-startup --python "$RUNNER_TEMP/build_hots_stls_v2.py" -- \^[[0m
+smoke	Convert representative heroes	2026-10-04T09:22:37.6172490Z ^[[36;1m  --source "$RUNNER_TEMP/HOTS-02" \^[[0m
+smoke	Convert representative heroes	2026-10-04T09:22:37.6172996Z ^[[36;1m  --source "$GITHUB_WORKSPACE" \^[[0m
+smoke	Convert representative heroes	2026-10-04T09:22:37.6173507Z ^[[36;1m  --output "$OUTPUT" \^[[0m
+smoke	Convert representative heroes	2026-10-04T09:22:37.6173959Z ^[[36;1m  --target-height-mm 110 \^[[0m
+smoke	Convert representative heroes	2026-10-04T09:22:37.6174419Z ^[[36;1m  --base-height-mm 4 \^[[0m
+smoke	Convert representative heroes	2026-10-04T09:22:37.6174852Z ^[[36;1m  --base-margin-mm 4 \^[[0m
+smoke	Convert representative heroes	2026-10-04T09:22:37.6175280Z ^[[36;1m  --voxel-mm 0.55 \^[[0m
+smoke	Convert representative heroes	2026-10-04T09:22:37.6175696Z ^[[36;1m  --thin-part-mm 0.72 \^[[0m
+smoke	Convert representative heroes	2026-10-04T09:22:37.6176193Z ^[[36;1m  --max-triangles 450000 \^[[0m
+smoke	Convert representative heroes	2026-10-04T09:22:37.6176672Z ^[[36;1m  --skip-animation \^[[0m
+smoke	Convert representative heroes	2026-10-04T09:22:37.6177094Z ^[[36;1m  --only "Abathur" \^[[0m
+smoke	Convert representative heroes	2026-10-04T09:22:37.6177508Z ^[[36;1m  --only "Brightwing" \^[[0m
+smoke	Convert representative heroes	2026-10-04T09:22:37.6177959Z ^[[36;1m  --only "Deathwing" \^[[0m
+smoke	Convert representative heroes	2026-10-04T09:22:37.6178398Z ^[[36;1m  --only "D.Va" \^[[0m
+smoke	Convert representative heroes	2026-10-04T09:22:37.6178819Z ^[[36;1m  --only "Muradin" \^[[0m
+smoke	Convert representative heroes	2026-10-04T09:22:37.6179234Z ^[[36;1m  --only "Nova" \^[[0m
+smoke	Convert representative heroes	2026-10-04T09:22:37.6179729Z ^[[36;1m  --only "Sgt. Hammer" \^[[0m
+smoke	Convert representative heroes	2026-10-04T09:22:37.6180226Z ^[[36;1m  --only "The Lost Vikings" \^[[0m
+smoke	Convert representative heroes	2026-10-04T09:22:37.6180683Z ^[[36;1m  --only "Tychus" \^[[0m
+smoke	Convert representative heroes	2026-10-04T09:22:37.6181171Z ^[[36;1m  2>&1 | tee "$OUTPUT/00_Reports/blender_build.log"^[[0m
+smoke	Convert representative heroes	2026-10-04T09:22:37.6252263Z shell: /usr/bin/bash --noprofile --norc -e -o pipefail {0}
+smoke	Convert representative heroes	2026-10-04T09:22:37.6252622Z env:
+smoke	Convert representative heroes	2026-10-04T09:22:37.6252823Z   BLENDER_VERSION: 3.6.23
+smoke	Convert representative heroes	2026-10-04T09:22:37.6253113Z   M3ADDON_COMMIT: 58935005c4465a219a740f6b740253533eda773f
+smoke	Convert representative heroes	2026-10-04T09:22:37.6253440Z ##[endgroup]
+smoke	Convert representative heroes	2026-10-04T09:22:38.1112774Z ALSA lib confmisc.c:855:(parse_card) cannot find card '0'
+smoke	Convert representative heroes	2026-10-04T09:22:38.1113913Z ALSA lib conf.c:5182:(_snd_config_evaluate) function snd_func_card_inum returned error: No such file or directory
+smoke	Convert representative heroes	2026-10-04T09:22:38.1115042Z ALSA lib confmisc.c:422:(snd_func_concat) error evaluating strings
+smoke	Convert representative heroes	2026-10-04T09:22:38.1116132Z ALSA lib conf.c:5182:(_snd_config_evaluate) function snd_func_concat returned error: No such file or directory
+smoke	Convert representative heroes	2026-10-04T09:22:38.1116873Z ALSA lib confmisc.c:1334:(snd_func_refer) error evaluating name
+smoke	Convert representative heroes	2026-10-04T09:22:38.1117588Z ALSA lib conf.c:5182:(_snd_config_evaluate) function snd_func_refer returned error: No such file or directory
+smoke	Convert representative heroes	2026-10-04T09:22:38.1118376Z ALSA lib conf.c:5705:(snd_config_expand) Evaluate error: No such file or directory
+smoke	Convert representative heroes	2026-10-04T09:22:38.1119000Z ALSA lib pcm.c:2664:(snd_pcm_open_noupdate) Unknown PCM default
+smoke	Convert representative heroes	2026-10-04T09:22:38.1433419Z Failed to open dir (No such file or directory): /run/user/1001/gvfs/
+smoke	Convert representative heroes	2026-10-04T09:22:38.9820329Z [09:22:38] HOTS STL Builder 2.1.0
+smoke	Convert representative heroes	2026-10-04T09:22:38.9820987Z [09:22:38] Blender runtime: 3.6.23
+smoke	Convert representative heroes	2026-10-04T09:22:38.9822044Z [09:22:38] Source roots: [PosixPath('/home/runner/work/_temp/HOTS-02'), PosixPath('/home/runner/work/HOTS-03/HOTS-03')]
+smoke	Convert representative heroes	2026-10-04T09:22:38.9822757Z [09:22:38] Enabling m3addon
+smoke	Convert representative heroes	2026-10-04T09:22:39.2910897Z [09:22:39] Resolved 9 roster entries to 9 unique source groups
+smoke	Convert representative heroes	2026-10-04T09:22:39.2912209Z [09:22:39] PLAN Abathur: abathur — exact canonical base
+smoke	Convert representative heroes	2026-10-04T09:22:39.2912941Z [09:22:39] PLAN Brightwing: brightwing — exact canonical base
+smoke	Convert representative heroes	2026-10-04T09:22:39.2913725Z [09:22:39] PLAN D.Va: dva_composite — explicit multi-model composite
+smoke	Convert representative heroes	2026-10-04T09:22:39.2914491Z [09:22:39] PLAN Deathwing: deathwing — exact canonical base
+smoke	Convert representative heroes	2026-10-04T09:22:39.2915162Z [09:22:39] PLAN Muradin: muradin — exact canonical base
+smoke	Convert representative heroes	2026-10-04T09:22:39.2915784Z [09:22:39] PLAN Nova: nova — exact canonical base
+smoke	Convert representative heroes	2026-10-04T09:22:39.2916449Z [09:22:39] PLAN Sgt. Hammer: sgthammer — exact canonical base
+smoke	Convert representative heroes	2026-10-04T09:22:39.2917818Z [09:22:39] PLAN The Lost Vikings: lostvikings_composite — explicit multi-model composite
+smoke	Convert representative heroes	2026-10-04T09:22:39.2918655Z [09:22:39] PLAN Tychus: tychus — exact canonical base
+smoke	Convert representative heroes	2026-10-04T09:22:39.2921095Z [09:22:39] Importing M3: /home/runner/work/_temp/HOTS-02/storm_hero_abathur_base/storm_hero_abathur_base.m3
+smoke	Convert representative heroes	2026-10-04T09:22:39.2924959Z 2026-10-04 09:22:39,292,292 DEBUG  base.py:152 Import /home/runner/work/_temp/HOTS-02/storm_hero_abathur_base/storm_hero_abathur_base.m3
+smoke	Convert representative heroes	2026-10-04T09:22:58.1238376Z Info: Removed 0 vertice(s)
+smoke	Convert representative heroes	2026-10-04T09:22:58.1238822Z Info: Removed 0 vertice(s)
+smoke	Convert representative heroes	2026-10-04T09:22:58.1239137Z Info: Removed 184 vertice(s)
+smoke	Convert representative heroes	2026-10-04T09:22:58.1239433Z Info: Removed 232 vertice(s)
+smoke	Convert representative heroes	2026-10-04T09:22:58.1239743Z Info: Removed: 0 vertices, 0 edges, 0 faces
+smoke	Convert representative heroes	2026-10-04T09:22:58.1240094Z Info: Removed 0 vertice(s)
+smoke	Convert representative heroes	2026-10-04T09:22:58.1240390Z Info: Removed: 0 vertices, 0 edges, 0 faces
+smoke	Convert representative heroes	2026-10-04T09:22:58.1240719Z Info: Removed 1 vertice(s)
+smoke	Convert representative heroes	2026-10-04T09:22:58.1241142Z Info: Removed: 0 vertices, 0 edges, 0 faces
+smoke	Convert representative heroes	2026-10-04T09:22:58.1241956Z Info: Removed 187 vertice(s)
+smoke	Convert representative heroes	2026-10-04T09:22:58.1242483Z Info: Removed: 0 vertices, 0 edges, 0 faces
+smoke	Convert representative heroes	2026-10-04T09:22:58.1243062Z Info: Removed 17 vertice(s)
+smoke	Convert representative heroes	2026-10-04T09:22:58.1243557Z Info: Removed: 0 vertices, 0 edges, 0 faces
+smoke	Convert representative heroes	2026-10-04T09:22:58.1244053Z [09:22:58] Strict edge test failed; retrying clean voxel union at 0.620 mm
+smoke	Convert representative heroes	2026-10-04T09:23:11.3194653Z [09:23:11] SUCCESS source abathur: 450000 print-ready triangles
+smoke	Convert representative heroes	2026-10-04T09:23:11.3235754Z [09:23:11] Importing M3: /home/runner/work/_temp/HOTS-02/storm_hero_brightwing_base/storm_hero_brightwing_base.m3
+smoke	Convert representative heroes	2026-10-04T09:23:11.3239626Z 2026-10-04 09:23:11,323,323 DEBUG  base.py:152 Import /home/runner/work/_temp/HOTS-02/storm_hero_brightwing_base/storm_hero_brightwing_base.m3
+smoke	Convert representative heroes	2026-10-04T09:23:17.7636220Z Info: Removed 7 vertice(s)
+smoke	Convert representative heroes	2026-10-04T09:23:17.7636756Z Info: Removed 1 vertice(s)
+smoke	Convert representative heroes	2026-10-04T09:23:17.7637168Z Info: Removed 32 vertice(s)
+smoke	Convert representative heroes	2026-10-04T09:23:17.7637632Z Info: Removed: 0 vertices, 0 edges, 0 faces
+smoke	Convert representative heroes	2026-10-04T09:23:17.7638123Z Info: Removed 2 vertice(s)
+smoke	Convert representative heroes	2026-10-04T09:23:17.7638518Z Info: Removed: 0 vertices, 0 edges, 0 faces
+smoke	Convert representative heroes	2026-10-04T09:23:17.7638958Z Info: Removed 0 vertice(s)
+smoke	Convert representative heroes	2026-10-04T09:23:17.7639360Z Info: Removed: 0 vertices, 0 edges, 0 faces
+smoke	Convert representative heroes	2026-10-04T09:23:17.7639823Z Info: Removed 2 vertice(s)
+smoke	Convert representative heroes	2026-10-04T09:23:17.7640210Z Info: Removed: 0 vertices, 0 edges, 0 faces
+smoke	Convert representative heroes	2026-10-04T09:23:17.7640864Z [09:23:17] Strict edge test failed; retrying clean voxel union at 0.620 mm
+smoke	Convert representative heroes	2026-10-04T09:23:22.3020688Z [09:23:22] SUCCESS source brightwing: 261204 print-ready triangles
+smoke	Convert representative heroes	2026-10-04T09:23:22.3044086Z [09:23:22] Importing M3: /home/runner/work/_temp/HOTS-02/storm_hero_dva_base/storm_hero_dva_base.m3
+smoke	Convert representative heroes	2026-10-04T09:23:22.3047609Z 2026-10-04 09:23:22,304,304 DEBUG  base.py:152 Import /home/runner/work/_temp/HOTS-02/storm_hero_dva_base/storm_hero_dva_base.m3
+smoke	Convert representative heroes	2026-10-04T09:23:22.8586943Z Info: Removed 88 vertice(s)
+smoke	Convert representative heroes	2026-10-04T09:23:22.8587528Z Info: Removed 209 vertice(s)
+smoke	Convert representative heroes	2026-10-04T09:23:22.8588335Z Info: Removed 254 vertice(s)
+smoke	Convert representative heroes	2026-10-04T09:23:22.8589130Z [09:23:22] Importing M3: /home/runner/work/_temp/HOTS-02/storm_hero_dvamech_base/storm_hero_dvamech_base.m3
+smoke	Convert representative heroes	2026-10-04T09:23:22.8594325Z 2026-10-04 09:23:22,859,859 DEBUG  base.py:152 Import /home/runner/work/_temp/HOTS-02/storm_hero_dvamech_base/storm_hero_dvamech_base.m3
+smoke	Convert representative heroes	2026-10-04T09:23:36.4622122Z Info: Removed 160 vertice(s)
+smoke	Convert representative heroes	2026-10-04T09:23:36.4622770Z Info: Removed 0 vertice(s)
+smoke	Convert representative heroes	2026-10-04T09:23:36.4623106Z Info: Removed 2808 vertice(s)
+smoke	Convert representative heroes	2026-10-04T09:23:36.4623429Z Info: Removed 3497 vertice(s)
+smoke	Convert representative heroes	2026-10-04T09:23:36.4623769Z Info: Removed: 0 vertices, 0 edges, 0 faces
+smoke	Convert representative heroes	2026-10-04T09:23:36.4624142Z Info: Removed 88 vertice(s)
+smoke	Convert representative heroes	2026-10-04T09:23:36.4624462Z Info: Removed: 0 vertices, 0 edges, 0 faces
+smoke	Convert representative heroes	2026-10-04T09:23:36.4624817Z Info: Removed 209 vertice(s)
+smoke	Convert representative heroes	2026-10-04T09:23:36.4625134Z Info: Removed: 0 vertices, 0 edges, 0 faces
+smoke	Convert representative heroes	2026-10-04T09:23:36.4625544Z Info: Removed 239 vertice(s)
+smoke	Convert representative heroes	2026-10-04T09:23:36.4626170Z Info: Removed: 0 vertices, 0 edges, 0 faces
+smoke	Convert representative heroes	2026-10-04T09:23:36.4626535Z Info: Removed 156 vertice(s)
+smoke	Convert representative heroes	2026-10-04T09:23:36.4626869Z Info: Removed: 0 vertices, 0 edges, 0 faces
+smoke	Convert representative heroes	2026-10-04T09:23:36.4627217Z Info: Removed 0 vertice(s)
+smoke	Convert representative heroes	2026-10-04T09:23:36.4627657Z Info: Removed: 0 vertices, 0 edges, 0 faces
+smoke	Convert representative heroes	2026-10-04T09:23:36.4628189Z Info: Removed 0 vertice(s)
+smoke	Convert representative heroes	2026-10-04T09:23:36.4628676Z Info: Removed: 0 vertices, 0 edges, 0 faces
+smoke	Convert representative heroes	2026-10-04T09:23:36.4629220Z Info: Removed 2806 vertice(s)
+smoke	Convert representative heroes	2026-10-04T09:23:36.4629647Z Info: Removed: 0 vertices, 0 edges, 0 faces
+smoke	Convert representative heroes	2026-10-04T09:23:36.4629985Z Info: Removed 2 vertice(s)
+smoke	Convert representative heroes	2026-10-04T09:23:36.4630287Z Info: Removed: 0 vertices, 0 edges, 0 faces
+smoke	Convert representative heroes	2026-10-04T09:23:36.4630745Z [09:23:36] Strict edge test failed; retrying clean voxel union at 0.620 mm
+smoke	Convert representative heroes	2026-10-04T09:23:43.1383626Z [09:23:43] SUCCESS source dva_composite: 375734 print-ready triangles
+smoke	Convert representative heroes	2026-10-04T09:23:43.1445916Z [09:23:43] Importing M3: /home/runner/work/_temp/HOTS-02/storm_hero_deathwing_base/storm_hero_deathwing_base.m3
+smoke	Convert representative heroes	2026-10-04T09:23:43.1449811Z 2026-10-04 09:23:43,144,144 DEBUG  base.py:152 Import /home/runner/work/_temp/HOTS-02/storm_hero_deathwing_base/storm_hero_deathwing_base.m3
+smoke	Convert representative heroes	2026-10-04T09:23:57.2378584Z Info: Removed 33 vertice(s)
+smoke	Convert representative heroes	2026-10-04T09:23:57.2379098Z Info: Removed 980 vertice(s)
+smoke	Convert representative heroes	2026-10-04T09:23:57.2379518Z Info: Removed 1131 vertice(s)
+smoke	Convert representative heroes	2026-10-04T09:23:57.2379977Z Info: Removed: 0 vertices, 0 edges, 0 faces
+smoke	Convert representative heroes	2026-10-04T09:23:57.2380436Z Info: Removed 37 vertice(s)
+smoke	Convert representative heroes	2026-10-04T09:23:57.2380857Z Info: Removed: 0 vertices, 0 edges, 0 faces
+smoke	Convert representative heroes	2026-10-04T09:23:57.2381301Z Info: Removed 985 vertice(s)
+smoke	Convert representative heroes	2026-10-04T09:23:57.2381912Z Info: Removed: 0 vertices, 0 edges, 0 faces
+smoke	Convert representative heroes	2026-10-04T09:23:57.2382374Z Info: Removed 33 vertice(s)
+smoke	Convert representative heroes	2026-10-04T09:23:57.2382793Z Info: Removed: 0 vertices, 0 edges, 0 faces
+smoke	Convert representative heroes	2026-10-04T09:23:57.2383399Z [09:23:57] Strict edge test failed; retrying clean voxel union at 0.620 mm
+smoke	Convert representative heroes	2026-10-04T09:24:04.3000612Z [09:24:04] SUCCESS source deathwing: 416275 print-ready triangles
+smoke	Convert representative heroes	2026-10-04T09:24:04.3040561Z [09:24:04] Importing M3: /home/runner/work/HOTS-03/HOTS-03/storm_hero_muradin_base/storm_hero_muradin_base.m3
+smoke	Convert representative heroes	2026-10-04T09:24:04.3044492Z 2026-10-04 09:24:04,304,304 DEBUG  base.py:152 Import /home/runner/work/HOTS-03/HOTS-03/storm_hero_muradin_base/storm_hero_muradin_base.m3
+smoke	Convert representative heroes	2026-10-04T09:24:14.4672140Z Info: Removed 96 vertice(s)
+smoke	Convert representative heroes	2026-10-04T09:24:14.4672768Z Info: Removed 96 vertice(s)
+smoke	Convert representative heroes	2026-10-04T09:24:14.4673250Z Info: Removed 0 vertice(s)
+smoke	Convert representative heroes	2026-10-04T09:24:14.4673567Z Info: Removed 283 vertice(s)
+smoke	Convert representative heroes	2026-10-04T09:24:14.4673904Z Info: Removed 0 vertice(s)
+smoke	Convert representative heroes	2026-10-04T09:24:14.4674205Z Info: Removed 258 vertice(s)
+smoke	Convert representative heroes	2026-10-04T09:24:14.4674504Z Info: Removed 196 vertice(s)
+smoke	Convert representative heroes	2026-10-04T09:24:14.4674800Z Info: Removed 213 vertice(s)
+smoke	Convert representative heroes	2026-10-04T09:24:14.4675094Z Info: Removed 454 vertice(s)
+smoke	Convert representative heroes	2026-10-04T09:24:14.4675391Z Info: Removed 1560 vertice(s)
+smoke	Convert representative heroes	2026-10-04T09:24:14.4675719Z Info: Removed: 0 vertices, 0 edges, 0 faces
+smoke	Convert representative heroes	2026-10-04T09:24:14.4676088Z Info: Removed 96 vertice(s)
+smoke	Convert representative heroes	2026-10-04T09:24:14.4676782Z Info: Removed: 0 vertices, 0 edges, 0 faces
+smoke	Convert representative heroes	2026-10-04T09:24:14.4677148Z Info: Removed 96 vertice(s)
+smoke	Convert representative heroes	2026-10-04T09:24:14.4677464Z Info: Removed: 0 vertices, 0 edges, 0 faces
+smoke	Convert representative heroes	2026-10-04T09:24:14.4677817Z Info: Removed 283 vertice(s)
+smoke	Convert representative heroes	2026-10-04T09:24:14.4678134Z Info: Removed: 0 vertices, 0 edges, 0 faces
+smoke	Convert representative heroes	2026-10-04T09:24:14.4678480Z Info: Removed 252 vertice(s)
+smoke	Convert representative heroes	2026-10-04T09:24:14.4678793Z Info: Removed: 0 vertices, 0 edges, 0 faces
+smoke	Convert representative heroes	2026-10-04T09:24:14.4679139Z Info: Removed 196 vertice(s)
+smoke	Convert representative heroes	2026-10-04T09:24:14.4679450Z Info: Removed: 0 vertices, 0 edges, 0 faces
+smoke	Convert representative heroes	2026-10-04T09:24:14.4679796Z Info: Removed 197 vertice(s)
+smoke	Convert representative heroes	2026-10-04T09:24:14.4680107Z Info: Removed: 0 vertices, 0 edges, 0 faces
+smoke	Convert representative heroes	2026-10-04T09:24:14.4680453Z Info: Removed 430 vertice(s)
+smoke	Convert representative heroes	2026-10-04T09:24:14.4680772Z Info: Removed: 0 vertices, 0 edges, 0 faces
+smoke	Convert representative heroes	2026-10-04T09:24:14.4681121Z Info: Removed 2 vertice(s)
+smoke	Convert representative heroes	2026-10-04T09:24:14.4681428Z Info: Removed: 0 vertices, 0 edges, 0 faces
+smoke	Convert representative heroes	2026-10-04T09:24:14.4682348Z [09:24:14] Strict edge test failed; retrying clean voxel union at 0.620 mm
+smoke	Convert representative heroes	2026-10-04T09:24:20.5180584Z [09:24:20] SUCCESS source muradin: 339643 print-ready triangles
+smoke	Convert representative heroes	2026-10-04T09:24:20.5265354Z [09:24:20] Importing M3: /home/runner/work/HOTS-03/HOTS-03/storm_hero_nova_base/storm_hero_nova_base_v05.m3
+smoke	Convert representative heroes	2026-10-04T09:24:20.5270922Z 2026-10-04 09:24:20,526,526 DEBUG  base.py:152 Import /home/runner/work/HOTS-03/HOTS-03/storm_hero_nova_base/storm_hero_nova_base_v05.m3
+smoke	Convert representative heroes	2026-10-04T09:24:25.4349396Z Info: Removed 688 vertice(s)
+smoke	Convert representative heroes	2026-10-04T09:24:25.4350094Z Info: Removed 540 vertice(s)
+smoke	Convert representative heroes	2026-10-04T09:24:25.4350666Z Info: Removed 1161 vertice(s)
+smoke	Convert representative heroes	2026-10-04T09:24:25.4351063Z Info: Removed: 0 vertices, 0 edges, 0 faces
+smoke	Convert representative heroes	2026-10-04T09:24:25.4351406Z Info: Removed 688 vertice(s)
+smoke	Convert representative heroes	2026-10-04T09:24:25.4352110Z Info: Removed: 0 vertices, 0 edges, 0 faces
+smoke	Convert representative heroes	2026-10-04T09:24:25.4352611Z Info: Removed 454 vertice(s)
+smoke	Convert representative heroes	2026-10-04T09:24:25.4353056Z Info: Removed: 0 vertices, 0 edges, 0 faces
+smoke	Convert representative heroes	2026-10-04T09:24:25.4353549Z Info: Removed 10 vertice(s)
+smoke	Convert representative heroes	2026-10-04T09:24:25.4354041Z Info: Removed: 0 vertices, 0 edges, 0 faces
+smoke	Convert representative heroes	2026-10-04T09:24:25.4354526Z [09:24:25] Strict edge test failed; retrying clean voxel union at 0.620 mm
+smoke	Convert representative heroes	2026-10-04T09:24:28.5057667Z [09:24:28] SUCCESS source nova: 186927 print-ready triangles
+smoke	Convert representative heroes	2026-10-04T09:24:28.5087640Z [09:24:28] Importing M3: /home/runner/work/HOTS-03/HOTS-03/storm_hero_sgthammer_base/storm_hero_sgthammer_base_v07.m3
+smoke	Convert representative heroes	2026-10-04T09:24:28.5091915Z 2026-10-04 09:24:28,508,508 DEBUG  base.py:152 Import /home/runner/work/HOTS-03/HOTS-03/storm_hero_sgthammer_base/storm_hero_sgthammer_base_v07.m3
+smoke	Convert representative heroes	2026-10-04T09:25:14.7205403Z Info: Removed 0 vertice(s)
+smoke	Convert representative heroes	2026-10-04T09:25:14.7205943Z Info: Removed 0 vertice(s)
+smoke	Convert representative heroes	2026-10-04T09:25:14.7206331Z Info: Removed 165 vertice(s)
+smoke	Convert representative heroes	2026-10-04T09:25:14.7206717Z Info: Removed 15 vertice(s)
+smoke	Convert representative heroes	2026-10-04T09:25:14.7207103Z Info: Removed 395 vertice(s)
+smoke	Convert representative heroes	2026-10-04T09:25:14.7207555Z Info: Removed: 0 vertices, 0 edges, 0 faces
+smoke	Convert representative heroes	2026-10-04T09:25:14.7208040Z Info: Removed 0 vertice(s)
+smoke	Convert representative heroes	2026-10-04T09:25:14.7208480Z Info: Removed: 0 vertices, 0 edges, 0 faces
+smoke	Convert representative heroes	2026-10-04T09:25:14.7208938Z Info: Removed 0 vertice(s)
+smoke	Convert representative heroes	2026-10-04T09:25:14.7209327Z Info: Removed: 0 vertices, 0 edges, 0 faces
+smoke	Convert representative heroes	2026-10-04T09:25:14.7209764Z Info: Removed 149 vertice(s)
+smoke	Convert representative heroes	2026-10-04T09:25:14.7210164Z Info: Removed: 0 vertices, 0 edges, 0 faces
+smoke	Convert representative heroes	2026-10-04T09:25:14.7210604Z Info: Removed 0 vertice(s)
+smoke	Convert representative heroes	2026-10-04T09:25:14.7211004Z Info: Removed: 0 vertices, 0 edges, 0 faces
+smoke	Convert representative heroes	2026-10-04T09:25:14.7211463Z Info: Removed 0 vertice(s)
+smoke	Convert representative heroes	2026-10-04T09:25:14.7212135Z Info: Removed: 0 vertices, 0 edges, 0 faces
+smoke	Convert representative heroes	2026-10-04T09:25:14.7212754Z [09:25:14] Strict edge test failed; retrying clean voxel union at 0.620 mm
+smoke	Convert representative heroes	2026-10-04T09:25:47.9302509Z [09:25:47] SUCCESS source sgthammer: 450000 print-ready triangles
+smoke	Convert representative heroes	2026-10-04T09:25:47.9352076Z [09:25:47] Importing M3: /home/runner/work/HOTS-03/HOTS-03/storm_hero_lostbaleog_base/storm_hero_lostbaleog_base.m3
+smoke	Convert representative heroes	2026-10-04T09:25:47.9363422Z 2026-10-04 09:25:47,935,935 DEBUG  base.py:152 Import /home/runner/work/HOTS-03/HOTS-03/storm_hero_lostbaleog_base/storm_hero_lostbaleog_base.m3
+smoke	Convert representative heroes	2026-10-04T09:25:48.3521778Z Info: Removed 0 vertice(s)
+smoke	Convert representative heroes	2026-10-04T09:25:48.3522182Z Info: Removed 0 vertice(s)
+smoke	Convert representative heroes	2026-10-04T09:25:48.3522436Z Info: Removed 38 vertice(s)
+smoke	Convert representative heroes	2026-10-04T09:25:48.3522914Z [09:25:48] Importing M3: /home/runner/work/HOTS-03/HOTS-03/storm_hero_losterik_base/storm_hero_losterik_base.m3
+smoke	Convert representative heroes	2026-10-04T09:25:48.3552764Z 2026-10-04 09:25:48,352,352 DEBUG  base.py:152 Import /home/runner/work/HOTS-03/HOTS-03/storm_hero_losterik_base/storm_hero_losterik_base.m3
+smoke	Convert representative heroes	2026-10-04T09:25:48.7525875Z Info: Removed 7 vertice(s)
+smoke	Convert representative heroes	2026-10-04T09:25:48.7526248Z Info: Removed 27 vertice(s)
+smoke	Convert representative heroes	2026-10-04T09:25:48.7526811Z [09:25:48] Importing M3: /home/runner/work/HOTS-03/HOTS-03/storm_hero_lostolaf_base/storm_hero_lostolaf_base.m3
+smoke	Convert representative heroes	2026-10-04T09:25:48.7552856Z 2026-10-04 09:25:48,753,753 DEBUG  base.py:152 Import /home/runner/work/HOTS-03/HOTS-03/storm_hero_lostolaf_base/storm_hero_lostolaf_base.m3
+smoke	Convert representative heroes	2026-10-04T09:26:05.5823761Z Info: Removed 0 vertice(s)
+smoke	Convert representative heroes	2026-10-04T09:26:05.5824821Z Info: Removed 0 vertice(s)
+smoke	Convert representative heroes	2026-10-04T09:26:05.5825191Z Info: Removed 106 vertice(s)
+smoke	Convert representative heroes	2026-10-04T09:26:05.5825510Z Info: Removed 143 vertice(s)
+smoke	Convert representative heroes	2026-10-04T09:26:05.5825852Z Info: Removed: 0 vertices, 0 edges, 0 faces
+smoke	Convert representative heroes	2026-10-04T09:26:05.5826219Z Info: Removed 0 vertice(s)
+smoke	Convert representative heroes	2026-10-04T09:26:05.5826537Z Info: Removed: 0 vertices, 0 edges, 0 faces
+smoke	Convert representative heroes	2026-10-04T09:26:05.5826885Z Info: Removed 0 vertice(s)
+smoke	Convert representative heroes	2026-10-04T09:26:05.5827191Z Info: Removed: 0 vertices, 0 edges, 0 faces
+smoke	Convert representative heroes	2026-10-04T09:26:05.5827537Z Info: Removed 12 vertice(s)
+smoke	Convert representative heroes	2026-10-04T09:26:05.5827845Z Info: Removed: 0 vertices, 0 edges, 0 faces
+smoke	Convert representative heroes	2026-10-04T09:26:05.5828277Z Info: Removed 1 vertice(s)
+smoke	Convert representative heroes	2026-10-04T09:26:05.5828587Z Info: Removed: 0 vertices, 0 edges, 0 faces
+smoke	Convert representative heroes	2026-10-04T09:26:05.5828927Z Info: Removed 13 vertice(s)
+smoke	Convert representative heroes	2026-10-04T09:26:05.5829234Z Info: Removed: 0 vertices, 0 edges, 0 faces
+smoke	Convert representative heroes	2026-10-04T09:26:05.5829582Z Info: Removed 0 vertice(s)
+smoke	Convert representative heroes	2026-10-04T09:26:05.5829883Z Info: Removed: 0 vertices, 0 edges, 0 faces
+smoke	Convert representative heroes	2026-10-04T09:26:05.5830232Z Info: Removed 0 vertice(s)
+smoke	Convert representative heroes	2026-10-04T09:26:05.5830534Z Info: Removed: 0 vertices, 0 edges, 0 faces
+smoke	Convert representative heroes	2026-10-04T09:26:05.5830878Z Info: Removed 2 vertice(s)
+smoke	Convert representative heroes	2026-10-04T09:26:05.5831180Z Info: Removed: 0 vertices, 0 edges, 0 faces
+smoke	Convert representative heroes	2026-10-04T09:26:05.5831807Z Info: Removed 15 vertice(s)
+smoke	Convert representative heroes	2026-10-04T09:26:05.5832171Z Info: Removed: 0 vertices, 0 edges, 0 faces
+smoke	Convert representative heroes	2026-10-04T09:26:05.5832635Z [09:26:05] Strict edge test failed; retrying clean voxel union at 0.620 mm
+smoke	Convert representative heroes	2026-10-04T09:26:17.0555045Z [09:26:17] SUCCESS source lostvikings_composite: 449999 print-ready triangles
+smoke	Convert representative heroes	2026-10-04T09:26:17.0646773Z [09:26:17] Importing M3: /home/runner/work/HOTS-03/HOTS-03/storm_hero_tychus_base/storm_hero_tychus_base_v13.m3
+smoke	Convert representative heroes	2026-10-04T09:26:17.0663318Z 2026-10-04 09:26:17,065,65  DEBUG  base.py:152 Import /home/runner/work/HOTS-03/HOTS-03/storm_hero_tychus_base/storm_hero_tychus_base_v13.m3
+smoke	Convert representative heroes	2026-10-04T09:26:34.1149348Z Info: Removed 554 vertice(s)
+smoke	Convert representative heroes	2026-10-04T09:26:34.1149886Z Info: Removed 1348 vertice(s)
+smoke	Convert representative heroes	2026-10-04T09:26:34.1150354Z Info: Removed 1917 vertice(s)
+smoke	Convert representative heroes	2026-10-04T09:26:34.1150786Z Info: Removed: 0 vertices, 0 edges, 0 faces
+smoke	Convert representative heroes	2026-10-04T09:26:34.1151273Z Info: Removed 557 vertice(s)
+smoke	Convert representative heroes	2026-10-04T09:26:34.1151931Z Info: Removed: 0 vertices, 0 edges, 0 faces
+smoke	Convert representative heroes	2026-10-04T09:26:34.1152394Z Info: Removed 1291 vertice(s)
+smoke	Convert representative heroes	2026-10-04T09:26:34.1152824Z Info: Removed: 0 vertices, 0 edges, 0 faces
+smoke	Convert representative heroes	2026-10-04T09:26:34.1153299Z Info: Removed 10 vertice(s)
+smoke	Convert representative heroes	2026-10-04T09:26:34.1153737Z Info: Removed: 0 vertices, 0 edges, 0 faces
+smoke	Convert representative heroes	2026-10-04T09:26:34.1154362Z [09:26:34] Strict edge test failed; retrying clean voxel union at 0.620 mm
+smoke	Convert representative heroes	2026-10-04T09:26:46.1588409Z [09:26:46] SUCCESS source tychus: 449999 print-ready triangles
+smoke	Convert representative heroes	2026-10-04T09:26:46.4629389Z [09:26:46] Completed: 0 successful roster entries, 9 missing/failed
+smoke	Convert representative heroes	2026-10-04T09:26:46.4645031Z Blender 3.6.23 (hash e467db79ca8c built 2025-06-17 01:32:54)
+smoke	Convert representative heroes	2026-10-04T09:26:46.5315094Z ##[error]Process completed with exit code 2.
+smoke	Publish smoke diagnostics	﻿2026-10-04T09:26:46.5386449Z ##[group]Run set -euo pipefail
+smoke	Publish smoke diagnostics	2026-10-04T09:26:46.5387015Z ^[[36;1mset -euo pipefail^[[0m
+smoke	Publish smoke diagnostics	2026-10-04T09:26:46.5387316Z ^[[36;1mSRC="$RUNNER_TEMP/HOTS_STL_v2_Smoke_R2/00_Reports"^[[0m
+smoke	Publish smoke diagnostics	2026-10-04T09:26:46.5387705Z ^[[36;1mDST="$GITHUB_WORKSPACE/build_reports/v2_smoke_r2"^[[0m
+smoke	Publish smoke diagnostics	2026-10-04T09:26:46.5388032Z ^[[36;1mmkdir -p "$DST"^[[0m
+smoke	Publish smoke diagnostics	2026-10-04T09:26:46.5388525Z ^[[36;1mfor name in manifest.json manifest.csv blender_build.log trimesh_validation.json trimesh_validation.csv; do^[[0m
+smoke	Publish smoke diagnostics	2026-10-04T09:26:46.5389099Z ^[[36;1m  [[ -f "$SRC/$name" ]] && cp "$SRC/$name" "$DST/$name"^[[0m
+smoke	Publish smoke diagnostics	2026-10-04T09:26:46.5389402Z ^[[36;1mdone^[[0m
+smoke	Publish smoke diagnostics	2026-10-04T09:26:46.5389681Z ^[[36;1mprintf '%s\n' "$GITHUB_RUN_ID" > "$DST/workflow_run_id.txt"^[[0m
+smoke	Publish smoke diagnostics	2026-10-04T09:26:46.5390061Z ^[[36;1mgit config user.name "github-actions[bot]"^[[0m
+smoke	Publish smoke diagnostics	2026-10-04T09:26:46.5390499Z ^[[36;1mgit config user.email "41898282+github-actions[bot]@users.noreply.github.com"^[[0m
+smoke	Publish smoke diagnostics	2026-10-04T09:26:46.5390931Z ^[[36;1mgit add build_reports/v2_smoke_r2^[[0m
+smoke	Publish smoke diagnostics	2026-10-04T09:26:46.5391228Z ^[[36;1mif ! git diff --cached --quiet; then^[[0m
+smoke	Publish smoke diagnostics	2026-10-04T09:26:46.5392056Z ^[[36;1m  git commit -m "Add v2 smoke R2 diagnostics [skip ci]"^[[0m
+smoke	Publish smoke diagnostics	2026-10-04T09:26:46.5392455Z ^[[36;1m  git push origin HEAD:chatgpt-stl-builder^[[0m
+smoke	Publish smoke diagnostics	2026-10-04T09:26:46.5392747Z ^[[36;1mfi^[[0m
+smoke	Publish smoke diagnostics	2026-10-04T09:26:46.5462704Z shell: /usr/bin/bash --noprofile --norc -e -o pipefail {0}
+smoke	Publish smoke diagnostics	2026-10-04T09:26:46.5463050Z env:
+smoke	Publish smoke diagnostics	2026-10-04T09:26:46.5463243Z   BLENDER_VERSION: 3.6.23
+smoke	Publish smoke diagnostics	2026-10-04T09:26:46.5463515Z   M3ADDON_COMMIT: 58935005c4465a219a740f6b740253533eda773f
+smoke	Publish smoke diagnostics	2026-10-04T09:26:46.5463821Z ##[endgroup]
+smoke	Publish smoke diagnostics	2026-10-04T09:26:46.9779811Z [chatgpt-stl-builder c451bfb] Add v2 smoke R2 diagnostics [skip ci]
+smoke	Publish smoke diagnostics	2026-10-04T09:26:46.9782291Z  4 files changed, 3108 insertions(+)
+smoke	Publish smoke diagnostics	2026-10-04T09:26:46.9782997Z  create mode 100644 build_reports/v2_smoke_r2/blender_build.log
+smoke	Publish smoke diagnostics	2026-10-04T09:26:46.9783807Z  create mode 100644 build_reports/v2_smoke_r2/manifest.csv
+smoke	Publish smoke diagnostics	2026-10-04T09:26:46.9784639Z  create mode 100644 build_reports/v2_smoke_r2/manifest.json
+smoke	Publish smoke diagnostics	2026-10-04T09:26:46.9785362Z  create mode 100644 build_reports/v2_smoke_r2/workflow_run_id.txt
+smoke	Publish smoke diagnostics	2026-10-04T09:26:47.4786951Z To https://github.com/JimmyTheCool/HOTS-03
+smoke	Publish smoke diagnostics	2026-10-04T09:26:47.4787952Z  ! [rejected]        HEAD -> chatgpt-stl-builder (fetch first)
+smoke	Publish smoke diagnostics	2026-10-04T09:26:47.4789141Z error: failed to push some refs to 'https://github.com/JimmyTheCool/HOTS-03'
+smoke	Publish smoke diagnostics	2026-10-04T09:26:47.4805000Z hint: Updates were rejected because the remote contains work that you do not
+smoke	Publish smoke diagnostics	2026-10-04T09:26:47.4806066Z hint: have locally. This is usually caused by another repository pushing to
+smoke	Publish smoke diagnostics	2026-10-04T09:26:47.4806968Z hint: the same ref. If you want to integrate the remote changes, use
+smoke	Publish smoke diagnostics	2026-10-04T09:26:47.4807647Z hint: 'git pull' before pushing again.
+smoke	Publish smoke diagnostics	2026-10-04T09:26:47.4808328Z hint: See the 'Note about fast-forwards' in 'git push --help' for details.
+smoke	Publish smoke diagnostics	2026-10-04T09:26:47.4813365Z ##[error]Process completed with exit code 1.
