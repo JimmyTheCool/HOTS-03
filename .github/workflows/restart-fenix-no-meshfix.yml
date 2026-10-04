@@ -1,0 +1,26 @@
+name: Restart Corrected Fenix Rescue
+
+on:
+  workflow_dispatch:
+  push:
+    branches: [chatgpt-stl-builder]
+    paths: [.github/workflows/restart-fenix-no-meshfix.yml]
+
+permissions:
+  actions: write
+  contents: read
+
+jobs:
+  restart:
+    runs-on: ubuntu-22.04
+    steps:
+      - name: Cancel old candidate run and dispatch corrected workflow
+        env:
+          GH_TOKEN: ${{ github.token }}
+        shell: bash
+        run: |
+          set -euo pipefail
+          gh run cancel 37199848795 --repo "$GITHUB_REPOSITORY" || true
+          gh workflow run rescue-fenix-no-meshfix.yml \
+            --repo "$GITHUB_REPOSITORY" \
+            --ref chatgpt-stl-builder
