@@ -1,0 +1,407 @@
+test	Build and validate representative models	﻿2026-10-04T09:29:22.9373465Z ##[group]Run set -euo pipefail
+test	Build and validate representative models	2026-10-04T09:29:22.9374120Z ^[[36;1mset -euo pipefail^[[0m
+test	Build and validate representative models	2026-10-04T09:29:22.9374576Z ^[[36;1mcp tools/hots_stl/runtime_extracted/build_hots_stls.py "$RUNNER_TEMP/b.py"^[[0m
+test	Build and validate representative models	2026-10-04T09:29:22.9375106Z ^[[36;1mpython tools/hots_stl/runtime_patch_v2.py "$RUNNER_TEMP/b.py"^[[0m
+test	Build and validate representative models	2026-10-04T09:29:22.9375605Z ^[[36;1mpython ci/patch_builder_external_validation.py "$RUNNER_TEMP/b.py"^[[0m
+test	Build and validate representative models	2026-10-04T09:29:22.9376003Z ^[[36;1msudo apt-get update -qq^[[0m
+test	Build and validate representative models	2026-10-04T09:29:22.9376716Z ^[[36;1msudo apt-get install -y --no-install-recommends ca-certificates curl git xz-utils libx11-6 libxi6 libxrender1 libxfixes3 libxkbcommon0 libsm6 libice6 libgl1 libegl1^[[0m
+test	Build and validate representative models	2026-10-04T09:29:22.9377723Z ^[[36;1mgit clone --depth 1 https://github.com/JimmyTheCool/HOTS-02.git "$RUNNER_TEMP/H2"^[[0m
+test	Build and validate representative models	2026-10-04T09:29:22.9378155Z ^[[36;1mcd "$RUNNER_TEMP"^[[0m
+test	Build and validate representative models	2026-10-04T09:29:22.9378685Z ^[[36;1mcurl -fL --retry 5 "https://download.blender.org/release/Blender3.6/blender-${BV}-linux-x64.tar.xz" -o b.tar.xz^[[0m
+test	Build and validate representative models	2026-10-04T09:29:22.9379281Z ^[[36;1mtar -xf b.tar.xz^[[0m
+test	Build and validate representative models	2026-10-04T09:29:22.9379606Z ^[[36;1mgit clone -q https://github.com/SC2Mapster/m3addon.git m3^[[0m
+test	Build and validate representative models	2026-10-04T09:29:22.9379976Z ^[[36;1mgit -C m3 checkout -q "$M3"^[[0m
+test	Build and validate representative models	2026-10-04T09:29:22.9380287Z ^[[36;1mmkdir -p "$HOME/.config/blender/3.6/scripts/addons"^[[0m
+test	Build and validate representative models	2026-10-04T09:29:22.9380713Z ^[[36;1mln -s "$RUNNER_TEMP/m3" "$HOME/.config/blender/3.6/scripts/addons/m3addon"^[[0m
+test	Build and validate representative models	2026-10-04T09:29:22.9381138Z ^[[36;1mO="$RUNNER_TEMP/out"; mkdir -p "$O/00_Reports"^[[0m
+test	Build and validate representative models	2026-10-04T09:29:22.9383205Z ^[[36;1m"$RUNNER_TEMP/blender-${BV}-linux-x64/blender" --background --factory-startup --python "$RUNNER_TEMP/b.py" -- --source "$RUNNER_TEMP/H2" --source "$GITHUB_WORKSPACE" --output "$O" --target-height-mm 110 --base-height-mm 4 --base-margin-mm 4 --voxel-mm 0.55 --thin-part-mm 0.72 --max-triangles 450000 --skip-animation --only "Abathur" --only "Brightwing" --only "Deathwing" --only "D.Va" --only "Muradin" --only "Nova" --only "Sgt. Hammer" --only "The Lost Vikings" --only "Tychus" 2>&1 | tee "$O/00_Reports/build.log"^[[0m
+test	Build and validate representative models	2026-10-04T09:29:22.9385116Z ^[[36;1mpython -m pip install -q trimesh==4.8.3 numpy==2.2.6^[[0m
+test	Build and validate representative models	2026-10-04T09:29:22.9385461Z ^[[36;1mpython - "$O" <<'PY'^[[0m
+test	Build and validate representative models	2026-10-04T09:29:22.9385716Z ^[[36;1mfrom pathlib import Path^[[0m
+test	Build and validate representative models	2026-10-04T09:29:22.9386002Z ^[[36;1mimport json,sys,numpy as np,trimesh^[[0m
+test	Build and validate representative models	2026-10-04T09:29:22.9386313Z ^[[36;1mp=Path(sys.argv[1]); rows=[]; bad=[]^[[0m
+test	Build and validate representative models	2026-10-04T09:29:22.9386682Z ^[[36;1mfor f in sorted((p/'02_Print_Ready_Watertight').glob('*.stl')):^[[0m
+test	Build and validate representative models	2026-10-04T09:29:22.9387193Z ^[[36;1m  m=trimesh.load_mesh(f,force='mesh',process=False); e=[float(x) for x in m.extents]^[[0m
+test	Build and validate representative models	2026-10-04T09:29:22.9388235Z ^[[36;1m  r={'file':f.name,'triangles':len(m.faces),'watertight':bool(m.is_watertight),'winding':bool(m.is_winding_consistent),'finite':bool(np.isfinite(m.vertices).all()),'volume':float(abs(m.volume)),'extents':e,'bodies':int(m.body_count)}^[[0m
+test	Build and validate representative models	2026-10-04T09:29:22.9389121Z ^[[36;1m  rows.append(r)^[[0m
+test	Build and validate representative models	2026-10-04T09:29:22.9389646Z ^[[36;1m  if not(r['watertight'] and r['winding'] and r['finite'] and r['volume']>1 and 100<=r['triangles']<=500000 and 2<=min(e)): bad.append(r)^[[0m
+test	Build and validate representative models	2026-10-04T09:29:22.9390401Z ^[[36;1mq={'expected':9,'found':len(rows),'passed':len(rows)==9 and not bad,'failed':bad,'files':rows}^[[0m
+test	Build and validate representative models	2026-10-04T09:29:22.9390996Z ^[[36;1m(p/'00_Reports'/'external_validation.json').write_text(json.dumps(q,indent=2))^[[0m
+test	Build and validate representative models	2026-10-04T09:29:22.9391422Z ^[[36;1mprint(json.dumps(q,indent=2))^[[0m
+test	Build and validate representative models	2026-10-04T09:29:22.9391711Z ^[[36;1mif not q['passed']: raise SystemExit(1)^[[0m
+test	Build and validate representative models	2026-10-04T09:29:22.9391986Z ^[[36;1mPY^[[0m
+test	Build and validate representative models	2026-10-04T09:29:22.9392198Z ^[[36;1mmkdir -p "$GITHUB_WORKSPACE/smoke_r3"^[[0m
+test	Build and validate representative models	2026-10-04T09:29:22.9392741Z ^[[36;1mcp "$O/00_Reports/external_validation.json" "$GITHUB_WORKSPACE/smoke_r3/"^[[0m
+test	Build and validate representative models	2026-10-04T09:29:22.9393229Z ^[[36;1mcp "$O/00_Reports/manifest.json" "$GITHUB_WORKSPACE/smoke_r3/"^[[0m
+test	Build and validate representative models	2026-10-04T09:29:22.9393646Z ^[[36;1mcp "$O/00_Reports/build.log" "$GITHUB_WORKSPACE/smoke_r3/"^[[0m
+test	Build and validate representative models	2026-10-04T09:29:22.9743640Z shell: /usr/bin/bash --noprofile --norc -e -o pipefail {0}
+test	Build and validate representative models	2026-10-04T09:29:22.9744433Z env:
+test	Build and validate representative models	2026-10-04T09:29:22.9744623Z   BV: 3.6.23
+test	Build and validate representative models	2026-10-04T09:29:22.9744838Z   M3: 58935005c4465a219a740f6b740253533eda773f
+test	Build and validate representative models	2026-10-04T09:29:22.9745116Z ##[endgroup]
+test	Build and validate representative models	2026-10-04T09:29:23.0109670Z Patched /home/runner/work/_temp/b.py to HOTS STL Builder v2.1.0
+test	Build and validate representative models	2026-10-04T09:29:23.0334440Z Patched builder to defer geometric watertightness to independent trimesh validation
+test	Build and validate representative models	2026-10-04T09:29:33.6817547Z Reading package lists...
+test	Build and validate representative models	2026-10-04T09:29:33.9264409Z Building dependency tree...
+test	Build and validate representative models	2026-10-04T09:29:33.9275632Z Reading state information...
+test	Build and validate representative models	2026-10-04T09:29:34.0925496Z libgl1 is already the newest version (1.4.0-1).
+test	Build and validate representative models	2026-10-04T09:29:34.0926145Z libgl1 set to manually installed.
+test	Build and validate representative models	2026-10-04T09:29:34.0926691Z libice6 is already the newest version (2:1.0.10-1build2).
+test	Build and validate representative models	2026-10-04T09:29:34.0927308Z libice6 set to manually installed.
+test	Build and validate representative models	2026-10-04T09:29:34.0927904Z libsm6 is already the newest version (2:1.2.3-1build2).
+test	Build and validate representative models	2026-10-04T09:29:34.0928535Z libsm6 set to manually installed.
+test	Build and validate representative models	2026-10-04T09:29:34.0929206Z libxfixes3 is already the newest version (1:6.0.0-1).
+test	Build and validate representative models	2026-10-04T09:29:34.0929764Z libxfixes3 set to manually installed.
+test	Build and validate representative models	2026-10-04T09:29:34.0930279Z libxi6 is already the newest version (2:1.8-1build1).
+test	Build and validate representative models	2026-10-04T09:29:34.0930802Z libxi6 set to manually installed.
+test	Build and validate representative models	2026-10-04T09:29:34.0931312Z libxkbcommon0 is already the newest version (1.4.0-1).
+test	Build and validate representative models	2026-10-04T09:29:34.0931867Z libxkbcommon0 set to manually installed.
+test	Build and validate representative models	2026-10-04T09:29:34.0932462Z libxrender1 is already the newest version (1:0.9.10-1build4).
+test	Build and validate representative models	2026-10-04T09:29:34.0933304Z libxrender1 set to manually installed.
+test	Build and validate representative models	2026-10-04T09:29:34.0933887Z ca-certificates is already the newest version (20260601~22.04.1).
+test	Build and validate representative models	2026-10-04T09:29:34.1030125Z curl is already the newest version (7.81.0-1ubuntu1.29).
+test	Build and validate representative models	2026-10-04T09:29:34.1030827Z libx11-6 is already the newest version (2:1.7.5-1ubuntu0.3).
+test	Build and validate representative models	2026-10-04T09:29:34.1031423Z libx11-6 set to manually installed.
+test	Build and validate representative models	2026-10-04T09:29:34.1031894Z xz-utils is already the newest version (5.2.5-2ubuntu1.1).
+test	Build and validate representative models	2026-10-04T09:29:34.1032782Z git is already the newest version (1:2.55.0-0ppa1~ubuntu22.04.2).
+test	Build and validate representative models	2026-10-04T09:29:34.1033455Z The following additional packages will be installed:
+test	Build and validate representative models	2026-10-04T09:29:34.1033946Z   libegl-mesa0
+test	Build and validate representative models	2026-10-04T09:29:34.1149031Z The following NEW packages will be installed:
+test	Build and validate representative models	2026-10-04T09:29:34.1154328Z   libegl-mesa0 libegl1
+test	Build and validate representative models	2026-10-04T09:29:34.1331502Z 0 upgraded, 2 newly installed, 0 to remove and 20 not upgraded.
+test	Build and validate representative models	2026-10-04T09:29:34.1332035Z Need to get 147 kB of archives.
+test	Build and validate representative models	2026-10-04T09:29:34.1332389Z After this operation, 484 kB of additional disk space will be used.
+test	Build and validate representative models	2026-10-04T09:29:34.1333237Z Get:1 file:/etc/apt/apt-mirrors.txt Mirrorlist [144 B]
+test	Build and validate representative models	2026-10-04T09:29:34.2322033Z Get:2 http://azure.archive.ubuntu.com/ubuntu jammy-updates/main amd64 libegl-mesa0 amd64 23.2.1-1ubuntu3.1~22.04.4 [118 kB]
+test	Build and validate representative models	2026-10-04T09:29:34.3118129Z Get:3 http://azure.archive.ubuntu.com/ubuntu jammy/main amd64 libegl1 amd64 1.4.0-1 [28.6 kB]
+test	Build and validate representative models	2026-10-04T09:29:34.6365599Z Fetched 147 kB in 0s (767 kB/s)
+test	Build and validate representative models	2026-10-04T09:29:34.7104818Z Selecting previously unselected package libegl-mesa0:amd64.
+test	Build and validate representative models	2026-10-04T09:29:34.7927354Z (Reading database ... 
+test	Build and validate representative models	2026-10-04T09:29:34.7927928Z (Reading database ... 5%
+test	Build and validate representative models	2026-10-04T09:29:34.7928365Z (Reading database ... 10%
+test	Build and validate representative models	2026-10-04T09:29:34.7928759Z (Reading database ... 15%
+test	Build and validate representative models	2026-10-04T09:29:34.7929128Z (Reading database ... 20%
+test	Build and validate representative models	2026-10-04T09:29:34.7929423Z (Reading database ... 25%
+test	Build and validate representative models	2026-10-04T09:29:34.7929770Z (Reading database ... 30%
+test	Build and validate representative models	2026-10-04T09:29:34.7930180Z (Reading database ... 35%
+test	Build and validate representative models	2026-10-04T09:29:34.7930556Z (Reading database ... 40%
+test	Build and validate representative models	2026-10-04T09:29:34.7930923Z (Reading database ... 45%
+test	Build and validate representative models	2026-10-04T09:29:34.7931290Z (Reading database ... 50%
+test	Build and validate representative models	2026-10-04T09:29:35.1141432Z (Reading database ... 55%
+test	Build and validate representative models	2026-10-04T09:29:35.5741877Z (Reading database ... 60%
+test	Build and validate representative models	2026-10-04T09:29:35.8363815Z (Reading database ... 65%
+test	Build and validate representative models	2026-10-04T09:29:36.1805701Z (Reading database ... 70%
+test	Build and validate representative models	2026-10-04T09:29:36.6548700Z (Reading database ... 75%
+test	Build and validate representative models	2026-10-04T09:29:37.2482505Z (Reading database ... 80%
+test	Build and validate representative models	2026-10-04T09:29:38.1507304Z (Reading database ... 85%
+test	Build and validate representative models	2026-10-04T09:29:38.9635792Z (Reading database ... 90%
+test	Build and validate representative models	2026-10-04T09:29:39.7735482Z (Reading database ... 95%
+test	Build and validate representative models	2026-10-04T09:29:39.7736100Z (Reading database ... 100%
+test	Build and validate representative models	2026-10-04T09:29:39.7736833Z (Reading database ... 260411 files and directories currently installed.)
+test	Build and validate representative models	2026-10-04T09:29:39.7788551Z Preparing to unpack .../libegl-mesa0_23.2.1-1ubuntu3.1~22.04.4_amd64.deb ...
+test	Build and validate representative models	2026-10-04T09:29:39.7829771Z Unpacking libegl-mesa0:amd64 (23.2.1-1ubuntu3.1~22.04.4) ...
+test	Build and validate representative models	2026-10-04T09:29:39.8207697Z Selecting previously unselected package libegl1:amd64.
+test	Build and validate representative models	2026-10-04T09:29:39.8408202Z Preparing to unpack .../libegl1_1.4.0-1_amd64.deb ...
+test	Build and validate representative models	2026-10-04T09:29:39.8417834Z Unpacking libegl1:amd64 (1.4.0-1) ...
+test	Build and validate representative models	2026-10-04T09:29:39.8957901Z Setting up libegl-mesa0:amd64 (23.2.1-1ubuntu3.1~22.04.4) ...
+test	Build and validate representative models	2026-10-04T09:29:39.8980963Z Setting up libegl1:amd64 (1.4.0-1) ...
+test	Build and validate representative models	2026-10-04T09:29:39.9005650Z Processing triggers for libc-bin (2.35-0ubuntu3.15) ...
+test	Build and validate representative models	2026-10-04T09:29:41.2459755Z 
+test	Build and validate representative models	2026-10-04T09:29:41.2460417Z Running kernel seems to be up-to-date.
+test	Build and validate representative models	2026-10-04T09:29:41.2460904Z 
+test	Build and validate representative models	2026-10-04T09:29:41.2461107Z No services need to be restarted.
+test	Build and validate representative models	2026-10-04T09:29:41.2461475Z 
+test	Build and validate representative models	2026-10-04T09:29:41.2463468Z No containers need to be restarted.
+test	Build and validate representative models	2026-10-04T09:29:41.2463820Z 
+test	Build and validate representative models	2026-10-04T09:29:41.2464046Z No user sessions are running outdated binaries.
+test	Build and validate representative models	2026-10-04T09:29:41.2464416Z 
+test	Build and validate representative models	2026-10-04T09:29:41.2464753Z No VM guests are running outdated hypervisor (qemu) binaries on this host.
+test	Build and validate representative models	2026-10-04T09:29:42.9949939Z Cloning into '/home/runner/work/_temp/H2'...
+test	Build and validate representative models	2026-10-04T09:29:49.3252585Z Updating files:  46% (278/600)
+test	Build and validate representative models	2026-10-04T09:29:49.3502606Z Updating files:  47% (282/600)
+test	Build and validate representative models	2026-10-04T09:29:49.3620980Z Updating files:  48% (288/600)
+test	Build and validate representative models	2026-10-04T09:29:49.3823033Z Updating files:  49% (294/600)
+test	Build and validate representative models	2026-10-04T09:29:49.3975522Z Updating files:  50% (300/600)
+test	Build and validate representative models	2026-10-04T09:29:49.4099971Z Updating files:  51% (306/600)
+test	Build and validate representative models	2026-10-04T09:29:49.4239719Z Updating files:  52% (312/600)
+test	Build and validate representative models	2026-10-04T09:29:49.4564662Z Updating files:  53% (318/600)
+test	Build and validate representative models	2026-10-04T09:29:49.4783348Z Updating files:  54% (324/600)
+test	Build and validate representative models	2026-10-04T09:29:49.5054959Z Updating files:  55% (330/600)
+test	Build and validate representative models	2026-10-04T09:29:49.5306869Z Updating files:  56% (336/600)
+test	Build and validate representative models	2026-10-04T09:29:49.5546027Z Updating files:  57% (342/600)
+test	Build and validate representative models	2026-10-04T09:29:49.5949058Z Updating files:  58% (348/600)
+test	Build and validate representative models	2026-10-04T09:29:49.6169390Z Updating files:  59% (354/600)
+test	Build and validate representative models	2026-10-04T09:29:49.6288641Z Updating files:  60% (360/600)
+test	Build and validate representative models	2026-10-04T09:29:49.6678380Z Updating files:  61% (366/600)
+test	Build and validate representative models	2026-10-04T09:29:49.6821903Z Updating files:  62% (372/600)
+test	Build and validate representative models	2026-10-04T09:29:49.6974872Z Updating files:  63% (378/600)
+test	Build and validate representative models	2026-10-04T09:29:49.7540525Z Updating files:  64% (384/600)
+test	Build and validate representative models	2026-10-04T09:29:49.7831350Z Updating files:  65% (390/600)
+test	Build and validate representative models	2026-10-04T09:29:49.8129871Z Updating files:  66% (396/600)
+test	Build and validate representative models	2026-10-04T09:29:49.8267057Z Updating files:  67% (402/600)
+test	Build and validate representative models	2026-10-04T09:29:49.8342105Z Updating files:  68% (408/600)
+test	Build and validate representative models	2026-10-04T09:29:49.8560896Z Updating files:  69% (414/600)
+test	Build and validate representative models	2026-10-04T09:29:49.8681795Z Updating files:  70% (420/600)
+test	Build and validate representative models	2026-10-04T09:29:49.8886722Z Updating files:  71% (426/600)
+test	Build and validate representative models	2026-10-04T09:29:49.9041121Z Updating files:  72% (432/600)
+test	Build and validate representative models	2026-10-04T09:29:49.9302283Z Updating files:  73% (438/600)
+test	Build and validate representative models	2026-10-04T09:29:49.9586451Z Updating files:  74% (444/600)
+test	Build and validate representative models	2026-10-04T09:29:49.9971043Z Updating files:  75% (450/600)
+test	Build and validate representative models	2026-10-04T09:29:50.0130245Z Updating files:  76% (456/600)
+test	Build and validate representative models	2026-10-04T09:29:50.0255538Z Updating files:  77% (462/600)
+test	Build and validate representative models	2026-10-04T09:29:50.0515043Z Updating files:  78% (468/600)
+test	Build and validate representative models	2026-10-04T09:29:50.0709505Z Updating files:  79% (474/600)
+test	Build and validate representative models	2026-10-04T09:29:50.0973718Z Updating files:  80% (480/600)
+test	Build and validate representative models	2026-10-04T09:29:50.1289188Z Updating files:  81% (486/600)
+test	Build and validate representative models	2026-10-04T09:29:50.1454819Z Updating files:  82% (492/600)
+test	Build and validate representative models	2026-10-04T09:29:50.1757588Z Updating files:  83% (498/600)
+test	Build and validate representative models	2026-10-04T09:29:50.2001195Z Updating files:  84% (504/600)
+test	Build and validate representative models	2026-10-04T09:29:50.2108053Z Updating files:  85% (510/600)
+test	Build and validate representative models	2026-10-04T09:29:50.2308375Z Updating files:  86% (516/600)
+test	Build and validate representative models	2026-10-04T09:29:50.2591089Z Updating files:  87% (522/600)
+test	Build and validate representative models	2026-10-04T09:29:50.2855484Z Updating files:  88% (528/600)
+test	Build and validate representative models	2026-10-04T09:29:50.3112947Z Updating files:  89% (534/600)
+test	Build and validate representative models	2026-10-04T09:29:50.3136261Z Updating files:  89% (539/600)
+test	Build and validate representative models	2026-10-04T09:29:50.3354112Z Updating files:  90% (540/600)
+test	Build and validate representative models	2026-10-04T09:29:50.3593108Z Updating files:  91% (546/600)
+test	Build and validate representative models	2026-10-04T09:29:50.4371748Z Updating files:  92% (552/600)
+test	Build and validate representative models	2026-10-04T09:29:50.4679556Z Updating files:  93% (558/600)
+test	Build and validate representative models	2026-10-04T09:29:50.4806735Z Updating files:  94% (564/600)
+test	Build and validate representative models	2026-10-04T09:29:50.4949523Z Updating files:  95% (570/600)
+test	Build and validate representative models	2026-10-04T09:29:50.5263530Z Updating files:  96% (576/600)
+test	Build and validate representative models	2026-10-04T09:29:50.5551601Z Updating files:  97% (582/600)
+test	Build and validate representative models	2026-10-04T09:29:50.5650677Z Updating files:  98% (588/600)
+test	Build and validate representative models	2026-10-04T09:29:50.6023407Z Updating files:  99% (594/600)
+test	Build and validate representative models	2026-10-04T09:29:50.6023878Z Updating files: 100% (600/600)
+test	Build and validate representative models	2026-10-04T09:29:50.6024312Z Updating files: 100% (600/600), done.
+test	Build and validate representative models	2026-10-04T09:29:50.6593558Z   % Total    % Received % Xferd  Average Speed   Time    Time     Time  Current
+test	Build and validate representative models	2026-10-04T09:29:50.6594440Z                                  Dload  Upload   Total   Spent    Left  Speed
+test	Build and validate representative models	2026-10-04T09:29:50.6594875Z 
+test	Build and validate representative models	2026-10-04T09:29:51.3742321Z   0     0    0     0    0     0      0      0 --:--:-- --:--:-- --:--:--     0
+test	Build and validate representative models	2026-10-04T09:29:51.6573819Z  58  260M   58  151M    0     0   211M      0  0:00:01 --:--:--  0:00:01  211M
+test	Build and validate representative models	2026-10-04T09:29:51.6574793Z 100  260M  100  260M    0     0   260M      0 --:--:-- --:--:-- --:--:--  260M
+test	Build and validate representative models	2026-10-04T09:30:09.5576896Z ALSA lib confmisc.c:855:(parse_card) cannot find card '0'
+test	Build and validate representative models	2026-10-04T09:30:09.5577964Z ALSA lib conf.c:5182:(_snd_config_evaluate) function snd_func_card_inum returned error: No such file or directory
+test	Build and validate representative models	2026-10-04T09:30:09.5578624Z ALSA lib confmisc.c:422:(snd_func_concat) error evaluating strings
+test	Build and validate representative models	2026-10-04T09:30:09.5579262Z ALSA lib conf.c:5182:(_snd_config_evaluate) function snd_func_concat returned error: No such file or directory
+test	Build and validate representative models	2026-10-04T09:30:09.5579885Z ALSA lib confmisc.c:1334:(snd_func_refer) error evaluating name
+test	Build and validate representative models	2026-10-04T09:30:09.5580539Z ALSA lib conf.c:5182:(_snd_config_evaluate) function snd_func_refer returned error: No such file or directory
+test	Build and validate representative models	2026-10-04T09:30:09.5581205Z ALSA lib conf.c:5705:(snd_config_expand) Evaluate error: No such file or directory
+test	Build and validate representative models	2026-10-04T09:30:09.5583488Z ALSA lib pcm.c:2664:(snd_pcm_open_noupdate) Unknown PCM default
+test	Build and validate representative models	2026-10-04T09:30:09.5846038Z Failed to open dir (No such file or directory): /run/user/1001/gvfs/
+test	Build and validate representative models	2026-10-04T09:30:10.3673897Z [09:30:10] HOTS STL Builder 2.1.0
+test	Build and validate representative models	2026-10-04T09:30:10.3674286Z [09:30:10] Blender runtime: 3.6.23
+test	Build and validate representative models	2026-10-04T09:30:10.3674841Z [09:30:10] Source roots: [PosixPath('/home/runner/work/_temp/H2'), PosixPath('/home/runner/work/HOTS-03/HOTS-03')]
+test	Build and validate representative models	2026-10-04T09:30:10.3675595Z [09:30:10] Enabling m3addon
+test	Build and validate representative models	2026-10-04T09:30:10.6559054Z [09:30:10] Resolved 9 roster entries to 9 unique source groups
+test	Build and validate representative models	2026-10-04T09:30:10.6560304Z [09:30:10] PLAN Abathur: abathur — exact canonical base
+test	Build and validate representative models	2026-10-04T09:30:10.6561189Z [09:30:10] PLAN Brightwing: brightwing — exact canonical base
+test	Build and validate representative models	2026-10-04T09:30:10.6562207Z [09:30:10] PLAN D.Va: dva_composite — explicit multi-model composite
+test	Build and validate representative models	2026-10-04T09:30:10.6563455Z [09:30:10] PLAN Deathwing: deathwing — exact canonical base
+test	Build and validate representative models	2026-10-04T09:30:10.6564298Z [09:30:10] PLAN Muradin: muradin — exact canonical base
+test	Build and validate representative models	2026-10-04T09:30:10.6565075Z [09:30:10] PLAN Nova: nova — exact canonical base
+test	Build and validate representative models	2026-10-04T09:30:10.6565893Z [09:30:10] PLAN Sgt. Hammer: sgthammer — exact canonical base
+test	Build and validate representative models	2026-10-04T09:30:10.6566993Z [09:30:10] PLAN The Lost Vikings: lostvikings_composite — explicit multi-model composite
+test	Build and validate representative models	2026-10-04T09:30:10.6568024Z [09:30:10] PLAN Tychus: tychus — exact canonical base
+test	Build and validate representative models	2026-10-04T09:30:10.6570467Z [09:30:10] Importing M3: /home/runner/work/_temp/H2/storm_hero_abathur_base/storm_hero_abathur_base.m3
+test	Build and validate representative models	2026-10-04T09:30:10.6573922Z 2026-10-04 09:30:10,657,657 DEBUG  base.py:152 Import /home/runner/work/_temp/H2/storm_hero_abathur_base/storm_hero_abathur_base.m3
+test	Build and validate representative models	2026-10-04T09:30:28.3296800Z Info: Removed 0 vertice(s)
+test	Build and validate representative models	2026-10-04T09:30:28.3298232Z Info: Removed 0 vertice(s)
+test	Build and validate representative models	2026-10-04T09:30:28.3298582Z Info: Removed 184 vertice(s)
+test	Build and validate representative models	2026-10-04T09:30:28.3298917Z Info: Removed 232 vertice(s)
+test	Build and validate representative models	2026-10-04T09:30:28.3299274Z Info: Removed: 0 vertices, 0 edges, 0 faces
+test	Build and validate representative models	2026-10-04T09:30:28.3299665Z Info: Removed 0 vertice(s)
+test	Build and validate representative models	2026-10-04T09:30:28.3300002Z Info: Removed: 0 vertices, 0 edges, 0 faces
+test	Build and validate representative models	2026-10-04T09:30:28.3300376Z Info: Removed 1 vertice(s)
+test	Build and validate representative models	2026-10-04T09:30:28.3300889Z Info: Removed: 0 vertices, 0 edges, 0 faces
+test	Build and validate representative models	2026-10-04T09:30:28.3301464Z Info: Removed 187 vertice(s)
+test	Build and validate representative models	2026-10-04T09:30:28.3301983Z Info: Removed: 0 vertices, 0 edges, 0 faces
+test	Build and validate representative models	2026-10-04T09:30:28.3302569Z Info: Removed 17 vertice(s)
+test	Build and validate representative models	2026-10-04T09:30:28.3303354Z Info: Removed: 0 vertices, 0 edges, 0 faces
+test	Build and validate representative models	2026-10-04T09:30:28.3303880Z [09:30:28] Strict edge test failed; retrying clean voxel union at 0.620 mm
+test	Build and validate representative models	2026-10-04T09:30:40.8478317Z [09:30:40] SUCCESS source abathur: 450000 print-ready triangles
+test	Build and validate representative models	2026-10-04T09:30:40.8509773Z [09:30:40] Importing M3: /home/runner/work/_temp/H2/storm_hero_brightwing_base/storm_hero_brightwing_base.m3
+test	Build and validate representative models	2026-10-04T09:30:40.8524106Z 2026-10-04 09:30:40,851,851 DEBUG  base.py:152 Import /home/runner/work/_temp/H2/storm_hero_brightwing_base/storm_hero_brightwing_base.m3
+test	Build and validate representative models	2026-10-04T09:30:47.0299212Z Info: Removed 7 vertice(s)
+test	Build and validate representative models	2026-10-04T09:30:47.0299567Z Info: Removed 1 vertice(s)
+test	Build and validate representative models	2026-10-04T09:30:47.0299811Z Info: Removed 32 vertice(s)
+test	Build and validate representative models	2026-10-04T09:30:47.0300070Z Info: Removed: 0 vertices, 0 edges, 0 faces
+test	Build and validate representative models	2026-10-04T09:30:47.0300356Z Info: Removed 2 vertice(s)
+test	Build and validate representative models	2026-10-04T09:30:47.0300599Z Info: Removed: 0 vertices, 0 edges, 0 faces
+test	Build and validate representative models	2026-10-04T09:30:47.0301010Z Info: Removed 0 vertice(s)
+test	Build and validate representative models	2026-10-04T09:30:47.0301406Z Info: Removed: 0 vertices, 0 edges, 0 faces
+test	Build and validate representative models	2026-10-04T09:30:47.0301850Z Info: Removed 2 vertice(s)
+test	Build and validate representative models	2026-10-04T09:30:47.0302240Z Info: Removed: 0 vertices, 0 edges, 0 faces
+test	Build and validate representative models	2026-10-04T09:30:47.0303025Z [09:30:47] Strict edge test failed; retrying clean voxel union at 0.620 mm
+test	Build and validate representative models	2026-10-04T09:30:51.3406187Z [09:30:51] SUCCESS source brightwing: 261204 print-ready triangles
+test	Build and validate representative models	2026-10-04T09:30:51.3447603Z [09:30:51] Importing M3: /home/runner/work/_temp/H2/storm_hero_dva_base/storm_hero_dva_base.m3
+test	Build and validate representative models	2026-10-04T09:30:51.3451087Z 2026-10-04 09:30:51,344,344 DEBUG  base.py:152 Import /home/runner/work/_temp/H2/storm_hero_dva_base/storm_hero_dva_base.m3
+test	Build and validate representative models	2026-10-04T09:30:51.8809397Z Info: Removed 88 vertice(s)
+test	Build and validate representative models	2026-10-04T09:30:51.8809764Z Info: Removed 209 vertice(s)
+test	Build and validate representative models	2026-10-04T09:30:51.8810031Z Info: Removed 254 vertice(s)
+test	Build and validate representative models	2026-10-04T09:30:51.8810523Z [09:30:51] Importing M3: /home/runner/work/_temp/H2/storm_hero_dvamech_base/storm_hero_dvamech_base.m3
+test	Build and validate representative models	2026-10-04T09:30:51.8843866Z 2026-10-04 09:30:51,881,881 DEBUG  base.py:152 Import /home/runner/work/_temp/H2/storm_hero_dvamech_base/storm_hero_dvamech_base.m3
+test	Build and validate representative models	2026-10-04T09:31:04.7839507Z Info: Removed 160 vertice(s)
+test	Build and validate representative models	2026-10-04T09:31:04.7840025Z Info: Removed 0 vertice(s)
+test	Build and validate representative models	2026-10-04T09:31:04.7840547Z Info: Removed 2808 vertice(s)
+test	Build and validate representative models	2026-10-04T09:31:04.7840943Z Info: Removed 3497 vertice(s)
+test	Build and validate representative models	2026-10-04T09:31:04.7841419Z Info: Removed: 0 vertices, 0 edges, 0 faces
+test	Build and validate representative models	2026-10-04T09:31:04.7853084Z Info: Removed 88 vertice(s)
+test	Build and validate representative models	2026-10-04T09:31:04.7853593Z Info: Removed: 0 vertices, 0 edges, 0 faces
+test	Build and validate representative models	2026-10-04T09:31:04.7854073Z Info: Removed 209 vertice(s)
+test	Build and validate representative models	2026-10-04T09:31:04.7854413Z Info: Removed: 0 vertices, 0 edges, 0 faces
+test	Build and validate representative models	2026-10-04T09:31:04.7854846Z Info: Removed 239 vertice(s)
+test	Build and validate representative models	2026-10-04T09:31:04.7855293Z Info: Removed: 0 vertices, 0 edges, 0 faces
+test	Build and validate representative models	2026-10-04T09:31:04.7855770Z Info: Removed 156 vertice(s)
+test	Build and validate representative models	2026-10-04T09:31:04.7856187Z Info: Removed: 0 vertices, 0 edges, 0 faces
+test	Build and validate representative models	2026-10-04T09:31:04.7856643Z Info: Removed 0 vertice(s)
+test	Build and validate representative models	2026-10-04T09:31:04.7857048Z Info: Removed: 0 vertices, 0 edges, 0 faces
+test	Build and validate representative models	2026-10-04T09:31:04.7857495Z Info: Removed 0 vertice(s)
+test	Build and validate representative models	2026-10-04T09:31:04.7857891Z Info: Removed: 0 vertices, 0 edges, 0 faces
+test	Build and validate representative models	2026-10-04T09:31:04.7858342Z Info: Removed 2806 vertice(s)
+test	Build and validate representative models	2026-10-04T09:31:04.7858755Z Info: Removed: 0 vertices, 0 edges, 0 faces
+test	Build and validate representative models	2026-10-04T09:31:04.7859211Z Info: Removed 2 vertice(s)
+test	Build and validate representative models	2026-10-04T09:31:04.7860037Z Info: Removed: 0 vertices, 0 edges, 0 faces
+test	Build and validate representative models	2026-10-04T09:31:04.7860410Z [09:31:04] Strict edge test failed; retrying clean voxel union at 0.620 mm
+test	Build and validate representative models	2026-10-04T09:31:11.2186516Z [09:31:11] SUCCESS source dva_composite: 375734 print-ready triangles
+test	Build and validate representative models	2026-10-04T09:31:11.2239792Z [09:31:11] Importing M3: /home/runner/work/_temp/H2/storm_hero_deathwing_base/storm_hero_deathwing_base.m3
+test	Build and validate representative models	2026-10-04T09:31:11.2254105Z 2026-10-04 09:31:11,224,224 DEBUG  base.py:152 Import /home/runner/work/_temp/H2/storm_hero_deathwing_base/storm_hero_deathwing_base.m3
+test	Build and validate representative models	2026-10-04T09:31:24.8088818Z Info: Removed 33 vertice(s)
+test	Build and validate representative models	2026-10-04T09:31:24.8089361Z Info: Removed 980 vertice(s)
+test	Build and validate representative models	2026-10-04T09:31:24.8089949Z Info: Removed 1131 vertice(s)
+test	Build and validate representative models	2026-10-04T09:31:24.8090359Z Info: Removed: 0 vertices, 0 edges, 0 faces
+test	Build and validate representative models	2026-10-04T09:31:24.8090811Z Info: Removed 37 vertice(s)
+test	Build and validate representative models	2026-10-04T09:31:24.8091211Z Info: Removed: 0 vertices, 0 edges, 0 faces
+test	Build and validate representative models	2026-10-04T09:31:24.8091688Z Info: Removed 985 vertice(s)
+test	Build and validate representative models	2026-10-04T09:31:24.8092142Z Info: Removed: 0 vertices, 0 edges, 0 faces
+test	Build and validate representative models	2026-10-04T09:31:24.8092843Z Info: Removed 33 vertice(s)
+test	Build and validate representative models	2026-10-04T09:31:24.8093316Z Info: Removed: 0 vertices, 0 edges, 0 faces
+test	Build and validate representative models	2026-10-04T09:31:24.8093919Z [09:31:24] Strict edge test failed; retrying clean voxel union at 0.620 mm
+test	Build and validate representative models	2026-10-04T09:31:31.7716872Z [09:31:31] SUCCESS source deathwing: 416273 print-ready triangles
+test	Build and validate representative models	2026-10-04T09:31:31.7747748Z [09:31:31] Importing M3: /home/runner/work/HOTS-03/HOTS-03/storm_hero_muradin_base/storm_hero_muradin_base.m3
+test	Build and validate representative models	2026-10-04T09:31:31.7751351Z 2026-10-04 09:31:31,774,774 DEBUG  base.py:152 Import /home/runner/work/HOTS-03/HOTS-03/storm_hero_muradin_base/storm_hero_muradin_base.m3
+test	Build and validate representative models	2026-10-04T09:31:41.7474387Z Info: Removed 96 vertice(s)
+test	Build and validate representative models	2026-10-04T09:31:41.7475171Z Info: Removed 96 vertice(s)
+test	Build and validate representative models	2026-10-04T09:31:41.7475590Z Info: Removed 0 vertice(s)
+test	Build and validate representative models	2026-10-04T09:31:41.7475976Z Info: Removed 283 vertice(s)
+test	Build and validate representative models	2026-10-04T09:31:41.7476414Z Info: Removed 0 vertice(s)
+test	Build and validate representative models	2026-10-04T09:31:41.7476813Z Info: Removed 258 vertice(s)
+test	Build and validate representative models	2026-10-04T09:31:41.7477377Z Info: Removed 196 vertice(s)
+test	Build and validate representative models	2026-10-04T09:31:41.7477913Z Info: Removed 213 vertice(s)
+test	Build and validate representative models	2026-10-04T09:31:41.7478332Z Info: Removed 454 vertice(s)
+test	Build and validate representative models	2026-10-04T09:31:41.7478715Z Info: Removed 1560 vertice(s)
+test	Build and validate representative models	2026-10-04T09:31:41.7479125Z Info: Removed: 0 vertices, 0 edges, 0 faces
+test	Build and validate representative models	2026-10-04T09:31:41.7479574Z Info: Removed 96 vertice(s)
+test	Build and validate representative models	2026-10-04T09:31:41.7479975Z Info: Removed: 0 vertices, 0 edges, 0 faces
+test	Build and validate representative models	2026-10-04T09:31:41.7480427Z Info: Removed 96 vertice(s)
+test	Build and validate representative models	2026-10-04T09:31:41.7480773Z Info: Removed: 0 vertices, 0 edges, 0 faces
+test	Build and validate representative models	2026-10-04T09:31:41.7481199Z Info: Removed 283 vertice(s)
+test	Build and validate representative models	2026-10-04T09:31:41.7481561Z Info: Removed: 0 vertices, 0 edges, 0 faces
+test	Build and validate representative models	2026-10-04T09:31:41.7481928Z Info: Removed 252 vertice(s)
+test	Build and validate representative models	2026-10-04T09:31:41.7482319Z Info: Removed: 0 vertices, 0 edges, 0 faces
+test	Build and validate representative models	2026-10-04T09:31:41.7483150Z Info: Removed 196 vertice(s)
+test	Build and validate representative models	2026-10-04T09:31:41.7483716Z Info: Removed: 0 vertices, 0 edges, 0 faces
+test	Build and validate representative models	2026-10-04T09:31:41.7484325Z Info: Removed 197 vertice(s)
+test	Build and validate representative models	2026-10-04T09:31:41.7484859Z Info: Removed: 0 vertices, 0 edges, 0 faces
+test	Build and validate representative models	2026-10-04T09:31:41.7485443Z Info: Removed 430 vertice(s)
+test	Build and validate representative models	2026-10-04T09:31:41.7485887Z Info: Removed: 0 vertices, 0 edges, 0 faces
+test	Build and validate representative models	2026-10-04T09:31:41.7486349Z Info: Removed 2 vertice(s)
+test	Build and validate representative models	2026-10-04T09:31:41.7486751Z Info: Removed: 0 vertices, 0 edges, 0 faces
+test	Build and validate representative models	2026-10-04T09:31:41.7487358Z [09:31:41] Strict edge test failed; retrying clean voxel union at 0.620 mm
+test	Build and validate representative models	2026-10-04T09:31:47.7021549Z [09:31:47] SUCCESS source muradin: 339643 print-ready triangles
+test	Build and validate representative models	2026-10-04T09:31:47.7099568Z [09:31:47] Importing M3: /home/runner/work/HOTS-03/HOTS-03/storm_hero_nova_base/storm_hero_nova_base_v05.m3
+test	Build and validate representative models	2026-10-04T09:31:47.7114190Z 2026-10-04 09:31:47,710,710 DEBUG  base.py:152 Import /home/runner/work/HOTS-03/HOTS-03/storm_hero_nova_base/storm_hero_nova_base_v05.m3
+test	Build and validate representative models	2026-10-04T09:31:52.5661263Z Info: Removed 688 vertice(s)
+test	Build and validate representative models	2026-10-04T09:31:52.5661685Z Info: Removed 540 vertice(s)
+test	Build and validate representative models	2026-10-04T09:31:52.5662002Z Info: Removed 1161 vertice(s)
+test	Build and validate representative models	2026-10-04T09:31:52.5663477Z Info: Removed: 0 vertices, 0 edges, 0 faces
+test	Build and validate representative models	2026-10-04T09:31:52.5663841Z Info: Removed 688 vertice(s)
+test	Build and validate representative models	2026-10-04T09:31:52.5664156Z Info: Removed: 0 vertices, 0 edges, 0 faces
+test	Build and validate representative models	2026-10-04T09:31:52.5664771Z Info: Removed 454 vertice(s)
+test	Build and validate representative models	2026-10-04T09:31:52.5665285Z Info: Removed: 0 vertices, 0 edges, 0 faces
+test	Build and validate representative models	2026-10-04T09:31:52.5665840Z Info: Removed 10 vertice(s)
+test	Build and validate representative models	2026-10-04T09:31:52.5666337Z Info: Removed: 0 vertices, 0 edges, 0 faces
+test	Build and validate representative models	2026-10-04T09:31:52.5666884Z [09:31:52] Strict edge test failed; retrying clean voxel union at 0.620 mm
+test	Build and validate representative models	2026-10-04T09:31:55.6222314Z [09:31:55] SUCCESS source nova: 186927 print-ready triangles
+test	Build and validate representative models	2026-10-04T09:31:55.6263015Z [09:31:55] Importing M3: /home/runner/work/HOTS-03/HOTS-03/storm_hero_sgthammer_base/storm_hero_sgthammer_base_v07.m3
+test	Build and validate representative models	2026-10-04T09:31:55.6273898Z 2026-10-04 09:31:55,626,626 DEBUG  base.py:152 Import /home/runner/work/HOTS-03/HOTS-03/storm_hero_sgthammer_base/storm_hero_sgthammer_base_v07.m3
+test	Build and validate representative models	2026-10-04T09:32:42.8451913Z Info: Removed 0 vertice(s)
+test	Build and validate representative models	2026-10-04T09:32:42.8452465Z Info: Removed 0 vertice(s)
+test	Build and validate representative models	2026-10-04T09:32:42.8453131Z Info: Removed 165 vertice(s)
+test	Build and validate representative models	2026-10-04T09:32:42.8453520Z Info: Removed 15 vertice(s)
+test	Build and validate representative models	2026-10-04T09:32:42.8453917Z Info: Removed 395 vertice(s)
+test	Build and validate representative models	2026-10-04T09:32:42.8454352Z Info: Removed: 0 vertices, 0 edges, 0 faces
+test	Build and validate representative models	2026-10-04T09:32:42.8454825Z Info: Removed 0 vertice(s)
+test	Build and validate representative models	2026-10-04T09:32:42.8455227Z Info: Removed: 0 vertices, 0 edges, 0 faces
+test	Build and validate representative models	2026-10-04T09:32:42.8455683Z Info: Removed 0 vertice(s)
+test	Build and validate representative models	2026-10-04T09:32:42.8456078Z Info: Removed: 0 vertices, 0 edges, 0 faces
+test	Build and validate representative models	2026-10-04T09:32:42.8456521Z Info: Removed 149 vertice(s)
+test	Build and validate representative models	2026-10-04T09:32:42.8456957Z Info: Removed: 0 vertices, 0 edges, 0 faces
+test	Build and validate representative models	2026-10-04T09:32:42.8457404Z Info: Removed 0 vertice(s)
+test	Build and validate representative models	2026-10-04T09:32:42.8457807Z Info: Removed: 0 vertices, 0 edges, 0 faces
+test	Build and validate representative models	2026-10-04T09:32:42.8458262Z Info: Removed 0 vertice(s)
+test	Build and validate representative models	2026-10-04T09:32:42.8458664Z Info: Removed: 0 vertices, 0 edges, 0 faces
+test	Build and validate representative models	2026-10-04T09:32:42.8459263Z [09:32:42] Strict edge test failed; retrying clean voxel union at 0.620 mm
+test	Build and validate representative models	2026-10-04T09:33:17.0942950Z [09:33:17] SUCCESS source sgthammer: 449999 print-ready triangles
+test	Build and validate representative models	2026-10-04T09:33:17.1003490Z [09:33:17] Importing M3: /home/runner/work/HOTS-03/HOTS-03/storm_hero_lostbaleog_base/storm_hero_lostbaleog_base.m3
+test	Build and validate representative models	2026-10-04T09:33:17.1008569Z 2026-10-04 09:33:17,100,100 DEBUG  base.py:152 Import /home/runner/work/HOTS-03/HOTS-03/storm_hero_lostbaleog_base/storm_hero_lostbaleog_base.m3
+test	Build and validate representative models	2026-10-04T09:33:17.5284333Z Info: Removed 0 vertice(s)
+test	Build and validate representative models	2026-10-04T09:33:17.5286165Z Info: Removed 0 vertice(s)
+test	Build and validate representative models	2026-10-04T09:33:17.5286622Z Info: Removed 38 vertice(s)
+test	Build and validate representative models	2026-10-04T09:33:17.5287401Z [09:33:17] Importing M3: /home/runner/work/HOTS-03/HOTS-03/storm_hero_losterik_base/storm_hero_losterik_base.m3
+test	Build and validate representative models	2026-10-04T09:33:17.5323964Z 2026-10-04 09:33:17,528,528 DEBUG  base.py:152 Import /home/runner/work/HOTS-03/HOTS-03/storm_hero_losterik_base/storm_hero_losterik_base.m3
+test	Build and validate representative models	2026-10-04T09:33:17.9440225Z Info: Removed 7 vertice(s)
+test	Build and validate representative models	2026-10-04T09:33:17.9440619Z Info: Removed 27 vertice(s)
+test	Build and validate representative models	2026-10-04T09:33:17.9441158Z [09:33:17] Importing M3: /home/runner/work/HOTS-03/HOTS-03/storm_hero_lostolaf_base/storm_hero_lostolaf_base.m3
+test	Build and validate representative models	2026-10-04T09:33:17.9448185Z 2026-10-04 09:33:17,944,944 DEBUG  base.py:152 Import /home/runner/work/HOTS-03/HOTS-03/storm_hero_lostolaf_base/storm_hero_lostolaf_base.m3
+test	Build and validate representative models	2026-10-04T09:33:35.2586502Z Info: Removed 0 vertice(s)
+test	Build and validate representative models	2026-10-04T09:33:35.2587084Z Info: Removed 0 vertice(s)
+test	Build and validate representative models	2026-10-04T09:33:35.2587545Z Info: Removed 106 vertice(s)
+test	Build and validate representative models	2026-10-04T09:33:35.2588045Z Info: Removed 143 vertice(s)
+test	Build and validate representative models	2026-10-04T09:33:35.2588599Z Info: Removed: 0 vertices, 0 edges, 0 faces
+test	Build and validate representative models	2026-10-04T09:33:35.2589219Z Info: Removed 0 vertice(s)
+test	Build and validate representative models	2026-10-04T09:33:35.2589742Z Info: Removed: 0 vertices, 0 edges, 0 faces
+test	Build and validate representative models	2026-10-04T09:33:35.2590342Z Info: Removed 0 vertice(s)
+test	Build and validate representative models	2026-10-04T09:33:35.2590857Z Info: Removed: 0 vertices, 0 edges, 0 faces
+test	Build and validate representative models	2026-10-04T09:33:35.2591481Z Info: Removed 12 vertice(s)
+test	Build and validate representative models	2026-10-04T09:33:35.2592028Z Info: Removed: 0 vertices, 0 edges, 0 faces
+test	Build and validate representative models	2026-10-04T09:33:35.2593734Z Info: Removed 1 vertice(s)
+test	Build and validate representative models	2026-10-04T09:33:35.2594164Z Info: Removed: 0 vertices, 0 edges, 0 faces
+test	Build and validate representative models	2026-10-04T09:33:35.2594610Z Info: Removed 13 vertice(s)
+test	Build and validate representative models	2026-10-04T09:33:35.2594995Z Info: Removed: 0 vertices, 0 edges, 0 faces
+test	Build and validate representative models	2026-10-04T09:33:35.2595461Z Info: Removed 0 vertice(s)
+test	Build and validate representative models	2026-10-04T09:33:35.2595888Z Info: Removed: 0 vertices, 0 edges, 0 faces
+test	Build and validate representative models	2026-10-04T09:33:35.2596391Z Info: Removed 0 vertice(s)
+test	Build and validate representative models	2026-10-04T09:33:35.2596836Z Info: Removed: 0 vertices, 0 edges, 0 faces
+test	Build and validate representative models	2026-10-04T09:33:35.2597364Z Info: Removed 2 vertice(s)
+test	Build and validate representative models	2026-10-04T09:33:35.2597812Z Info: Removed: 0 vertices, 0 edges, 0 faces
+test	Build and validate representative models	2026-10-04T09:33:35.2598309Z Info: Removed 15 vertice(s)
+test	Build and validate representative models	2026-10-04T09:33:35.2598781Z Info: Removed: 0 vertices, 0 edges, 0 faces
+test	Build and validate representative models	2026-10-04T09:33:35.2599393Z [09:33:35] Strict edge test failed; retrying clean voxel union at 0.620 mm
+test	Build and validate representative models	2026-10-04T09:33:46.7449518Z [09:33:46] SUCCESS source lostvikings_composite: 449999 print-ready triangles
+test	Build and validate representative models	2026-10-04T09:33:46.7543525Z [09:33:46] Importing M3: /home/runner/work/HOTS-03/HOTS-03/storm_hero_tychus_base/storm_hero_tychus_base_v13.m3
+test	Build and validate representative models	2026-10-04T09:33:46.7548141Z 2026-10-04 09:33:46,754,754 DEBUG  base.py:152 Import /home/runner/work/HOTS-03/HOTS-03/storm_hero_tychus_base/storm_hero_tychus_base_v13.m3
+test	Build and validate representative models	2026-10-04T09:34:03.1399720Z Info: Removed 554 vertice(s)
+test	Build and validate representative models	2026-10-04T09:34:03.1400096Z Info: Removed 1348 vertice(s)
+test	Build and validate representative models	2026-10-04T09:34:03.1400515Z Info: Removed 1917 vertice(s)
+test	Build and validate representative models	2026-10-04T09:34:03.1400948Z Info: Removed: 0 vertices, 0 edges, 0 faces
+test	Build and validate representative models	2026-10-04T09:34:03.1401403Z Info: Removed 557 vertice(s)
+test	Build and validate representative models	2026-10-04T09:34:03.1401818Z Info: Removed: 0 vertices, 0 edges, 0 faces
+test	Build and validate representative models	2026-10-04T09:34:03.1402265Z Info: Removed 1291 vertice(s)
+test	Build and validate representative models	2026-10-04T09:34:03.1402877Z Info: Removed: 0 vertices, 0 edges, 0 faces
+test	Build and validate representative models	2026-10-04T09:34:03.1403315Z Info: Removed 10 vertice(s)
+test	Build and validate representative models	2026-10-04T09:34:03.1403743Z Info: Removed: 0 vertices, 0 edges, 0 faces
+test	Build and validate representative models	2026-10-04T09:34:03.1404352Z [09:34:03] Strict edge test failed; retrying clean voxel union at 0.620 mm
+test	Build and validate representative models	2026-10-04T09:34:14.7629632Z [09:34:14] SUCCESS source tychus: 449999 print-ready triangles
+test	Build and validate representative models	2026-10-04T09:34:15.0636297Z [09:34:15] Completed: 9 successful roster entries, 0 missing/failed
+test	Build and validate representative models	2026-10-04T09:34:15.0650917Z Blender 3.6.23 (hash e467db79ca8c built 2025-06-17 01:32:54)
+test	Build and validate representative models	2026-10-04T09:34:19.9923181Z Traceback (most recent call last):
+test	Build and validate representative models	2026-10-04T09:34:19.9923835Z   File "<stdin>", line 6, in <module>
+test	Build and validate representative models	2026-10-04T09:34:19.9924668Z   File "/home/runner/.local/lib/python3.10/site-packages/trimesh/caching.py", line 139, in get_cached
+test	Build and validate representative models	2026-10-04T09:34:19.9925523Z     value = function(*args, **kwargs)
+test	Build and validate representative models	2026-10-04T09:34:19.9926274Z   File "/home/runner/.local/lib/python3.10/site-packages/trimesh/base.py", line 1040, in body_count
+test	Build and validate representative models	2026-10-04T09:34:19.9927109Z     count, labels = graph.csgraph.connected_components(
+test	Build and validate representative models	2026-10-04T09:34:19.9927931Z   File "/home/runner/.local/lib/python3.10/site-packages/trimesh/exceptions.py", line 35, in __getattribute__
+test	Build and validate representative models	2026-10-04T09:34:19.9928675Z     raise exc_type(*exc_args)
+test	Build and validate representative models	2026-10-04T09:34:19.9929132Z ModuleNotFoundError: No module named 'scipy'
+test	Build and validate representative models	2026-10-04T09:34:20.0280052Z ##[error]Process completed with exit code 1.
