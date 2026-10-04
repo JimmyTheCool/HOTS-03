@@ -1,0 +1,158 @@
+name: Build HOTS STL v2 Smoke R2
+
+on:
+  workflow_dispatch:
+  push:
+    branches:
+      - chatgpt-stl-builder
+    paths:
+      - .github/workflows/build-hots-stl-v2-smoke-r2.yml
+
+permissions:
+  contents: write
+
+env:
+  BLENDER_VERSION: 3.6.23
+  M3ADDON_COMMIT: 58935005c4465a219a740f6b740253533eda773f
+
+jobs:
+  smoke:
+    runs-on: ubuntu-22.04
+    timeout-minutes: 180
+    steps:
+      - name: Check out HOTS-03 source and tools
+        uses: actions/checkout@v4
+        with:
+          ref: chatgpt-stl-builder
+          fetch-depth: 1
+
+      - name: Prepare repaired builder
+        shell: bash
+        run: |
+          set -euo pipefail
+          cp tools/hots_stl/runtime_extracted/build_hots_stls.py "$RUNNER_TEMP/build_hots_stls_v2.py"
+          python tools/hots_stl/runtime_patch_v2.py "$RUNNER_TEMP/build_hots_stls_v2.py"
+          python -m py_compile "$RUNNER_TEMP/build_hots_stls_v2.py"
+
+      - name: Install dependencies and source meshes
+        shell: bash
+        run: |
+          set -euo pipefail
+          sudo apt-get update -qq
+          sudo apt-get install -y --no-install-recommends ca-certificates curl git xz-utils p7zip-full libx11-6 libxi6 libxrender1 libxfixes3 libxkbcommon0 libsm6 libice6 libgl1 libegl1
+          git clone --depth 1 https://github.com/JimmyTheCool/HOTS-02.git "$RUNNER_TEMP/HOTS-02"
+          cd "$RUNNER_TEMP"
+          ARCHIVE="blender-${BLENDER_VERSION}-linux-x64.tar.xz"
+          curl --fail --location --retry 5 --retry-delay 5 "https://download.blender.org/release/Blender3.6/${ARCHIVE}" --output "$ARCHIVE"
+          tar -xf "$ARCHIVE"
+          git clone https://github.com/SC2Mapster/m3addon.git "$RUNNER_TEMP/m3addon-src"
+          git -C "$RUNNER_TEMP/m3addon-src" checkout "$M3ADDON_COMMIT"
+          ADDON_DIR="$HOME/.config/blender/3.6/scripts/addons"
+          mkdir -p "$ADDON_DIR"
+          ln -s "$RUNNER_TEMP/m3addon-src" "$ADDON_DIR/m3addon"
+
+      - name: Convert representative heroes
+        shell: bash
+        run: |
+          set -euo pipefail
+          OUTPUT="$RUNNER_TEMP/HOTS_STL_v2_Smoke_R2"
+          BLENDER="$RUNNER_TEMP/blender-${BLENDER_VERSION}-linux-x64/blender"
+          mkdir -p "$OUTPUT/00_Reports"
+          "$BLENDER" --background --factory-startup --python "$RUNNER_TEMP/build_hots_stls_v2.py" -- \
+            --source "$RUNNER_TEMP/HOTS-02" \
+            --source "$GITHUB_WORKSPACE" \
+            --output "$OUTPUT" \
+            --target-height-mm 110 \
+            --base-height-mm 4 \
+            --base-margin-mm 4 \
+            --voxel-mm 0.55 \
+            --thin-part-mm 0.72 \
+            --max-triangles 450000 \
+            --skip-animation \
+            --only "Abathur" \
+            --only "Brightwing" \
+            --only "Deathwing" \
+            --only "D.Va" \
+            --only "Muradin" \
+            --only "Nova" \
+            --only "Sgt. Hammer" \
+            --only "The Lost Vikings" \
+            --only "Tychus" \
+            2>&1 | tee "$OUTPUT/00_Reports/blender_build.log"
+
+      - name: Validate printable STL geometry
+        shell: bash
+        run: |
+          set -euo pipefail
+          python -m pip install --disable-pip-version-check --quiet trimesh==4.8.3 numpy==2.2.6
+          OUTPUT="$RUNNER_TEMP/HOTS_STL_v2_Smoke_R2"
+          python - "$OUTPUT" <<'PY'
+          from pathlib import Path
+          import csv, json, sys
+          import numpy as np
+          import trimesh
+          root = Path(sys.argv[1]); folder = root / "02_Print_Ready_Watertight"
+          rows, failures = [], []
+          for path in sorted(folder.glob("*.stl")):
+              mesh = trimesh.load_mesh(path, force="mesh", process=False)
+              row = {
+                  "file": path.name, "bytes": path.stat().st_size,
+                  "vertices": int(len(mesh.vertices)), "faces": int(len(mesh.faces)),
+                  "watertight": bool(mesh.is_watertight),
+                  "winding_consistent": bool(mesh.is_winding_consistent),
+                  "finite": bool(np.isfinite(mesh.vertices).all()),
+                  "volume": float(abs(mesh.volume)),
+                  "dimensions_mm": [float(x) for x in mesh.extents],
+                  "body_count": int(mesh.body_count),
+              }
+              rows.append(row)
+              if not (row["watertight"] and row["winding_consistent"] and row["finite"] and row["volume"] > 1.0 and 100 <= row["faces"] <= 500000):
+                  failures.append(row)
+          report = {"expected": 9, "found": len(rows), "failures": failures, "files": rows}
+          reports = root / "00_Reports"
+          (reports / "trimesh_validation.json").write_text(json.dumps(report, indent=2), encoding="utf-8")
+          with (reports / "trimesh_validation.csv").open("w", newline="", encoding="utf-8-sig") as f:
+              writer = csv.DictWriter(f, fieldnames=list(rows[0].keys()) if rows else ["file"]); writer.writeheader(); writer.writerows(rows)
+          print(json.dumps(report, indent=2))
+          if len(rows) != 9 or failures: raise SystemExit(1)
+          PY
+
+      - name: Package and upload smoke archive
+        shell: bash
+        run: |
+          set -euo pipefail
+          OUTPUT="$RUNNER_TEMP/HOTS_STL_v2_Smoke_R2"
+          rm -rf "$OUTPUT/01_Detail_Preserving" "$OUTPUT/.build_cache"
+          cd "$RUNNER_TEMP"
+          7z a -tzip -mx=7 "$GITHUB_WORKSPACE/HOTS_STL_v2_SMOKE_R2.zip" "$(basename "$OUTPUT")"
+          sha256sum "$GITHUB_WORKSPACE/HOTS_STL_v2_SMOKE_R2.zip" > "$GITHUB_WORKSPACE/HOTS_STL_v2_SMOKE_R2.zip.sha256"
+
+      - name: Upload smoke artifact
+        uses: actions/upload-artifact@v4
+        with:
+          name: HOTS_STL_v2_SMOKE_R2
+          path: |
+            HOTS_STL_v2_SMOKE_R2.zip
+            HOTS_STL_v2_SMOKE_R2.zip.sha256
+          retention-days: 30
+          compression-level: 0
+
+      - name: Publish smoke diagnostics
+        if: always()
+        shell: bash
+        run: |
+          set -euo pipefail
+          SRC="$RUNNER_TEMP/HOTS_STL_v2_Smoke_R2/00_Reports"
+          DST="$GITHUB_WORKSPACE/build_reports/v2_smoke_r2"
+          mkdir -p "$DST"
+          for name in manifest.json manifest.csv blender_build.log trimesh_validation.json trimesh_validation.csv; do
+            [[ -f "$SRC/$name" ]] && cp "$SRC/$name" "$DST/$name"
+          done
+          printf '%s\n' "$GITHUB_RUN_ID" > "$DST/workflow_run_id.txt"
+          git config user.name "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git add build_reports/v2_smoke_r2
+          if ! git diff --cached --quiet; then
+            git commit -m "Add v2 smoke R2 diagnostics [skip ci]"
+            git push origin HEAD:chatgpt-stl-builder
+          fi
