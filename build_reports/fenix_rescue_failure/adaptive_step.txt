@@ -1,0 +1,23 @@
+﻿2026-10-04T11:39:47.5616470Z ##[group]Run set -euo pipefail
+2026-10-04T11:39:47.5616815Z ^[[36;1mset -euo pipefail^[[0m
+2026-10-04T11:39:47.5617064Z ^[[36;1mOUT="$RUNNER_TEMP/fixed"^[[0m
+2026-10-04T11:39:47.5617358Z ^[[36;1mmkdir -p "$OUT/STL" "$OUT/Reports/Fenix"^[[0m
+2026-10-04T11:39:47.5617691Z ^[[36;1mpython ci/repair_one_adaptive.py \^[[0m
+2026-10-04T11:39:47.5618070Z ^[[36;1m  --input-file "$RUNNER_TEMP/source/Fenix.stl" \^[[0m
+2026-10-04T11:39:47.5618420Z ^[[36;1m  --output "$OUT/STL" \^[[0m
+2026-10-04T11:39:47.5618706Z ^[[36;1m  --report-dir "$OUT/Reports/Fenix" \^[[0m
+2026-10-04T11:39:47.5619080Z ^[[36;1m  --normal-script "$RUNNER_TEMP/repair_normal.py" \^[[0m
+2026-10-04T11:39:47.5619465Z ^[[36;1m  --voxel-script "$RUNNER_TEMP/repair_voxel.py" \^[[0m
+2026-10-04T11:39:47.5620035Z ^[[36;1m  --validator ci/validate_stl_collection.py \^[[0m
+2026-10-04T11:39:47.5620390Z ^[[36;1m  --silhouette ci/compare_stl_silhouette.py \^[[0m
+2026-10-04T11:39:47.5620698Z ^[[36;1m  --max-triangles 500000 \^[[0m
+2026-10-04T11:39:47.5620963Z ^[[36;1m  --target-triangles 440000 \^[[0m
+2026-10-04T11:39:47.5621292Z ^[[36;1m  --minimum-dimension-retention 0.90 \^[[0m
+2026-10-04T11:39:47.5621614Z ^[[36;1m  --maximum-dimension-retention 1.10^[[0m
+2026-10-04T11:39:47.5692885Z shell: /usr/bin/bash --noprofile --norc -e -o pipefail {0}
+2026-10-04T11:39:47.5693251Z env:
+2026-10-04T11:39:47.5693449Z   RAW_BUILD_RUN_ID: 37193141976
+2026-10-04T11:39:47.5693919Z ##[endgroup]
+2026-10-04T11:39:48.6938705Z 
+2026-10-04T11:39:48.6939488Z === Fenix.stl: candidate normal_0.62 ===
+2026-10-04T11:41:19.1513691Z ##[error]Process completed with exit code 143.
