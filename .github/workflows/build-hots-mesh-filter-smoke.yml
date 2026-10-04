@@ -1,0 +1,116 @@
+name: Build HOTS Mesh Filter Smoke
+on:
+  workflow_dispatch:
+  push:
+    branches: [chatgpt-stl-builder]
+    paths: [.github/workflows/build-hots-mesh-filter-smoke.yml]
+permissions:
+  contents: read
+env:
+  BV: 3.6.23
+  M3: 58935005c4465a219a740f6b740253533eda773f
+jobs:
+  test:
+    runs-on: ubuntu-22.04
+    timeout-minutes: 180
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          ref: chatgpt-stl-builder
+          fetch-depth: 1
+      - name: Build filter-sensitive heroes
+        shell: bash
+        run: |
+          set -euo pipefail
+          cp tools/hots_stl/runtime_extracted/build_hots_stls.py "$RUNNER_TEMP/b.py"
+          python tools/hots_stl/runtime_patch_v2.py "$RUNNER_TEMP/b.py"
+          python ci/patch_builder_external_validation.py "$RUNNER_TEMP/b.py"
+          python ci/patch_builder_add_xalatath.py "$RUNNER_TEMP/b.py"
+          python ci/patch_builder_mesh_filter.py "$RUNNER_TEMP/b.py"
+          python -m py_compile "$RUNNER_TEMP/b.py"
+          sudo apt-get update -qq
+          sudo apt-get install -y --no-install-recommends ca-certificates curl git xz-utils libx11-6 libxi6 libxrender1 libxfixes3 libxkbcommon0 libsm6 libice6 libgl1 libegl1
+          git clone --depth 1 https://github.com/JimmyTheCool/HOTS-02.git "$RUNNER_TEMP/H2"
+          cd "$RUNNER_TEMP"
+          curl -fL --retry 5 --retry-delay 5 "https://download.blender.org/release/Blender3.6/blender-${BV}-linux-x64.tar.xz" -o b.tar.xz
+          tar -xf b.tar.xz
+          git clone -q https://github.com/SC2Mapster/m3addon.git m3
+          git -C m3 checkout -q "$M3"
+          mkdir -p "$HOME/.config/blender/3.6/scripts/addons"
+          ln -s "$RUNNER_TEMP/m3" "$HOME/.config/blender/3.6/scripts/addons/m3addon"
+          O="$RUNNER_TEMP/out"
+          mkdir -p "$O/00_Reports"
+          "$RUNNER_TEMP/blender-${BV}-linux-x64/blender" --background --factory-startup --python "$RUNNER_TEMP/b.py" -- \
+            --source "$RUNNER_TEMP/H2" \
+            --source "$GITHUB_WORKSPACE" \
+            --output "$O" \
+            --target-height-mm 110 \
+            --base-height-mm 4 \
+            --base-margin-mm 4 \
+            --voxel-mm 0.55 \
+            --thin-part-mm 0.72 \
+            --max-triangles 450000 \
+            --skip-animation \
+            --only "Auriel" \
+            --only "Li Li" \
+            --only "Maiev" \
+            --only "Uther" \
+            --only "Valeera" \
+            --only "Xal'atath" \
+            2>&1 | tee "$O/00_Reports/build.log"
+      - name: Validate connected solids
+        shell: bash
+        run: |
+          set -euo pipefail
+          python -m pip install --disable-pip-version-check --quiet trimesh==4.8.3 numpy==2.2.6 scipy==1.15.3
+          O="$RUNNER_TEMP/out"
+          python - "$O" <<'PY'
+          from pathlib import Path
+          import json, sys
+          import numpy as np
+          import trimesh
+          root = Path(sys.argv[1])
+          rows, failures = [], []
+          for path in sorted((root / "02_Print_Ready_Watertight").glob("*.stl")):
+              mesh = trimesh.load_mesh(path, force="mesh", process=True, validate=True)
+              mesh.merge_vertices()
+              extents = [float(v) for v in mesh.extents]
+              row = {
+                  "file": path.name,
+                  "triangles": int(len(mesh.faces)),
+                  "watertight": bool(mesh.is_watertight),
+                  "winding_consistent": bool(mesh.is_winding_consistent),
+                  "volume_mm3": float(abs(mesh.volume)),
+                  "connected_bodies": int(mesh.body_count),
+                  "dimensions_mm": extents,
+                  "finite": bool(np.isfinite(mesh.vertices).all()),
+              }
+              rows.append(row)
+              if not (
+                  row["watertight"] and row["winding_consistent"] and row["finite"]
+                  and row["volume_mm3"] > 1.0 and row["connected_bodies"] == 1
+                  and 100 <= row["triangles"] <= 500000 and min(extents) >= 2.0
+              ):
+                  failures.append(row)
+          report = {"expected": 6, "found": len(rows), "passed": len(rows) == 6 and not failures, "failed": failures, "files": rows}
+          reports = root / "00_Reports"
+          (reports / "external_validation.json").write_text(json.dumps(report, indent=2), encoding="utf-8")
+          print(json.dumps(report, indent=2))
+          if not report["passed"]:
+              raise SystemExit(1)
+          PY
+      - name: Stage diagnostics
+        if: always()
+        shell: bash
+        run: |
+          mkdir -p "$GITHUB_WORKSPACE/filter_smoke"
+          O="$RUNNER_TEMP/out/00_Reports"
+          for f in build.log manifest.json manifest.csv external_validation.json; do
+            [[ -f "$O/$f" ]] && cp "$O/$f" "$GITHUB_WORKSPACE/filter_smoke/$f"
+          done
+      - uses: actions/upload-artifact@v4
+        if: always()
+        with:
+          name: HOTS-mesh-filter-smoke
+          path: filter_smoke
+          retention-days: 30
