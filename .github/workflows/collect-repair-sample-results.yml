@@ -1,0 +1,42 @@
+name: Collect Repair Sample Results
+on:
+  workflow_dispatch:
+  push:
+    branches: [chatgpt-stl-builder]
+    paths: [.github/workflows/collect-repair-sample-results.yml]
+permissions:
+  actions: read
+  contents: write
+jobs:
+  collect:
+    runs-on: ubuntu-22.04
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          ref: chatgpt-stl-builder
+          fetch-depth: 0
+      - name: Download and commit sample reports
+        env:
+          GH_TOKEN: ${{ github.token }}
+        shell: bash
+        run: |
+          set -euo pipefail
+          D="$RUNNER_TEMP/sample"
+          mkdir -p "$D"
+          gh run download 37193595959 \
+            --repo "$GITHUB_REPOSITORY" \
+            --name HOTS-repair-sample \
+            --dir "$D"
+          DEST=build_reports/repair_sample
+          mkdir -p "$DEST"
+          find "$D" -type f -name '*.json' -exec cp {} "$DEST/" \;
+          find "$D" -type f -name '*.csv' -exec cp {} "$DEST/" \;
+          git config user.name "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git add "$DEST"
+          if git diff --cached --quiet; then
+            exit 0
+          fi
+          git commit -m "Add successful STL repair sample report [skip ci]"
+          git pull --rebase origin chatgpt-stl-builder
+          git push origin HEAD:chatgpt-stl-builder
