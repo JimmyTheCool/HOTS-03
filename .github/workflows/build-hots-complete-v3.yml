@@ -1,0 +1,504 @@
+name: Build HOTS Complete STL v3
+
+on:
+  workflow_dispatch:
+  push:
+    branches:
+      - chatgpt-stl-builder
+    paths:
+      - .github/workflows/build-hots-complete-v3.yml
+
+permissions:
+  contents: write
+
+env:
+  BLENDER_VERSION: 3.6.23
+  M3ADDON_COMMIT: 58935005c4465a219a740f6b740253533eda773f
+
+jobs:
+  build_chunks:
+    runs-on: ubuntu-22.04
+    timeout-minutes: 300
+    strategy:
+      fail-fast: false
+      max-parallel: 6
+      matrix:
+        include:
+          - chunk: 1
+            expected: 15
+            heroes: "Abathur|Alarak|Alexstrasza|Ana|Anduin|Anub'arak|Artanis|Arthas|Auriel|Azmodan|Blaze|Brightwing|The Butcher|Cassia|Chen"
+          - chunk: 2
+            expected: 15
+            heroes: "Cho|Chromie|D.Va|Deathwing|Deckard|Dehaka|Diablo|E.T.C.|Falstad|Fenix|Gall|Garrosh|Gazlowe|Genji|Greymane"
+          - chunk: 3
+            expected: 15
+            heroes: "Gul'dan|Hanzo|Hogger|Illidan|Imperius|Jaina|Johanna|Junkrat|Kael'thas|Kel'Thuzad|Kerrigan|Kharazim|Leoric|Li Li|Li-Ming"
+          - chunk: 4
+            expected: 15
+            heroes: "Lt. Morales|Lucio|Lunara|Maiev|Mal'Ganis|Malfurion|Malthael|Medivh|Mei|Mephisto|Muradin|Murky|Nazeebo|Nova|Orphea"
+          - chunk: 5
+            expected: 15
+            heroes: "Probius|Qhira|Ragnaros|Raynor|Rehgar|Rexxar|Samuro|Sgt. Hammer|Sonya|Stitches|Stukov|Sylvanas|Tassadar|The Lost Vikings|Thrall"
+          - chunk: 6
+            expected: 16
+            heroes: "Tracer|Tychus|Tyrael|Tyrande|Uther|Valeera|Valla|Varian|Whitemane|Xal'atath|Xul|Yrel|Zagara|Zarya|Zeratul|Zul'jin"
+
+    steps:
+      - name: Check out HOTS-03 and repair tools
+        uses: actions/checkout@v4
+        with:
+          ref: chatgpt-stl-builder
+          fetch-depth: 1
+
+      - name: Prepare repaired builder
+        shell: bash
+        run: |
+          set -euo pipefail
+          cp tools/hots_stl/runtime_extracted/build_hots_stls.py "$RUNNER_TEMP/build_hots_stls_v3.py"
+          python tools/hots_stl/runtime_patch_v2.py "$RUNNER_TEMP/build_hots_stls_v3.py"
+          python ci/patch_builder_external_validation.py "$RUNNER_TEMP/build_hots_stls_v3.py"
+          python ci/patch_builder_add_xalatath.py "$RUNNER_TEMP/build_hots_stls_v3.py"
+          python ci/patch_builder_mesh_filter.py "$RUNNER_TEMP/build_hots_stls_v3.py"
+          python -m py_compile "$RUNNER_TEMP/build_hots_stls_v3.py"
+
+      - name: Install Blender runtime dependencies
+        shell: bash
+        run: |
+          set -euo pipefail
+          sudo apt-get update -qq
+          sudo apt-get install -y --no-install-recommends \
+            ca-certificates curl git xz-utils \
+            libx11-6 libxi6 libxrender1 libxfixes3 libxkbcommon0 \
+            libsm6 libice6 libgl1 libegl1
+
+      - name: Check out HOTS-02 source meshes
+        shell: bash
+        run: |
+          set -euo pipefail
+          git clone --depth 1 https://github.com/JimmyTheCool/HOTS-02.git "$RUNNER_TEMP/HOTS-02"
+
+      - name: Install Blender 3.6 LTS
+        shell: bash
+        run: |
+          set -euo pipefail
+          cd "$RUNNER_TEMP"
+          ARCHIVE="blender-${BLENDER_VERSION}-linux-x64.tar.xz"
+          curl --fail --location --retry 5 --retry-delay 5 \
+            "https://download.blender.org/release/Blender3.6/${ARCHIVE}" \
+            --output "$ARCHIVE"
+          tar -xf "$ARCHIVE"
+          test -x "$RUNNER_TEMP/blender-${BLENDER_VERSION}-linux-x64/blender"
+
+      - name: Install pinned M3 importer
+        shell: bash
+        run: |
+          set -euo pipefail
+          git clone --quiet https://github.com/SC2Mapster/m3addon.git "$RUNNER_TEMP/m3addon"
+          git -C "$RUNNER_TEMP/m3addon" checkout --quiet "$M3ADDON_COMMIT"
+          ADDON_DIR="$HOME/.config/blender/3.6/scripts/addons"
+          mkdir -p "$ADDON_DIR"
+          ln -s "$RUNNER_TEMP/m3addon" "$ADDON_DIR/m3addon"
+
+      - name: Convert and repair hero meshes
+        id: convert
+        continue-on-error: true
+        env:
+          HERO_LIST: ${{ matrix.heroes }}
+        shell: bash
+        run: |
+          set -uo pipefail
+          OUTPUT="$RUNNER_TEMP/HOTS_STL_chunk_${{ matrix.chunk }}"
+          mkdir -p "$OUTPUT/00_Reports"
+          IFS='|' read -r -a HERO_ARRAY <<< "$HERO_LIST"
+          ONLY_ARGS=()
+          for hero in "${HERO_ARRAY[@]}"; do
+            ONLY_ARGS+=(--only "$hero")
+          done
+          set +e
+          "$RUNNER_TEMP/blender-${BLENDER_VERSION}-linux-x64/blender" \
+            --background \
+            --factory-startup \
+            --python "$RUNNER_TEMP/build_hots_stls_v3.py" \
+            -- \
+            --source "$RUNNER_TEMP/HOTS-02" \
+            --source "$GITHUB_WORKSPACE" \
+            --output "$OUTPUT" \
+            --target-height-mm 110 \
+            --base-height-mm 4 \
+            --base-margin-mm 4 \
+            --voxel-mm 0.55 \
+            --thin-part-mm 0.72 \
+            --max-triangles 450000 \
+            --skip-animation \
+            "${ONLY_ARGS[@]}" \
+            2>&1 | tee "$OUTPUT/00_Reports/blender_build.log"
+          STATUS=${PIPESTATUS[0]}
+          printf '%s\n' "$STATUS" > "$OUTPUT/00_Reports/blender_exit_code.txt"
+          exit "$STATUS"
+
+      - name: Independently validate chunk geometry
+        id: validate
+        if: always()
+        continue-on-error: true
+        shell: bash
+        run: |
+          set -euo pipefail
+          python -m pip install --disable-pip-version-check --quiet \
+            trimesh==4.8.3 numpy==2.2.6 scipy==1.15.3
+          OUTPUT="$RUNNER_TEMP/HOTS_STL_chunk_${{ matrix.chunk }}"
+          python - "$OUTPUT" "${{ matrix.expected }}" "${{ matrix.chunk }}" <<'PY'
+          from pathlib import Path
+          import csv
+          import hashlib
+          import json
+          import sys
+
+          import numpy as np
+          import trimesh
+
+          root = Path(sys.argv[1])
+          expected = int(sys.argv[2])
+          chunk = int(sys.argv[3])
+          stl_folder = root / "02_Print_Ready_Watertight"
+          rows = []
+          failures = []
+
+          for path in sorted(stl_folder.glob("*.stl")):
+              try:
+                  mesh = trimesh.load_mesh(path, force="mesh", process=True, validate=True)
+                  mesh.merge_vertices()
+                  extents = [float(value) for value in mesh.extents]
+                  row = {
+                      "file": path.name,
+                      "bytes": path.stat().st_size,
+                      "sha256": hashlib.sha256(path.read_bytes()).hexdigest(),
+                      "vertices": int(len(mesh.vertices)),
+                      "triangles": int(len(mesh.faces)),
+                      "watertight": bool(mesh.is_watertight),
+                      "winding_consistent": bool(mesh.is_winding_consistent),
+                      "finite_coordinates": bool(np.isfinite(mesh.vertices).all()),
+                      "volume_mm3": float(abs(mesh.volume)),
+                      "x_mm": extents[0],
+                      "y_mm": extents[1],
+                      "z_mm": extents[2],
+                      "connected_bodies": int(mesh.body_count),
+                      "error": "",
+                  }
+                  passed = (
+                      row["watertight"]
+                      and row["winding_consistent"]
+                      and row["finite_coordinates"]
+                      and row["volume_mm3"] > 1.0
+                      and 100 <= row["triangles"] <= 500000
+                      and min(extents) >= 2.0
+                      and max(extents) <= 350.0
+                      and row["connected_bodies"] == 1
+                  )
+                  if not passed:
+                      failures.append(row)
+              except Exception as exc:
+                  row = {
+                      "file": path.name,
+                      "bytes": path.stat().st_size,
+                      "sha256": hashlib.sha256(path.read_bytes()).hexdigest(),
+                      "vertices": 0,
+                      "triangles": 0,
+                      "watertight": False,
+                      "winding_consistent": False,
+                      "finite_coordinates": False,
+                      "volume_mm3": 0.0,
+                      "x_mm": 0.0,
+                      "y_mm": 0.0,
+                      "z_mm": 0.0,
+                      "connected_bodies": 0,
+                      "error": repr(exc),
+                  }
+                  failures.append(row)
+              rows.append(row)
+
+          report = {
+              "chunk": chunk,
+              "expected_files": expected,
+              "found_files": len(rows),
+              "passed": len(rows) == expected and not failures,
+              "failed_files": failures,
+              "files": rows,
+          }
+          reports = root / "00_Reports"
+          reports.mkdir(parents=True, exist_ok=True)
+          (reports / "external_validation.json").write_text(
+              json.dumps(report, indent=2), encoding="utf-8"
+          )
+          with (reports / "external_validation.csv").open(
+              "w", newline="", encoding="utf-8-sig"
+          ) as handle:
+              fieldnames = list(rows[0].keys()) if rows else ["file"]
+              writer = csv.DictWriter(handle, fieldnames=fieldnames)
+              writer.writeheader()
+              writer.writerows(rows)
+          print(json.dumps(report, indent=2))
+          if not report["passed"]:
+              raise SystemExit(1)
+          PY
+
+      - name: Stage chunk artifact
+        if: always()
+        shell: bash
+        run: |
+          set -euo pipefail
+          OUTPUT="$RUNNER_TEMP/HOTS_STL_chunk_${{ matrix.chunk }}"
+          STAGE="$RUNNER_TEMP/stage_${{ matrix.chunk }}"
+          mkdir -p "$STAGE/STL" "$STAGE/Reports/chunk_${{ matrix.chunk }}"
+          if [[ -d "$OUTPUT/02_Print_Ready_Watertight" ]]; then
+            find "$OUTPUT/02_Print_Ready_Watertight" -maxdepth 1 -type f -name '*.stl' \
+              -exec cp {} "$STAGE/STL/" \;
+          fi
+          if [[ -d "$OUTPUT/00_Reports" ]]; then
+            find "$OUTPUT/00_Reports" -maxdepth 1 -type f \
+              -exec cp {} "$STAGE/Reports/chunk_${{ matrix.chunk }}/" \;
+          fi
+
+      - name: Upload chunk artifact
+        if: always()
+        uses: actions/upload-artifact@v4
+        with:
+          name: HOTS-v3-chunk-${{ matrix.chunk }}
+          path: ${{ runner.temp }}/stage_${{ matrix.chunk }}
+          retention-days: 30
+          compression-level: 0
+
+      - name: Enforce chunk quality gate
+        if: always()
+        shell: bash
+        run: |
+          set -euo pipefail
+          [[ "${{ steps.convert.outcome }}" == "success" ]]
+          [[ "${{ steps.validate.outcome }}" == "success" ]]
+
+  package:
+    name: Validate and package all heroes
+    needs: build_chunks
+    runs-on: ubuntu-22.04
+    timeout-minutes: 180
+
+    steps:
+      - name: Check out release metadata
+        uses: actions/checkout@v4
+        with:
+          ref: chatgpt-stl-builder
+          fetch-depth: 1
+
+      - name: Download all validated chunks
+        uses: actions/download-artifact@v4
+        with:
+          pattern: HOTS-v3-chunk-*
+          path: ${{ runner.temp }}/chunks
+          merge-multiple: false
+
+      - name: Assemble and independently revalidate all 91 STL files
+        id: assemble
+        shell: bash
+        run: |
+          set -euo pipefail
+          PACKAGE="$RUNNER_TEMP/HOTS_All_91_Heroes_Printable_STL_v3"
+          mkdir -p "$PACKAGE/STL" "$PACKAGE/Reports/Chunk_Reports"
+
+          find "$RUNNER_TEMP/chunks" -path '*/STL/*.stl' -type f \
+            -exec cp {} "$PACKAGE/STL/" \;
+          find "$RUNNER_TEMP/chunks" -path '*/Reports/*' -type f \
+            -exec cp --parents {} "$PACKAGE/Reports/Chunk_Reports/" \;
+
+          FILE_COUNT=$(find "$PACKAGE/STL" -maxdepth 1 -type f -name '*.stl' | wc -l)
+          if [[ "$FILE_COUNT" -ne 91 ]]; then
+            echo "Expected 91 unique STL files, found $FILE_COUNT"
+            find "$PACKAGE/STL" -maxdepth 1 -type f -name '*.stl' -printf '%f\n' | sort
+            exit 1
+          fi
+
+          python -m pip install --disable-pip-version-check --quiet \
+            trimesh==4.8.3 numpy==2.2.6 scipy==1.15.3
+
+          python - "$PACKAGE" <<'PY'
+          from pathlib import Path
+          import csv
+          import hashlib
+          import json
+          import sys
+
+          import numpy as np
+          import trimesh
+
+          root = Path(sys.argv[1])
+          stl_folder = root / "STL"
+          rows = []
+          failures = []
+          names = set()
+
+          for path in sorted(stl_folder.glob("*.stl")):
+              if path.name.casefold() in names:
+                  raise SystemExit(f"Duplicate filename: {path.name}")
+              names.add(path.name.casefold())
+              try:
+                  mesh = trimesh.load_mesh(path, force="mesh", process=True, validate=True)
+                  mesh.merge_vertices()
+                  extents = [float(value) for value in mesh.extents]
+                  row = {
+                      "file": path.name,
+                      "bytes": path.stat().st_size,
+                      "sha256": hashlib.sha256(path.read_bytes()).hexdigest(),
+                      "vertices": int(len(mesh.vertices)),
+                      "triangles": int(len(mesh.faces)),
+                      "watertight": bool(mesh.is_watertight),
+                      "winding_consistent": bool(mesh.is_winding_consistent),
+                      "finite_coordinates": bool(np.isfinite(mesh.vertices).all()),
+                      "volume_mm3": float(abs(mesh.volume)),
+                      "x_mm": extents[0],
+                      "y_mm": extents[1],
+                      "z_mm": extents[2],
+                      "connected_bodies": int(mesh.body_count),
+                      "error": "",
+                  }
+                  passed = (
+                      row["watertight"]
+                      and row["winding_consistent"]
+                      and row["finite_coordinates"]
+                      and row["volume_mm3"] > 1.0
+                      and 100 <= row["triangles"] <= 500000
+                      and min(extents) >= 2.0
+                      and max(extents) <= 350.0
+                      and row["connected_bodies"] == 1
+                  )
+                  if not passed:
+                      failures.append(row)
+              except Exception as exc:
+                  row = {
+                      "file": path.name,
+                      "bytes": path.stat().st_size,
+                      "sha256": hashlib.sha256(path.read_bytes()).hexdigest(),
+                      "vertices": 0,
+                      "triangles": 0,
+                      "watertight": False,
+                      "winding_consistent": False,
+                      "finite_coordinates": False,
+                      "volume_mm3": 0.0,
+                      "x_mm": 0.0,
+                      "y_mm": 0.0,
+                      "z_mm": 0.0,
+                      "connected_bodies": 0,
+                      "error": repr(exc),
+                  }
+                  failures.append(row)
+              rows.append(row)
+
+          report = {
+              "expected_files": 91,
+              "found_files": len(rows),
+              "passed": len(rows) == 91 and not failures,
+              "quality_requirements": {
+                  "watertight": True,
+                  "winding_consistent": True,
+                  "finite_coordinates": True,
+                  "positive_volume_mm3": True,
+                  "triangle_range": [100, 500000],
+                  "dimension_range_mm": [2.0, 350.0],
+                  "connected_bodies": 1,
+              },
+              "failed_files": failures,
+              "files": rows,
+          }
+
+          reports = root / "Reports"
+          (reports / "validation.json").write_text(
+              json.dumps(report, indent=2), encoding="utf-8"
+          )
+          with (reports / "validation.csv").open(
+              "w", newline="", encoding="utf-8-sig"
+          ) as handle:
+              writer = csv.DictWriter(handle, fieldnames=list(rows[0].keys()))
+              writer.writeheader()
+              writer.writerows(rows)
+
+          checksum_lines = [f"{row['sha256']}  STL/{row['file']}" for row in rows]
+          (reports / "SHA256SUMS.txt").write_text(
+              "\n".join(checksum_lines) + "\n", encoding="utf-8"
+          )
+
+          print(json.dumps(report, indent=2))
+          if not report["passed"]:
+              raise SystemExit(1)
+          PY
+
+          cat > "$PACKAGE/README_FIRST.txt" <<'EOF'
+          HEROES OF THE STORM — PRINTABLE STL COLLECTION V3
+
+          This package contains 91 named hero STL files rebuilt from the supplied
+          Heroes of the Storm M3 game meshes for personal, non-commercial fan use.
+
+          Improvements in this build:
+          - visible body, armour, weapon, hair, wing and cloth meshes are baked together;
+          - rendering helpers, collision meshes, holograms, shadows and ragdolls are excluded;
+          - thin printable sheets are selectively thickened;
+          - all components are voxel-unioned into a solid with a printable base;
+          - D.Va includes pilot and mech;
+          - The Lost Vikings includes Baleog, Erik and Olaf;
+          - Cho and Gall are separate roster filenames from their shared in-game body;
+          - Xal'atath is included;
+          - every final STL passed independent checks for watertightness, consistent
+            winding, finite coordinates, positive volume, sane dimensions, triangle
+            count, and exactly one connected solid body.
+
+          Start with the STL folder. Inspect every model in your slicer and add supports
+          where required. STL is geometry-only and cannot retain textures, transparency,
+          glow, emissive effects or normal-map detail from the game.
+
+          Heroes of the Storm and its characters and assets are owned by Blizzard
+          Entertainment. Do not sell or commercially redistribute these derivative files.
+          EOF
+
+          printf '%s\n' "$GITHUB_RUN_ID" > "$PACKAGE/Reports/workflow_run_id.txt"
+          printf '%s\n' "$GITHUB_SHA" > "$PACKAGE/Reports/source_commit.txt"
+          echo "package=$PACKAGE" >> "$GITHUB_OUTPUT"
+
+      - name: Create compressed ZIP and checksum
+        id: zip
+        shell: bash
+        run: |
+          set -euo pipefail
+          sudo apt-get update -qq
+          sudo apt-get install -y --no-install-recommends p7zip-full
+          PACKAGE="${{ steps.assemble.outputs.package }}"
+          ARCHIVE="$GITHUB_WORKSPACE/HOTS_All_91_Heroes_Printable_STL_v3.zip"
+          cd "$RUNNER_TEMP"
+          7z a -tzip -mx=9 -mmt=on "$ARCHIVE" "$(basename "$PACKAGE")"
+          sha256sum "$ARCHIVE" > "$ARCHIVE.sha256"
+          echo "archive=$ARCHIVE" >> "$GITHUB_OUTPUT"
+          echo "checksum=$ARCHIVE.sha256" >> "$GITHUB_OUTPUT"
+
+      - name: Upload final ZIP artifact
+        uses: actions/upload-artifact@v4
+        with:
+          name: HOTS_All_91_Heroes_Printable_STL_v3
+          path: |
+            ${{ steps.zip.outputs.archive }}
+            ${{ steps.zip.outputs.checksum }}
+          retention-days: 90
+          compression-level: 0
+
+      - name: Publish downloadable GitHub release
+        env:
+          GH_TOKEN: ${{ github.token }}
+        shell: bash
+        run: |
+          set -euo pipefail
+          TAG="hots-stl-v3-${GITHUB_RUN_NUMBER}-${GITHUB_RUN_ATTEMPT}"
+          PACKAGE="${{ steps.assemble.outputs.package }}"
+          gh release create "$TAG" \
+            "${{ steps.zip.outputs.archive }}" \
+            "${{ steps.zip.outputs.checksum }}" \
+            "$PACKAGE/Reports/validation.json#validation.json" \
+            "$PACKAGE/Reports/validation.csv#validation.csv" \
+            "$PACKAGE/Reports/SHA256SUMS.txt#STL_SHA256SUMS.txt" \
+            --repo "$GITHUB_REPOSITORY" \
+            --target "$GITHUB_SHA" \
+            --title "HOTS — All 91 printable hero STL files (v3)" \
+            --notes "All 91 final STL files passed independent watertightness, winding, finite-coordinate, positive-volume, dimension, triangle-count and single-connected-body checks."
