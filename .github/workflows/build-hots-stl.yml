@@ -206,6 +206,33 @@ jobs:
             --notes-file "$NOTES" \
             --prerelease
 
+      - name: Publish build diagnostics to branch
+        if: always()
+        shell: bash
+        run: |
+          set -euo pipefail
+          MODE="${{ steps.mode.outputs.mode }}"
+          OUTPUT="$RUNNER_TEMP/HOTS_STL_Output/00_Reports"
+          REPORT_DIR="$GITHUB_WORKSPACE/build_reports/$MODE"
+          mkdir -p "$REPORT_DIR"
+          [[ -f "$OUTPUT/manifest.json" ]] && cp "$OUTPUT/manifest.json" "$REPORT_DIR/manifest.json"
+          [[ -f "$OUTPUT/manifest.csv" ]] && cp "$OUTPUT/manifest.csv" "$REPORT_DIR/manifest.csv"
+          [[ -f "$OUTPUT/blender_exit_code.txt" ]] && cp "$OUTPUT/blender_exit_code.txt" "$REPORT_DIR/blender_exit_code.txt"
+          if [[ -f "$OUTPUT/blender_build.log" ]]; then
+            cp "$OUTPUT/blender_build.log" "$REPORT_DIR/blender_build.log"
+          fi
+          printf '%s\n' "$GITHUB_RUN_ID" > "$REPORT_DIR/workflow_run_id.txt"
+          printf '%s\n' "$GITHUB_SHA" > "$REPORT_DIR/source_commit.txt"
+          git config user.name "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git add "build_reports/$MODE"
+          if git diff --cached --quiet; then
+            echo "No diagnostic changes to commit"
+            exit 0
+          fi
+          git commit -m "Add $MODE STL build diagnostics [skip ci]"
+          git push origin "HEAD:${GITHUB_REF_NAME}"
+
       - name: Enforce manifest quality gate
         if: always()
         shell: bash
