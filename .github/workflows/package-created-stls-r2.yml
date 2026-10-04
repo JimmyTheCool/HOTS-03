@@ -1,0 +1,207 @@
+name: Package HOTS STL Files Created So Far R2
+
+on:
+  workflow_dispatch:
+  push:
+    branches:
+      - chatgpt-stl-builder
+    paths:
+      - .github/workflows/package-created-stls-r2.yml
+
+permissions:
+  actions: read
+  contents: write
+
+jobs:
+  package:
+    runs-on: ubuntu-22.04
+    timeout-minutes: 360
+    steps:
+      - name: Check out collector
+        uses: actions/checkout@v4
+        with:
+          ref: chatgpt-stl-builder
+          fetch-depth: 1
+
+      - name: Prepare corrected collector
+        shell: bash
+        run: |
+          set -euo pipefail
+          cp tools/hots_stl/collect_created_stls.py "$RUNNER_TEMP/collector.py"
+          python - "$RUNNER_TEMP/collector.py" <<'PY'
+          from pathlib import Path
+          import sys
+
+          path = Path(sys.argv[1])
+          text = path.read_text(encoding="utf-8")
+
+          old_download = 'client.download(str(artifact["archive_download_url"]), target)'
+          new_download = 'client.download(str(artifact["archive_download_url"]), target, accept="application/vnd.github+json")'
+          if old_download not in text:
+              raise SystemExit("artifact download call not found")
+          text = text.replace(old_download, new_download, 1)
+
+          old_scores = '''    if "v8" in lower:
+        score += 800
+    elif "v7" in lower:
+        score += 700
+    elif "v6" in lower:
+        score += 600
+    elif "v5" in lower:
+        score += 500
+    elif "v4" in lower:
+        score += 400
+    elif "v3" in lower:
+        score += 300
+    elif "v2" in lower:
+        score += 200'''
+          new_scores = '''    if "v8" in lower:
+        score += 8000
+    elif "v7" in lower:
+        score += 7000
+    elif "v6" in lower:
+        score += 6000
+    elif "v5" in lower:
+        score += 5000
+    elif "v4" in lower:
+        score += 4000
+    elif "v3" in lower:
+        score += 3000
+    elif "v2" in lower:
+        score += 2000'''
+          if old_scores not in text:
+              raise SystemExit("version score block not found")
+          text = text.replace(old_scores, new_scores, 1)
+
+          old_path_setup = '''    lower = f"{source_name}/{path_text}".casefold().replace("\\\\", "/")
+    score = 0'''
+          new_path_setup = '''    lower = f"{source_name}/{path_text}".casefold().replace("\\\\", "/")
+    score = 0
+    # The adaptive v8 workflows place their chosen, validated output directly in
+    # STL/<Hero>.stl. Prefer that file over the diagnostic candidate and source copies.
+    if re.search(r"(?:^|/)stl/[^/]+\\.stl$", lower) and "/candidates/" not in lower and "/source/" not in lower:
+        score += 5000
+    if "/candidates/" in lower:
+        score += 750
+    if "/source/" in lower:
+        score -= 5000'''
+          if old_path_setup not in text:
+              raise SystemExit("path quality setup not found")
+          text = text.replace(old_path_setup, new_path_setup, 1)
+
+          old_hash = '    digest = hashlib.sha256(archive_path.read_bytes()).hexdigest()'
+          new_hash = '''    hasher = hashlib.sha256()
+    with archive_path.open("rb") as handle:
+        for chunk in iter(lambda: handle.read(1024 * 1024), b""):
+            hasher.update(chunk)
+    digest = hasher.hexdigest()'''
+          if old_hash not in text:
+              raise SystemExit("archive hash expression not found")
+          text = text.replace(old_hash, new_hash, 1)
+
+          path.write_text(text, encoding="utf-8")
+          PY
+          python -m py_compile "$RUNNER_TEMP/collector.py"
+
+      - name: Collect all retained generated STL files
+        id: collect
+        shell: bash
+        env:
+          GH_TOKEN: ${{ github.token }}
+        run: |
+          set -euo pipefail
+          OUTPUT="$RUNNER_TEMP/HOTS_STL_Files_Created_So_Far_R2"
+          ARCHIVE="$GITHUB_WORKSPACE/HOTS_STL_Files_Created_So_Far_R2.zip"
+          python "$RUNNER_TEMP/collector.py" \
+            --repo "$GITHUB_REPOSITORY" \
+            --token "$GH_TOKEN" \
+            --output-dir "$OUTPUT" \
+            --archive "$ARCHIVE" \
+            --max-download-gb 11.0 \
+            2>&1 | tee "$GITHUB_WORKSPACE/collection_r2.log"
+
+          HERO_COUNT=$(python - "$OUTPUT/Reports/manifest.json" <<'PY'
+          import json, sys
+          print(json.load(open(sys.argv[1], encoding='utf-8'))['recovered_hero_count'])
+          PY
+          )
+          MISSING_COUNT=$(python - "$OUTPUT/Reports/manifest.json" <<'PY'
+          import json, sys
+          print(len(json.load(open(sys.argv[1], encoding='utf-8'))['missing_heroes']))
+          PY
+          )
+          ARCHIVE_BYTES=$(stat -c '%s' "$ARCHIVE")
+          echo "hero_count=$HERO_COUNT" >> "$GITHUB_OUTPUT"
+          echo "missing_count=$MISSING_COUNT" >> "$GITHUB_OUTPUT"
+          echo "archive=$ARCHIVE" >> "$GITHUB_OUTPUT"
+          echo "checksum=${ARCHIVE}.sha256" >> "$GITHUB_OUTPUT"
+          echo "archive_bytes=$ARCHIVE_BYTES" >> "$GITHUB_OUTPUT"
+
+      - name: Upload complete workflow artifact
+        uses: actions/upload-artifact@v4
+        with:
+          name: HOTS_STL_Files_Created_So_Far_R2
+          path: |
+            HOTS_STL_Files_Created_So_Far_R2.zip
+            HOTS_STL_Files_Created_So_Far_R2.zip.sha256
+            collection_r2.log
+            ${{ runner.temp }}/HOTS_STL_Files_Created_So_Far_R2/Reports/manifest.csv
+            ${{ runner.temp }}/HOTS_STL_Files_Created_So_Far_R2/Reports/manifest.json
+          retention-days: 90
+          compression-level: 0
+
+      - name: Publish downloadable release
+        id: release
+        shell: bash
+        env:
+          GH_TOKEN: ${{ github.token }}
+        run: |
+          set -euo pipefail
+          ARCHIVE="${{ steps.collect.outputs.archive }}"
+          CHECKSUM="${{ steps.collect.outputs.checksum }}"
+          BYTES="${{ steps.collect.outputs.archive_bytes }}"
+          MAX_RELEASE_BYTES=2100000000
+          if (( BYTES > MAX_RELEASE_BYTES )); then
+            echo "Archive is ${BYTES} bytes, above the GitHub release asset limit." >&2
+            exit 1
+          fi
+
+          TAG="hots-stls-created-so-far-r2-${GITHUB_RUN_ID}"
+          TITLE="HOTS STL files created so far — recovered collection"
+          NOTES="$RUNNER_TEMP/release_notes.txt"
+          cat > "$NOTES" <<EOF
+          Consolidated Heroes of the Storm STL package rebuilt from all retained
+          workflow artifacts and release archives.
+
+          Recovered hero files: ${{ steps.collect.outputs.hero_count }}
+          Missing roster entries: ${{ steps.collect.outputs.missing_count }}
+          Source branch: ${GITHUB_REF_NAME}
+          Source commit: ${GITHUB_SHA}
+          Workflow run: ${GITHUB_RUN_ID}
+
+          The ZIP contains one strongest structurally valid STL per recovered hero,
+          plus CSV/JSON provenance manifests and a README. Final v8 adaptive outputs
+          were preferred over intermediate candidates and earlier builds.
+          EOF
+
+          gh release create "$TAG" \
+            "$ARCHIVE" \
+            "$CHECKSUM" \
+            "$RUNNER_TEMP/HOTS_STL_Files_Created_So_Far_R2/Reports/manifest.csv#manifest.csv" \
+            "$RUNNER_TEMP/HOTS_STL_Files_Created_So_Far_R2/Reports/manifest.json#manifest.json" \
+            --repo "$GITHUB_REPOSITORY" \
+            --target "$GITHUB_SHA" \
+            --title "$TITLE" \
+            --notes-file "$NOTES" \
+            --prerelease
+
+          ASSET_URL="https://github.com/${GITHUB_REPOSITORY}/releases/download/${TAG}/HOTS_STL_Files_Created_So_Far_R2.zip"
+          echo "asset_url=$ASSET_URL" >> "$GITHUB_OUTPUT"
+          printf '%s\n' "$ASSET_URL" > "$GITHUB_WORKSPACE/download_url_r2.txt"
+
+      - name: Upload download pointer
+        uses: actions/upload-artifact@v4
+        with:
+          name: HOTS_STL_R2_Download_URL
+          path: download_url_r2.txt
+          retention-days: 90
