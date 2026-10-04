@@ -1,0 +1,40 @@
+name: Collect Fenix Preparation Error
+
+on:
+  workflow_dispatch:
+  push:
+    branches: [chatgpt-stl-builder]
+    paths: [.github/workflows/collect-fenix-prep-error.yml]
+
+permissions:
+  actions: read
+  contents: write
+
+jobs:
+  collect:
+    runs-on: ubuntu-22.04
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          ref: chatgpt-stl-builder
+          fetch-depth: 0
+      - name: Extract preparation-step log
+        env:
+          GH_TOKEN: ${{ github.token }}
+        shell: bash
+        run: |
+          set -euo pipefail
+          DEST=build_reports/fenix_no_meshfix_prep
+          mkdir -p "$DEST"
+          gh run view 37199969109 \
+            --repo "$GITHUB_REPOSITORY" \
+            --job 111429468946 \
+            --log > "$DEST/full.log"
+          awk -F '\t' '$2 == "Prepare connected-voxel-only repair engine" {print $3}' \
+            "$DEST/full.log" > "$DEST/preparation_step.txt"
+          git config user.name "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git add "$DEST"
+          git commit -m "Add Fenix preparation error [skip ci]"
+          git pull --rebase origin chatgpt-stl-builder
+          git push origin HEAD:chatgpt-stl-builder
