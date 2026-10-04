@@ -1,0 +1,136 @@
+name: Package HOTS STL Files Created So Far R3
+
+on:
+  workflow_dispatch:
+  push:
+    branches:
+      - chatgpt-stl-builder
+    paths:
+      - .github/workflows/package-created-stls-r3.yml
+
+permissions:
+  actions: read
+  contents: write
+
+jobs:
+  package:
+    runs-on: ubuntu-22.04
+    timeout-minutes: 360
+    steps:
+      - name: Check out collector
+        uses: actions/checkout@v4
+        with:
+          ref: chatgpt-stl-builder
+          fetch-depth: 1
+
+      - name: Validate corrected collector source
+        shell: bash
+        run: |
+          set -euo pipefail
+          python -m py_compile tools/hots_stl/collect_created_stls.py
+          python -m py_compile tools/hots_stl/collect_created_stls_r2.py
+
+      - name: Collect retained generated STL files
+        id: collect
+        shell: bash
+        env:
+          GH_TOKEN: ${{ github.token }}
+        run: |
+          set -euo pipefail
+          OUTPUT="$RUNNER_TEMP/HOTS_STL_Files_Created_So_Far_R3"
+          ARCHIVE="$GITHUB_WORKSPACE/HOTS_STL_Files_Created_So_Far_R3.zip"
+          python tools/hots_stl/collect_created_stls_r2.py \
+            --repo "$GITHUB_REPOSITORY" \
+            --token "$GH_TOKEN" \
+            --output-dir "$OUTPUT" \
+            --archive "$ARCHIVE" \
+            --max-download-gb 11.0 \
+            2>&1 | tee "$GITHUB_WORKSPACE/collection_r3.log"
+
+          HERO_COUNT=$(python - "$OUTPUT/Reports/manifest.json" <<'PY'
+          import json, sys
+          print(json.load(open(sys.argv[1], encoding='utf-8'))['recovered_hero_count'])
+          PY
+          )
+          MISSING_COUNT=$(python - "$OUTPUT/Reports/manifest.json" <<'PY'
+          import json, sys
+          print(len(json.load(open(sys.argv[1], encoding='utf-8'))['missing_heroes']))
+          PY
+          )
+          ARCHIVE_BYTES=$(stat -c '%s' "$ARCHIVE")
+          echo "hero_count=$HERO_COUNT" >> "$GITHUB_OUTPUT"
+          echo "missing_count=$MISSING_COUNT" >> "$GITHUB_OUTPUT"
+          echo "archive=$ARCHIVE" >> "$GITHUB_OUTPUT"
+          echo "checksum=${ARCHIVE}.sha256" >> "$GITHUB_OUTPUT"
+          echo "archive_bytes=$ARCHIVE_BYTES" >> "$GITHUB_OUTPUT"
+
+      - name: Upload workflow artifact
+        uses: actions/upload-artifact@v4
+        with:
+          name: HOTS_STL_Files_Created_So_Far_R3
+          path: |
+            HOTS_STL_Files_Created_So_Far_R3.zip
+            HOTS_STL_Files_Created_So_Far_R3.zip.sha256
+            collection_r3.log
+            ${{ runner.temp }}/HOTS_STL_Files_Created_So_Far_R3/Reports/manifest.csv
+            ${{ runner.temp }}/HOTS_STL_Files_Created_So_Far_R3/Reports/manifest.json
+          retention-days: 90
+          compression-level: 0
+
+      - name: Publish downloadable release
+        id: release
+        shell: bash
+        env:
+          GH_TOKEN: ${{ github.token }}
+        run: |
+          set -euo pipefail
+          ARCHIVE="${{ steps.collect.outputs.archive }}"
+          CHECKSUM="${{ steps.collect.outputs.checksum }}"
+          BYTES="${{ steps.collect.outputs.archive_bytes }}"
+          MAX_RELEASE_BYTES=2100000000
+          if (( BYTES > MAX_RELEASE_BYTES )); then
+            echo "Archive is ${BYTES} bytes, above the GitHub release asset limit." >&2
+            exit 1
+          fi
+
+          TAG="hots-stls-created-so-far-r3-${GITHUB_RUN_ID}"
+          TITLE="HOTS STL files created so far - recovered collection"
+          NOTES="$RUNNER_TEMP/release_notes.txt"
+          cat > "$NOTES" <<EOF
+          Consolidated Heroes of the Storm STL package rebuilt from all retained
+          workflow artifacts and release archives.
+
+          Recovered hero files: ${{ steps.collect.outputs.hero_count }}
+          Missing roster entries: ${{ steps.collect.outputs.missing_count }}
+          Source branch: ${GITHUB_REF_NAME}
+          Source commit: ${GITHUB_SHA}
+          Workflow run: ${GITHUB_RUN_ID}
+
+          The ZIP contains one strongest structurally valid STL per recovered hero,
+          plus CSV and JSON provenance manifests and a README. Final v8 adaptive
+          outputs were preferred over intermediate candidates and earlier builds.
+          EOF
+
+          gh release create "$TAG" \
+            "$ARCHIVE" \
+            "$CHECKSUM" \
+            "$RUNNER_TEMP/HOTS_STL_Files_Created_So_Far_R3/Reports/manifest.csv#manifest.csv" \
+            "$RUNNER_TEMP/HOTS_STL_Files_Created_So_Far_R3/Reports/manifest.json#manifest.json" \
+            --repo "$GITHUB_REPOSITORY" \
+            --target "$GITHUB_SHA" \
+            --title "$TITLE" \
+            --notes-file "$NOTES" \
+            --prerelease
+
+          RELEASE_URL="https://github.com/${GITHUB_REPOSITORY}/releases/tag/${TAG}"
+          ASSET_URL="https://github.com/${GITHUB_REPOSITORY}/releases/download/${TAG}/HOTS_STL_Files_Created_So_Far_R3.zip"
+          echo "release_url=$RELEASE_URL" >> "$GITHUB_OUTPUT"
+          echo "asset_url=$ASSET_URL" >> "$GITHUB_OUTPUT"
+          printf '%s\n' "$ASSET_URL" > "$GITHUB_WORKSPACE/download_url_r3.txt"
+
+      - name: Upload download pointer
+        uses: actions/upload-artifact@v4
+        with:
+          name: HOTS_STL_R3_Download_URL
+          path: download_url_r3.txt
+          retention-days: 90
