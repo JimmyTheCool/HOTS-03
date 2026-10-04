@@ -1,0 +1,212 @@
+candidate (1)	Set up job	﻿2026-10-04T11:48:31.4416523Z Current runner version: '2.337.0'
+candidate (1)	Set up job	2026-10-04T11:48:31.4433557Z ##[group]Runner Image Provisioner
+candidate (1)	Set up job	2026-10-04T11:48:31.4434115Z Hosted Compute Agent
+candidate (1)	Set up job	2026-10-04T11:48:31.4434687Z Version: 20260901.588
+candidate (1)	Set up job	2026-10-04T11:48:31.4435060Z Commit: f88ec8081b781fac6c440065ac7ff9e710ce3d0b
+candidate (1)	Set up job	2026-10-04T11:48:31.4435467Z Build Date: 2026-09-01T19:56:44Z
+candidate (1)	Set up job	2026-10-04T11:48:31.4435889Z Worker ID: {3a113699-b345-4bfc-85fc-ce552d4d47c1}
+candidate (1)	Set up job	2026-10-04T11:48:31.4436287Z Azure Region: centralus
+candidate (1)	Set up job	2026-10-04T11:48:31.4436619Z ##[endgroup]
+candidate (1)	Set up job	2026-10-04T11:48:31.4437424Z ##[group]Operating System
+candidate (1)	Set up job	2026-10-04T11:48:31.4437761Z Ubuntu
+candidate (1)	Set up job	2026-10-04T11:48:31.4438076Z 22.04.5
+candidate (1)	Set up job	2026-10-04T11:48:31.4438361Z LTS
+candidate (1)	Set up job	2026-10-04T11:48:31.4438641Z ##[endgroup]
+candidate (1)	Set up job	2026-10-04T11:48:31.4438975Z ##[group]Runner Image
+candidate (1)	Set up job	2026-10-04T11:48:31.4439312Z Image: ubuntu-22.04
+candidate (1)	Set up job	2026-10-04T11:48:31.4439675Z Version: 20260927.309.1
+candidate (1)	Set up job	2026-10-04T11:48:31.4440264Z Included Software: https://github.com/actions/runner-images/blob/ubuntu22/20260927.309/images/ubuntu/Ubuntu2204-Readme.md
+candidate (1)	Set up job	2026-10-04T11:48:31.4441215Z Image Release: https://github.com/actions/runner-images/releases/tag/ubuntu22%2F20260927.309
+candidate (1)	Set up job	2026-10-04T11:48:31.4441741Z ##[endgroup]
+candidate (1)	Set up job	2026-10-04T11:48:31.4442426Z ##[group]GITHUB_TOKEN Permissions
+candidate (1)	Set up job	2026-10-04T11:48:31.4443667Z Actions: read
+candidate (1)	Set up job	2026-10-04T11:48:31.4444179Z Contents: read
+candidate (1)	Set up job	2026-10-04T11:48:31.4444679Z Metadata: read
+candidate (1)	Set up job	2026-10-04T11:48:31.4444985Z ##[endgroup]
+candidate (1)	Set up job	2026-10-04T11:48:31.4446301Z Secret source: Actions
+candidate (1)	Set up job	2026-10-04T11:48:31.4446806Z Cache mode: write
+candidate (1)	Set up job	2026-10-04T11:48:31.4447590Z Prepare workflow directory
+candidate (1)	Set up job	2026-10-04T11:48:31.4706848Z Prepare all required actions
+candidate (1)	Set up job	2026-10-04T11:48:31.4737247Z Getting action download info
+candidate (1)	Set up job	2026-10-04T11:48:31.7065234Z Download action repository 'actions/checkout@v4' (SHA:11d5960a326750d5838078e36cf38b85af677262)
+candidate (1)	Set up job	2026-10-04T11:48:31.8330845Z Download action repository 'actions/upload-artifact@v4' (SHA:ea165f8d65b6e75b540449e92b4886f43607fa02)
+candidate (1)	Set up job	2026-10-04T11:48:32.0722943Z Complete job name: candidate (1)
+candidate (1)	Run actions/checkout@v4	﻿2026-10-04T11:48:32.1123107Z ##[group]Run actions/checkout@v4
+candidate (1)	Run actions/checkout@v4	2026-10-04T11:48:32.1123574Z with:
+candidate (1)	Run actions/checkout@v4	2026-10-04T11:48:32.1123835Z   ref: chatgpt-stl-builder
+candidate (1)	Run actions/checkout@v4	2026-10-04T11:48:32.1124130Z   fetch-depth: 1
+candidate (1)	Run actions/checkout@v4	2026-10-04T11:48:32.1124532Z   repository: JimmyTheCool/HOTS-03
+candidate (1)	Run actions/checkout@v4	2026-10-04T11:48:32.1126637Z   token: ***
+candidate (1)	Run actions/checkout@v4	2026-10-04T11:48:32.1126887Z   ssh-strict: true
+candidate (1)	Run actions/checkout@v4	2026-10-04T11:48:32.1127145Z   ssh-user: git
+candidate (1)	Run actions/checkout@v4	2026-10-04T11:48:32.1127409Z   persist-credentials: true
+candidate (1)	Run actions/checkout@v4	2026-10-04T11:48:32.1127695Z   clean: true
+candidate (1)	Run actions/checkout@v4	2026-10-04T11:48:32.1127963Z   sparse-checkout-cone-mode: true
+candidate (1)	Run actions/checkout@v4	2026-10-04T11:48:32.1128269Z   fetch-tags: false
+candidate (1)	Run actions/checkout@v4	2026-10-04T11:48:32.1128530Z   show-progress: true
+candidate (1)	Run actions/checkout@v4	2026-10-04T11:48:32.1128794Z   lfs: false
+candidate (1)	Run actions/checkout@v4	2026-10-04T11:48:32.1129036Z   submodules: false
+candidate (1)	Run actions/checkout@v4	2026-10-04T11:48:32.1129302Z   set-safe-directory: true
+candidate (1)	Run actions/checkout@v4	2026-10-04T11:48:32.1129601Z   allow-unsafe-pr-checkout: false
+candidate (1)	Run actions/checkout@v4	2026-10-04T11:48:32.1129977Z env:
+candidate (1)	Run actions/checkout@v4	2026-10-04T11:48:32.1130223Z   RAW_BUILD_RUN_ID: 37193141976
+candidate (1)	Run actions/checkout@v4	2026-10-04T11:48:32.1130514Z ##[endgroup]
+candidate (1)	Run actions/checkout@v4	2026-10-04T11:48:32.1750399Z Syncing repository: JimmyTheCool/HOTS-03
+candidate (1)	Run actions/checkout@v4	2026-10-04T11:48:32.1751724Z ##[group]Getting Git version info
+candidate (1)	Run actions/checkout@v4	2026-10-04T11:48:32.1752210Z Working directory is '/home/runner/work/HOTS-03/HOTS-03'
+candidate (1)	Run actions/checkout@v4	2026-10-04T11:48:32.1757453Z [command]/usr/bin/git version
+candidate (1)	Run actions/checkout@v4	2026-10-04T11:48:32.1801472Z git version 2.55.0
+candidate (1)	Run actions/checkout@v4	2026-10-04T11:48:32.1814882Z ##[endgroup]
+candidate (1)	Run actions/checkout@v4	2026-10-04T11:48:32.1827858Z Temporarily overriding HOME='/home/runner/work/_temp/ab4d58ed-232c-4a84-951f-791b4df6ae59' before making global git config changes
+candidate (1)	Run actions/checkout@v4	2026-10-04T11:48:32.1828683Z Adding repository directory to the temporary git global config as a safe directory
+candidate (1)	Run actions/checkout@v4	2026-10-04T11:48:32.1831099Z [command]/usr/bin/git config --global --add safe.directory /home/runner/work/HOTS-03/HOTS-03
+candidate (1)	Run actions/checkout@v4	2026-10-04T11:48:32.1858455Z Deleting the contents of '/home/runner/work/HOTS-03/HOTS-03'
+candidate (1)	Run actions/checkout@v4	2026-10-04T11:48:32.1860393Z ##[group]Initializing the repository
+candidate (1)	Run actions/checkout@v4	2026-10-04T11:48:32.1863863Z [command]/usr/bin/git init /home/runner/work/HOTS-03/HOTS-03
+candidate (1)	Run actions/checkout@v4	2026-10-04T11:48:32.1949327Z hint: Using 'master' as the name for the initial branch. This default branch name
+candidate (1)	Run actions/checkout@v4	2026-10-04T11:48:32.1950796Z hint: will change to "main" in Git 3.0. To configure the initial branch name
+candidate (1)	Run actions/checkout@v4	2026-10-04T11:48:32.1951475Z hint: to use in all of your new repositories, which will suppress this warning,
+candidate (1)	Run actions/checkout@v4	2026-10-04T11:48:32.1952007Z hint: call:
+candidate (1)	Run actions/checkout@v4	2026-10-04T11:48:32.1952365Z hint:
+candidate (1)	Run actions/checkout@v4	2026-10-04T11:48:32.1952803Z hint: 	git config --global init.defaultBranch <name>
+candidate (1)	Run actions/checkout@v4	2026-10-04T11:48:32.1953272Z hint:
+candidate (1)	Run actions/checkout@v4	2026-10-04T11:48:32.1953710Z hint: Names commonly chosen instead of 'master' are 'main', 'trunk' and
+candidate (1)	Run actions/checkout@v4	2026-10-04T11:48:32.1954529Z hint: 'development'. The just-created branch can be renamed via this command:
+candidate (1)	Run actions/checkout@v4	2026-10-04T11:48:32.1955263Z hint:
+candidate (1)	Run actions/checkout@v4	2026-10-04T11:48:32.1955729Z hint: 	git branch -m <name>
+candidate (1)	Run actions/checkout@v4	2026-10-04T11:48:32.1956153Z hint:
+candidate (1)	Run actions/checkout@v4	2026-10-04T11:48:32.1956536Z hint: Disable this message with "git config set advice.defaultBranchName false"
+candidate (1)	Run actions/checkout@v4	2026-10-04T11:48:32.1957100Z Initialized empty Git repository in /home/runner/work/HOTS-03/HOTS-03/.git/
+candidate (1)	Run actions/checkout@v4	2026-10-04T11:48:32.1959331Z [command]/usr/bin/git remote add origin https://github.com/JimmyTheCool/HOTS-03
+candidate (1)	Run actions/checkout@v4	2026-10-04T11:48:32.1986610Z ##[endgroup]
+candidate (1)	Run actions/checkout@v4	2026-10-04T11:48:32.1987463Z ##[group]Disabling automatic garbage collection
+candidate (1)	Run actions/checkout@v4	2026-10-04T11:48:32.1989237Z [command]/usr/bin/git config --local gc.auto 0
+candidate (1)	Run actions/checkout@v4	2026-10-04T11:48:32.2010304Z ##[endgroup]
+candidate (1)	Run actions/checkout@v4	2026-10-04T11:48:32.2010999Z ##[group]Setting up auth
+candidate (1)	Run actions/checkout@v4	2026-10-04T11:48:32.2015613Z [command]/usr/bin/git config --local --name-only --get-regexp core\.sshCommand
+candidate (1)	Run actions/checkout@v4	2026-10-04T11:48:32.2034835Z [command]/usr/bin/git submodule foreach --recursive sh -c "git config --local --name-only --get-regexp 'core\.sshCommand' && git config --local --unset-all 'core.sshCommand' || :"
+candidate (1)	Run actions/checkout@v4	2026-10-04T11:48:32.2223169Z [command]/usr/bin/git config --local --name-only --get-regexp http\.https\:\/\/github\.com\/\.extraheader
+candidate (1)	Run actions/checkout@v4	2026-10-04T11:48:32.2244097Z [command]/usr/bin/git submodule foreach --recursive sh -c "git config --local --name-only --get-regexp 'http\.https\:\/\/github\.com\/\.extraheader' && git config --local --unset-all 'http.https://github.com/.extraheader' || :"
+candidate (1)	Run actions/checkout@v4	2026-10-04T11:48:32.2351945Z [command]/usr/bin/git config --local --name-only --get-regexp ^includeIf\.gitdir:
+candidate (1)	Run actions/checkout@v4	2026-10-04T11:48:32.2368935Z [command]/usr/bin/git submodule foreach --recursive git config --local --show-origin --name-only --get-regexp remote.origin.url
+candidate (1)	Run actions/checkout@v4	2026-10-04T11:48:32.2472012Z [command]/usr/bin/git config --local http.https://github.com/.extraheader AUTHORIZATION: basic ***
+candidate (1)	Run actions/checkout@v4	2026-10-04T11:48:32.2494433Z ##[endgroup]
+candidate (1)	Run actions/checkout@v4	2026-10-04T11:48:32.2494984Z ##[group]Fetching the repository
+candidate (1)	Run actions/checkout@v4	2026-10-04T11:48:32.2500475Z [command]/usr/bin/git -c protocol.version=2 fetch --no-tags --prune --no-recurse-submodules --depth=1 origin +refs/heads/chatgpt-stl-builder*:refs/remotes/origin/chatgpt-stl-builder* +refs/tags/chatgpt-stl-builder*:refs/tags/chatgpt-stl-builder*
+candidate (1)	Run actions/checkout@v4	2026-10-04T11:48:38.2482712Z From https://github.com/JimmyTheCool/HOTS-03
+candidate (1)	Run actions/checkout@v4	2026-10-04T11:48:38.2484473Z  * [new branch]      chatgpt-stl-builder -> origin/chatgpt-stl-builder
+candidate (1)	Run actions/checkout@v4	2026-10-04T11:48:38.2487590Z ##[endgroup]
+candidate (1)	Run actions/checkout@v4	2026-10-04T11:48:38.2488717Z ##[group]Determining the checkout info
+candidate (1)	Run actions/checkout@v4	2026-10-04T11:48:38.2491532Z [command]/usr/bin/git branch --list --remote origin/chatgpt-stl-builder
+candidate (1)	Run actions/checkout@v4	2026-10-04T11:48:38.2506505Z   origin/chatgpt-stl-builder
+candidate (1)	Run actions/checkout@v4	2026-10-04T11:48:38.2509173Z ##[endgroup]
+candidate (1)	Run actions/checkout@v4	2026-10-04T11:48:38.2512226Z [command]/usr/bin/git sparse-checkout disable
+candidate (1)	Run actions/checkout@v4	2026-10-04T11:48:38.2535243Z [command]/usr/bin/git config --local --unset-all extensions.worktreeConfig
+candidate (1)	Run actions/checkout@v4	2026-10-04T11:48:38.2551008Z ##[group]Checking out the ref
+candidate (1)	Run actions/checkout@v4	2026-10-04T11:48:38.2553023Z [command]/usr/bin/git checkout --progress --force -B chatgpt-stl-builder refs/remotes/origin/chatgpt-stl-builder
+candidate (1)	Run actions/checkout@v4	2026-10-04T11:48:39.2717513Z Updating files:  62% (581/925)
+candidate (1)	Run actions/checkout@v4	2026-10-04T11:48:39.2995851Z Updating files:  63% (583/925)
+candidate (1)	Run actions/checkout@v4	2026-10-04T11:48:39.3303002Z Updating files:  64% (592/925)
+candidate (1)	Run actions/checkout@v4	2026-10-04T11:48:39.3447546Z Updating files:  65% (602/925)
+candidate (1)	Run actions/checkout@v4	2026-10-04T11:48:39.3757644Z Updating files:  66% (611/925)
+candidate (1)	Run actions/checkout@v4	2026-10-04T11:48:39.3926808Z Updating files:  67% (620/925)
+candidate (1)	Run actions/checkout@v4	2026-10-04T11:48:39.4168442Z Updating files:  68% (629/925)
+candidate (1)	Run actions/checkout@v4	2026-10-04T11:48:39.4380214Z Updating files:  69% (639/925)
+candidate (1)	Run actions/checkout@v4	2026-10-04T11:48:39.4633996Z Updating files:  70% (648/925)
+candidate (1)	Run actions/checkout@v4	2026-10-04T11:48:39.4999703Z Updating files:  71% (657/925)
+candidate (1)	Run actions/checkout@v4	2026-10-04T11:48:39.5317269Z Updating files:  72% (666/925)
+candidate (1)	Run actions/checkout@v4	2026-10-04T11:48:39.5562759Z Updating files:  73% (676/925)
+candidate (1)	Run actions/checkout@v4	2026-10-04T11:48:39.6018421Z Updating files:  74% (685/925)
+candidate (1)	Run actions/checkout@v4	2026-10-04T11:48:39.6508521Z Updating files:  75% (694/925)
+candidate (1)	Run actions/checkout@v4	2026-10-04T11:48:39.6759011Z Updating files:  76% (703/925)
+candidate (1)	Run actions/checkout@v4	2026-10-04T11:48:39.7142592Z Updating files:  77% (713/925)
+candidate (1)	Run actions/checkout@v4	2026-10-04T11:48:39.7294932Z Updating files:  78% (722/925)
+candidate (1)	Run actions/checkout@v4	2026-10-04T11:48:39.7495139Z Updating files:  79% (731/925)
+candidate (1)	Run actions/checkout@v4	2026-10-04T11:48:39.7728973Z Updating files:  80% (740/925)
+candidate (1)	Run actions/checkout@v4	2026-10-04T11:48:39.7849146Z Updating files:  81% (750/925)
+candidate (1)	Run actions/checkout@v4	2026-10-04T11:48:39.8144616Z Updating files:  82% (759/925)
+candidate (1)	Run actions/checkout@v4	2026-10-04T11:48:39.8295321Z Updating files:  83% (768/925)
+candidate (1)	Run actions/checkout@v4	2026-10-04T11:48:39.8639235Z Updating files:  84% (777/925)
+candidate (1)	Run actions/checkout@v4	2026-10-04T11:48:39.8833649Z Updating files:  85% (787/925)
+candidate (1)	Run actions/checkout@v4	2026-10-04T11:48:39.9060681Z Updating files:  86% (796/925)
+candidate (1)	Run actions/checkout@v4	2026-10-04T11:48:39.9358934Z Updating files:  87% (805/925)
+candidate (1)	Run actions/checkout@v4	2026-10-04T11:48:39.9503068Z Updating files:  88% (814/925)
+candidate (1)	Run actions/checkout@v4	2026-10-04T11:48:39.9854116Z Updating files:  89% (824/925)
+candidate (1)	Run actions/checkout@v4	2026-10-04T11:48:39.9995340Z Updating files:  90% (833/925)
+candidate (1)	Run actions/checkout@v4	2026-10-04T11:48:40.0268197Z Updating files:  91% (842/925)
+candidate (1)	Run actions/checkout@v4	2026-10-04T11:48:40.0321511Z Updating files:  92% (851/925)
+candidate (1)	Run actions/checkout@v4	2026-10-04T11:48:40.0490320Z Updating files:  93% (861/925)
+candidate (1)	Run actions/checkout@v4	2026-10-04T11:48:40.0708789Z Updating files:  94% (870/925)
+candidate (1)	Run actions/checkout@v4	2026-10-04T11:48:40.0797179Z Updating files:  95% (879/925)
+candidate (1)	Run actions/checkout@v4	2026-10-04T11:48:40.1061334Z Updating files:  96% (888/925)
+candidate (1)	Run actions/checkout@v4	2026-10-04T11:48:40.1191640Z Updating files:  97% (898/925)
+candidate (1)	Run actions/checkout@v4	2026-10-04T11:48:40.1269125Z Updating files:  98% (907/925)
+candidate (1)	Run actions/checkout@v4	2026-10-04T11:48:40.1369655Z Updating files:  99% (916/925)
+candidate (1)	Run actions/checkout@v4	2026-10-04T11:48:40.1369995Z Updating files: 100% (925/925)
+candidate (1)	Run actions/checkout@v4	2026-10-04T11:48:40.1370221Z Updating files: 100% (925/925), done.
+candidate (1)	Run actions/checkout@v4	2026-10-04T11:48:40.1390684Z Switched to a new branch 'chatgpt-stl-builder'
+candidate (1)	Run actions/checkout@v4	2026-10-04T11:48:40.1391746Z branch 'chatgpt-stl-builder' set up to track 'origin/chatgpt-stl-builder'.
+candidate (1)	Run actions/checkout@v4	2026-10-04T11:48:40.1435968Z ##[endgroup]
+candidate (1)	Run actions/checkout@v4	2026-10-04T11:48:40.1461998Z [command]/usr/bin/git log -1 --format=%H
+candidate (1)	Run actions/checkout@v4	2026-10-04T11:48:40.1479966Z ad6cfb7cb7e48b456923854e80c038cc898ce3be
+candidate (1)	Download Fenix source STL	﻿2026-10-04T11:48:40.1612697Z ##[group]Run set -euo pipefail
+candidate (1)	Download Fenix source STL	2026-10-04T11:48:40.1612965Z ^[[36;1mset -euo pipefail^[[0m
+candidate (1)	Download Fenix source STL	2026-10-04T11:48:40.1613167Z ^[[36;1mmkdir -p "$RUNNER_TEMP/raw_chunk" "$RUNNER_TEMP/source"^[[0m
+candidate (1)	Download Fenix source STL	2026-10-04T11:48:40.1613404Z ^[[36;1mgh run download "$RAW_BUILD_RUN_ID" \^[[0m
+candidate (1)	Download Fenix source STL	2026-10-04T11:48:40.1613624Z ^[[36;1m  --repo "$GITHUB_REPOSITORY" \^[[0m
+candidate (1)	Download Fenix source STL	2026-10-04T11:48:40.1613786Z ^[[36;1m  --name HOTS-v3-chunk-2 \^[[0m
+candidate (1)	Download Fenix source STL	2026-10-04T11:48:40.1613944Z ^[[36;1m  --dir "$RUNNER_TEMP/raw_chunk"^[[0m
+candidate (1)	Download Fenix source STL	2026-10-04T11:48:40.1614167Z ^[[36;1mcp "$RUNNER_TEMP/raw_chunk/STL/Fenix.stl" "$RUNNER_TEMP/source/Fenix.stl"^[[0m
+candidate (1)	Download Fenix source STL	2026-10-04T11:48:40.1926527Z shell: /usr/bin/bash --noprofile --norc -e -o pipefail {0}
+candidate (1)	Download Fenix source STL	2026-10-04T11:48:40.1926773Z env:
+candidate (1)	Download Fenix source STL	2026-10-04T11:48:40.1926895Z   RAW_BUILD_RUN_ID: 37193141976
+candidate (1)	Download Fenix source STL	2026-10-04T11:48:40.1928537Z   GH_TOKEN: ***
+candidate (1)	Download Fenix source STL	2026-10-04T11:48:40.1928661Z ##[endgroup]
+candidate (1)	Install bounded repair dependencies	﻿2026-10-04T11:48:47.6910143Z ##[group]Run set -euo pipefail
+candidate (1)	Install bounded repair dependencies	2026-10-04T11:48:47.6910365Z ^[[36;1mset -euo pipefail^[[0m
+candidate (1)	Install bounded repair dependencies	2026-10-04T11:48:47.6910558Z ^[[36;1mpython -m pip install --disable-pip-version-check --quiet \^[[0m
+candidate (1)	Install bounded repair dependencies	2026-10-04T11:48:47.6910784Z ^[[36;1m  trimesh==4.8.3 numpy==2.2.6 scipy==1.15.3 \^[[0m
+candidate (1)	Install bounded repair dependencies	2026-10-04T11:48:47.6910984Z ^[[36;1m  scikit-image==0.25.2 fast-simplification==0.1.12 \^[[0m
+candidate (1)	Install bounded repair dependencies	2026-10-04T11:48:47.6911169Z ^[[36;1m  matplotlib==3.10.1^[[0m
+candidate (1)	Install bounded repair dependencies	2026-10-04T11:48:47.6942882Z shell: /usr/bin/bash --noprofile --norc -e -o pipefail {0}
+candidate (1)	Install bounded repair dependencies	2026-10-04T11:48:47.6943080Z env:
+candidate (1)	Install bounded repair dependencies	2026-10-04T11:48:47.6943199Z   RAW_BUILD_RUN_ID: 37193141976
+candidate (1)	Install bounded repair dependencies	2026-10-04T11:48:47.6943342Z ##[endgroup]
+candidate (1)	Prepare connected-voxel-only repair engine	﻿2026-10-04T11:48:58.7404080Z ##[group]Run set -euo pipefail
+candidate (1)	Prepare connected-voxel-only repair engine	2026-10-04T11:48:58.7404529Z ^[[36;1mset -euo pipefail^[[0m
+candidate (1)	Prepare connected-voxel-only repair engine	2026-10-04T11:48:58.7404829Z ^[[36;1mcp ci/repair_stl_collection.py "$RUNNER_TEMP/repair_fenix.py"^[[0m
+candidate (1)	Prepare connected-voxel-only repair engine	2026-10-04T11:48:58.7405115Z ^[[36;1mpython ci/patch_repair_dimension_retention.py "$RUNNER_TEMP/repair_fenix.py"^[[0m
+candidate (1)	Prepare connected-voxel-only repair engine	2026-10-04T11:48:58.7405452Z ^[[36;1mpython ci/patch_repair_voxel_translation.py "$RUNNER_TEMP/repair_fenix.py"^[[0m
+candidate (1)	Prepare connected-voxel-only repair engine	2026-10-04T11:48:58.7405753Z ^[[36;1mpython ci/patch_repair_face_connectivity.py "$RUNNER_TEMP/repair_fenix.py"^[[0m
+candidate (1)	Prepare connected-voxel-only repair engine	2026-10-04T11:48:58.7406040Z ^[[36;1mpython ci/patch_repair_skip_meshfix.py "$RUNNER_TEMP/repair_fenix.py"^[[0m
+candidate (1)	Prepare connected-voxel-only repair engine	2026-10-04T11:48:58.7406290Z ^[[36;1mpython -m py_compile "$RUNNER_TEMP/repair_fenix.py"^[[0m
+candidate (1)	Prepare connected-voxel-only repair engine	2026-10-04T11:48:58.7436127Z shell: /usr/bin/bash --noprofile --norc -e -o pipefail {0}
+candidate (1)	Prepare connected-voxel-only repair engine	2026-10-04T11:48:58.7436333Z env:
+candidate (1)	Prepare connected-voxel-only repair engine	2026-10-04T11:48:58.7436452Z   RAW_BUILD_RUN_ID: 37193141976
+candidate (1)	Prepare connected-voxel-only repair engine	2026-10-04T11:48:58.7436596Z ##[endgroup]
+candidate (1)	Prepare connected-voxel-only repair engine	2026-10-04T11:48:58.7595475Z Patched /home/runner/work/_temp/repair_fenix.py with dimensional-retention protection
+candidate (1)	Prepare connected-voxel-only repair engine	2026-10-04T11:48:58.7717277Z Patched /home/runner/work/_temp/repair_fenix.py to use VoxelGrid.translation
+candidate (1)	Prepare connected-voxel-only repair engine	2026-10-04T11:48:58.7838393Z Patched /home/runner/work/_temp/repair_fenix.py for face-connected voxel unions
+candidate (1)	Prepare connected-voxel-only repair engine	2026-10-04T11:48:58.8503174Z Traceback (most recent call last):
+candidate (1)	Prepare connected-voxel-only repair engine	2026-10-04T11:48:58.8503554Z   File "/home/runner/work/HOTS-03/HOTS-03/ci/patch_repair_skip_meshfix.py", line 69, in <module>
+candidate (1)	Prepare connected-voxel-only repair engine	2026-10-04T11:48:58.8504738Z     raise SystemExit(main())
+candidate (1)	Prepare connected-voxel-only repair engine	2026-10-04T11:48:58.8505079Z   File "/home/runner/work/HOTS-03/HOTS-03/ci/patch_repair_skip_meshfix.py", line 60, in main
+candidate (1)	Prepare connected-voxel-only repair engine	2026-10-04T11:48:58.8505404Z     raise RuntimeError(f"Expected one post-voxel MeshFix block, found {post_count}")
+candidate (1)	Prepare connected-voxel-only repair engine	2026-10-04T11:48:58.8505669Z RuntimeError: Expected one post-voxel MeshFix block, found 0
+candidate (1)	Prepare connected-voxel-only repair engine	2026-10-04T11:48:58.8565459Z ##[error]Process completed with exit code 1.
+candidate (1)	Post Run actions/checkout@v4	﻿2026-10-04T11:48:58.8650589Z Post job cleanup.
+candidate (1)	Post Run actions/checkout@v4	2026-10-04T11:48:58.9128682Z [command]/usr/bin/git version
+candidate (1)	Post Run actions/checkout@v4	2026-10-04T11:48:58.9150658Z git version 2.55.0
+candidate (1)	Post Run actions/checkout@v4	2026-10-04T11:48:58.9172300Z Temporarily overriding HOME='/home/runner/work/_temp/5781ea73-62b1-4c92-8e55-f5851dfbfb5b' before making global git config changes
+candidate (1)	Post Run actions/checkout@v4	2026-10-04T11:48:58.9173009Z Adding repository directory to the temporary git global config as a safe directory
+candidate (1)	Post Run actions/checkout@v4	2026-10-04T11:48:58.9177219Z [command]/usr/bin/git config --global --add safe.directory /home/runner/work/HOTS-03/HOTS-03
+candidate (1)	Post Run actions/checkout@v4	2026-10-04T11:48:58.9198912Z [command]/usr/bin/git config --local --name-only --get-regexp core\.sshCommand
+candidate (1)	Post Run actions/checkout@v4	2026-10-04T11:48:58.9216670Z [command]/usr/bin/git submodule foreach --recursive sh -c "git config --local --name-only --get-regexp 'core\.sshCommand' && git config --local --unset-all 'core.sshCommand' || :"
+candidate (1)	Post Run actions/checkout@v4	2026-10-04T11:48:58.9331662Z [command]/usr/bin/git config --local --name-only --get-regexp http\.https\:\/\/github\.com\/\.extraheader
+candidate (1)	Post Run actions/checkout@v4	2026-10-04T11:48:58.9345245Z http.https://github.com/.extraheader
+candidate (1)	Post Run actions/checkout@v4	2026-10-04T11:48:58.9352108Z [command]/usr/bin/git config --local --unset-all http.https://github.com/.extraheader
+candidate (1)	Post Run actions/checkout@v4	2026-10-04T11:48:58.9374071Z [command]/usr/bin/git submodule foreach --recursive sh -c "git config --local --name-only --get-regexp 'http\.https\:\/\/github\.com\/\.extraheader' && git config --local --unset-all 'http.https://github.com/.extraheader' || :"
+candidate (1)	Post Run actions/checkout@v4	2026-10-04T11:48:58.9500031Z [command]/usr/bin/git config --local --name-only --get-regexp ^includeIf\.gitdir:
+candidate (1)	Post Run actions/checkout@v4	2026-10-04T11:48:58.9518258Z [command]/usr/bin/git submodule foreach --recursive git config --local --show-origin --name-only --get-regexp remote.origin.url
+candidate (1)	Complete job	﻿2026-10-04T11:48:58.9738623Z Cleaning up orphan processes
+candidate (1)	Complete job	2026-10-04T11:48:58.9872272Z ##[warning]Node.js 20 is deprecated. The following actions target Node.js 20 but are being forced to run on Node.js 24: actions/checkout@v4. For more information see: https://github.blog/changelog/2025-09-19-deprecation-of-node-20-on-github-actions-runners/

@@ -1,0 +1,22 @@
+﻿2026-10-04T11:48:58.7404080Z ##[group]Run set -euo pipefail
+2026-10-04T11:48:58.7404529Z ^[[36;1mset -euo pipefail^[[0m
+2026-10-04T11:48:58.7404829Z ^[[36;1mcp ci/repair_stl_collection.py "$RUNNER_TEMP/repair_fenix.py"^[[0m
+2026-10-04T11:48:58.7405115Z ^[[36;1mpython ci/patch_repair_dimension_retention.py "$RUNNER_TEMP/repair_fenix.py"^[[0m
+2026-10-04T11:48:58.7405452Z ^[[36;1mpython ci/patch_repair_voxel_translation.py "$RUNNER_TEMP/repair_fenix.py"^[[0m
+2026-10-04T11:48:58.7405753Z ^[[36;1mpython ci/patch_repair_face_connectivity.py "$RUNNER_TEMP/repair_fenix.py"^[[0m
+2026-10-04T11:48:58.7406040Z ^[[36;1mpython ci/patch_repair_skip_meshfix.py "$RUNNER_TEMP/repair_fenix.py"^[[0m
+2026-10-04T11:48:58.7406290Z ^[[36;1mpython -m py_compile "$RUNNER_TEMP/repair_fenix.py"^[[0m
+2026-10-04T11:48:58.7436127Z shell: /usr/bin/bash --noprofile --norc -e -o pipefail {0}
+2026-10-04T11:48:58.7436333Z env:
+2026-10-04T11:48:58.7436452Z   RAW_BUILD_RUN_ID: 37193141976
+2026-10-04T11:48:58.7436596Z ##[endgroup]
+2026-10-04T11:48:58.7595475Z Patched /home/runner/work/_temp/repair_fenix.py with dimensional-retention protection
+2026-10-04T11:48:58.7717277Z Patched /home/runner/work/_temp/repair_fenix.py to use VoxelGrid.translation
+2026-10-04T11:48:58.7838393Z Patched /home/runner/work/_temp/repair_fenix.py for face-connected voxel unions
+2026-10-04T11:48:58.8503174Z Traceback (most recent call last):
+2026-10-04T11:48:58.8503554Z   File "/home/runner/work/HOTS-03/HOTS-03/ci/patch_repair_skip_meshfix.py", line 69, in <module>
+2026-10-04T11:48:58.8504738Z     raise SystemExit(main())
+2026-10-04T11:48:58.8505079Z   File "/home/runner/work/HOTS-03/HOTS-03/ci/patch_repair_skip_meshfix.py", line 60, in main
+2026-10-04T11:48:58.8505404Z     raise RuntimeError(f"Expected one post-voxel MeshFix block, found {post_count}")
+2026-10-04T11:48:58.8505669Z RuntimeError: Expected one post-voxel MeshFix block, found 0
+2026-10-04T11:48:58.8565459Z ##[error]Process completed with exit code 1.
