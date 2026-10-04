@@ -1,0 +1,256 @@
+test	Build three representative STL files	﻿2026-10-04T09:49:07.9111933Z ##[group]Run set -euo pipefail
+test	Build three representative STL files	2026-10-04T09:49:07.9112306Z ^[[36;1mset -euo pipefail^[[0m
+test	Build three representative STL files	2026-10-04T09:49:07.9112656Z ^[[36;1mcp tools/hots_stl/runtime_extracted/build_hots_stls.py "$RUNNER_TEMP/builder.py"^[[0m
+test	Build three representative STL files	2026-10-04T09:49:07.9113099Z ^[[36;1mpython tools/hots_stl/runtime_patch_v2.py "$RUNNER_TEMP/builder.py"^[[0m
+test	Build three representative STL files	2026-10-04T09:49:07.9113507Z ^[[36;1mpython ci/patch_builder_external_validation.py "$RUNNER_TEMP/builder.py"^[[0m
+test	Build three representative STL files	2026-10-04T09:49:07.9113900Z ^[[36;1mpython ci/patch_builder_mesh_filter.py "$RUNNER_TEMP/builder.py"^[[0m
+test	Build three representative STL files	2026-10-04T09:49:07.9114434Z ^[[36;1msudo apt-get update -qq^[[0m
+test	Build three representative STL files	2026-10-04T09:49:07.9114700Z ^[[36;1msudo apt-get install -y --no-install-recommends \^[[0m
+test	Build three representative STL files	2026-10-04T09:49:07.9114991Z ^[[36;1m  ca-certificates curl git xz-utils \^[[0m
+test	Build three representative STL files	2026-10-04T09:49:07.9115276Z ^[[36;1m  libx11-6 libxi6 libxrender1 libxfixes3 libxkbcommon0 \^[[0m
+test	Build three representative STL files	2026-10-04T09:49:07.9115554Z ^[[36;1m  libsm6 libice6 libgl1 libegl1^[[0m
+test	Build three representative STL files	2026-10-04T09:49:07.9116027Z ^[[36;1mgit clone --depth 1 https://github.com/JimmyTheCool/HOTS-02.git "$RUNNER_TEMP/HOTS-02"^[[0m
+test	Build three representative STL files	2026-10-04T09:49:07.9116427Z ^[[36;1mcd "$RUNNER_TEMP"^[[0m
+test	Build three representative STL files	2026-10-04T09:49:07.9116679Z ^[[36;1mARCHIVE="blender-${BLENDER_VERSION}-linux-x64.tar.xz"^[[0m
+test	Build three representative STL files	2026-10-04T09:49:07.9117002Z ^[[36;1mcurl --fail --location --retry 5 --retry-delay 5 \^[[0m
+test	Build three representative STL files	2026-10-04T09:49:07.9117330Z ^[[36;1m  "https://download.blender.org/release/Blender3.6/${ARCHIVE}" \^[[0m
+test	Build three representative STL files	2026-10-04T09:49:07.9117631Z ^[[36;1m  --output "$ARCHIVE"^[[0m
+test	Build three representative STL files	2026-10-04T09:49:07.9117833Z ^[[36;1mtar -xf "$ARCHIVE"^[[0m
+test	Build three representative STL files	2026-10-04T09:49:07.9118147Z ^[[36;1mgit clone --quiet https://github.com/SC2Mapster/m3addon.git "$RUNNER_TEMP/m3addon"^[[0m
+test	Build three representative STL files	2026-10-04T09:49:07.9118576Z ^[[36;1mgit -C "$RUNNER_TEMP/m3addon" checkout --quiet "$M3ADDON_COMMIT"^[[0m
+test	Build three representative STL files	2026-10-04T09:49:07.9118909Z ^[[36;1mmkdir -p "$HOME/.config/blender/3.6/scripts/addons"^[[0m
+test	Build three representative STL files	2026-10-04T09:49:07.9119260Z ^[[36;1mln -s "$RUNNER_TEMP/m3addon" "$HOME/.config/blender/3.6/scripts/addons/m3addon"^[[0m
+test	Build three representative STL files	2026-10-04T09:49:07.9119821Z ^[[36;1mOUTPUT="$RUNNER_TEMP/postrepair_test"^[[0m
+test	Build three representative STL files	2026-10-04T09:49:07.9120133Z ^[[36;1m"$RUNNER_TEMP/blender-${BLENDER_VERSION}-linux-x64/blender" \^[[0m
+test	Build three representative STL files	2026-10-04T09:49:07.9120435Z ^[[36;1m  --background --factory-startup \^[[0m
+test	Build three representative STL files	2026-10-04T09:49:07.9120698Z ^[[36;1m  --python "$RUNNER_TEMP/builder.py" -- \^[[0m
+test	Build three representative STL files	2026-10-04T09:49:07.9120947Z ^[[36;1m  --source "$RUNNER_TEMP/HOTS-02" \^[[0m
+test	Build three representative STL files	2026-10-04T09:49:07.9121191Z ^[[36;1m  --source "$GITHUB_WORKSPACE" \^[[0m
+test	Build three representative STL files	2026-10-04T09:49:07.9121426Z ^[[36;1m  --output "$OUTPUT" \^[[0m
+test	Build three representative STL files	2026-10-04T09:49:07.9121633Z ^[[36;1m  --target-height-mm 110 \^[[0m
+test	Build three representative STL files	2026-10-04T09:49:07.9121863Z ^[[36;1m  --base-height-mm 4 \^[[0m
+test	Build three representative STL files	2026-10-04T09:49:07.9122060Z ^[[36;1m  --base-margin-mm 4 \^[[0m
+test	Build three representative STL files	2026-10-04T09:49:07.9122274Z ^[[36;1m  --voxel-mm 0.55 \^[[0m
+test	Build three representative STL files	2026-10-04T09:49:07.9122476Z ^[[36;1m  --thin-part-mm 0.72 \^[[0m
+test	Build three representative STL files	2026-10-04T09:49:07.9122680Z ^[[36;1m  --max-triangles 450000 \^[[0m
+test	Build three representative STL files	2026-10-04T09:49:07.9122892Z ^[[36;1m  --skip-animation \^[[0m
+test	Build three representative STL files	2026-10-04T09:49:07.9123091Z ^[[36;1m  --only "Brightwing" \^[[0m
+test	Build three representative STL files	2026-10-04T09:49:07.9123286Z ^[[36;1m  --only "D.Va" \^[[0m
+test	Build three representative STL files	2026-10-04T09:49:07.9123480Z ^[[36;1m  --only "Tychus" \^[[0m
+test	Build three representative STL files	2026-10-04T09:49:07.9123701Z ^[[36;1m  2>&1 | tee "$OUTPUT/00_Reports/blender_build.log"^[[0m
+test	Build three representative STL files	2026-10-04T09:49:07.9467131Z shell: /usr/bin/bash --noprofile --norc -e -o pipefail {0}
+test	Build three representative STL files	2026-10-04T09:49:07.9467458Z env:
+test	Build three representative STL files	2026-10-04T09:49:07.9467638Z   BLENDER_VERSION: 3.6.23
+test	Build three representative STL files	2026-10-04T09:49:07.9467872Z   M3ADDON_COMMIT: 58935005c4465a219a740f6b740253533eda773f
+test	Build three representative STL files	2026-10-04T09:49:07.9468126Z ##[endgroup]
+test	Build three representative STL files	2026-10-04T09:49:07.9760701Z Patched /home/runner/work/_temp/builder.py to HOTS STL Builder v2.1.0
+test	Build three representative STL files	2026-10-04T09:49:07.9942198Z Patched builder to defer geometric watertightness to independent trimesh validation
+test	Build three representative STL files	2026-10-04T09:49:08.0125184Z Refined mesh helper filtering
+test	Build three representative STL files	2026-10-04T09:49:20.2310369Z Reading package lists...
+test	Build three representative STL files	2026-10-04T09:49:20.4846135Z Building dependency tree...
+test	Build three representative STL files	2026-10-04T09:49:20.4856032Z Reading state information...
+test	Build three representative STL files	2026-10-04T09:49:20.6735910Z libgl1 is already the newest version (1.4.0-1).
+test	Build three representative STL files	2026-10-04T09:49:20.6736413Z libgl1 set to manually installed.
+test	Build three representative STL files	2026-10-04T09:49:20.6737549Z libice6 is already the newest version (2:1.0.10-1build2).
+test	Build three representative STL files	2026-10-04T09:49:20.6737963Z libice6 set to manually installed.
+test	Build three representative STL files	2026-10-04T09:49:20.6738330Z libsm6 is already the newest version (2:1.2.3-1build2).
+test	Build three representative STL files	2026-10-04T09:49:20.6738739Z libsm6 set to manually installed.
+test	Build three representative STL files	2026-10-04T09:49:20.6739107Z libxfixes3 is already the newest version (1:6.0.0-1).
+test	Build three representative STL files	2026-10-04T09:49:20.6739749Z libxfixes3 set to manually installed.
+test	Build three representative STL files	2026-10-04T09:49:20.6740132Z libxi6 is already the newest version (2:1.8-1build1).
+test	Build three representative STL files	2026-10-04T09:49:20.6740775Z libxi6 set to manually installed.
+test	Build three representative STL files	2026-10-04T09:49:20.6741173Z libxkbcommon0 is already the newest version (1.4.0-1).
+test	Build three representative STL files	2026-10-04T09:49:20.6741582Z libxkbcommon0 set to manually installed.
+test	Build three representative STL files	2026-10-04T09:49:20.6742001Z libxrender1 is already the newest version (1:0.9.10-1build4).
+test	Build three representative STL files	2026-10-04T09:49:20.6742426Z libxrender1 set to manually installed.
+test	Build three representative STL files	2026-10-04T09:49:20.6742863Z ca-certificates is already the newest version (20260601~22.04.1).
+test	Build three representative STL files	2026-10-04T09:49:20.6743359Z curl is already the newest version (7.81.0-1ubuntu1.29).
+test	Build three representative STL files	2026-10-04T09:49:20.6743825Z libx11-6 is already the newest version (2:1.7.5-1ubuntu0.3).
+test	Build three representative STL files	2026-10-04T09:49:20.6744245Z libx11-6 set to manually installed.
+test	Build three representative STL files	2026-10-04T09:49:20.6744632Z xz-utils is already the newest version (5.2.5-2ubuntu1.1).
+test	Build three representative STL files	2026-10-04T09:49:20.6745126Z git is already the newest version (1:2.55.0-0ppa1~ubuntu22.04.2).
+test	Build three representative STL files	2026-10-04T09:49:20.6745943Z The following additional packages will be installed:
+test	Build three representative STL files	2026-10-04T09:49:20.6746282Z   libegl-mesa0
+test	Build three representative STL files	2026-10-04T09:49:20.6926103Z The following NEW packages will be installed:
+test	Build three representative STL files	2026-10-04T09:49:20.6930649Z   libegl-mesa0 libegl1
+test	Build three representative STL files	2026-10-04T09:49:20.7087257Z 0 upgraded, 2 newly installed, 0 to remove and 20 not upgraded.
+test	Build three representative STL files	2026-10-04T09:49:20.7087773Z Need to get 147 kB of archives.
+test	Build three representative STL files	2026-10-04T09:49:20.7088164Z After this operation, 484 kB of additional disk space will be used.
+test	Build three representative STL files	2026-10-04T09:49:20.7088489Z Get:1 file:/etc/apt/apt-mirrors.txt Mirrorlist [144 B]
+test	Build three representative STL files	2026-10-04T09:49:20.9805856Z Get:2 http://azure.archive.ubuntu.com/ubuntu jammy-updates/main amd64 libegl-mesa0 amd64 23.2.1-1ubuntu3.1~22.04.4 [118 kB]
+test	Build three representative STL files	2026-10-04T09:49:21.2532975Z Get:3 http://azure.archive.ubuntu.com/ubuntu jammy/main amd64 libegl1 amd64 1.4.0-1 [28.6 kB]
+test	Build three representative STL files	2026-10-04T09:49:21.5349405Z Fetched 147 kB in 1s (260 kB/s)
+test	Build three representative STL files	2026-10-04T09:49:21.6313064Z Selecting previously unselected package libegl-mesa0:amd64.
+test	Build three representative STL files	2026-10-04T09:49:21.6868197Z (Reading database ... 
+test	Build three representative STL files	2026-10-04T09:49:21.6868628Z (Reading database ... 5%
+test	Build three representative STL files	2026-10-04T09:49:21.6868935Z (Reading database ... 10%
+test	Build three representative STL files	2026-10-04T09:49:21.6869133Z (Reading database ... 15%
+test	Build three representative STL files	2026-10-04T09:49:21.6869319Z (Reading database ... 20%
+test	Build three representative STL files	2026-10-04T09:49:21.6869689Z (Reading database ... 25%
+test	Build three representative STL files	2026-10-04T09:49:21.6869902Z (Reading database ... 30%
+test	Build three representative STL files	2026-10-04T09:49:21.6870076Z (Reading database ... 35%
+test	Build three representative STL files	2026-10-04T09:49:21.6870250Z (Reading database ... 40%
+test	Build three representative STL files	2026-10-04T09:49:21.6870425Z (Reading database ... 45%
+test	Build three representative STL files	2026-10-04T09:49:21.6870598Z (Reading database ... 50%
+test	Build three representative STL files	2026-10-04T09:49:21.9582202Z (Reading database ... 55%
+test	Build three representative STL files	2026-10-04T09:49:22.3616232Z (Reading database ... 60%
+test	Build three representative STL files	2026-10-04T09:49:22.5681795Z (Reading database ... 65%
+test	Build three representative STL files	2026-10-04T09:49:22.8200501Z (Reading database ... 70%
+test	Build three representative STL files	2026-10-04T09:49:23.1631946Z (Reading database ... 75%
+test	Build three representative STL files	2026-10-04T09:49:23.7360572Z (Reading database ... 80%
+test	Build three representative STL files	2026-10-04T09:49:24.3100779Z (Reading database ... 85%
+test	Build three representative STL files	2026-10-04T09:49:25.1106316Z (Reading database ... 90%
+test	Build three representative STL files	2026-10-04T09:49:25.7940849Z (Reading database ... 95%
+test	Build three representative STL files	2026-10-04T09:49:25.7941286Z (Reading database ... 100%
+test	Build three representative STL files	2026-10-04T09:49:25.7941770Z (Reading database ... 260411 files and directories currently installed.)
+test	Build three representative STL files	2026-10-04T09:49:25.8004412Z Preparing to unpack .../libegl-mesa0_23.2.1-1ubuntu3.1~22.04.4_amd64.deb ...
+test	Build three representative STL files	2026-10-04T09:49:25.8136298Z Unpacking libegl-mesa0:amd64 (23.2.1-1ubuntu3.1~22.04.4) ...
+test	Build three representative STL files	2026-10-04T09:49:25.8433429Z Selecting previously unselected package libegl1:amd64.
+test	Build three representative STL files	2026-10-04T09:49:25.8615781Z Preparing to unpack .../libegl1_1.4.0-1_amd64.deb ...
+test	Build three representative STL files	2026-10-04T09:49:25.8623261Z Unpacking libegl1:amd64 (1.4.0-1) ...
+test	Build three representative STL files	2026-10-04T09:49:25.9099187Z Setting up libegl-mesa0:amd64 (23.2.1-1ubuntu3.1~22.04.4) ...
+test	Build three representative STL files	2026-10-04T09:49:25.9120176Z Setting up libegl1:amd64 (1.4.0-1) ...
+test	Build three representative STL files	2026-10-04T09:49:25.9140151Z Processing triggers for libc-bin (2.35-0ubuntu3.15) ...
+test	Build three representative STL files	2026-10-04T09:49:39.5104835Z 
+test	Build three representative STL files	2026-10-04T09:49:39.5105495Z Running kernel seems to be up-to-date.
+test	Build three representative STL files	2026-10-04T09:49:39.5105816Z 
+test	Build three representative STL files	2026-10-04T09:49:39.5105951Z No services need to be restarted.
+test	Build three representative STL files	2026-10-04T09:49:39.5106184Z 
+test	Build three representative STL files	2026-10-04T09:49:39.5106661Z No containers need to be restarted.
+test	Build three representative STL files	2026-10-04T09:49:39.5106881Z 
+test	Build three representative STL files	2026-10-04T09:49:39.5107033Z No user sessions are running outdated binaries.
+test	Build three representative STL files	2026-10-04T09:49:39.5107279Z 
+test	Build three representative STL files	2026-10-04T09:49:39.5107516Z No VM guests are running outdated hypervisor (qemu) binaries on this host.
+test	Build three representative STL files	2026-10-04T09:49:41.0538108Z Cloning into '/home/runner/work/_temp/HOTS-02'...
+test	Build three representative STL files	2026-10-04T09:49:48.0850640Z Updating files:  55% (334/600)
+test	Build three representative STL files	2026-10-04T09:49:48.1062209Z Updating files:  56% (336/600)
+test	Build three representative STL files	2026-10-04T09:49:48.1267029Z Updating files:  57% (342/600)
+test	Build three representative STL files	2026-10-04T09:49:48.1610048Z Updating files:  58% (348/600)
+test	Build three representative STL files	2026-10-04T09:49:48.1796597Z Updating files:  59% (354/600)
+test	Build three representative STL files	2026-10-04T09:49:48.1896083Z Updating files:  60% (360/600)
+test	Build three representative STL files	2026-10-04T09:49:48.2231809Z Updating files:  61% (366/600)
+test	Build three representative STL files	2026-10-04T09:49:48.2352774Z Updating files:  62% (372/600)
+test	Build three representative STL files	2026-10-04T09:49:48.2480760Z Updating files:  63% (378/600)
+test	Build three representative STL files	2026-10-04T09:49:48.2963933Z Updating files:  64% (384/600)
+test	Build three representative STL files	2026-10-04T09:49:48.3210001Z Updating files:  65% (390/600)
+test	Build three representative STL files	2026-10-04T09:49:48.3464418Z Updating files:  66% (396/600)
+test	Build three representative STL files	2026-10-04T09:49:48.3579805Z Updating files:  67% (402/600)
+test	Build three representative STL files	2026-10-04T09:49:48.3643471Z Updating files:  68% (408/600)
+test	Build three representative STL files	2026-10-04T09:49:48.3827756Z Updating files:  69% (414/600)
+test	Build three representative STL files	2026-10-04T09:49:48.3929634Z Updating files:  70% (420/600)
+test	Build three representative STL files	2026-10-04T09:49:48.4102757Z Updating files:  71% (426/600)
+test	Build three representative STL files	2026-10-04T09:49:48.4232939Z Updating files:  72% (432/600)
+test	Build three representative STL files	2026-10-04T09:49:48.4453734Z Updating files:  73% (438/600)
+test	Build three representative STL files	2026-10-04T09:49:48.4694708Z Updating files:  74% (444/600)
+test	Build three representative STL files	2026-10-04T09:49:48.5036604Z Updating files:  75% (450/600)
+test	Build three representative STL files	2026-10-04T09:49:48.5167394Z Updating files:  76% (456/600)
+test	Build three representative STL files	2026-10-04T09:49:48.5275293Z Updating files:  77% (462/600)
+test	Build three representative STL files	2026-10-04T09:49:48.5495540Z Updating files:  78% (468/600)
+test	Build three representative STL files	2026-10-04T09:49:48.5660122Z Updating files:  79% (474/600)
+test	Build three representative STL files	2026-10-04T09:49:48.5884721Z Updating files:  80% (480/600)
+test	Build three representative STL files	2026-10-04T09:49:48.6150505Z Updating files:  81% (486/600)
+test	Build three representative STL files	2026-10-04T09:49:48.6289737Z Updating files:  82% (492/600)
+test	Build three representative STL files	2026-10-04T09:49:48.6545926Z Updating files:  83% (498/600)
+test	Build three representative STL files	2026-10-04T09:49:48.6751995Z Updating files:  84% (504/600)
+test	Build three representative STL files	2026-10-04T09:49:48.6841737Z Updating files:  85% (510/600)
+test	Build three representative STL files	2026-10-04T09:49:48.7011793Z Updating files:  86% (516/600)
+test	Build three representative STL files	2026-10-04T09:49:48.7250732Z Updating files:  87% (522/600)
+test	Build three representative STL files	2026-10-04T09:49:48.7477127Z Updating files:  88% (528/600)
+test	Build three representative STL files	2026-10-04T09:49:48.7717638Z Updating files:  89% (534/600)
+test	Build three representative STL files	2026-10-04T09:49:48.7906386Z Updating files:  90% (540/600)
+test	Build three representative STL files	2026-10-04T09:49:48.8109893Z Updating files:  91% (546/600)
+test	Build three representative STL files	2026-10-04T09:49:48.8767603Z Updating files:  92% (552/600)
+test	Build three representative STL files	2026-10-04T09:49:48.9028456Z Updating files:  93% (558/600)
+test	Build three representative STL files	2026-10-04T09:49:48.9135812Z Updating files:  94% (564/600)
+test	Build three representative STL files	2026-10-04T09:49:48.9256225Z Updating files:  95% (570/600)
+test	Build three representative STL files	2026-10-04T09:49:48.9522514Z Updating files:  96% (576/600)
+test	Build three representative STL files	2026-10-04T09:49:48.9768460Z Updating files:  97% (582/600)
+test	Build three representative STL files	2026-10-04T09:49:48.9852254Z Updating files:  98% (588/600)
+test	Build three representative STL files	2026-10-04T09:49:49.0168482Z Updating files:  99% (594/600)
+test	Build three representative STL files	2026-10-04T09:49:49.0168903Z Updating files: 100% (600/600)
+test	Build three representative STL files	2026-10-04T09:49:49.0169222Z Updating files: 100% (600/600), done.
+test	Build three representative STL files	2026-10-04T09:49:49.0409934Z   % Total    % Received % Xferd  Average Speed   Time    Time     Time  Current
+test	Build three representative STL files	2026-10-04T09:49:49.0410559Z                                  Dload  Upload   Total   Spent    Left  Speed
+test	Build three representative STL files	2026-10-04T09:49:49.0410777Z 
+test	Build three representative STL files	2026-10-04T09:49:49.2244955Z   0     0    0     0    0     0      0      0 --:--:-- --:--:-- --:--:--     0
+test	Build three representative STL files	2026-10-04T09:49:49.8656112Z   3  260M    3  9.9M    0     0  54.1M      0  0:00:04 --:--:--  0:00:04 54.0M
+test	Build three representative STL files	2026-10-04T09:49:49.8656685Z 100  260M  100  260M    0     0   315M      0 --:--:-- --:--:-- --:--:--  315M
+test	Build three representative STL files	2026-10-04T09:50:05.5178220Z tee: /home/runner/work/_temp/postrepair_test/00_Reports/blender_build.log: No such file or directory
+test	Build three representative STL files	2026-10-04T09:50:05.6798119Z ALSA lib confmisc.c:855:(parse_card) cannot find card '0'
+test	Build three representative STL files	2026-10-04T09:50:05.6798874Z ALSA lib conf.c:5182:(_snd_config_evaluate) function snd_func_card_inum returned error: No such file or directory
+test	Build three representative STL files	2026-10-04T09:50:05.6800115Z ALSA lib confmisc.c:422:(snd_func_concat) error evaluating strings
+test	Build three representative STL files	2026-10-04T09:50:05.6800789Z ALSA lib conf.c:5182:(_snd_config_evaluate) function snd_func_concat returned error: No such file or directory
+test	Build three representative STL files	2026-10-04T09:50:05.6801439Z ALSA lib confmisc.c:1334:(snd_func_refer) error evaluating name
+test	Build three representative STL files	2026-10-04T09:50:05.6802059Z ALSA lib conf.c:5182:(_snd_config_evaluate) function snd_func_refer returned error: No such file or directory
+test	Build three representative STL files	2026-10-04T09:50:05.6802771Z ALSA lib conf.c:5705:(snd_config_expand) Evaluate error: No such file or directory
+test	Build three representative STL files	2026-10-04T09:50:05.6803535Z ALSA lib pcm.c:2664:(snd_pcm_open_noupdate) Unknown PCM default
+test	Build three representative STL files	2026-10-04T09:50:05.6804066Z Failed to open dir (No such file or directory): /run/user/1001/gvfs/
+test	Build three representative STL files	2026-10-04T09:50:06.3136702Z [09:50:06] HOTS STL Builder 2.1.0
+test	Build three representative STL files	2026-10-04T09:50:06.3137166Z [09:50:06] Blender runtime: 3.6.23
+test	Build three representative STL files	2026-10-04T09:50:06.3137863Z [09:50:06] Source roots: [PosixPath('/home/runner/work/_temp/HOTS-02'), PosixPath('/home/runner/work/HOTS-03/HOTS-03')]
+test	Build three representative STL files	2026-10-04T09:50:06.3138563Z [09:50:06] Enabling m3addon
+test	Build three representative STL files	2026-10-04T09:50:06.5503060Z [09:50:06] Resolved 3 roster entries to 3 unique source groups
+test	Build three representative STL files	2026-10-04T09:50:06.5503880Z [09:50:06] PLAN Brightwing: brightwing — exact canonical base
+test	Build three representative STL files	2026-10-04T09:50:06.5504469Z [09:50:06] PLAN D.Va: dva_composite — explicit multi-model composite
+test	Build three representative STL files	2026-10-04T09:50:06.5504959Z [09:50:06] PLAN Tychus: tychus — exact canonical base
+test	Build three representative STL files	2026-10-04T09:50:06.5514665Z [09:50:06] Importing M3: /home/runner/work/_temp/HOTS-02/storm_hero_brightwing_base/storm_hero_brightwing_base.m3
+test	Build three representative STL files	2026-10-04T09:50:06.5540788Z 2026-10-04 09:50:06,551,551 DEBUG  base.py:152 Import /home/runner/work/_temp/HOTS-02/storm_hero_brightwing_base/storm_hero_brightwing_base.m3
+test	Build three representative STL files	2026-10-04T09:50:11.8318445Z Info: Removed 7 vertice(s)
+test	Build three representative STL files	2026-10-04T09:50:11.8318893Z Info: Removed 1 vertice(s)
+test	Build three representative STL files	2026-10-04T09:50:11.8319214Z Info: Removed 32 vertice(s)
+test	Build three representative STL files	2026-10-04T09:50:11.8319673Z Info: Removed: 0 vertices, 0 edges, 0 faces
+test	Build three representative STL files	2026-10-04T09:50:11.8320089Z Info: Removed 2 vertice(s)
+test	Build three representative STL files	2026-10-04T09:50:11.8320404Z Info: Removed: 0 vertices, 0 edges, 0 faces
+test	Build three representative STL files	2026-10-04T09:50:11.8320745Z Info: Removed 0 vertice(s)
+test	Build three representative STL files	2026-10-04T09:50:11.8321043Z Info: Removed: 0 vertices, 0 edges, 0 faces
+test	Build three representative STL files	2026-10-04T09:50:11.8321396Z Info: Removed 2 vertice(s)
+test	Build three representative STL files	2026-10-04T09:50:11.8321700Z Info: Removed: 0 vertices, 0 edges, 0 faces
+test	Build three representative STL files	2026-10-04T09:50:11.8322169Z [09:50:11] Strict edge test failed; retrying clean voxel union at 0.620 mm
+test	Build three representative STL files	2026-10-04T09:50:15.7102831Z [09:50:15] SUCCESS source brightwing: 261204 print-ready triangles
+test	Build three representative STL files	2026-10-04T09:50:15.7137986Z [09:50:15] Importing M3: /home/runner/work/_temp/HOTS-02/storm_hero_dva_base/storm_hero_dva_base.m3
+test	Build three representative STL files	2026-10-04T09:50:15.7140655Z 2026-10-04 09:50:15,713,713 DEBUG  base.py:152 Import /home/runner/work/_temp/HOTS-02/storm_hero_dva_base/storm_hero_dva_base.m3
+test	Build three representative STL files	2026-10-04T09:50:16.1545691Z Info: Removed 88 vertice(s)
+test	Build three representative STL files	2026-10-04T09:50:16.1546139Z Info: Removed 209 vertice(s)
+test	Build three representative STL files	2026-10-04T09:50:16.1546490Z Info: Removed 254 vertice(s)
+test	Build three representative STL files	2026-10-04T09:50:16.1547065Z [09:50:16] Importing M3: /home/runner/work/_temp/HOTS-02/storm_hero_dvamech_base/storm_hero_dvamech_base.m3
+test	Build three representative STL files	2026-10-04T09:50:16.1550233Z 2026-10-04 09:50:16,154,154 DEBUG  base.py:152 Import /home/runner/work/_temp/HOTS-02/storm_hero_dvamech_base/storm_hero_dvamech_base.m3
+test	Build three representative STL files	2026-10-04T09:50:27.1081082Z Info: Removed 160 vertice(s)
+test	Build three representative STL files	2026-10-04T09:50:27.1081529Z Info: Removed 0 vertice(s)
+test	Build three representative STL files	2026-10-04T09:50:27.1081799Z Info: Removed 2808 vertice(s)
+test	Build three representative STL files	2026-10-04T09:50:27.1082414Z Info: Removed 3497 vertice(s)
+test	Build three representative STL files	2026-10-04T09:50:27.1082615Z Info: Removed: 0 vertices, 0 edges, 0 faces
+test	Build three representative STL files	2026-10-04T09:50:27.1082847Z Info: Removed 88 vertice(s)
+test	Build three representative STL files	2026-10-04T09:50:27.1083044Z Info: Removed: 0 vertices, 0 edges, 0 faces
+test	Build three representative STL files	2026-10-04T09:50:27.1083261Z Info: Removed 209 vertice(s)
+test	Build three representative STL files	2026-10-04T09:50:27.1083460Z Info: Removed: 0 vertices, 0 edges, 0 faces
+test	Build three representative STL files	2026-10-04T09:50:27.1083668Z Info: Removed 239 vertice(s)
+test	Build three representative STL files	2026-10-04T09:50:27.1083873Z Info: Removed: 0 vertices, 0 edges, 0 faces
+test	Build three representative STL files	2026-10-04T09:50:27.1084252Z Info: Removed 156 vertice(s)
+test	Build three representative STL files	2026-10-04T09:50:27.1084449Z Info: Removed: 0 vertices, 0 edges, 0 faces
+test	Build three representative STL files	2026-10-04T09:50:27.1084665Z Info: Removed 0 vertice(s)
+test	Build three representative STL files	2026-10-04T09:50:27.1084859Z Info: Removed: 0 vertices, 0 edges, 0 faces
+test	Build three representative STL files	2026-10-04T09:50:27.1085073Z Info: Removed 0 vertice(s)
+test	Build three representative STL files	2026-10-04T09:50:27.1085264Z Info: Removed: 0 vertices, 0 edges, 0 faces
+test	Build three representative STL files	2026-10-04T09:50:27.1085479Z Info: Removed 2806 vertice(s)
+test	Build three representative STL files	2026-10-04T09:50:27.1085686Z Info: Removed: 0 vertices, 0 edges, 0 faces
+test	Build three representative STL files	2026-10-04T09:50:27.1085895Z Info: Removed 2 vertice(s)
+test	Build three representative STL files	2026-10-04T09:50:27.1086157Z Info: Removed: 0 vertices, 0 edges, 0 faces
+test	Build three representative STL files	2026-10-04T09:50:27.1086597Z [09:50:27] Strict edge test failed; retrying clean voxel union at 0.620 mm
+test	Build three representative STL files	2026-10-04T09:50:32.4294229Z [09:50:32] SUCCESS source dva_composite: 375734 print-ready triangles
+test	Build three representative STL files	2026-10-04T09:50:32.4361121Z [09:50:32] Importing M3: /home/runner/work/HOTS-03/HOTS-03/storm_hero_tychus_base/storm_hero_tychus_base_v13.m3
+test	Build three representative STL files	2026-10-04T09:50:32.4380739Z 2026-10-04 09:50:32,436,436 DEBUG  base.py:152 Import /home/runner/work/HOTS-03/HOTS-03/storm_hero_tychus_base/storm_hero_tychus_base_v13.m3
+test	Build three representative STL files	2026-10-04T09:50:46.7695225Z Info: Removed 554 vertice(s)
+test	Build three representative STL files	2026-10-04T09:50:46.7695645Z Info: Removed 1348 vertice(s)
+test	Build three representative STL files	2026-10-04T09:50:46.7695951Z Info: Removed 1917 vertice(s)
+test	Build three representative STL files	2026-10-04T09:50:46.7696257Z Info: Removed: 0 vertices, 0 edges, 0 faces
+test	Build three representative STL files	2026-10-04T09:50:46.7696610Z Info: Removed 557 vertice(s)
+test	Build three representative STL files	2026-10-04T09:50:46.7696917Z Info: Removed: 0 vertices, 0 edges, 0 faces
+test	Build three representative STL files	2026-10-04T09:50:46.7697288Z Info: Removed 1291 vertice(s)
+test	Build three representative STL files	2026-10-04T09:50:46.7697579Z Info: Removed: 0 vertices, 0 edges, 0 faces
+test	Build three representative STL files	2026-10-04T09:50:46.7697904Z Info: Removed 10 vertice(s)
+test	Build three representative STL files	2026-10-04T09:50:46.7698201Z Info: Removed: 0 vertices, 0 edges, 0 faces
+test	Build three representative STL files	2026-10-04T09:50:46.7698619Z [09:50:46] Strict edge test failed; retrying clean voxel union at 0.620 mm
+test	Build three representative STL files	2026-10-04T09:50:56.8733554Z [09:50:56] SUCCESS source tychus: 449999 print-ready triangles
+test	Build three representative STL files	2026-10-04T09:50:56.9568703Z [09:50:56] Completed: 3 successful roster entries, 0 missing/failed
+test	Build three representative STL files	2026-10-04T09:50:56.9570891Z Blender 3.6.23 (hash e467db79ca8c built 2025-06-17 01:32:54)
+test	Build three representative STL files	2026-10-04T09:50:57.0121890Z ##[error]Process completed with exit code 1.

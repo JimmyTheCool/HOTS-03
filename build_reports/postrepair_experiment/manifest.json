@@ -1,0 +1,942 @@
+{
+  "builder_version": "2.1.0",
+  "generated_utc": "2026-10-04T09:50:06.550178+00:00",
+  "blender_runtime": "3.6.23",
+  "expected_blender": "3.6.23",
+  "m3addon_commit": "58935005c4465a219a740f6b740253533eda773f",
+  "source_roots": [
+    "/home/runner/work/_temp/HOTS-02",
+    "/home/runner/work/HOTS-03/HOTS-03"
+  ],
+  "settings": {
+    "target_height_mm": 110.0,
+    "base_height_mm": 4.0,
+    "base_margin_mm": 4.0,
+    "voxel_mm": 0.55,
+    "thin_part_mm": 0.72,
+    "max_triangles": 450000,
+    "skip_animation": true
+  },
+  "heroes": [
+    {
+      "hero": "Brightwing",
+      "source_key": "brightwing",
+      "source_paths": [
+        "/home/runner/work/_temp/HOTS-02/storm_hero_brightwing_base/storm_hero_brightwing_base.m3"
+      ],
+      "import": {
+        "imported_paths": [
+          "/home/runner/work/_temp/HOTS-02/storm_hero_brightwing_base/storm_hero_brightwing_base.m3"
+        ],
+        "animation_paths": [],
+        "pose": null
+      },
+      "normalization": {
+        "scale_factor": 58.49788956778298,
+        "bounds_before": [
+          [
+            -54.5214729309082,
+            -38.5941047668457,
+            -34.753177642822266
+          ],
+          [
+            54.521392822265625,
+            44.968135833740234,
+            75.246826171875
+          ]
+        ],
+        "bounds_after": [
+          [
+            -54.52143096923828,
+            -41.78112030029297,
+            0.0
+          ],
+          [
+            54.52143096923828,
+            41.78112030029297,
+            110.0
+          ]
+        ],
+        "dimensions_mm": [
+          109.04286193847656,
+          83.56224060058594,
+          110.0
+        ]
+      },
+      "detail": {
+        "path": "/home/runner/work/_temp/postrepair_test/01_Detail_Preserving/Brightwing.stl",
+        "bytes": 293134,
+        "sha256": "b54ecc0df735bd904fc60575810ac9ee72b8b14f0a6ebf2b55b78dc65368f55b",
+        "triangles": 5861,
+        "bounds_mm": [
+          [
+            -54.52143096923828,
+            -41.78112030029297,
+            0.0
+          ],
+          [
+            54.52143096923828,
+            41.78112030029297,
+            110.0
+          ]
+        ],
+        "dimensions_mm": [
+          109.04286193847656,
+          83.56224060058594,
+          110.0
+        ],
+        "validation": {
+          "valid_binary_stl": true,
+          "watertight_edge_test": false,
+          "boundary_edges": 48,
+          "nonmanifold_edges": 2,
+          "degenerate_triangles": 0,
+          "triangles": 5861
+        },
+        "source_artifact": "/home/runner/work/_temp/postrepair_test/.build_cache/detail/brightwing.stl"
+      },
+      "print_ready": {
+        "path": "/home/runner/work/_temp/postrepair_test/02_Print_Ready_Watertight/Brightwing.stl",
+        "bytes": 13060284,
+        "sha256": "ea4e79e7da4eeb6da5e7c408c0018ff6ba07d73f1c8a321f1de7a90fa08d9936",
+        "triangles": 261204,
+        "bounds_mm": [
+          [
+            -58.511356353759766,
+            -58.511356353759766,
+            0.0
+          ],
+          [
+            58.511356353759766,
+            58.511356353759766,
+            112.68762969970703
+          ]
+        ],
+        "dimensions_mm": [
+          117.02271270751953,
+          117.02271270751953,
+          112.68762969970703
+        ],
+        "validation": {
+          "valid_binary_stl": true,
+          "watertight_edge_test": false,
+          "boundary_edges": 4,
+          "nonmanifold_edges": 2,
+          "degenerate_triangles": 0,
+          "triangles": 261204
+        },
+        "source_artifact": "/home/runner/work/_temp/postrepair_test/.build_cache/print_ready/brightwing.stl"
+      },
+      "decimation": {
+        "triangles_before_decimate": 333987,
+        "decimated": false,
+        "triangles_after_decimate": 333987,
+        "retry_voxel_mm": 0.62,
+        "retry": {
+          "triangles_before_decimate": 261204,
+          "decimated": false,
+          "triangles_after_decimate": 261204
+        }
+      },
+      "elapsed_source_seconds": 9.16,
+      "status": "success",
+      "resolution": "exact canonical base"
+    },
+    {
+      "hero": "D.Va",
+      "source_key": "dva_composite",
+      "source_paths": [
+        "/home/runner/work/_temp/HOTS-02/storm_hero_dva_base/storm_hero_dva_base.m3",
+        "/home/runner/work/_temp/HOTS-02/storm_hero_dvamech_base/storm_hero_dvamech_base.m3"
+      ],
+      "import": {
+        "imported_paths": [
+          "/home/runner/work/_temp/HOTS-02/storm_hero_dva_base/storm_hero_dva_base.m3",
+          "/home/runner/work/_temp/HOTS-02/storm_hero_dvamech_base/storm_hero_dvamech_base.m3"
+        ],
+        "animation_paths": [],
+        "pose": null
+      },
+      "normalization": {
+        "scale_factor": 28.980510709461633,
+        "bounds_before": [
+          [
+            -52.20343017578125,
+            -60.615806579589844,
+            -8.355583190917969
+          ],
+          [
+            55.36663818359375,
+            24.562870025634766,
+            101.64441680908203
+          ]
+        ],
+        "bounds_after": [
+          [
+            -53.7850341796875,
+            -42.58934020996094,
+            0.0
+          ],
+          [
+            53.7850341796875,
+            42.58934020996094,
+            110.0
+          ]
+        ],
+        "dimensions_mm": [
+          107.570068359375,
+          85.17868041992188,
+          110.0
+        ]
+      },
+      "detail": {
+        "path": "/home/runner/work/_temp/postrepair_test/01_Detail_Preserving/D.Va.stl",
+        "bytes": 1212684,
+        "sha256": "17b6f44c338305a1df699e4616f1c605663916c4ef43c4df10948d42584a378d",
+        "triangles": 24252,
+        "bounds_mm": [
+          [
+            -53.7850341796875,
+            -42.58934020996094,
+            0.0
+          ],
+          [
+            53.7850341796875,
+            42.58934020996094,
+            110.0
+          ]
+        ],
+        "dimensions_mm": [
+          107.570068359375,
+          85.17868041992188,
+          110.0
+        ],
+        "validation": {
+          "valid_binary_stl": true,
+          "watertight_edge_test": false,
+          "boundary_edges": 931,
+          "nonmanifold_edges": 17,
+          "degenerate_triangles": 0,
+          "triangles": 24252
+        },
+        "source_artifact": "/home/runner/work/_temp/postrepair_test/.build_cache/detail/dva_composite.stl"
+      },
+      "print_ready": {
+        "path": "/home/runner/work/_temp/postrepair_test/02_Print_Ready_Watertight/D.Va.stl",
+        "bytes": 18786784,
+        "sha256": "f7be7b9828a59fee34671994267ee62e891647f2de7a7406a1928b60882211ab",
+        "triangles": 375734,
+        "bounds_mm": [
+          [
+            -57.77496337890625,
+            -57.77496337890625,
+            0.0
+          ],
+          [
+            57.77496337890625,
+            57.77496337890625,
+            112.7909164428711
+          ]
+        ],
+        "dimensions_mm": [
+          115.5499267578125,
+          115.5499267578125,
+          112.7909164428711
+        ],
+        "validation": {
+          "valid_binary_stl": true,
+          "watertight_edge_test": false,
+          "boundary_edges": 6,
+          "nonmanifold_edges": 62,
+          "degenerate_triangles": 0,
+          "triangles": 375734
+        },
+        "source_artifact": "/home/runner/work/_temp/postrepair_test/.build_cache/print_ready/dva_composite.stl"
+      },
+      "decimation": {
+        "triangles_before_decimate": 484531,
+        "decimated": true,
+        "decimate_ratio": 0.9287331460732131,
+        "triangles_after_decimate": 449999,
+        "retry_voxel_mm": 0.62,
+        "retry": {
+          "triangles_before_decimate": 375734,
+          "decimated": false,
+          "triangles_after_decimate": 375734
+        }
+      },
+      "elapsed_source_seconds": 16.72,
+      "status": "success",
+      "resolution": "explicit multi-model composite"
+    },
+    {
+      "hero": "Tychus",
+      "source_key": "tychus",
+      "source_paths": [
+        "/home/runner/work/HOTS-03/HOTS-03/storm_hero_tychus_base/storm_hero_tychus_base_v13.m3"
+      ],
+      "import": {
+        "imported_paths": [
+          "/home/runner/work/HOTS-03/HOTS-03/storm_hero_tychus_base/storm_hero_tychus_base_v13.m3"
+        ],
+        "animation_paths": [],
+        "pose": null
+      },
+      "normalization": {
+        "scale_factor": 40.52869181944421,
+        "bounds_before": [
+          [
+            -37.60334014892578,
+            -62.664371490478516,
+            -3.3545737266540527
+          ],
+          [
+            98.34107208251953,
+            68.14625549316406,
+            106.64542388916016
+          ]
+        ],
+        "bounds_after": [
+          [
+            -67.97220611572266,
+            -65.40531158447266,
+            0.0
+          ],
+          [
+            67.97220611572266,
+            65.40531158447266,
+            110.0
+          ]
+        ],
+        "dimensions_mm": [
+          135.9444122314453,
+          130.8106231689453,
+          110.0
+        ]
+      },
+      "detail": {
+        "path": "/home/runner/work/_temp/postrepair_test/01_Detail_Preserving/Tychus.stl",
+        "bytes": 488884,
+        "sha256": "77b1379f5b716d435fea37bad0cfc49df1c321898c65d30a5903badd357f33dd",
+        "triangles": 9776,
+        "bounds_mm": [
+          [
+            -67.97220611572266,
+            -65.40531158447266,
+            0.0
+          ],
+          [
+            67.97220611572266,
+            65.40531158447266,
+            110.0
+          ]
+        ],
+        "dimensions_mm": [
+          135.9444122314453,
+          130.8106231689453,
+          110.0
+        ],
+        "validation": {
+          "valid_binary_stl": true,
+          "watertight_edge_test": false,
+          "boundary_edges": 702,
+          "nonmanifold_edges": 74,
+          "degenerate_triangles": 0,
+          "triangles": 9776
+        },
+        "source_artifact": "/home/runner/work/_temp/postrepair_test/.build_cache/detail/tychus.stl"
+      },
+      "print_ready": {
+        "path": "/home/runner/work/_temp/postrepair_test/02_Print_Ready_Watertight/Tychus.stl",
+        "bytes": 22500034,
+        "sha256": "1e07503724f9b3a3512524903b428466b76d0e99f114631182a5aca8c7067093",
+        "triangles": 449999,
+        "bounds_mm": [
+          [
+            -72.03857421875,
+            -72.03857421875,
+            0.0
+          ],
+          [
+            72.03857421875,
+            72.03857421875,
+            112.71670532226562
+          ]
+        ],
+        "dimensions_mm": [
+          144.0771484375,
+          144.0771484375,
+          112.71670532226562
+        ],
+        "validation": {
+          "valid_binary_stl": true,
+          "watertight_edge_test": false,
+          "boundary_edges": 120,
+          "nonmanifold_edges": 1019,
+          "degenerate_triangles": 0,
+          "triangles": 449999
+        },
+        "source_artifact": "/home/runner/work/_temp/postrepair_test/.build_cache/print_ready/tychus.stl"
+      },
+      "decimation": {
+        "triangles_before_decimate": 686463,
+        "decimated": true,
+        "decimate_ratio": 0.6555342385532796,
+        "triangles_after_decimate": 449999,
+        "retry_voxel_mm": 0.62,
+        "retry": {
+          "triangles_before_decimate": 530895,
+          "decimated": true,
+          "decimate_ratio": 0.8476252366287119,
+          "triangles_after_decimate": 449999
+        }
+      },
+      "elapsed_source_seconds": 24.44,
+      "status": "success",
+      "resolution": "exact canonical base"
+    }
+  ],
+  "source_results": {
+    "brightwing": {
+      "source_key": "brightwing",
+      "source_paths": [
+        "/home/runner/work/_temp/HOTS-02/storm_hero_brightwing_base/storm_hero_brightwing_base.m3"
+      ],
+      "import": {
+        "imported_paths": [
+          "/home/runner/work/_temp/HOTS-02/storm_hero_brightwing_base/storm_hero_brightwing_base.m3"
+        ],
+        "animation_paths": [],
+        "pose": null
+      },
+      "normalization": {
+        "scale_factor": 58.49788956778298,
+        "bounds_before": [
+          [
+            -54.5214729309082,
+            -38.5941047668457,
+            -34.753177642822266
+          ],
+          [
+            54.521392822265625,
+            44.968135833740234,
+            75.246826171875
+          ]
+        ],
+        "bounds_after": [
+          [
+            -54.52143096923828,
+            -41.78112030029297,
+            0.0
+          ],
+          [
+            54.52143096923828,
+            41.78112030029297,
+            110.0
+          ]
+        ],
+        "dimensions_mm": [
+          109.04286193847656,
+          83.56224060058594,
+          110.0
+        ]
+      },
+      "components": [
+        {
+          "name": "mesh",
+          "sheet_solidified": false,
+          "topology_before": {
+            "boundary_edges": 78,
+            "nonmanifold_edges": 1,
+            "edges": 1540,
+            "boundary_ratio": 0.05064935064935065,
+            "dimensions": [
+              78.1510238647461,
+              75.83499908447266,
+              51.02168655395508
+            ],
+            "min_dimension": 51.02168655395508,
+            "max_dimension": 78.1510238647461
+          }
+        },
+        {
+          "name": "mesh.001",
+          "sheet_solidified": false,
+          "topology_before": {
+            "boundary_edges": 30,
+            "nonmanifold_edges": 1,
+            "edges": 7304,
+            "boundary_ratio": 0.004107338444687842,
+            "dimensions": [
+              109.04286193847656,
+              83.56224060058594,
+              110.0
+            ],
+            "min_dimension": 83.56224060058594,
+            "max_dimension": 110.0
+          }
+        }
+      ],
+      "detail": {
+        "path": "/home/runner/work/_temp/postrepair_test/.build_cache/detail/brightwing.stl",
+        "bytes": 293134,
+        "sha256": "b54ecc0df735bd904fc60575810ac9ee72b8b14f0a6ebf2b55b78dc65368f55b",
+        "triangles": 5861,
+        "bounds_mm": [
+          [
+            -54.52143096923828,
+            -41.78112030029297,
+            0.0
+          ],
+          [
+            54.52143096923828,
+            41.78112030029297,
+            110.0
+          ]
+        ],
+        "dimensions_mm": [
+          109.04286193847656,
+          83.56224060058594,
+          110.0
+        ],
+        "validation": {
+          "valid_binary_stl": true,
+          "watertight_edge_test": false,
+          "boundary_edges": 48,
+          "nonmanifold_edges": 2,
+          "degenerate_triangles": 0,
+          "triangles": 5861
+        }
+      },
+      "print_ready": {
+        "path": "/home/runner/work/_temp/postrepair_test/.build_cache/print_ready/brightwing.stl",
+        "bytes": 13060284,
+        "sha256": "ea4e79e7da4eeb6da5e7c408c0018ff6ba07d73f1c8a321f1de7a90fa08d9936",
+        "triangles": 261204,
+        "bounds_mm": [
+          [
+            -58.511356353759766,
+            -58.511356353759766,
+            0.0
+          ],
+          [
+            58.511356353759766,
+            58.511356353759766,
+            112.68762969970703
+          ]
+        ],
+        "dimensions_mm": [
+          117.02271270751953,
+          117.02271270751953,
+          112.68762969970703
+        ],
+        "validation": {
+          "valid_binary_stl": true,
+          "watertight_edge_test": false,
+          "boundary_edges": 4,
+          "nonmanifold_edges": 2,
+          "degenerate_triangles": 0,
+          "triangles": 261204
+        }
+      },
+      "decimation": {
+        "triangles_before_decimate": 333987,
+        "decimated": false,
+        "triangles_after_decimate": 333987,
+        "retry_voxel_mm": 0.62,
+        "retry": {
+          "triangles_before_decimate": 261204,
+          "decimated": false,
+          "triangles_after_decimate": 261204
+        }
+      },
+      "blend_path": null,
+      "elapsed_seconds": 9.16
+    },
+    "dva_composite": {
+      "source_key": "dva_composite",
+      "source_paths": [
+        "/home/runner/work/_temp/HOTS-02/storm_hero_dva_base/storm_hero_dva_base.m3",
+        "/home/runner/work/_temp/HOTS-02/storm_hero_dvamech_base/storm_hero_dvamech_base.m3"
+      ],
+      "import": {
+        "imported_paths": [
+          "/home/runner/work/_temp/HOTS-02/storm_hero_dva_base/storm_hero_dva_base.m3",
+          "/home/runner/work/_temp/HOTS-02/storm_hero_dvamech_base/storm_hero_dvamech_base.m3"
+        ],
+        "animation_paths": [],
+        "pose": null
+      },
+      "normalization": {
+        "scale_factor": 28.980510709461633,
+        "bounds_before": [
+          [
+            -52.20343017578125,
+            -60.615806579589844,
+            -8.355583190917969
+          ],
+          [
+            55.36663818359375,
+            24.562870025634766,
+            101.64441680908203
+          ]
+        ],
+        "bounds_after": [
+          [
+            -53.7850341796875,
+            -42.58934020996094,
+            0.0
+          ],
+          [
+            53.7850341796875,
+            42.58934020996094,
+            110.0
+          ]
+        ],
+        "dimensions_mm": [
+          107.570068359375,
+          85.17868041992188,
+          110.0
+        ]
+      },
+      "components": [
+        {
+          "name": "mesh",
+          "sheet_solidified": false,
+          "topology_before": {
+            "boundary_edges": 24,
+            "nonmanifold_edges": 0,
+            "edges": 1356,
+            "boundary_ratio": 0.017699115044247787,
+            "dimensions": [
+              11.431554794311523,
+              4.652578353881836,
+              15.396074295043945
+            ],
+            "min_dimension": 4.652578353881836,
+            "max_dimension": 15.396074295043945
+          }
+        },
+        {
+          "name": "mesh.001",
+          "sheet_solidified": false,
+          "topology_before": {
+            "boundary_edges": 54,
+            "nonmanifold_edges": 0,
+            "edges": 1953,
+            "boundary_ratio": 0.027649769585253458,
+            "dimensions": [
+              4.0421857833862305,
+              14.342315673828125,
+              76.51016235351562
+            ],
+            "min_dimension": 4.0421857833862305,
+            "max_dimension": 76.51016235351562
+          }
+        },
+        {
+          "name": "mesh.002",
+          "sheet_solidified": false,
+          "topology_before": {
+            "boundary_edges": 321,
+            "nonmanifold_edges": 15,
+            "edges": 10854,
+            "boundary_ratio": 0.02957435046987286,
+            "dimensions": [
+              45.652870178222656,
+              15.701496124267578,
+              73.19902801513672
+            ],
+            "min_dimension": 15.701496124267578,
+            "max_dimension": 73.19902801513672
+          }
+        },
+        {
+          "name": "mesh.003",
+          "sheet_solidified": false,
+          "topology_before": {
+            "boundary_edges": 218,
+            "nonmanifold_edges": 2,
+            "edges": 3060,
+            "boundary_ratio": 0.07124183006535947,
+            "dimensions": [
+              21.92538833618164,
+              28.096906661987305,
+              22.629119873046875
+            ],
+            "min_dimension": 21.92538833618164,
+            "max_dimension": 28.096906661987305
+          }
+        },
+        {
+          "name": "mesh.004",
+          "sheet_solidified": true,
+          "topology_before": {
+            "boundary_edges": 110,
+            "nonmanifold_edges": 0,
+            "edges": 412,
+            "boundary_ratio": 0.2669902912621359,
+            "dimensions": [
+              80.64767456054688,
+              59.02288055419922,
+              28.281173706054688
+            ],
+            "min_dimension": 28.281173706054688,
+            "max_dimension": 80.64767456054688
+          }
+        },
+        {
+          "name": "mesh.005",
+          "sheet_solidified": false,
+          "topology_before": {
+            "boundary_edges": 204,
+            "nonmanifold_edges": 0,
+            "edges": 19200,
+            "boundary_ratio": 0.010625,
+            "dimensions": [
+              107.570068359375,
+              85.17868041992188,
+              102.21392822265625
+            ],
+            "min_dimension": 85.17868041992188,
+            "max_dimension": 107.570068359375
+          }
+        }
+      ],
+      "detail": {
+        "path": "/home/runner/work/_temp/postrepair_test/.build_cache/detail/dva_composite.stl",
+        "bytes": 1212684,
+        "sha256": "17b6f44c338305a1df699e4616f1c605663916c4ef43c4df10948d42584a378d",
+        "triangles": 24252,
+        "bounds_mm": [
+          [
+            -53.7850341796875,
+            -42.58934020996094,
+            0.0
+          ],
+          [
+            53.7850341796875,
+            42.58934020996094,
+            110.0
+          ]
+        ],
+        "dimensions_mm": [
+          107.570068359375,
+          85.17868041992188,
+          110.0
+        ],
+        "validation": {
+          "valid_binary_stl": true,
+          "watertight_edge_test": false,
+          "boundary_edges": 931,
+          "nonmanifold_edges": 17,
+          "degenerate_triangles": 0,
+          "triangles": 24252
+        }
+      },
+      "print_ready": {
+        "path": "/home/runner/work/_temp/postrepair_test/.build_cache/print_ready/dva_composite.stl",
+        "bytes": 18786784,
+        "sha256": "f7be7b9828a59fee34671994267ee62e891647f2de7a7406a1928b60882211ab",
+        "triangles": 375734,
+        "bounds_mm": [
+          [
+            -57.77496337890625,
+            -57.77496337890625,
+            0.0
+          ],
+          [
+            57.77496337890625,
+            57.77496337890625,
+            112.7909164428711
+          ]
+        ],
+        "dimensions_mm": [
+          115.5499267578125,
+          115.5499267578125,
+          112.7909164428711
+        ],
+        "validation": {
+          "valid_binary_stl": true,
+          "watertight_edge_test": false,
+          "boundary_edges": 6,
+          "nonmanifold_edges": 62,
+          "degenerate_triangles": 0,
+          "triangles": 375734
+        }
+      },
+      "decimation": {
+        "triangles_before_decimate": 484531,
+        "decimated": true,
+        "decimate_ratio": 0.9287331460732131,
+        "triangles_after_decimate": 449999,
+        "retry_voxel_mm": 0.62,
+        "retry": {
+          "triangles_before_decimate": 375734,
+          "decimated": false,
+          "triangles_after_decimate": 375734
+        }
+      },
+      "blend_path": null,
+      "elapsed_seconds": 16.72
+    },
+    "tychus": {
+      "source_key": "tychus",
+      "source_paths": [
+        "/home/runner/work/HOTS-03/HOTS-03/storm_hero_tychus_base/storm_hero_tychus_base_v13.m3"
+      ],
+      "import": {
+        "imported_paths": [
+          "/home/runner/work/HOTS-03/HOTS-03/storm_hero_tychus_base/storm_hero_tychus_base_v13.m3"
+        ],
+        "animation_paths": [],
+        "pose": null
+      },
+      "normalization": {
+        "scale_factor": 40.52869181944421,
+        "bounds_before": [
+          [
+            -37.60334014892578,
+            -62.664371490478516,
+            -3.3545737266540527
+          ],
+          [
+            98.34107208251953,
+            68.14625549316406,
+            106.64542388916016
+          ]
+        ],
+        "bounds_after": [
+          [
+            -67.97220611572266,
+            -65.40531158447266,
+            0.0
+          ],
+          [
+            67.97220611572266,
+            65.40531158447266,
+            110.0
+          ]
+        ],
+        "dimensions_mm": [
+          135.9444122314453,
+          130.8106231689453,
+          110.0
+        ]
+      },
+      "components": [
+        {
+          "name": "mesh",
+          "sheet_solidified": false,
+          "topology_before": {
+            "boundary_edges": 361,
+            "nonmanifold_edges": 0,
+            "edges": 4739,
+            "boundary_ratio": 0.07617640852500528,
+            "dimensions": [
+              135.9444122314453,
+              130.8106231689453,
+              109.40682220458984
+            ],
+            "min_dimension": 109.40682220458984,
+            "max_dimension": 135.9444122314453
+          }
+        },
+        {
+          "name": "mesh.001",
+          "sheet_solidified": false,
+          "topology_before": {
+            "boundary_edges": 471,
+            "nonmanifold_edges": 66,
+            "edges": 10290,
+            "boundary_ratio": 0.04577259475218659,
+            "dimensions": [
+              67.65058898925781,
+              49.085975646972656,
+              106.64543914794922
+            ],
+            "min_dimension": 49.085975646972656,
+            "max_dimension": 106.64543914794922
+          }
+        }
+      ],
+      "detail": {
+        "path": "/home/runner/work/_temp/postrepair_test/.build_cache/detail/tychus.stl",
+        "bytes": 488884,
+        "sha256": "77b1379f5b716d435fea37bad0cfc49df1c321898c65d30a5903badd357f33dd",
+        "triangles": 9776,
+        "bounds_mm": [
+          [
+            -67.97220611572266,
+            -65.40531158447266,
+            0.0
+          ],
+          [
+            67.97220611572266,
+            65.40531158447266,
+            110.0
+          ]
+        ],
+        "dimensions_mm": [
+          135.9444122314453,
+          130.8106231689453,
+          110.0
+        ],
+        "validation": {
+          "valid_binary_stl": true,
+          "watertight_edge_test": false,
+          "boundary_edges": 702,
+          "nonmanifold_edges": 74,
+          "degenerate_triangles": 0,
+          "triangles": 9776
+        }
+      },
+      "print_ready": {
+        "path": "/home/runner/work/_temp/postrepair_test/.build_cache/print_ready/tychus.stl",
+        "bytes": 22500034,
+        "sha256": "1e07503724f9b3a3512524903b428466b76d0e99f114631182a5aca8c7067093",
+        "triangles": 449999,
+        "bounds_mm": [
+          [
+            -72.03857421875,
+            -72.03857421875,
+            0.0
+          ],
+          [
+            72.03857421875,
+            72.03857421875,
+            112.71670532226562
+          ]
+        ],
+        "dimensions_mm": [
+          144.0771484375,
+          144.0771484375,
+          112.71670532226562
+        ],
+        "validation": {
+          "valid_binary_stl": true,
+          "watertight_edge_test": false,
+          "boundary_edges": 120,
+          "nonmanifold_edges": 1019,
+          "degenerate_triangles": 0,
+          "triangles": 449999
+        }
+      },
+      "decimation": {
+        "triangles_before_decimate": 686463,
+        "decimated": true,
+        "decimate_ratio": 0.6555342385532796,
+        "triangles_after_decimate": 449999,
+        "retry_voxel_mm": 0.62,
+        "retry": {
+          "triangles_before_decimate": 530895,
+          "decimated": true,
+          "decimate_ratio": 0.8476252366287119,
+          "triangles_after_decimate": 449999
+        }
+      },
+      "blend_path": null,
+      "elapsed_seconds": 24.44
+    }
+  }
+}
