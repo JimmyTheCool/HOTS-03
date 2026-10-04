@@ -1,0 +1,4 @@
+﻿file,passed,selected_method,vertices,triangles,watertight,winding_consistent,finite_coordinates,volume_mm3,x_mm,y_mm,z_mm,connected_bodies,x_retention,y_retention,z_retention,input_sha256,output_sha256,error
+Brightwing.stl,True,pymeshfix,130226,260464,True,True,True,71073.93593020107,117.02271270751953,117.02271270751953,112.68762969970703,1,1.0,1.0,1.0,8d4acba68a784ded165692f26519dc9d2a7cc46e655e338eb2a66f92e4142c56,e5148b8d39b1f91a3c0928bb79342c8b7517ee199d7090121862cbc522de9a99,
+D.Va.stl,False,,,,,,,,,,,,,,,,,"AttributeError(""'VoxelGrid' object has no attribute 'origin'"")"
+Tychus.stl,False,,,,,,,,,,,,,,,,,"AttributeError(""'VoxelGrid' object has no attribute 'origin'"")"
