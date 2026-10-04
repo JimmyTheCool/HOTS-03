@@ -1,0 +1,48 @@
+name: Report Retained HOTS STL Artifacts
+
+on:
+  workflow_dispatch:
+  push:
+    branches:
+      - chatgpt-stl-builder
+    paths:
+      - .github/workflows/report-stl-artifacts.yml
+
+permissions:
+  actions: read
+  contents: write
+
+jobs:
+  report:
+    runs-on: ubuntu-22.04
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          ref: chatgpt-stl-builder
+          fetch-depth: 0
+
+      - name: Write artifact inventory
+        env:
+          GH_TOKEN: ${{ github.token }}
+        shell: bash
+        run: |
+          set -euo pipefail
+          OUT="build_reports/collector_inventory"
+          mkdir -p "$OUT"
+          gh api --paginate "repos/$GITHUB_REPOSITORY/actions/artifacts?per_page=100" \
+            --jq '.artifacts[] | [.id, .name, .size_in_bytes, .expired, .created_at, .updated_at, .workflow_run.id, .archive_download_url] | @tsv' \
+            > "$OUT/artifacts.tsv"
+          {
+            printf 'id\tname\tsize_in_bytes\texpired\tcreated_at\tupdated_at\tworkflow_run_id\tarchive_download_url\n'
+            cat "$OUT/artifacts.tsv"
+          } > "$OUT/artifacts_with_header.tsv"
+          mv "$OUT/artifacts_with_header.tsv" "$OUT/artifacts.tsv"
+          gh api --paginate "repos/$GITHUB_REPOSITORY/releases?per_page=100" \
+            --jq '.[] | . as $r | .assets[] | [$r.id, $r.tag_name, $r.published_at, .id, .name, .size, .browser_download_url] | @tsv' \
+            > "$OUT/release_assets.tsv"
+          git config user.name "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git add "$OUT"
+          git commit -m "Add retained STL artifact inventory [skip ci]"
+          git pull --rebase origin chatgpt-stl-builder
+          git push origin HEAD:chatgpt-stl-builder
