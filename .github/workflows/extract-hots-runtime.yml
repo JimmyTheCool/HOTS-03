@@ -1,0 +1,46 @@
+name: Extract HOTS STL Runtime
+
+on:
+  workflow_dispatch:
+  push:
+    branches:
+      - chatgpt-stl-builder
+    paths:
+      - .github/workflows/extract-hots-runtime.yml
+      - tools/hots_stl/builder_bundle.tar.gz
+
+permissions:
+  contents: write
+
+jobs:
+  extract:
+    runs-on: ubuntu-22.04
+    steps:
+      - name: Check out builder branch
+        uses: actions/checkout@v4
+        with:
+          ref: chatgpt-stl-builder
+          fetch-depth: 0
+
+      - name: Extract bundled runtime source
+        shell: bash
+        run: |
+          set -euo pipefail
+          rm -rf tools/hots_stl/runtime_extracted
+          mkdir -p tools/hots_stl/runtime_extracted
+          tar -xzf tools/hots_stl/builder_bundle.tar.gz -C tools/hots_stl/runtime_extracted
+          find tools/hots_stl/runtime_extracted -type f -print
+
+      - name: Commit extracted source for review
+        shell: bash
+        run: |
+          set -euo pipefail
+          git config user.name "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git add tools/hots_stl/runtime_extracted
+          if git diff --cached --quiet; then
+            echo "Runtime source is already extracted."
+          else
+            git commit -m "Expose HOTS STL runtime source for repair"
+            git push origin HEAD:chatgpt-stl-builder
+          fi
