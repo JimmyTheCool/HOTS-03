@@ -1,0 +1,349 @@
+name: Test HOTS Post-Repair
+
+on:
+  workflow_dispatch:
+  push:
+    branches: [chatgpt-stl-builder]
+    paths: [.github/workflows/test-hots-postrepair.yml]
+
+permissions:
+  contents: read
+
+env:
+  BLENDER_VERSION: 3.6.23
+  M3ADDON_COMMIT: 58935005c4465a219a740f6b740253533eda773f
+
+jobs:
+  test:
+    runs-on: ubuntu-22.04
+    timeout-minutes: 240
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          ref: chatgpt-stl-builder
+          fetch-depth: 1
+
+      - name: Build three representative STL files
+        shell: bash
+        run: |
+          set -euo pipefail
+          cp tools/hots_stl/runtime_extracted/build_hots_stls.py "$RUNNER_TEMP/builder.py"
+          python tools/hots_stl/runtime_patch_v2.py "$RUNNER_TEMP/builder.py"
+          python ci/patch_builder_external_validation.py "$RUNNER_TEMP/builder.py"
+          python ci/patch_builder_mesh_filter.py "$RUNNER_TEMP/builder.py"
+          sudo apt-get update -qq
+          sudo apt-get install -y --no-install-recommends \
+            ca-certificates curl git xz-utils \
+            libx11-6 libxi6 libxrender1 libxfixes3 libxkbcommon0 \
+            libsm6 libice6 libgl1 libegl1
+          git clone --depth 1 https://github.com/JimmyTheCool/HOTS-02.git "$RUNNER_TEMP/HOTS-02"
+          cd "$RUNNER_TEMP"
+          ARCHIVE="blender-${BLENDER_VERSION}-linux-x64.tar.xz"
+          curl --fail --location --retry 5 --retry-delay 5 \
+            "https://download.blender.org/release/Blender3.6/${ARCHIVE}" \
+            --output "$ARCHIVE"
+          tar -xf "$ARCHIVE"
+          git clone --quiet https://github.com/SC2Mapster/m3addon.git "$RUNNER_TEMP/m3addon"
+          git -C "$RUNNER_TEMP/m3addon" checkout --quiet "$M3ADDON_COMMIT"
+          mkdir -p "$HOME/.config/blender/3.6/scripts/addons"
+          ln -s "$RUNNER_TEMP/m3addon" "$HOME/.config/blender/3.6/scripts/addons/m3addon"
+          OUTPUT="$RUNNER_TEMP/postrepair_test"
+          "$RUNNER_TEMP/blender-${BLENDER_VERSION}-linux-x64/blender" \
+            --background --factory-startup \
+            --python "$RUNNER_TEMP/builder.py" -- \
+            --source "$RUNNER_TEMP/HOTS-02" \
+            --source "$GITHUB_WORKSPACE" \
+            --output "$OUTPUT" \
+            --target-height-mm 110 \
+            --base-height-mm 4 \
+            --base-margin-mm 4 \
+            --voxel-mm 0.55 \
+            --thin-part-mm 0.72 \
+            --max-triangles 450000 \
+            --skip-animation \
+            --only "Brightwing" \
+            --only "D.Va" \
+            --only "Tychus" \
+            2>&1 | tee "$OUTPUT/00_Reports/blender_build.log"
+
+      - name: Repair and compare output methods
+        shell: bash
+        run: |
+          set -euo pipefail
+          python -m pip install --disable-pip-version-check --quiet \
+            trimesh==4.8.3 numpy==2.2.6 scipy==1.15.3 \
+            scikit-image==0.25.2 pymeshfix==0.18.1
+          python - "$RUNNER_TEMP/postrepair_test" <<'PY'
+          from pathlib import Path
+          import json
+          import math
+          import sys
+          import traceback
+
+          import numpy as np
+          import pymeshfix
+          from scipy import ndimage
+          from scipy.spatial import cKDTree
+          import trimesh
+
+          root = Path(sys.argv[1])
+          source_dir = root / "02_Print_Ready_Watertight"
+          repaired_dir = root / "04_Post_Repaired"
+          repaired_dir.mkdir(parents=True, exist_ok=True)
+
+          def clean_trimesh(mesh):
+              mesh = mesh.copy()
+              mesh.merge_vertices(
+                  merge_tex=True,
+                  merge_norm=True,
+                  digits_vertex=2,
+                  digits_norm=2,
+              )
+              try:
+                  mesh.update_faces(mesh.nondegenerate_faces())
+              except Exception:
+                  pass
+              try:
+                  mesh.update_faces(mesh.unique_faces())
+              except Exception:
+                  pass
+              mesh.remove_unreferenced_vertices()
+              try:
+                  trimesh.repair.fix_normals(mesh, multibody=True)
+              except TypeError:
+                  trimesh.repair.fix_normals(mesh)
+              return mesh
+
+          def mesh_stats(mesh):
+              mesh = clean_trimesh(mesh)
+              extents = [float(value) for value in mesh.extents]
+              try:
+                  bodies = int(mesh.body_count)
+              except Exception:
+                  bodies = len(mesh.split(only_watertight=False))
+              return {
+                  "vertices": int(len(mesh.vertices)),
+                  "triangles": int(len(mesh.faces)),
+                  "watertight": bool(mesh.is_watertight),
+                  "winding_consistent": bool(mesh.is_winding_consistent),
+                  "finite": bool(np.isfinite(mesh.vertices).all()),
+                  "volume_mm3": float(abs(mesh.volume)),
+                  "dimensions_mm": extents,
+                  "connected_bodies": bodies,
+              }
+
+          def passed(stats):
+              return (
+                  stats["watertight"]
+                  and stats["winding_consistent"]
+                  and stats["finite"]
+                  and stats["volume_mm3"] > 1.0
+                  and 100 <= stats["triangles"] <= 500000
+                  and min(stats["dimensions_mm"]) >= 2.0
+                  and max(stats["dimensions_mm"]) <= 350.0
+                  and stats["connected_bodies"] == 1
+              )
+
+          def meshfix_repair(mesh):
+              prepared = clean_trimesh(mesh)
+              vertices = np.asarray(prepared.vertices, dtype=np.float64)
+              faces = np.asarray(prepared.faces, dtype=np.int32)
+              fixed_vertices, fixed_faces = pymeshfix.clean_from_arrays(
+                  vertices,
+                  faces,
+                  verbose=False,
+                  joincomp=True,
+                  remove_smallest_components=False,
+              )
+              fixed = trimesh.Trimesh(
+                  vertices=fixed_vertices,
+                  faces=fixed_faces,
+                  process=True,
+                  validate=True,
+              )
+              return clean_trimesh(fixed)
+
+          def draw_connected_line(matrix, a, b, radius_voxels=1):
+              a = np.asarray(a, dtype=float)
+              b = np.asarray(b, dtype=float)
+              distance = float(np.linalg.norm(b - a))
+              count = max(2, int(math.ceil(distance * 2.0)) + 1)
+              points = np.rint(np.linspace(a, b, count)).astype(int)
+              valid = np.all((points >= 0) & (points < np.asarray(matrix.shape)), axis=1)
+              points = points[valid]
+              matrix[tuple(points.T)] = True
+              if radius_voxels > 0:
+                  structure = ndimage.generate_binary_structure(3, 2)
+                  matrix[:] = ndimage.binary_dilation(
+                      matrix,
+                      structure=structure,
+                      iterations=radius_voxels,
+                  )
+
+          def connect_voxel_components(matrix):
+              structure = np.ones((3, 3, 3), dtype=bool)
+              labels, count = ndimage.label(matrix, structure=structure)
+              if count <= 1:
+                  return matrix, {"initial_components": int(count), "removed_tiny": 0, "bridges": 0}
+
+              sizes = np.bincount(labels.ravel())
+              sizes[0] = 0
+              tiny_limit = max(8, int(matrix.sum() * 0.000002))
+              removed = 0
+              for label_index in range(1, count + 1):
+                  if sizes[label_index] < tiny_limit:
+                      matrix[labels == label_index] = False
+                      removed += 1
+
+              labels, count = ndimage.label(matrix, structure=structure)
+              if count <= 1:
+                  return matrix, {"initial_components": int(len(sizes) - 1), "removed_tiny": removed, "bridges": 0}
+
+              sizes = np.bincount(labels.ravel())
+              sizes[0] = 0
+              main_label = int(np.argmax(sizes))
+              main_points = np.argwhere(labels == main_label)
+              tree = cKDTree(main_points)
+              bridges = 0
+
+              for label_index in range(1, count + 1):
+                  if label_index == main_label:
+                      continue
+                  points = np.argwhere(labels == label_index)
+                  if len(points) == 0:
+                      continue
+                  if len(points) > 20000:
+                      stride = max(1, len(points) // 20000)
+                      query_points = points[::stride]
+                  else:
+                      query_points = points
+                  distances, nearest_indices = tree.query(query_points, k=1)
+                  selected = int(np.argmin(distances))
+                  source = query_points[selected]
+                  target = main_points[int(nearest_indices[selected])]
+                  draw_connected_line(matrix, source, target, radius_voxels=1)
+                  bridges += 1
+
+              matrix = ndimage.binary_closing(
+                  matrix,
+                  structure=ndimage.generate_binary_structure(3, 2),
+                  iterations=1,
+              )
+              matrix = ndimage.binary_fill_holes(matrix)
+              return matrix, {
+                  "initial_components": int(len(sizes) - 1),
+                  "removed_tiny": removed,
+                  "bridges": bridges,
+              }
+
+          def voxel_reconstruct(mesh, pitch=0.62):
+              prepared = clean_trimesh(mesh)
+              grid = prepared.voxelized(pitch=pitch, method="subdivide")
+              matrix = np.asarray(grid.matrix, dtype=bool).copy()
+              matrix = ndimage.binary_closing(
+                  matrix,
+                  structure=ndimage.generate_binary_structure(3, 2),
+                  iterations=1,
+              )
+              matrix = ndimage.binary_fill_holes(matrix)
+              matrix, connectivity = connect_voxel_components(matrix)
+              reconstructed = trimesh.voxel.ops.matrix_to_marching_cubes(
+                  matrix,
+                  pitch=float(pitch),
+              )
+              reconstructed.apply_translation(np.asarray(grid.origin, dtype=float))
+              reconstructed = clean_trimesh(reconstructed)
+              return reconstructed, connectivity
+
+          report = {"files": [], "all_passed": True}
+
+          for source_path in sorted(source_dir.glob("*.stl")):
+              entry = {"file": source_path.name, "methods": {}}
+              try:
+                  original = trimesh.load_mesh(source_path, force="mesh", process=False)
+                  original = clean_trimesh(original)
+                  entry["methods"]["rounded_vertex_merge"] = mesh_stats(original)
+
+                  selected_mesh = None
+                  selected_method = None
+
+                  try:
+                      fixed = meshfix_repair(original)
+                      fixed_stats = mesh_stats(fixed)
+                      entry["methods"]["pymeshfix"] = fixed_stats
+                      if passed(fixed_stats):
+                          selected_mesh = fixed
+                          selected_method = "pymeshfix"
+                  except Exception as exc:
+                      entry["methods"]["pymeshfix_error"] = {
+                          "error": repr(exc),
+                          "traceback": traceback.format_exc(),
+                      }
+
+                  if selected_mesh is None:
+                      voxel, connectivity = voxel_reconstruct(original, pitch=0.62)
+                      voxel_stats = mesh_stats(voxel)
+                      entry["methods"]["connected_voxel"] = voxel_stats
+                      entry["voxel_connectivity"] = connectivity
+                      if passed(voxel_stats):
+                          selected_mesh = voxel
+                          selected_method = "connected_voxel"
+
+                  if selected_mesh is None:
+                      entry["passed"] = False
+                      report["all_passed"] = False
+                  else:
+                      output_path = repaired_dir / source_path.name
+                      selected_mesh.export(output_path, file_type="stl")
+                      reloaded = trimesh.load_mesh(
+                          output_path,
+                          force="mesh",
+                          process=True,
+                          validate=True,
+                      )
+                      final_stats = mesh_stats(reloaded)
+                      entry["selected_method"] = selected_method
+                      entry["final"] = final_stats
+                      entry["passed"] = passed(final_stats)
+                      if not entry["passed"]:
+                          report["all_passed"] = False
+              except Exception as exc:
+                  entry["passed"] = False
+                  entry["fatal_error"] = {
+                      "error": repr(exc),
+                      "traceback": traceback.format_exc(),
+                  }
+                  report["all_passed"] = False
+              report["files"].append(entry)
+
+          reports = root / "00_Reports"
+          (reports / "postrepair_comparison.json").write_text(
+              json.dumps(report, indent=2), encoding="utf-8"
+          )
+          print(json.dumps(report, indent=2))
+          if not report["all_passed"]:
+              raise SystemExit(1)
+          PY
+
+      - name: Stage experiment artifacts
+        if: always()
+        shell: bash
+        run: |
+          set -euo pipefail
+          STAGE="$GITHUB_WORKSPACE/postrepair_experiment"
+          mkdir -p "$STAGE/Repaired_STL" "$STAGE/Reports"
+          SOURCE="$RUNNER_TEMP/postrepair_test"
+          if [[ -d "$SOURCE/04_Post_Repaired" ]]; then
+            cp "$SOURCE"/04_Post_Repaired/*.stl "$STAGE/Repaired_STL/" 2>/dev/null || true
+          fi
+          if [[ -d "$SOURCE/00_Reports" ]]; then
+            cp "$SOURCE"/00_Reports/* "$STAGE/Reports/" 2>/dev/null || true
+          fi
+
+      - uses: actions/upload-artifact@v4
+        if: always()
+        with:
+          name: HOTS-postrepair-experiment
+          path: postrepair_experiment
+          retention-days: 30
+          compression-level: 0
