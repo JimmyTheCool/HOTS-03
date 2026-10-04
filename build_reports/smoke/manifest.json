@@ -1,0 +1,528 @@
+{
+  "builder_version": "1.0.0",
+  "generated_utc": "2026-10-04T08:43:53.540308+00:00",
+  "blender_runtime": "3.6.23",
+  "expected_blender": "3.6.23",
+  "m3addon_commit": "58935005c4465a219a740f6b740253533eda773f",
+  "source_roots": [
+    "/home/runner/work/_temp/HOTS-02",
+    "/home/runner/work/HOTS-03/HOTS-03"
+  ],
+  "settings": {
+    "target_height_mm": 110.0,
+    "base_height_mm": 4.0,
+    "base_margin_mm": 4.0,
+    "voxel_mm": 0.38,
+    "thin_part_mm": 0.7,
+    "max_triangles": 650000,
+    "skip_animation": false
+  },
+  "heroes": [
+    {
+      "hero": "Abathur",
+      "source_key": "abathur",
+      "source_paths": [
+        "/home/runner/work/_temp/HOTS-02/storm_hero_abathur_base/storm_hero_abathur_base.m3"
+      ],
+      "import": {
+        "imported_paths": [
+          "/home/runner/work/_temp/HOTS-02/storm_hero_abathur_base/storm_hero_abathur_base.m3"
+        ],
+        "animation_paths": [
+          "/home/runner/work/_temp/HOTS-02/storm_hero_abathur_requiredanims/storm_hero_abathur_requiredanims.m3a"
+        ],
+        "pose": {
+          "animation": "Stand",
+          "index": 0,
+          "frame": 12,
+          "reason": "matched 'stand'",
+          "animation_count": 38
+        }
+      },
+      "normalization": {
+        "scale_factor": 4.47890467837361,
+        "bounds_before": [
+          [
+            -4.116718292236328,
+            -3.4481096267700195,
+            -98.3035888671875
+          ],
+          [
+            4.322650909423828,
+            8.03258991241455,
+            11.696413040161133
+          ]
+        ],
+        "bounds_after": [
+          [
+            -4.219684600830078,
+            -5.740349769592285,
+            0.0
+          ],
+          [
+            4.219684600830078,
+            5.740349769592285,
+            110.0
+          ]
+        ],
+        "dimensions_mm": [
+          8.439369201660156,
+          11.48069953918457,
+          110.0
+        ]
+      },
+      "detail": {
+        "path": "/home/runner/work/_temp/HOTS_STL_Output/01_Detail_Preserving/Abathur.stl",
+        "bytes": 568184,
+        "sha256": "ef9591b21826cef7fd0e4a0e675c6992ba2d7fa0654dc3d0b5c5f889233b86dc",
+        "triangles": 11362,
+        "bounds_mm": [
+          [
+            -4.219684600830078,
+            -5.740349769592285,
+            0.0
+          ],
+          [
+            4.219684600830078,
+            5.740349769592285,
+            110.0
+          ]
+        ],
+        "dimensions_mm": [
+          8.439369201660156,
+          11.48069953918457,
+          110.0
+        ],
+        "validation": {
+          "valid_binary_stl": true,
+          "watertight_edge_test": false,
+          "boundary_edges": 208,
+          "nonmanifold_edges": 0,
+          "degenerate_triangles": 0,
+          "triangles": 11362
+        },
+        "source_artifact": "/home/runner/work/_temp/HOTS_STL_Output/.build_cache/detail/abathur.stl"
+      },
+      "print_ready": {
+        "path": "/home/runner/work/_temp/HOTS_STL_Output/02_Print_Ready_Watertight/Abathur.stl",
+        "bytes": 2677184,
+        "sha256": "13e86a52e7731344f0b90943bbc0deb0e6528e95a5409a757626ac580f366772",
+        "triangles": 53542,
+        "bounds_mm": [
+          [
+            -18.0504207611084,
+            -18.0504207611084,
+            0.0
+          ],
+          [
+            18.0504207611084,
+            18.0504207611084,
+            115.01567077636719
+          ]
+        ],
+        "dimensions_mm": [
+          36.1008415222168,
+          36.1008415222168,
+          115.01567077636719
+        ],
+        "validation": {
+          "valid_binary_stl": true,
+          "watertight_edge_test": false,
+          "boundary_edges": 7,
+          "nonmanifold_edges": 13,
+          "degenerate_triangles": 0,
+          "triangles": 53542
+        },
+        "source_artifact": "/home/runner/work/_temp/HOTS_STL_Output/.build_cache/print_ready/abathur.stl"
+      },
+      "decimation": {
+        "triangles_before_decimate": 53542,
+        "decimated": false,
+        "triangles_after_decimate": 53542
+      },
+      "elapsed_source_seconds": 10.06,
+      "status": "failed-validation",
+      "resolution": "exact canonical base"
+    },
+    {
+      "hero": "Johanna",
+      "source_key": null,
+      "source_paths": [],
+      "resolution": "not found",
+      "status": "missing-source",
+      "error": "No canonical or fallback base mesh found"
+    },
+    {
+      "hero": "Xal'atath",
+      "source_key": "xalatath",
+      "source_paths": [
+        "/home/runner/work/HOTS-03/HOTS-03/storm_hero_xalatath_base/storm_hero_xalatath_base.m3"
+      ],
+      "import": {
+        "imported_paths": [
+          "/home/runner/work/HOTS-03/HOTS-03/storm_hero_xalatath_base/storm_hero_xalatath_base.m3"
+        ],
+        "animation_paths": [
+          "/home/runner/work/HOTS-03/HOTS-03/storm_hero_xalatath_requiredanims/storm_hero_xalatath_requiredanims.m3a"
+        ],
+        "pose": {
+          "animation": "Stand",
+          "index": 0,
+          "frame": 12,
+          "reason": "matched 'stand'",
+          "animation_count": 51
+        }
+      },
+      "normalization": {
+        "scale_factor": 40.43233718058565,
+        "bounds_before": [
+          [
+            -27.87460708618164,
+            -17.21331787109375,
+            -0.9717614054679871
+          ],
+          [
+            29.63604164123535,
+            25.760726928710938,
+            109.02824401855469
+          ]
+        ],
+        "bounds_after": [
+          [
+            -28.755325317382812,
+            -21.487022399902344,
+            0.0
+          ],
+          [
+            28.755325317382812,
+            21.487022399902344,
+            110.00000762939453
+          ]
+        ],
+        "dimensions_mm": [
+          57.510650634765625,
+          42.97404479980469,
+          110.00000762939453
+        ]
+      },
+      "detail": {
+        "path": "/home/runner/work/_temp/HOTS_STL_Output/01_Detail_Preserving/Xal_atath.stl",
+        "bytes": 912584,
+        "sha256": "4d58b5ac312a30c98341da41b92a84af9dc99db74aee16c5116fe0887b1df66c",
+        "triangles": 18250,
+        "bounds_mm": [
+          [
+            -28.755325317382812,
+            -21.487022399902344,
+            0.0
+          ],
+          [
+            28.755325317382812,
+            21.487022399902344,
+            110.00000762939453
+          ]
+        ],
+        "dimensions_mm": [
+          57.510650634765625,
+          42.97404479980469,
+          110.00000762939453
+        ],
+        "validation": {
+          "valid_binary_stl": true,
+          "watertight_edge_test": false,
+          "boundary_edges": 912,
+          "nonmanifold_edges": 1,
+          "degenerate_triangles": 0,
+          "triangles": 18250
+        },
+        "source_artifact": "/home/runner/work/_temp/HOTS_STL_Output/.build_cache/detail/xalatath.stl"
+      },
+      "print_ready": {
+        "path": "/home/runner/work/_temp/HOTS_STL_Output/02_Print_Ready_Watertight/Xal_atath.stl",
+        "bytes": 29371484,
+        "sha256": "29c4c95f473ea66df64585657214851b00d1278993555750e1a4e8bbb8f3f53e",
+        "triangles": 587428,
+        "bounds_mm": [
+          [
+            -33.732643127441406,
+            -33.732643127441406,
+            0.0
+          ],
+          [
+            33.732643127441406,
+            33.732643127441406,
+            126.0438003540039
+          ]
+        ],
+        "dimensions_mm": [
+          67.46528625488281,
+          67.46528625488281,
+          126.0438003540039
+        ],
+        "validation": {
+          "valid_binary_stl": true,
+          "watertight_edge_test": false,
+          "boundary_edges": 25,
+          "nonmanifold_edges": 18,
+          "degenerate_triangles": 0,
+          "triangles": 587428
+        },
+        "source_artifact": "/home/runner/work/_temp/HOTS_STL_Output/.build_cache/print_ready/xalatath.stl"
+      },
+      "decimation": {
+        "triangles_before_decimate": 587428,
+        "decimated": false,
+        "triangles_after_decimate": 587428
+      },
+      "elapsed_source_seconds": 18.84,
+      "status": "failed-validation",
+      "resolution": "exact canonical base"
+    }
+  ],
+  "source_results": {
+    "abathur": {
+      "source_key": "abathur",
+      "source_paths": [
+        "/home/runner/work/_temp/HOTS-02/storm_hero_abathur_base/storm_hero_abathur_base.m3"
+      ],
+      "import": {
+        "imported_paths": [
+          "/home/runner/work/_temp/HOTS-02/storm_hero_abathur_base/storm_hero_abathur_base.m3"
+        ],
+        "animation_paths": [
+          "/home/runner/work/_temp/HOTS-02/storm_hero_abathur_requiredanims/storm_hero_abathur_requiredanims.m3a"
+        ],
+        "pose": {
+          "animation": "Stand",
+          "index": 0,
+          "frame": 12,
+          "reason": "matched 'stand'",
+          "animation_count": 38
+        }
+      },
+      "normalization": {
+        "scale_factor": 4.47890467837361,
+        "bounds_before": [
+          [
+            -4.116718292236328,
+            -3.4481096267700195,
+            -98.3035888671875
+          ],
+          [
+            4.322650909423828,
+            8.03258991241455,
+            11.696413040161133
+          ]
+        ],
+        "bounds_after": [
+          [
+            -4.219684600830078,
+            -5.740349769592285,
+            0.0
+          ],
+          [
+            4.219684600830078,
+            5.740349769592285,
+            110.0
+          ]
+        ],
+        "dimensions_mm": [
+          8.439369201660156,
+          11.48069953918457,
+          110.0
+        ]
+      },
+      "detail": {
+        "path": "/home/runner/work/_temp/HOTS_STL_Output/.build_cache/detail/abathur.stl",
+        "bytes": 568184,
+        "sha256": "ef9591b21826cef7fd0e4a0e675c6992ba2d7fa0654dc3d0b5c5f889233b86dc",
+        "triangles": 11362,
+        "bounds_mm": [
+          [
+            -4.219684600830078,
+            -5.740349769592285,
+            0.0
+          ],
+          [
+            4.219684600830078,
+            5.740349769592285,
+            110.0
+          ]
+        ],
+        "dimensions_mm": [
+          8.439369201660156,
+          11.48069953918457,
+          110.0
+        ],
+        "validation": {
+          "valid_binary_stl": true,
+          "watertight_edge_test": false,
+          "boundary_edges": 208,
+          "nonmanifold_edges": 0,
+          "degenerate_triangles": 0,
+          "triangles": 11362
+        }
+      },
+      "print_ready": {
+        "path": "/home/runner/work/_temp/HOTS_STL_Output/.build_cache/print_ready/abathur.stl",
+        "bytes": 2677184,
+        "sha256": "13e86a52e7731344f0b90943bbc0deb0e6528e95a5409a757626ac580f366772",
+        "triangles": 53542,
+        "bounds_mm": [
+          [
+            -18.0504207611084,
+            -18.0504207611084,
+            0.0
+          ],
+          [
+            18.0504207611084,
+            18.0504207611084,
+            115.01567077636719
+          ]
+        ],
+        "dimensions_mm": [
+          36.1008415222168,
+          36.1008415222168,
+          115.01567077636719
+        ],
+        "validation": {
+          "valid_binary_stl": true,
+          "watertight_edge_test": false,
+          "boundary_edges": 7,
+          "nonmanifold_edges": 13,
+          "degenerate_triangles": 0,
+          "triangles": 53542
+        }
+      },
+      "decimation": {
+        "triangles_before_decimate": 53542,
+        "decimated": false,
+        "triangles_after_decimate": 53542
+      },
+      "blend_path": null,
+      "elapsed_seconds": 10.06
+    },
+    "xalatath": {
+      "source_key": "xalatath",
+      "source_paths": [
+        "/home/runner/work/HOTS-03/HOTS-03/storm_hero_xalatath_base/storm_hero_xalatath_base.m3"
+      ],
+      "import": {
+        "imported_paths": [
+          "/home/runner/work/HOTS-03/HOTS-03/storm_hero_xalatath_base/storm_hero_xalatath_base.m3"
+        ],
+        "animation_paths": [
+          "/home/runner/work/HOTS-03/HOTS-03/storm_hero_xalatath_requiredanims/storm_hero_xalatath_requiredanims.m3a"
+        ],
+        "pose": {
+          "animation": "Stand",
+          "index": 0,
+          "frame": 12,
+          "reason": "matched 'stand'",
+          "animation_count": 51
+        }
+      },
+      "normalization": {
+        "scale_factor": 40.43233718058565,
+        "bounds_before": [
+          [
+            -27.87460708618164,
+            -17.21331787109375,
+            -0.9717614054679871
+          ],
+          [
+            29.63604164123535,
+            25.760726928710938,
+            109.02824401855469
+          ]
+        ],
+        "bounds_after": [
+          [
+            -28.755325317382812,
+            -21.487022399902344,
+            0.0
+          ],
+          [
+            28.755325317382812,
+            21.487022399902344,
+            110.00000762939453
+          ]
+        ],
+        "dimensions_mm": [
+          57.510650634765625,
+          42.97404479980469,
+          110.00000762939453
+        ]
+      },
+      "detail": {
+        "path": "/home/runner/work/_temp/HOTS_STL_Output/.build_cache/detail/xalatath.stl",
+        "bytes": 912584,
+        "sha256": "4d58b5ac312a30c98341da41b92a84af9dc99db74aee16c5116fe0887b1df66c",
+        "triangles": 18250,
+        "bounds_mm": [
+          [
+            -28.755325317382812,
+            -21.487022399902344,
+            0.0
+          ],
+          [
+            28.755325317382812,
+            21.487022399902344,
+            110.00000762939453
+          ]
+        ],
+        "dimensions_mm": [
+          57.510650634765625,
+          42.97404479980469,
+          110.00000762939453
+        ],
+        "validation": {
+          "valid_binary_stl": true,
+          "watertight_edge_test": false,
+          "boundary_edges": 912,
+          "nonmanifold_edges": 1,
+          "degenerate_triangles": 0,
+          "triangles": 18250
+        }
+      },
+      "print_ready": {
+        "path": "/home/runner/work/_temp/HOTS_STL_Output/.build_cache/print_ready/xalatath.stl",
+        "bytes": 29371484,
+        "sha256": "29c4c95f473ea66df64585657214851b00d1278993555750e1a4e8bbb8f3f53e",
+        "triangles": 587428,
+        "bounds_mm": [
+          [
+            -33.732643127441406,
+            -33.732643127441406,
+            0.0
+          ],
+          [
+            33.732643127441406,
+            33.732643127441406,
+            126.0438003540039
+          ]
+        ],
+        "dimensions_mm": [
+          67.46528625488281,
+          67.46528625488281,
+          126.0438003540039
+        ],
+        "validation": {
+          "valid_binary_stl": true,
+          "watertight_edge_test": false,
+          "boundary_edges": 25,
+          "nonmanifold_edges": 18,
+          "degenerate_triangles": 0,
+          "triangles": 587428
+        }
+      },
+      "decimation": {
+        "triangles_before_decimate": 587428,
+        "decimated": false,
+        "triangles_after_decimate": 587428
+      },
+      "blend_path": null,
+      "elapsed_seconds": 18.84
+    }
+  }
+}

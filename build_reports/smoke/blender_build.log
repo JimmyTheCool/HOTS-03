@@ -1,0 +1,47 @@
+ALSA lib confmisc.c:855:(parse_card) cannot find card '0'
+ALSA lib conf.c:5182:(_snd_config_evaluate) function snd_func_card_inum returned error: No such file or directory
+ALSA lib confmisc.c:422:(snd_func_concat) error evaluating strings
+ALSA lib conf.c:5182:(_snd_config_evaluate) function snd_func_concat returned error: No such file or directory
+ALSA lib confmisc.c:1334:(snd_func_refer) error evaluating name
+ALSA lib conf.c:5182:(_snd_config_evaluate) function snd_func_refer returned error: No such file or directory
+ALSA lib conf.c:5705:(snd_config_expand) Evaluate error: No such file or directory
+ALSA lib pcm.c:2664:(snd_pcm_open_noupdate) Unknown PCM default
+Failed to open dir (No such file or directory): /run/user/1001/gvfs/
+[08:43:53] HOTS STL Builder 1.0.0
+[08:43:53] Blender runtime: 3.6.23
+[08:43:53] Source roots: [PosixPath('/home/runner/work/_temp/HOTS-02'), PosixPath('/home/runner/work/HOTS-03/HOTS-03')]
+[08:43:53] Enabling m3addon
+[08:43:53] Resolved 3 roster entries to 2 unique source groups
+[08:43:53] PLAN Abathur: abathur — exact canonical base
+[08:43:53] PLAN Johanna: None — not found
+[08:43:53] PLAN Xal'atath: xalatath — exact canonical base
+[08:43:53] Importing M3: /home/runner/work/_temp/HOTS-02/storm_hero_abathur_base/storm_hero_abathur_base.m3
+2026-10-04 08:43:53,541,541 DEBUG  base.py:152 Import /home/runner/work/_temp/HOTS-02/storm_hero_abathur_base/storm_hero_abathur_base.m3
+Info: Removed 0 vertice(s)
+Info: Removed 0 vertice(s)
+Info: Removed 184 vertice(s)
+[08:43:53] Importing required animation: /home/runner/work/_temp/HOTS-02/storm_hero_abathur_requiredanims/storm_hero_abathur_requiredanims.m3a
+2026-10-04 08:43:53,975,975 DEBUG  base.py:152 Import /home/runner/work/_temp/HOTS-02/storm_hero_abathur_requiredanims/storm_hero_abathur_requiredanims.m3a
+Info: Removed 232 vertice(s)
+Info: Removed: 0 vertices, 0 edges, 0 faces
+Info: Removed 293 vertice(s)
+Info: Removed: 0 vertices, 0 edges, 0 faces
+Info: Removed 74 vertice(s)
+Info: Removed: 0 vertices, 0 edges, 0 faces
+[08:44:03] SUCCESS source abathur: 53542 print-ready triangles
+[08:44:03] Importing M3: /home/runner/work/HOTS-03/HOTS-03/storm_hero_xalatath_base/storm_hero_xalatath_base.m3
+2026-10-04 08:44:03,670,670 DEBUG  base.py:152 Import /home/runner/work/HOTS-03/HOTS-03/storm_hero_xalatath_base/storm_hero_xalatath_base.m3
+Info: Removed 0 vertice(s)
+Info: Removed 10177 vertice(s)
+Info: Removed 2568 vertice(s)
+[08:44:04] Importing required animation: /home/runner/work/HOTS-03/HOTS-03/storm_hero_xalatath_requiredanims/storm_hero_xalatath_requiredanims.m3a
+2026-10-04 08:44:04,825,825 DEBUG  base.py:152 Import /home/runner/work/HOTS-03/HOTS-03/storm_hero_xalatath_requiredanims/storm_hero_xalatath_requiredanims.m3a
+Info: Removed 12790 vertice(s)
+Info: Removed: 0 vertices, 0 edges, 0 faces
+Info: Removed 25 vertice(s)
+Info: Removed: 0 vertices, 0 edges, 0 faces
+Info: Removed 462 vertice(s)
+Info: Removed: 0 vertices, 0 edges, 0 faces
+[08:44:22] SUCCESS source xalatath: 587428 print-ready triangles
+[08:44:22] Completed: 0 successful roster entries, 3 missing/failed
+Blender 3.6.23 (hash e467db79ca8c built 2025-06-17 01:32:54)
