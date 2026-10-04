@@ -1,0 +1,260 @@
+name: Repair and Package HOTS STL v5
+
+on:
+  workflow_dispatch:
+  push:
+    branches: [chatgpt-stl-builder]
+    paths: [.github/workflows/repair-and-package-hots-v5.yml]
+
+permissions:
+  actions: read
+  contents: write
+
+jobs:
+  repair:
+    runs-on: ubuntu-22.04
+    timeout-minutes: 300
+    strategy:
+      fail-fast: false
+      max-parallel: 6
+      matrix:
+        include:
+          - {chunk: 1, expected: 15}
+          - {chunk: 2, expected: 15}
+          - {chunk: 3, expected: 15}
+          - {chunk: 4, expected: 15}
+          - {chunk: 5, expected: 15}
+          - {chunk: 6, expected: 16}
+
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          ref: chatgpt-stl-builder
+          fetch-depth: 1
+
+      - name: Download raw chunk
+        env:
+          GH_TOKEN: ${{ github.token }}
+        shell: bash
+        run: |
+          set -euo pipefail
+          RAW="$RUNNER_TEMP/raw_${{ matrix.chunk }}"
+          mkdir -p "$RAW"
+          gh run download 37193141976 \
+            --repo "$GITHUB_REPOSITORY" \
+            --name "HOTS-v3-chunk-${{ matrix.chunk }}" \
+            --dir "$RAW"
+          test "$(find "$RAW/STL" -maxdepth 1 -type f -name '*.stl' | wc -l)" \
+            -eq "${{ matrix.expected }}"
+
+      - name: Install repair dependencies
+        shell: bash
+        run: |
+          set -euo pipefail
+          python -m pip install --disable-pip-version-check --quiet \
+            trimesh==4.8.3 numpy==2.2.6 scipy==1.15.3 \
+            scikit-image==0.25.2 pymeshfix==0.18.1 \
+            fast-simplification==0.1.12
+
+      - name: Prepare repair utility
+        shell: bash
+        run: |
+          set -euo pipefail
+          cp ci/repair_stl_collection.py "$RUNNER_TEMP/repair_v5.py"
+          python ci/patch_repair_dimension_retention.py "$RUNNER_TEMP/repair_v5.py"
+          python ci/patch_repair_voxel_translation.py "$RUNNER_TEMP/repair_v5.py"
+          python -m py_compile "$RUNNER_TEMP/repair_v5.py" ci/validate_stl_collection.py
+
+      - name: Repair chunk
+        id: fix
+        continue-on-error: true
+        shell: bash
+        run: |
+          set -euo pipefail
+          RAW="$RUNNER_TEMP/raw_${{ matrix.chunk }}"
+          OUT="$RUNNER_TEMP/fixed_${{ matrix.chunk }}"
+          mkdir -p "$OUT/STL" "$OUT/Reports/Chunk_${{ matrix.chunk }}"
+          python "$RUNNER_TEMP/repair_v5.py" \
+            --input "$RAW/STL" \
+            --output "$OUT/STL" \
+            --report-json "$OUT/Reports/Chunk_${{ matrix.chunk }}/repair_validation.json" \
+            --report-csv "$OUT/Reports/Chunk_${{ matrix.chunk }}/repair_validation.csv" \
+            --expected "${{ matrix.expected }}" \
+            --pitch 0.62 \
+            --max-triangles 500000 \
+            --target-triangles 440000 \
+            --minimum-dimension-retention 0.90 \
+            --maximum-dimension-retention 1.10 \
+            2>&1 | tee "$OUT/Reports/Chunk_${{ matrix.chunk }}/repair.log"
+
+      - name: Revalidate repaired chunk
+        id: check
+        if: always()
+        continue-on-error: true
+        shell: bash
+        run: |
+          set -euo pipefail
+          OUT="$RUNNER_TEMP/fixed_${{ matrix.chunk }}"
+          python ci/validate_stl_collection.py \
+            --input "$OUT/STL" \
+            --report-json "$OUT/Reports/Chunk_${{ matrix.chunk }}/final_validation.json" \
+            --report-csv "$OUT/Reports/Chunk_${{ matrix.chunk }}/final_validation.csv" \
+            --checksums "$OUT/Reports/Chunk_${{ matrix.chunk }}/SHA256SUMS.txt" \
+            --expected "${{ matrix.expected }}"
+
+      - name: Copy raw build diagnostics
+        if: always()
+        shell: bash
+        run: |
+          set -euo pipefail
+          RAW="$RUNNER_TEMP/raw_${{ matrix.chunk }}"
+          OUT="$RUNNER_TEMP/fixed_${{ matrix.chunk }}"
+          DEST="$OUT/Reports/Chunk_${{ matrix.chunk }}/Raw_Source_Reports"
+          mkdir -p "$DEST"
+          if [[ -d "$RAW/Reports" ]]; then
+            find "$RAW/Reports" -type f -maxdepth 4 -exec cp {} "$DEST/" \;
+          fi
+          printf '%s\n' 37193141976 > "$OUT/Reports/Chunk_${{ matrix.chunk }}/raw_workflow_run_id.txt"
+
+      - name: Upload repaired chunk
+        if: always()
+        uses: actions/upload-artifact@v4
+        with:
+          name: HOTS-v5-fixed-chunk-${{ matrix.chunk }}
+          path: ${{ runner.temp }}/fixed_${{ matrix.chunk }}
+          retention-days: 30
+          compression-level: 0
+
+      - name: Enforce chunk gate
+        if: always()
+        shell: bash
+        run: |
+          set -euo pipefail
+          [[ "${{ steps.fix.outcome }}" == "success" ]]
+          [[ "${{ steps.check.outcome }}" == "success" ]]
+
+  package:
+    needs: repair
+    runs-on: ubuntu-22.04
+    timeout-minutes: 180
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          ref: chatgpt-stl-builder
+          fetch-depth: 1
+
+      - uses: actions/download-artifact@v4
+        with:
+          pattern: HOTS-v5-fixed-chunk-*
+          path: ${{ runner.temp }}/chunks
+          merge-multiple: true
+
+      - name: Assemble all heroes
+        id: assemble
+        shell: bash
+        run: |
+          set -euo pipefail
+          P="$RUNNER_TEMP/HOTS_All_91_Heroes_Printable_STL_v5"
+          mkdir -p "$P/STL" "$P/Reports/Chunk_Reports"
+          find "$RUNNER_TEMP/chunks/STL" -maxdepth 1 -type f -name '*.stl' \
+            -exec cp {} "$P/STL/" \;
+          cp -r "$RUNNER_TEMP/chunks/Reports/." "$P/Reports/Chunk_Reports/"
+          test "$(find "$P/STL" -maxdepth 1 -type f -name '*.stl' | wc -l)" -eq 91
+          find "$P/STL" -maxdepth 1 -type f -name '*.stl' -printf '%f\n' \
+            | sort > "$P/Reports/STL_FILE_LIST.txt"
+          echo "package=$P" >> "$GITHUB_OUTPUT"
+
+      - name: Install final validator
+        shell: bash
+        run: |
+          set -euo pipefail
+          python -m pip install --disable-pip-version-check --quiet \
+            trimesh==4.8.3 numpy==2.2.6 scipy==1.15.3
+
+      - name: Validate all 91 final files
+        shell: bash
+        run: |
+          set -euo pipefail
+          P="${{ steps.assemble.outputs.package }}"
+          python ci/validate_stl_collection.py \
+            --input "$P/STL" \
+            --report-json "$P/Reports/FINAL_VALIDATION.json" \
+            --report-csv "$P/Reports/FINAL_VALIDATION.csv" \
+            --checksums "$P/Reports/STL_SHA256SUMS.txt" \
+            --expected 91
+
+      - name: Add README
+        shell: bash
+        run: |
+          set -euo pipefail
+          P="${{ steps.assemble.outputs.package }}"
+          cat > "$P/README_FIRST.txt" <<'EOF'
+          HEROES OF THE STORM — ALL 91 REPAIRED PRINTABLE HERO STL FILES — V5
+
+          The STL folder contains 91 named hero files rebuilt from the supplied M3
+          assets for personal, non-commercial fan use.
+
+          Repairs include complete visible mesh capture, selective thickening, closed
+          surface repair, joining disconnected components, a printable base, and a
+          dimensional-retention gate that prevents a repair from passing by deleting
+          substantial geometry. D.Va includes pilot and mech. The Lost Vikings includes
+          Baleog, Erik and Olaf. Cho and Gall have separate roster files. Xal'atath is
+          included.
+
+          Every final file was reopened after export and passed: watertightness,
+          consistent winding, finite coordinates, positive volume, exactly one connected
+          body, 100–500,000 triangles, and 2–350 mm dimensions. Detailed results and
+          SHA-256 hashes are in Reports.
+
+          Inspect orientation and supports in your slicer. STL is geometry-only and does
+          not retain textures, transparency, emissive effects or normal-map detail.
+
+          Heroes of the Storm and its assets are owned by Blizzard Entertainment. Do not
+          sell or commercially redistribute these derivative files.
+          EOF
+          printf '%s\n' "$GITHUB_RUN_ID" > "$P/Reports/final_workflow_run_id.txt"
+          printf '%s\n' "$GITHUB_SHA" > "$P/Reports/source_commit.txt"
+          printf '%s\n' 37193141976 > "$P/Reports/raw_workflow_run_id.txt"
+
+      - name: Create ZIP
+        id: zip
+        shell: bash
+        run: |
+          set -euo pipefail
+          sudo apt-get update -qq
+          sudo apt-get install -y --no-install-recommends p7zip-full
+          P="${{ steps.assemble.outputs.package }}"
+          Z="$GITHUB_WORKSPACE/HOTS_All_91_Heroes_Printable_STL_v5.zip"
+          cd "$RUNNER_TEMP"
+          7z a -tzip -mx=7 -mmt=on "$Z" "$(basename "$P")"
+          sha256sum "$Z" > "$Z.sha256"
+          echo "archive=$Z" >> "$GITHUB_OUTPUT"
+          echo "checksum=$Z.sha256" >> "$GITHUB_OUTPUT"
+
+      - uses: actions/upload-artifact@v4
+        with:
+          name: HOTS_All_91_Heroes_Printable_STL_v5
+          path: |
+            ${{ steps.zip.outputs.archive }}
+            ${{ steps.zip.outputs.checksum }}
+          retention-days: 90
+          compression-level: 0
+
+      - name: Publish release
+        env:
+          GH_TOKEN: ${{ github.token }}
+        shell: bash
+        run: |
+          set -euo pipefail
+          P="${{ steps.assemble.outputs.package }}"
+          TAG="hots-stl-v5-${GITHUB_RUN_NUMBER}-${GITHUB_RUN_ATTEMPT}"
+          gh release create "$TAG" \
+            "${{ steps.zip.outputs.archive }}" \
+            "${{ steps.zip.outputs.checksum }}" \
+            "$P/Reports/FINAL_VALIDATION.json#FINAL_VALIDATION.json" \
+            "$P/Reports/FINAL_VALIDATION.csv#FINAL_VALIDATION.csv" \
+            "$P/Reports/STL_SHA256SUMS.txt#STL_SHA256SUMS.txt" \
+            --repo "$GITHUB_REPOSITORY" \
+            --target "$GITHUB_SHA" \
+            --title "HOTS — All 91 repaired printable hero STL files (v5)" \
+            --notes "All 91 final files passed independent closed-surface, one-body and dimensional quality gates."
