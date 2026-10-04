@@ -1,0 +1,40 @@
+name: Collect Post-Repair Experiment Log
+on:
+  workflow_dispatch:
+  push:
+    branches: [chatgpt-stl-builder]
+    paths: [.github/workflows/collect-postrepair-experiment-log.yml]
+permissions:
+  actions: read
+  contents: write
+jobs:
+  collect:
+    runs-on: ubuntu-22.04
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          ref: chatgpt-stl-builder
+          fetch-depth: 0
+      - name: Download experiment diagnostics
+        env:
+          GH_TOKEN: ${{ github.token }}
+        shell: bash
+        run: |
+          set -euo pipefail
+          D="$RUNNER_TEMP/postrepair"
+          mkdir -p "$D"
+          gh run download 37193348544 \
+            --repo "$GITHUB_REPOSITORY" \
+            --name HOTS-postrepair-experiment \
+            --dir "$D"
+          DEST=build_reports/postrepair_experiment
+          mkdir -p "$DEST"
+          find "$D" -type f -exec cp {} "$DEST/" \;
+          gh run view 37193348544 --repo "$GITHUB_REPOSITORY" --log-failed \
+            > "$DEST/failed_run.log"
+          git config user.name "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git add "$DEST"
+          git commit -m "Add post-repair experiment diagnostics [skip ci]"
+          git pull --rebase origin chatgpt-stl-builder
+          git push origin HEAD:chatgpt-stl-builder
