@@ -1,0 +1,421 @@
+name: Repair and Package HOTS STL v8
+
+on:
+  workflow_dispatch:
+  push:
+    branches: [chatgpt-stl-builder]
+    paths: [.github/workflows/repair-and-package-hots-v8.yml]
+
+permissions:
+  actions: read
+  contents: write
+
+env:
+  RAW_BUILD_RUN_ID: 37193141976
+
+jobs:
+  repair_group:
+    runs-on: ubuntu-22.04
+    timeout-minutes: 360
+    strategy:
+      fail-fast: false
+      max-parallel: 12
+      matrix:
+        group: [1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15, 16, 17, 18, 19, 20, 21, 22, 23, 24, 25, 26, 27, 28, 29, 30, 31]
+
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          ref: chatgpt-stl-builder
+          fetch-depth: 1
+
+      - name: Resolve group roster
+        shell: bash
+        run: |
+          set -euo pipefail
+          case "${{ matrix.group }}" in
+            1)  CHUNK=1; FILES='Abathur.stl|Alarak.stl|Alexstrasza.stl' ;;
+            2)  CHUNK=1; FILES='Ana.stl|Anduin.stl|Anub_arak.stl' ;;
+            3)  CHUNK=1; FILES='Artanis.stl|Arthas.stl|Auriel.stl' ;;
+            4)  CHUNK=1; FILES='Azmodan.stl|Blaze.stl|Brightwing.stl' ;;
+            5)  CHUNK=1; FILES='The_Butcher.stl|Cassia.stl|Chen.stl' ;;
+            6)  CHUNK=2; FILES='Cho.stl|Chromie.stl|D.Va.stl' ;;
+            7)  CHUNK=2; FILES='Deathwing.stl|Deckard.stl|Dehaka.stl' ;;
+            8)  CHUNK=2; FILES='Diablo.stl|E.T.C.stl|Falstad.stl' ;;
+            9)  CHUNK=2; FILES='Fenix.stl|Gall.stl|Garrosh.stl' ;;
+            10) CHUNK=2; FILES='Gazlowe.stl|Genji.stl|Greymane.stl' ;;
+            11) CHUNK=3; FILES='Gul_dan.stl|Hanzo.stl|Hogger.stl' ;;
+            12) CHUNK=3; FILES='Illidan.stl|Imperius.stl|Jaina.stl' ;;
+            13) CHUNK=3; FILES='Johanna.stl|Junkrat.stl|Kael_thas.stl' ;;
+            14) CHUNK=3; FILES='Kel_Thuzad.stl|Kerrigan.stl|Kharazim.stl' ;;
+            15) CHUNK=3; FILES='Leoric.stl|Li_Li.stl|Li-Ming.stl' ;;
+            16) CHUNK=4; FILES='Lt._Morales.stl|Lucio.stl|Lunara.stl' ;;
+            17) CHUNK=4; FILES='Maiev.stl|Mal_Ganis.stl|Malfurion.stl' ;;
+            18) CHUNK=4; FILES='Malthael.stl|Medivh.stl|Mei.stl' ;;
+            19) CHUNK=4; FILES='Mephisto.stl|Muradin.stl|Murky.stl' ;;
+            20) CHUNK=4; FILES='Nazeebo.stl|Nova.stl|Orphea.stl' ;;
+            21) CHUNK=5; FILES='Probius.stl|Qhira.stl|Ragnaros.stl' ;;
+            22) CHUNK=5; FILES='Raynor.stl|Rehgar.stl|Rexxar.stl' ;;
+            23) CHUNK=5; FILES='Samuro.stl|Sgt._Hammer.stl|Sonya.stl' ;;
+            24) CHUNK=5; FILES='Stitches.stl|Stukov.stl|Sylvanas.stl' ;;
+            25) CHUNK=5; FILES='Tassadar.stl|The_Lost_Vikings.stl|Thrall.stl' ;;
+            26) CHUNK=6; FILES='Tracer.stl|Tychus.stl|Tyrael.stl' ;;
+            27) CHUNK=6; FILES='Tyrande.stl|Uther.stl|Valeera.stl' ;;
+            28) CHUNK=6; FILES='Valla.stl|Varian.stl|Whitemane.stl' ;;
+            29) CHUNK=6; FILES='Xal_atath.stl|Xul.stl|Yrel.stl' ;;
+            30) CHUNK=6; FILES='Zagara.stl|Zarya.stl|Zeratul.stl' ;;
+            31) CHUNK=6; FILES='Zul_jin.stl' ;;
+            *) exit 2 ;;
+          esac
+          IFS='|' read -ra ITEMS <<< "$FILES"
+          EXPECTED=${#ITEMS[@]}
+          {
+            echo "GROUP=${{ matrix.group }}"
+            echo "CHUNK=$CHUNK"
+            echo "FILES=$FILES"
+            echo "EXPECTED=$EXPECTED"
+          } >> "$GITHUB_ENV"
+
+      - name: Download raw source files
+        env:
+          GH_TOKEN: ${{ github.token }}
+        shell: bash
+        run: |
+          set -euo pipefail
+          RAW_CHUNK="$RUNNER_TEMP/raw_chunk"
+          RAW_SELECTED="$RUNNER_TEMP/raw_selected"
+          mkdir -p "$RAW_CHUNK" "$RAW_SELECTED"
+          gh run download "$RAW_BUILD_RUN_ID" \
+            --repo "$GITHUB_REPOSITORY" \
+            --name "HOTS-v3-chunk-$CHUNK" \
+            --dir "$RAW_CHUNK"
+          IFS='|' read -ra ITEMS <<< "$FILES"
+          for filename in "${ITEMS[@]}"; do
+            test -f "$RAW_CHUNK/STL/$filename"
+            cp "$RAW_CHUNK/STL/$filename" "$RAW_SELECTED/$filename"
+          done
+          test "$(find "$RAW_SELECTED" -maxdepth 1 -type f -name '*.stl' | wc -l)" -eq "$EXPECTED"
+          find "$RAW_SELECTED" -maxdepth 1 -type f -name '*.stl' -printf '%f\n' \
+            | sort > "$RUNNER_TEMP/raw_file_list.txt"
+
+      - name: Install repair dependencies
+        shell: bash
+        run: |
+          set -euo pipefail
+          python -m pip install --disable-pip-version-check --quiet \
+            trimesh==4.8.3 numpy==2.2.6 scipy==1.15.3 \
+            scikit-image==0.25.2 pymeshfix==0.18.1 \
+            fast-simplification==0.1.12 matplotlib==3.10.1
+
+      - name: Prepare normal and face-connected repair engines
+        shell: bash
+        run: |
+          set -euo pipefail
+          cp ci/repair_stl_collection.py "$RUNNER_TEMP/repair_normal.py"
+          python ci/patch_repair_dimension_retention.py "$RUNNER_TEMP/repair_normal.py"
+          python ci/patch_repair_voxel_translation.py "$RUNNER_TEMP/repair_normal.py"
+          python ci/patch_repair_face_connectivity.py "$RUNNER_TEMP/repair_normal.py"
+          cp "$RUNNER_TEMP/repair_normal.py" "$RUNNER_TEMP/repair_voxel.py"
+          python ci/patch_repair_force_voxel.py "$RUNNER_TEMP/repair_voxel.py"
+          python -m py_compile \
+            "$RUNNER_TEMP/repair_normal.py" \
+            "$RUNNER_TEMP/repair_voxel.py" \
+            ci/repair_one_adaptive.py \
+            ci/validate_stl_collection.py \
+            ci/compare_stl_silhouette.py
+
+      - name: Adaptively repair each hero in a fresh process
+        shell: bash
+        run: |
+          set -uo pipefail
+          OUT="$RUNNER_TEMP/fixed"
+          REPORT="$OUT/Reports/Group_$GROUP"
+          mkdir -p "$OUT/STL" "$REPORT/Heroes"
+          IFS='|' read -ra ITEMS <<< "$FILES"
+          FAILURES=0
+          for filename in "${ITEMS[@]}"; do
+            stem="${filename%.stl}"
+            echo "===== Adaptive repair: $filename ====="
+            set +e
+            python ci/repair_one_adaptive.py \
+              --input-file "$RUNNER_TEMP/raw_selected/$filename" \
+              --output "$OUT/STL" \
+              --report-dir "$REPORT/Heroes/$stem" \
+              --normal-script "$RUNNER_TEMP/repair_normal.py" \
+              --voxel-script "$RUNNER_TEMP/repair_voxel.py" \
+              --validator ci/validate_stl_collection.py \
+              --silhouette ci/compare_stl_silhouette.py \
+              --max-triangles 500000 \
+              --target-triangles 440000 \
+              --minimum-dimension-retention 0.90 \
+              --maximum-dimension-retention 1.10 \
+              2>&1 | tee "$REPORT/Heroes/${stem}_adaptive.log"
+            STATUS=${PIPESTATUS[0]}
+            set -e
+            printf '%s\n' "$STATUS" > "$REPORT/Heroes/${stem}_adaptive_exit_code.txt"
+            if [[ "$STATUS" -ne 0 ]]; then
+              FAILURES=$((FAILURES + 1))
+            fi
+          done
+          printf '%s\n' "$FAILURES" > "$REPORT/adaptive_failure_count.txt"
+          exit 0
+
+      - name: Independently validate repaired group
+        shell: bash
+        run: |
+          set -uo pipefail
+          OUT="$RUNNER_TEMP/fixed"
+          REPORT="$OUT/Reports/Group_$GROUP"
+
+          set +e
+          python ci/validate_stl_collection.py \
+            --input "$OUT/STL" \
+            --report-json "$REPORT/final_validation.json" \
+            --report-csv "$REPORT/final_validation.csv" \
+            --checksums "$REPORT/SHA256SUMS.txt" \
+            --expected "$EXPECTED" \
+            2>&1 | tee "$REPORT/final_validation.log"
+          TOPOLOGY_STATUS=${PIPESTATUS[0]}
+
+          find "$OUT/STL" -maxdepth 1 -type f -name '*.stl' -printf '%f\n' \
+            | sort > "$REPORT/repaired_file_list.txt"
+          diff -u "$RUNNER_TEMP/raw_file_list.txt" "$REPORT/repaired_file_list.txt" \
+            > "$REPORT/filename_diff.txt" 2>&1
+          NAME_STATUS=$?
+
+          python ci/compare_stl_silhouette.py \
+            --raw "$RUNNER_TEMP/raw_selected" \
+            --repaired "$OUT/STL" \
+            --report-json "$REPORT/silhouette_validation.json" \
+            --report-csv "$REPORT/silhouette_validation.csv" \
+            --image "$REPORT/silhouette_contact_sheet.png" \
+            --expected "$EXPECTED" \
+            --pixel-mm 0.65 \
+            --tolerance-mm 1.95 \
+            --minimum-raw-coverage 0.985 \
+            --minimum-repaired-coverage 0.900 \
+            --minimum-iou 0.850 \
+            --maximum-points 500000 \
+            2>&1 | tee "$REPORT/silhouette_validation.log"
+          SILHOUETTE_STATUS=${PIPESTATUS[0]}
+          set -e
+
+          cp "$RUNNER_TEMP/raw_file_list.txt" "$REPORT/raw_file_list.txt"
+          printf '%s\n' "$TOPOLOGY_STATUS" > "$REPORT/topology_exit_code.txt"
+          printf '%s\n' "$NAME_STATUS" > "$REPORT/filename_exit_code.txt"
+          printf '%s\n' "$SILHOUETTE_STATUS" > "$REPORT/silhouette_exit_code.txt"
+          printf '%s\n' "$RAW_BUILD_RUN_ID" > "$REPORT/raw_workflow_run_id.txt"
+          exit 0
+
+      - name: Upload repaired group and reports
+        if: always()
+        uses: actions/upload-artifact@v4
+        with:
+          name: HOTS-v8-group-${{ matrix.group }}
+          path: ${{ runner.temp }}/fixed
+          retention-days: 90
+          compression-level: 0
+
+      - name: Enforce report-based group quality gate
+        if: always()
+        shell: bash
+        run: |
+          set -euo pipefail
+          REPORT="$RUNNER_TEMP/fixed/Reports/Group_$GROUP"
+          test "$(cat "$REPORT/adaptive_failure_count.txt")" -eq 0
+          test "$(cat "$REPORT/topology_exit_code.txt")" -eq 0
+          test "$(cat "$REPORT/filename_exit_code.txt")" -eq 0
+          test "$(cat "$REPORT/silhouette_exit_code.txt")" -eq 0
+
+  package:
+    needs: repair_group
+    runs-on: ubuntu-22.04
+    timeout-minutes: 360
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          ref: chatgpt-stl-builder
+          fetch-depth: 1
+
+      - uses: actions/download-artifact@v4
+        with:
+          pattern: HOTS-v8-group-*
+          path: ${{ runner.temp }}/groups
+          merge-multiple: true
+
+      - name: Assemble all 91 hero files
+        id: assemble
+        shell: bash
+        run: |
+          set -euo pipefail
+          PACKAGE="$RUNNER_TEMP/HOTS_All_91_Heroes_Printable_STL"
+          mkdir -p "$PACKAGE/STL" "$PACKAGE/Reports/Group_Reports"
+          find "$RUNNER_TEMP/groups/STL" -maxdepth 1 -type f -name '*.stl' \
+            -exec cp {} "$PACKAGE/STL/" \;
+          cp -r "$RUNNER_TEMP/groups/Reports/." "$PACKAGE/Reports/Group_Reports/"
+          test "$(find "$PACKAGE/STL" -maxdepth 1 -type f -name '*.stl' | wc -l)" -eq 91
+          find "$PACKAGE/STL" -maxdepth 1 -type f -name '*.stl' -printf '%f\n' \
+            | sort > "$PACKAGE/Reports/STL_FILE_LIST.txt"
+          echo "package=$PACKAGE" >> "$GITHUB_OUTPUT"
+
+      - name: Verify exact 91-name roster
+        shell: bash
+        run: |
+          set -euo pipefail
+          python - "${{ steps.assemble.outputs.package }}/STL" <<'PY'
+          from pathlib import Path
+          import re, sys
+          groups = [
+              "Abathur|Alarak|Alexstrasza|Ana|Anduin|Anub'arak|Artanis|Arthas|Auriel|Azmodan|Blaze|Brightwing|The Butcher|Cassia|Chen",
+              "Cho|Chromie|D.Va|Deathwing|Deckard|Dehaka|Diablo|E.T.C.|Falstad|Fenix|Gall|Garrosh|Gazlowe|Genji|Greymane",
+              "Gul'dan|Hanzo|Hogger|Illidan|Imperius|Jaina|Johanna|Junkrat|Kael'thas|Kel'Thuzad|Kerrigan|Kharazim|Leoric|Li Li|Li-Ming",
+              "Lt. Morales|Lucio|Lunara|Maiev|Mal'Ganis|Malfurion|Malthael|Medivh|Mei|Mephisto|Muradin|Murky|Nazeebo|Nova|Orphea",
+              "Probius|Qhira|Ragnaros|Raynor|Rehgar|Rexxar|Samuro|Sgt. Hammer|Sonya|Stitches|Stukov|Sylvanas|Tassadar|The Lost Vikings|Thrall",
+              "Tracer|Tychus|Tyrael|Tyrande|Uther|Valeera|Valla|Varian|Whitemane|Xal'atath|Xul|Yrel|Zagara|Zarya|Zeratul|Zul'jin",
+          ]
+          heroes = [hero for group in groups for hero in group.split('|')]
+          def filename(name):
+              value = re.sub(r"[^A-Za-z0-9._-]+", "_", name.strip())
+              value = re.sub(r"_+", "_", value).strip("_.")
+              return value + ".stl"
+          expected = {filename(hero) for hero in heroes}
+          actual = {path.name for path in Path(sys.argv[1]).glob('*.stl')}
+          if len(heroes) != 91 or len(expected) != 91 or actual != expected:
+              print("Missing:", sorted(expected - actual))
+              print("Unexpected:", sorted(actual - expected))
+              raise SystemExit(1)
+          print("Exact roster verified: 91 of 91 named hero STL files.")
+          PY
+
+      - name: Install final validation dependencies
+        shell: bash
+        run: |
+          set -euo pipefail
+          python -m pip install --disable-pip-version-check --quiet \
+            trimesh==4.8.3 numpy==2.2.6 scipy==1.15.3 \
+            matplotlib==3.10.1
+
+      - name: Download original files for final silhouette audit
+        env:
+          GH_TOKEN: ${{ github.token }}
+        shell: bash
+        run: |
+          set -euo pipefail
+          RAW="$RUNNER_TEMP/raw_all"
+          mkdir -p "$RAW/STL"
+          for chunk in 1 2 3 4 5 6; do
+            TMP="$RUNNER_TEMP/raw_chunk_$chunk"
+            mkdir -p "$TMP"
+            gh run download "$RAW_BUILD_RUN_ID" \
+              --repo "$GITHUB_REPOSITORY" \
+              --name "HOTS-v3-chunk-$chunk" \
+              --dir "$TMP"
+            cp "$TMP"/STL/*.stl "$RAW/STL/"
+          done
+          test "$(find "$RAW/STL" -maxdepth 1 -type f -name '*.stl' | wc -l)" -eq 91
+
+      - name: Reopen and independently validate final package
+        shell: bash
+        run: |
+          set -euo pipefail
+          PACKAGE="${{ steps.assemble.outputs.package }}"
+          python ci/validate_stl_collection.py \
+            --input "$PACKAGE/STL" \
+            --report-json "$PACKAGE/Reports/FINAL_VALIDATION.json" \
+            --report-csv "$PACKAGE/Reports/FINAL_VALIDATION.csv" \
+            --checksums "$PACKAGE/Reports/STL_SHA256SUMS.txt" \
+            --expected 91
+          python ci/compare_stl_silhouette.py \
+            --raw "$RUNNER_TEMP/raw_all/STL" \
+            --repaired "$PACKAGE/STL" \
+            --report-json "$PACKAGE/Reports/FINAL_SILHOUETTE_VALIDATION.json" \
+            --report-csv "$PACKAGE/Reports/FINAL_SILHOUETTE_VALIDATION.csv" \
+            --image "$PACKAGE/Reports/FINAL_SILHOUETTE_CONTACT_SHEET.png" \
+            --expected 91 \
+            --pixel-mm 0.65 \
+            --tolerance-mm 1.95 \
+            --minimum-raw-coverage 0.985 \
+            --minimum-repaired-coverage 0.900 \
+            --minimum-iou 0.850 \
+            --maximum-points 500000
+
+      - name: Add package documentation
+        shell: bash
+        run: |
+          set -euo pipefail
+          PACKAGE="${{ steps.assemble.outputs.package }}"
+          cat > "$PACKAGE/README_FIRST.txt" <<'EOF'
+          HEROES OF THE STORM — ALL 91 REPAIRED PRINTABLE HERO STL FILES
+
+          This package contains one named STL for every roster entry in this build,
+          including Xal'atath. D.Va includes pilot and mech. The Lost Vikings contains
+          Baleog, Erik and Olaf. Cho and Gall have separate filenames based on their
+          shared in-game body mesh.
+
+          Each hero was processed independently. The pipeline first attempts a minimally
+          destructive manifold repair, then progressively finer face-connected voxel
+          reconstructions when necessary. Candidate selection requires one watertight
+          printable body and preservation of the original front, side, and top silhouette,
+          preventing the missing-limb and discarded-weapon failures found in earlier builds.
+
+          All final files were reopened after assembly and passed topology, exact-roster,
+          one-body, dimensional, and silhouette-retention validation. JSON/CSV reports,
+          contact sheets, and SHA-256 hashes are included under Reports.
+
+          STL stores geometry only. It cannot retain textures, transparency, emissive
+          effects, normal maps, or animation. Inspect orientation and supports in your
+          slicer before printing.
+
+          Heroes of the Storm and its characters/assets are owned by Blizzard
+          Entertainment. These derivative files are intended for personal,
+          non-commercial fan use. Do not sell or commercially redistribute them.
+          EOF
+          printf '%s\n' "$GITHUB_RUN_ID" > "$PACKAGE/Reports/final_workflow_run_id.txt"
+          printf '%s\n' "$GITHUB_SHA" > "$PACKAGE/Reports/source_commit.txt"
+          printf '%s\n' "$RAW_BUILD_RUN_ID" > "$PACKAGE/Reports/raw_workflow_run_id.txt"
+
+      - name: Create downloadable ZIP
+        id: zip
+        shell: bash
+        run: |
+          set -euo pipefail
+          sudo apt-get update -qq
+          sudo apt-get install -y --no-install-recommends p7zip-full
+          PACKAGE="${{ steps.assemble.outputs.package }}"
+          ARCHIVE="$GITHUB_WORKSPACE/HOTS_All_91_Heroes_Printable_STL.zip"
+          cd "$RUNNER_TEMP"
+          7z a -tzip -mx=7 -mmt=on "$ARCHIVE" "$(basename "$PACKAGE")"
+          sha256sum "$ARCHIVE" > "$ARCHIVE.sha256"
+          echo "archive=$ARCHIVE" >> "$GITHUB_OUTPUT"
+          echo "checksum=$ARCHIVE.sha256" >> "$GITHUB_OUTPUT"
+
+      - uses: actions/upload-artifact@v4
+        with:
+          name: HOTS_All_91_Heroes_Printable_STL
+          path: |
+            ${{ steps.zip.outputs.archive }}
+            ${{ steps.zip.outputs.checksum }}
+          retention-days: 90
+          compression-level: 0
+
+      - name: Publish downloadable release
+        env:
+          GH_TOKEN: ${{ github.token }}
+        shell: bash
+        run: |
+          set -euo pipefail
+          PACKAGE="${{ steps.assemble.outputs.package }}"
+          TAG="hots-all-91-stl-v8-${GITHUB_RUN_NUMBER}-${GITHUB_RUN_ATTEMPT}"
+          gh release create "$TAG" \
+            "${{ steps.zip.outputs.archive }}" \
+            "${{ steps.zip.outputs.checksum }}" \
+            "$PACKAGE/Reports/FINAL_VALIDATION.json#FINAL_VALIDATION.json" \
+            "$PACKAGE/Reports/FINAL_VALIDATION.csv#FINAL_VALIDATION.csv" \
+            "$PACKAGE/Reports/FINAL_SILHOUETTE_VALIDATION.json#FINAL_SILHOUETTE_VALIDATION.json" \
+            "$PACKAGE/Reports/FINAL_SILHOUETTE_VALIDATION.csv#FINAL_SILHOUETTE_VALIDATION.csv" \
+            "$PACKAGE/Reports/STL_SHA256SUMS.txt#STL_SHA256SUMS.txt" \
+            "$PACKAGE/Reports/STL_FILE_LIST.txt#STL_FILE_LIST.txt" \
+            --repo "$GITHUB_REPOSITORY" \
+            --target "$GITHUB_SHA" \
+            --title "HOTS — All 91 repaired printable hero STL files" \
+            --notes "All 91 files passed independent topology, exact-roster, one-body, dimensional, and silhouette-retention gates."
