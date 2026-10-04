@@ -1,0 +1,42 @@
+name: Collect HOTS v6 Chunk 2 Diagnostics
+
+on:
+  workflow_dispatch:
+  push:
+    branches: [chatgpt-stl-builder]
+    paths: [.github/workflows/collect-v6-chunk2-log.yml]
+
+permissions:
+  actions: read
+  contents: write
+
+jobs:
+  collect:
+    runs-on: ubuntu-22.04
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          ref: chatgpt-stl-builder
+          fetch-depth: 0
+      - name: Collect completed chunk log and artifact reports
+        env:
+          GH_TOKEN: ${{ github.token }}
+        shell: bash
+        run: |
+          set -euo pipefail
+          DEST=build_reports/v6_chunk2_failure
+          mkdir -p "$DEST" "$RUNNER_TEMP/artifact"
+          gh run view 37197433268 --repo "$GITHUB_REPOSITORY" --job 111422087592 --log > "$DEST/job.log"
+          gh run download 37197433268 --repo "$GITHUB_REPOSITORY" --name HOTS-v6-fixed-chunk-2 --dir "$RUNNER_TEMP/artifact"
+          if [[ -d "$RUNNER_TEMP/artifact/Reports" ]]; then
+            cp -r "$RUNNER_TEMP/artifact/Reports/." "$DEST/"
+          fi
+          find "$RUNNER_TEMP/artifact" -maxdepth 3 -type f -printf '%P\n' | sort > "$DEST/artifact_file_list.txt"
+          git config user.name "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git add "$DEST"
+          if ! git diff --cached --quiet; then
+            git commit -m "Add HOTS v6 chunk 2 failure diagnostics [skip ci]"
+            git pull --rebase origin chatgpt-stl-builder
+            git push origin HEAD:chatgpt-stl-builder
+          fi
