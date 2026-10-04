@@ -1,0 +1,297 @@
+{
+  "expected": 9,
+  "found": 9,
+  "passed": false,
+  "failed": [
+    {
+      "file": "Abathur.stl",
+      "bytes": 22500084,
+      "vertices": 225065,
+      "triangles": 450000,
+      "watertight": false,
+      "winding_consistent": false,
+      "finite": true,
+      "volume_mm3": 222214.82249312647,
+      "dimensions_mm": [
+        211.2720489501953,
+        211.2720489501953,
+        112.42676544189453
+      ],
+      "connected_bodies": 38
+    },
+    {
+      "file": "Brightwing.stl",
+      "bytes": 13060284,
+      "vertices": 130595,
+      "triangles": 261204,
+      "watertight": false,
+      "winding_consistent": true,
+      "finite": true,
+      "volume_mm3": 71074.81732468988,
+      "dimensions_mm": [
+        117.02271270751953,
+        117.02271270751953,
+        112.68762969970703
+      ],
+      "connected_bodies": 1
+    },
+    {
+      "file": "D.Va.stl",
+      "bytes": 18786784,
+      "vertices": 187678,
+      "triangles": 375734,
+      "watertight": false,
+      "winding_consistent": true,
+      "finite": true,
+      "volume_mm3": 58491.61464101307,
+      "dimensions_mm": [
+        115.5499267578125,
+        115.5499267578125,
+        112.7909164428711
+      ],
+      "connected_bodies": 7
+    },
+    {
+      "file": "Deathwing.stl",
+      "bytes": 20813834,
+      "vertices": 208121,
+      "triangles": 416275,
+      "watertight": false,
+      "winding_consistent": true,
+      "finite": true,
+      "volume_mm3": 126795.9061425545,
+      "dimensions_mm": [
+        171.5639190673828,
+        171.5639190673828,
+        112.57878112792969
+      ],
+      "connected_bodies": 3
+    },
+    {
+      "file": "Muradin.stl",
+      "bytes": 16982234,
+      "vertices": 168570,
+      "triangles": 339643,
+      "watertight": false,
+      "winding_consistent": false,
+      "finite": true,
+      "volume_mm3": 102370.81599278814,
+      "dimensions_mm": [
+        87.1881332397461,
+        87.1881332397461,
+        112.60359191894531
+      ],
+      "connected_bodies": 93
+    },
+    {
+      "file": "Nova.stl",
+      "bytes": 9346434,
+      "vertices": 93470,
+      "triangles": 186927,
+      "watertight": false,
+      "winding_consistent": true,
+      "finite": true,
+      "volume_mm3": 55321.46523872038,
+      "dimensions_mm": [
+        105.09882354736328,
+        105.09882354736328,
+        112.37530517578125
+      ],
+      "connected_bodies": 7
+    },
+    {
+      "file": "Sgt._Hammer.stl",
+      "bytes": 22500034,
+      "vertices": 221017,
+      "triangles": 449999,
+      "watertight": false,
+      "winding_consistent": false,
+      "finite": true,
+      "volume_mm3": 809465.734116725,
+      "dimensions_mm": [
+        220.2957000732422,
+        220.2957000732422,
+        112.711181640625
+      ],
+      "connected_bodies": 93
+    },
+    {
+      "file": "The_Lost_Vikings.stl",
+      "bytes": 22500034,
+      "vertices": 224589,
+      "triangles": 449999,
+      "watertight": false,
+      "winding_consistent": false,
+      "finite": true,
+      "volume_mm3": 223894.16886365076,
+      "dimensions_mm": [
+        140.7193603515625,
+        140.7193603515625,
+        112.52136993408203
+      ],
+      "connected_bodies": 10
+    },
+    {
+      "file": "Tychus.stl",
+      "bytes": 22500034,
+      "vertices": 223486,
+      "triangles": 449999,
+      "watertight": false,
+      "winding_consistent": false,
+      "finite": true,
+      "volume_mm3": 185847.4348211145,
+      "dimensions_mm": [
+        144.0771484375,
+        144.0771484375,
+        112.71670532226562
+      ],
+      "connected_bodies": 164
+    }
+  ],
+  "files": [
+    {
+      "file": "Abathur.stl",
+      "bytes": 22500084,
+      "vertices": 225065,
+      "triangles": 450000,
+      "watertight": false,
+      "winding_consistent": false,
+      "finite": true,
+      "volume_mm3": 222214.82249312647,
+      "dimensions_mm": [
+        211.2720489501953,
+        211.2720489501953,
+        112.42676544189453
+      ],
+      "connected_bodies": 38
+    },
+    {
+      "file": "Brightwing.stl",
+      "bytes": 13060284,
+      "vertices": 130595,
+      "triangles": 261204,
+      "watertight": false,
+      "winding_consistent": true,
+      "finite": true,
+      "volume_mm3": 71074.81732468988,
+      "dimensions_mm": [
+        117.02271270751953,
+        117.02271270751953,
+        112.68762969970703
+      ],
+      "connected_bodies": 1
+    },
+    {
+      "file": "D.Va.stl",
+      "bytes": 18786784,
+      "vertices": 187678,
+      "triangles": 375734,
+      "watertight": false,
+      "winding_consistent": true,
+      "finite": true,
+      "volume_mm3": 58491.61464101307,
+      "dimensions_mm": [
+        115.5499267578125,
+        115.5499267578125,
+        112.7909164428711
+      ],
+      "connected_bodies": 7
+    },
+    {
+      "file": "Deathwing.stl",
+      "bytes": 20813834,
+      "vertices": 208121,
+      "triangles": 416275,
+      "watertight": false,
+      "winding_consistent": true,
+      "finite": true,
+      "volume_mm3": 126795.9061425545,
+      "dimensions_mm": [
+        171.5639190673828,
+        171.5639190673828,
+        112.57878112792969
+      ],
+      "connected_bodies": 3
+    },
+    {
+      "file": "Muradin.stl",
+      "bytes": 16982234,
+      "vertices": 168570,
+      "triangles": 339643,
+      "watertight": false,
+      "winding_consistent": false,
+      "finite": true,
+      "volume_mm3": 102370.81599278814,
+      "dimensions_mm": [
+        87.1881332397461,
+        87.1881332397461,
+        112.60359191894531
+      ],
+      "connected_bodies": 93
+    },
+    {
+      "file": "Nova.stl",
+      "bytes": 9346434,
+      "vertices": 93470,
+      "triangles": 186927,
+      "watertight": false,
+      "winding_consistent": true,
+      "finite": true,
+      "volume_mm3": 55321.46523872038,
+      "dimensions_mm": [
+        105.09882354736328,
+        105.09882354736328,
+        112.37530517578125
+      ],
+      "connected_bodies": 7
+    },
+    {
+      "file": "Sgt._Hammer.stl",
+      "bytes": 22500034,
+      "vertices": 221017,
+      "triangles": 449999,
+      "watertight": false,
+      "winding_consistent": false,
+      "finite": true,
+      "volume_mm3": 809465.734116725,
+      "dimensions_mm": [
+        220.2957000732422,
+        220.2957000732422,
+        112.711181640625
+      ],
+      "connected_bodies": 93
+    },
+    {
+      "file": "The_Lost_Vikings.stl",
+      "bytes": 22500034,
+      "vertices": 224589,
+      "triangles": 449999,
+      "watertight": false,
+      "winding_consistent": false,
+      "finite": true,
+      "volume_mm3": 223894.16886365076,
+      "dimensions_mm": [
+        140.7193603515625,
+        140.7193603515625,
+        112.52136993408203
+      ],
+      "connected_bodies": 10
+    },
+    {
+      "file": "Tychus.stl",
+      "bytes": 22500034,
+      "vertices": 223486,
+      "triangles": 449999,
+      "watertight": false,
+      "winding_consistent": false,
+      "finite": true,
+      "volume_mm3": 185847.4348211145,
+      "dimensions_mm": [
+        144.0771484375,
+        144.0771484375,
+        112.71670532226562
+      ],
+      "connected_bodies": 164
+    }
+  ]
+}

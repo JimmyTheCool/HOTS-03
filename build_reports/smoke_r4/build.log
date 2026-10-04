@@ -1,0 +1,215 @@
+ALSA lib confmisc.c:855:(parse_card) cannot find card '0'
+ALSA lib conf.c:5182:(_snd_config_evaluate) function snd_func_card_inum returned error: No such file or directory
+ALSA lib confmisc.c:422:(snd_func_concat) error evaluating strings
+ALSA lib conf.c:5182:(_snd_config_evaluate) function snd_func_concat returned error: No such file or directory
+ALSA lib confmisc.c:1334:(snd_func_refer) error evaluating name
+ALSA lib conf.c:5182:(_snd_config_evaluate) function snd_func_refer returned error: No such file or directory
+ALSA lib conf.c:5705:(snd_config_expand) Evaluate error: No such file or directory
+ALSA lib pcm.c:2664:(snd_pcm_open_noupdate) Unknown PCM default
+Failed to open dir (No such file or directory): /run/user/1001/gvfs/
+[09:39:56] HOTS STL Builder 2.1.0
+[09:39:56] Blender runtime: 3.6.23
+[09:39:56] Source roots: [PosixPath('/home/runner/work/_temp/H2'), PosixPath('/home/runner/work/HOTS-03/HOTS-03')]
+[09:39:56] Enabling m3addon
+[09:39:56] Resolved 9 roster entries to 9 unique source groups
+[09:39:56] PLAN Abathur: abathur — exact canonical base
+[09:39:56] PLAN Brightwing: brightwing — exact canonical base
+[09:39:56] PLAN D.Va: dva_composite — explicit multi-model composite
+[09:39:56] PLAN Deathwing: deathwing — exact canonical base
+[09:39:56] PLAN Muradin: muradin — exact canonical base
+[09:39:56] PLAN Nova: nova — exact canonical base
+[09:39:56] PLAN Sgt. Hammer: sgthammer — exact canonical base
+[09:39:56] PLAN The Lost Vikings: lostvikings_composite — explicit multi-model composite
+[09:39:56] PLAN Tychus: tychus — exact canonical base
+[09:39:56] Importing M3: /home/runner/work/_temp/H2/storm_hero_abathur_base/storm_hero_abathur_base.m3
+2026-10-04 09:39:56,461,461 DEBUG  base.py:152 Import /home/runner/work/_temp/H2/storm_hero_abathur_base/storm_hero_abathur_base.m3
+Info: Removed 0 vertice(s)
+Info: Removed 0 vertice(s)
+Info: Removed 184 vertice(s)
+Info: Removed 232 vertice(s)
+Info: Removed: 0 vertices, 0 edges, 0 faces
+Info: Removed 0 vertice(s)
+Info: Removed: 0 vertices, 0 edges, 0 faces
+Info: Removed 1 vertice(s)
+Info: Removed: 0 vertices, 0 edges, 0 faces
+Info: Removed 187 vertice(s)
+Info: Removed: 0 vertices, 0 edges, 0 faces
+Info: Removed 17 vertice(s)
+Info: Removed: 0 vertices, 0 edges, 0 faces
+[09:40:15] Strict edge test failed; retrying clean voxel union at 0.620 mm
+[09:40:29] SUCCESS source abathur: 450000 print-ready triangles
+[09:40:29] Importing M3: /home/runner/work/_temp/H2/storm_hero_brightwing_base/storm_hero_brightwing_base.m3
+2026-10-04 09:40:29,512,512 DEBUG  base.py:152 Import /home/runner/work/_temp/H2/storm_hero_brightwing_base/storm_hero_brightwing_base.m3
+Info: Removed 7 vertice(s)
+Info: Removed 1 vertice(s)
+Info: Removed 32 vertice(s)
+Info: Removed: 0 vertices, 0 edges, 0 faces
+Info: Removed 2 vertice(s)
+Info: Removed: 0 vertices, 0 edges, 0 faces
+Info: Removed 0 vertice(s)
+Info: Removed: 0 vertices, 0 edges, 0 faces
+Info: Removed 2 vertice(s)
+Info: Removed: 0 vertices, 0 edges, 0 faces
+[09:40:36] Strict edge test failed; retrying clean voxel union at 0.620 mm
+[09:40:40] SUCCESS source brightwing: 261204 print-ready triangles
+[09:40:40] Importing M3: /home/runner/work/_temp/H2/storm_hero_dva_base/storm_hero_dva_base.m3
+2026-10-04 09:40:40,649,649 DEBUG  base.py:152 Import /home/runner/work/_temp/H2/storm_hero_dva_base/storm_hero_dva_base.m3
+Info: Removed 88 vertice(s)
+Info: Removed 209 vertice(s)
+Info: Removed 254 vertice(s)
+[09:40:41] Importing M3: /home/runner/work/_temp/H2/storm_hero_dvamech_base/storm_hero_dvamech_base.m3
+2026-10-04 09:40:41,217,217 DEBUG  base.py:152 Import /home/runner/work/_temp/H2/storm_hero_dvamech_base/storm_hero_dvamech_base.m3
+Info: Removed 160 vertice(s)
+Info: Removed 0 vertice(s)
+Info: Removed 2808 vertice(s)
+Info: Removed 3497 vertice(s)
+Info: Removed: 0 vertices, 0 edges, 0 faces
+Info: Removed 88 vertice(s)
+Info: Removed: 0 vertices, 0 edges, 0 faces
+Info: Removed 209 vertice(s)
+Info: Removed: 0 vertices, 0 edges, 0 faces
+Info: Removed 239 vertice(s)
+Info: Removed: 0 vertices, 0 edges, 0 faces
+Info: Removed 156 vertice(s)
+Info: Removed: 0 vertices, 0 edges, 0 faces
+Info: Removed 0 vertice(s)
+Info: Removed: 0 vertices, 0 edges, 0 faces
+Info: Removed 0 vertice(s)
+Info: Removed: 0 vertices, 0 edges, 0 faces
+Info: Removed 2806 vertice(s)
+Info: Removed: 0 vertices, 0 edges, 0 faces
+Info: Removed 2 vertice(s)
+Info: Removed: 0 vertices, 0 edges, 0 faces
+[09:40:55] Strict edge test failed; retrying clean voxel union at 0.620 mm
+[09:41:02] SUCCESS source dva_composite: 375734 print-ready triangles
+[09:41:02] Importing M3: /home/runner/work/_temp/H2/storm_hero_deathwing_base/storm_hero_deathwing_base.m3
+2026-10-04 09:41:02,132,132 DEBUG  base.py:152 Import /home/runner/work/_temp/H2/storm_hero_deathwing_base/storm_hero_deathwing_base.m3
+Info: Removed 33 vertice(s)
+Info: Removed 980 vertice(s)
+Info: Removed 1131 vertice(s)
+Info: Removed: 0 vertices, 0 edges, 0 faces
+Info: Removed 37 vertice(s)
+Info: Removed: 0 vertices, 0 edges, 0 faces
+Info: Removed 985 vertice(s)
+Info: Removed: 0 vertices, 0 edges, 0 faces
+Info: Removed 33 vertice(s)
+Info: Removed: 0 vertices, 0 edges, 0 faces
+[09:41:16] Strict edge test failed; retrying clean voxel union at 0.620 mm
+[09:41:24] SUCCESS source deathwing: 416275 print-ready triangles
+[09:41:24] Importing M3: /home/runner/work/HOTS-03/HOTS-03/storm_hero_muradin_base/storm_hero_muradin_base.m3
+2026-10-04 09:41:24,012,12  DEBUG  base.py:152 Import /home/runner/work/HOTS-03/HOTS-03/storm_hero_muradin_base/storm_hero_muradin_base.m3
+Info: Removed 96 vertice(s)
+Info: Removed 96 vertice(s)
+Info: Removed 0 vertice(s)
+Info: Removed 283 vertice(s)
+Info: Removed 0 vertice(s)
+Info: Removed 258 vertice(s)
+Info: Removed 196 vertice(s)
+Info: Removed 213 vertice(s)
+Info: Removed 454 vertice(s)
+Info: Removed 1560 vertice(s)
+Info: Removed: 0 vertices, 0 edges, 0 faces
+Info: Removed 96 vertice(s)
+Info: Removed: 0 vertices, 0 edges, 0 faces
+Info: Removed 96 vertice(s)
+Info: Removed: 0 vertices, 0 edges, 0 faces
+Info: Removed 283 vertice(s)
+Info: Removed: 0 vertices, 0 edges, 0 faces
+Info: Removed 252 vertice(s)
+Info: Removed: 0 vertices, 0 edges, 0 faces
+Info: Removed 196 vertice(s)
+Info: Removed: 0 vertices, 0 edges, 0 faces
+Info: Removed 197 vertice(s)
+Info: Removed: 0 vertices, 0 edges, 0 faces
+Info: Removed 430 vertice(s)
+Info: Removed: 0 vertices, 0 edges, 0 faces
+Info: Removed 2 vertice(s)
+Info: Removed: 0 vertices, 0 edges, 0 faces
+[09:41:34] Strict edge test failed; retrying clean voxel union at 0.620 mm
+[09:41:40] SUCCESS source muradin: 339643 print-ready triangles
+[09:41:40] Importing M3: /home/runner/work/HOTS-03/HOTS-03/storm_hero_nova_base/storm_hero_nova_base_v05.m3
+2026-10-04 09:41:40,717,717 DEBUG  base.py:152 Import /home/runner/work/HOTS-03/HOTS-03/storm_hero_nova_base/storm_hero_nova_base_v05.m3
+Info: Removed 688 vertice(s)
+Info: Removed 540 vertice(s)
+Info: Removed 1161 vertice(s)
+Info: Removed: 0 vertices, 0 edges, 0 faces
+Info: Removed 688 vertice(s)
+Info: Removed: 0 vertices, 0 edges, 0 faces
+Info: Removed 454 vertice(s)
+Info: Removed: 0 vertices, 0 edges, 0 faces
+Info: Removed 10 vertice(s)
+Info: Removed: 0 vertices, 0 edges, 0 faces
+[09:41:45] Strict edge test failed; retrying clean voxel union at 0.620 mm
+[09:41:49] SUCCESS source nova: 186927 print-ready triangles
+[09:41:49] Importing M3: /home/runner/work/HOTS-03/HOTS-03/storm_hero_sgthammer_base/storm_hero_sgthammer_base_v07.m3
+2026-10-04 09:41:49,236,236 DEBUG  base.py:152 Import /home/runner/work/HOTS-03/HOTS-03/storm_hero_sgthammer_base/storm_hero_sgthammer_base_v07.m3
+Info: Removed 0 vertice(s)
+Info: Removed 0 vertice(s)
+Info: Removed 165 vertice(s)
+Info: Removed 15 vertice(s)
+Info: Removed 395 vertice(s)
+Info: Removed: 0 vertices, 0 edges, 0 faces
+Info: Removed 0 vertice(s)
+Info: Removed: 0 vertices, 0 edges, 0 faces
+Info: Removed 0 vertice(s)
+Info: Removed: 0 vertices, 0 edges, 0 faces
+Info: Removed 149 vertice(s)
+Info: Removed: 0 vertices, 0 edges, 0 faces
+Info: Removed 0 vertice(s)
+Info: Removed: 0 vertices, 0 edges, 0 faces
+Info: Removed 0 vertice(s)
+Info: Removed: 0 vertices, 0 edges, 0 faces
+[09:42:42] Strict edge test failed; retrying clean voxel union at 0.620 mm
+[09:43:20] SUCCESS source sgthammer: 449999 print-ready triangles
+[09:43:20] Importing M3: /home/runner/work/HOTS-03/HOTS-03/storm_hero_lostbaleog_base/storm_hero_lostbaleog_base.m3
+2026-10-04 09:43:20,695,695 DEBUG  base.py:152 Import /home/runner/work/HOTS-03/HOTS-03/storm_hero_lostbaleog_base/storm_hero_lostbaleog_base.m3
+Info: Removed 0 vertice(s)
+Info: Removed 0 vertice(s)
+Info: Removed 38 vertice(s)
+[09:43:21] Importing M3: /home/runner/work/HOTS-03/HOTS-03/storm_hero_losterik_base/storm_hero_losterik_base.m3
+2026-10-04 09:43:21,130,130 DEBUG  base.py:152 Import /home/runner/work/HOTS-03/HOTS-03/storm_hero_losterik_base/storm_hero_losterik_base.m3
+Info: Removed 7 vertice(s)
+Info: Removed 27 vertice(s)
+[09:43:21] Importing M3: /home/runner/work/HOTS-03/HOTS-03/storm_hero_lostolaf_base/storm_hero_lostolaf_base.m3
+2026-10-04 09:43:21,539,539 DEBUG  base.py:152 Import /home/runner/work/HOTS-03/HOTS-03/storm_hero_lostolaf_base/storm_hero_lostolaf_base.m3
+Info: Removed 0 vertice(s)
+Info: Removed 0 vertice(s)
+Info: Removed 106 vertice(s)
+Info: Removed 143 vertice(s)
+Info: Removed: 0 vertices, 0 edges, 0 faces
+Info: Removed 0 vertice(s)
+Info: Removed: 0 vertices, 0 edges, 0 faces
+Info: Removed 0 vertice(s)
+Info: Removed: 0 vertices, 0 edges, 0 faces
+Info: Removed 12 vertice(s)
+Info: Removed: 0 vertices, 0 edges, 0 faces
+Info: Removed 1 vertice(s)
+Info: Removed: 0 vertices, 0 edges, 0 faces
+Info: Removed 13 vertice(s)
+Info: Removed: 0 vertices, 0 edges, 0 faces
+Info: Removed 0 vertice(s)
+Info: Removed: 0 vertices, 0 edges, 0 faces
+Info: Removed 0 vertice(s)
+Info: Removed: 0 vertices, 0 edges, 0 faces
+Info: Removed 2 vertice(s)
+Info: Removed: 0 vertices, 0 edges, 0 faces
+Info: Removed 15 vertice(s)
+Info: Removed: 0 vertices, 0 edges, 0 faces
+[09:43:39] Strict edge test failed; retrying clean voxel union at 0.620 mm
+[09:43:51] SUCCESS source lostvikings_composite: 449999 print-ready triangles
+[09:43:51] Importing M3: /home/runner/work/HOTS-03/HOTS-03/storm_hero_tychus_base/storm_hero_tychus_base_v13.m3
+2026-10-04 09:43:51,589,589 DEBUG  base.py:152 Import /home/runner/work/HOTS-03/HOTS-03/storm_hero_tychus_base/storm_hero_tychus_base_v13.m3
+Info: Removed 554 vertice(s)
+Info: Removed 1348 vertice(s)
+Info: Removed 1917 vertice(s)
+Info: Removed: 0 vertices, 0 edges, 0 faces
+Info: Removed 557 vertice(s)
+Info: Removed: 0 vertices, 0 edges, 0 faces
+Info: Removed 1291 vertice(s)
+Info: Removed: 0 vertices, 0 edges, 0 faces
+Info: Removed 10 vertice(s)
+Info: Removed: 0 vertices, 0 edges, 0 faces
+[09:44:10] Strict edge test failed; retrying clean voxel union at 0.620 mm
+[09:44:22] SUCCESS source tychus: 449999 print-ready triangles
+[09:44:22] Completed: 9 successful roster entries, 0 missing/failed
+Blender 3.6.23 (hash e467db79ca8c built 2025-06-17 01:32:54)
