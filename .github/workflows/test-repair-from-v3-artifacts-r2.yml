@@ -1,0 +1,88 @@
+name: Test Repair from V3 Artifacts R2
+
+on:
+  workflow_dispatch:
+  push:
+    branches: [chatgpt-stl-builder]
+    paths: [.github/workflows/test-repair-from-v3-artifacts-r2.yml]
+
+permissions:
+  actions: read
+  contents: read
+
+jobs:
+  test:
+    runs-on: ubuntu-22.04
+    timeout-minutes: 180
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          ref: chatgpt-stl-builder
+          fetch-depth: 1
+
+      - name: Download representative raw STL files
+        env:
+          GH_TOKEN: ${{ github.token }}
+        shell: bash
+        run: |
+          set -euo pipefail
+          mkdir -p "$RUNNER_TEMP/chunk1" "$RUNNER_TEMP/chunk2" "$RUNNER_TEMP/chunk6" "$RUNNER_TEMP/sample_raw"
+          gh run download 37193141976 --repo "$GITHUB_REPOSITORY" --name HOTS-v3-chunk-1 --dir "$RUNNER_TEMP/chunk1"
+          gh run download 37193141976 --repo "$GITHUB_REPOSITORY" --name HOTS-v3-chunk-2 --dir "$RUNNER_TEMP/chunk2"
+          gh run download 37193141976 --repo "$GITHUB_REPOSITORY" --name HOTS-v3-chunk-6 --dir "$RUNNER_TEMP/chunk6"
+          cp "$RUNNER_TEMP/chunk1/STL/Brightwing.stl" "$RUNNER_TEMP/sample_raw/"
+          cp "$RUNNER_TEMP/chunk2/STL/D.Va.stl" "$RUNNER_TEMP/sample_raw/"
+          cp "$RUNNER_TEMP/chunk6/STL/Tychus.stl" "$RUNNER_TEMP/sample_raw/"
+
+      - name: Install repair dependencies
+        shell: bash
+        run: |
+          set -euo pipefail
+          python -m pip install --disable-pip-version-check --quiet \
+            trimesh==4.8.3 numpy==2.2.6 scipy==1.15.3 \
+            scikit-image==0.25.2 pymeshfix==0.18.1 \
+            fast-simplification==0.1.12
+
+      - name: Patch, repair and validate samples
+        shell: bash
+        run: |
+          set -euo pipefail
+          cp ci/repair_stl_collection.py "$RUNNER_TEMP/repair_stl_collection_v2.py"
+          python ci/patch_repair_dimension_retention.py "$RUNNER_TEMP/repair_stl_collection_v2.py"
+          python -m py_compile "$RUNNER_TEMP/repair_stl_collection_v2.py"
+          mkdir -p "$RUNNER_TEMP/sample_repaired/Reports"
+          python "$RUNNER_TEMP/repair_stl_collection_v2.py" \
+            --input "$RUNNER_TEMP/sample_raw" \
+            --output "$RUNNER_TEMP/sample_repaired/STL" \
+            --report-json "$RUNNER_TEMP/sample_repaired/Reports/repair_validation.json" \
+            --report-csv "$RUNNER_TEMP/sample_repaired/Reports/repair_validation.csv" \
+            --expected 3 \
+            --pitch 0.62 \
+            --max-triangles 500000 \
+            --target-triangles 440000 \
+            --minimum-dimension-retention 0.90 \
+            --maximum-dimension-retention 1.10
+          python ci/validate_stl_collection.py \
+            --input "$RUNNER_TEMP/sample_repaired/STL" \
+            --report-json "$RUNNER_TEMP/sample_repaired/Reports/final_validation.json" \
+            --report-csv "$RUNNER_TEMP/sample_repaired/Reports/final_validation.csv" \
+            --checksums "$RUNNER_TEMP/sample_repaired/Reports/SHA256SUMS.txt" \
+            --expected 3
+
+      - name: Stage results
+        if: always()
+        shell: bash
+        run: |
+          set -euo pipefail
+          mkdir -p "$GITHUB_WORKSPACE/repair_sample_r2"
+          if [[ -d "$RUNNER_TEMP/sample_repaired" ]]; then
+            cp -r "$RUNNER_TEMP/sample_repaired/." "$GITHUB_WORKSPACE/repair_sample_r2/"
+          fi
+
+      - uses: actions/upload-artifact@v4
+        if: always()
+        with:
+          name: HOTS-repair-sample-r2
+          path: repair_sample_r2
+          retention-days: 30
+          compression-level: 0
