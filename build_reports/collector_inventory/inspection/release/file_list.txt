@@ -1,0 +1,7 @@
+/home/runner/work/_temp/release/extracted/HOTS_STL_Files_Created_So_Far/STL/Muradin.stl
+/home/runner/work/_temp/release/extracted/HOTS_STL_Files_Created_So_Far/STL/Xal'atath.stl
+/home/runner/work/_temp/release/extracted/HOTS_STL_Files_Created_So_Far/STL/Abathur.stl
+/home/runner/work/_temp/release/extracted/HOTS_STL_Files_Created_So_Far/README_FIRST.txt
+/home/runner/work/_temp/release/extracted/HOTS_STL_Files_Created_So_Far/Reports/source_inventory.csv
+/home/runner/work/_temp/release/extracted/HOTS_STL_Files_Created_So_Far/Reports/manifest.csv
+/home/runner/work/_temp/release/extracted/HOTS_STL_Files_Created_So_Far/Reports/manifest.json
