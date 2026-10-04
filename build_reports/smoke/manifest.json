@@ -1,6 +1,6 @@
 {
   "builder_version": "1.0.0",
-  "generated_utc": "2026-10-04T08:43:53.540308+00:00",
+  "generated_utc": "2026-10-04T08:51:23.259183+00:00",
   "blender_runtime": "3.6.23",
   "expected_blender": "3.6.23",
   "m3addon_commit": "58935005c4465a219a740f6b740253533eda773f",
@@ -96,18 +96,18 @@
         "validation": {
           "valid_binary_stl": true,
           "watertight_edge_test": false,
-          "boundary_edges": 208,
-          "nonmanifold_edges": 0,
-          "degenerate_triangles": 0,
+          "boundary_edges": 181,
+          "nonmanifold_edges": 51,
+          "degenerate_triangles": 59,
           "triangles": 11362
         },
         "source_artifact": "/home/runner/work/_temp/HOTS_STL_Output/.build_cache/detail/abathur.stl"
       },
       "print_ready": {
         "path": "/home/runner/work/_temp/HOTS_STL_Output/02_Print_Ready_Watertight/Abathur.stl",
-        "bytes": 2677184,
-        "sha256": "13e86a52e7731344f0b90943bbc0deb0e6528e95a5409a757626ac580f366772",
-        "triangles": 53542,
+        "bytes": 3577334,
+        "sha256": "107ceef281ee3d6b120d90a2587d44a41acb55e9c73ed538f3816503cef30f2c",
+        "triangles": 71545,
         "bounds_mm": [
           [
             -18.0504207611084,
@@ -117,40 +117,179 @@
           [
             18.0504207611084,
             18.0504207611084,
-            115.01567077636719
+            115.09587860107422
           ]
         ],
         "dimensions_mm": [
           36.1008415222168,
           36.1008415222168,
-          115.01567077636719
+          115.09587860107422
         ],
         "validation": {
           "valid_binary_stl": true,
           "watertight_edge_test": false,
-          "boundary_edges": 7,
-          "nonmanifold_edges": 13,
+          "boundary_edges": 99,
+          "nonmanifold_edges": 72,
           "degenerate_triangles": 0,
-          "triangles": 53542
+          "triangles": 71545
         },
         "source_artifact": "/home/runner/work/_temp/HOTS_STL_Output/.build_cache/print_ready/abathur.stl"
       },
       "decimation": {
         "triangles_before_decimate": 53542,
         "decimated": false,
-        "triangles_after_decimate": 53542
+        "triangles_after_decimate": 53542,
+        "final_cleanup": {
+          "weld_distance_mm": 0.07600000000000001,
+          "vertices": 26402,
+          "triangles": 52746
+        },
+        "repair_retry": {
+          "weld_distance_mm": 0.07600000000000001,
+          "vertices": 35819,
+          "triangles": 71545
+        }
       },
-      "elapsed_source_seconds": 10.06,
+      "elapsed_source_seconds": 12.47,
       "status": "failed-validation",
       "resolution": "exact canonical base"
     },
     {
-      "hero": "Johanna",
-      "source_key": null,
-      "source_paths": [],
-      "resolution": "not found",
-      "status": "missing-source",
-      "error": "No canonical or fallback base mesh found"
+      "hero": "Muradin",
+      "source_key": "muradin",
+      "source_paths": [
+        "/home/runner/work/HOTS-03/HOTS-03/storm_hero_muradin_base/storm_hero_muradin_base.m3"
+      ],
+      "import": {
+        "imported_paths": [
+          "/home/runner/work/HOTS-03/HOTS-03/storm_hero_muradin_base/storm_hero_muradin_base.m3"
+        ],
+        "animation_paths": [
+          "/home/runner/work/HOTS-03/HOTS-03/storm_hero_muradin_requiredanims/storm_hero_muradin_requiredanims.m3a"
+        ],
+        "pose": {
+          "animation": "Stand",
+          "index": 0,
+          "frame": 12,
+          "reason": "matched 'stand'",
+          "animation_count": 47
+        }
+      },
+      "normalization": {
+        "scale_factor": 44.77565368550852,
+        "bounds_before": [
+          [
+            -55.908172607421875,
+            -68.48418426513672,
+            -1.6376570463180542
+          ],
+          [
+            55.54669189453125,
+            49.85875701904297,
+            108.36235046386719
+          ]
+        ],
+        "bounds_after": [
+          [
+            -55.72743225097656,
+            -59.171470642089844,
+            0.0
+          ],
+          [
+            55.72743225097656,
+            59.171470642089844,
+            110.00000762939453
+          ]
+        ],
+        "dimensions_mm": [
+          111.45486450195312,
+          118.34294128417969,
+          110.00000762939453
+        ]
+      },
+      "detail": {
+        "path": "/home/runner/work/_temp/HOTS_STL_Output/01_Detail_Preserving/Muradin.stl",
+        "bytes": 524984,
+        "sha256": "57fd620958e0e2a9e098c64387ef7b722ad734632b49d9be996bf1d118771213",
+        "triangles": 10498,
+        "bounds_mm": [
+          [
+            -55.72743225097656,
+            -59.171470642089844,
+            0.0
+          ],
+          [
+            55.72743225097656,
+            59.171470642089844,
+            110.00000762939453
+          ]
+        ],
+        "dimensions_mm": [
+          111.45486450195312,
+          118.34294128417969,
+          110.00000762939453
+        ],
+        "validation": {
+          "valid_binary_stl": true,
+          "watertight_edge_test": false,
+          "boundary_edges": 694,
+          "nonmanifold_edges": 44,
+          "degenerate_triangles": 0,
+          "triangles": 10498
+        },
+        "source_artifact": "/home/runner/work/_temp/HOTS_STL_Output/.build_cache/detail/muradin.stl"
+      },
+      "print_ready": {
+        "path": "/home/runner/work/_temp/HOTS_STL_Output/02_Print_Ready_Watertight/Muradin.stl",
+        "bytes": 109183434,
+        "sha256": "34cfbcdf1ffb7c4fffe64218ec00153305d727c52a005f40cf19ee71660d96bb",
+        "triangles": 2183667,
+        "bounds_mm": [
+          [
+            -63.493934631347656,
+            -63.493934631347656,
+            0.0
+          ],
+          [
+            63.493934631347656,
+            63.493934631347656,
+            114.12833404541016
+          ]
+        ],
+        "dimensions_mm": [
+          126.98786926269531,
+          126.98786926269531,
+          114.12833404541016
+        ],
+        "validation": {
+          "valid_binary_stl": true,
+          "watertight_edge_test": false,
+          "boundary_edges": 72,
+          "nonmanifold_edges": 117,
+          "degenerate_triangles": 0,
+          "triangles": 2183667
+        },
+        "source_artifact": "/home/runner/work/_temp/HOTS_STL_Output/.build_cache/print_ready/muradin.stl"
+      },
+      "decimation": {
+        "triangles_before_decimate": 1591375,
+        "decimated": true,
+        "decimate_ratio": 0.40845181054119867,
+        "triangles_after_decimate": 649999,
+        "final_cleanup": {
+          "weld_distance_mm": 0.07600000000000001,
+          "vertices": 322815,
+          "triangles": 645976
+        },
+        "repair_retry": {
+          "weld_distance_mm": 0.07600000000000001,
+          "vertices": 1091682,
+          "triangles": 2183667
+        }
+      },
+      "elapsed_source_seconds": 109.68,
+      "status": "failed-validation",
+      "resolution": "exact canonical base"
     },
     {
       "hero": "Xal'atath",
@@ -239,42 +378,52 @@
       },
       "print_ready": {
         "path": "/home/runner/work/_temp/HOTS_STL_Output/02_Print_Ready_Watertight/Xal_atath.stl",
-        "bytes": 29371484,
-        "sha256": "29c4c95f473ea66df64585657214851b00d1278993555750e1a4e8bbb8f3f53e",
-        "triangles": 587428,
+        "bytes": 39948384,
+        "sha256": "2f12061a3cb5404bbd0ed9b052cb1d5665e61c64feee2370d5cd48a1d1f7779e",
+        "triangles": 798966,
         "bounds_mm": [
           [
-            -33.732643127441406,
-            -33.732643127441406,
+            -33.73263931274414,
+            -33.73263931274414,
             0.0
           ],
           [
-            33.732643127441406,
-            33.732643127441406,
-            126.0438003540039
+            33.73263931274414,
+            33.73263931274414,
+            123.82725524902344
           ]
         ],
         "dimensions_mm": [
-          67.46528625488281,
-          67.46528625488281,
-          126.0438003540039
+          67.46527862548828,
+          67.46527862548828,
+          123.82725524902344
         ],
         "validation": {
           "valid_binary_stl": true,
           "watertight_edge_test": false,
-          "boundary_edges": 25,
-          "nonmanifold_edges": 18,
+          "boundary_edges": 116,
+          "nonmanifold_edges": 106,
           "degenerate_triangles": 0,
-          "triangles": 587428
+          "triangles": 798966
         },
         "source_artifact": "/home/runner/work/_temp/HOTS_STL_Output/.build_cache/print_ready/xalatath.stl"
       },
       "decimation": {
         "triangles_before_decimate": 587428,
         "decimated": false,
-        "triangles_after_decimate": 587428
+        "triangles_after_decimate": 587428,
+        "final_cleanup": {
+          "weld_distance_mm": 0.07600000000000001,
+          "vertices": 292034,
+          "triangles": 584199
+        },
+        "repair_retry": {
+          "weld_distance_mm": 0.07600000000000001,
+          "vertices": 399447,
+          "triangles": 798966
+        }
       },
-      "elapsed_source_seconds": 18.84,
+      "elapsed_source_seconds": 45.16,
       "status": "failed-validation",
       "resolution": "exact canonical base"
     }
@@ -357,17 +506,17 @@
         "validation": {
           "valid_binary_stl": true,
           "watertight_edge_test": false,
-          "boundary_edges": 208,
-          "nonmanifold_edges": 0,
-          "degenerate_triangles": 0,
+          "boundary_edges": 181,
+          "nonmanifold_edges": 51,
+          "degenerate_triangles": 59,
           "triangles": 11362
         }
       },
       "print_ready": {
         "path": "/home/runner/work/_temp/HOTS_STL_Output/.build_cache/print_ready/abathur.stl",
-        "bytes": 2677184,
-        "sha256": "13e86a52e7731344f0b90943bbc0deb0e6528e95a5409a757626ac580f366772",
-        "triangles": 53542,
+        "bytes": 3577334,
+        "sha256": "107ceef281ee3d6b120d90a2587d44a41acb55e9c73ed538f3816503cef30f2c",
+        "triangles": 71545,
         "bounds_mm": [
           [
             -18.0504207611084,
@@ -377,30 +526,173 @@
           [
             18.0504207611084,
             18.0504207611084,
-            115.01567077636719
+            115.09587860107422
           ]
         ],
         "dimensions_mm": [
           36.1008415222168,
           36.1008415222168,
-          115.01567077636719
+          115.09587860107422
         ],
         "validation": {
           "valid_binary_stl": true,
           "watertight_edge_test": false,
-          "boundary_edges": 7,
-          "nonmanifold_edges": 13,
+          "boundary_edges": 99,
+          "nonmanifold_edges": 72,
           "degenerate_triangles": 0,
-          "triangles": 53542
+          "triangles": 71545
         }
       },
       "decimation": {
         "triangles_before_decimate": 53542,
         "decimated": false,
-        "triangles_after_decimate": 53542
+        "triangles_after_decimate": 53542,
+        "final_cleanup": {
+          "weld_distance_mm": 0.07600000000000001,
+          "vertices": 26402,
+          "triangles": 52746
+        },
+        "repair_retry": {
+          "weld_distance_mm": 0.07600000000000001,
+          "vertices": 35819,
+          "triangles": 71545
+        }
       },
       "blend_path": null,
-      "elapsed_seconds": 10.06
+      "elapsed_seconds": 12.47
+    },
+    "muradin": {
+      "source_key": "muradin",
+      "source_paths": [
+        "/home/runner/work/HOTS-03/HOTS-03/storm_hero_muradin_base/storm_hero_muradin_base.m3"
+      ],
+      "import": {
+        "imported_paths": [
+          "/home/runner/work/HOTS-03/HOTS-03/storm_hero_muradin_base/storm_hero_muradin_base.m3"
+        ],
+        "animation_paths": [
+          "/home/runner/work/HOTS-03/HOTS-03/storm_hero_muradin_requiredanims/storm_hero_muradin_requiredanims.m3a"
+        ],
+        "pose": {
+          "animation": "Stand",
+          "index": 0,
+          "frame": 12,
+          "reason": "matched 'stand'",
+          "animation_count": 47
+        }
+      },
+      "normalization": {
+        "scale_factor": 44.77565368550852,
+        "bounds_before": [
+          [
+            -55.908172607421875,
+            -68.48418426513672,
+            -1.6376570463180542
+          ],
+          [
+            55.54669189453125,
+            49.85875701904297,
+            108.36235046386719
+          ]
+        ],
+        "bounds_after": [
+          [
+            -55.72743225097656,
+            -59.171470642089844,
+            0.0
+          ],
+          [
+            55.72743225097656,
+            59.171470642089844,
+            110.00000762939453
+          ]
+        ],
+        "dimensions_mm": [
+          111.45486450195312,
+          118.34294128417969,
+          110.00000762939453
+        ]
+      },
+      "detail": {
+        "path": "/home/runner/work/_temp/HOTS_STL_Output/.build_cache/detail/muradin.stl",
+        "bytes": 524984,
+        "sha256": "57fd620958e0e2a9e098c64387ef7b722ad734632b49d9be996bf1d118771213",
+        "triangles": 10498,
+        "bounds_mm": [
+          [
+            -55.72743225097656,
+            -59.171470642089844,
+            0.0
+          ],
+          [
+            55.72743225097656,
+            59.171470642089844,
+            110.00000762939453
+          ]
+        ],
+        "dimensions_mm": [
+          111.45486450195312,
+          118.34294128417969,
+          110.00000762939453
+        ],
+        "validation": {
+          "valid_binary_stl": true,
+          "watertight_edge_test": false,
+          "boundary_edges": 694,
+          "nonmanifold_edges": 44,
+          "degenerate_triangles": 0,
+          "triangles": 10498
+        }
+      },
+      "print_ready": {
+        "path": "/home/runner/work/_temp/HOTS_STL_Output/.build_cache/print_ready/muradin.stl",
+        "bytes": 109183434,
+        "sha256": "34cfbcdf1ffb7c4fffe64218ec00153305d727c52a005f40cf19ee71660d96bb",
+        "triangles": 2183667,
+        "bounds_mm": [
+          [
+            -63.493934631347656,
+            -63.493934631347656,
+            0.0
+          ],
+          [
+            63.493934631347656,
+            63.493934631347656,
+            114.12833404541016
+          ]
+        ],
+        "dimensions_mm": [
+          126.98786926269531,
+          126.98786926269531,
+          114.12833404541016
+        ],
+        "validation": {
+          "valid_binary_stl": true,
+          "watertight_edge_test": false,
+          "boundary_edges": 72,
+          "nonmanifold_edges": 117,
+          "degenerate_triangles": 0,
+          "triangles": 2183667
+        }
+      },
+      "decimation": {
+        "triangles_before_decimate": 1591375,
+        "decimated": true,
+        "decimate_ratio": 0.40845181054119867,
+        "triangles_after_decimate": 649999,
+        "final_cleanup": {
+          "weld_distance_mm": 0.07600000000000001,
+          "vertices": 322815,
+          "triangles": 645976
+        },
+        "repair_retry": {
+          "weld_distance_mm": 0.07600000000000001,
+          "vertices": 1091682,
+          "triangles": 2183667
+        }
+      },
+      "blend_path": null,
+      "elapsed_seconds": 109.68
     },
     "xalatath": {
       "source_key": "xalatath",
@@ -487,42 +779,52 @@
       },
       "print_ready": {
         "path": "/home/runner/work/_temp/HOTS_STL_Output/.build_cache/print_ready/xalatath.stl",
-        "bytes": 29371484,
-        "sha256": "29c4c95f473ea66df64585657214851b00d1278993555750e1a4e8bbb8f3f53e",
-        "triangles": 587428,
+        "bytes": 39948384,
+        "sha256": "2f12061a3cb5404bbd0ed9b052cb1d5665e61c64feee2370d5cd48a1d1f7779e",
+        "triangles": 798966,
         "bounds_mm": [
           [
-            -33.732643127441406,
-            -33.732643127441406,
+            -33.73263931274414,
+            -33.73263931274414,
             0.0
           ],
           [
-            33.732643127441406,
-            33.732643127441406,
-            126.0438003540039
+            33.73263931274414,
+            33.73263931274414,
+            123.82725524902344
           ]
         ],
         "dimensions_mm": [
-          67.46528625488281,
-          67.46528625488281,
-          126.0438003540039
+          67.46527862548828,
+          67.46527862548828,
+          123.82725524902344
         ],
         "validation": {
           "valid_binary_stl": true,
           "watertight_edge_test": false,
-          "boundary_edges": 25,
-          "nonmanifold_edges": 18,
+          "boundary_edges": 116,
+          "nonmanifold_edges": 106,
           "degenerate_triangles": 0,
-          "triangles": 587428
+          "triangles": 798966
         }
       },
       "decimation": {
         "triangles_before_decimate": 587428,
         "decimated": false,
-        "triangles_after_decimate": 587428
+        "triangles_after_decimate": 587428,
+        "final_cleanup": {
+          "weld_distance_mm": 0.07600000000000001,
+          "vertices": 292034,
+          "triangles": 584199
+        },
+        "repair_retry": {
+          "weld_distance_mm": 0.07600000000000001,
+          "vertices": 399447,
+          "triangles": 798966
+        }
       },
       "blend_path": null,
-      "elapsed_seconds": 18.84
+      "elapsed_seconds": 45.16
     }
   }
 }
