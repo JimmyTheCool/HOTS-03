@@ -1,0 +1,114 @@
+name: Rescue Fenix Without MeshFix
+
+on:
+  workflow_dispatch:
+  push:
+    branches: [chatgpt-stl-builder]
+    paths: [.github/workflows/rescue-fenix-no-meshfix.yml]
+
+permissions:
+  actions: read
+  contents: read
+
+env:
+  RAW_BUILD_RUN_ID: 37193141976
+
+jobs:
+  candidate:
+    runs-on: ubuntu-22.04
+    timeout-minutes: 180
+    strategy:
+      fail-fast: false
+      matrix:
+        pitch: [1.00, 0.80, 0.70, 0.62, 0.55]
+
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          ref: chatgpt-stl-builder
+          fetch-depth: 1
+
+      - name: Download Fenix source STL
+        env:
+          GH_TOKEN: ${{ github.token }}
+        shell: bash
+        run: |
+          set -euo pipefail
+          mkdir -p "$RUNNER_TEMP/raw_chunk" "$RUNNER_TEMP/source"
+          gh run download "$RAW_BUILD_RUN_ID" \
+            --repo "$GITHUB_REPOSITORY" \
+            --name HOTS-v3-chunk-2 \
+            --dir "$RUNNER_TEMP/raw_chunk"
+          cp "$RUNNER_TEMP/raw_chunk/STL/Fenix.stl" "$RUNNER_TEMP/source/Fenix.stl"
+
+      - name: Install bounded repair dependencies
+        shell: bash
+        run: |
+          set -euo pipefail
+          python -m pip install --disable-pip-version-check --quiet \
+            trimesh==4.8.3 numpy==2.2.6 scipy==1.15.3 \
+            scikit-image==0.25.2 fast-simplification==0.1.12 \
+            matplotlib==3.10.1
+
+      - name: Prepare connected-voxel-only repair engine
+        shell: bash
+        run: |
+          set -euo pipefail
+          cp ci/repair_stl_collection.py "$RUNNER_TEMP/repair_fenix.py"
+          python ci/patch_repair_dimension_retention.py "$RUNNER_TEMP/repair_fenix.py"
+          python ci/patch_repair_voxel_translation.py "$RUNNER_TEMP/repair_fenix.py"
+          python ci/patch_repair_face_connectivity.py "$RUNNER_TEMP/repair_fenix.py"
+          python ci/patch_repair_skip_meshfix.py "$RUNNER_TEMP/repair_fenix.py"
+          python -m py_compile "$RUNNER_TEMP/repair_fenix.py"
+
+      - name: Reconstruct Fenix at candidate pitch
+        shell: bash
+        run: |
+          set -euo pipefail
+          OUT="$RUNNER_TEMP/fixed"
+          REPORT="$OUT/Reports/Pitch_${{ matrix.pitch }}"
+          mkdir -p "$OUT/STL" "$REPORT"
+          python "$RUNNER_TEMP/repair_fenix.py" \
+            --input "$RUNNER_TEMP/source" \
+            --output "$OUT/STL" \
+            --report-json "$REPORT/repair.json" \
+            --report-csv "$REPORT/repair.csv" \
+            --expected 1 \
+            --pitch "${{ matrix.pitch }}" \
+            --max-triangles 500000 \
+            --target-triangles 440000 \
+            --minimum-dimension-retention 0.90 \
+            --maximum-dimension-retention 1.10
+
+      - name: Validate topology and retained silhouette
+        shell: bash
+        run: |
+          set -euo pipefail
+          OUT="$RUNNER_TEMP/fixed"
+          REPORT="$OUT/Reports/Pitch_${{ matrix.pitch }}"
+          python ci/validate_stl_collection.py \
+            --input "$OUT/STL" \
+            --report-json "$REPORT/topology.json" \
+            --report-csv "$REPORT/topology.csv" \
+            --checksums "$REPORT/SHA256SUMS.txt" \
+            --expected 1
+          python ci/compare_stl_silhouette.py \
+            --raw "$RUNNER_TEMP/source" \
+            --repaired "$OUT/STL" \
+            --report-json "$REPORT/silhouette.json" \
+            --report-csv "$REPORT/silhouette.csv" \
+            --image "$REPORT/silhouette.png" \
+            --expected 1 \
+            --pixel-mm 0.65 \
+            --tolerance-mm 1.95 \
+            --minimum-raw-coverage 0.985 \
+            --minimum-repaired-coverage 0.900 \
+            --minimum-iou 0.850 \
+            --maximum-points 500000
+
+      - uses: actions/upload-artifact@v4
+        with:
+          name: HOTS-Fenix-no-meshfix-${{ matrix.pitch }}
+          path: ${{ runner.temp }}/fixed
+          retention-days: 90
+          compression-level: 0
