@@ -35,15 +35,18 @@ jobs:
         with:
           fetch-depth: 1
 
-      - name: Unpack pinned builder scripts
+      - name: Unpack and patch pinned builder scripts
         shell: bash
         run: |
           set -euo pipefail
           tar -xzf "$GITHUB_WORKSPACE/tools/hots_stl/builder_bundle.tar.gz" \
             -C "$GITHUB_WORKSPACE/tools/hots_stl"
+          python "$GITHUB_WORKSPACE/tools/hots_stl/runtime_patch.py" \
+            "$GITHUB_WORKSPACE/tools/hots_stl/build_hots_stls.py"
           python -m py_compile \
             "$GITHUB_WORKSPACE/tools/hots_stl/build_hots_stls.py" \
-            "$GITHUB_WORKSPACE/tools/hots_stl/check_manifest.py"
+            "$GITHUB_WORKSPACE/tools/hots_stl/check_manifest.py" \
+            "$GITHUB_WORKSPACE/tools/hots_stl/runtime_patch.py"
 
       - name: Resolve build mode
         id: mode
@@ -61,7 +64,7 @@ jobs:
             echo "archive=HOTS_STL_SMOKE_TEST.zip" >> "$GITHUB_OUTPUT"
             echo "minimum_success=3" >> "$GITHUB_OUTPUT"
             echo "require_roster=3" >> "$GITHUB_OUTPUT"
-            echo "only_args=--only Abathur --only Johanna --only Xal'atath" >> "$GITHUB_OUTPUT"
+            echo "only_args=--only Abathur --only Muradin --only Xal'atath" >> "$GITHUB_OUTPUT"
           fi
 
       - name: Install Blender runtime libraries
@@ -79,6 +82,31 @@ jobs:
         run: |
           set -euo pipefail
           git clone --depth 1 https://github.com/JimmyTheCool/HOTS-02.git "$RUNNER_TEMP/HOTS-02"
+
+      - name: Index canonical base meshes
+        shell: bash
+        run: |
+          set -euo pipefail
+          REPORTS="$RUNNER_TEMP/HOTS_STL_Output/00_Reports"
+          mkdir -p "$REPORTS"
+          python - "$RUNNER_TEMP/HOTS-02" "$GITHUB_WORKSPACE" "$REPORTS/base_mesh_index.tsv" <<'PY'
+          from pathlib import Path
+          import sys
+
+          roots = [(Path(sys.argv[1]), "HOTS-02"), (Path(sys.argv[2]), "HOTS-03")]
+          output = Path(sys.argv[3])
+          rows = []
+          for root, label in roots:
+              for path in root.rglob("storm_hero_*_base.m3"):
+                  rows.append((path.stem.lower(), label, path.relative_to(root).as_posix()))
+          rows.sort()
+          with output.open("w", encoding="utf-8", newline="") as handle:
+              handle.write("source_key\trepository\tpath\n")
+              for stem, label, relative in rows:
+                  key = stem.removeprefix("storm_hero_").removesuffix("_base")
+                  handle.write(f"{key}\t{label}\t{relative}\n")
+          print(f"Indexed {len(rows)} canonical base meshes in {output}")
+          PY
 
       - name: Install Blender 3.6 LTS
         id: blender
@@ -193,12 +221,11 @@ jobs:
             "${{ steps.package.outputs.archive }}"
             "${{ steps.package.outputs.checksum }}"
           )
-          MANIFEST="$RUNNER_TEMP/HOTS_STL_Output/00_Reports/manifest.json"
-          CSV="$RUNNER_TEMP/HOTS_STL_Output/00_Reports/manifest.csv"
-          LOG="$RUNNER_TEMP/HOTS_STL_Output/00_Reports/blender_build.log"
-          [[ -f "$MANIFEST" ]] && ASSETS+=("$MANIFEST#manifest.json")
-          [[ -f "$CSV" ]] && ASSETS+=("$CSV#manifest.csv")
-          [[ -f "$LOG" ]] && ASSETS+=("$LOG#blender_build.log")
+          REPORTS="$RUNNER_TEMP/HOTS_STL_Output/00_Reports"
+          [[ -f "$REPORTS/manifest.json" ]] && ASSETS+=("$REPORTS/manifest.json#manifest.json")
+          [[ -f "$REPORTS/manifest.csv" ]] && ASSETS+=("$REPORTS/manifest.csv#manifest.csv")
+          [[ -f "$REPORTS/blender_build.log" ]] && ASSETS+=("$REPORTS/blender_build.log#blender_build.log")
+          [[ -f "$REPORTS/base_mesh_index.tsv" ]] && ASSETS+=("$REPORTS/base_mesh_index.tsv#base_mesh_index.tsv")
           gh release create "$TAG" "${ASSETS[@]}" \
             --repo "$GITHUB_REPOSITORY" \
             --target "$GITHUB_SHA" \
@@ -215,12 +242,9 @@ jobs:
           OUTPUT="$RUNNER_TEMP/HOTS_STL_Output/00_Reports"
           REPORT_DIR="$GITHUB_WORKSPACE/build_reports/$MODE"
           mkdir -p "$REPORT_DIR"
-          [[ -f "$OUTPUT/manifest.json" ]] && cp "$OUTPUT/manifest.json" "$REPORT_DIR/manifest.json"
-          [[ -f "$OUTPUT/manifest.csv" ]] && cp "$OUTPUT/manifest.csv" "$REPORT_DIR/manifest.csv"
-          [[ -f "$OUTPUT/blender_exit_code.txt" ]] && cp "$OUTPUT/blender_exit_code.txt" "$REPORT_DIR/blender_exit_code.txt"
-          if [[ -f "$OUTPUT/blender_build.log" ]]; then
-            cp "$OUTPUT/blender_build.log" "$REPORT_DIR/blender_build.log"
-          fi
+          for name in manifest.json manifest.csv blender_exit_code.txt blender_build.log base_mesh_index.tsv; do
+            [[ -f "$OUTPUT/$name" ]] && cp "$OUTPUT/$name" "$REPORT_DIR/$name"
+          done
           printf '%s\n' "$GITHUB_RUN_ID" > "$REPORT_DIR/workflow_run_id.txt"
           printf '%s\n' "$GITHUB_SHA" > "$REPORT_DIR/source_commit.txt"
           git config user.name "github-actions[bot]"
