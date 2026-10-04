@@ -1,0 +1,77 @@
+{
+  "input_folder": "/home/runner/work/_temp/fixed/STL",
+  "expected_files": 3,
+  "found_files": 3,
+  "duplicate_filenames": [],
+  "passed": true,
+  "quality_requirements": {
+    "watertight": true,
+    "winding_consistent": true,
+    "finite_coordinates": true,
+    "positive_volume_mm3": true,
+    "triangle_range": [
+      100,
+      500000
+    ],
+    "dimension_range_mm": [
+      2.0,
+      350.0
+    ],
+    "connected_bodies": 1,
+    "vertex_weld_tolerance_approx_mm": 0.01
+  },
+  "failed_files": [],
+  "files": [
+    {
+      "file": "Gul_dan.stl",
+      "bytes": 12762984,
+      "sha256": "adf256ab1298862ba14924b604de3fcddb4243f7c918df9502eacaaea15d8473",
+      "vertices": 127617,
+      "triangles": 255258,
+      "watertight": true,
+      "winding_consistent": true,
+      "finite_coordinates": true,
+      "volume_mm3": 80692.10089424624,
+      "x_mm": 79.2551498413086,
+      "y_mm": 79.2551498413086,
+      "z_mm": 112.3620834350586,
+      "connected_bodies": 1,
+      "error": "",
+      "passed": true
+    },
+    {
+      "file": "Hanzo.stl",
+      "bytes": 11305084,
+      "sha256": "0052b43e831f692f1bff602fdabd963b6c7051731d23bb0298e54b9e13db53ae",
+      "vertices": 113034,
+      "triangles": 226100,
+      "watertight": true,
+      "winding_consistent": true,
+      "finite_coordinates": true,
+      "volume_mm3": 78975.23184356687,
+      "x_mm": 118.82176971435547,
+      "y_mm": 118.82176971435547,
+      "z_mm": 112.58234405517578,
+      "connected_bodies": 1,
+      "error": "",
+      "passed": true
+    },
+    {
+      "file": "Hogger.stl",
+      "bytes": 19955084,
+      "sha256": "2f896c37745ff519b3befc8178aa89f8fea5bf4beb5d7f930c25ccb65d05b764",
+      "vertices": 199550,
+      "triangles": 399100,
+      "watertight": true,
+      "winding_consistent": true,
+      "finite_coordinates": true,
+      "volume_mm3": 243106.5880961439,
+      "x_mm": 228.56613159179688,
+      "y_mm": 228.56613159179688,
+      "z_mm": 112.51596069335938,
+      "connected_bodies": 1,
+      "error": "",
+      "passed": true
+    }
+  ]
+}

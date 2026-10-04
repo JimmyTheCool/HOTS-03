@@ -1,0 +1,4 @@
+﻿file,passed,error,front_xz_raw_coverage,front_xz_repaired_coverage,front_xz_iou,side_yz_raw_coverage,side_yz_repaired_coverage,side_yz_iou,top_xy_raw_coverage,top_xy_repaired_coverage,top_xy_iou
+Gazlowe.stl,False,,0.9978957494138159,1.0,0.9960704998555331,0.9102993744414656,1.0,0.9020807833537332,1.0,1.0,1.0
+Genji.stl,False,,1.0,0.9339969509461035,0.8594612138915937,1.0,1.0,0.9553552714315657,1.0,1.0,0.9918915832349918
+Greymane.stl,False,,0.8871167161226509,1.0,0.8789863325740319,0.9709015923931722,1.0,0.9626780330595696,1.0,1.0,0.9999783751054213

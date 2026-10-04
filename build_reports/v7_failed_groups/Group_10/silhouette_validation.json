@@ -1,0 +1,209 @@
+{
+  "raw_folder": "/home/runner/work/_temp/raw_selected",
+  "repaired_folder": "/home/runner/work/_temp/fixed/STL",
+  "expected_files": 3,
+  "found_files": 3,
+  "passed": false,
+  "requirements": {
+    "pixel_mm": 0.65,
+    "tolerance_mm": 1.95,
+    "minimum_raw_coverage": 0.985,
+    "minimum_repaired_coverage": 0.97,
+    "minimum_iou": 0.94,
+    "views": [
+      "front_xz",
+      "side_yz",
+      "top_xy"
+    ]
+  },
+  "failed_files": [
+    {
+      "file": "Gazlowe.stl",
+      "passed": false,
+      "views": {
+        "front_xz": {
+          "raw_pixel_count": 16633,
+          "repaired_pixel_count": 16588,
+          "raw_coverage": 0.9978957494138159,
+          "repaired_coverage": 1.0,
+          "iou": 0.9960704998555331,
+          "passed": true
+        },
+        "side_yz": {
+          "raw_pixel_count": 8952,
+          "repaired_pixel_count": 8139,
+          "raw_coverage": 0.9102993744414656,
+          "repaired_coverage": 1.0,
+          "iou": 0.9020807833537332,
+          "passed": false
+        },
+        "top_xy": {
+          "raw_pixel_count": 16122,
+          "repaired_pixel_count": 16122,
+          "raw_coverage": 1.0,
+          "repaired_coverage": 1.0,
+          "iou": 1.0,
+          "passed": true
+        }
+      },
+      "error": ""
+    },
+    {
+      "file": "Genji.stl",
+      "passed": false,
+      "views": {
+        "front_xz": {
+          "raw_pixel_count": 9129,
+          "repaired_pixel_count": 11151,
+          "raw_coverage": 1.0,
+          "repaired_coverage": 0.9339969509461035,
+          "iou": 0.8594612138915937,
+          "passed": false
+        },
+        "side_yz": {
+          "raw_pixel_count": 7863,
+          "repaired_pixel_count": 8312,
+          "raw_coverage": 1.0,
+          "repaired_coverage": 1.0,
+          "iou": 0.9553552714315657,
+          "passed": true
+        },
+        "top_xy": {
+          "raw_pixel_count": 51388,
+          "repaired_pixel_count": 51810,
+          "raw_coverage": 1.0,
+          "repaired_coverage": 1.0,
+          "iou": 0.9918915832349918,
+          "passed": true
+        }
+      },
+      "error": ""
+    },
+    {
+      "file": "Greymane.stl",
+      "passed": false,
+      "views": {
+        "front_xz": {
+          "raw_pixel_count": 16176,
+          "repaired_pixel_count": 14335,
+          "raw_coverage": 0.8871167161226509,
+          "repaired_coverage": 1.0,
+          "iou": 0.8789863325740319,
+          "passed": false
+        },
+        "side_yz": {
+          "raw_pixel_count": 8729,
+          "repaired_pixel_count": 8409,
+          "raw_coverage": 0.9709015923931722,
+          "repaired_coverage": 1.0,
+          "iou": 0.9626780330595696,
+          "passed": false
+        },
+        "top_xy": {
+          "raw_pixel_count": 45559,
+          "repaired_pixel_count": 45558,
+          "raw_coverage": 1.0,
+          "repaired_coverage": 1.0,
+          "iou": 0.9999783751054213,
+          "passed": true
+        }
+      },
+      "error": ""
+    }
+  ],
+  "files": [
+    {
+      "file": "Gazlowe.stl",
+      "passed": false,
+      "views": {
+        "front_xz": {
+          "raw_pixel_count": 16633,
+          "repaired_pixel_count": 16588,
+          "raw_coverage": 0.9978957494138159,
+          "repaired_coverage": 1.0,
+          "iou": 0.9960704998555331,
+          "passed": true
+        },
+        "side_yz": {
+          "raw_pixel_count": 8952,
+          "repaired_pixel_count": 8139,
+          "raw_coverage": 0.9102993744414656,
+          "repaired_coverage": 1.0,
+          "iou": 0.9020807833537332,
+          "passed": false
+        },
+        "top_xy": {
+          "raw_pixel_count": 16122,
+          "repaired_pixel_count": 16122,
+          "raw_coverage": 1.0,
+          "repaired_coverage": 1.0,
+          "iou": 1.0,
+          "passed": true
+        }
+      },
+      "error": ""
+    },
+    {
+      "file": "Genji.stl",
+      "passed": false,
+      "views": {
+        "front_xz": {
+          "raw_pixel_count": 9129,
+          "repaired_pixel_count": 11151,
+          "raw_coverage": 1.0,
+          "repaired_coverage": 0.9339969509461035,
+          "iou": 0.8594612138915937,
+          "passed": false
+        },
+        "side_yz": {
+          "raw_pixel_count": 7863,
+          "repaired_pixel_count": 8312,
+          "raw_coverage": 1.0,
+          "repaired_coverage": 1.0,
+          "iou": 0.9553552714315657,
+          "passed": true
+        },
+        "top_xy": {
+          "raw_pixel_count": 51388,
+          "repaired_pixel_count": 51810,
+          "raw_coverage": 1.0,
+          "repaired_coverage": 1.0,
+          "iou": 0.9918915832349918,
+          "passed": true
+        }
+      },
+      "error": ""
+    },
+    {
+      "file": "Greymane.stl",
+      "passed": false,
+      "views": {
+        "front_xz": {
+          "raw_pixel_count": 16176,
+          "repaired_pixel_count": 14335,
+          "raw_coverage": 0.8871167161226509,
+          "repaired_coverage": 1.0,
+          "iou": 0.8789863325740319,
+          "passed": false
+        },
+        "side_yz": {
+          "raw_pixel_count": 8729,
+          "repaired_pixel_count": 8409,
+          "raw_coverage": 0.9709015923931722,
+          "repaired_coverage": 1.0,
+          "iou": 0.9626780330595696,
+          "passed": false
+        },
+        "top_xy": {
+          "raw_pixel_count": 45559,
+          "repaired_pixel_count": 45558,
+          "raw_coverage": 1.0,
+          "repaired_coverage": 1.0,
+          "iou": 0.9999783751054213,
+          "passed": true
+        }
+      },
+      "error": ""
+    }
+  ]
+}

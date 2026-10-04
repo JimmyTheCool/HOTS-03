@@ -1,0 +1,209 @@
+{
+  "raw_folder": "/home/runner/work/_temp/raw_selected",
+  "repaired_folder": "/home/runner/work/_temp/fixed/STL",
+  "expected_files": 3,
+  "found_files": 3,
+  "passed": false,
+  "requirements": {
+    "pixel_mm": 0.65,
+    "tolerance_mm": 1.95,
+    "minimum_raw_coverage": 0.985,
+    "minimum_repaired_coverage": 0.97,
+    "minimum_iou": 0.94,
+    "views": [
+      "front_xz",
+      "side_yz",
+      "top_xy"
+    ]
+  },
+  "failed_files": [
+    {
+      "file": "Gul_dan.stl",
+      "passed": false,
+      "views": {
+        "front_xz": {
+          "raw_pixel_count": 12796,
+          "repaired_pixel_count": 12790,
+          "raw_coverage": 1.0,
+          "repaired_coverage": 1.0,
+          "iou": 0.9993410455410748,
+          "passed": true
+        },
+        "side_yz": {
+          "raw_pixel_count": 11314,
+          "repaired_pixel_count": 10807,
+          "raw_coverage": 0.9815273112957398,
+          "repaired_coverage": 1.0,
+          "iou": 0.9593428476601394,
+          "passed": false
+        },
+        "top_xy": {
+          "raw_pixel_count": 12308,
+          "repaired_pixel_count": 12308,
+          "raw_coverage": 1.0,
+          "repaired_coverage": 1.0,
+          "iou": 1.0,
+          "passed": true
+        }
+      },
+      "error": ""
+    },
+    {
+      "file": "Hanzo.stl",
+      "passed": false,
+      "views": {
+        "front_xz": {
+          "raw_pixel_count": 12240,
+          "repaired_pixel_count": 11610,
+          "raw_coverage": 0.956045751633987,
+          "repaired_coverage": 1.0,
+          "iou": 0.9459783015338571,
+          "passed": false
+        },
+        "side_yz": {
+          "raw_pixel_count": 10612,
+          "repaired_pixel_count": 7674,
+          "raw_coverage": 0.770542781756502,
+          "repaired_coverage": 1.0,
+          "iou": 0.7299863154293534,
+          "passed": false
+        },
+        "top_xy": {
+          "raw_pixel_count": 27599,
+          "repaired_pixel_count": 27111,
+          "raw_coverage": 0.9848545237146273,
+          "repaired_coverage": 1.0,
+          "iou": 0.9792375283446711,
+          "passed": false
+        }
+      },
+      "error": ""
+    },
+    {
+      "file": "Hogger.stl",
+      "passed": false,
+      "views": {
+        "front_xz": {
+          "raw_pixel_count": 20888,
+          "repaired_pixel_count": 15201,
+          "raw_coverage": 0.7561279203370356,
+          "repaired_coverage": 1.0,
+          "iou": 0.7350769504492483,
+          "passed": false
+        },
+        "side_yz": {
+          "raw_pixel_count": 14013,
+          "repaired_pixel_count": 12332,
+          "raw_coverage": 0.8800399628916007,
+          "repaired_coverage": 1.0,
+          "iou": 0.8818529812495945,
+          "passed": false
+        },
+        "top_xy": {
+          "raw_pixel_count": 98969,
+          "repaired_pixel_count": 98742,
+          "raw_coverage": 0.9988683325081591,
+          "repaired_coverage": 1.0,
+          "iou": 0.9975996159385502,
+          "passed": true
+        }
+      },
+      "error": ""
+    }
+  ],
+  "files": [
+    {
+      "file": "Gul_dan.stl",
+      "passed": false,
+      "views": {
+        "front_xz": {
+          "raw_pixel_count": 12796,
+          "repaired_pixel_count": 12790,
+          "raw_coverage": 1.0,
+          "repaired_coverage": 1.0,
+          "iou": 0.9993410455410748,
+          "passed": true
+        },
+        "side_yz": {
+          "raw_pixel_count": 11314,
+          "repaired_pixel_count": 10807,
+          "raw_coverage": 0.9815273112957398,
+          "repaired_coverage": 1.0,
+          "iou": 0.9593428476601394,
+          "passed": false
+        },
+        "top_xy": {
+          "raw_pixel_count": 12308,
+          "repaired_pixel_count": 12308,
+          "raw_coverage": 1.0,
+          "repaired_coverage": 1.0,
+          "iou": 1.0,
+          "passed": true
+        }
+      },
+      "error": ""
+    },
+    {
+      "file": "Hanzo.stl",
+      "passed": false,
+      "views": {
+        "front_xz": {
+          "raw_pixel_count": 12240,
+          "repaired_pixel_count": 11610,
+          "raw_coverage": 0.956045751633987,
+          "repaired_coverage": 1.0,
+          "iou": 0.9459783015338571,
+          "passed": false
+        },
+        "side_yz": {
+          "raw_pixel_count": 10612,
+          "repaired_pixel_count": 7674,
+          "raw_coverage": 0.770542781756502,
+          "repaired_coverage": 1.0,
+          "iou": 0.7299863154293534,
+          "passed": false
+        },
+        "top_xy": {
+          "raw_pixel_count": 27599,
+          "repaired_pixel_count": 27111,
+          "raw_coverage": 0.9848545237146273,
+          "repaired_coverage": 1.0,
+          "iou": 0.9792375283446711,
+          "passed": false
+        }
+      },
+      "error": ""
+    },
+    {
+      "file": "Hogger.stl",
+      "passed": false,
+      "views": {
+        "front_xz": {
+          "raw_pixel_count": 20888,
+          "repaired_pixel_count": 15201,
+          "raw_coverage": 0.7561279203370356,
+          "repaired_coverage": 1.0,
+          "iou": 0.7350769504492483,
+          "passed": false
+        },
+        "side_yz": {
+          "raw_pixel_count": 14013,
+          "repaired_pixel_count": 12332,
+          "raw_coverage": 0.8800399628916007,
+          "repaired_coverage": 1.0,
+          "iou": 0.8818529812495945,
+          "passed": false
+        },
+        "top_xy": {
+          "raw_pixel_count": 98969,
+          "repaired_pixel_count": 98742,
+          "raw_coverage": 0.9988683325081591,
+          "repaired_coverage": 1.0,
+          "iou": 0.9975996159385502,
+          "passed": true
+        }
+      },
+      "error": ""
+    }
+  ]
+}
