@@ -1,0 +1,57 @@
+name: Build HOTS STL v2 Smoke R3
+on:
+  workflow_dispatch:
+  push:
+    branches: [chatgpt-stl-builder]
+    paths: [.github/workflows/build-hots-stl-v2-smoke-r3.yml]
+permissions: {contents: read}
+env:
+  BV: 3.6.23
+  M3: 58935005c4465a219a740f6b740253533eda773f
+jobs:
+  test:
+    runs-on: ubuntu-22.04
+    timeout-minutes: 180
+    steps:
+      - uses: actions/checkout@v4
+        with: {ref: chatgpt-stl-builder, fetch-depth: 1}
+      - name: Build and validate representative models
+        shell: bash
+        run: |
+          set -euo pipefail
+          cp tools/hots_stl/runtime_extracted/build_hots_stls.py "$RUNNER_TEMP/b.py"
+          python tools/hots_stl/runtime_patch_v2.py "$RUNNER_TEMP/b.py"
+          python ci/patch_builder_external_validation.py "$RUNNER_TEMP/b.py"
+          sudo apt-get update -qq
+          sudo apt-get install -y --no-install-recommends ca-certificates curl git xz-utils libx11-6 libxi6 libxrender1 libxfixes3 libxkbcommon0 libsm6 libice6 libgl1 libegl1
+          git clone --depth 1 https://github.com/JimmyTheCool/HOTS-02.git "$RUNNER_TEMP/H2"
+          cd "$RUNNER_TEMP"
+          curl -fL --retry 5 "https://download.blender.org/release/Blender3.6/blender-${BV}-linux-x64.tar.xz" -o b.tar.xz
+          tar -xf b.tar.xz
+          git clone -q https://github.com/SC2Mapster/m3addon.git m3
+          git -C m3 checkout -q "$M3"
+          mkdir -p "$HOME/.config/blender/3.6/scripts/addons"
+          ln -s "$RUNNER_TEMP/m3" "$HOME/.config/blender/3.6/scripts/addons/m3addon"
+          O="$RUNNER_TEMP/out"; mkdir -p "$O/00_Reports"
+          "$RUNNER_TEMP/blender-${BV}-linux-x64/blender" --background --factory-startup --python "$RUNNER_TEMP/b.py" -- --source "$RUNNER_TEMP/H2" --source "$GITHUB_WORKSPACE" --output "$O" --target-height-mm 110 --base-height-mm 4 --base-margin-mm 4 --voxel-mm 0.55 --thin-part-mm 0.72 --max-triangles 450000 --skip-animation --only "Abathur" --only "Brightwing" --only "Deathwing" --only "D.Va" --only "Muradin" --only "Nova" --only "Sgt. Hammer" --only "The Lost Vikings" --only "Tychus" 2>&1 | tee "$O/00_Reports/build.log"
+          python -m pip install -q trimesh==4.8.3 numpy==2.2.6
+          python - "$O" <<'PY'
+          from pathlib import Path
+          import json,sys,numpy as np,trimesh
+          p=Path(sys.argv[1]); rows=[]; bad=[]
+          for f in sorted((p/'02_Print_Ready_Watertight').glob('*.stl')):
+            m=trimesh.load_mesh(f,force='mesh',process=False); e=[float(x) for x in m.extents]
+            r={'file':f.name,'triangles':len(m.faces),'watertight':bool(m.is_watertight),'winding':bool(m.is_winding_consistent),'finite':bool(np.isfinite(m.vertices).all()),'volume':float(abs(m.volume)),'extents':e,'bodies':int(m.body_count)}
+            rows.append(r)
+            if not(r['watertight'] and r['winding'] and r['finite'] and r['volume']>1 and 100<=r['triangles']<=500000 and 2<=min(e)): bad.append(r)
+          q={'expected':9,'found':len(rows),'passed':len(rows)==9 and not bad,'failed':bad,'files':rows}
+          (p/'00_Reports'/'external_validation.json').write_text(json.dumps(q,indent=2))
+          print(json.dumps(q,indent=2))
+          if not q['passed']: raise SystemExit(1)
+          PY
+          mkdir -p "$GITHUB_WORKSPACE/smoke_r3"
+          cp "$O/00_Reports/external_validation.json" "$GITHUB_WORKSPACE/smoke_r3/"
+          cp "$O/00_Reports/manifest.json" "$GITHUB_WORKSPACE/smoke_r3/"
+          cp "$O/00_Reports/build.log" "$GITHUB_WORKSPACE/smoke_r3/"
+      - uses: actions/upload-artifact@v4
+        with: {name: HOTS-v2-smoke-r3, path: smoke_r3, retention-days: 30}
