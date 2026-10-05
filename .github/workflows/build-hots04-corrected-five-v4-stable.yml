@@ -1,0 +1,198 @@
+name: Build HOTS-04 Corrected Five V4 Stable
+
+on:
+  workflow_dispatch:
+  push:
+    branches: [chatgpt-stl-builder]
+    paths:
+      - '.github/workflows/build-hots04-corrected-five-v4-stable.yml'
+
+permissions:
+  contents: write
+  actions: read
+
+env:
+  BLENDER_VERSION: 3.6.23
+  M3ADDON_COMMIT: 58935005c4465a219a740f6b740253533eda773f
+
+jobs:
+  build:
+    runs-on: ubuntu-24.04
+    timeout-minutes: 330
+    strategy:
+      fail-fast: false
+      max-parallel: 2
+      matrix:
+        include:
+          - {hero: 'Cho-Gall', safe: 'Cho-Gall'}
+          - {hero: 'Nova', safe: 'Nova'}
+          - {hero: 'Rexxar', safe: 'Rexxar'}
+          - {hero: 'Lt Morales', safe: 'Lt_Morales'}
+          - {hero: 'Dehaka', safe: 'Dehaka'}
+
+    steps:
+      - name: Check out corrected HOTS-04 pipeline
+        uses: actions/checkout@v4
+        with:
+          repository: JimmyTheCool/HOTS-04
+          ref: photo-pose-v4
+          fetch-depth: 1
+
+      - name: Apply exact corrected skins
+        shell: bash
+        run: |
+          set -euo pipefail
+          python - <<'PY'
+          import json
+          from pathlib import Path
+          p=Path('reference_analysis/selected_skin_plan.json'); d=json.loads(p.read_text()); h=d['heroes']
+          h['Rexxar'].update(skin_key='base',directory='storm_hero_rexxar_base',repository='HOTS-03',model_path='storm_hero_rexxar_base/storm_hero_rexxar_base.m3',selection_method='user correction: base Rexxar')
+          h['Lt Morales'].update(skin_key='apoth',directory='storm_hero_medic_apoth',repository='HOTS-03',model_path='storm_hero_medic_apoth/storm_hero_medic_apoth.m3',selection_method='user correction: Apothecary Lt. Morales')
+          h['Dehaka'].update(skin_key='mecha',directory='storm_hero_dehaka_mecha',repository='HOTS-02',model_path='storm_hero_dehaka_mecha/storm_hero_dehaka_mecha.m3',selection_method='user correction: Mecha Dehaka')
+          p.write_text(json.dumps(d,indent=2))
+          PY
+
+      - name: Prepare standing and grounded pose runner with stable repair
+        shell: bash
+        run: |
+          set -euo pipefail
+          python tools/prepare_photo_pose_v4_safe.py \
+            --runner-bootstrap tools/run_photo_posed_job_v3_2.py \
+            --pose-source tools/exposed_r2/build_one_photo_posed_v3_source.py \
+            --output-runner tools/run_photo_posed_job_v4_safe.py \
+            --output-pose tools/build_one_photo_posed_v4.py
+          python -m py_compile tools/run_photo_posed_job_v4_safe.py tools/build_one_photo_posed_v4.py
+
+      - name: Match JPG pose, bake mesh and run stable repair
+        id: build
+        shell: bash
+        run: |
+          set +e
+          python tools/run_photo_posed_job_v4_safe.py \
+            --hero '${{ matrix.hero }}' \
+            --max-animations 30 \
+            --max-coarse-frames 192 \
+            --refine-candidates 12
+          status=$?
+          echo "status=$status" >> "$GITHUB_OUTPUT"
+          exit 0
+
+      - name: Smooth repaired one-body STL
+        if: ${{ steps.build.outputs.status == '0' }}
+        shell: bash
+        run: |
+          set -euo pipefail
+          python - <<'PY'
+          import json,os
+          from pathlib import Path
+          import numpy as np,trimesh
+          root=Path(os.environ['HERO_ARTIFACT_ROOT']); safe=os.environ['HERO_SAFE']; hero='${{ matrix.hero }}'
+          source=None
+          for p in (root/'HighDetail'/f'{safe}.stl',root/'Robust'/f'{safe}.stl'):
+              if not p.is_file(): continue
+              m=trimesh.load_mesh(p,force='mesh',process=True)
+              if isinstance(m,trimesh.Scene): m=trimesh.util.concatenate(tuple(m.geometry.values()))
+              if m.is_watertight and int(m.body_count)==1: source=p; break
+          if source is None: raise SystemExit('No validated one-body source')
+          m=trimesh.load_mesh(source,force='mesh',process=True)
+          if isinstance(m,trimesh.Scene): m=trimesh.util.concatenate(tuple(m.geometry.values()))
+          before=m.vertices.copy(); before_volume=float(abs(m.volume)); base=np.flatnonzero(before[:,2]<=m.bounds[0,2]+1.2)
+          trimesh.smoothing.filter_taubin(m,lamb=0.28,nu=0.29,iterations=5)
+          if len(base): m.vertices[base,2]=before[base,2]
+          m.apply_translation((0,0,-float(m.bounds[0,2]))); m.remove_unreferenced_vertices()
+          out=root/'Smooth'; out.mkdir(parents=True,exist_ok=True); target=out/f'{safe}.stl'; m.export(target)
+          q=trimesh.load_mesh(target,force='mesh',process=True)
+          if isinstance(q,trimesh.Scene): q=trimesh.util.concatenate(tuple(q.geometry.values()))
+          r={'hero':hero,'source':str(source),'triangles':int(len(q.faces)),'watertight':bool(q.is_watertight),'winding':bool(q.is_winding_consistent),'bodies':int(q.body_count),'finite':bool(np.isfinite(q.vertices).all()),'volume':float(abs(q.volume)),'retention':float(abs(q.volume)/max(before_volume,1e-9)),'extents':[float(v) for v in q.extents]}
+          r['passed']=r['watertight'] and r['winding'] and r['bodies']==1 and r['finite'] and r['volume']>1 and 100<=r['triangles']<=600000 and 0.90<=r['retention']<=1.10
+          reports=root/'Reports'/safe; reports.mkdir(parents=True,exist_ok=True); (reports/'smooth_validation.json').write_text(json.dumps(r,indent=2)); print(json.dumps(r,indent=2))
+          if not r['passed']: raise SystemExit('Smooth validation failed')
+          PY
+
+      - name: Upload complete diagnostic and model package
+        if: always()
+        uses: actions/upload-artifact@v4
+        with:
+          name: stable-v4-${{ matrix.safe }}
+          path: ${{ env.HERO_ARTIFACT_ROOT }}
+          if-no-files-found: warn
+          retention-days: 90
+          compression-level: 0
+
+      - name: Enforce successful model build
+        if: ${{ steps.build.outputs.status != '0' }}
+        shell: bash
+        run: |
+          echo 'The build failed after its complete diagnostics were uploaded.' >&2
+          exit 1
+
+  package:
+    needs: build
+    runs-on: ubuntu-24.04
+    timeout-minutes: 120
+    steps:
+      - uses: actions/download-artifact@v4
+        with:
+          pattern: stable-v4-*
+          path: ${{ runner.temp }}/heroes
+      - name: Validate and package corrected five
+        id: zip
+        shell: bash
+        run: |
+          set -euo pipefail
+          python -m pip install --disable-pip-version-check --quiet trimesh==4.8.3 numpy==2.2.6
+          ROOT="$RUNNER_TEMP/HOTS04_Corrected_Five_Photo_Posed_Smooth_V4_Stable"; mkdir -p "$ROOT/01_Smooth_Print_Ready" "$ROOT/02_Robust_Fallback" "$ROOT/03_Pose_Proofs" "$ROOT/Reports"
+          find "$RUNNER_TEMP/heroes" -path '*/Smooth/*.stl' -exec cp {} "$ROOT/01_Smooth_Print_Ready/" \;
+          find "$RUNNER_TEMP/heroes" -path '*/Robust/*.stl' -exec cp {} "$ROOT/02_Robust_Fallback/" \;
+          find "$RUNNER_TEMP/heroes" -iname '*pose_proof*.jpg' -exec cp {} "$ROOT/03_Pose_Proofs/" \;
+          cp -R "$RUNNER_TEMP/heroes" "$ROOT/Reports/Per_Hero"
+          python - "$ROOT" <<'PY'
+          from pathlib import Path
+          import hashlib,json,sys,numpy as np,trimesh
+          root=Path(sys.argv[1]); folder=root/'01_Smooth_Print_Ready'; expected={'Cho-Gall.stl','Nova.stl','Rexxar.stl','Lt_Morales.stl','Dehaka.stl'}; rows=[]; bad=[]
+          for p in sorted(folder.glob('*.stl')):
+              m=trimesh.load_mesh(p,force='mesh',process=True)
+              if isinstance(m,trimesh.Scene): m=trimesh.util.concatenate(tuple(m.geometry.values()))
+              r={'file':p.name,'sha256':hashlib.sha256(p.read_bytes()).hexdigest(),'vertices':int(len(m.vertices)),'triangles':int(len(m.faces)),'watertight':bool(m.is_watertight),'winding':bool(m.is_winding_consistent),'bodies':int(m.body_count),'finite':bool(np.isfinite(m.vertices).all()),'volume':float(abs(m.volume)),'extents':[float(v) for v in m.extents]}
+              r['passed']=r['watertight'] and r['winding'] and r['bodies']==1 and r['finite'] and r['volume']>1 and 100<=r['triangles']<=600000; rows.append(r)
+              if not r['passed']: bad.append(r)
+          summaries={}
+          for p in root.rglob('photo_pose_quality_summary.json'):
+              try: d=json.loads(p.read_text()); summaries[d['hero']]=d
+              except Exception: pass
+          forbidden=('sit','seat','chair','throne','crouch','kneel','crawl'); pose_bad=[]
+          for hero in ('Nova','Cho-Gall'):
+              anim=str(summaries.get(hero,{}).get('selected_animation','')).casefold()
+              if not anim or any(x in anim for x in forbidden): pose_bad.append({'hero':hero,'animation':anim})
+          grounding=[]
+          for p in root.rglob('photo_posed_build.json'):
+              try: d=json.loads(p.read_text())
+              except Exception: continue
+              if d.get('hero')=='Cho-Gall':
+                  g=d.get('builder_result',{}).get('normalization',{}).get('two_foot_grounding')
+                  if g: grounding.append(g)
+          ground_ok=any(g.get('applied') and float(g.get('foot_height_gap_mm',999))<=1.25 for g in grounding)
+          found={p.name for p in folder.glob('*.stl')}; report={'expected':sorted(expected),'found':sorted(found),'files':rows,'geometry_failures':bad,'pose_failures':pose_bad,'cho_gall_grounding':grounding,'passed':found==expected and not bad and not pose_bad and ground_ok,'pose_summaries':summaries}
+          (root/'Reports'/'FINAL_VALIDATION.json').write_text(json.dumps(report,indent=2)); print(json.dumps(report,indent=2))
+          if not report['passed']: raise SystemExit('Stable corrected-five validation failed')
+          PY
+          cat > "$ROOT/README_FIRST.txt" <<'EOF'
+          Corrected five HOTS-04 models: grounded Ultimate Cho-Gall, standing Nova, base Rexxar, Apothecary Lt. Morales, and Mecha Dehaka. Use 01_Smooth_Print_Ready for slicing.
+          EOF
+          sudo apt-get update -qq && sudo apt-get install -y --no-install-recommends p7zip-full
+          ZIP="$GITHUB_WORKSPACE/HOTS04_Corrected_Five_Photo_Posed_Smooth_V4_Stable.zip"; cd "$RUNNER_TEMP"; 7z a -tzip -mx=7 "$ZIP" "$(basename "$ROOT")"; sha256sum "$ZIP" > "$ZIP.sha256"
+          echo "zip=$ZIP" >> "$GITHUB_OUTPUT"; echo "tag=hots04-corrected-five-v4-stable-${GITHUB_RUN_ID}" >> "$GITHUB_OUTPUT"
+      - uses: actions/upload-artifact@v4
+        with:
+          name: HOTS04_Corrected_Five_Photo_Posed_Smooth_V4_Stable
+          path: |
+            HOTS04_Corrected_Five_Photo_Posed_Smooth_V4_Stable.zip
+            HOTS04_Corrected_Five_Photo_Posed_Smooth_V4_Stable.zip.sha256
+          retention-days: 90
+          compression-level: 0
+      - name: Publish corrected-five release
+        env:
+          GH_TOKEN: ${{ github.token }}
+        shell: bash
+        run: |
+          gh release create '${{ steps.zip.outputs.tag }}' '${{ steps.zip.outputs.zip }}' '${{ steps.zip.outputs.zip }}.sha256' "$RUNNER_TEMP/HOTS04_Corrected_Five_Photo_Posed_Smooth_V4_Stable/Reports/FINAL_VALIDATION.json#FINAL_VALIDATION.json" --repo "$GITHUB_REPOSITORY" --target "$GITHUB_SHA" --title 'HOTS-04 corrected five photo-posed smooth STLs V4 Stable' --notes 'Grounded Ultimate Cho-Gall, standing Nova, base Rexxar, Apothecary Lt. Morales and Mecha Dehaka. Stable adaptive repair followed by volume-preserving surface smoothing and independent validation.'
