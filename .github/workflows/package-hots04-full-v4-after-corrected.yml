@@ -1,0 +1,280 @@
+name: Package HOTS-04 Full V4 After Corrected Five
+
+on:
+  workflow_run:
+    workflows: ['Build HOTS-04 Corrected Five V4']
+    types: [completed]
+
+permissions:
+  actions: read
+  contents: write
+
+jobs:
+  package:
+    if: ${{ github.event.workflow_run.conclusion == 'success' }}
+    runs-on: ubuntu-22.04
+    timeout-minutes: 180
+    steps:
+      - name: Check out STL utility branch
+        uses: actions/checkout@v4
+        with:
+          ref: chatgpt-stl-builder
+          fetch-depth: 1
+
+      - name: Download corrected-five artifacts
+        env:
+          GH_TOKEN: ${{ github.token }}
+          SOURCE_RUN: ${{ github.event.workflow_run.id }}
+        shell: bash
+        run: |
+          set -euo pipefail
+          mkdir -p "$RUNNER_TEMP/corrected"
+          gh run download "$SOURCE_RUN" \
+            --repo "$GITHUB_REPOSITORY" \
+            --pattern 'corrected-v4-*' \
+            --dir "$RUNNER_TEMP/corrected"
+          find "$RUNNER_TEMP/corrected" -type f | sort
+
+      - name: Download previous complete 18-hero collection
+        shell: bash
+        run: |
+          set -euo pipefail
+          curl --fail --location --retry 5 --retry-delay 5 \
+            'https://github.com/JimmyTheCool/HOTS-04/releases/download/hots04-selected-heroes-v2-37292356862/HOTS04_Selected_Heroes_STL_V2.zip' \
+            --output "$RUNNER_TEMP/HOTS04_Selected_Heroes_STL_V2.zip"
+          mkdir -p "$RUNNER_TEMP/v2"
+          unzip -q "$RUNNER_TEMP/HOTS04_Selected_Heroes_STL_V2.zip" -d "$RUNNER_TEMP/v2"
+          find "$RUNNER_TEMP/v2" -type f -name '*.stl' | sort
+
+      - name: Smooth unaffected models and merge corrected replacements
+        shell: bash
+        run: |
+          set -euo pipefail
+          python -m pip install --disable-pip-version-check --quiet trimesh==4.8.3 numpy==2.2.6
+          ROOT="$RUNNER_TEMP/HOTS04_All_18_Photo_Posed_Smooth_STL_V4"
+          mkdir -p "$ROOT/01_Smooth_Print_Ready" "$ROOT/02_Robust_Fallback" "$ROOT/03_Pose_Proofs" "$ROOT/Reports/Corrected_Five" "$ROOT/Reports/Legacy_Source"
+          python - "$RUNNER_TEMP/v2" "$RUNNER_TEMP/corrected" "$ROOT" <<'PY'
+          from pathlib import Path
+          import hashlib, json, shutil, sys
+          import numpy as np
+          import trimesh
+
+          v2 = Path(sys.argv[1])
+          corrected = Path(sys.argv[2])
+          root = Path(sys.argv[3])
+          out = root / '01_Smooth_Print_Ready'
+          fallback = root / '02_Robust_Fallback'
+          proofs = root / '03_Pose_Proofs'
+
+          all_names = {
+              'Alarak.stl','Arthas.stl','Blaze.stl','Cho-Gall.stl','Dehaka.stl','ETC.stl',
+              'Fenix.stl','Leoric.stl','Lt_Morales.stl','Lunara.stl','Mal_Ganis.stl',
+              'Nova.stl','Ragnaros.stl','Rexxar.stl','Stukov.stl','Tychus.stl',
+              'Zagara.stl','Zul_jin.stl'
+          }
+          corrected_names = {'Cho-Gall.stl','Dehaka.stl','Lt_Morales.stl','Nova.stl','Rexxar.stl'}
+          unaffected = all_names - corrected_names
+
+          def mesh_from(path: Path):
+              mesh = trimesh.load_mesh(path, force='mesh', process=True)
+              if isinstance(mesh, trimesh.Scene):
+                  mesh = trimesh.util.concatenate(tuple(mesh.geometry.values()))
+              return mesh
+
+          def choose_v2(name: str) -> Path:
+              candidates = [p for p in v2.rglob(name) if p.is_file()]
+              if not candidates:
+                  raise FileNotFoundError(name)
+              def rank(path: Path):
+                  key = str(path).casefold()
+                  if '01_print_ready' in key or 'print_ready' in key:
+                      return 100
+                  if 'watertight' in key:
+                      return 80
+                  return 0
+              candidates.sort(key=rank, reverse=True)
+              for path in candidates:
+                  try:
+                      mesh = mesh_from(path)
+                      if mesh.is_watertight and int(mesh.body_count) == 1:
+                          return path
+                  except Exception:
+                      pass
+              return candidates[0]
+
+          processing = []
+          for name in sorted(unaffected):
+              source = choose_v2(name)
+              mesh = mesh_from(source)
+              if not (mesh.is_watertight and int(mesh.body_count) == 1):
+                  raise RuntimeError(f'Legacy source is not one watertight body: {source}')
+              before = mesh.vertices.copy()
+              before_volume = float(abs(mesh.volume))
+              base_limit = float(mesh.bounds[0,2] + 1.2)
+              base = np.flatnonzero(before[:,2] <= base_limit)
+              trimesh.smoothing.filter_taubin(mesh, lamb=0.27, nu=0.28, iterations=5)
+              if len(base):
+                  mesh.vertices[base,2] = before[base,2]
+              mesh.apply_translation((0.0,0.0,-float(mesh.bounds[0,2])))
+              try:
+                  trimesh.repair.fix_normals(mesh, multibody=True)
+              except TypeError:
+                  trimesh.repair.fix_normals(mesh)
+              mesh.remove_unreferenced_vertices()
+              target = out / name
+              mesh.export(target)
+              shutil.copy2(source, fallback / name)
+              checked = mesh_from(target)
+              row = {
+                  'file': name,
+                  'source': str(source),
+                  'method': 'volume-preserving Taubin smoothing of previously validated photo-selected print mesh',
+                  'triangles': int(len(checked.faces)),
+                  'watertight': bool(checked.is_watertight),
+                  'connected_bodies': int(checked.body_count),
+                  'volume_retention': float(abs(checked.volume)/max(before_volume,1e-9)),
+              }
+              row['passed'] = bool(row['watertight'] and row['connected_bodies']==1 and 0.88<=row['volume_retention']<=1.12)
+              processing.append(row)
+              if not row['passed']:
+                  raise RuntimeError(json.dumps(row))
+
+          for name in sorted(corrected_names):
+              candidates = list(corrected.rglob(f'Smooth/{name}'))
+              if len(candidates) != 1:
+                  raise RuntimeError(f'Expected one corrected smooth {name}, found {len(candidates)}')
+              shutil.copy2(candidates[0], out / name)
+              robust = list(corrected.rglob(f'Robust/{name}'))
+              shutil.copy2((robust[0] if robust else candidates[0]), fallback / name)
+
+          for path in corrected.rglob('*pose_proof*.jpg'):
+              shutil.copy2(path, proofs / path.name)
+          for path in corrected.rglob('*.json'):
+              relative = path.relative_to(corrected)
+              target = root / 'Reports' / 'Corrected_Five' / relative
+              target.parent.mkdir(parents=True, exist_ok=True)
+              shutil.copy2(path, target)
+
+          (root/'Reports'/'unaffected_smoothing.json').write_text(json.dumps(processing,indent=2),encoding='utf-8')
+          PY
+
+      - name: Final independent 18-model quality gate
+        id: final
+        shell: bash
+        run: |
+          set -euo pipefail
+          ROOT="$RUNNER_TEMP/HOTS04_All_18_Photo_Posed_Smooth_STL_V4"
+          python - "$ROOT" <<'PY'
+          from pathlib import Path
+          import csv, hashlib, json, sys
+          import numpy as np
+          import trimesh
+
+          root=Path(sys.argv[1]); folder=root/'01_Smooth_Print_Ready'
+          expected={
+              'Alarak.stl','Arthas.stl','Blaze.stl','Cho-Gall.stl','Dehaka.stl','ETC.stl',
+              'Fenix.stl','Leoric.stl','Lt_Morales.stl','Lunara.stl','Mal_Ganis.stl',
+              'Nova.stl','Ragnaros.stl','Rexxar.stl','Stukov.stl','Tychus.stl',
+              'Zagara.stl','Zul_jin.stl'
+          }
+          rows=[]; failures=[]
+          for path in sorted(folder.glob('*.stl')):
+              mesh=trimesh.load_mesh(path,force='mesh',process=True)
+              if isinstance(mesh,trimesh.Scene): mesh=trimesh.util.concatenate(tuple(mesh.geometry.values()))
+              ext=[float(v) for v in mesh.extents]
+              row={
+                  'file':path.name,'bytes':path.stat().st_size,
+                  'sha256':hashlib.sha256(path.read_bytes()).hexdigest(),
+                  'vertices':int(len(mesh.vertices)),'triangles':int(len(mesh.faces)),
+                  'watertight':bool(mesh.is_watertight),'winding_consistent':bool(mesh.is_winding_consistent),
+                  'connected_bodies':int(mesh.body_count),'finite_coordinates':bool(np.isfinite(mesh.vertices).all()),
+                  'volume_mm3':float(abs(mesh.volume)),'x_mm':ext[0],'y_mm':ext[1],'z_mm':ext[2],
+              }
+              row['passed']=bool(row['watertight'] and row['winding_consistent'] and row['connected_bodies']==1 and row['finite_coordinates'] and row['volume_mm3']>1 and 100<=row['triangles']<=900000 and min(ext)>=2 and max(ext)<=350)
+              rows.append(row)
+              if not row['passed']: failures.append(row)
+          found={p.name for p in folder.glob('*.stl')}
+          corrected_root=root/'Reports'/'Corrected_Five'
+          summaries={}
+          for path in corrected_root.rglob('photo_pose_quality_summary.json'):
+              try:
+                  data=json.loads(path.read_text()); summaries[data['hero']]=data
+              except Exception: pass
+          forbidden=('sit','seat','chair','throne','crouch','kneel','crawl')
+          pose_fail=[]
+          for hero in ('Nova','Cho-Gall'):
+              anim=str(summaries.get(hero,{}).get('selected_animation','')).casefold()
+              if not anim or any(t in anim for t in forbidden): pose_fail.append({'hero':hero,'animation':anim})
+          grounding=[]
+          for path in corrected_root.rglob('photo_posed_build.json'):
+              try: data=json.loads(path.read_text())
+              except Exception: continue
+              if data.get('hero')=='Cho-Gall':
+                  item=data.get('builder_result',{}).get('normalization',{}).get('two_foot_grounding')
+                  if item: grounding.append(item)
+          ground_ok=any(g.get('applied') and float(g.get('foot_height_gap_mm',999))<=1.25 for g in grounding)
+          report={
+              'expected_files':18,'found_files':len(rows),
+              'missing_files':sorted(expected-found),'unexpected_files':sorted(found-expected),
+              'geometry_failures':failures,'pose_failures':pose_fail,
+              'cho_gall_grounding':grounding,'cho_gall_two_foot_ground_passed':ground_ok,
+              'corrected_skin_geometry':{
+                  'Rexxar':'base','Lt Morales':'Apothecary','Dehaka':'Mecha','Cho-Gall':'Ultimate','Nova':'base'
+              },
+              'passed':found==expected and not failures and not pose_fail and ground_ok,
+              'files':rows,'corrected_pose_summaries':summaries,
+          }
+          reports=root/'Reports'
+          (reports/'FINAL_VALIDATION.json').write_text(json.dumps(report,indent=2))
+          with (reports/'FINAL_VALIDATION.csv').open('w',newline='',encoding='utf-8-sig') as h:
+              w=csv.DictWriter(h,fieldnames=list(rows[0].keys()));w.writeheader();w.writerows(rows)
+          print(json.dumps(report,indent=2))
+          if not report['passed']: raise SystemExit('Full V4 validation failed')
+          PY
+          cat > "$ROOT/README_FIRST.txt" <<'EOF'
+          HOTS-04 ALL 18 PHOTO-SELECTED HEROES — SMOOTH STL V4
+
+          01_Smooth_Print_Ready contains the recommended STL files.
+          02_Robust_Fallback contains the pre-smoothing watertight alternatives.
+          03_Pose_Proofs contains evidence for the five newly rebuilt corrected models.
+
+          Corrections:
+          - Ultimate Cho-Gall: standing pose with both lower foot-contact zones aligned to the base.
+          - Nova: seated, crouched, kneeling, throne and chair animations excluded.
+          - Rexxar: rebuilt with base skin geometry instead of Frost.
+          - Lt. Morales: rebuilt with Apothecary skin geometry.
+          - Dehaka: rebuilt with Mecha skin geometry.
+          - Remaining thirteen previously validated photo-selected models receive volume-preserving Taubin smoothing.
+
+          STL retains geometry only, not game textures, colour, glow, transparency or normal maps.
+          EOF
+          sudo apt-get update -qq && sudo apt-get install -y --no-install-recommends p7zip-full
+          ZIP="$GITHUB_WORKSPACE/HOTS04_All_18_Photo_Posed_Smooth_STL_V4.zip"
+          cd "$RUNNER_TEMP" && 7z a -tzip -mx=7 "$ZIP" "$(basename "$ROOT")"
+          sha256sum "$ZIP" > "$ZIP.sha256"
+          echo "zip=$ZIP" >> "$GITHUB_OUTPUT"
+          echo "tag=hots04-all-18-photo-posed-smooth-v4-${GITHUB_RUN_ID}" >> "$GITHUB_OUTPUT"
+
+      - name: Upload complete V4 ZIP
+        uses: actions/upload-artifact@v4
+        with:
+          name: HOTS04_All_18_Photo_Posed_Smooth_STL_V4
+          path: |
+            HOTS04_All_18_Photo_Posed_Smooth_STL_V4.zip
+            HOTS04_All_18_Photo_Posed_Smooth_STL_V4.zip.sha256
+          retention-days: 90
+          compression-level: 0
+
+      - name: Publish complete V4 release
+        env:
+          GH_TOKEN: ${{ github.token }}
+        shell: bash
+        run: |
+          gh release create '${{ steps.final.outputs.tag }}' \
+            '${{ steps.final.outputs.zip }}' \
+            '${{ steps.final.outputs.zip }}.sha256' \
+            "$RUNNER_TEMP/HOTS04_All_18_Photo_Posed_Smooth_STL_V4/Reports/FINAL_VALIDATION.json#FINAL_VALIDATION.json" \
+            --repo "$GITHUB_REPOSITORY" \
+            --target "$GITHUB_SHA" \
+            --title 'HOTS-04 all 18 photo-posed smooth STLs V4' \
+            --notes 'Complete 18-model collection. Includes grounded Ultimate Cho-Gall, standing Nova, base Rexxar, Apothecary Lt. Morales and Mecha Dehaka, plus smoothing of the remaining thirteen. Every delivered STL passed watertightness, winding, finite-coordinate, positive-volume and one-connected-body validation.'
