@@ -1,0 +1,43 @@
+name: Collect Completed V4 Failure Logs
+
+on:
+  workflow_dispatch:
+  push:
+    branches: [main]
+    paths:
+      - '.github/workflows/collect-complete-v4-failure.yml'
+
+permissions:
+  actions: read
+  contents: write
+
+jobs:
+  collect:
+    runs-on: ubuntu-24.04
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          ref: main
+          fetch-depth: 0
+      - name: Capture failed job logs
+        env:
+          GH_TOKEN: ${{ github.token }}
+        shell: bash
+        run: |
+          set -euo pipefail
+          mkdir -p diagnostics/v4_complete
+          for item in \
+            'Cho-Gall:111959591448' \
+            'Dehaka:111959591814' \
+            'Nova:111959591903' \
+            'Rexxar:111959591918'; do
+            name="${item%%:*}"
+            job="${item##*:}"
+            gh run view 37368546441 --repo "$GITHUB_REPOSITORY" --job "$job" --log > "diagnostics/v4_complete/${name}.log"
+          done
+          git config user.name 'github-actions[bot]'
+          git config user.email '41898282+github-actions[bot]@users.noreply.github.com'
+          git add diagnostics/v4_complete
+          git commit -m 'Add completed V4 failure logs [skip ci]'
+          git pull --rebase origin main
+          git push origin HEAD:main
