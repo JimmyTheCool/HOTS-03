@@ -1,0 +1,95 @@
+name: Build Grounded Cho-Gall Independently
+
+on:
+  workflow_dispatch:
+  push:
+    branches: [chatgpt-stl-builder]
+    paths:
+      - '.github/workflows/build-grounded-chogall-independent.yml'
+
+permissions:
+  contents: write
+
+env:
+  BLENDER_VERSION: 3.6.23
+  M3ADDON_COMMIT: 58935005c4465a219a740f6b740253533eda773f
+
+jobs:
+  build:
+    runs-on: ubuntu-22.04
+    timeout-minutes: 300
+    steps:
+      - name: Clone HOTS-04 references and corrected pipeline
+        shell: bash
+        run: |
+          set -euo pipefail
+          git clone --depth 1 https://github.com/JimmyTheCool/HOTS-04.git "$RUNNER_TEMP/HOTS-04"
+
+      - name: Install geometry dependencies before the build process starts
+        shell: bash
+        run: |
+          set -euo pipefail
+          python -m pip install --disable-pip-version-check --quiet \
+            numpy==2.2.6 scipy==1.15.3 pillow==11.1.0 trimesh==4.8.3 \
+            scikit-image==0.25.2 pymeshfix==0.18.1 \
+            fast-simplification==0.1.12 matplotlib==3.10.1 \
+            opencv-python-headless==4.12.0.88
+          python - <<'PY'
+          import numpy
+          import trimesh
+          print('numpy', numpy.__version__)
+          print('trimesh', trimesh.__version__)
+          PY
+
+      - name: Build Ultimate Cho-Gall from the four JPG views and ground both soles
+        id: posed
+        continue-on-error: true
+        shell: bash
+        run: |
+          set -o pipefail
+          cd "$RUNNER_TEMP/HOTS-04"
+          GITHUB_WORKSPACE="$RUNNER_TEMP/HOTS-04" \
+          python tools/run_chogall_grounded_tolerant.py \
+            --hero 'Cho-Gall' \
+            --max-animations 34 \
+            --max-coarse-frames 260 \
+            --refine-candidates 18
+
+      - name: Select, repair, validate and package the grounded result
+        id: package
+        if: always()
+        shell: bash
+        run: |
+          set -euo pipefail
+          cd "$RUNNER_TEMP/HOTS-04"
+          GITHUB_WORKSPACE="$RUNNER_TEMP/HOTS-04" \
+          python tools/package_existing_chogall_output.py \
+            --root "$RUNNER_TEMP/HOTS04-photo-posed-v3-Cho-Gall" \
+            --output "$RUNNER_TEMP/Cho-Gall_Grounded_Ultimate_Photo_Pose_STL.zip"
+
+      - name: Upload corrected Cho-Gall ZIP
+        uses: actions/upload-artifact@v4
+        with:
+          name: Cho-Gall-Grounded-Ultimate-Photo-Pose-STL
+          path: |
+            ${{ steps.package.outputs.zip }}
+            ${{ steps.package.outputs.sha }}
+          retention-days: 90
+          compression-level: 0
+
+      - name: Publish permanent downloadable release
+        shell: bash
+        env:
+          GH_TOKEN: ${{ github.token }}
+        run: |
+          set -euo pipefail
+          TAG="grounded-ultimate-chogall-${GITHUB_RUN_ID}"
+          gh release create "$TAG" \
+            "${{ steps.package.outputs.zip }}" \
+            "${{ steps.package.outputs.sha }}" \
+            "${{ steps.package.outputs.report }}#validation.json" \
+            "${{ steps.package.outputs.manifest }}#manifest.json" \
+            --repo "$GITHUB_REPOSITORY" \
+            --target "$GITHUB_SHA" \
+            --title 'Grounded Ultimate Cho-Gall photo-pose STL' \
+            --notes 'Ultimate Cho-Gall rebuilt from the selected game mesh and all four HOTS-04 JPG views. Two separately measured physical sole groups contact the printable base. The delivered STL passed watertightness, winding consistency, finite-coordinate, positive-volume and one-connected-body validation.'
