@@ -1,0 +1,113 @@
+name: Build HOTS-04 Corrected Five V4
+
+on:
+  workflow_dispatch:
+  push:
+    branches: [chatgpt-stl-builder]
+    paths:
+      - '.github/workflows/build-hots04-corrected-five-v4-ubuntu24.yml'
+
+permissions:
+  contents: read
+  actions: read
+
+env:
+  BLENDER_VERSION: 3.6.23
+  M3ADDON_COMMIT: 58935005c4465a219a740f6b740253533eda773f
+
+jobs:
+  build:
+    runs-on: ubuntu-24.04
+    timeout-minutes: 330
+    strategy:
+      fail-fast: false
+      max-parallel: 5
+      matrix:
+        include:
+          - {hero: 'Cho-Gall', safe: 'Cho-Gall', voxel: '0.220'}
+          - {hero: 'Nova', safe: 'Nova', voxel: '0.200'}
+          - {hero: 'Rexxar', safe: 'Rexxar', voxel: '0.240'}
+          - {hero: 'Lt Morales', safe: 'Lt_Morales', voxel: '0.220'}
+          - {hero: 'Dehaka', safe: 'Dehaka', voxel: '0.260'}
+
+    steps:
+      - name: Check out corrected HOTS-04 pipeline
+        uses: actions/checkout@v4
+        with:
+          repository: JimmyTheCool/HOTS-04
+          ref: photo-pose-v4
+          fetch-depth: 1
+
+      - name: Set exact corrected skin geometry
+        shell: bash
+        run: |
+          set -euo pipefail
+          python - <<'PY'
+          import json
+          from pathlib import Path
+          p=Path('reference_analysis/selected_skin_plan.json')
+          d=json.loads(p.read_text()); h=d['heroes']
+          h['Rexxar'].update(skin_key='base',directory='storm_hero_rexxar_base',repository='HOTS-03',model_path='storm_hero_rexxar_base/storm_hero_rexxar_base.m3')
+          h['Lt Morales'].update(skin_key='apoth',directory='storm_hero_medic_apoth',repository='HOTS-03',model_path='storm_hero_medic_apoth/storm_hero_medic_apoth.m3')
+          h['Dehaka'].update(skin_key='mecha',directory='storm_hero_dehaka_mecha',repository='HOTS-02',model_path='storm_hero_dehaka_mecha/storm_hero_dehaka_mecha.m3')
+          p.write_text(json.dumps(d,indent=2))
+          PY
+
+      - name: Prepare standing and grounded V4 runner
+        shell: bash
+        run: |
+          set -euo pipefail
+          python tools/prepare_photo_pose_v4.py \
+            --runner-bootstrap tools/run_photo_posed_job_v3_2.py \
+            --pose-source tools/exposed_r2/build_one_photo_posed_v3_source.py \
+            --output-runner tools/run_photo_posed_job_v4.py \
+            --output-pose tools/build_one_photo_posed_v4.py \
+            --voxel '${{ matrix.voxel }}' --max-triangles 900000 --target-triangles 820000
+          python -m py_compile tools/run_photo_posed_job_v4.py tools/build_one_photo_posed_v4.py
+
+      - name: Match JPG pose, freeze game mesh and repair STL
+        shell: bash
+        run: |
+          set -euo pipefail
+          python tools/run_photo_posed_job_v4.py \
+            --hero '${{ matrix.hero }}' \
+            --max-animations 30 --max-coarse-frames 192 --refine-candidates 12
+
+      - name: Smooth voxel stair-stepping without shrinking the model
+        shell: bash
+        run: |
+          set -euo pipefail
+          python - <<'PY'
+          import json,os
+          from pathlib import Path
+          import numpy as np,trimesh
+          root=Path(os.environ['HERO_ARTIFACT_ROOT']); safe=os.environ['HERO_SAFE']; hero='${{ matrix.hero }}'
+          source=None
+          for p in (root/'HighDetail'/f'{safe}.stl',root/'Robust'/f'{safe}.stl'):
+              if not p.is_file(): continue
+              m=trimesh.load_mesh(p,force='mesh',process=True)
+              if isinstance(m,trimesh.Scene): m=trimesh.util.concatenate(tuple(m.geometry.values()))
+              if m.is_watertight and int(m.body_count)==1: source=p; break
+          if source is None: raise SystemExit('No watertight one-body source')
+          m=trimesh.load_mesh(source,force='mesh',process=True)
+          if isinstance(m,trimesh.Scene): m=trimesh.util.concatenate(tuple(m.geometry.values()))
+          before=m.vertices.copy(); volume=float(abs(m.volume)); base=np.flatnonzero(before[:,2]<=m.bounds[0,2]+1.2)
+          trimesh.smoothing.filter_taubin(m,lamb=0.30,nu=0.31,iterations=5)
+          if len(base): m.vertices[base,2]=before[base,2]
+          m.apply_translation((0,0,-float(m.bounds[0,2]))); m.remove_unreferenced_vertices()
+          out=root/'Smooth'; out.mkdir(parents=True,exist_ok=True); target=out/f'{safe}.stl'; m.export(target)
+          q=trimesh.load_mesh(target,force='mesh',process=True)
+          if isinstance(q,trimesh.Scene): q=trimesh.util.concatenate(tuple(q.geometry.values()))
+          r={'hero':hero,'source':str(source),'triangles':int(len(q.faces)),'watertight':bool(q.is_watertight),'winding':bool(q.is_winding_consistent),'bodies':int(q.body_count),'finite':bool(np.isfinite(q.vertices).all()),'volume':float(abs(q.volume)),'retention':float(abs(q.volume)/max(volume,1e-9))}
+          r['passed']=r['watertight'] and r['winding'] and r['bodies']==1 and r['finite'] and r['volume']>1 and 100<=r['triangles']<=900000 and 0.90<=r['retention']<=1.10
+          reports=root/'Reports'/safe; reports.mkdir(parents=True,exist_ok=True); (reports/'smooth_validation.json').write_text(json.dumps(r,indent=2)); print(json.dumps(r,indent=2))
+          if not r['passed']: raise SystemExit('Smooth validation failed')
+          PY
+
+      - name: Upload corrected hero
+        uses: actions/upload-artifact@v4
+        with:
+          name: corrected-v4-${{ matrix.safe }}
+          path: ${{ env.HERO_ARTIFACT_ROOT }}
+          retention-days: 90
+          compression-level: 0
